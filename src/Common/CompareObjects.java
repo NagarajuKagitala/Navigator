@@ -14,7 +14,7 @@ public class CompareObjects
 		
 		//Get the First object Name
 		String compare1 = driver.findElement(By.xpath("//datatable-body-cell[4]/div/span")).getText();
-		System.out.println("First obj name is: " +compare1);                                            
+		System.out.println("First obj name is: " +compare1);                                           
 		Thread.sleep(2000);
 		
 		//Get the second object name
