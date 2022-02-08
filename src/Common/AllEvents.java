@@ -52,7 +52,7 @@ public class AllEvents
 				
 				//Click on daignostic tab
 				driver.findElement(By.xpath("//button[contains(.,'Diagnostic')]")).click();
-				Thread.sleep(6000);
+				Thread.sleep(7000);
 				
 				//get the vents count and store the into string
 				String DignosticCount=driver.findElement(By.name("event#")).getAttribute("value");
