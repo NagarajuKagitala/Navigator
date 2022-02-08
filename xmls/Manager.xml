@@ -1,0 +1,65 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Manager Viewlet options">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="password" value="admin"/>
+    <parameter name="DownloadPath" value="F:\Navigator Exported Messages\Export Query From MQSC Console"/>
+    <parameter name="PortNo" value="4020"/>
+    
+    <parameter name="Dashboardname" value="Manager"/>
+    <parameter name="ViewletName" value="Manager viewlet"/>
+    <parameter name="ViewletValue" value="2"/>
+    
+    <parameter name="Description" value="This is the new Queue Manager"/>
+    <parameter name="Query" value="DISPLAY QL(*)"/>
+     
+    <parameter name="FavoriteViewletName" value="Manager Favorite Viewlet"/>
+     
+    <parameter name="QueueManagerNameFromOptions" value="Nastel1234"/>
+    <parameter name="DefaultTransmissionQueueFromOptions" value="Add.Queue"/>
+    <parameter name="DescriptionFromOptions" value="Test Queue From options"/>
+    
+    <parameter name="SchemaName" value="TestManager"/>
+    
+    <parameter name="MultipleDescription" value="Test Multiple managers"/>    
+    <parameter name="Attributes" value="Queue Manager Identifier,OS Platform,Command Level,CCSID,Command Input Queue Name,Distribution List,Syncpoint,Maximum Priority,Creation Date,Alteration Date,Last Event Time,Instances,Instances active,Node Type,Manager Name,Queue Manager Description,Dead Letter Queue,Maximum Message Length (bytes),Maximum Uncommitted Messages,Command Server Control,Mark-browse Interval,Maximum Handles,Trigger Interval,Channel Initiator Control,Maximum Properties Length,WebSphere MQ Code Version,Queue Manager Standby State,Queue Manager Instance State,State,Expiry Interval (sec.),Queue Manager Name Type for Shared Queue,Max. current channels,Active Channels,Maximum Current Channels using TCP/IP,Maximum Current Channels using LU6.2,Adopt MCA,MCA Check Elements,Maximum Outgoing Channel Port Number,Minimum Outgoing Channel Port Number,TCP/IP Channel Receive Timeout (sec.),Minimum TCP/IP channel Receive Timeout (sec.),TCP/IP Channel Receive Timeout Qualifier,Listener Restart Interval (sec.),DNS Registration,DNS Group,Channel Initiator Adapter Subtasks,Channel Initiator Dispatchers,Start Channel Initiator Trace Automatically,Channel Initiator's Trace Data Space Size (MB),TCP/IP System Name,TCP/IP Stack Type,IP Protocol,Use TCP/IP KEEPALIVE Facility,Group Listener LU Name,LU Name,LU6.2 APPCPM Suffix,Cluster Workload Exit,Cluster Workload Data,Cluster Workload Length (bytes),Cluster Workload MRU Channels,Cluster Workload Use Queue,Default Cluster Transmission Queue Type,Repository Name,Repository Namelist,Default Transmission Queue Name,Channel Auto-Definition,Channel Auto-Definition Exit,Channel Auth. Record Checking,Authority Events,Bridge Events,Channel Events,Channel Auto-Definition Events,Command Audit Events,Configuration Events,Inhibit Events,Local Events,Logger Events,Performance Events,Remote Events,Start/Stop Events,SSL Events,SSL Key Repository,SSL CRL Namelist,SSL Reset Count,SSL FIPS Required,SSL Server Subtasks,SSL Cryptographic Hardware,Suite B-compliant Cryptography,SSL/TLS Certificate Validation Policy,Queue Monitoring,Channel Monitoring,Auto Cluster Sender Monitoring,MQI Statistics,Queue Statistics,Channel Statistics,Auto Cluster Sender Statistics,Statistics Interval (sec.),MQI Accounting,Queue Accounting,Accounting Interval (sec.),Accounting Connection Override,Activity Recording,Trace Route Recording,Queue Sharing Group Name,Intra Group Queuing,IGQ Put Authority,IGQ User ID,Group Unit Recovery,Security Case,CF Structures Connection Loss Action,Publish/Subscribe Mode,Process Messages Under Syncpoint,Undelivered Input Message,Behavior Of Undelivered Response Messages,Retries Of Failed Command Message,Lifetime Of Non-administrative Topics,Parent,Publish/Subscribe Clustering"/>
+      
+     <classes>
+      <class name="ApodGUI.ManagerViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddNewManagerFromIcon"/>     
+        <include name="ShowObjectAttributes"/>    
+        <include name="ShowTopology"/>   
+        <include name="QueueManagerStatus"/> 
+        <include name="Security"/>
+        <include name="PreViewErrorLogs"/> 
+        <include name="SaveErrorLogs"/>
+        <include name="Properties"/> 
+        <include name="MQSCConsoleCommandOption"/>
+        <include name="SaveMQSCConsoleResponceData"/>
+        <include name="ClearMQSCConsoleResponceData"/>
+        <include name="DiscoverNow"/> 
+        <include name="Events"/> 
+        <include name="AddToFavorites"/>  
+         
+        <include name="CompareManagers"/>
+        <include name="CheckDifferencesForManagers"/>
+        <include name="MultipleManagersProperties"/>
+        <include name="AddToFavoriteForMultipleManagers"/>  
+        <include name="CreateQueueManagerFromOptions"/>   
+        <include name="SearchFilter"/>     
+        <include name="Logout"/>  
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

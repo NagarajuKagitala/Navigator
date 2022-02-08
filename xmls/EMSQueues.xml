@@ -1,0 +1,63 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test EMS Queue Viewlet">
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="password" value="admin"/>
+    <parameter name="ViewletName" value="Local Queue"/>
+    <parameter name="WGSName" value="WGS10 - 1"/>
+    
+    <parameter name="Dashboardname" value="QueuesViewlet Verification"/>
+    <parameter name="wgs" value="1"/>
+    
+    <parameter name="SchemaName" value="QueueSchema"/>
+    
+    <parameter name="QueueNameFromOptions" value="EMS_ABC"/>
+            
+    <parameter name="QueueName" value="EMS_Add.New.Queue"/>
+    <parameter name="QueueDescription" value="Test the Queue"/>
+    
+    <parameter name="ObjectName" value=".Queue1"/>
+       
+    <parameter name="FavoriteViewletName" value="Queues Add to favorite"/>
+    <parameter name="Favwgs" value="1"/>
+    
+    <parameter name="SearchInputData" value="999999999"/>
+    <parameter name="TestDescription" value="Multiple Description"/>
+    <parameter name="EMSDnode" value="EMSAGENT01"/>
+    <parameter name="EMSDestinationManager" value="EMS-SERVER"/>
+    <parameter name="ViewletValue" value="3"/>
+      
+     <classes>
+      <class name="EMS.EMSQueues">
+       
+       <methods>
+       
+       <include name="Login"/>
+        <include name="BrowseMessages"/>    
+        <include name="ShowObjectAttributesForQueues"/>  
+        <include name="ShowQueueStatus"/> 
+        <include name="CreateQueueFromOptions"/> 
+        <include name="CopyAsOptionFromQueueCommands"/> 
+        <include name="DeleteoptionFromQueueCommands"/>
+        <include name="QueueProperties"/>
+        <include name="QueueEvents"/> 
+        <include name="AddToFavoriteViewlet"/>   
+         
+        <include name="CompareQueues"/> 
+        <include name="CheckDifferencesForEMSQueues"/>
+        <include name="ShowQueueStatusForMultipleQueues"/> 
+        <include name="MultipleQueueProperties"/> 
+        <include name="AddToFavoriteForMultipleQueues"/>   
+        <include name="AddQueueFromPlusIcon"/>    
+        <include name="Logout"/>  
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

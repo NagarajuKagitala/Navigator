@@ -1,0 +1,48 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Service Viewlet">
+   <parameter name="sDriver" value="webdriver.chrome.driver"/>
+   <parameter name="sDriverpath" value="Drivers/chromeDriver.exe"/>
+  
+    <parameter name="Dashboardname" value="ServiceViewlet Verification"/>
+    <parameter name="ViewletName" value="New Service Viewlet"/>
+    <parameter name="schemaName" value="ServiceSchema"/>
+    <parameter name="FavoriteViewletName" value="Service Favorite viewlet"/>
+    <parameter name="ViewletValue" value="9"/>
+    
+    <parameter name="ServiceFromICon" value="SERVICE.FROM.ICON"/>
+    <parameter name="DescriptionFromIcon" value="Adding service using Icon"/>
+    <parameter name="CopyObjectName" value=".COPY"/>
+    <parameter name="RenameService" value="SERVICE.RENAME"/>
+    
+    <parameter name="DestinationManager" value="M10"/>
+     
+     <classes>
+      <class name="ApodGUI.ServiceViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddServiceViewlet"/> 
+        <include name="ShowObjectAttributesForService"/> 
+        <include name="CreateServiceFromPlusIcon"/>
+        <include name="CopyAsFromCommands"/>
+        <include name="RenameFromCommands"/>
+        <include name="DeleteFromCommands"/>
+        <include name="MQSCSnapshot"/>
+        <include name="SaveServiceSnapshot"/>
+        <include name="ServiceProperties"/>
+        <include name="ServiceEvents"/>  
+        <include name="AddToFavoriteViewlet"/>  
+        <include name="CompareServiceNames"/> 
+        <include name="CheckDifferencesForServices"/>  
+        <include name="AddToFavoriteForMultipleServices"/>     
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

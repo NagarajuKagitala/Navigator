@@ -1,0 +1,321 @@
+<html>
+<head>
+<title>TestNG:  Test Bridge Viewlet</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test Bridge Viewlet</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jan 21 14:22:59 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>700 seconds (700960 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='EMS.BridgeViewlet.MultipleBridgeProperties()'><b>MultipleBridgeProperties</b><br>Test class: EMS.BridgeViewlet<br>Parameters: BridgeViewlet Verification, BridgeSelector1234, org.testng.TestRunner@3591009c<br/>
+<a href="#Output-200760156" onClick='toggleBox("Output-200760156", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-200760156" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-200760156">
+<br/>Failed to execute method: MultipleBridgeProperties<br/><br/>
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/MultipleBridgeProperties.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Multiple\ properties\ failed&quot;}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbe88559fe1bdd254d756ae8cb8a9086, findElement {using=id, value=Multiple properties failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56524}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56524/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dbe88559fe1bdd254d756ae8cb8a9086
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at EMS.BridgeViewlet.MultipleBridgeProperties(BridgeViewlet.java:780)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace200760156", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace200760156'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Multiple\ properties\ failed&quot;}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbe88559fe1bdd254d756ae8cb8a9086, findElement {using=id, value=Multiple properties failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56524}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56524/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dbe88559fe1bdd254d756ae8cb8a9086
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at EMS.BridgeViewlet.MultipleBridgeProperties(BridgeViewlet.java:780)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>84</td>
+<td>EMS.BridgeViewlet@3c72f59f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='EMS.BridgeViewlet.AddBridgeFromPlusIcon()'><b>AddBridgeFromPlusIcon</b><br>Test class: EMS.BridgeViewlet<br>Parameters: BridgeViewlet Verification, Queue, Topic, org.testng.TestRunner@3591009c<br/>
+<a href="#Output-176097974" onClick='toggleBox("Output-176097974", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-176097974" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-176097974">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddBridgeFromPlusIcon.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>74</td>
+<td>EMS.BridgeViewlet@3c72f59f</td></tr>
+<tr>
+<td title='EMS.BridgeViewlet.AddBridgeViewlet()'><b>AddBridgeViewlet</b><br>Test class: EMS.BridgeViewlet<br>Parameters: New Bridge Viewlet, 8, org.testng.TestRunner@3591009c<br/>
+<a href="#Output-1689458432" onClick='toggleBox("Output-1689458432", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1689458432" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1689458432">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddBridgeViewlet.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>EMS.BridgeViewlet@3c72f59f</td></tr>
+<tr>
+<td title='EMS.BridgeViewlet.AddToFavoriteForMultipleBridges()'><b>AddToFavoriteForMultipleBridges</b><br>Test class: EMS.BridgeViewlet<br>Parameters: BridgeViewlet Verification, Bridge Favorite viewlet, org.testng.TestRunner@3591009c<br/>
+<a href="#Output-1234757451" onClick='toggleBox("Output-1234757451", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1234757451" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1234757451">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleBridges.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>EMS.BridgeViewlet@3c72f59f</td></tr>
+<tr>
+<td title='EMS.BridgeViewlet.AddToFavoriteViewlet()'><b>AddToFavoriteViewlet</b><br>Test class: EMS.BridgeViewlet<br>Parameters: BridgeViewlet Verification, Bridge Favorite viewlet, org.testng.TestRunner@3591009c<br/>
+<a href="#Output-2122252822" onClick='toggleBox("Output-2122252822", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2122252822" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2122252822">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>EMS.BridgeViewlet@3c72f59f</td></tr>
+<tr>
+<td title='EMS.BridgeViewlet.BridgeEvents()'><b>BridgeEvents</b><br>Test class: EMS.BridgeViewlet<br>Parameters: BridgeViewlet Verification, org.testng.TestRunner@3591009c<br/>
+<a href="#Output-1709882027" onClick='toggleBox("Output-1709882027", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1709882027" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1709882027">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/BridgeEvents.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>EMS.BridgeViewlet@3c72f59f</td></tr>
+<tr>
+<td title='EMS.BridgeViewlet.CheckDifferencesForBridges()'><b>CheckDifferencesForBridges</b><br>Test class: EMS.BridgeViewlet<br>Parameters: org.testng.TestRunner@3591009c<br/>
+<a href="#Output-83210381" onClick='toggleBox("Output-83210381", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-83210381" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-83210381">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForBridges.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>EMS.BridgeViewlet@3c72f59f</td></tr>
+<tr>
+<td title='EMS.BridgeViewlet.CompareBridges()'><b>CompareBridges</b><br>Test class: EMS.BridgeViewlet<br>Parameters: org.testng.TestRunner@3591009c<br/>
+<a href="#Output-1146318308" onClick='toggleBox("Output-1146318308", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1146318308" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1146318308">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareBridges.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>EMS.BridgeViewlet@3c72f59f</td></tr>
+<tr>
+<td title='EMS.BridgeViewlet.DeleteCommand()'><b>DeleteCommand</b><br>Test class: EMS.BridgeViewlet<br>Parameters: BridgeViewlet Verification, org.testng.TestRunner@3591009c<br/>
+<a href="#Output-705258430" onClick='toggleBox("Output-705258430", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-705258430" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-705258430">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteCommand.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>EMS.BridgeViewlet@3c72f59f</td></tr>
+<tr>
+<td title='EMS.BridgeViewlet.Login()'><b>Login</b><br>Test class: EMS.BridgeViewlet<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, BridgeViewlet Verification<br/>
+<a href="#Output-167013780" onClick='toggleBox("Output-167013780", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-167013780" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-167013780">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>EMS.BridgeViewlet@3c72f59f</td></tr>
+<tr>
+<td title='EMS.BridgeViewlet.Logout()'><b>Logout</b><br>Test class: EMS.BridgeViewlet<br>Parameters: BridgeViewlet Verification</td>
+<td></td>
+<td>26</td>
+<td>EMS.BridgeViewlet@3c72f59f</td></tr>
+<tr>
+<td title='EMS.BridgeViewlet.Properties()'><b>Properties</b><br>Test class: EMS.BridgeViewlet<br>Parameters: BridgeViewlet Verification, org.testng.TestRunner@3591009c<br/>
+<a href="#Output-1901663135" onClick='toggleBox("Output-1901663135", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1901663135" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1901663135">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Properties.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>EMS.BridgeViewlet@3c72f59f</td></tr>
+<tr>
+<td title='EMS.BridgeViewlet.ShowObjectAttributesForBridge()'><b>ShowObjectAttributesForBridge</b><br>Test class: EMS.BridgeViewlet<br>Parameters: BridgeViewlet Verification, BridgeSchema, org.testng.TestRunner@3591009c<br/>
+<a href="#Output-995760621" onClick='toggleBox("Output-995760621", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-995760621" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-995760621">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributesForBridge.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>69</td>
+<td>EMS.BridgeViewlet@3c72f59f</td></tr>
+</table><p>
+</body>
+</html>

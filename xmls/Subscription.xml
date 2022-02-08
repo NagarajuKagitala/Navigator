@@ -1,0 +1,62 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Subscription Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="Subscription Verification"/>
+    <parameter name="ViewletName" value="New Subscription Viewlet"/>
+    <parameter name="SubscriptionAttributes" value="Attributes"/>
+    <parameter name="schemaName" value="SubscriptionSchema"/>
+    <parameter name="ViewletValue" value="12"/>
+    
+    <parameter name="AddSubscriptionName" value="SYSTEM.ADD.NEW.SUBSCRIPTION121.OPTIONS"/>
+    <parameter name="DestinationTopicName" value="SYSTEM.ADMIN.TOPIC"/>
+    <parameter name="TopicStringData" value="Unique"/>
+    
+    <parameter name="CopyObjectName" value=".Copy"/>
+    <parameter name="RenameSubscription" value="Test.Subscription.Rename"/>
+    
+    <parameter name="FavoriteViewletName" value="Subscription Favorite viewlet"/>
+    
+    <parameter name="AddSubscriptionNameFromIcon" value="SYSTEM.ADD.NEW.SUBSCRIPTION121.ICON"/>
+    <parameter name="TopicStringDataFromICon" value="UniqueIcon"/>
+    <parameter name="CopyObjectNameForMUltiple" value="SUB.MULTIPLE.COPY"/>
+    <parameter name="RenameSubscriptionForMultiple" value="SYSTEM.SUBSCRIPTION.RENAME"/>
+    
+    <parameter name="SearchdataforMultipleProperties" value="SYSTEM.ADD.NEW.SUBSCRIPTION121"/>
+      
+     <classes>
+      <class name="ApodGUI.SubscriptionViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddSubscriptionViewlet"/> 
+        <include name="ShowObjectAttributesForSubscription"/> 
+        <include name="CreateSubscriptionFromOptions"/>  
+        <include name="CopyAsFromCommands"/>
+        <include name="RenameFromCommands"/>
+        <include name="DeleteFromCommands"/>  
+        <include name="SubscriptionProperties"/>
+        <include name="SubscriptionEvents"/>  
+        <include name="AddToFavoriteViewlet"/>  
+          
+        <include name="CompareSubscription"/> 
+        <include name="CheckDifferencesForSubscriptions"/>  
+        <include name="CreateSubscriptionFromPlusIcon"/> 
+        <include name="CopyAsFromCommandsForMultipleSubscriptions"/>
+        <include name="RenameFromCommandsForMultipleSubscriptions"/>
+        <include name="DeleteFromCommandsForMultipleSubscriptions"/>  
+        <include name="MultipleSubscriptionProperties"/>    
+        <include name="AddToFavoriteForMultipleSubscription"/>     
+          
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

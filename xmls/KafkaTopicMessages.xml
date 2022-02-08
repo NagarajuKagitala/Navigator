@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test kafka Topic Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="Kafka Topic"/>
+    <parameter name="ViewletName" value="Kafka Topic Viewlet"/>
+    <parameter name="ViewletValue" value="4"/>
+        
+    <parameter name="MessageData" value="New test message"/>
+     
+     <classes>
+      <class name="KafkaGUI.KafkaTopicMessages">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="PutNewMessageIntoTopic"/>    
+        <include name="LoadMessageFromFileUsingOption"/>   
+        <include name="ExportAllMessages"/> 
+        <include name="CopyMessageUsingCopyOption"/>
+        <include name="ClearMessagesUsingClearAllOption"/> 
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

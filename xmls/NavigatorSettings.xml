@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Settings">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="Settings Dashboard"/>
+    <parameter name="wgs" value="WGS10"/>
+    <parameter name="FavoriteViewletName" value="Fav Viewlet"/>
+    <parameter name="Favwgs" value="WGS10 - 0"/>
+    <parameter name="objpath1" value="\\MQM"/>
+    <parameter name="objpath2" value="\\WGS10"/>
+    
+    <parameter name="Manager1" value="AA"/>
+    <parameter name="Manager2" value="AB"/>
+    <parameter name="Manager3" value="Test1"/>
+    <parameter name="Manager4" value="Testing"/>
+     
+     <classes>
+      <class name="ApodGUI.NavigatorSettings">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="ShowInActiveChannelsCheckbox"/> 
+        <include name="ShowEmptyQueuesCheckbox"/>
+        <include name="ShowTemporaryDynamicQueues"/> 
+        <include name="ShowFullNamesForFavoriteShortcuts"/>
+        <include name="ShowFullNamesForSearchResultsObjects"/>  
+        <include name="ShowSystemObjectsOnly"/> 
+        <include name="ShowObjectSearchresultsFromActiveManagersOnly"/>
+        <include name="ShowManagersForDefaultSchemas"/>   
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

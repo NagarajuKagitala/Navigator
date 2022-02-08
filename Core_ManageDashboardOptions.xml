@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+  <test name="Manage Dashboard page options">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+ 
+  <parameter name="Dashboardname" value="ManageDashboard"/>
+  <parameter name="RenamedDashboardName" value="DashboardRenamed"/>
+  <parameter name="TagName" value="NewTag"/>
+  <parameter name="NameTagName" value="TagNastel"/>
+  <parameter name="ImportedDashboardname" value="ImportedDashboard"/>
+ 
+  
+     
+     <classes>
+       <class name="NavigatorCore.ManageDashboardOptions">
+       
+          <methods>
+            <include name="Login"/>
+           <!--  <include name="CreareDashboardUsingNewButton"/>
+            <include name="RenameDashboardUsingRenamebutton"/>
+            <include name="DeleteDashboardUsingDeleteButton"/> 
+            <include name="CreateTagUsingAddButton"/>
+            <include name="UpdateTagNameUsingEditButton"/>
+            <include name="DeleteTagUsingDeleteButton"/>
+            <include name="ExportDashboard"/> -->
+            <include name="ImportDashboard"/>
+          <!--   <include name="AddToCurrentViewButton"/> -->
+            <include name="Logout"/>
+          </methods> 
+          
+       </class>
+     </classes>
+  </test>
+  </suite>

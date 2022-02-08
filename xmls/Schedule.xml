@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Schedule">
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+    <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="password" value="admin"/>
+    <parameter name="Dashboardname" value="Scheduling"/>
+    <parameter name="ViewletName" value="ScheduleViewletObject"/>
+    <parameter name="WGSName" value="WGS10 - 1"/>
+    <parameter name="ScheduleDurableName" value="Schedule.Durable"/>
+    
+    <parameter name="NameOfTheMonth" value="Apr"/>
+    <parameter name="YearValue" value="2028"/>
+    
+      
+     <classes>
+      <class name="ApodGUI.Scheduling">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="ManagerScheduling"/>  
+        <include name="QueuesScheduling"/> 
+        <include name="ChannelScheduling"/> 
+        <include name="ProcessScheduling"/> 
+        <include name="TopicScheduling"/>
+        <include name="ListenerScheduling"/>  
+        <include name="SubScriptionScheduling"/>
+        <include name="RouteScheduling"/>
+        <include name="BridgeScheduling"/>
+        <include name="DurableScheduling"/>       
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

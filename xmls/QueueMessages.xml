@@ -1,0 +1,41 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Queue Message Options">
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="Queues Messages Verification"/>
+    <parameter name="ViewletName" value="Local Queue"/>
+    <parameter name="MessageData" value="Put the message from Main options"/>
+    <parameter name="ViewletValue" value="3"/>
+    
+    <parameter name="HexMessageData" value="10C20000E0A5E6F6FDFFE0AEE00FE6FCFDFFE6FD93"/>
+          
+     <classes>
+      <class name="ApodGUI.QueueMessages">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="PutNewMessageIntoQueue"/> 
+        <include name="LoadFromFileUsingYesbutton"/>  
+        <include name="LoadFromFileUsingConfigurebuttonWithSingleMessage"/>  
+        <include name="LoadFromFileUsingConfigurebuttonWithMultipleMessages"/>
+        <include name="ExportAllMessages"/>   
+        <include name="CopyAllMessagesFromOneQueueToAnotherQueue"/> 
+        <include name="MoveAllMessagesFromOneQueueToAnotherQueue"/>  
+        <include name="DeleteAllMessagesFromQueue"/>   
+        <include name="ClearAllMessagesFromQueue"/>  
+        <include name="PutMessageUsingJsonFile"/>
+        <include name="PutMessageUsingXMLFile"/>  
+        <include name="PutHexMessageIntoQueue"/>   
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

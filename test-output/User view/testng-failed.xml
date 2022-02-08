@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [User view]">
+  <test name="User view(failed)">
+    <parameter name="UserViewName" value="New View"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+    <parameter name="DefaultName" value="Set As Default"/>
+    <parameter name="EnvironmentData" value="Testing Environment Text"/>
+    <parameter name="OptionName" value="Add User View"/>
+    <parameter name="ViewletValue" value="3"/>
+    <classes>
+      <class name="NavigatorCore.UserView">
+        <methods>
+          <include name="tearDown"/>
+          <include name="DefaultView" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- NavigatorCore.UserView -->
+    </classes>
+  </test> <!-- User view(failed) -->
+</suite> <!-- Failed suite [User view] -->

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Testing Navigator Dashboard]">
+  <test name="Add Dashboard reports(failed)">
+    <parameter name="ViewletName" value="Queues Viewlest"/>
+    <parameter name="Dashboardname" value="Search Criteria Dashboard"/>
+    <parameter name="SearchCriteriaData" value="Message Search criteria"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+    <parameter name="MessageData" value="Message Search criteria"/>
+    <parameter name="SearchCriteriaName" value="Search Queues"/>
+    <parameter name="ViewletValue" value="3"/>
+    <classes>
+      <class name="NavigatorCore.SearchCriteria">
+        <methods>
+          <include name="ActiveFilterInBrowseMessagePage" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- NavigatorCore.SearchCriteria -->
+    </classes>
+  </test> <!-- Add Dashboard reports(failed) -->
+</suite> <!-- Failed suite [Testing Navigator Dashboard] -->

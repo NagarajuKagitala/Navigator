@@ -1,0 +1,269 @@
+<html>
+<head>
+<title>TestNG:  Test kafka Cluster Viewlet</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test kafka Cluster Viewlet</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 24 17:22:00 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>495 seconds (495040 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='KafkaGUI.KafkaClusterViewlet.ShowObjectAttributes()'><b>ShowObjectAttributes</b><br>Test class: KafkaGUI.KafkaClusterViewlet<br>Parameters: Kafka Cluster, Schema, org.testng.TestRunner@50b0bc4c<br/>
+<a href="#Output-526833889" onClick='toggleBox("Output-526833889", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-526833889" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-526833889">
+<br/>Failed to execute method: ShowObjectAttributes<br/><br/>
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowObjectAttributes.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Attributes\ failed&quot;}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e8f7434c275eda453a744c8a9f07bec, findElement {using=id, value=Attributes failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59265/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e8f7434c275eda453a744c8a9f07bec
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at KafkaGUI.KafkaClusterViewlet.ShowObjectAttributes(KafkaClusterViewlet.java:176)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace526833889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace526833889'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Attributes\ failed&quot;}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e8f7434c275eda453a744c8a9f07bec, findElement {using=id, value=Attributes failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59265/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e8f7434c275eda453a744c8a9f07bec
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at KafkaGUI.KafkaClusterViewlet.ShowObjectAttributes(KafkaClusterViewlet.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>80</td>
+<td>KafkaGUI.KafkaClusterViewlet@16e7dcfd</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='KafkaGUI.KafkaClusterViewlet.AddManageACL()'><b>AddManageACL</b><br>Test class: KafkaGUI.KafkaClusterViewlet<br>Parameters: Kafka Cluster, ACLCluster, Topic, Literal, Test:Principal, localhost, Read, Allow, org.testng.TestRunner@50b0bc4c<br/>
+<a href="#Output-1548962651" onClick='toggleBox("Output-1548962651", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1548962651" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1548962651">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddManageACL.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>KafkaGUI.KafkaClusterViewlet@16e7dcfd</td></tr>
+<tr>
+<td title='KafkaGUI.KafkaClusterViewlet.AddToFavoriteViewlet()'><b>AddToFavoriteViewlet</b><br>Test class: KafkaGUI.KafkaClusterViewlet<br>Parameters: Kafka Cluster, Cluster Fav, org.testng.TestRunner@50b0bc4c<br/>
+<a href="#Output-1298975895" onClick='toggleBox("Output-1298975895", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1298975895" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1298975895">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>KafkaGUI.KafkaClusterViewlet@16e7dcfd</td></tr>
+<tr>
+<td title='KafkaGUI.KafkaClusterViewlet.ClusterTopology()'><b>ClusterTopology</b><br>Test class: KafkaGUI.KafkaClusterViewlet<br>Parameters: Kafka Cluster, org.testng.TestRunner@50b0bc4c<br/>
+<a href="#Output-1447685190" onClick='toggleBox("Output-1447685190", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1447685190" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1447685190">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ClusterTopology.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>55</td>
+<td>KafkaGUI.KafkaClusterViewlet@16e7dcfd</td></tr>
+<tr>
+<td title='KafkaGUI.KafkaClusterViewlet.Events()'><b>Events</b><br>Test class: KafkaGUI.KafkaClusterViewlet<br>Parameters: Kafka Cluster, org.testng.TestRunner@50b0bc4c<br/>
+<a href="#Output-2139266166" onClick='toggleBox("Output-2139266166", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2139266166" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2139266166">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Events.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>54</td>
+<td>KafkaGUI.KafkaClusterViewlet@16e7dcfd</td></tr>
+<tr>
+<td title='KafkaGUI.KafkaClusterViewlet.Login()'><b>Login</b><br>Test class: KafkaGUI.KafkaClusterViewlet<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, Kafka Cluster, 2, Kafka Cluster Viewlet<br/>
+<a href="#Output-1989332276" onClick='toggleBox("Output-1989332276", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1989332276" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1989332276">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>63</td>
+<td>KafkaGUI.KafkaClusterViewlet@16e7dcfd</td></tr>
+<tr>
+<td title='KafkaGUI.KafkaClusterViewlet.Logout()'><b>Logout</b><br>Test class: KafkaGUI.KafkaClusterViewlet<br>Parameters: Kafka Cluster</td>
+<td></td>
+<td>27</td>
+<td>KafkaGUI.KafkaClusterViewlet@16e7dcfd</td></tr>
+<tr>
+<td title='KafkaGUI.KafkaClusterViewlet.Properties()'><b>Properties</b><br>Test class: KafkaGUI.KafkaClusterViewlet<br>Parameters: Kafka Cluster, org.testng.TestRunner@50b0bc4c<br/>
+<a href="#Output-343128256" onClick='toggleBox("Output-343128256", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-343128256" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-343128256">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Properties.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>KafkaGUI.KafkaClusterViewlet@16e7dcfd</td></tr>
+<tr>
+<td title='KafkaGUI.KafkaClusterViewlet.RemoveACL()'><b>RemoveACL</b><br>Test class: KafkaGUI.KafkaClusterViewlet<br>Parameters: Kafka Cluster, ACLCluster, org.testng.TestRunner@50b0bc4c<br/>
+<a href="#Output-401862395" onClick='toggleBox("Output-401862395", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-401862395" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-401862395">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RemoveACL.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>KafkaGUI.KafkaClusterViewlet@16e7dcfd</td></tr>
+</table><p>
+</body>
+</html>

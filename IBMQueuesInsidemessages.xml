@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+  <test name="Browse Message Options">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+  <parameter name="Dashboardname" value="Queue Inside Messages"/>
+  <parameter name="ViewletName" value="Local Queue"/>
+  <parameter name="Queuemanager" value="MGR"/>
+  <parameter name="MessageData" value="Testing to add the new message into Queue"/>
+  <parameter name="ViewletValue" value="3"/>
+  
+  <parameter name="RouteTemplateName" value="RouteTemplate"/>
+  
+   
+     <classes>
+       <class name="ApodGUI.QueuesInsideBrowseMessages">
+       
+        <methods>
+       
+        <include name="Login"/>
+        <include name="PutAMessageUsingPutNewIcon"/> 
+        <include name="DeleteMessageUsingDeleteIcon"/>  
+        <include name="CopyMessageUsingCopyIcon"/>  
+        <include name="MoveMessageUsingMoveIcon"/>
+        <include name="EditMessageUsingEditIcon"/>  
+        <include name="LoadMessageFromFileUsingIcon"/> 
+        <include name="ExportSelectedMessageUsingExportIcon"/> 
+          
+        <include name="ViewMessage"/> 
+        <include name="EditMessageUsingEditOption"/>    
+        <include name="DeleteMessageUsingDeleteOption"/>  
+        <include name="CopyMessageUsingCopyOption"/>
+        <include name="MoveMessageUsingMoveOption"/>     
+        <include name="Logout"/> 
+        
+         </methods>          
+       </class>
+     </classes>
+   </test>
+  </suite>

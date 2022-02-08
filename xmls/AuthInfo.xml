@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Auth Info Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="AuthInfo Verification"/>
+    <parameter name="ViewletName" value="New AuthInfo Viewlet"/>
+    <parameter name="AuthinfoAttributes" value="Attributes"/>
+    <parameter name="ViewletValue" value="10"/>
+    
+    <parameter name="schemaName" value="AuthinfoSchema"/>
+    
+    <parameter name="FavoriteViewletName" value="AuthInfo Favorite viewlet"/>
+      
+     <classes>
+      <class name="ApodGUI.AuthorizationInfoViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddAuthInfoViewlet"/> 
+        <include name="ShowObjectAttributesForAuthInfo"/>
+        <include name="AuthInfoEvents"/> 
+        <include name="AddToFavoriteViewlet"/>  
+        <include name="CompareAuthInfo"/>  
+        <include name="CheckDifferencesForAuthInfos"/>
+        <include name="AddToFavoriteForMultipleAuthInfo"/>   
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

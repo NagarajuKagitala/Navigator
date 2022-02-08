@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Settings">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="password" value="admin"/>
+    <parameter name="Dashboardname" value="Settings Dashboard"/>
+    <parameter name="wgs" value="0"/>
+    <parameter name="FavoriteViewletName" value="Fav Viewlet"/>
+    <parameter name="Favwgs" value="0"/>
+    <parameter name="objpath1" value="\\MQM\DESKTOP-E1JT2VR"/>
+    <parameter name="objpath2" value="\\WGS10\DESKTOP-E1JT2VR"/>
+    
+    <parameter name="Manager1" value="M10"/>
+    <parameter name="Manager2" value="MGR"/>
+    <parameter name="Manager3" value="TEST"/>
+    <parameter name="Manager4" value="Testing"/>
+     
+     <classes>
+      <class name="ApodGUI.Settings">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="ShowInActiveChannelsCheckbox"/> 
+        <include name="ShowEmptyQueuesCheckbox"/>
+        <include name="ShowTemporaryDynamicQueues"/> 
+        <include name="ShowFullNamesForFavoriteShortcuts"/>
+        <include name="ShowFullNamesForSearchResultsObjects"/>  
+        <include name="ShowSystemObjectsOnly"/>
+        <include name="ShowObjectSearchresultsFromActiveManagersOnly"/>
+        <include name="ShowManagersForDefaultSchemas"/>  
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

@@ -1,0 +1,80 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+	<test name="WorkGroup server Viewlet">
+		<parameter name="sDriver" value="webdriver.chrome.driver" />
+		<parameter name="sDriverpath" value="Drivers/chromedriver.exe" />
+	   
+		<parameter name="ChangedHostName" value="WGS10" />
+		<parameter name="DeleteWGSName" value="WGS10"/>
+
+		<parameter name="ConnectionInstanceName" value="REMOTE_QMGRS" />
+		<parameter name="RemoteQueueManagerName" value="QMGR_NAME_DELETE" />
+		<parameter name="ConnectionName" value="127.0.0.1(4321)" />
+		<parameter name="CommandQueueName" value="SYSTEM.ADMIN.COMMAND.QUEUE" />
+		<parameter name="ChannelName" value="SYSTEM.DEF.SVRCONN" />
+		<parameter name="Node_NewConnectionName" value="127.0.0.1(1234)"/>
+
+		<parameter name="DeleteManagerName" value="QMGR_NAME_DELETE" />
+
+		<parameter name="AgentInstanceName" value="EMSAGENT01" />
+		<parameter name="ServerName" value="EMS-Server21" />
+		<parameter name="ServerURL" value="tcp://127.0.0.1:7221" />
+
+		<parameter name="UpdatedServerURL" value="tcp://127.0.0.1:7222" />
+		
+		<parameter name="ClusterName" value="ClusterDelete"/>
+		<parameter name="BootstrapServer" value="127.0.0.1:9369"/>
+		
+		<parameter name="UpdtedBootstrapServer" value="127.0.0.1:9876"/>
+		
+		<parameter name="CopyasClusterName" value="Cluster.Copy"/>
+		<parameter name="CopyasBootstrapServer" value="127.0.0.1:9864"/>
+		
+		
+		<parameter name="ConnectionName" value="MQM1"/>
+		<parameter name="Server" value="192.168.1.88"/>
+		<parameter name="PortNumber" value="8010"/>
+		<parameter name="UpdatedConnectionName" value="MQM2"/>
+		
+		<parameter name="schemaName" value="WGS Schema"/>
+
+
+		<classes>
+			<class name="ApodGUI.WorkgroupServer">
+
+
+				<methods>
+					<include name="Login" />
+				   <!--  <include name="AddWorkgroupFromPlusIcon" />   
+				    <include name="EditWorkgroup" />   
+				    <include name="DeleteWorkgroup" />  --> 
+				    <include name="ShowTopology"/> 
+				    <include name="DefaultConnection"/> 
+				    <include name="AddNode" />   
+				    <include name="AddRemoteQueueManager" />
+				    <include name="ModifyRemoteQueueManager" />  
+				    <include name="DeleteRemoteQueueManager" />    
+				    <include name="AddRemoteEMSManager" />
+					<include name="ModifyRemoteEMSServer" />
+				    <include name="DeleteRemoteEMSServer" />  
+				    <include name="AddRemoteKafkaManager"/>
+				    <include name="ModifyRemoteKafkaManager"/>
+				    <include name="CopyAsRemoteKafkaManager"/>
+				    <include name="DeleteRemoteKafkaManager"/> 
+				    
+				    <include name="AddWGSConnection"/>
+				    <include name="ModifyWGSConnection"/>
+				    <include name="DeleteWGSConnection"/>
+   
+				    <include name="WGSProperties"/>  
+					<include name="ShowObjectAttributes"/> 
+					<include name="SearchFilter" />   
+					<include name="Logout" />
+				</methods>
+
+			</class>
+		</classes>
+
+	</test>
+</suite> 

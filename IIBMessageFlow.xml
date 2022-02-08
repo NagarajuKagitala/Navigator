@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test IIB Message flow Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="IIB Message flow"/>
+    <parameter name="ViewletName" value="New IIB Message flow Viewlet"/>
+    <parameter name="AuthinfoAttributes" value="Attributes"/>
+    <parameter name="ViewletValue" value="8"/>
+    
+    <parameter name="schemaName" value="MessageflowSchema"/>
+    <parameter name="FavoriteViewletName" value="Message flow Favorite viewlet"/>
+          
+     <classes>
+      <class name="IIB.IIBMessageFlowViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddIIBMessageFlowViewlet"/> 
+        <include name="ShowObjectAttributesForIIBMessageFlow"/>  
+        <include name="AddToFavoriteViewlet"/> 
+        <include name="CompareMessageFlows"/>
+        <include name="CheckDifferencesForMessageFlows"/>
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

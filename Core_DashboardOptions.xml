@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Dashboard functions">
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+       
+    <parameter name="Dashboardname" value="Dashboard Verficaton"/>
+       
+    <parameter name="EMSDashboardname" value="EMS Dashboard"/>
+        
+    <parameter name="NewDashboardName" value="DashboardRenamed"/>
+               
+     <classes>
+      <class name="NavigatorCore.DashboardOptions">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="CreateWGSDashboard"/>
+        <include name="CreateEMSDashboard"/>
+        <include name="SetAsDeafaultOption"/> 
+        <include name="SetASDefaultTemplate"/>
+        <include name="RenameDashboard"/>  
+        <include name="DeleteDashboardUsingCrossIcon"/>  
+        <include name="DeleteDashboardUsingDeleteOption"/>
+        <include name="RemoveDashboardUsingOption"/>
+       
+        <include name="Logout"/>  
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

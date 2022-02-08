@@ -1,0 +1,68 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Topic Viewlet">
+     <parameter name="sDriver" value="webdriver.chrome.driver"/>
+     <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="TopicViewlet Verification"/>
+    <parameter name="wgs" value="1"/>
+    <parameter name="ViewletName" value="New Topic Viewlet"/>
+    <parameter name="DurableViewletName" value="Durable Viewlet"/>
+    <parameter name="ViewletValue" value="5"/>
+    
+    <parameter name="schemaName" value="TopicSchema"/>  
+     
+    <parameter name="EMSDnode" value="EMSAGENT"/>
+    <parameter name="EMSDestinationManager" value="EMS-SERVER"/> 
+    <parameter name="DeleteTopicNameFromIcon" value="EMS.TOPIC.ICON"/>
+    <parameter name="CopyObjectName" value=".Copy"/>
+    
+    <parameter name="PublishTopicNameFromIcon" value="EMS.TOPIC.PUBLISH2"/>
+    <parameter name="DurableName" value="TopicPublish.Durable"/>
+    <parameter name="MessageData" value="Test the publish option and sending the message to queue"/>
+    <parameter name="PropertyName" value="Test Property"/>
+    <parameter name="PropertyValue" value="Test Property value"/>
+    
+    <parameter name="FavoriteViewletName" value="Favorite Viewlet for Topic"/>
+    
+    <parameter name="CopyObjectNameForMultiple" value="SYSTEM.TEST.TOPIC.COPY3"/>
+    
+    <parameter name="AddSubscriptionNameforMultiple" value="Test.Multiple.Sub423"/>
+    <parameter name="MessageDataForMultiple" value="Add Message into the destination queue"/>
+    <parameter name="PropertyNameForMultiple" value="Test"/>
+    <parameter name="PropertyValueForMultiple" value="Test"/>
+    <parameter name="DestinationTopicName" value="SYSTEM.ADMIN.TOPIC3"/>
+  
+   
+     <classes>
+      <class name="EMS.EMSTopic">
+       
+       <methods>
+       
+        <include name="Login"/>
+       
+        <include name="ShowObjectAttributesForTopic"/>   
+        <include name="CreateTopicFromPlusIcon"/>
+        <include name="CopyAsFromCommands"/>
+        <include name="DeleteFromCommands"/>
+        <include name="EMSTopicPublish"/> 
+        <include name="TopicPurge"/>
+        <include name="TopicProperties"/> 
+        <include name="TopicEvents"/>  
+        <include name="AddToFavoriteViewlet"/>    
+ 
+     <!--   <include name="CopyAsFromCommandsForMultipleTopics"/>
+        <include name="DeleteFromCommandsForMultipleTopics"/>  
+        <include name="PublishFromCommandsForMultipleTopics"/>  -->
+        <include name="MultipleProperties"/>  
+        <include name="AddToFavoriteForMultipleTopics"/>  
+      
+        <include name="Logout"/>   
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

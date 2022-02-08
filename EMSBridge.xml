@@ -1,0 +1,55 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Bridge Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="password" value="admin"/>
+    <parameter name="Dashboardname" value="BridgeViewlet Verification"/>
+    <parameter name="wgs" value="1"/>
+    
+    <parameter name="ViewletName" value="New Bridge Viewlet"/>
+    <parameter name="WGSName" value="WGS10 - 1"/>
+    <parameter name="ViewletValue" value="8"/>
+    
+    <parameter name="DeleteBridgeName" value="topic:EMS.Topic1:topic:EMS.Topic2"/>
+    
+    <parameter name="schemaName" value="BridgeSchema"/>
+    
+    <parameter name="SelectorInput" value="BridgeSelector1234"/>
+        
+    <parameter name="FavoriteViewletName" value="Bridge Favorite viewlet"/>
+    <parameter name="Favwgs" value="1"/>
+    
+    <parameter name="SourceTypevalue" value="Queue"/>
+    <parameter name="SourceName" value="New Queue"/>
+    <parameter name="TargetType" value="Topic"/>
+    <parameter name="TargetName" value="EMS-Topic"/>
+
+  
+     <classes>
+      <class name="EMS.BridgeViewlet">
+      <methods>
+      
+        <include name="Login"/>
+        <include name="AddBridgeViewlet"/> 
+        <include name="ShowObjectAttributesForBridge"/>      
+        <include name="AddBridgeFromPlusIcon"/>
+        <include name="DeleteCommand"/>
+        <include name="Properties"/>
+        <include name="BridgeEvents"/> 
+        <include name="AddToFavoriteViewlet"/>  
+        <include name="CompareBridges"/>  
+        <include name="CheckDifferencesForBridges"/>
+        <include name="MultipleBridgeProperties"/>   
+        <include name="AddToFavoriteForMultipleBridges"/>    
+        <include name="Logout"/> 
+      
+      </methods>
+            
+       </class>
+     </classes>
+ </test>
+</suite>

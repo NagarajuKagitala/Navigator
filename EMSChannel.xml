@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test EMS Channel Viewlet">
+ <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="password" value="admin"/>
+    <parameter name="Dashboardname" value="EMS Channel Verification"/>
+    <parameter name="wgs" value="1"/>
+    <parameter name="ViewletName" value="EMS Channel Viewlet"/>
+    <parameter name="WGSName" value="WGS10 - 1"/>
+    
+    <parameter name="FavoriteViewletName" value="Favorite for Channels"/>
+    <parameter name="Favwgs" value="1"/>
+    
+    <parameter name="schemaName" value="ChannelSchema"/>
+    <parameter name="ViewletValue" value="4"/>
+      
+     <classes>
+      <class name="EMS.EMSChannels">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="ShowObjectAttributes"/>   
+        <include name="Events"/>
+        <include name="AddToFavorites"/>  
+        <include name="ComapareChannels"/>
+        <include name="CheckDifferencesForEMSChannels"/>
+        <include name="AddToFavoriteForMultipleChannels"/>  
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

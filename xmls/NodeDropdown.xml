@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Manager Viewlet">
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+    <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="password" value="admin"/>
+    
+    <parameter name="Dashboardname" value="NodeMessage"/>
+    
+    <parameter name="wgs" value="WGS10 - 1"/>
+   
+   
+      
+     <classes>
+      <class name="ApodGUI.NodeDropdown">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="NodeDrodownlist"/> 
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+ 
+ </suite>

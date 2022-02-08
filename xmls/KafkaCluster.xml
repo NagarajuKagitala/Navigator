@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test kafka Cluster Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="Kafka Cluster"/>
+    <parameter name="ViewletName" value="Kafka Cluster Viewlet"/>
+    <parameter name="ViewletValue" value="2"/>
+    <parameter name="SchemaName" value="Schema"/>
+    <parameter name="FavoriteViewletName" value="Cluster Fav"/>  
+    
+    <parameter name="ResourceName" value="ACLCluster"/>
+    <parameter name="ResourceType" value="Topic"/>
+    <parameter name="ResourcePattern" value="Literal"/>
+    <parameter name="EntryPricipal" value="Test:Principal"/>
+    <parameter name="Host" value="localhost"/>
+    <parameter name="Operation" value="Read"/>
+    <parameter name="PermissionType" value="Allow"/>
+     
+     <classes>
+      <class name="KafkaGUI.KafkaClusterViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="ShowObjectAttributes"/>     
+        <include name="Properties"/> 
+        <include name="Events"/>
+        <include name="AddToFavoriteViewlet"/>  
+        <include name="AddManageACL"/>
+        <include name="RemoveACL"/>  
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Queue Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="password" value="admin"/>
+    
+    <parameter name="Dashboardname" value="QueuesProperties"/>
+    <parameter name="ViewletName" value="Local Queue"/>
+    <parameter name="ViewletValue" value="3"/>
+    
+    <parameter name="PutMessageOption" value="Inhibited"/>
+    <parameter name="GetMessageOption" value="Inhibited"/>
+    <parameter name="Managername" value="Manager viewlet"/>
+    <parameter name="Channelname" value="Channel Viewlet"/>
+    
+    <parameter name="messagesize" value="4"/>
+    <parameter name="length" value="1"/>
+    <parameter name="MessageData" value="Test maximum depth functionality"/>
+    <parameter name="MessageLength" value="Test the message length functionality which has more than the maximum length. Test the navigator message length"/>
+      
+     <classes>
+      <class name="ApodGUI.QueueProperties">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="PutMessageInInhibitedQueue"/>  
+        <include name="GetMessageFromInhibitedQueue"/>  
+        <include name="MaximumQueueDepth"/> 
+        <include name="MessageLength"/>
+       <!--  <include name="MQStatisticsForManager"/> 
+        <include name="QueueStatistics"/> 
+        <include name="MQStatisticsForChannels"/>   -->
+       
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

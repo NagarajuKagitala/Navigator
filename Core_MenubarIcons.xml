@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Menu bar icons">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+  <parameter name="SecurityManagerURLLocal" value="http://localhost:8080/apodwsm/"/>
+  <parameter name="SecurityManagerURL" value="http://jenkins.nastel.com:8080/apodwsm/"/>
+  <parameter name="HelpURL" value="https://customers.nastel.com/hc/en-us/categories/360002068774-Nastel-Navigator"/>
+    
+      
+     <classes>
+      <class name="NavigatorCore.MenuBarIcons">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="LoginUsername"/> 
+        <include name="RequestHistoryIcon"/> 
+        <include name="SchedularIcon"/>
+        <include name="SchedularColumnbutton"/>
+        <include name="SecurityManagerIcon"/>
+        <include name="HelpIcon"/>
+        <include name="AboutIcon"/>
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

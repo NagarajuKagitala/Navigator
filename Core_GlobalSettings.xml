@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Global settings">
+ <test name="Global settings">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="GlobalNoticedata" value="Testing Global Notice Using Automation"/>
+    <parameter name="EnvironmentData" value="Testing Environment Text"/>
+    <parameter name="UpdatedEnvironmentData" value="New Environment data"/>
+    <parameter name="ViewletValue" value="3"/>
+    
+     <classes>
+      <class name="NavigatorCore.GlobalSettings">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="GlobalNotice"/> 
+        <include name="EnvironmentLevel"/> 
+        <include name="UpdateEnvironmentLevel"/>
+        <include name="DeleteEnvironmentLevel"/>
+        <include name="Logout"/>
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

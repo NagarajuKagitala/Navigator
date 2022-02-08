@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="EMS Queue Message Options">
+     <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="password" value="admin"/>
+   
+    <parameter name="Dashboardname" value="EMS Queues Messages"/>
+    <parameter name="wgs" value="1"/>
+    <parameter name="ViewletName" value="EMS Local Queue"/>
+    <parameter name="WGSName" value="WGS10 - 1"/>
+    <parameter name="DownloadPath" value="F:\Navigator Exported Messages\From Main"/>
+    <parameter name="MessageData" value="Put the message from Main options"/>
+    <parameter name="HexMessageData" value="10C20000E0A5E6F6FDFFE0AEE00FE6FCFDFFE6FD93"/>
+    <parameter name="ViewletValue" value="3"/>
+      
+     <classes>
+      <class name="EMS.EMSQueueMessages">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="PutNewMessageIntoQueue"/>   
+        <include name="LoadFromFileUsingYesbutton"/> 
+        <include name="LoadFromFileUsingConfigurebuttonWithSingleMessage"/>
+        <include name="LoadFromFileUsingConfigurebuttonWithMultipleMessages"/> 
+        <include name="ExportAllMessages"/> 
+        <include name="CopyAllMessagesFromOneQueueToAnotherQueue"/> 
+        <include name="MoveAllMessagesFromOneQueueToAnotherQueue"/> 
+        <include name="DeleteAllMessagesFromQueue"/>   
+        <include name="ClearAllMessagesFromQueue"/>  
+        <include name="PutMessageUsingJsonFile"/>
+        <include name="PutMessageUsingXMLFile"/>  
+        <include name="PutHexMessageIntoQueue"/>   
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

@@ -1,0 +1,76 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Topic Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="TopicViewlet Verification"/>
+    <parameter name="Topicname" value="New Topic Viewlet"/>
+    <parameter name="schemaName" value="TopicSchema"/>    
+    
+    <parameter name="TopicNameFromOptions" value="SYSTEM.DEFAULT.TOPIC.OPTIONS1"/>
+    <parameter name="Description" value="Test the description "/>
+    <parameter name="TopicUniquestring" value="nastel3"/>
+    
+    <parameter name="TopicUniquestringForCopyAs" value="TestCopy"/>
+    <parameter name="CopyObjectName" value=".Copy"/>
+    
+    <parameter name="MessageData" value="Test the publish option and sending the message to queue"/>
+    <parameter name="PropertyName" value="Test Property"/>
+    <parameter name="PropertyValue" value="Test Property value"/>
+    
+    <parameter name="FavoriteViewletName" value="Favorite Viewlet for Topic"/>
+    
+    <parameter name="TopicNameFromIcon" value="SYSTEM.DEFAULT.TOPIC.ICON1"/>
+    <parameter name="DescriptionFromIcon" value= "Description"/>
+    <parameter name="TopicUniquestringFromICon" value="UniqueName2"/>
+    <parameter name="TopicUniquestringForMultipleCopy" value="UniqueNameCopy"/>
+    
+    <parameter name="CopyObjectNameForMultiple" value="TOPIC.COPY.MULTIPLE"/>
+    
+    <parameter name="AddSubscriptionNameforMultiple" value="Test.Multiple.Sub421"/>
+    <parameter name="MessageDataForMultiple" value="Add Message into the destination queue"/>
+    <parameter name="PropertyNameForMultiple" value="Test"/>
+    <parameter name="PropertyValueForMultiple" value="Test"/>
+    
+    <parameter name="MultipleDescription" value="Test Multiple Topics Description"/>
+    <parameter name="Communicationinfo" value="Test Communication"/>
+    
+     <parameter name="AddSubscriptionName" value="Test.Sub421"/>
+      
+     <classes>
+      <class name="ApodGUI.TopicViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddTopicViewlet"/> 
+        <include name="ShowTopicStatus"/>
+        <include name="ShowObjectAttributesForTopic"/>    
+        <include name="CreateTopic"/> 
+        <include name="CopyAsFromCommands"/>
+        <include name="DeleteFromCommands"/>   
+        <include name="MQSCSnapshot"/>
+        <include name="SaveTopicSnapshot"/>
+        <include name="TopicProperties"/> 
+        <include name="TopicEvents"/>   
+        <include name="AddToFavoriteViewlet"/>    
+        <include name="CreateTopicFromPlusIcon"/>  
+        
+        <include name="CompareTopics"/> 
+        <include name="CheckDifferencesForTopics"/>  
+        <include name="CopyAsFromCommandsForMultipleTopics"/>
+        <include name="DeleteFromCommandsForMultipleTopics"/>   
+        <include name="MultipleProperties"/>  
+        <include name="AddToFavoriteForMultipleTopics"/>     
+        <include name="Logout"/> 
+        
+        
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

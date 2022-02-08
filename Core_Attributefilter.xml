@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+  <test name="Attribute Filter Condition">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+ 
+  <parameter name="Dashboardname" value="Attribute Filter Dashboard"/>
+  <parameter name="ViewletName" value="Queue Viewlet"/>
+  <parameter name="ViewletValue" value="3"/>
+  
+  <parameter name="ConditionName" value="Test Condtition"/>
+  <parameter name="AttributeName" value="Maximum Depth"/>
+  <parameter name="CompareOperation" value="is equal"/>
+  <parameter name="ConditionData" value="5000"/>
+  <parameter name="RowValue" value="Maximum Depth"/>
+     
+     <classes>
+       <class name="NavigatorCore.AttributeFilterCondition">
+       
+          <methods>
+            <include name="Login"/>
+            <include name="AddDashboard"/>
+            <include name="AddAttributeFilterCondition"/>
+            <include name="Logout"/>
+          </methods> 
+          
+       </class>
+     </classes>
+  </test>
+  </suite>

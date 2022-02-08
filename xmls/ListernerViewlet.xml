@@ -1,0 +1,65 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Listener Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="Listener Viewlet Verification"/>
+    <parameter name="ViewletName" value="New Listener Viewlet"/>
+    <parameter name="schemaName" value="ListnerSchema"/>
+    <parameter name="ViewletValue" value="7"/>
+    
+    <parameter name="ListenerName" value="Test.Listener.First1"/>
+    <parameter name="Description" value="Description from Options"/>
+    
+    <parameter name="CopyObjectName" value=".Copy"/>
+    
+    <parameter name="RenameListener" value="Test.Listener.First1.Rename"/>
+    
+    <parameter name="FavoriteViewletName" value="Favorite Viewlet for Listener"/>
+   
+    <parameter name="ListenerNameFromICon" value="Test.Listener.Icon"/>
+    <parameter name="DescriptionFromIcon" value="Icon Description"/>
+    
+    <parameter name="CopyObjectNameForMUltiple" value="Test.Multi.Copy"/>
+    <parameter name="RenameListenerForMultiple" value="Test.Listener.Multi.Rename"/>
+    
+    <parameter name="ListenerDescription" value="Multiple properties"/>  
+ 
+     <classes>
+      <class name="ApodGUI.ListenerViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddListenerViewlet"/> 
+        <include name="ShowObjectAttributesForListener"/>   
+        <include name="CreateListener"/>
+       <!--  <include name="StartListener"/>
+        <include name="StopListener"/>  -->
+        <include name="CopyAsFromCommands"/>
+        <include name="RenameFromCommands"/>
+        <include name="DeleteFromCommands"/>   
+        <include name="ListenerProperties"/>  
+        <include name="ListenerEvents"/>    
+        <include name="AddToFavoriteViewlet"/> 
+         
+        <include name="CompareListeners"/>
+        <include name="CheckDifferencesForListeners"/> 
+        <include name="CreateListenerFromPlusIcon"/>  
+       <!--  <include name="StartListenerForMultiple"/>
+        <include name="StopListenerForMultiple"/> -->
+        <include name="CopyAsFromCommandsForMultiple"/>
+        <include name="RenameFromCommandsForMultiple"/>
+        <include name="DeleteFromCommandsForMultiple"/>   
+        <include name="ListenerMultipleProperties"/>   
+        <include name="AddToFavoriteForMultipleListeners"/>  
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

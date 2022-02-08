@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Testing Viewlet Filters]">
+  <test name="Viewlet filters reports(failed)">
+    <parameter name="ViewletName" value="Queues Viewlest"/>
+    <parameter name="Dashboardname" value="Viewlet Filters"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+    <parameter name="ConditionName" value="AttributeCon"/>
+    <parameter name="CompareOperation" value="is equal"/>
+    <parameter name="ViewletValue" value="3"/>
+    <classes>
+      <class name="NavigatorCore.ViewletFilterOptions">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="ManagerFilter" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- NavigatorCore.ViewletFilterOptions -->
+    </classes>
+  </test> <!-- Viewlet filters reports(failed) -->
+</suite> <!-- Failed suite [Testing Viewlet Filters] -->

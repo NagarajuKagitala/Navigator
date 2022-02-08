@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Transport Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="password" value="admin"/>
+    <parameter name="Dashboardname" value="TransportViewlet Verification"/>
+    <parameter name="wgs" value="1"/>
+    
+    <parameter name="ViewletName" value="New Transport Viewlet"/>
+    <parameter name="WGSName" value="WGS10 - 1"/>
+    <parameter name="ViewletValue" value="7"/>
+    
+    <parameter name="schemaName" value="TransportSchema"/>
+    
+    <parameter name="FavoriteViewletName" value="Transport Favorite viewlet"/>
+    <parameter name="Favwgs" value="1"/>
+
+  
+     <classes>
+      <class name="EMS.TransportViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddTransportViewlet"/> 
+        <include name="ShowObjectAttributesForTransport"/>
+        <include name="Properties"/>
+        <include name="TransportEvents"/>  
+        <include name="AddToFavoriteViewlet"/>   
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

@@ -1,0 +1,75 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Queue Viewlet">
+ 
+ <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="password" value="admin"/>
+    
+    <parameter name="Dashboardname" value="QueuesViewlet Verification"/>
+    <parameter name="ViewletName" value="Local Queue"/>
+    <parameter name="ViewletValue" value="3"/>
+    
+    <parameter name="schemaName" value="QueueSchema"/>
+    
+    <parameter name="QueueNameFromOptions" value="ABCTest"/>
+    <parameter name="QueueDescriptionFromOptions" value="Description of Queue from options"/>
+    
+    <parameter name="QueueName" value="Add.New.Queue"/>
+    <parameter name="QueueDescription" value="Test the Queue"/>
+    
+    <parameter name="ObjectName" value="Copy"/>
+    <parameter name="ObjectDescription" value="TesttheobjectDescription"/>
+    <parameter name="RenameQueue" value="RENAMEQUEUE"/>
+    
+     <parameter name="FavoriteViewletName" value="Queues Add to favorite"/>
+     
+     <parameter name="TestDescription" value="Multiple Description"/>
+     
+     <parameter name="CopyAsNameForMultiple" value="MultipleQueues.Copy"/>
+     <parameter name="ObjectDescriptionForMultiples" value="Multiple queues copy as"/>
+     <parameter name="ReameForMultiple" value="RENAMEMULTIQUEUES"/>
+     
+    <classes>
+      <class name="ApodGUI.QueuesViewlet">
+      
+      
+      <methods>
+      
+        <include name="Login"/>
+        <include name="BrowseMessages"/>  
+        <include name="ShowObjectAttributesForQueues"/> 
+        <include name="ShowQueueStatus"/> 
+        <include name="CreateQueueFromOptions"/>  
+        <include name="CopyAsQueueCommands"/> 
+        <include name="RenameQueueFromCommandsOption"/>
+        <include name="DeleteQueueFromCommandsOption"/>
+        <include name="InhibitGetFromCommands"/>
+        <include name="InhibitPutFromCommands"/>
+        <include name="MQSCSnapshot"/>
+        <include name="SaveMQSCSnapshot"/> 
+        <include name="QueueProperties"/>
+        <include name="QueueEvents"/> 
+        <include name="AddToFavoriteViewlet"/>  
+         
+        <include name="CompareQueues"/> 
+        <include name="CheckDifferencesForQueues"/> 
+        <include name="ShowQueueStatusForMultipleQueues"/>    
+        <include name="AddQueueFromPlusIcon"/>     
+        <include name="CopyAsForMultipleQueues"/> 
+        <include name="RenameForMultipleQueues"/>
+        <include name="DeleteMultipleQueues"/> 
+        <include name="MultipleQueueProperties"/> 
+        <include name="AddToFavoriteForMultipleQueues"/> 
+        <include name="SearchFilter"/>   
+        <include name="Logout"/>  
+
+ 
+   </methods>
+  </class>
+  </classes>
+  </test>
+</suite>

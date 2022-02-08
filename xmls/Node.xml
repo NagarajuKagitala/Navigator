@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+	<test name="Test Node Viewlet">
+		<parameter name="sDriver" value="webdriver.chrome.driver" />
+		<parameter name="sDriverpath" value="Drivers/chromedriver.exe" />
+		<parameter name="URL" value="/navigator/#/login" />
+		<parameter name="uname" value="Admin" />
+		<parameter name="password" value="admin" />
+
+		<parameter name="NodeDashboardname" value="Node Dashboard"/>
+		<parameter name="ViewletName" value="Node viewlet"/>
+		<parameter name="ViewletValue" value="1"/>		
+		<parameter name="Description" value="Test Manager From options" />
+
+		<parameter name="Dashboardname" value="Favorite viewlet" />
+		<parameter name="FavoriteViewletName" value="Add Node into Favorite" />
+		<parameter name="Favwgs" value="0" />
+		
+		<parameter name="SchemaName" value="NodeSchema" />
+
+		<classes>
+			<class name="ApodGUI.NodeViewlet">
+
+				<methods>
+					<include name="Login"/>
+				    <include name="ShowObjectAttributesforNode"/>
+					<include name="ShowTopology"/> 
+				    <include name="NodeEvents"/>  
+				    <include name="ManageAndUnmanageNode"/>
+				    <include name="DiscoverNow"/>
+					<include name="PropertiesOfNode"/> 
+					<include name="CreateNodeUsingIcon"/>
+				   <!--  <include name="CompareTwoNodes"/>
+					<include name="CheckDifferencesForNodes"/>  -->
+					<include name="DeleteNode"/>
+				    <include name="SearchFilter"/>  
+					
+					<include name="CreateQueueManagerFromNodeViewletOptions"/>   
+					<include name="Logout"/>
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

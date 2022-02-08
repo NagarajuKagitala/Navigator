@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddNewDashboard.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddSchema.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteSchema.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddAllAttributesButton.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RemoveAllAttributesButton.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddAttributesButton.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RemoveAttributeButton.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveToTopButton.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveToBottomButton.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveUpButton.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveDownButton.png" alt="""/" />]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-02-08T06:31:37Z" name="Add a Schema" finished-at="2022-02-08T06:36:16Z" duration-ms="278530">
+    <groups>
+    </groups>
+    <test started-at="2022-02-08T06:31:37Z" name="Add Schema Condition" finished-at="2022-02-08T06:36:16Z" duration-ms="278530">
+      <class name="NavigatorCore.AddSchemaToTheViewlet">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:01:37Z" name="beforeTest" finished-at="2022-02-08T12:01:37Z" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:01:37Z" name="Login" finished-at="2022-02-08T12:02:16Z" duration-ms="39204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.chrome.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Drivers/chromedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:02:16Z" name="tearDown" finished-at="2022-02-08T12:02:17Z" duration-ms="379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=AddSchemaToTheViewlet.Login(java.lang.String, java.lang.String)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="AddNewDashboard(java.lang.String, int, java.lang.String, org.testng.ITestContext)[pri:1, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:02:17Z" name="AddNewDashboard" finished-at="2022-02-08T12:03:09Z" duration-ms="52542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Schema]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Schema buttons]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddNewDashboard.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddNewDashboard -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:03:12Z" name="tearDown" finished-at="2022-02-08T12:03:15Z" duration-ms="3408" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddNewDashboard status=SUCCESS method=AddSchemaToTheViewlet.AddNewDashboard(java.lang.String, int, java.lang.String, org.testng.ITestContext)[pri:1, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="AddSchema(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:2, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:03:15Z" name="AddSchema" finished-at="2022-02-08T12:03:50Z" duration-ms="34026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Manager Name,Usage,Scope,Get Messages]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Manager Name]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test Schema]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddSchema.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddSchema -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:03:51Z" name="tearDown" finished-at="2022-02-08T12:03:52Z" duration-ms="1599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddSchema status=SUCCESS method=AddSchemaToTheViewlet.AddSchema(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:2, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="DeleteSchema(java.lang.String, org.testng.ITestContext)[pri:3, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:03:52Z" name="DeleteSchema" finished-at="2022-02-08T12:04:10Z" duration-ms="17541" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Schema]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteSchema.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DeleteSchema -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:11Z" name="tearDown" finished-at="2022-02-08T12:04:13Z" duration-ms="1419" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteSchema status=SUCCESS method=AddSchemaToTheViewlet.DeleteSchema(java.lang.String, org.testng.ITestContext)[pri:3, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="AddAllAttributesButton(org.testng.ITestContext)[pri:4, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:13Z" name="AddAllAttributesButton" finished-at="2022-02-08T12:04:23Z" duration-ms="10526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddAllAttributesButton.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddAllAttributesButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:24Z" name="tearDown" finished-at="2022-02-08T12:04:26Z" duration-ms="1600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddAllAttributesButton status=SUCCESS method=AddSchemaToTheViewlet.AddAllAttributesButton(org.testng.ITestContext)[pri:4, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="RemoveAllAttributesButton(java.lang.String, org.testng.ITestContext)[pri:5, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:26Z" name="RemoveAllAttributesButton" finished-at="2022-02-08T12:04:33Z" duration-ms="7237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[In order to create schema atleast one attribute has to be added]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RemoveAllAttributesButton.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RemoveAllAttributesButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:35Z" name="tearDown" finished-at="2022-02-08T12:04:36Z" duration-ms="1594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RemoveAllAttributesButton status=SUCCESS method=AddSchemaToTheViewlet.RemoveAllAttributesButton(java.lang.String, org.testng.ITestContext)[pri:5, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="AddAttributesButton(java.lang.String, org.testng.ITestContext)[pri:6, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:36Z" name="AddAttributesButton" finished-at="2022-02-08T12:04:43Z" duration-ms="7238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Manager Name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddAttributesButton.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddAttributesButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:45Z" name="tearDown" finished-at="2022-02-08T12:04:46Z" duration-ms="1595" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddAttributesButton status=SUCCESS method=AddSchemaToTheViewlet.AddAttributesButton(java.lang.String, org.testng.ITestContext)[pri:6, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="RemoveAttributeButton(java.lang.String, org.testng.ITestContext)[pri:7, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:46Z" name="RemoveAttributeButton" finished-at="2022-02-08T12:05:02Z" duration-ms="15338" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[In order to create schema atleast one attribute has to be added]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RemoveAttributeButton.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RemoveAttributeButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:03Z" name="tearDown" finished-at="2022-02-08T12:05:05Z" duration-ms="1599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RemoveAttributeButton status=SUCCESS method=AddSchemaToTheViewlet.RemoveAttributeButton(java.lang.String, org.testng.ITestContext)[pri:7, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="MoveToTopButton(org.testng.ITestContext)[pri:8, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:05Z" name="MoveToTopButton" finished-at="2022-02-08T12:05:06Z" duration-ms="1353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveToTopButton.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MoveToTopButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:08Z" name="tearDown" finished-at="2022-02-08T12:05:09Z" duration-ms="1594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MoveToTopButton status=SUCCESS method=AddSchemaToTheViewlet.MoveToTopButton(org.testng.ITestContext)[pri:8, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="MoveToBottomButton(org.testng.ITestContext)[pri:9, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:09Z" name="MoveToBottomButton" finished-at="2022-02-08T12:05:13Z" duration-ms="4319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveToBottomButton.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MoveToBottomButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:15Z" name="tearDown" finished-at="2022-02-08T12:05:17Z" duration-ms="1598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MoveToBottomButton status=SUCCESS method=AddSchemaToTheViewlet.MoveToBottomButton(org.testng.ITestContext)[pri:9, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="MoveUpButton(org.testng.ITestContext)[pri:10, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:17Z" name="MoveUpButton" finished-at="2022-02-08T12:05:24Z" duration-ms="7249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveUpButton.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MoveUpButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:25Z" name="tearDown" finished-at="2022-02-08T12:05:27Z" duration-ms="1603" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MoveUpButton status=SUCCESS method=AddSchemaToTheViewlet.MoveUpButton(org.testng.ITestContext)[pri:10, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="MoveDownButton(org.testng.ITestContext)[pri:11, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:27Z" name="MoveDownButton" finished-at="2022-02-08T12:05:39Z" duration-ms="12308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveDownButton.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MoveDownButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:41Z" name="tearDown" finished-at="2022-02-08T12:05:42Z" duration-ms="1387" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MoveDownButton status=SUCCESS method=AddSchemaToTheViewlet.MoveDownButton(org.testng.ITestContext)[pri:11, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Logout(java.lang.String)[pri:12, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:42Z" name="Logout" finished-at="2022-02-08T12:06:16Z" duration-ms="33393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Schema]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:06:16Z" name="tearDown" finished-at="2022-02-08T12:06:16Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Logout status=SUCCESS method=AddSchemaToTheViewlet.Logout(java.lang.String)[pri:12, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- NavigatorCore.AddSchemaToTheViewlet -->
+    </test> <!-- Add Schema Condition -->
+  </suite> <!-- Add a Schema -->
+</testng-results>

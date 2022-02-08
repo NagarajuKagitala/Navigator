@@ -1,0 +1,353 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator" verbose="1">
+    <!-- This parameter will be passed to every test in this suite -->
+    <parameter name="suite-param" value="suite level parameter" />
+    <test name="Add Workgroup From PlusIcon">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="AddWorkgroupFromPlusIcon" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+     <test name="Edit Workgroup">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="EditWorkgroup" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+     <test name="Delete Workgroup">
+    <parameter name="result" value="5" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="DeleteWorkgroup" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+     <test name="Add Node">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="AddNode" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+     <test name="Add Remote Queue Manager">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="AddRemoteQueueManager" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+      <test name="Modify Remote Queue Manager">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="ModifyRemoteQueueManager" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+      <test name="Delete Remote Queue Manager">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="DeleteRemoteQueueManager" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="SearchFilter Workgroup">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="SearchFilter" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Add Remote Queue Manager 19564">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="AddRemoteQueueManager19564" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+      <test name="Attribute filetr 18725">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="Attributefiletr" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+     <test name="Auto Login 19862">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="LoginUser" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Channel Properties 19729">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="ChannelProperties19729" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Data Limit OffSet 19344">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="DataLimitOffSet19344" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="DatePicker 19570">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="DatePicker19570" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="EMS Channels 18790">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="EMSChannels18790" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+     <test name="EMS Start and Stop 19262">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="EMSStartandStop19262" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+       <test name="Export Messages Text19715">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="ExportMessagesText19715" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+     <test name="Extend Session Window 19569">
+    <parameter name="result" value="4" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="ExtendSessionWindow19569" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    
+     <test name="ManagerOptions 19787">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="ManagerOptions19787" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+     <test name="Message Length Field 19678">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="MessageLengthField19678" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+     <test name="Node Dropdown 18508">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="NodeDropdown18508" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+     <test name="Node InsteadOf Manager 20002">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="NodeInsteadOfManager20002" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Put new message 19733">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="Putmessage19733" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Renew Token 19411">
+    <parameter name="result" value="4" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="RenewToken19411" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Schedule View 19595">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="ScheduleView19595" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Start and Stop Listener 18772">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="StartandStopListener18772" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+     <test name="Listener Atrributes Edit 18419">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="ListenerAtrributes_Edit_18419" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Listening Port 19426">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="ListeningPort_19426" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Default Audit Profile 20008">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="DefaultAuditProfile_20008" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="EMS Admin Roles_19996">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="EMSAdminRoles_19996" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Manager Name Under Server Group 20012">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="ManagerNameUnderServerGroup_20012" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Navigator Features 20031">
+    <parameter name="result" value="1" />
+        <classes>
+            <class name="ApodGUI.TestCaseScripts">
+                <methods>
+                    <include name="NavigatorFeatures_20031" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

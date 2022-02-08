@@ -1,0 +1,90 @@
+{
+  "timestamp" : 1643379501899,
+  "timestampUTC" : 1643379501913,
+  "reportURL" : null,
+  "deviceReportsURL" : null,
+  "totalScore" : 5864.502663294939,
+  "uploadStatus" : "public",
+  "categoriesOverview" : {
+    "CUSTOM" : {
+      "score" : 5864.502663294939,
+      "gcCallsCount" : 0,
+      "gcTime" : 0
+    }
+  },
+  "environmentSettings" : {
+    "userDefinedProperties" : { },
+    "unclassifiedProperties" : {
+      "performanceGarbageCollectors" : [ "PS Scavenge", "PS MarkSweep" ],
+      "performanceJvmRuntimeParameters" : [ "-Dfile.encoding=Cp1252" ]
+    }
+  },
+  "benchmarkSettings" : {
+    "benchWarmUpIteration" : 1,
+    "benchForkCount" : 1,
+    "benchSource" : "Eclipse Mars plugin",
+    "benchThreadCount" : 1,
+    "benchMeasurementIteration" : 1,
+    "benchWarmUpSeconds" : 1,
+    "benchReportName" : "Navigator.exampleBenchmarks",
+    "benchMeasurementSeconds" : 1
+  },
+  "benchmarks" : {
+    "CUSTOM" : [ {
+      "name" : "ApodGUI.exampleBenchmarks.mainBenchmark",
+      "score" : 3.4392391487793436E9,
+      "operationTime" : null,
+      "units" : "ops/s",
+      "mode" : "thrpt",
+      "category" : "CUSTOM",
+      "context" : "Custom",
+      "version" : "1.0.0",
+      "benchThreadCount" : 1,
+      "benchForkCount" : 1,
+      "benchMeasurementIteration" : 2,
+      "benchMeasurementSeconds" : 5,
+      "benchWarmUpIteration" : 1,
+      "benchWarmUpSeconds" : 5,
+      "generatedFingerprint" : "dffd7e1b291878c3cde3fb22ab583",
+      "manualFingerprint" : null,
+      "classFingerprint" : "7dd7f9788aae79a2ca98bc1b106414c6",
+      "meanScore" : 3.4392391487793436E9,
+      "minScore" : 3.400922912812331E9,
+      "maxScore" : 3.4775553847463565E9,
+      "stdDevScore" : 5.418734056363706E7,
+      "n" : 2,
+      "gcCalls" : 0.0,
+      "gcTime" : null,
+      "gcAllocationRate" : 7.457274334565854E-5,
+      "gcAllocationRateNorm" : 2.508835512327502E-8,
+      "gcChurnPsEdenSpace" : null,
+      "gcChurnPsEdenSpaceNorm" : null,
+      "gcChurnPsSurvivorSpace" : null,
+      "gcChurnPsSurvivorSpaceNorm" : null,
+      "threadsAliveCount" : 6.0,
+      "threadsDaemonCount" : 5.0,
+      "threadsStartedCount" : 12.0,
+      "threadsSafePointsCount" : 12.0,
+      "threadsSafePointTime" : 1.304475,
+      "threadsSafePointSyncTime" : 0.006018,
+      "threadsSyncContendedLockAttemptsCount" : 22.0,
+      "threadsSyncMonitorDeflations" : 55.0,
+      "threadsSyncMonitorInflations" : 57.0,
+      "threadsSyncMonitorFatMonitorsCount" : 128.0,
+      "threadsSyncMonitorFutileWakeupsCount" : 1.0,
+      "threadsSyncNotificationsCount" : 14.0,
+      "threadsSafePointsInterval" : 12405.0,
+      "threadsSafePointsPause" : 33.96064,
+      "threadsSafePointsPauseAvg" : 4.85152,
+      "threadsSafePointsPauseCount" : 7.0,
+      "threadsSafePointsPauseTTSP" : 0.3156,
+      "threadsSafePointsPauseTTSPAvg" : 0.045085714285714285,
+      "threadsSafePointsPauseTTSPCount" : 7.0,
+      "threadsSyncParksCount" : 17.0,
+      "performanceProcessCpuLoad" : null,
+      "performanceProcessHeapMemoryUsed" : null,
+      "performanceProcessNonHeapMemoryUsed" : null,
+      "performanceSystemCpuLoad" : null
+    } ]
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Issues">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="QueuesViewlet Verification"/>
+    <parameter name="ViewletName" value="Local Queue"/>
+    <parameter name="ViewletValue" value="3"/>
+    
+      
+     <classes>
+      <class name="Tickets.ResolvedIssues">
+       
+       <methods>
+       
+        <include name="Login"/>
+       <!--  <include name="CustomProeprties23999"/>  -->
+        <include name="MaxSearchRes23469"/> 
+        <!-- <include name="SchedularIcon"/>
+        <include name="SecurityManagerIcon"/>
+        <include name="HelpIcon"/>
+        <include name="AboutIcon"/> -->
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

@@ -1,0 +1,62 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Name List Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="NameListViewlet Verification"/>
+    <parameter name="ViewletName" value="New NameList Viewlet"/>
+    <parameter name="SchemaName" value="NameListSchema"/>
+    <parameter name="ViewletValue" value="8"/>
+    
+    <parameter name="NameListNameFromOptions" value="NAMELIST.FROM.OPTIONS"/>
+    <parameter name="NameListDescriptionFromOptions" value="Test create name list"/>
+    <parameter name="NameListNamesFromOptions" value="NameList Name"/>
+    
+    <parameter name="CopyObjectName" value=".COPY"/>
+    <parameter name="RenameNameList" value="NAMELIST.RENAME"/>
+    
+    <parameter name="FavoriteViewletName" value="NameList Favorite viewlet"/>
+    
+    <parameter name="NameListFromICon" value="NAMELIST.FROM.ICON"/>
+    <parameter name="DescriptionFromIcon" value="Adding from icon"/>
+    <parameter name="CopyObjectNameForMUltiple" value=".MULTIPLE.COPY"/>
+    <parameter name="RenameNameListForMultiple" value="NAMELIST.MULTIPLE.RENAME"/>
+    
+    <parameter name="NameListMultipleDescription" value="Multiple name list properties"/>
+    
+    <parameter name="NameListAttributes" value="Attributes"/>
+      
+     <classes>
+      <class name="ApodGUI.NameListViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddNameListViewlet"/> 
+        <include name="ShowObjectAttributesForNameList"/> 
+        <include name="CreateNameList"/>
+        <include name="CopyAsFromCommands"/>
+        <include name="RenameFromCommands"/>
+        <include name="DeleteFromCommands"/>
+         <include name="NameListProperties"/>
+        <include name="NameListEvents"/>   
+        <include name="AddToFavoriteViewlet"/>
+          
+        <include name="CompareNameLists"/> 
+        <include name="CheckDifferencesForNameList"/> 
+        <include name="CreateNameListFromPlusIcon"/>
+        <include name="CopyAsFromCommandsForMultiple"/>
+        <include name="RenameFromCommandsForMultiple"/>
+        <include name="DeleteFromCommandsForMultiple"/>
+        <include name="NameListMultipleProperties"/>
+        <include name="AddToFavoriteForMultipleNameLists"/>   
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

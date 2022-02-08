@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Console tabs">
+ 
+ <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="password" value="admin"/>
+    
+    <parameter name="Dashboardname" value="Console tabs"/>
+    <parameter name="ViewletName" value="Local Queue"/>
+    <parameter name="ViewletValue" value="3"/>
+    
+     
+    <classes>
+      <class name="NavigatorCore.CloseConsoleTabs">
+      
+      
+      <methods>
+      
+        <include name="Login"/>
+        <include name="CloseOtherConsole"/>  
+        <include name="CloseAllConsole"/>
+        <include name="Logout"/>  
+
+ 
+   </methods>
+  </class>
+  </classes>
+  </test>
+</suite>

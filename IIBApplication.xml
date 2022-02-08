@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test IIB Application Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="IIB Application"/>
+    <parameter name="ViewletName" value="New IIB Application Viewlet"/>
+    <parameter name="AuthinfoAttributes" value="Attributes"/>
+    <parameter name="ViewletValue" value="3"/>
+    
+    <parameter name="schemaName" value="ApplicationSchema"/>
+    <parameter name="FavoriteViewletName" value="Application Favorite viewlet"/>
+          
+     <classes>
+      <class name="IIB.IIBApplicationsViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddIIBApplicationsViewlet"/> 
+        <include name="ShowObjectAttributesForIIBApplication"/>  
+        <include name="AddToFavoriteViewlet"/> 
+        <include name="CompareApplication"/>
+        <include name="CheckDifferencesForApplications"/>
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

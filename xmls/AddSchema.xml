@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Add a Schema">
+ <test name="Add Schema Condition">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="Schema"/>
+    <parameter name="ViewletName" value="Schema buttons"/>
+    <parameter name="ViewletValue" value="3"/>
+   
+    <parameter name="Attribute" value="Manager Name,Usage,Scope,Get Messages"/>
+    <parameter name="AttributeFirstValue" value="Manager Name"/>
+    <parameter name="SchemaName" value="Test Schema"/> 
+   
+    <parameter name="DisplayedAttributesAfterRemoving" value="In order to create schema atleast one attribute has to be added"/>
+    <parameter name="AttributeName" value="Manager Name"/>
+    <parameter name="DisplayedAttributesAfterRemovingAttribute" value="In order to create schema atleast one attribute has to be added"/>
+    
+     <classes>
+      <class name="ApodGUI.AddSchemaToTheViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddNewDashboard"/>
+        <include name="AddSchema"/>
+        <include name="DeleteSchema"/>   
+        <include name="AddAllAttributesButton"/>
+        <include name="RemoveAllAttributesButton"/>
+        <include name="AddAttributesButton"/>
+        <include name="RemoveAttributeButton"/>
+        <include name="MoveToTopButton"/>
+        <include name="MoveToBottomButton"/>
+        <include name="MoveUpButton"/>
+        <include name="MoveDownButton"/>  
+        <include name="Logout"/>
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

@@ -1,0 +1,49 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Channel Auth Records Viewlet">
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+    
+    <parameter name="Dashboardname" value="Channel AuthInfo"/>
+    <parameter name="ViewletName" value="New Channel Auth Records"/>
+    <parameter name="ViewletValue" value="13"/>
+    
+    <parameter name="ChannelAuthNameFromOptions" value="New.Channel.Auth"/>
+    <parameter name="UserList" value="MQADMIN"/>
+    
+    <parameter name="MultipleDescription" value="Test Multiple Properties"/>
+    
+    <parameter name="SchemaName" value="ChannelAuthSchema"/>
+    
+    <parameter name="FavoriteViewletName" value="Channel Auth Favorite viewlet"/>
+        
+    <parameter name="ChannelAuthNameFromIcon" value="New.Channel.Icon"/>
+   
+     <classes>
+      <class name="ApodGUI.ChannelAuthRecordsViewlet">
+       
+       <methods>
+        <include name="Login"/>
+        <include name="AddChannelAuthrecordsViewlet"/> 
+        <include name="ShowObjectAttributes"/>
+        <include name="CreateChannelAuthRecordFromOptions"/>
+        <include name="DeleteChannelAuthRecordFromCommands"/>
+        <include name="MQSCSnapshot"/>
+        <include name="SaveChannelAuthSnapshot"/>
+        <include name="ChannelAuthProperties"/> 
+        <include name="ChannelAuthEvents"/>  
+        <include name="AddToFavoriteViewlet"/>  
+        <include name="CreateChannelAuthRecordFromPlusIcon"/>
+        <include name="CompareChannelAuths"/>
+        <include name="CheckDifferencesForChannelAuths"/>
+        <include name="MultipleChannelAuthRecordsProperties"/>
+        <include name="AddToFavoriteForMultipleChannelAuthRecords"/>    
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

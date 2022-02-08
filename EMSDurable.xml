@@ -1,0 +1,52 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Durable Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="password" value="admin"/>
+    <parameter name="Dashboardname" value="DurableViewlet Verification"/>
+    <parameter name="wgs" value="1"/>
+    
+    <parameter name="ViewletName" value="New Durable Viewlet"/>
+    <parameter name="WGSName" value="WGS10 - 1"/>
+    <parameter name="ViewletValue" value="9"/>
+    
+    <parameter name="DeleteDurableName" value="Test.EMS.Durable"/>
+    
+    <parameter name="schemaName" value="DurableSchema"/>
+        
+    <parameter name="FavoriteViewletName" value="Durable Favorite viewlet"/>
+    <parameter name="Favwgs" value="1"/>
+    
+    <parameter name="DurableName" value="EMS.Add.Selenium"/>
+    <parameter name="SelectTopicName" value="EMS.Topic1"/>
+
+  
+     <classes>
+      <class name="EMS.DurableViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddDurableViewlet"/>
+        <include name="AddDurableFromPlusIcon"/> 
+        <include name="ShowObjectAttributesForDurable"/> 
+        <include name="DeleteCommand"/>  
+        <include name="Purge"/> 
+        <include name="Properties"/>
+        <include name="DurableEvents"/>   
+        <include name="AddToFavoriteViewlet"/>  
+        <include name="MultiplePurge"/>  
+        <include name="MultipleProperties"/> 
+        <include name="AddToFavoriteForMultipleDurables"/>   
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

@@ -1,0 +1,68 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Process Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="ProcessViewlet Verification"/>
+    <parameter name="ViewletName" value="Process Viewlet"/>
+    <parameter name="ViewletValue" value="5"/>
+       
+    <parameter name="NewProcessName" value="Test.New.process121"/>
+    <parameter name="ProcessDescription" value="Test Process"/>
+    <parameter name="ApplicationId" value="Test12"/>
+    
+    <parameter name="schemaName" value="ProcessSchema"/>
+    
+    <parameter name="CopyObjectName" value=".Copy"/>
+    
+    <parameter name="RenameProcess" value="Test.New.process121.Rename"/>
+    
+    <parameter name="ProcessNameFromOptions" value="Test.New.process.Options11"/>
+    <parameter name="ProcessDescriptionFromOptions" value="Description For Process"/>
+    <parameter name="ApplicationIdFromOptions" value="Process123"/>
+    
+    <parameter name="FavoriteViewletName" value="Favorite for Process"/>
+      
+    <parameter name="CopyObjectNameForMultiple" value=".CopyMultiple"/>
+    <parameter name="RenameProcessForMultiple" value="Test.Process.Rename"/>
+    
+    <parameter name="MultipleDescription" value="Test Description option for Multiple"/>
+    <parameter name="AppID" value="App123"/>  
+  
+     <classes>
+      <class name="ApodGUI.ProcessViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddProcessViewlet"/>
+        <include name="CreateProcessFromPlusIcon"/>   
+        <include name="ShowObjectAttributesForProcess"/>  
+        <include name="CopyAsFromCommands"/>
+        <include name="RenameFromCommands"/>
+        <include name="DeleteFromCommands"/>
+        <include name="MQSCSnapshot"/> 
+        <include name="SaveProcessSnapshot"/> 
+        <include name="Properties"/> 
+        <include name="ProcessEvents"/>   
+        <include name="AddToFavoriteViewlet"/>  
+        
+        <include name="CreateProcess"/> 
+        <include name="CompareProcessNames"/>
+        <include name="CheckDifferencesForProcess"/>    
+        <include name="CopyAsFromCommandsForMultipleProcess"/>
+        <include name="RenameFromCommandsForMultipleProcess"/> 
+        <include name="DeleteFromCommandsForMultipleProcess"/> 
+        <include name="MultipleProperties"/> 
+        <include name="AddToFavoriteForMultipleProcess"/>   
+        <include name="Logout"/> 
+       
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

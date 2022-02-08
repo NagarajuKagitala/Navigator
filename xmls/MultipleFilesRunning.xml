@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Suites"> 
+  <suite-files>
+  
+    <suite-file path="./xmls/Workgroupserver.xml"/> 
+    <suite-file path="./xmls/Node.xml"/>   
+    <suite-file path="./xmls/Manager.xml"/> 
+    <suite-file path="./xmls/Queues.xml"/>  
+    <suite-file path="./xmls/QueuesInsidemessages.xml"/>
+    <suite-file path="./xmls/QueueMessages.xml"/>
+    <suite-file path="./xmls/Channel.xml"/>
+    <suite-file path="./xmls/Process.xml"/> 
+    <suite-file path="./xmls/Topic.xml"/>
+    <suite-file path="./xmls/ListernerViewlet.xml"/> 
+    <suite-file path="./xmls/NameList.xml"/>
+    <suite-file path="./xmls/Service.xml"/>
+    <suite-file path="./xmls/AuthInfo.xml"/>
+    <suite-file path="./xmls/Subscription.xml"/>
+    <suite-file path="./xmls/ClusterQM.xml"/>
+    <suite-file path="./xmls/ChannelAuthRecords.xml"/>
+    <suite-file path="./xmls/Route.xml"/>
+    <suite-file path="./xmls/Transport.xml"/>
+    <suite-file path="./xmls/Bridge.xml"/>
+    <suite-file path="./xmls/Durable.xml"/> 
+    <suite-file path="./xmls/EMSManager.xml"/>  
+    <suite-file path="./xmls/EMSQueues.xml"/> 
+    <suite-file path="./xmls/EMSQueuesInsideBrowse.xml"/> 
+    <suite-file path="./xmls/EMSQueueMessages.xml"/>
+    <suite-file path="./xmls/EMSChannel.xml"/>
+    <suite-file path="./xmls/EMSTopic.xml"/>  
+    <suite-file path="./xmls/AddSchema.xml"/> 
+    <suite-file path="./xmls/NavigatorSettings.xml"/> 
+   <!--  <suite-file path="Schedule.xml"/>  --> 
+    <suite-file path="./xmls/SearchCriteria.xml"/> 
+    <suite-file path="./xmls/Attributefilter.xml"/>  
+  	
+  </suite-files>
+</suite>

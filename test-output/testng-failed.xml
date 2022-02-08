@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Navigator]" guice-stage="DEVELOPMENT">
+  <test name="Test Channel Viewlet(failed)">
+    <parameter name="ViewletName" value="Channel Viewlet"/>
+    <parameter name="RenameChannel" value="CHANNEL.RENAME"/>
+    <parameter name="Dashboardname" value="Channel Verification"/>
+    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+    <parameter name="Attributes" value="Channel Name,Channel Description,Channel Type,Transport Type,Connection Name,Local Address,Bytes Sent,Bytes Received,Messages,Maximum Message Length (bytes),Sequence Number Wrap,Disconnect Interval (sec.),Heartbeat Interval (sec.),Batch Heartbeat Interval (msec.),Batch Size,Batch Interval (msec.),Batch Data Limit,Keep Alive Interval (sec.),Data Conversion,Property Control Attribute,Use Dead Letter Queue,MCA Name,MCA Type,Send Exit,Send Exit Data,Receive Exit,Receive Exit Data,Security Exit,Security Exit Data,Message Exit,Message Exit Data,Mode Name,Transaction Program Name,User ID,Password,Short Retry Count,Short Retry Timer (sec.),Long Retry Count,Long Retry Timer (sec.),SSL Cipher Specification,SSL Peer Name,SSL Client Authentication,Header Compression,Message Compression,Channel Monitoring,Channel Statistics,Alteration Date,Last Updated,Last Event Time,Last Action,Status"/>
+    <parameter name="FavoriteViewletName" value="Favorite for Channels"/>
+    <parameter name="CopyAsNameForMultiple" value="COPY.MUL.CH"/>
+    <parameter name="schemaName" value="ChannelSchema"/>
+    <parameter name="CopyObjectName" value=".COPY"/>
+    <parameter name="ViewletValue" value="4"/>
+    <parameter name="ConnectionName" value="192.168.1.204(4343)"/>
+    <parameter name="CopyAsConnection" value="127.0.0.1(4682)"/>
+    <parameter name="ChannelName" value="SENDER.ICON.CL"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="ChannelDescription" value="Multiple channel Description"/>
+    <parameter name="ChannelConnectionName" value="Multiple channel connection"/>
+    <parameter name="RenameMultipleChannels" value="RENAME.MUL.CH"/>
+    <parameter name="ChannelType" value="Sender"/>
+    <classes>
+      <class name="ApodGUI.ChannelViewlet">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeTest"/>
+          <include name="ShowChannelStatusForMultiple" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ApodGUI.ChannelViewlet -->
+    </classes>
+  </test> <!-- Test Channel Viewlet(failed) -->
+</suite> <!-- Failed suite [Navigator] -->

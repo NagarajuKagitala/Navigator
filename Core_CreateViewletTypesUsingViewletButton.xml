@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Create viewlet types">
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+	<parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+	    
+    <parameter name="Dashboardname" value="Viewet Button Options"/>
+    <parameter name="Nodename" value="Node Viewlet"/>
+    
+    <parameter name="FavoriteViewletName" value="New Favorite Viewlet"/>
+    
+    <parameter name="NewViewletName" value="Testing Edit viewlet21"/>
+    
+               
+     <classes>
+      <class name="NavigatorCore.CreateViewletTypesUsingViewletButton">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="CreateViewletUsingObjectCheckbox"/>
+        <include name="CreateATemporaryViewletUsingSearchCheckbox"/>
+        <include name="CreateFavoriteViewletUsingCheckbox"/>
+        <include name="OpenAnExistingCheckbox"/>
+        <include name="CreateTemporaryViewletUsingTemporaryViewletCheckbox"/>  
+        <include name="EditViewletOption"/>
+        <include name="DeleteViewletOption"/>
+        <include name="ExportDataToCSV"/> 
+        <include name="ImportViewletFromFileCheckbox"/>
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>
