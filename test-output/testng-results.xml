@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+<testng-results ignored="7" total="17" passed="9" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[<br/>]]>
@@ -11,79 +11,67 @@
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddNewDashboard.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddChannelAuthrecordsViewlet.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddSchema.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteSchema.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateChannelAuthRecordFromPlusIcon.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddAllAttributesButton.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareChannelAuths.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RemoveAllAttributesButton.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForChannelAuths.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[Screenshots/ScreenshotsFailure/MultipleChannelAuthRecordsProperties.png]]>
+    </line>
+    <line>
+      <![CDATA[<br/>Failed to execute method: MultipleChannelAuthRecordsProperties<br/>]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddAttributesButton.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/MultipleChannelAuthRecordsProperties.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RemoveAttributeButton.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleChannelAuthRecords.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveToTopButton.png" alt="""/" />]]>
-    </line>
-    <line>
-      <![CDATA[<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveToBottomButton.png" alt="""/" />]]>
-    </line>
-    <line>
-      <![CDATA[<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveUpButton.png" alt="""/" />]]>
-    </line>
-    <line>
-      <![CDATA[<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveDownButton.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributes.png" alt="""/" />]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-02-08T06:31:37Z" name="Add a Schema" finished-at="2022-02-08T06:36:16Z" duration-ms="278530">
+  <suite started-at="2022-02-18T09:29:49Z" name="Navigator" finished-at="2022-02-18T09:42:23Z" duration-ms="754722">
     <groups>
     </groups>
-    <test started-at="2022-02-08T06:31:37Z" name="Add Schema Condition" finished-at="2022-02-08T06:36:16Z" duration-ms="278530">
-      <class name="NavigatorCore.AddSchemaToTheViewlet">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:01:37Z" name="beforeTest" finished-at="2022-02-08T12:01:37Z" duration-ms="13" status="PASS">
+    <test started-at="2022-02-18T09:29:49Z" name="Test Channel Auth Records Viewlet" finished-at="2022-02-18T09:42:23Z" duration-ms="754722">
+      <class name="ApodGUI.ChannelAuthRecordsViewlet">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T14:59:49Z" name="beforeTest" finished-at="2022-02-18T14:59:49Z" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:01:37Z" name="Login" finished-at="2022-02-08T12:02:16Z" duration-ms="39204" status="PASS">
+        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T14:59:49Z" name="Login" finished-at="2022-02-18T15:01:09Z" duration-ms="80232" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -93,6 +81,11 @@
             <param index="1">
               <value>
                 <![CDATA[Drivers/chromedriver.exe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Channel AuthInfo]]>
               </value>
             </param>
           </params>
@@ -105,37 +98,32 @@
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:02:16Z" name="tearDown" finished-at="2022-02-08T12:02:17Z" duration-ms="379" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:01:09Z" name="tearDown" finished-at="2022-02-18T15:01:09Z" duration-ms="601" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login status=SUCCESS method=AddSchemaToTheViewlet.Login(java.lang.String, java.lang.String)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=ChannelAuthRecordsViewlet.Login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="AddNewDashboard(java.lang.String, int, java.lang.String, org.testng.ITestContext)[pri:1, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:02:17Z" name="AddNewDashboard" finished-at="2022-02-08T12:03:09Z" duration-ms="52542" status="PASS">
+        <test-method signature="AddChannelAuthrecordsViewlet(java.lang.String, int, org.testng.ITestContext)[pri:1, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:01:09Z" name="AddChannelAuthrecordsViewlet" finished-at="2022-02-18T15:01:48Z" duration-ms="38641" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Schema]]>
+                <![CDATA[New Channel Auth Records]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[3]]>
+                <![CDATA[13]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Schema buttons]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+                <![CDATA[org.testng.TestRunner@165e389b]]>
               </value>
             </param>
           </params>
@@ -144,41 +132,79 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddNewDashboard.png" alt="""/" />]]>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddChannelAuthrecordsViewlet.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- AddNewDashboard -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:03:12Z" name="tearDown" finished-at="2022-02-08T12:03:15Z" duration-ms="3408" status="PASS">
+        </test-method> <!-- AddChannelAuthrecordsViewlet -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:02:01Z" name="tearDown" finished-at="2022-02-18T15:02:04Z" duration-ms="3214" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddNewDashboard status=SUCCESS method=AddSchemaToTheViewlet.AddNewDashboard(java.lang.String, int, java.lang.String, org.testng.ITestContext)[pri:1, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+                <![CDATA[[TestResult name=AddChannelAuthrecordsViewlet status=SUCCESS method=ChannelAuthRecordsViewlet.AddChannelAuthrecordsViewlet(java.lang.String, int, org.testng.ITestContext)[pri:1, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="AddSchema(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:2, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:03:15Z" name="AddSchema" finished-at="2022-02-08T12:03:50Z" duration-ms="34026" status="PASS">
+        <test-method signature="AddToFavoriteViewlet(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:8, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:02:04Z" name="AddToFavoriteViewlet" finished-at="2022-02-18T15:03:09Z" duration-ms="64375" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Manager Name,Usage,Scope,Get Messages]]>
+                <![CDATA[Channel AuthInfo]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Manager Name]]>
+                <![CDATA[Channel Auth Favorite viewlet]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Test Schema]]>
+                <![CDATA[org.testng.TestRunner@165e389b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddToFavoriteViewlet -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:03:20Z" name="tearDown" finished-at="2022-02-18T15:03:23Z" duration-ms="2880" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddToFavoriteViewlet status=SUCCESS method=ChannelAuthRecordsViewlet.AddToFavoriteViewlet(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:8, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="CreateChannelAuthRecordFromPlusIcon(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:9, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:03:23Z" name="CreateChannelAuthRecordFromPlusIcon" finished-at="2022-02-18T15:04:58Z" duration-ms="95513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Channel AuthInfo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New.Channel.Icon]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[MQADMIN]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+                <![CDATA[org.testng.TestRunner@165e389b]]>
               </value>
             </param>
           </params>
@@ -187,92 +213,204 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddSchema.png" alt="""/" />]]>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateChannelAuthRecordFromPlusIcon.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- AddSchema -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:03:51Z" name="tearDown" finished-at="2022-02-08T12:03:52Z" duration-ms="1599" status="PASS">
+        </test-method> <!-- CreateChannelAuthRecordFromPlusIcon -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:05:09Z" name="tearDown" finished-at="2022-02-18T15:05:12Z" duration-ms="2772" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddSchema status=SUCCESS method=AddSchemaToTheViewlet.AddSchema(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:2, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+                <![CDATA[[TestResult name=CreateChannelAuthRecordFromPlusIcon status=SUCCESS method=ChannelAuthRecordsViewlet.CreateChannelAuthRecordFromPlusIcon(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:9, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="DeleteSchema(java.lang.String, org.testng.ITestContext)[pri:3, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:03:52Z" name="DeleteSchema" finished-at="2022-02-08T12:04:10Z" duration-ms="17541" status="PASS">
+        <test-method signature="CompareChannelAuths(org.testng.ITestContext)[pri:10, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:05:12Z" name="CompareChannelAuths" finished-at="2022-02-18T15:05:37Z" duration-ms="25808" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Test Schema]]>
+                <![CDATA[org.testng.TestRunner@165e389b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareChannelAuths.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CompareChannelAuths -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:05:48Z" name="tearDown" finished-at="2022-02-18T15:05:52Z" duration-ms="3518" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CompareChannelAuths status=SUCCESS method=ChannelAuthRecordsViewlet.CompareChannelAuths(org.testng.ITestContext)[pri:10, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="CheckDifferencesForChannelAuths(org.testng.ITestContext)[pri:11, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:05:52Z" name="CheckDifferencesForChannelAuths" finished-at="2022-02-18T15:06:14Z" duration-ms="22568" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@165e389b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForChannelAuths.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CheckDifferencesForChannelAuths -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:06:25Z" name="tearDown" finished-at="2022-02-18T15:06:28Z" duration-ms="2820" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckDifferencesForChannelAuths status=SUCCESS method=ChannelAuthRecordsViewlet.CheckDifferencesForChannelAuths(org.testng.ITestContext)[pri:11, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="MultipleChannelAuthRecordsProperties(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:13, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:06:28Z" name="MultipleChannelAuthRecordsProperties" finished-at="2022-02-18T15:07:55Z" duration-ms="87583" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Channel AuthInfo]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+                <![CDATA[Test Multiple Properties]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@165e389b]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression Properties updation failed because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Properties updation failed' is not a valid XPath expression.
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-9QJNAOQ', ip: '192.168.43.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac0191ffecdac837f530af6f7259f4a5, findElement {using=xpath, value=Properties updation failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58924/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac0191ffecdac837f530af6f7259f4a5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Properties updation failed because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Properties updation failed' is not a valid XPath expression.
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-9QJNAOQ', ip: '192.168.43.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac0191ffecdac837f530af6f7259f4a5, findElement {using=xpath, value=Properties updation failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58924/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac0191ffecdac837f530af6f7259f4a5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at ApodGUI.ChannelAuthRecordsViewlet.MultipleChannelAuthRecordsProperties(ChannelAuthRecordsViewlet.java:812)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
+            <line>
+              <![CDATA[<br/>Failed to execute method: MultipleChannelAuthRecordsProperties<br/>]]>
+            </line>
             <line>
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteSchema.png" alt="""/" />]]>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/MultipleChannelAuthRecordsProperties.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- DeleteSchema -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:11Z" name="tearDown" finished-at="2022-02-08T12:04:13Z" duration-ms="1419" status="PASS">
+        </test-method> <!-- MultipleChannelAuthRecordsProperties -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:08:06Z" name="tearDown" finished-at="2022-02-18T15:08:09Z" duration-ms="3044" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DeleteSchema status=SUCCESS method=AddSchemaToTheViewlet.DeleteSchema(java.lang.String, org.testng.ITestContext)[pri:3, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="AddAllAttributesButton(org.testng.ITestContext)[pri:4, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:13Z" name="AddAllAttributesButton" finished-at="2022-02-08T12:04:23Z" duration-ms="10526" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+                <![CDATA[[TestResult name=MultipleChannelAuthRecordsProperties status=FAILURE method=ChannelAuthRecordsViewlet.MultipleChannelAuthRecordsProperties(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:13, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac] output=<br/>Failed to execute method: MultipleChannelAuthRecordsProperties<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<br/>]]>
+              <![CDATA[Screenshots/ScreenshotsFailure/MultipleChannelAuthRecordsProperties.png]]>
             </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddAllAttributesButton.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AddAllAttributesButton -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:24Z" name="tearDown" finished-at="2022-02-08T12:04:26Z" duration-ms="1600" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AddAllAttributesButton status=SUCCESS method=AddSchemaToTheViewlet.AddAllAttributesButton(org.testng.ITestContext)[pri:4, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="RemoveAllAttributesButton(java.lang.String, org.testng.ITestContext)[pri:5, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:26Z" name="RemoveAllAttributesButton" finished-at="2022-02-08T12:04:33Z" duration-ms="7237" status="PASS">
+        <test-method signature="AddToFavoriteForMultipleChannelAuthRecords(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:14, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:08:09Z" name="AddToFavoriteForMultipleChannelAuthRecords" finished-at="2022-02-18T15:08:45Z" duration-ms="35982" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[In order to create schema atleast one attribute has to be added]]>
+                <![CDATA[Channel AuthInfo]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+                <![CDATA[Channel Auth Favorite viewlet]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@165e389b]]>
               </value>
             </param>
           </params>
@@ -281,31 +419,36 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RemoveAllAttributesButton.png" alt="""/" />]]>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleChannelAuthRecords.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- RemoveAllAttributesButton -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:35Z" name="tearDown" finished-at="2022-02-08T12:04:36Z" duration-ms="1594" status="PASS">
+        </test-method> <!-- AddToFavoriteForMultipleChannelAuthRecords -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:08:56Z" name="tearDown" finished-at="2022-02-18T15:08:59Z" duration-ms="3214" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=RemoveAllAttributesButton status=SUCCESS method=AddSchemaToTheViewlet.RemoveAllAttributesButton(java.lang.String, org.testng.ITestContext)[pri:5, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+                <![CDATA[[TestResult name=AddToFavoriteForMultipleChannelAuthRecords status=SUCCESS method=ChannelAuthRecordsViewlet.AddToFavoriteForMultipleChannelAuthRecords(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:14, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="AddAttributesButton(java.lang.String, org.testng.ITestContext)[pri:6, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:36Z" name="AddAttributesButton" finished-at="2022-02-08T12:04:43Z" duration-ms="7238" status="PASS">
+        <test-method signature="ShowObjectAttributes(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:15, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:08:59Z" name="ShowObjectAttributes" finished-at="2022-02-18T15:11:42Z" duration-ms="162634" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Manager Name]]>
+                <![CDATA[Channel AuthInfo]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@f2ce6b]]>
+                <![CDATA[ChannelAuthSchema]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@165e389b]]>
               </value>
             </param>
           </params>
@@ -314,189 +457,44 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddAttributesButton.png" alt="""/" />]]>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributes.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- AddAttributesButton -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:45Z" name="tearDown" finished-at="2022-02-08T12:04:46Z" duration-ms="1595" status="PASS">
+        </test-method> <!-- ShowObjectAttributes -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:11:53Z" name="tearDown" finished-at="2022-02-18T15:11:56Z" duration-ms="2775" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddAttributesButton status=SUCCESS method=AddSchemaToTheViewlet.AddAttributesButton(java.lang.String, org.testng.ITestContext)[pri:6, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
+                <![CDATA[[TestResult name=ShowObjectAttributes status=SUCCESS method=ChannelAuthRecordsViewlet.ShowObjectAttributes(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:15, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="RemoveAttributeButton(java.lang.String, org.testng.ITestContext)[pri:7, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:04:46Z" name="RemoveAttributeButton" finished-at="2022-02-08T12:05:02Z" duration-ms="15338" status="PASS">
+        <test-method signature="Logout(java.lang.String)[pri:16, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:11:56Z" name="Logout" finished-at="2022-02-18T15:12:23Z" duration-ms="27757" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[In order to create schema atleast one attribute has to be added]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@f2ce6b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RemoveAttributeButton.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- RemoveAttributeButton -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:03Z" name="tearDown" finished-at="2022-02-08T12:05:05Z" duration-ms="1599" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=RemoveAttributeButton status=SUCCESS method=AddSchemaToTheViewlet.RemoveAttributeButton(java.lang.String, org.testng.ITestContext)[pri:7, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="MoveToTopButton(org.testng.ITestContext)[pri:8, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:05Z" name="MoveToTopButton" finished-at="2022-02-08T12:05:06Z" duration-ms="1353" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@f2ce6b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveToTopButton.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- MoveToTopButton -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:08Z" name="tearDown" finished-at="2022-02-08T12:05:09Z" duration-ms="1594" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MoveToTopButton status=SUCCESS method=AddSchemaToTheViewlet.MoveToTopButton(org.testng.ITestContext)[pri:8, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="MoveToBottomButton(org.testng.ITestContext)[pri:9, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:09Z" name="MoveToBottomButton" finished-at="2022-02-08T12:05:13Z" duration-ms="4319" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@f2ce6b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveToBottomButton.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- MoveToBottomButton -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:15Z" name="tearDown" finished-at="2022-02-08T12:05:17Z" duration-ms="1598" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MoveToBottomButton status=SUCCESS method=AddSchemaToTheViewlet.MoveToBottomButton(org.testng.ITestContext)[pri:9, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="MoveUpButton(org.testng.ITestContext)[pri:10, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:17Z" name="MoveUpButton" finished-at="2022-02-08T12:05:24Z" duration-ms="7249" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@f2ce6b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveUpButton.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- MoveUpButton -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:25Z" name="tearDown" finished-at="2022-02-08T12:05:27Z" duration-ms="1603" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MoveUpButton status=SUCCESS method=AddSchemaToTheViewlet.MoveUpButton(org.testng.ITestContext)[pri:10, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="MoveDownButton(org.testng.ITestContext)[pri:11, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:27Z" name="MoveDownButton" finished-at="2022-02-08T12:05:39Z" duration-ms="12308" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@f2ce6b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MoveDownButton.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- MoveDownButton -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:41Z" name="tearDown" finished-at="2022-02-08T12:05:42Z" duration-ms="1387" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MoveDownButton status=SUCCESS method=AddSchemaToTheViewlet.MoveDownButton(org.testng.ITestContext)[pri:11, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="Logout(java.lang.String)[pri:12, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:05:42Z" name="Logout" finished-at="2022-02-08T12:06:16Z" duration-ms="33393" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Schema]]>
+                <![CDATA[Channel AuthInfo]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb]" started-at="2022-02-08T12:06:16Z" name="tearDown" finished-at="2022-02-08T12:06:16Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac]" started-at="2022-02-18T15:12:23Z" name="tearDown" finished-at="2022-02-18T15:12:23Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Logout status=SUCCESS method=AddSchemaToTheViewlet.Logout(java.lang.String)[pri:12, instance:NavigatorCore.AddSchemaToTheViewlet@79c97cb] output={null}]]]>
+                <![CDATA[[TestResult name=Logout status=SUCCESS method=ChannelAuthRecordsViewlet.Logout(java.lang.String)[pri:16, instance:ApodGUI.ChannelAuthRecordsViewlet@4b5189ac] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- NavigatorCore.AddSchemaToTheViewlet -->
-    </test> <!-- Add Schema Condition -->
-  </suite> <!-- Add a Schema -->
+      </class> <!-- ApodGUI.ChannelAuthRecordsViewlet -->
+    </test> <!-- Test Channel Auth Records Viewlet -->
+  </suite> <!-- Navigator -->
 </testng-results>

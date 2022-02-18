@@ -270,7 +270,7 @@ public class KafkaPartitionBrowseMessageOptions
 		driver.findElement(By.xpath("//img[@title='Copy message']")).click();
 		
 		driver.findElement(By.xpath("//div[2]/div/div/div/input")).sendKeys(SecondTopicName);
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 		driver.findElement(By.xpath("//td/div/span/input")).click();
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(8000);
@@ -450,7 +450,7 @@ public class KafkaPartitionBrowseMessageOptions
 		driver.findElement(By.xpath("//app-dropdown-console/div/div/div/div")).click();
 		
 		driver.findElement(By.xpath("//div[2]/div/div/div/input")).sendKeys(SecondTopicName);
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 		driver.findElement(By.xpath("//td/div/span/input")).click();
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(8000);

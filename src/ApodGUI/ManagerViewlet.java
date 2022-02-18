@@ -1247,10 +1247,12 @@ public class ManagerViewlet
 		driver.findElement(By.xpath("//button[3]")).click();
 		driver.findElement(By.id("fav")).click();
 		driver.findElement(By.xpath("//app-mod-select-viewlet-type/div/div[2]/button[2]")).click();
+		Thread.sleep(LowSleep);
 		
 		//Viewlet Name
 		driver.findElement(By.name("viewlet-name")).click();
 		driver.findElement(By.name("viewlet-name")).sendKeys(FavoriteViewletName);
+		Thread.sleep(LowSleep);
 		
 		//Select WGS dropdown
 		driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div/div[2]/div/ng-select/div/span")).click();
@@ -1645,7 +1647,7 @@ public class ManagerViewlet
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Add to favorites...")).click();
-		Thread.sleep(LowSleep);
+		Thread.sleep(MediumSleep);
 		
 		//Select favorite viewlet
 		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();

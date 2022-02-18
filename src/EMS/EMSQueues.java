@@ -157,12 +157,14 @@ public class EMSQueues
 		  driver.findElement(By.xpath("//button[contains(.,'Restore Default')]")).click(); 
 		  Thread.sleep(4000);
 		  driver.findElement(By.id("accept-true")).click();
-		  Thread.sleep(4000);
+		  Thread.sleep(MediumSleep);
 		  
 		  //UnCheck Show Empty Queues check box
 			//driver.findElement(By.cssSelector(".fa-cog")).click();
 			Thread.sleep(4000);
 			boolean queues=driver.findElement(By.id("empty-queues")).isEnabled();
+			System.out.println("Checkbox status is: " +queues);
+			
 			if(queues)
 			{
 				driver.findElement(By.id("empty-queues")).click();
@@ -173,7 +175,7 @@ public class EMSQueues
 			}
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-			Thread.sleep(6000);
+			Thread.sleep(HighSleep);
 		
 		
 	}

@@ -742,7 +742,7 @@ public class BridgeViewlet {
 		
 		//Get the Source type data and store into string
 		String FirstBridge=driver.findElement(By.id("targetSelector")).getAttribute("value");
-		System.out.println(FirstBridge);
+		System.out.println("Bridge selector name is: " +FirstBridge);
 		
 		//Click on yes button
     	driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -759,7 +759,7 @@ public class BridgeViewlet {
 		
 		//Get the Source type data and store into string
 		String SecondBridge=driver.findElement(By.id("targetSelector")).getAttribute("value");
-		System.out.println(SecondBridge);
+		System.out.println("Second bridge selector name is: " +SecondBridge);
 		
 		//Click on yes button
     	driver.findElement(By.cssSelector(".btn-primary")).click();

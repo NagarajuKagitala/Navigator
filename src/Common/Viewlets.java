@@ -423,11 +423,11 @@ public class Viewlets
 				break;
 			}	
 		}
-		Thread.sleep(4000);
+		Thread.sleep(9000);
 		
 		//Select node value
 		driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
-		Thread.sleep(6000);
+		Thread.sleep(6000);          
 		try 
 		{
 			List<WebElement> Manager=driver.findElement(By.className("ng-dropdown-panel-items")).findElements(By.className("ng-option"));

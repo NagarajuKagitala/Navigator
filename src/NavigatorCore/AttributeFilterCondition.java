@@ -158,6 +158,7 @@ public class AttributeFilterCondition
 		
 		//Add attribute filter
 		driver.findElement(By.cssSelector("button.btn-white-round")).click();
+		Thread.sleep(3000);
 		
 		WebElement el=driver.findElement(By.className("maf-table-filters")).findElement(By.tagName("table"));
 		List<WebElement> rows=el.findElements(By.tagName("tr"));
@@ -165,6 +166,7 @@ public class AttributeFilterCondition
 		
 		for(WebElement r:rows)
 		{
+			//System.out.println("classes are: "+r.getAttribute("class"));
 			if(r.getAttribute("class").contains("ng-star-inserted"))
 			{
 			System.out.println("text :" +r.getText());

@@ -382,10 +382,11 @@ public class KafkaTopicMessages
 		Actions CopyAllMessagesMousehour=new Actions(driver);
 		CopyAllMessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Copy All")).click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		
 		//Search with target queue name 
 		driver.findElement(By.xpath("//div[2]/div/div/div/input")).sendKeys(SecondTopicName);
+		Thread.sleep(6000);
 		driver.findElement(By.xpath("//td/div/span/input")).click();
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(8000);

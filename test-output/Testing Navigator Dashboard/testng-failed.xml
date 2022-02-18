@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Testing Navigator Dashboard]">
+<suite name="Failed suite [Testing Navigator Dashboard]" guice-stage="DEVELOPMENT">
   <test name="Add Dashboard reports(failed)">
     <parameter name="ViewletName" value="Queues Viewlest"/>
     <parameter name="Dashboardname" value="Search Criteria Dashboard"/>

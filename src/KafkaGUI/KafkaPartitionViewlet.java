@@ -533,6 +533,7 @@ public class KafkaPartitionViewlet
 		
 		//Search with target queue name 
 		driver.findElement(By.xpath("//div[2]/div/div/div/input")).sendKeys(SecondTopicName);
+		Thread.sleep(MediumSleep);
 		driver.findElement(By.xpath("//td/div/span/input")).click();
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(8000);

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Manage Dashboard page options</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 26 13:16:20 IST 2021</td>
+<td>Started on:</td><td>Fri Feb 11 18:07:19 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>131 seconds (131016 ms)</td>
+<tr><td>Total time:</td><td>223 seconds (223846 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,93 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='NavigatorCore.TestUpload.Logout()'><b>Logout</b><br>Test class: NavigatorCore.TestUpload<br>Parameters: ManageDashboard</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=96.0.4664.45)
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [982d9c2caa6c5582c2ae386c3bd09ba1, findElement {using=xpath, value=//button[contains(.,&apos;Close&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62483}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62483/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 982d9c2caa6c5582c2ae386c3bd09ba1
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at Common.Dashboard.DeleteExistDashboard(Dashboard.java:65)
-	at Common.LogoutForAll.LogoutMethod(LogoutForAll.java:12)
-	at NavigatorCore.TestUpload.Logout(TestUpload.java:197)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1103017075", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1103017075'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=96.0.4664.45)
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [982d9c2caa6c5582c2ae386c3bd09ba1, findElement {using=xpath, value=//button[contains(.,&apos;Close&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62483}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62483/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 982d9c2caa6c5582c2ae386c3bd09ba1
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at Common.Dashboard.DeleteExistDashboard(Dashboard.java:65)
-	at Common.LogoutForAll.LogoutMethod(LogoutForAll.java:12)
-	at NavigatorCore.TestUpload.Logout(TestUpload.java:197)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>24</td>
-<td>NavigatorCore.TestUpload@60dcc9fe</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -162,31 +75,114 @@ Session ID: 982d9c2caa6c5582c2ae386c3bd09ba1
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='NavigatorCore.TestUpload.ImportDashboard()'><b>ImportDashboard</b><br>Test class: NavigatorCore.TestUpload<br>Parameters: org.testng.TestRunner@22c86919<br/>
-<a href="#Output-1933328958" onClick='toggleBox("Output-1933328958", this, "Show output", "Hide output");'>Show output</a>
+<td title='NavigatorCore.ManageDashboardOptions.CreareDashboardUsingNewButton()'><b>CreareDashboardUsingNewButton</b><br>Test class: NavigatorCore.ManageDashboardOptions<br>Parameters: ManageDashboard, org.testng.TestRunner@7c29adc8<br/>
+<a href="#Output-1390430007" onClick='toggleBox("Output-1390430007", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1933328958" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1933328958">
+<a href="#Output-1390430007" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1390430007">
 <br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ImportDashboard.png" alt="""/" /><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreareDashboardUsingNewButton.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>72</td>
-<td>NavigatorCore.TestUpload@60dcc9fe</td></tr>
+<td>11</td>
+<td>NavigatorCore.ManageDashboardOptions@42a15bdc</td></tr>
 <tr>
-<td title='NavigatorCore.TestUpload.Login()'><b>Login</b><br>Test class: NavigatorCore.TestUpload<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, ManageDashboard<br/>
-<a href="#Output-1457551880" onClick='toggleBox("Output-1457551880", this, "Show output", "Hide output");'>Show output</a>
+<td title='NavigatorCore.ManageDashboardOptions.CreateTagUsingAddButton()'><b>CreateTagUsingAddButton</b><br>Test class: NavigatorCore.ManageDashboardOptions<br>Parameters: NewTag, org.testng.TestRunner@7c29adc8<br/>
+<a href="#Output-1442089085" onClick='toggleBox("Output-1442089085", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1457551880" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1457551880">
+<a href="#Output-1442089085" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1442089085">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateTagUsingAddButton.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>NavigatorCore.ManageDashboardOptions@42a15bdc</td></tr>
+<tr>
+<td title='NavigatorCore.ManageDashboardOptions.DeleteDashboardUsingDeleteButton()'><b>DeleteDashboardUsingDeleteButton</b><br>Test class: NavigatorCore.ManageDashboardOptions<br>Parameters: DashboardRenamed, org.testng.TestRunner@7c29adc8<br/>
+<a href="#Output-1287062222" onClick='toggleBox("Output-1287062222", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1287062222" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1287062222">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteDashboardUsingDeleteButton.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>NavigatorCore.ManageDashboardOptions@42a15bdc</td></tr>
+<tr>
+<td title='NavigatorCore.ManageDashboardOptions.DeleteTagUsingDeleteButton()'><b>DeleteTagUsingDeleteButton</b><br>Test class: NavigatorCore.ManageDashboardOptions<br>Parameters: TagNastel, org.testng.TestRunner@7c29adc8<br/>
+<a href="#Output-930641076" onClick='toggleBox("Output-930641076", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-930641076" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-930641076">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteTagUsingDeleteButton.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>NavigatorCore.ManageDashboardOptions@42a15bdc</td></tr>
+<tr>
+<td title='NavigatorCore.ManageDashboardOptions.ExportDashboard()'><b>ExportDashboard</b><br>Test class: NavigatorCore.ManageDashboardOptions<br>Parameters: org.testng.TestRunner@7c29adc8<br/>
+<a href="#Output-977772506" onClick='toggleBox("Output-977772506", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-977772506" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-977772506">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ExportDashboard.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>NavigatorCore.ManageDashboardOptions@42a15bdc</td></tr>
+<tr>
+<td title='NavigatorCore.ManageDashboardOptions.Login()'><b>Login</b><br>Test class: NavigatorCore.ManageDashboardOptions<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, ManageDashboard<br/>
+<a href="#Output-447486093" onClick='toggleBox("Output-447486093", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-447486093" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-447486093">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
 <td>31</td>
-<td>NavigatorCore.TestUpload@60dcc9fe</td></tr>
+<td>NavigatorCore.ManageDashboardOptions@42a15bdc</td></tr>
+<tr>
+<td title='NavigatorCore.ManageDashboardOptions.Logout()'><b>Logout</b><br>Test class: NavigatorCore.ManageDashboardOptions<br>Parameters: ManageDashboard</td>
+<td></td>
+<td>6</td>
+<td>NavigatorCore.ManageDashboardOptions@42a15bdc</td></tr>
+<tr>
+<td title='NavigatorCore.ManageDashboardOptions.RenameDashboardUsingRenamebutton()'><b>RenameDashboardUsingRenamebutton</b><br>Test class: NavigatorCore.ManageDashboardOptions<br>Parameters: ManageDashboard, DashboardRenamed, org.testng.TestRunner@7c29adc8<br/>
+<a href="#Output-1893088773" onClick='toggleBox("Output-1893088773", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1893088773" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1893088773">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameDashboardUsingRenamebutton.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>NavigatorCore.ManageDashboardOptions@42a15bdc</td></tr>
+<tr>
+<td title='NavigatorCore.ManageDashboardOptions.UpdateTagNameUsingEditButton()'><b>UpdateTagNameUsingEditButton</b><br>Test class: NavigatorCore.ManageDashboardOptions<br>Parameters: NewTag, TagNastel, org.testng.TestRunner@7c29adc8<br/>
+<a href="#Output-175961135" onClick='toggleBox("Output-175961135", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-175961135" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-175961135">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/UpdateTagNameUsingEditButton.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>NavigatorCore.ManageDashboardOptions@42a15bdc</td></tr>
 </table><p>
 </body>
 </html>

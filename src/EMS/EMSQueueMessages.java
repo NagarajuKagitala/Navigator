@@ -168,14 +168,14 @@ public class EMSQueueMessages
 		Thread.sleep(4000);
 		driver.findElement(By.id("accept-true")).click();
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		
 		//UnCheck Show Empty Queues check box
 		driver.findElement(By.cssSelector(".fa-cog")).click();
 		driver.findElement(By.id("empty-queues")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-		Thread.sleep(6000);
+		Thread.sleep(10000);
 		
 		/*//put the messages into empty queues for testing
 		for(int m=1; m<=3; m++)

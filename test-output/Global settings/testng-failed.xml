@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Global settings]">
+<suite name="Failed suite [Global settings]" guice-stage="DEVELOPMENT">
   <test name="Global settings(failed)">
     <parameter name="GlobalNoticedata" value="Testing Global Notice Using Automation"/>
     <parameter name="sDriver" value="webdriver.chrome.driver"/>
@@ -11,7 +11,7 @@
     <classes>
       <class name="NavigatorCore.GlobalSettings">
         <methods>
-          <include name="DeleteEnvironmentLevel" invocation-numbers="0"/>
+          <include name="GlobalNotice" invocation-numbers="0"/>
           <include name="beforeTest"/>
           <include name="tearDown"/>
         </methods>

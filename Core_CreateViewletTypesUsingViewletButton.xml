@@ -27,7 +27,7 @@
         <include name="EditViewletOption"/>
         <include name="DeleteViewletOption"/>
         <include name="ExportDataToCSV"/> 
-        <include name="ImportViewletFromFileCheckbox"/>
+       <!--  <include name="ImportViewletFromFileCheckbox"/> -->
         <include name="Logout"/> 
         
        </methods>

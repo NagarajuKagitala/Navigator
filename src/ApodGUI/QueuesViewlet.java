@@ -1755,11 +1755,11 @@ public class QueuesViewlet
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.linkText("Add to favorites...")).click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 		//Select the favorite viewlet name
 		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();
-		Thread.sleep(LowSleep); 
+		Thread.sleep(MediumSleep); 
 		
 		WebElement drop=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
 		List<WebElement> div=drop.findElements(By.tagName("div"));
