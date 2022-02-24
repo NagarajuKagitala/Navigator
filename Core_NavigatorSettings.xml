@@ -31,7 +31,7 @@
         <include name="ShowSystemObjectsOnly"/> 
         <include name="ShowObjectSearchresultsFromActiveManagersOnly"/>
         <include name="ShowManagersForDefaultSchemas"/>  
-        <include name="ShowLogoutWindow"/> 
+        <include name="ShowLogoutWindow"/>  
         <include name="Logout"/> 
         
        </methods>

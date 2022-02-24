@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Navigator]" guice-stage="DEVELOPMENT">
-  <test name="Test Channel Auth Records Viewlet(failed)">
-    <parameter name="ViewletName" value="New Channel Auth Records"/>
-    <parameter name="ChannelAuthNameFromIcon" value="New.Channel.Icon"/>
-    <parameter name="Dashboardname" value="Channel AuthInfo"/>
+<suite name="Failed suite [Add a Schema]" guice-stage="DEVELOPMENT">
+  <test name="Add Schema Condition(failed)">
+    <parameter name="ViewletName" value="Schema buttons"/>
+    <parameter name="Dashboardname" value="Schema"/>
     <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="Attribute" value="Manager Name,Usage,Scope,Get Messages"/>
     <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
-    <parameter name="FavoriteViewletName" value="Channel Auth Favorite viewlet"/>
-    <parameter name="ChannelAuthNameFromOptions" value="New.Channel.Auth"/>
-    <parameter name="MultipleDescription" value="Test Multiple Properties"/>
-    <parameter name="UserList" value="MQADMIN"/>
-    <parameter name="SchemaName" value="ChannelAuthSchema"/>
-    <parameter name="ViewletValue" value="13"/>
+    <parameter name="DisplayedAttributesAfterRemoving" value="In order to create schema atleast one attribute has to be added"/>
+    <parameter name="AttributeName" value="Manager Name"/>
+    <parameter name="AttributeFirstValue" value="Manager Name"/>
+    <parameter name="SchemaName" value="Test Schema"/>
+    <parameter name="ViewletValue" value="3"/>
+    <parameter name="DisplayedAttributesAfterRemovingAttribute" value="In order to create schema atleast one attribute has to be added"/>
     <classes>
-      <class name="ApodGUI.ChannelAuthRecordsViewlet">
+      <class name="NavigatorCore.AddSchemaToTheViewlet">
         <methods>
-          <include name="MultipleChannelAuthRecordsProperties" invocation-numbers="0"/>
+          <include name="MoveToBottomButton" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- ApodGUI.ChannelAuthRecordsViewlet -->
+      </class> <!-- NavigatorCore.AddSchemaToTheViewlet -->
     </classes>
-  </test> <!-- Test Channel Auth Records Viewlet(failed) -->
-</suite> <!-- Failed suite [Navigator] -->
+  </test> <!-- Add Schema Condition(failed) -->
+</suite> <!-- Failed suite [Add a Schema] -->

@@ -1,6 +1,7 @@
 package NavigatorCore;
 
 import java.io.File;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 //import org.apache.commons.io.FileUtils;
@@ -343,11 +344,34 @@ public class SearchCriteria
 		driver.findElement(By.linkText("Browse messages")).click();
 		Thread.sleep(HighSleep);
 		
-		//Choose the Active filter
-		//driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div")).clear();
-		//driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div")).sendKeys(SearchCriteriaName);
-		//driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div")).sendKeys(Keys.ENTER);
-		//Thread.sleep(4000);
+		try
+		{
+			//Choose the Active filter
+			driver.findElement(By.xpath("//ng-select/div/span[2]")).click();
+			Thread.sleep(4000);
+		
+		}
+		catch (Exception e)
+		{
+			System.out.println("condition not selected");
+			driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
+			Thread.sleep(4000);
+		}
+		
+		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
+		List<WebElement> divw=dropw.findElements(By.tagName("div")); 
+		//System.out.println("Number of divs are: " +divw.size());
+		
+		for(WebElement diw : divw)
+		{
+			System.out.println("Creteia name is :" +diw.getText());
+			if(diw.getText().equalsIgnoreCase(SearchCriteriaName))
+			{
+				diw.click();
+				break;
+			}	
+		}
+		Thread.sleep(HighSleep);
 		
 		//Select Message check box
 		driver.findElement(By.xpath("//input[@name='name']")).click();

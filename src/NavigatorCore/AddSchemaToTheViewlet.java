@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -45,6 +46,8 @@ public class AddSchemaToTheViewlet
 	static int LowSleep;
 	static int MediumSleep;
 	static int HighSleep;
+	static String BottomAttribute="";
+	static String BottomAttribute1="";
 	
 	
 	@BeforeTest
@@ -330,7 +333,10 @@ public class AddSchemaToTheViewlet
 	public void AddAttributesButton(String AttributeName, ITestContext context) throws InterruptedException
 	{
 		//Send the Attribute name
-		driver.findElement(By.cssSelector("td[title=\""+ AttributeName +"\"]")).click();
+		WebElement man=driver.findElement(By.xpath("//td[contains(.,'"+ AttributeName +"')]"));
+		System.out.println("print:  " +man);
+		man.click();
+		//driver.findElement(By.cssSelector("td[title=\""+ AttributeName +"\"]")).click();
 		driver.findElement(By.xpath("//app-mod-edit-schema/div/div/div/div[2]/button[2]")).click();
 		Thread.sleep(MediumSleep);
 		
@@ -397,12 +403,14 @@ public class AddSchemaToTheViewlet
 		
 		//store the Selected attribute into string
 		String AttributeName=driver.findElement(By.xpath("//tr[6]/td")).getText();
+		System.out.println("Selected attribute is: " +AttributeName);
 		
 		//Click on Move to top Button
 		driver.findElement(By.xpath("//button[contains(.,'Move to Top')]")).click();
 		
 		//Store the Top Attribute value into string
 		String Top=driver.findElement(By.xpath("//td")).getText();
+		System.out.println("Top attribute name is: " +Top);
 		
 		if(AttributeName.equalsIgnoreCase(Top))
 		{
@@ -429,17 +437,28 @@ public class AddSchemaToTheViewlet
 		
 		//store the Selected attribute into string
 		String AttributeName=driver.findElement(By.xpath("//tr[6]/td")).getText();
-		System.out.println(AttributeName);
+		System.out.println("Selected attribute is: " +AttributeName);
 		
 		//click on move to bottom button
 		driver.findElement(By.xpath("//button[contains(.,'Move to Bottom')]")).click();
 		Thread.sleep(LowSleep);
 		
-		//Store the bottom Attribute into string
-		String BottomAttribute=driver.findElement(By.xpath("//tr[64]/td")).getText();
-		System.out.println(BottomAttribute);
+		try
+		{
+			//Store the bottom Attribute into string
+			BottomAttribute=driver.findElement(By.xpath("//tr[66]/td")).getText();
+			System.out.println("Bottom attribute is: " +BottomAttribute);
 		
-		if(BottomAttribute.equalsIgnoreCase(AttributeName))
+		}
+		catch (Exception e)
+		{
+			//Store the bottom Attribute into string
+		    BottomAttribute1=driver.findElement(By.xpath("//tr[64]/td")).getText();
+			System.out.println("Bottom attribute1 is: " +BottomAttribute1);
+			
+		}
+		
+		if(BottomAttribute.equalsIgnoreCase(AttributeName) || BottomAttribute1.equalsIgnoreCase(AttributeName))
 		{
 			System.out.println("Move to Bottom button is working fine");
 			context.setAttribute("Status", 1);

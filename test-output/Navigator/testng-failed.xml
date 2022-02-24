@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Navigator]" guice-stage="DEVELOPMENT">
-  <test name="Test Channel Auth Records Viewlet(failed)">
-    <parameter name="ViewletName" value="New Channel Auth Records"/>
-    <parameter name="ChannelAuthNameFromIcon" value="New.Channel.Icon"/>
-    <parameter name="Dashboardname" value="Channel AuthInfo"/>
+  <test name="Settings(failed)">
+    <parameter name="Dashboardname" value="Settings Dashboard"/>
+    <parameter name="wgs" value="WGS10"/>
+    <parameter name="Manager4" value="Testing"/>
     <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="Manager3" value="Test1"/>
     <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
-    <parameter name="FavoriteViewletName" value="Channel Auth Favorite viewlet"/>
-    <parameter name="ChannelAuthNameFromOptions" value="New.Channel.Auth"/>
-    <parameter name="MultipleDescription" value="Test Multiple Properties"/>
-    <parameter name="UserList" value="MQADMIN"/>
-    <parameter name="SchemaName" value="ChannelAuthSchema"/>
-    <parameter name="ViewletValue" value="13"/>
+    <parameter name="Manager2" value="AB"/>
+    <parameter name="Manager1" value="AA"/>
+    <parameter name="objpath2" value="\\WGS10"/>
+    <parameter name="FavoriteViewletName" value="Fav Viewlet"/>
+    <parameter name="Favwgs" value="WGS10 - 0"/>
+    <parameter name="objpath1" value="\\MQM"/>
     <classes>
-      <class name="ApodGUI.ChannelAuthRecordsViewlet">
+      <class name="NavigatorCore.NavigatorSettings">
         <methods>
-          <include name="MultipleChannelAuthRecordsProperties" invocation-numbers="0"/>
-          <include name="tearDown"/>
+          <include name="ShowInActiveChannelsCheckbox" invocation-numbers="0"/>
           <include name="beforeTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- ApodGUI.ChannelAuthRecordsViewlet -->
+      </class> <!-- NavigatorCore.NavigatorSettings -->
     </classes>
-  </test> <!-- Test Channel Auth Records Viewlet(failed) -->
+  </test> <!-- Settings(failed) -->
 </suite> <!-- Failed suite [Navigator] -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Add Dashboard reports</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 11 19:26:37 IST 2022</td>
+<td>Started on:</td><td>Thu Feb 24 12:24:34 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>263 seconds (263640 ms)</td>
+<tr><td>Total time:</td><td>320 seconds (320301 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,26 +75,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='NavigatorCore.SearchCriteria.ActiveFilterInBrowseMessagePage()'><b>ActiveFilterInBrowseMessagePage</b><br>Test class: NavigatorCore.SearchCriteria<br>Parameters: Search Queues, Message Search criteria, org.testng.TestRunner@a9f023e<br/>
-<a href="#Output-1744942100" onClick='toggleBox("Output-1744942100", this, "Show output", "Hide output");'>Show output</a>
+<td title='NavigatorCore.SearchCriteria.ActiveFilterInBrowseMessagePage()'><b>ActiveFilterInBrowseMessagePage</b><br>Test class: NavigatorCore.SearchCriteria<br>Parameters: Search Queues, Message Search criteria, org.testng.TestRunner@74174a23<br/>
+<a href="#Output-213095762" onClick='toggleBox("Output-213095762", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1744942100" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1744942100">
+<a href="#Output-213095762" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-213095762">
 <br/>Failed to execute method: ActiveFilterInBrowseMessagePage<br/><br/>
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/ActiveFilterInBrowseMessagePage.png" alt="""/" /><br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Active filter failed because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Active filter failed&apos; is not a valid XPath expression.
-  (Session info: chrome=98.0.4758.82)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ng-select/div/span[2]&quot;}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
 System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [51d8c0a19218aba58e7b03a733d89615, findElement {using=xpath, value=Active filter failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54214/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 51d8c0a19218aba58e7b03a733d89615
+Command: [4185e72c22e47d5f2ffccae8518a280e, findElement {using=xpath, value=//ng-select/div/span[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55491/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4185e72c22e47d5f2ffccae8518a280e
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -106,18 +105,17 @@ Session ID: 51d8c0a19218aba58e7b03a733d89615
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at NavigatorCore.SearchCriteria.ActiveFilterInBrowseMessagePage(SearchCriteria.java:387)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1744942100", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1744942100'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Active filter failed because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Active filter failed&apos; is not a valid XPath expression.
-  (Session info: chrome=98.0.4758.82)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+	at NavigatorCore.SearchCriteria.ActiveFilterInBrowseMessagePage(SearchCriteria.java:348)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace213095762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace213095762'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ng-select/div/span[2]&quot;}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
 System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [51d8c0a19218aba58e7b03a733d89615, findElement {using=xpath, value=Active filter failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54214/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 51d8c0a19218aba58e7b03a733d89615
+Command: [4185e72c22e47d5f2ffccae8518a280e, findElement {using=xpath, value=//ng-select/div/span[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55491/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4185e72c22e47d5f2ffccae8518a280e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -133,7 +131,7 @@ Session ID: 51d8c0a19218aba58e7b03a733d89615
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at NavigatorCore.SearchCriteria.ActiveFilterInBrowseMessagePage(SearchCriteria.java:387)
+	at NavigatorCore.SearchCriteria.ActiveFilterInBrowseMessagePage(SearchCriteria.java:348)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,7 +158,7 @@ Session ID: 51d8c0a19218aba58e7b03a733d89615
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>57</td>
+<td>48</td>
 <td>NavigatorCore.SearchCriteria@6b6776cb</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -171,17 +169,17 @@ Session ID: 51d8c0a19218aba58e7b03a733d89615
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='NavigatorCore.SearchCriteria.AddSearchCriteriaCondition()'><b>AddSearchCriteriaCondition</b><br>Test class: NavigatorCore.SearchCriteria<br>Parameters: Search Queues, Message Search criteria, org.testng.TestRunner@a9f023e<br/>
-<a href="#Output-2060569250" onClick='toggleBox("Output-2060569250", this, "Show output", "Hide output");'>Show output</a>
+<td title='NavigatorCore.SearchCriteria.AddSearchCriteriaCondition()'><b>AddSearchCriteriaCondition</b><br>Test class: NavigatorCore.SearchCriteria<br>Parameters: Search Queues, Message Search criteria, org.testng.TestRunner@74174a23<br/>
+<a href="#Output-1559154670" onClick='toggleBox("Output-1559154670", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2060569250" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2060569250">
+<a href="#Output-1559154670" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1559154670">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddSearchCriteriaCondition.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>55</td>
+<td>76</td>
 <td>NavigatorCore.SearchCriteria@6b6776cb</td></tr>
 <tr>
 <td title='NavigatorCore.SearchCriteria.Login()'><b>Login</b><br>Test class: NavigatorCore.SearchCriteria<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, Search Criteria Dashboard, 3, Queues Viewlest<br/>
@@ -194,20 +192,25 @@ Session ID: 51d8c0a19218aba58e7b03a733d89615
 </div>
 </td>
 <td></td>
-<td>77</td>
+<td>110</td>
+<td>NavigatorCore.SearchCriteria@6b6776cb</td></tr>
+<tr>
+<td title='NavigatorCore.SearchCriteria.Logout()'><b>Logout</b><br>Test class: NavigatorCore.SearchCriteria<br>Parameters: Search Criteria Dashboard</td>
+<td></td>
+<td>26</td>
 <td>NavigatorCore.SearchCriteria@6b6776cb</td></tr>
 <tr>
 <td title='NavigatorCore.SearchCriteria.PutAmessageIntoQueue()'><b>PutAmessageIntoQueue</b><br>Test class: NavigatorCore.SearchCriteria<br>Parameters: Search Criteria Dashboard, Message Search criteria<br/>
-<a href="#Output-790432700" onClick='toggleBox("Output-790432700", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-294649085" onClick='toggleBox("Output-294649085", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-790432700" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-790432700">
+<a href="#Output-294649085" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-294649085">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/PutAmessageIntoQueue.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>44</td>
+<td>49</td>
 <td>NavigatorCore.SearchCriteria@6b6776cb</td></tr>
 </table><p>
 </body>

@@ -197,38 +197,54 @@ public class NavigatorSettings
 	@TestRail(testCaseId=327)
 	public static void ShowInActiveChannelsCheckbox(ITestContext context) throws InterruptedException
 	{
+		try
+		{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.cssSelector(".fa-cog")).click();
 		
 		//Show Inactive channels check box
 		WebElement Checkbox=driver.findElement(By.id("inactive-channels"));
+		//System.out.println("Status of channels checkbox is: " +Checkbox.isSelected());
 		if(Checkbox.isSelected())
 		{
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
+			System.out.println("Already selected");
+			Thread.sleep(MediumSleep);
 		}
 		else
 		{
 			Checkbox.click();
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		}
-		Thread.sleep(MediumSleep);
+		Thread.sleep(HighSleep);
 		
-		String ChanneleViewletData=driver.findElement(By.xpath("//div[@id='main-page']/div[2]")).getText();
+		String NoofChannels=driver.findElement(By.xpath("//div[2]/app-viewlet/div/ngx-datatable/div/datatable-footer/div/div/span")).getText();
+		String[] Index1=NoofChannels.split(" Visible");
+		String[] Index2=Index1[0].split(": ");
+		int k=Integer.parseInt(Index2[1]);
+		System.out.println("viewlet size is: " +k);
 		
-		if(ChanneleViewletData.contains("Inactive"))
-		{
-			System.out.println("Inactive Check box is Working fine");
-			context.setAttribute("Status", 1);
-			context.setAttribute("Comment", "Inactive Check box is Working fine");
+		for(int i=2; i<=k; i++)
+		{                                              
+			String Result=driver.findElement(By.xpath("//div[2]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper["+ i +"]/datatable-body-row/div[2]/datatable-body-cell[7]/div/span")).getText();
+			//int integer=Integer.parseInt(Result);  
+			System.out.println("Values are: " +Result);
+			if(Result.equalsIgnoreCase("Inactive"))
+			{
+				System.out.println("Inactive Check box is Working fine");
+				context.setAttribute("Status", 1);
+				context.setAttribute("Comment", "Inactive Check box is Working fine");
+				break;
+			}
 		}
-		else
+		}
+		catch (Exception e)
 		{
 			System.out.println("Inactive Check box is not Working fine");
 			context.setAttribute("Status", 5);
 			context.setAttribute("Comment", "Inactive Check box is not Working properly");
 			driver.findElement(By.xpath("Checkbox not working")).click();
-		}
-		
+		}		
 		Thread.sleep(1000);
 	}
 	
