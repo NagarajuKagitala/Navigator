@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Menu bar icons</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 11 18:23:26 IST 2022</td>
+<td>Started on:</td><td>Thu Mar 10 14:02:19 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>244 seconds (244399 ms)</td>
+<tr><td>Total time:</td><td>267 seconds (267555 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,100 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='NavigatorCore.MenuBarIcons.SecurityManagerIcon()'><b>SecurityManagerIcon</b><br>Test class: NavigatorCore.MenuBarIcons<br>Parameters: http://jenkins.nastel.com:8080/apodwsm/, http://localhost:8080/apodwsm/, org.testng.TestRunner@6eb82908<br/>
+<a href="#Output-377957453" onClick='toggleBox("Output-377957453", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-377957453" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-377957453">
+<br/>Failed to execute method: SecurityManagerIcon<br/><br/>
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/SecurityManagerIcon.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Security\ manager\ icon\ failed&quot;}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef073a9a0e64c3b411e98ff62cf239b6, findElement {using=id, value=Security manager icon failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51312/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef073a9a0e64c3b411e98ff62cf239b6
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at NavigatorCore.MenuBarIcons.SecurityManagerIcon(MenuBarIcons.java:321)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace377957453", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace377957453'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Security\ manager\ icon\ failed&quot;}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef073a9a0e64c3b411e98ff62cf239b6, findElement {using=id, value=Security manager icon failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51312/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef073a9a0e64c3b411e98ff62cf239b6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at NavigatorCore.MenuBarIcons.SecurityManagerIcon(MenuBarIcons.java:321)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>34</td>
+<td>NavigatorCore.MenuBarIcons@797b0699</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,11 +169,11 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='NavigatorCore.MenuBarIcons.AboutIcon()'><b>AboutIcon</b><br>Test class: NavigatorCore.MenuBarIcons<br>Parameters: org.testng.TestRunner@f2ce6b<br/>
-<a href="#Output-988402146" onClick='toggleBox("Output-988402146", this, "Show output", "Hide output");'>Show output</a>
+<td title='NavigatorCore.MenuBarIcons.AboutIcon()'><b>AboutIcon</b><br>Test class: NavigatorCore.MenuBarIcons<br>Parameters: org.testng.TestRunner@6eb82908<br/>
+<a href="#Output-1481853275" onClick='toggleBox("Output-1481853275", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-988402146" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-988402146">
+<a href="#Output-1481853275" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1481853275">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AboutIcon.png" alt="""/" /><br/>
 </div>
@@ -88,11 +182,11 @@ function toggleAllBoxes() {
 <td>12</td>
 <td>NavigatorCore.MenuBarIcons@797b0699</td></tr>
 <tr>
-<td title='NavigatorCore.MenuBarIcons.HelpIcon()'><b>HelpIcon</b><br>Test class: NavigatorCore.MenuBarIcons<br>Parameters: https://customers.nastel.com/hc/en-us/categories/360002068774-Nastel-Navigator, org.testng.TestRunner@f2ce6b<br/>
-<a href="#Output-1081159401" onClick='toggleBox("Output-1081159401", this, "Show output", "Hide output");'>Show output</a>
+<td title='NavigatorCore.MenuBarIcons.HelpIcon()'><b>HelpIcon</b><br>Test class: NavigatorCore.MenuBarIcons<br>Parameters: https://customers.nastel.com/hc/en-us/categories/360002068774-Nastel-Navigator, org.testng.TestRunner@6eb82908<br/>
+<a href="#Output-1816326817" onClick='toggleBox("Output-1816326817", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1081159401" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1081159401">
+<a href="#Output-1816326817" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1816326817">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/HelpIcon.png" alt="""/" /><br/>
 </div>
@@ -102,23 +196,23 @@ function toggleAllBoxes() {
 <td>NavigatorCore.MenuBarIcons@797b0699</td></tr>
 <tr>
 <td title='NavigatorCore.MenuBarIcons.Login()'><b>Login</b><br>Test class: NavigatorCore.MenuBarIcons<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe<br/>
-<a href="#Output-1210600718" onClick='toggleBox("Output-1210600718", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1618180899" onClick='toggleBox("Output-1618180899", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1210600718" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1210600718">
+<a href="#Output-1618180899" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1618180899">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>22</td>
+<td>24</td>
 <td>NavigatorCore.MenuBarIcons@797b0699</td></tr>
 <tr>
-<td title='NavigatorCore.MenuBarIcons.LoginUsername()'><b>LoginUsername</b><br>Test class: NavigatorCore.MenuBarIcons<br>Parameters: org.testng.TestRunner@f2ce6b<br/>
-<a href="#Output-1710000932" onClick='toggleBox("Output-1710000932", this, "Show output", "Hide output");'>Show output</a>
+<td title='NavigatorCore.MenuBarIcons.LoginUsername()'><b>LoginUsername</b><br>Test class: NavigatorCore.MenuBarIcons<br>Parameters: org.testng.TestRunner@6eb82908<br/>
+<a href="#Output-577037372" onClick='toggleBox("Output-577037372", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1710000932" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1710000932">
+<a href="#Output-577037372" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-577037372">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/LoginUsername.png" alt="""/" /><br/>
 </div>
@@ -129,14 +223,14 @@ function toggleAllBoxes() {
 <tr>
 <td title='NavigatorCore.MenuBarIcons.Logout()'><b>Logout</b><br>Test class: NavigatorCore.MenuBarIcons</td>
 <td></td>
-<td>6</td>
+<td>2</td>
 <td>NavigatorCore.MenuBarIcons@797b0699</td></tr>
 <tr>
-<td title='NavigatorCore.MenuBarIcons.RequestHistoryIcon()'><b>RequestHistoryIcon</b><br>Test class: NavigatorCore.MenuBarIcons<br>Parameters: org.testng.TestRunner@f2ce6b<br/>
-<a href="#Output-925936450" onClick='toggleBox("Output-925936450", this, "Show output", "Hide output");'>Show output</a>
+<td title='NavigatorCore.MenuBarIcons.RequestHistoryIcon()'><b>RequestHistoryIcon</b><br>Test class: NavigatorCore.MenuBarIcons<br>Parameters: org.testng.TestRunner@6eb82908<br/>
+<a href="#Output-1410008136" onClick='toggleBox("Output-1410008136", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-925936450" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-925936450">
+<a href="#Output-1410008136" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1410008136">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RequestHistoryIcon.png" alt="""/" /><br/>
 </div>
@@ -145,11 +239,11 @@ function toggleAllBoxes() {
 <td>9</td>
 <td>NavigatorCore.MenuBarIcons@797b0699</td></tr>
 <tr>
-<td title='NavigatorCore.MenuBarIcons.SchedularColumnbutton()'><b>SchedularColumnbutton</b><br>Test class: NavigatorCore.MenuBarIcons<br>Parameters: org.testng.TestRunner@f2ce6b<br/>
-<a href="#Output-1188445627" onClick='toggleBox("Output-1188445627", this, "Show output", "Hide output");'>Show output</a>
+<td title='NavigatorCore.MenuBarIcons.SchedularColumnbutton()'><b>SchedularColumnbutton</b><br>Test class: NavigatorCore.MenuBarIcons<br>Parameters: org.testng.TestRunner@6eb82908<br/>
+<a href="#Output-1026001741" onClick='toggleBox("Output-1026001741", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1188445627" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1188445627">
+<a href="#Output-1026001741" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1026001741">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SchedularColumnbutton.png" alt="""/" /><br/>
 </div>
@@ -158,30 +252,17 @@ function toggleAllBoxes() {
 <td>31</td>
 <td>NavigatorCore.MenuBarIcons@797b0699</td></tr>
 <tr>
-<td title='NavigatorCore.MenuBarIcons.SchedularIcon()'><b>SchedularIcon</b><br>Test class: NavigatorCore.MenuBarIcons<br>Parameters: org.testng.TestRunner@f2ce6b<br/>
-<a href="#Output-1221433900" onClick='toggleBox("Output-1221433900", this, "Show output", "Hide output");'>Show output</a>
+<td title='NavigatorCore.MenuBarIcons.SchedularIcon()'><b>SchedularIcon</b><br>Test class: NavigatorCore.MenuBarIcons<br>Parameters: org.testng.TestRunner@6eb82908<br/>
+<a href="#Output-1760763936" onClick='toggleBox("Output-1760763936", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1221433900" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1221433900">
+<a href="#Output-1760763936" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1760763936">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SchedularIcon.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
 <td>9</td>
-<td>NavigatorCore.MenuBarIcons@797b0699</td></tr>
-<tr>
-<td title='NavigatorCore.MenuBarIcons.SecurityManagerIcon()'><b>SecurityManagerIcon</b><br>Test class: NavigatorCore.MenuBarIcons<br>Parameters: http://jenkins.nastel.com:8080/apodwsm/, http://localhost:8080/apodwsm/, org.testng.TestRunner@f2ce6b<br/>
-<a href="#Output-1217639236" onClick='toggleBox("Output-1217639236", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1217639236" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1217639236">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SecurityManagerIcon.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>24</td>
 <td>NavigatorCore.MenuBarIcons@797b0699</td></tr>
 </table><p>
 </body>

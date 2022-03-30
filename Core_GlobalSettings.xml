@@ -5,10 +5,12 @@
   <parameter name="sDriver" value="webdriver.chrome.driver"/>
   <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
   
+    <parameter name="Dashboardname" value="AutomationDashboard"/>
     <parameter name="GlobalNoticedata" value="Testing Global Notice Using Automation"/>
     <parameter name="EnvironmentData" value="Testing Environment Text"/>
     <parameter name="UpdatedEnvironmentData" value="New Environment data"/>
     <parameter name="ViewletValue" value="3"/>
+    <parameter name="NewOwner" value="Automation"/>
     
      <classes>
       <class name="NavigatorCore.GlobalSettings">
@@ -19,7 +21,9 @@
         <include name="GlobalNotice"/> 
         <include name="EnvironmentLevel"/> 
         <include name="UpdateEnvironmentLevel"/>
-        <include name="DeleteEnvironmentLevel"/>
+        <include name="DeleteEnvironmentLevel"/> 
+        <include name="MinimumRefreshInterval"/>
+        <include name="DashboardOwnershipManagement"/>
         <include name="Logout"/>
         
        </methods>

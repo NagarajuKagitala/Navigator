@@ -25,10 +25,12 @@
         <include name="OpenAnExistingCheckbox"/>
         <include name="CreateTemporaryViewletUsingTemporaryViewletCheckbox"/>  
         <include name="EditViewletOption"/>
+        <include name="ManageFilteredColumns"/>
+        <include name="ManageFrozenColumns"/>
         <include name="DeleteViewletOption"/>
         <include name="ExportDataToCSV"/> 
        <!--  <include name="ImportViewletFromFileCheckbox"/> -->
-        <include name="Logout"/> 
+        <include name="Logout"/>  
         
        </methods>
        

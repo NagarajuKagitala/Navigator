@@ -5,7 +5,7 @@
   <parameter name="sDriver" value="webdriver.chrome.driver"/>
   <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
   
-  <parameter name="SecurityManagerURLLocal" value="http://localhost:8080/apodwsm/"/>
+  <parameter name="SecurityManagerURLLocal" value="http://localhost:8080/navxwsm/login"/>
   <parameter name="SecurityManagerURL" value="http://jenkins.nastel.com:8080/apodwsm/"/>
   <parameter name="HelpURL" value="https://customers.nastel.com/hc/en-us/categories/360002068774-Nastel-Navigator"/>
     

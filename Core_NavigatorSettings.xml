@@ -32,7 +32,8 @@
         <include name="ShowObjectSearchresultsFromActiveManagersOnly"/>
         <include name="ShowManagersForDefaultSchemas"/>  
         <include name="ShowLogoutWindow"/>  
-        <include name="Logout"/> 
+        <include name="CollapseAllViewletOnLogin"/>
+        <include name="Logout"/>  
         
        </methods>
        

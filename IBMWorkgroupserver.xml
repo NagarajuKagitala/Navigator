@@ -40,6 +40,11 @@
 		<parameter name="ConnectionType" value="IIB"/>
 		<parameter name="Node_NewURL" value="http://localhost:1144"/>
 		
+		<parameter name="SolaceNodeInstanceName" value="CMSOLACEDELETE"/>
+		<parameter name="SolaceBrokerName" value="SOLACEBROKER"/>
+		<parameter name="SolaceServerURL" value="127.0.0.1:9999"/>
+		<parameter name="SolaceServerName" value="CMSOLACEDELETE"/>
+		<parameter name="SolaceUpdatedServerURL" value="127.0.0.1:6666"/>
 		
 		<parameter name="ConnectionName" value="MQM1"/>
 		<parameter name="Server" value="192.168.1.88"/>
@@ -73,7 +78,10 @@
 				    <include name="DeleteRemoteKafkaManager"/>   
 				    <include name="AddRemoteIIBORACEManagerConnection"/>
 				    <include name="ModifyIIBOrACEManagerConnection"/>
-				    <include name="DeleteIIBOrACEConnectionManager"/>   
+				    <include name="DeleteIIBOrACEConnectionManager"/> 
+				    <include name="AddRemoteSolaceManager"/>
+				    <include name="ModifyRemoteSolaceServer"/>
+				    <include name="DeleteRemoteSolaceServer"/>   
 				    
 				    <include name="AddWGSConnection"/>
 				    <include name="ModifyWGSConnection"/>

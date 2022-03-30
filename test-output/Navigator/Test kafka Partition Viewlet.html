@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test kafka Partition Viewlet</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 11 17:06:00 IST 2022</td>
+<td>Started on:</td><td>Wed Mar 16 15:43:12 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>449 seconds (449001 ms)</td>
+<tr><td>Total time:</td><td>687 seconds (687639 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,102 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='KafkaGUI.KafkaPartitionViewlet.ClearAllMessagesFromPartition()'><b>ClearAllMessagesFromPartition</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition, org.testng.TestRunner@10bea4<br/>
+<a href="#Output-276922182" onClick='toggleBox("Output-276922182", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-276922182" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-276922182">
+<br/>Failed to execute method: ClearAllMessagesFromPartition<br/><br/>
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/ClearAllMessagesFromPartition.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Condition is Failed because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Condition is Failed&apos; is not a valid XPath expression.
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8cf38aab2759aad989884a2e9289599f, findElement {using=xpath, value=Condition is Failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60270}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60270/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cf38aab2759aad989884a2e9289599f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at KafkaGUI.KafkaPartitionViewlet.ClearAllMessagesFromPartition(KafkaPartitionViewlet.java:616)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace276922182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace276922182'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Condition is Failed because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Condition is Failed&apos; is not a valid XPath expression.
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8cf38aab2759aad989884a2e9289599f, findElement {using=xpath, value=Condition is Failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60270}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60270/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cf38aab2759aad989884a2e9289599f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at KafkaGUI.KafkaPartitionViewlet.ClearAllMessagesFromPartition(KafkaPartitionViewlet.java:616)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>31</td>
+<td>KafkaGUI.KafkaPartitionViewlet@2d9caaeb</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,11 +171,11 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='KafkaGUI.KafkaPartitionViewlet.AddToFavoriteForMultiplePartitions()'><b>AddToFavoriteForMultiplePartitions</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition, Partition Fav, org.testng.TestRunner@a7ad6e5<br/>
-<a href="#Output-1593333077" onClick='toggleBox("Output-1593333077", this, "Show output", "Hide output");'>Show output</a>
+<td title='KafkaGUI.KafkaPartitionViewlet.AddToFavoriteForMultiplePartitions()'><b>AddToFavoriteForMultiplePartitions</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition, Partition Fav, org.testng.TestRunner@10bea4<br/>
+<a href="#Output-1580751727" onClick='toggleBox("Output-1580751727", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1593333077" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1593333077">
+<a href="#Output-1580751727" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1580751727">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultiplePartitions.png" alt="""/" /><br/>
 </div>
@@ -88,37 +184,37 @@ function toggleAllBoxes() {
 <td>24</td>
 <td>KafkaGUI.KafkaPartitionViewlet@2d9caaeb</td></tr>
 <tr>
-<td title='KafkaGUI.KafkaPartitionViewlet.AddToFavoriteViewlet()'><b>AddToFavoriteViewlet</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition, Partition Fav, org.testng.TestRunner@a7ad6e5<br/>
-<a href="#Output-1277882374" onClick='toggleBox("Output-1277882374", this, "Show output", "Hide output");'>Show output</a>
+<td title='KafkaGUI.KafkaPartitionViewlet.AddToFavoriteViewlet()'><b>AddToFavoriteViewlet</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition, Partition Fav, org.testng.TestRunner@10bea4<br/>
+<a href="#Output-2085813377" onClick='toggleBox("Output-2085813377", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1277882374" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1277882374">
+<a href="#Output-2085813377" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2085813377">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>33</td>
+<td>43</td>
 <td>KafkaGUI.KafkaPartitionViewlet@2d9caaeb</td></tr>
 <tr>
-<td title='KafkaGUI.KafkaPartitionViewlet.ClearAllMessagesFromPartition()'><b>ClearAllMessagesFromPartition</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition, org.testng.TestRunner@a7ad6e5<br/>
-<a href="#Output-124702413" onClick='toggleBox("Output-124702413", this, "Show output", "Hide output");'>Show output</a>
+<td title='KafkaGUI.KafkaPartitionViewlet.BrowseMessages()'><b>BrowseMessages</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition, org.testng.TestRunner@10bea4<br/>
+<a href="#Output-1601800698" onClick='toggleBox("Output-1601800698", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-124702413" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-124702413">
+<a href="#Output-1601800698" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1601800698">
 <br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ClearAllMessagesFromPartition.png" alt="""/" /><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/BrowseMessages.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>32</td>
+<td>16</td>
 <td>KafkaGUI.KafkaPartitionViewlet@2d9caaeb</td></tr>
 <tr>
-<td title='KafkaGUI.KafkaPartitionViewlet.ComparePartitions()'><b>ComparePartitions</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: org.testng.TestRunner@a7ad6e5<br/>
-<a href="#Output-153950082" onClick='toggleBox("Output-153950082", this, "Show output", "Hide output");'>Show output</a>
+<td title='KafkaGUI.KafkaPartitionViewlet.ComparePartitions()'><b>ComparePartitions</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: org.testng.TestRunner@10bea4<br/>
+<a href="#Output-2014729464" onClick='toggleBox("Output-2014729464", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-153950082" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-153950082">
+<a href="#Output-2014729464" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2014729464">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ComparePartitions.png" alt="""/" /><br/>
 </div>
@@ -127,30 +223,56 @@ function toggleAllBoxes() {
 <td>24</td>
 <td>KafkaGUI.KafkaPartitionViewlet@2d9caaeb</td></tr>
 <tr>
-<td title='KafkaGUI.KafkaPartitionViewlet.DifferencesOfPartitions()'><b>DifferencesOfPartitions</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: org.testng.TestRunner@a7ad6e5<br/>
-<a href="#Output-1871617286" onClick='toggleBox("Output-1871617286", this, "Show output", "Hide output");'>Show output</a>
+<td title='KafkaGUI.KafkaPartitionViewlet.DifferencesOfPartitions()'><b>DifferencesOfPartitions</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: org.testng.TestRunner@10bea4<br/>
+<a href="#Output-1518037877" onClick='toggleBox("Output-1518037877", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1871617286" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1871617286">
+<a href="#Output-1518037877" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1518037877">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DifferencesOfPartitions.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>21</td>
+<td>20</td>
+<td>KafkaGUI.KafkaPartitionViewlet@2d9caaeb</td></tr>
+<tr>
+<td title='KafkaGUI.KafkaPartitionViewlet.Events()'><b>Events</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition, org.testng.TestRunner@10bea4<br/>
+<a href="#Output-494951073" onClick='toggleBox("Output-494951073", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-494951073" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-494951073">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Events.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>KafkaGUI.KafkaPartitionViewlet@2d9caaeb</td></tr>
+<tr>
+<td title='KafkaGUI.KafkaPartitionViewlet.LoadmessagetoPartitionFromFile()'><b>LoadmessagetoPartitionFromFile</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition, org.testng.TestRunner@10bea4<br/>
+<a href="#Output-1843324431" onClick='toggleBox("Output-1843324431", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1843324431" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1843324431">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/LoadmessagetoPartitionFromFile.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
 <td>KafkaGUI.KafkaPartitionViewlet@2d9caaeb</td></tr>
 <tr>
 <td title='KafkaGUI.KafkaPartitionViewlet.Login()'><b>Login</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, Kafka Partition, 5, Kafka Partition Viewlet<br/>
-<a href="#Output-1149747394" onClick='toggleBox("Output-1149747394", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-959897458" onClick='toggleBox("Output-959897458", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1149747394" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1149747394">
+<a href="#Output-959897458" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-959897458">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>76</td>
+<td>67</td>
 <td>KafkaGUI.KafkaPartitionViewlet@2d9caaeb</td></tr>
 <tr>
 <td title='KafkaGUI.KafkaPartitionViewlet.Logout()'><b>Logout</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition</td>
@@ -158,11 +280,11 @@ function toggleAllBoxes() {
 <td>26</td>
 <td>KafkaGUI.KafkaPartitionViewlet@2d9caaeb</td></tr>
 <tr>
-<td title='KafkaGUI.KafkaPartitionViewlet.PartitionCopyAllMessages()'><b>PartitionCopyAllMessages</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition, org.testng.TestRunner@a7ad6e5<br/>
-<a href="#Output-492938056" onClick='toggleBox("Output-492938056", this, "Show output", "Hide output");'>Show output</a>
+<td title='KafkaGUI.KafkaPartitionViewlet.PartitionCopyAllMessages()'><b>PartitionCopyAllMessages</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition, org.testng.TestRunner@10bea4<br/>
+<a href="#Output-293618119" onClick='toggleBox("Output-293618119", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-492938056" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-492938056">
+<a href="#Output-293618119" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-293618119">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/PartitionCopyAllMessages.png" alt="""/" /><br/>
 </div>
@@ -171,17 +293,43 @@ function toggleAllBoxes() {
 <td>37</td>
 <td>KafkaGUI.KafkaPartitionViewlet@2d9caaeb</td></tr>
 <tr>
-<td title='KafkaGUI.KafkaPartitionViewlet.ShowObjectAttributes()'><b>ShowObjectAttributes</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition, Schema, org.testng.TestRunner@a7ad6e5<br/>
-<a href="#Output-757257137" onClick='toggleBox("Output-757257137", this, "Show output", "Hide output");'>Show output</a>
+<td title='KafkaGUI.KafkaPartitionViewlet.PartitionExportMessages()'><b>PartitionExportMessages</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition, org.testng.TestRunner@10bea4<br/>
+<a href="#Output-935667786" onClick='toggleBox("Output-935667786", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-757257137" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-757257137">
+<a href="#Output-935667786" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-935667786">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/PartitionExportMessages.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>KafkaGUI.KafkaPartitionViewlet@2d9caaeb</td></tr>
+<tr>
+<td title='KafkaGUI.KafkaPartitionViewlet.PutmessageintoPartition()'><b>PutmessageintoPartition</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition, New test message, org.testng.TestRunner@10bea4<br/>
+<a href="#Output-529766927" onClick='toggleBox("Output-529766927", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-529766927" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-529766927">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/PutmessageintoPartition.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>KafkaGUI.KafkaPartitionViewlet@2d9caaeb</td></tr>
+<tr>
+<td title='KafkaGUI.KafkaPartitionViewlet.ShowObjectAttributes()'><b>ShowObjectAttributes</b><br>Test class: KafkaGUI.KafkaPartitionViewlet<br>Parameters: Kafka Partition, Schema, org.testng.TestRunner@10bea4<br/>
+<a href="#Output-798678484" onClick='toggleBox("Output-798678484", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-798678484" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-798678484">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributes.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>72</td>
+<td>74</td>
 <td>KafkaGUI.KafkaPartitionViewlet@2d9caaeb</td></tr>
 </table><p>
 </body>

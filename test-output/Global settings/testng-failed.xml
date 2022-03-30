@@ -11,9 +11,13 @@
     <classes>
       <class name="NavigatorCore.GlobalSettings">
         <methods>
-          <include name="GlobalNotice" invocation-numbers="0"/>
+          <include name="EnvironmentLevel" invocation-numbers="0"/>
+          <include name="DeleteEnvironmentLevel" invocation-numbers="0"/>
+          <include name="Logout"/>
+          <include name="MinimumRefreshInterval" invocation-numbers="0"/>
           <include name="beforeTest"/>
           <include name="tearDown"/>
+          <include name="UpdateEnvironmentLevel" invocation-numbers="0"/>
         </methods>
       </class> <!-- NavigatorCore.GlobalSettings -->
     </classes>

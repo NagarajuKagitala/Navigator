@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -23,6 +24,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import Common.Dashboard;
 import testrail.Settings;
 import testrail.TestClass;
 import testrail.TestRail;
@@ -61,9 +63,9 @@ static WebDriver driver;
 		HighSleep=Integer.parseInt(High);
 	}
 	
-	@Parameters({"sDriver", "sDriverpath"})
+	@Parameters({"sDriver", "sDriverpath", "Dashboardname"})
 	@Test
-	public static void Login(String sDriver, String sDriverpath) throws Exception
+	public static void Login(String sDriver, String sDriverpath, String Dashboardname) throws Exception
 	{
 		Settings.read();
 		String URL = Settings.getSettingURL();
@@ -101,6 +103,20 @@ static WebDriver driver;
 		driver.findElement(By.id("password")).sendKeys(password);
 		driver.findElement(By.cssSelector("button.btn-submit")).click();
 		Thread.sleep(HighSleep);
+		
+		//Delete if dashboard exists with same name
+		Dashboard ob=new Dashboard();
+		ob.DeleteExistDashboard(driver, Dashboardname);
+		
+		//---------- Create New Dashboard ---
+		//Create New Dashboard
+		driver.findElement(By.cssSelector("div.block-with-border")).click();
+		driver.findElement(By.name("dashboardName")).sendKeys(Dashboardname);
+		//driver.findElement(By.id("iv_yes")).click();
+			
+		//Create viewlet button
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(MediumSleep);
 	}
 	
 	
@@ -386,6 +402,152 @@ static WebDriver driver;
 		Thread.sleep(MediumSleep);
 	}
 	
+	@TestRail(testCaseId=1172)
+	@Test(priority=5)
+	public void MinimumRefreshInterval(ITestContext context) throws InterruptedException
+	{
+		//Edit global settings
+		EditGlobalSettings();
+		
+		//Get Refresh interval
+		String RefreshInterval=driver.findElement(By.xpath("//div[2]/div/div/div/div/input")).getAttribute("value");
+		System.out.println("Initial interval is: " +RefreshInterval);
+		int IRI=Integer.parseInt(RefreshInterval);
+		
+		int MinRI=IRI+10;
+		String Interval=Integer.toString(MinRI);
+		System.out.println("Minimum interval is: " +Interval);
+		
+		//Give the minimum value
+		driver.findElement(By.xpath("//div[2]/input")).clear();
+		Thread.sleep(LowSleep);
+		driver.findElement(By.xpath("//div[2]/input")).sendKeys(Keys.BACK_SPACE);
+		driver.findElement(By.xpath("//div[2]/input")).sendKeys(Interval);
+		Thread.sleep(LowSleep);
+		
+		//Click on save changes button
+		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
+		Thread.sleep(MediumSleep);	
+		
+		//Edit Global settings
+		EditGlobalSettings();
+		
+		//Get result value
+		String RefreshIntervalResult=driver.findElement(By.xpath("//div[2]/div/div/div/div/input")).getAttribute("value");
+		System.out.println("final interval is: " +RefreshIntervalResult);
+		int ResultIRI=Integer.parseInt(RefreshIntervalResult);
+		
+		//Give the minimum value
+		driver.findElement(By.xpath("//div[2]/input")).clear();
+		Thread.sleep(MediumSleep);
+		driver.findElement(By.xpath("//div[2]/input")).sendKeys(Keys.BACK_SPACE);
+		driver.findElement(By.xpath("//div[2]/input")).sendKeys("120");
+		Thread.sleep(LowSleep);
+		
+		//Click on save changes button
+		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
+		Thread.sleep(MediumSleep);
+		
+		if(ResultIRI==MinRI)
+		{
+			System.out.println("Minimum refresh interval is working fine");
+			context.setAttribute("Status", 1);
+			context.setAttribute("Comment", "Minimum refresh interval is working");
+		}
+		else
+		{
+			System.out.println("Minimum refresh interval is not working");
+			context.setAttribute("Status", 5);
+			context.setAttribute("Comment", "Minimum refresh interval is not working");
+			driver.findElement(By.id("Minimum refresh interval failed")).click();
+		}
+	}
+	
+	@TestRail(testCaseId=1173)
+	@Parameters({"Dashboardname", "NewOwner"})
+	@Test(priority=6)
+	public void DashboardOwnershipManagement(String Dashboardname, String NewOwner, ITestContext context) throws Exception
+	{
+		Settings.read();
+		String URL = Settings.getSettingURL();
+		String uname=Settings.getNav_Username();
+		String password=Settings.getNav_Password();
+		
+		driver.get(URL);
+		
+		//Login with user
+		driver.findElement(By.id("username")).sendKeys(NewOwner);
+		driver.findElement(By.id("password")).sendKeys("User");
+		driver.findElement(By.cssSelector("button.btn-submit")).click();
+		Thread.sleep(LowSleep);
+		
+		//Click on cancel button
+		driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
+		Thread.sleep(LowSleep);
+		
+		driver.get(URL);
+		
+		//Login with main user
+		driver.findElement(By.id("username")).sendKeys(uname);
+		driver.findElement(By.id("password")).sendKeys(password);
+		driver.findElement(By.cssSelector("button.btn-submit")).click();
+		Thread.sleep(HighSleep);
+		
+		EditGlobalSettings();
+		
+		//Choose Dashboard ownership management tab
+		driver.findElement(By.xpath("//div[12]")).click();
+		Thread.sleep(MediumSleep);
+		
+		//Search with dashboard name
+		driver.findElement(By.xpath("//app-modal-main-settings-dashboard-ownership-management/div/div/div[2]/input")).sendKeys(Dashboardname);
+		driver.findElement(By.xpath("//app-modal-main-settings-dashboard-ownership-management/div/div/div[2]/input[2]")).click();
+		Thread.sleep(LowSleep);
+		
+		//Select check box
+		driver.findElement(By.xpath("//td/input")).click();
+		Thread.sleep(MediumSleep);
+		
+		//Click on change owner button
+		driver.findElement(By.xpath("//button[contains(.,' Change Owner')]")).click();
+		Thread.sleep(MediumSleep);
+		
+		//Search with owner
+		driver.findElement(By.xpath("//app-modal-change-dashboard-owner/div/div/div[2]/input")).sendKeys(NewOwner);
+		driver.findElement(By.xpath("//app-modal-change-dashboard-owner/div/div/div[2]/input[2]")).click();
+		Thread.sleep(MediumSleep);
+		
+		//Set owner
+		driver.findElement(By.xpath("//button[contains(.,' Set owner')]")).click();
+		Thread.sleep(LowSleep);
+		
+		//Click on confirmation yes
+		driver.findElement(By.id("accept-true")).click();
+		Thread.sleep(MediumSleep);
+		
+		String OwnerName=driver.findElement(By.xpath("//td[3]")).getText();
+		System.out.println("Owner ship name is: " +OwnerName);
+		
+		//Click on save changes
+		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
+		Thread.sleep(MediumSleep);
+		
+		
+		if(OwnerName.equalsIgnoreCase(NewOwner))
+		{
+			System.out.println("Dashboard ownership management is working fine");
+			context.setAttribute("Status", 1);
+			context.setAttribute("Comment", "Dashboard ownership management is working");
+		}
+		else
+		{
+			System.out.println("Dashboard ownership management is not working");
+			context.setAttribute("Status", 5);
+			context.setAttribute("Comment", "Dashboard ownership management is not working");
+			driver.findElement(By.id("Dashboard ownership management failed")).click();
+		}
+	}
+	
 	@Test(priority=30)
 	public void Logout() throws InterruptedException 
 	{
@@ -561,6 +723,18 @@ static WebDriver driver;
 		
 		ListOfEnvironments=buffer.toString();
 		System.out.println("List of environments are: " +ListOfEnvironments);
+		
+	}
+	
+	public void EditGlobalSettings() throws InterruptedException
+	{
+		//Click on Settings icon
+		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(3000);
+		
+		//Click on Edit global settings icon
+		driver.findElement(By.xpath("//button[contains(.,'Edit global settings')]")).click();
+		Thread.sleep(LowSleep);
 		
 	}
 	

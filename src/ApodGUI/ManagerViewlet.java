@@ -554,6 +554,7 @@ public class ManagerViewlet
 		MousehoverIncremental.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
 		driver.findElement(By.linkText("View Error Log...")).click();
 		Thread.sleep(MediumSleep);
+		Thread.sleep(HighSleep);
 		
 		try
 		{
@@ -637,6 +638,7 @@ public class ManagerViewlet
 		MousehoverIncremental.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
 		driver.findElement(By.linkText("View Error Log...")).click();
 		Thread.sleep(MediumSleep);
+		Thread.sleep(HighSleep);
 		
 		try
 		{

@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Navigator]" guice-stage="DEVELOPMENT">
-  <test name="Settings(failed)">
-    <parameter name="Dashboardname" value="Settings Dashboard"/>
-    <parameter name="wgs" value="WGS10"/>
-    <parameter name="Manager4" value="Testing"/>
+  <test name="Test kafka Schema Subject version Viewlet(failed)">
+    <parameter name="ViewletName" value="Kafka Schema subject version"/>
+    <parameter name="Dashboardname" value="Kafka Schema subject version"/>
+    <parameter name="ViewletName1" value="Kafka Schema subject"/>
+    <parameter name="ViewletValue1" value="9"/>
     <parameter name="sDriver" value="webdriver.chrome.driver"/>
-    <parameter name="Manager3" value="Test1"/>
+    <parameter name="SubjectName" value="SchemaSubjectVersionRecord"/>
     <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
-    <parameter name="Manager2" value="AB"/>
-    <parameter name="Manager1" value="AA"/>
-    <parameter name="objpath2" value="\\WGS10"/>
-    <parameter name="FavoriteViewletName" value="Fav Viewlet"/>
-    <parameter name="Favwgs" value="WGS10 - 0"/>
-    <parameter name="objpath1" value="\\MQM"/>
+    <parameter name="FavoriteViewletName" value="Schema subject version Fav"/>
+    <parameter name="SchemaName" value="Schema"/>
+    <parameter name="ViewletValue" value="10"/>
     <classes>
-      <class name="NavigatorCore.NavigatorSettings">
+      <class name="KafkaGUI.KafkaSchemaSubjectVersion">
         <methods>
-          <include name="ShowInActiveChannelsCheckbox" invocation-numbers="0"/>
-          <include name="beforeTest"/>
+          <include name="ShowObjectAttributes" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- NavigatorCore.NavigatorSettings -->
+      </class> <!-- KafkaGUI.KafkaSchemaSubjectVersion -->
     </classes>
-  </test> <!-- Settings(failed) -->
+  </test> <!-- Test kafka Schema Subject version Viewlet(failed) -->
 </suite> <!-- Failed suite [Navigator] -->

@@ -428,7 +428,7 @@ public class AddSchemaToTheViewlet
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority=9)
+	@Test(priority=12)
 	@TestRail(testCaseId=324)
 	public void MoveToBottomButton(ITestContext context) throws InterruptedException
 	{
@@ -471,7 +471,7 @@ public class AddSchemaToTheViewlet
 			context.setAttribute("Comment", "Move to bottom button option is not working properly");
 			driver.findElement(By.xpath("Move to bottom button is failed")).click();
 		}
-		Thread.sleep(1000);
+		Thread.sleep(6000);
 		
 	}
 	

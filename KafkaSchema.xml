@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test kafka Schema Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="Kafka Schema"/>
+    <parameter name="ViewletName" value="Kafka Schema Viewlet"/>
+    <parameter name="ViewletValue" value="8"/>
+    <parameter name="SchemaName" value="Schema"/>
+    <parameter name="FavoriteViewletName" value="Schema Fav"/>  
+    
+        
+     <classes>
+      <class name="KafkaGUI.KafkaSchemaViewlet">
+       
+       <methods>
+       
+        <include name="Login"/> 
+        <include name="ShowObjectAttributes"/>
+        <include name="Properties"/>
+        <include name="Events"/>
+        <include name="AddToFavoriteViewlet"/> 
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

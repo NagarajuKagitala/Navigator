@@ -683,7 +683,7 @@ public class KafkaTopicViewlet
 			
 			//Add to favorite option
 			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-			Thread.sleep(4000);
+			Thread.sleep(6000);
 			driver.findElement(By.linkText("Add to favorites...")).click();
 			Thread.sleep(MediumSleep);
 
@@ -747,7 +747,17 @@ public class KafkaTopicViewlet
 			
 			//Check Show Empty Queues check box
 			driver.findElement(By.cssSelector(".fa-cog")).click();
-			driver.findElement(By.id("empty-kafka-topics")).click();
+			boolean kafka=driver.findElement(By.id("empty-kafka-topics")).isSelected();
+			
+			if(kafka)
+			{
+				System.out.println("check box already selected");
+			}
+			else
+			{
+				driver.findElement(By.id("empty-kafka-topics")).click();
+				Thread.sleep(MediumSleep);
+			}
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 			Thread.sleep(2000);	
 			
@@ -863,10 +873,10 @@ public class KafkaTopicViewlet
 				//Restoring the Default Settings
 				driver.findElement(By.cssSelector(".fa-cog")).click();
 				driver.findElement(By.xpath("//button[contains(.,'Restore Default')]")).click(); 
-				Thread.sleep(4000);
+				Thread.sleep(8000);
 				driver.findElement(By.id("accept-true")).click();
 				driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-				Thread.sleep(3000);	
+				Thread.sleep(10000);	
 				
 				if(Firstqueue.equalsIgnoreCase(IconTopicName))
 				{

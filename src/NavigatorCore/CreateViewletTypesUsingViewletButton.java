@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 //import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -491,10 +492,15 @@ public class CreateViewletTypesUsingViewletButton
 		//Change the viewlet name
 		driver.findElement(By.name("viewletName")).clear();
 		driver.findElement(By.name("viewletName")).sendKeys(NewViewletName);
-		/*
-		 * driver.findElement(By.id("viewletName")).clear();
-		 * driver.findElement(By.id("viewletName")).sendKeys();
-		 */
+		
+		//Change viewlet type to queues
+		driver.findElement(By.cssSelector(".object-type:nth-child(3)")).click();
+		Thread.sleep(LowSleep);
+		
+		//Increase the result limit
+		driver.findElement(By.xpath("//input[@type='number']")).clear();
+		driver.findElement(By.xpath("//input[@type='number']")).sendKeys("10000");
+		Thread.sleep(LowSleep);
 		
 		//click on Apply changes
 		//driver.findElement(By.id("save-viewlet")).click();
@@ -521,8 +527,150 @@ public class CreateViewletTypesUsingViewletButton
 		Thread.sleep(1000);
 	}
 	
-	@TestRail(testCaseId=818)
+	@TestRail(testCaseId=1170)
 	@Test(priority=7)
+	public void ManageFilteredColumns(ITestContext context) throws InterruptedException
+	{
+		//Click on Dropdown menu
+		driver.findElement(By.id("dropdownMenuButton")).click();
+		
+		//Choose manage filter column value 
+		try
+		{
+			driver.findElement(By.linkText("Manage Filtered Columns")).click();
+			Thread.sleep(MediumSleep);
+		}
+		catch (Exception e)
+		{
+			driver.findElement(By.linkText("Stop Managing Filtered Columns")).click();
+			Thread.sleep(LowSleep);
+			
+			//Click on Dropdown menu
+			driver.findElement(By.id("dropdownMenuButton")).click();
+			
+			driver.findElement(By.linkText("Manage Filtered Columns")).click();
+			Thread.sleep(MediumSleep);
+		}
+		
+		//Choose column 
+		driver.findElement(By.xpath("//span/i")).click();
+		
+		//Choose filter by chosen icon
+		driver.findElement(By.xpath("//div[4]/div/i")).click();
+		Thread.sleep(MediumSleep);
+		
+		//Enter input value
+		driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
+		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys("999999999");
+		Thread.sleep(LowSleep);
+		
+		//Get the viewlet data
+		String Results=driver.findElement(By.xpath("//datatable-body")).getText();
+		System.out.println("Viewlet data is: " +Results);
+		
+		//Enter input value
+		driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
+		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.ENTER);
+		Thread.sleep(MediumSleep);
+		
+		//Clear filter by chosen 
+		driver.findElement(By.xpath("//div[4]/div/i")).click();
+		Thread.sleep(LowSleep);
+		
+		//Choose clear all selected filters icon
+		driver.findElement(By.xpath("//div[4]/i")).click();
+		Thread.sleep(LowSleep);
+		
+		
+		//Click on Dropdown menu
+		driver.findElement(By.id("dropdownMenuButton")).click();
+		
+		//Stop manage filter
+		driver.findElement(By.linkText("Stop Managing Filtered Columns")).click();
+		Thread.sleep(MediumSleep);
+		
+		if(Results.contains("No data to display"))
+		{
+			System.out.println("Manage filter is working fine");
+			context.setAttribute("Status", 1);
+    		context.setAttribute("Comment", "Manage filter is working fine");
+		}
+		else
+		{
+			System.out.println("Manage filter is not working");
+			context.setAttribute("Status", 5);
+    		context.setAttribute("Comment", "Manage filter is not working");
+    		driver.findElement(By.id("Manage filter column failed")).click();
+		}
+		
+	}
+	
+	
+	@TestRail(testCaseId=1171)
+	@Test(priority=8)
+	public void ManageFrozenColumns(ITestContext context) throws InterruptedException
+	{
+		//Click on Dropdown menu
+		driver.findElement(By.id("dropdownMenuButton")).click();
+		
+		//Choose manage filter column value 
+		try
+		{
+			driver.findElement(By.linkText("Manage Frozen Columns")).click();
+			Thread.sleep(MediumSleep);
+		}
+		catch (Exception e)
+		{
+			driver.findElement(By.linkText("Stop Managing Frozen Columns")).click();
+			Thread.sleep(LowSleep);
+			
+			//Click on Dropdown menu
+			driver.findElement(By.id("dropdownMenuButton")).click();
+			
+			driver.findElement(By.linkText("Manage Frozen Columns")).click();
+			Thread.sleep(MediumSleep);
+		}
+		
+		//get the frozen column name
+		String FrozenColumnName=driver.findElement(By.xpath("//datatable-header-cell[7]")).getText();
+		System.out.println("column name is before frozen: " +FrozenColumnName);
+		
+		//Click on frozen icon in column
+		driver.findElement(By.xpath("//datatable-header-cell[7]/div/span/i")).click();
+		Thread.sleep(MediumSleep);
+		
+		//Get results column name
+		String ResultColumnName=driver.findElement(By.xpath("//datatable-header-cell[4]/div")).getText();
+		System.out.println("column name is after frozen: " +ResultColumnName);
+		
+		//Clear frozen columns
+		driver.findElement(By.xpath("//div[4]/i")).click();
+		Thread.sleep(LowSleep);
+		
+		//Click on Dropdown menu
+		driver.findElement(By.id("dropdownMenuButton")).click();
+		
+		//Stop manage filter
+		driver.findElement(By.linkText("Stop Managing Frozen Columns")).click();
+		Thread.sleep(MediumSleep);
+		
+		if(ResultColumnName.equalsIgnoreCase(FrozenColumnName))
+		{
+			System.out.println("Manage frozen column is working fine");
+			context.setAttribute("Status", 1);
+    		context.setAttribute("Comment", "Manage frozen column is working fine");
+		}
+		else
+		{
+			System.out.println("Manage frozen column is not working");
+			context.setAttribute("Status", 5);
+    		context.setAttribute("Comment", "Manage frozen column is not working");
+    		driver.findElement(By.id("Manage frozen column failed")).click();
+		}
+	}
+	
+	@TestRail(testCaseId=818)
+	@Test(priority=9)
 	public void DeleteViewletOption(ITestContext context) throws InterruptedException
 	{
 		//Store the viewlet name into string
@@ -561,7 +709,7 @@ public class CreateViewletTypesUsingViewletButton
 	}
 	
 	@TestRail(testCaseId=991)
-	@Test(priority=8)
+	@Test(priority=10)
 	public static void ExportDataToCSV(ITestContext context) throws InterruptedException
 	{
 		try
@@ -588,7 +736,7 @@ public class CreateViewletTypesUsingViewletButton
 	}
 	
 	
-	@Test(priority=9)
+	@Test(priority=11)
 	public void ImportViewletFromFileCheckbox() throws InterruptedException
 	{
 		//Click on viewlet and choose import viewlet check box

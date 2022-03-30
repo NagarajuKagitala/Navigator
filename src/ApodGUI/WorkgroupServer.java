@@ -373,7 +373,7 @@ public class WorkgroupServer {
 	
 	@TestRail(testCaseId = 761)
 	@Parameters({"NewDashboardname", "schemaName"})
-	@Test(priority=23)
+	@Test(priority=29)
 	public static void ShowObjectAttributes(String NewDashboardname, String schemaName, ITestContext context) throws InterruptedException
 	{		
 		try {
@@ -391,7 +391,7 @@ public class WorkgroupServer {
 	}
 
 
-	@Test(priority = 30)
+	@Test(priority = 31)
 	public static void ConnectIcon(ITestContext context) throws InterruptedException {
 		try {
 						
@@ -1592,10 +1592,215 @@ public class WorkgroupServer {
 		}
 		Thread.sleep(1000);
 	}
+	
+	
+	@Parameters({"NewDashboardname", "SolaceNodeInstanceName", "SolaceBrokerName", "SolaceServerURL" })
+	@TestRail(testCaseId = 1166)
+	@Test(priority = 18)
+	public void AddRemoteSolaceManager(String NewDashboardname, String SolaceNodeInstanceName, String SolaceBrokerName, String SolaceServerURL, ITestContext context)
+			throws InterruptedException {
+		try {	
+			
+			//Open dash board
+			ClearSelectionofCheckbox obj=new ClearSelectionofCheckbox();
+			obj.MoveDashboard(NewDashboardname, driver);
+			
+			// Select Remote Solace manager option
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			Thread.sleep(2000);
+
+			Actions Mousehour = new Actions(driver);
+			Mousehour.moveToElement(driver.findElement(By.linkText("Create"))).perform();
+			driver.findElement(By.linkText("Remote Solace Managers...")).click();
+			Thread.sleep(2000);
+
+			// Click on Add button //app-dropdown[@id='dropdown-block']/div/ul/li[3]/a
+			driver.findElement(By.xpath("//button[contains(.,'Add')]")).click();
+
+			// EMS Agent Instance Name
+			driver.findElement(By.id("name")).clear();
+			driver.findElement(By.id("name")).sendKeys(SolaceNodeInstanceName);
+
+			// EMS Server name
+			driver.findElement(By.id("brokerName")).clear();
+			driver.findElement(By.id("brokerName")).sendKeys(SolaceBrokerName);
+
+			// Server URL
+			driver.findElement(By.id("url")).clear();
+			driver.findElement(By.id("url")).sendKeys(SolaceServerURL);
+
+			// click on OK button
+			driver.findElement(By.xpath("//app-mod-remote-solace-manager-options/div/div[2]/div/div/div/button")).click();
+			Thread.sleep(8000);
+
+			// Store the EMS servers data into string
+			String RemoteSolaceserver = driver.findElement(By.xpath("//app-mod-remote-solace-manager-connections/div/div/div/div[2]")).getText();
+
+			// verification of Remote ems server
+			if (RemoteSolaceserver.contains(SolaceNodeInstanceName) && RemoteSolaceserver.contains(SolaceBrokerName)) {
+				context.setAttribute("Status", 1);
+				context.setAttribute("Comment", "Remote Solace server is added successflly");
+				System.out.println("Remote Solace server is added");
+			} else {
+				context.setAttribute("Status", 5);
+				context.setAttribute("Comment", "Failed to add Remote Solace server");
+				System.out.println("Remote Solace server is not added");
+				driver.findElement(By.id("Add Solace failed")).click();
+			}
+			Thread.sleep(1000);
+		} catch (Exception e) {
+			context.setAttribute("Status", 5);
+			context.setAttribute("Comment", "Exception occured while adding Remote Solace server, Check details: " + e.getMessage());
+		}
+	}
+
+	@Parameters({ "SolaceUpdatedServerURL", "SolaceServerName"})
+	@TestRail(testCaseId = 1167)
+	@Test(priority = 19, dependsOnMethods= {"AddRemoteSolaceManager"})
+	public void ModifyRemoteSolaceServer(String SolaceUpdatedServerURL, String SolaceServerName, ITestContext context) throws InterruptedException {
+		try {
+						
+			WebElement bu=driver.findElement(By.tagName("table")).findElement(By.tagName("tbody"));
+			List<WebElement> tr=bu.findElements(By.tagName("tr"));
+			System.out.println("No of trs: " +tr.size());
+			for(WebElement active : tr)
+			{
+				System.out.println("Text is: " +active.getText());
+				if(active.getText().contains(SolaceServerName))
+				{
+					//System.out.println("Class is: " +active.getAttribute("class"));
+					if(active.getAttribute("class").contains("table-row-selected"))
+					{
+						System.out.println("Server is already selected");
+					}
+					else
+					{
+						active.click();
+						break;
+					}
+				}
+			}
+			
+						
+			// Click on Modify button
+			driver.findElement(By.xpath("//button[contains(.,'Modify')]")).click();
+
+			// Server URL
+			driver.findElement(By.id("url")).clear();
+			driver.findElement(By.id("url")).sendKeys(SolaceUpdatedServerURL);
+
+			// click on OK button
+			driver.findElement(By.xpath("//app-mod-remote-solace-manager-options/div/div[2]/div/div/div/button")).click();
+			Thread.sleep(5000);
+			
+			WebElement but=driver.findElement(By.tagName("table")).findElement(By.tagName("tbody"));
+			List<WebElement> tr1=but.findElements(By.tagName("tr"));
+			System.out.println("No of trs: " +tr1.size());
+			for(WebElement active1 : tr1)
+			{
+				System.out.println("Text is: " +active1.getText());
+				if(active1.getText().contains(SolaceServerName))
+				{
+					//System.out.println("Class is: " +active.getAttribute("class"));
+					if(active1.getAttribute("class").contains("table-row-selected"))
+					{
+						System.out.println("Server is already selected");
+					}
+					else
+					{
+						active1.click();
+						break;
+					}
+				}
+			}
+
+			// Store the Server URL value into string
+			String URL = driver.findElement(By.xpath("//div[2]/div/table/tbody/tr[3]/td[2]")).getText();
+			System.out.println("Updated Server url is: " +URL);
+
+			if (URL.equalsIgnoreCase(SolaceUpdatedServerURL)) {
+				context.setAttribute("Status", 1);
+				context.setAttribute("Comment", "Remote Solace server is edited successflly");
+				System.out.println("Remote Solace server is modified");
+			} else {
+				context.setAttribute("Status", 5);
+				context.setAttribute("Comment", "Failed to edit Remote Solace server");
+				System.out.println("Remote Solace server is not modified");
+				driver.findElement(By.id("Modify failed")).click();
+			}
+			Thread.sleep(1000);
+		} catch (Exception e) {
+			context.setAttribute("Status", 5);
+			context.setAttribute("Comment", "Exception occured while editing Remote Solace server, Check details: " + e.getMessage());
+			driver.findElement(By.id("Modify failed")).click();
+		}
+	}
+
+	@Parameters({ "SolaceServerName" })
+	@TestRail(testCaseId = 1168)
+	@Test(priority = 20, dependsOnMethods= {"AddRemoteSolaceManager", "ModifyRemoteSolaceServer"})
+	public void DeleteRemoteSolaceServer(String SolaceServerName, ITestContext context) throws InterruptedException {
+		try {
+			
+			WebElement bu=driver.findElement(By.tagName("table")).findElement(By.tagName("tbody"));
+			List<WebElement> tr=bu.findElements(By.tagName("tr"));
+			System.out.println("No of trs: " +tr.size());
+			for(WebElement active : tr)
+			{
+				System.out.println("Text is: " +active.getText());
+				if(active.getText().contains(SolaceServerName))
+				{
+					//System.out.println("Class is: " +active.getAttribute("class"));
+					if(active.getAttribute("class").contains("table-row-selected"))
+					{
+						System.out.println("Server is already selected");
+					}
+					else
+					{
+						active.click();
+						break;
+					}
+				}
+			}
+			Thread.sleep(2000);
+
+			// Click on Delete button
+			driver.findElement(By.xpath("//div[3]/button")).click();
+
+			// Click on Confirmation yes button
+			driver.findElement(By.id("accept-true")).click();
+			Thread.sleep(6000);
+
+			// Store the EMS servers data into string
+			String RemoteSolaceserver = driver.findElement(By.xpath("//app-mod-remote-solace-manager-connections/div/div/div/div[2]")).getText();
+
+			// verification of Remote ems server
+			if (RemoteSolaceserver.contains(SolaceServerName)) {
+				System.out.println("Delete Remote Solace server is failed");
+				context.setAttribute("Status", 5);
+				context.setAttribute("Comment", "Failed to delete Remote Solace server");
+				driver.findElement(By.id("Delete failed")).click();
+			} else {
+				System.out.println("Remote Solace server is deleed successfully");
+				context.setAttribute("Status", 1);
+				context.setAttribute("Comment", "Remote Solace server is Deleted successfully");
+			}
+			Thread.sleep(1000);
+
+			// Close the window
+			driver.findElement(By.xpath("//div[2]/div/div/div/button")).click();
+			Thread.sleep(2000);
+		} catch (Exception e) {
+			context.setAttribute("Status", 5);
+			context.setAttribute("Comment",
+					"Exception occured while deleting Remote Solace server, Check details: " + e.getMessage());
+		}
+
+	}
 
 	@Parameters({"NewDashboardname", "ConnectionName", "Server", "PortNumber"})
 	@TestRail(testCaseId = 962)
-	@Test(priority = 18)
+	@Test(priority = 21)
 	public static void AddWGSConnection(String NewDashboardname, String ConnectionName, String Server, String PortNumber, ITestContext context)
 			throws InterruptedException {
 		try {
@@ -1655,7 +1860,7 @@ public class WorkgroupServer {
 	
 	@TestRail(testCaseId = 963)
 	@Parameters({"ConnectionName", "UpdatedConnectionName"})
-	@Test(priority = 19, dependsOnMethods= {"AddWGSConnection"})
+	@Test(priority = 22, dependsOnMethods= {"AddWGSConnection"})
 	public void ModifyWGSConnection(String ConnectionName, String UpdatedConnectionName, ITestContext context) throws InterruptedException {
 		try {	
 			
@@ -1748,7 +1953,7 @@ public class WorkgroupServer {
 	
 	@TestRail(testCaseId = 964)
 	@Parameters({"UpdatedConnectionName"})
-	@Test(priority = 20, dependsOnMethods= {"ModifyWGSConnection"})
+	@Test(priority = 23, dependsOnMethods= {"ModifyWGSConnection"})
 	public void DeleteWGSConnection(String UpdatedConnectionName, ITestContext context) throws InterruptedException {
 		try {			
 			//Click on Manage WGS icon
@@ -1820,7 +2025,7 @@ public class WorkgroupServer {
 	}
 	
 	@Parameters({"NewDashboardname", "ConnectionName", "Server", "PortNumber"})
-	@Test(priority = 21)
+	@Test(priority = 24)
 	@TestRail(testCaseId = 25)
 	public void AddWorkgroupFromPlusIcon(String NewDashboardname, String ConnectionName, String Server, String PortNumber, ITestContext context) throws Exception {
 
@@ -1886,7 +2091,7 @@ public class WorkgroupServer {
 	
 	@Parameters({"NewDashboardname", "ConnectionName", "ChangedPortNumber" })
 	@TestRail(testCaseId = 26)
-	@Test(priority = 22, dependsOnMethods= {"AddWorkgroupFromPlusIcon"})
+	@Test(priority = 25, dependsOnMethods= {"AddWorkgroupFromPlusIcon"})
 	public static void EditWorkgroup(String NewDashboardname, String ConnectionName, String ChangedPortNumber, ITestContext context) throws Exception {
 		try {
 			//Open dash board
@@ -1990,7 +2195,7 @@ public class WorkgroupServer {
 	
 	@Parameters({"NewDashboardname", "ConnectionName"})
 	@TestRail(testCaseId = 27)
-	@Test(priority = 23, dependsOnMethods= {"EditWorkgroup"})
+	@Test(priority = 26, dependsOnMethods= {"EditWorkgroup"})
 	public void DeleteWorkgroup(String NewDashboardname, String ConnectionName, ITestContext context) throws Exception {
 		try {
 			
@@ -2043,7 +2248,7 @@ public class WorkgroupServer {
 	}
 	
 	@TestRail(testCaseId = 35)
-	@Test(priority = 26)
+	@Test(priority = 27)
 	public void SearchFilter(ITestContext context) throws Exception {
 		try {			
 			/*
@@ -2093,7 +2298,7 @@ public class WorkgroupServer {
 	}
 	
 	@Parameters({"NewDashboardname"})
-	@Test(priority = 27)
+	@Test(priority = 30)
 	public void Logout(String NewDashboardname) throws Exception 
 	{
 		Dashboard ob=new Dashboard();

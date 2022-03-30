@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test Channel Viewlet</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 17 17:25:19 IST 2022</td>
+<td>Started on:</td><td>Fri Mar 11 14:44:32 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>1058 seconds (1058643 ms)</td>
+<tr><td>Total time:</td><td>1102 seconds (1102994 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,25 +75,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ApodGUI.ChannelViewlet.DeleteChannel()'><b>DeleteChannel</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, SENDER.ICON.CL, org.testng.TestRunner@381d7219<br/>
-<a href="#Output-1994834032" onClick='toggleBox("Output-1994834032", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelViewlet.ShowChannelStatusForMultiple()'><b>ShowChannelStatusForMultiple</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-500656514" onClick='toggleBox("Output-500656514", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1994834032" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1994834032">
-<br/>Failed to execute method: DeleteChannel<br/><br/>
+<a href="#Output-500656514" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-500656514">
+<br/>Failed to execute method: ShowChannelStatusForMultiple<br/><br/>
 <br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/DeleteChannel.png" alt="""/" /><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowChannelStatusForMultiple.png" alt="""/" /><br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Channel\ delete\ failed&quot;}
-  (Session info: chrome=98.0.4758.102)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;Channel status failed&quot;}
+  (Session info: chrome=99.0.4844.51)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
 System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b12c0aac7ec68fa03dc9376b283ea592, findElement {using=id, value=Channel delete failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57213/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b12c0aac7ec68fa03dc9376b283ea592
+Command: [8a40ba31fb3bfac4a72bb7adaf7a1c24, findElement {using=css selector, value=Channel status failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52482}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52482/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a40ba31fb3bfac4a72bb7adaf7a1c24
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -105,17 +105,17 @@ Session ID: b12c0aac7ec68fa03dc9376b283ea592
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at ApodGUI.ChannelViewlet.DeleteChannel(ChannelViewlet.java:844)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1994834032", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1994834032'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Channel\ delete\ failed&quot;}
-  (Session info: chrome=98.0.4758.102)
+	at ApodGUI.ChannelViewlet.ShowChannelStatusForMultiple(ChannelViewlet.java:1168)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace500656514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace500656514'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;Channel status failed&quot;}
+  (Session info: chrome=99.0.4844.51)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
 System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b12c0aac7ec68fa03dc9376b283ea592, findElement {using=id, value=Channel delete failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57213/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b12c0aac7ec68fa03dc9376b283ea592
+Command: [8a40ba31fb3bfac4a72bb7adaf7a1c24, findElement {using=css selector, value=Channel status failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52482}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52482/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a40ba31fb3bfac4a72bb7adaf7a1c24
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -131,7 +131,7 @@ Session ID: b12c0aac7ec68fa03dc9376b283ea592
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at ApodGUI.ChannelViewlet.DeleteChannel(ChannelViewlet.java:844)
+	at ApodGUI.ChannelViewlet.ShowChannelStatusForMultiple(ChannelViewlet.java:1168)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -158,7 +158,93 @@ Session ID: b12c0aac7ec68fa03dc9376b283ea592
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>63</td>
+<td>33</td>
+<td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
+<tr>
+<td title='ApodGUI.ChannelViewlet.ShowObjectAttributes()'><b>ShowObjectAttributes</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, ChannelSchema, Channel Name,Channel Description,Channel Type,Transport Type,Connection Name,Local Address,Bytes Sent,Bytes Received,Messages,Maximum Message Length (bytes),Sequence Number Wrap,Disconnect Interval (sec.),Heartbeat Interval (sec.),Batch Heartbeat Interval (msec.),Batch Size,Batch Interval (msec.),Batch Data Limit,Keep Alive Interval (sec.),Data Conversion,Property Control Attribute,Use Dead Letter Queue,MCA Name,MCA Type,Send Exit,Send Exit Data,Receive Exit,Receive Exit Data,Security Exit,Security Exit Data,Message Exit,Message Exit Data,Mode Name,Transaction Program Name,User ID,Password,Short Retry Count,Short Retry Timer (sec.),Long Retry Count,Long Retry Timer (sec.),SSL Cipher Specification,SSL Peer Name,SSL Client Authentication,Header Compression,Message Compression,Channel Monitoring,Channel Statistics,Alteration Date,Last Updated,Last Event Time,Last Action,Status, org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-850958638" onClick='toggleBox("Output-850958638", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-850958638" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-850958638">
+<br/>Failed to execute method: ShowObjectAttributes<br/><br/>
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowObjectAttributes.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Object\ attributes\ failed&quot;}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a40ba31fb3bfac4a72bb7adaf7a1c24, findElement {using=id, value=Object attributes failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52482}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52482/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a40ba31fb3bfac4a72bb7adaf7a1c24
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at ApodGUI.ChannelViewlet.ShowObjectAttributes(ChannelViewlet.java:184)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace850958638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace850958638'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Object\ attributes\ failed&quot;}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a40ba31fb3bfac4a72bb7adaf7a1c24, findElement {using=id, value=Object attributes failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52482}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52482/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a40ba31fb3bfac4a72bb7adaf7a1c24
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at ApodGUI.ChannelViewlet.ShowObjectAttributes(ChannelViewlet.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>209</td>
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -169,50 +255,50 @@ Session ID: b12c0aac7ec68fa03dc9376b283ea592
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ApodGUI.ChannelViewlet.AddToFavoriteForMultipleChannels()'><b>AddToFavoriteForMultipleChannels</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, Favorite for Channels, org.testng.TestRunner@381d7219<br/>
-<a href="#Output-1027310894" onClick='toggleBox("Output-1027310894", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelViewlet.AddToFavoriteForMultipleChannels()'><b>AddToFavoriteForMultipleChannels</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, Favorite for Channels, org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-1526030912" onClick='toggleBox("Output-1526030912", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1027310894" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1027310894">
+<a href="#Output-1526030912" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1526030912">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleChannels.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>42</td>
+<td>28</td>
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 <tr>
-<td title='ApodGUI.ChannelViewlet.AddToFavorites()'><b>AddToFavorites</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, Favorite for Channels, org.testng.TestRunner@381d7219<br/>
-<a href="#Output-887248018" onClick='toggleBox("Output-887248018", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelViewlet.AddToFavorites()'><b>AddToFavorites</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, Favorite for Channels, org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-313145375" onClick='toggleBox("Output-313145375", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-887248018" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-887248018">
+<a href="#Output-313145375" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-313145375">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavorites.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>60</td>
+<td>37</td>
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 <tr>
-<td title='ApodGUI.ChannelViewlet.CheckDifferencesForChannels()'><b>CheckDifferencesForChannels</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: org.testng.TestRunner@381d7219<br/>
-<a href="#Output-848419266" onClick='toggleBox("Output-848419266", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelViewlet.CheckDifferencesForChannels()'><b>CheckDifferencesForChannels</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-401872697" onClick='toggleBox("Output-401872697", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-848419266" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-848419266">
+<a href="#Output-401872697" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-401872697">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForChannels.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>27</td>
+<td>26</td>
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 <tr>
-<td title='ApodGUI.ChannelViewlet.ComapareChannels()'><b>ComapareChannels</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: org.testng.TestRunner@381d7219<br/>
-<a href="#Output-1411597673" onClick='toggleBox("Output-1411597673", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelViewlet.ComapareChannels()'><b>ComapareChannels</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-1541912393" onClick='toggleBox("Output-1541912393", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1411597673" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1411597673">
+<a href="#Output-1541912393" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1541912393">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ComapareChannels.png" alt="""/" /><br/>
 </div>
@@ -221,37 +307,50 @@ Session ID: b12c0aac7ec68fa03dc9376b283ea592
 <td>21</td>
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 <tr>
-<td title='ApodGUI.ChannelViewlet.CopyAsFromCommands()'><b>CopyAsFromCommands</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, .COPY, SENDER.ICON.CL, 127.0.0.1(4682), org.testng.TestRunner@381d7219<br/>
-<a href="#Output-70528019" onClick='toggleBox("Output-70528019", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelViewlet.CopyAsFromCommands()'><b>CopyAsFromCommands</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, .COPY, SENDER.ICON.CL, 127.0.0.1(4682), org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-545392109" onClick='toggleBox("Output-545392109", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-70528019" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-70528019">
+<a href="#Output-545392109" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-545392109">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsFromCommands.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>61</td>
+<td>53</td>
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 <tr>
-<td title='ApodGUI.ChannelViewlet.CreateChannelFromIcon()'><b>CreateChannelFromIcon</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, Sender, SENDER.ICON.CL, 192.168.1.204(4343), org.testng.TestRunner@381d7219<br/>
-<a href="#Output-918738473" onClick='toggleBox("Output-918738473", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelViewlet.CreateChannelFromIcon()'><b>CreateChannelFromIcon</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, Sender, SENDER.ICON.CL, 192.168.1.204(4343), org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-1322057909" onClick='toggleBox("Output-1322057909", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-918738473" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-918738473">
+<a href="#Output-1322057909" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1322057909">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateChannelFromIcon.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>89</td>
+<td>60</td>
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 <tr>
-<td title='ApodGUI.ChannelViewlet.Events()'><b>Events</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, org.testng.TestRunner@381d7219<br/>
-<a href="#Output-1336483163" onClick='toggleBox("Output-1336483163", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelViewlet.DeleteChannel()'><b>DeleteChannel</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, SENDER.ICON.CL, org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-345099628" onClick='toggleBox("Output-345099628", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1336483163" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1336483163">
+<a href="#Output-345099628" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-345099628">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteChannel.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
+<tr>
+<td title='ApodGUI.ChannelViewlet.Events()'><b>Events</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-648302729" onClick='toggleBox("Output-648302729", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-648302729" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-648302729">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Events.png" alt="""/" /><br/>
 </div>
@@ -261,16 +360,16 @@ Session ID: b12c0aac7ec68fa03dc9376b283ea592
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 <tr>
 <td title='ApodGUI.ChannelViewlet.Login()'><b>Login</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, Channel Verification, 4, Channel Viewlet<br/>
-<a href="#Output-485237151" onClick='toggleBox("Output-485237151", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-969115094" onClick='toggleBox("Output-969115094", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-485237151" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-485237151">
+<a href="#Output-969115094" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-969115094">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>120</td>
+<td>92</td>
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 <tr>
 <td title='ApodGUI.ChannelViewlet.Logout()'><b>Logout</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification</td>
@@ -278,95 +377,82 @@ Session ID: b12c0aac7ec68fa03dc9376b283ea592
 <td>35</td>
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 <tr>
-<td title='ApodGUI.ChannelViewlet.MQSCSnapshot()'><b>MQSCSnapshot</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, org.testng.TestRunner@381d7219<br/>
-<a href="#Output-853343978" onClick='toggleBox("Output-853343978", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelViewlet.MQSCSnapshot()'><b>MQSCSnapshot</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-1955136744" onClick='toggleBox("Output-1955136744", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-853343978" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-853343978">
+<a href="#Output-1955136744" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1955136744">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MQSCSnapshot.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>17</td>
+<td>14</td>
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 <tr>
-<td title='ApodGUI.ChannelViewlet.MultipleProperties()'><b>MultipleProperties</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, Multiple channel Description, Multiple channel connection, org.testng.TestRunner@381d7219<br/>
-<a href="#Output-622274963" onClick='toggleBox("Output-622274963", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelViewlet.MultipleProperties()'><b>MultipleProperties</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, Multiple channel Description, Multiple channel connection, org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-1122980374" onClick='toggleBox("Output-1122980374", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-622274963" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-622274963">
+<a href="#Output-1122980374" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1122980374">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MultipleProperties.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>105</td>
+<td>74</td>
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 <tr>
-<td title='ApodGUI.ChannelViewlet.Properties()'><b>Properties</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, org.testng.TestRunner@381d7219<br/>
-<a href="#Output-1718705321" onClick='toggleBox("Output-1718705321", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelViewlet.Properties()'><b>Properties</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-58353615" onClick='toggleBox("Output-58353615", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1718705321" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1718705321">
+<a href="#Output-58353615" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-58353615">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Properties.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>25</td>
+<td>21</td>
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 <tr>
-<td title='ApodGUI.ChannelViewlet.RenameFromCommands()'><b>RenameFromCommands</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, CHANNEL.RENAME, SENDER.ICON.CL, .COPY, org.testng.TestRunner@381d7219<br/>
-<a href="#Output-1374212198" onClick='toggleBox("Output-1374212198", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelViewlet.RenameFromCommands()'><b>RenameFromCommands</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, CHANNEL.RENAME, SENDER.ICON.CL, .COPY, org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-677007331" onClick='toggleBox("Output-677007331", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1374212198" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1374212198">
+<a href="#Output-677007331" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-677007331">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameFromCommands.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>77</td>
+<td>61</td>
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 <tr>
-<td title='ApodGUI.ChannelViewlet.SaveChannelSnapshot()'><b>SaveChannelSnapshot</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: org.testng.TestRunner@381d7219<br/>
-<a href="#Output-1370456137" onClick='toggleBox("Output-1370456137", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelViewlet.SaveChannelSnapshot()'><b>SaveChannelSnapshot</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-1142350221" onClick='toggleBox("Output-1142350221", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1370456137" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1370456137">
+<a href="#Output-1142350221" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1142350221">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveChannelSnapshot.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>10</td>
+<td>6</td>
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 <tr>
-<td title='ApodGUI.ChannelViewlet.ShowChannelStatus()'><b>ShowChannelStatus</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, org.testng.TestRunner@381d7219<br/>
-<a href="#Output-1135555866" onClick='toggleBox("Output-1135555866", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelViewlet.ShowChannelStatus()'><b>ShowChannelStatus</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, org.testng.TestRunner@79316f3a<br/>
+<a href="#Output-2008619427" onClick='toggleBox("Output-2008619427", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1135555866" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1135555866">
+<a href="#Output-2008619427" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2008619427">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowChannelStatus.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>23</td>
-<td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
-<tr>
-<td title='ApodGUI.ChannelViewlet.ShowChannelStatusForMultiple()'><b>ShowChannelStatusForMultiple</b><br>Test class: ApodGUI.ChannelViewlet<br>Parameters: Channel Verification, org.testng.TestRunner@381d7219<br/>
-<a href="#Output-1044945601" onClick='toggleBox("Output-1044945601", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1044945601" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1044945601">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowChannelStatusForMultiple.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>30</td>
+<td>17</td>
 <td>ApodGUI.ChannelViewlet@2b9ed6da</td></tr>
 </table><p>
 </body>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="3" total="7" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[<br/>]]>
@@ -11,61 +11,25 @@
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AdvancedViewletFiletercheckbox.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SchemaSubjectViewlet.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ManagerFilter.png" alt="""/" />]]>
-    </line>
-    <line>
-      <![CDATA[<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ObjectFilter.png" alt="""/" />]]>
-    </line>
-    <line>
-      <![CDATA[<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AttributeFilter.png" alt="""/" />]]>
-    </line>
-    <line>
-      <![CDATA[<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/EmptyCheckboxFilter.png" alt="""/" />]]>
-    </line>
-    <line>
-      <![CDATA[<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SystemCheckboxFilter.png" alt="""/" />]]>
-    </line>
-    <line>
-      <![CDATA[<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ResultLimitFilter.png" alt="""/" />]]>
-    </line>
-    <line>
-      <![CDATA[<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ViewletCheckboxClear.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributes.png" alt="""/" />]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-02-24T07:34:09Z" name="Testing Viewlet Filters" finished-at="2022-02-24T07:41:44Z" duration-ms="455542">
+  <suite started-at="2022-03-30T11:01:14Z" name="Navigator" finished-at="2022-03-30T11:03:59Z" duration-ms="164254">
     <groups>
     </groups>
-    <test started-at="2022-02-24T07:34:09Z" name="Viewlet filters reports" finished-at="2022-02-24T07:41:44Z" duration-ms="455542">
-      <class name="NavigatorCore.ViewletFilterOptions">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:04:09Z" name="beforeTest" finished-at="2022-02-24T13:04:09Z" duration-ms="7" status="PASS">
+    <test started-at="2022-03-30T11:01:14Z" name="Test kafka Schema Subject version Viewlet" finished-at="2022-03-30T11:03:59Z" duration-ms="164254">
+      <class name="KafkaGUI.KafkaSchemaSubjectVersion">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:31:14Z" name="beforeTest" finished-at="2022-03-30T16:31:14Z" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:04:09Z" name="Login" finished-at="2022-02-24T13:06:00Z" duration-ms="111361" status="PASS">
+        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:31:14Z" name="Login" finished-at="2022-03-30T16:32:20Z" duration-ms="65918" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,17 +43,17 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Viewlet Filters]]>
+                <![CDATA[Kafka Schema subject version]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[3]]>
+                <![CDATA[10]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Queues Viewlest]]>
+                <![CDATA[Kafka Schema subject version]]>
               </value>
             </param>
           </params>
@@ -102,116 +66,65 @@
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:06:00Z" name="tearDown" finished-at="2022-02-24T13:06:00Z" duration-ms="235" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:32:20Z" name="tearDown" finished-at="2022-03-30T16:32:21Z" duration-ms="234" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login status=SUCCESS method=ViewletFilterOptions.Login(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2] output=<br/>]]]>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=KafkaSchemaSubjectVersion.Login(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="AdvancedViewletFiletercheckbox(org.testng.ITestContext)[pri:1, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:06:00Z" name="AdvancedViewletFiletercheckbox" finished-at="2022-02-24T13:06:12Z" duration-ms="11514" status="PASS">
+        <test-method signature="SchemaSubjectViewlet(int, java.lang.String)[pri:1, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:32:21Z" name="SchemaSubjectViewlet" finished-at="2022-03-30T16:32:53Z" duration-ms="31954" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2b289ac9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AdvancedViewletFiletercheckbox.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AdvancedViewletFiletercheckbox -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:06:14Z" name="tearDown" finished-at="2022-02-24T13:06:16Z" duration-ms="1815" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AdvancedViewletFiletercheckbox status=SUCCESS method=ViewletFilterOptions.AdvancedViewletFiletercheckbox(org.testng.ITestContext)[pri:1, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="ManagerFilter(org.testng.ITestContext)[pri:2, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:06:16Z" name="ManagerFilter" finished-at="2022-02-24T13:06:54Z" duration-ms="38027" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@2b289ac9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ManagerFilter.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- ManagerFilter -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:06:55Z" name="tearDown" finished-at="2022-02-24T13:06:56Z" duration-ms="1224" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ManagerFilter status=SUCCESS method=ViewletFilterOptions.ManagerFilter(org.testng.ITestContext)[pri:2, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="ObjectFilter(org.testng.ITestContext)[pri:3, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:06:56Z" name="ObjectFilter" finished-at="2022-02-24T13:07:27Z" duration-ms="31181" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@2b289ac9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ObjectFilter.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- ObjectFilter -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:07:29Z" name="tearDown" finished-at="2022-02-24T13:07:30Z" duration-ms="1812" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ObjectFilter status=SUCCESS method=ViewletFilterOptions.ObjectFilter(org.testng.ITestContext)[pri:3, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="AttributeFilter(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:4, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:07:30Z" name="AttributeFilter" finished-at="2022-02-24T13:09:04Z" duration-ms="93495" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AttributeCon]]>
+                <![CDATA[9]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[is equal]]>
+                <![CDATA[Kafka Schema subject]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SchemaSubjectViewlet.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SchemaSubjectViewlet -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:32:53Z" name="tearDown" finished-at="2022-03-30T16:32:53Z" duration-ms="252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SchemaSubjectViewlet status=SUCCESS method=KafkaSchemaSubjectVersion.SchemaSubjectViewlet(int, java.lang.String)[pri:1, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ShowObjectAttributes(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:11, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:32:53Z" name="ShowObjectAttributes" finished-at="2022-03-30T16:33:18Z" duration-ms="25076" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kafka Schema subject version]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Schema]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2b289ac9]]>
+                <![CDATA[org.testng.TestRunner@1e8ab90f]]>
               </value>
             </param>
           </params>
@@ -220,156 +133,44 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AttributeFilter.png" alt="""/" />]]>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributes.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- AttributeFilter -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:09:05Z" name="tearDown" finished-at="2022-02-24T13:09:07Z" duration-ms="1358" status="PASS">
+        </test-method> <!-- ShowObjectAttributes -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:33:29Z" name="tearDown" finished-at="2022-03-30T16:33:31Z" duration-ms="2455" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AttributeFilter status=SUCCESS method=ViewletFilterOptions.AttributeFilter(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:4, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2] output=<br/>]]]>
+                <![CDATA[[TestResult name=ShowObjectAttributes status=SUCCESS method=KafkaSchemaSubjectVersion.ShowObjectAttributes(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:11, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="EmptyCheckboxFilter(org.testng.ITestContext)[pri:5, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:09:07Z" name="EmptyCheckboxFilter" finished-at="2022-02-24T13:10:07Z" duration-ms="60556" status="PASS">
+        <test-method signature="Logout(java.lang.String)[pri:27, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:33:31Z" name="Logout" finished-at="2022-03-30T16:33:59Z" duration-ms="27616" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2b289ac9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/EmptyCheckboxFilter.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- EmptyCheckboxFilter -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:10:08Z" name="tearDown" finished-at="2022-02-24T13:10:10Z" duration-ms="1265" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EmptyCheckboxFilter status=SUCCESS method=ViewletFilterOptions.EmptyCheckboxFilter(org.testng.ITestContext)[pri:5, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="SystemCheckboxFilter(org.testng.ITestContext)[pri:6, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:10:10Z" name="SystemCheckboxFilter" finished-at="2022-02-24T13:10:20Z" duration-ms="10240" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@2b289ac9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SystemCheckboxFilter.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- SystemCheckboxFilter -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:10:21Z" name="tearDown" finished-at="2022-02-24T13:10:23Z" duration-ms="1608" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SystemCheckboxFilter status=SUCCESS method=ViewletFilterOptions.SystemCheckboxFilter(org.testng.ITestContext)[pri:6, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="ResultLimitFilter(org.testng.ITestContext)[pri:7, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:10:23Z" name="ResultLimitFilter" finished-at="2022-02-24T13:10:43Z" duration-ms="20478" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@2b289ac9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ResultLimitFilter.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- ResultLimitFilter -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:10:45Z" name="tearDown" finished-at="2022-02-24T13:10:46Z" duration-ms="1380" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ResultLimitFilter status=SUCCESS method=ViewletFilterOptions.ResultLimitFilter(org.testng.ITestContext)[pri:7, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="ViewletCheckboxClear(org.testng.ITestContext)[pri:8, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:10:46Z" name="ViewletCheckboxClear" finished-at="2022-02-24T13:11:07Z" duration-ms="20494" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@2b289ac9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ViewletCheckboxClear.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- ViewletCheckboxClear -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:11:08Z" name="tearDown" finished-at="2022-02-24T13:11:10Z" duration-ms="1597" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ViewletCheckboxClear status=SUCCESS method=ViewletFilterOptions.ViewletCheckboxClear(org.testng.ITestContext)[pri:8, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="Logout(java.lang.String)[pri:30, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:11:10Z" name="Logout" finished-at="2022-02-24T13:11:44Z" duration-ms="34704" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Viewlet Filters]]>
+                <![CDATA[Kafka Schema subject version]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2]" started-at="2022-02-24T13:11:44Z" name="tearDown" finished-at="2022-02-24T13:11:44Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:33:59Z" name="tearDown" finished-at="2022-03-30T16:33:59Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Logout status=SUCCESS method=ViewletFilterOptions.Logout(java.lang.String)[pri:30, instance:NavigatorCore.ViewletFilterOptions@52e7a6b2] output={null}]]]>
+                <![CDATA[[TestResult name=Logout status=SUCCESS method=KafkaSchemaSubjectVersion.Logout(java.lang.String)[pri:27, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- NavigatorCore.ViewletFilterOptions -->
-    </test> <!-- Viewlet filters reports -->
-  </suite> <!-- Testing Viewlet Filters -->
+      </class> <!-- KafkaGUI.KafkaSchemaSubjectVersion -->
+    </test> <!-- Test kafka Schema Subject version Viewlet -->
+  </suite> <!-- Navigator -->
 </testng-results>

@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Add a Schema]" guice-stage="DEVELOPMENT">
-  <test name="Add Schema Condition(failed)">
-    <parameter name="ViewletName" value="Schema buttons"/>
-    <parameter name="Dashboardname" value="Schema"/>
+<suite name="Failed suite [Navigator]" guice-stage="DEVELOPMENT">
+  <test name="Test kafka Schema Subject version Viewlet(failed)">
+    <parameter name="ViewletName" value="Kafka Schema subject version"/>
+    <parameter name="Dashboardname" value="Kafka Schema subject version"/>
+    <parameter name="ViewletName1" value="Kafka Schema subject"/>
+    <parameter name="ViewletValue1" value="9"/>
     <parameter name="sDriver" value="webdriver.chrome.driver"/>
-    <parameter name="Attribute" value="Manager Name,Usage,Scope,Get Messages"/>
+    <parameter name="SubjectName" value="SchemaSubjectVersionRecord"/>
     <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
-    <parameter name="DisplayedAttributesAfterRemoving" value="In order to create schema atleast one attribute has to be added"/>
-    <parameter name="AttributeName" value="Manager Name"/>
-    <parameter name="AttributeFirstValue" value="Manager Name"/>
-    <parameter name="SchemaName" value="Test Schema"/>
-    <parameter name="ViewletValue" value="3"/>
-    <parameter name="DisplayedAttributesAfterRemovingAttribute" value="In order to create schema atleast one attribute has to be added"/>
+    <parameter name="FavoriteViewletName" value="Schema subject version Fav"/>
+    <parameter name="SchemaName" value="Schema"/>
+    <parameter name="ViewletValue" value="10"/>
     <classes>
-      <class name="NavigatorCore.AddSchemaToTheViewlet">
+      <class name="KafkaGUI.KafkaSchemaSubjectVersion">
         <methods>
-          <include name="MoveToBottomButton" invocation-numbers="0"/>
+          <include name="ShowObjectAttributes" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- NavigatorCore.AddSchemaToTheViewlet -->
+      </class> <!-- KafkaGUI.KafkaSchemaSubjectVersion -->
     </classes>
-  </test> <!-- Add Schema Condition(failed) -->
-</suite> <!-- Failed suite [Add a Schema] -->
+  </test> <!-- Test kafka Schema Subject version Viewlet(failed) -->
+</suite> <!-- Failed suite [Navigator] -->

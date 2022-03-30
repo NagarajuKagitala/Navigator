@@ -124,6 +124,30 @@ public class Settings {
 	private static String Medium;
 	private static String High;
 	
+	private static String SchemaCluster;
+	private static String SchemaRegistry;
+	
+	
+	public static String getSchemaRegistry() {
+		return SchemaRegistry;
+	}
+
+
+	public static void setSchemaRegistry(String schemaRegistry) {
+		SchemaRegistry = schemaRegistry;
+	}
+
+
+	public static String getSchemaCluster() {
+		return SchemaCluster;
+	}
+
+
+	public static void setSchemaCluster(String schemaCluster) {
+		SchemaCluster = schemaCluster;
+	}
+
+
 	public static String getUploadDashboard() {
 		return UploadDashboard;
 	}
@@ -534,6 +558,8 @@ public class Settings {
 			Low=propertiesSetting.getProperty("Low");
 			Medium=propertiesSetting.getProperty("Medium");
 			High=propertiesSetting.getProperty("High");
+			SchemaCluster=propertiesSetting.getProperty("SchemaCluster");
+			SchemaRegistry=propertiesSetting.getProperty("SchemaRegistry");
 			
 		}
 	}

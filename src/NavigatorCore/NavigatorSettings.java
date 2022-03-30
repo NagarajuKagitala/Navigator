@@ -671,7 +671,7 @@ public class NavigatorSettings
 		driver.findElement(By.cssSelector(".fa-cog")).click();
 		Thread.sleep(2000);
 			
-		//Show Show managers for default schema check box
+		//Show Logout window check box
 		WebElement Checkbox=driver.findElement(By.id("showAgain"));
 		if(Checkbox.isSelected())
 		{
@@ -712,8 +712,82 @@ public class NavigatorSettings
 		
 	}
 	
+	@TestRail(testCaseId=1169)
 	@Parameters({"Dashboardname"})
 	@Test(priority=10)
+	public void CollapseAllViewletOnLogin(String Dashboardname, ITestContext context) throws Exception
+	{
+		Settings.read();
+		String uname=Settings.getNav_Username();
+		String password=Settings.getNav_Password();
+		
+		//click on settings icon
+		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(6000);
+			
+		//Show Logout window check box
+		WebElement Collapseviewlet=driver.findElement(By.id("collapse-all-viewlets"));
+		if(Collapseviewlet.isSelected())
+		{
+			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
+		}
+		else
+		{
+			Collapseviewlet.click();
+			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
+		}
+		Thread.sleep(8000);
+		
+		//Logout option
+		driver.findElement(By.cssSelector(".fa-power-off")).click();
+		Thread.sleep(4000);
+		driver.findElement(By.id("yesButton")).click();
+		
+		//Login again
+		driver.findElement(By.id("username")).sendKeys(uname);
+		driver.findElement(By.id("password")).sendKeys(password);
+		driver.findElement(By.cssSelector("button.btn-submit")).click();
+		Thread.sleep(HighSleep);
+		
+		//Go to that dashboard
+		WebElement cla=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul"));
+		List<WebElement> lis=cla.findElements(By.tagName("li"));
+		System.out.println("No of dashboards are: " +lis.size());
+		
+		for(WebElement li: lis)
+		{
+			//System.out.println("titles are: " +li.getAttribute("class"));
+			WebElement fi=li.findElement(By.className("g-tab-title"));
+			System.out.println("Names are: " +fi.getText());
+			
+			if(fi.getText().equalsIgnoreCase(Dashboardname))
+			{
+				fi.click();
+				break;
+			}
+		}
+		Thread.sleep(MediumSleep);
+		
+		String title=driver.findElement(By.xpath("//div[2]/div/div/div/div/i")).getAttribute("title");
+		System.out.println("title is: " +title);
+	
+		if(title.contains("Expand"))
+		{
+			System.out.println("Collapse all viewlets on login checkbox is working fine");
+			context.setAttribute("Status", 1);
+			context.setAttribute("Comment", "Collapse all viewlets on login function is working fine");
+		}
+		else
+		{
+			System.out.println("Collapse all viewlets on login checkbox is not working");
+			context.setAttribute("Status", 5);
+			context.setAttribute("Comment", "Collapse all viewlets on login function is not working");
+			driver.findElement(By.id("Collapse all viewlets on login failed")).click();
+		}
+	}
+	
+	@Parameters({"Dashboardname"})
+	@Test(priority=16)
 	public void Logout(String Dashboardname) throws InterruptedException 
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
