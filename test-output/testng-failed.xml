@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Navigator]" guice-stage="DEVELOPMENT">
-  <test name="Test kafka Schema Subject version Viewlet(failed)">
-    <parameter name="ViewletName" value="Kafka Schema subject version"/>
-    <parameter name="Dashboardname" value="Kafka Schema subject version"/>
-    <parameter name="ViewletName1" value="Kafka Schema subject"/>
-    <parameter name="ViewletValue1" value="9"/>
+  <test name="Test Auth Info Viewlet(failed)">
+    <parameter name="ViewletName" value="New AuthInfo Viewlet"/>
+    <parameter name="AuthinfoAttributes" value="Attributes"/>
+    <parameter name="ConnectionName" value="New.Connection"/>
+    <parameter name="Dashboardname" value="AuthInfo Verification"/>
     <parameter name="sDriver" value="webdriver.chrome.driver"/>
-    <parameter name="SubjectName" value="SchemaSubjectVersionRecord"/>
     <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
-    <parameter name="FavoriteViewletName" value="Schema subject version Fav"/>
-    <parameter name="SchemaName" value="Schema"/>
+    <parameter name="AuthInfoName" value="AUTH.INFO.ICON"/>
+    <parameter name="FavoriteViewletName" value="AuthInfo Favorite viewlet"/>
+    <parameter name="schemaName" value="AuthinfoSchema"/>
     <parameter name="ViewletValue" value="10"/>
     <classes>
-      <class name="KafkaGUI.KafkaSchemaSubjectVersion">
+      <class name="ApodGUI.AuthorizationInfoViewlet">
         <methods>
-          <include name="ShowObjectAttributes" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="PropertieOfAuthInfo" invocation-numbers="0"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- KafkaGUI.KafkaSchemaSubjectVersion -->
+      </class> <!-- ApodGUI.AuthorizationInfoViewlet -->
     </classes>
-  </test> <!-- Test kafka Schema Subject version Viewlet(failed) -->
+  </test> <!-- Test Auth Info Viewlet(failed) -->
 </suite> <!-- Failed suite [Navigator] -->

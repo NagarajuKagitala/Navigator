@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 //import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
@@ -452,40 +453,33 @@ public class ManageDashboardOptions
 		Thread.sleep(4000);
 		
 		//click on Import button
-		driver.findElement(By.xpath("//div[6]/button")).click();
+		driver.findElement(By.xpath("//button[contains(.,' Import')]")).click();
 		Thread.sleep(MediumSleep);
+		
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", driver.findElement(By.id("fileSelect")));
+		Thread.sleep(8000);
 				
-		//click on choose file
-		WebElement element=driver.findElement(By.id("fileSelect"));
-		
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click();", element);
-		Thread.sleep(HighSleep);
-		
-		//element.sendKeys("F:\\Automation\\Navigator\\Screenshots\\Staticimages\\exported_dashboards(1637568389415).json");
-		
-		try
-		{
 		//Loading the file into queue by using robot class
 		String filepath1=System.getProperty("user.dir") + "\\" + UploadDashboard;
 		StringSelection stringSelection = new StringSelection(filepath1);
-		System.out.println("File path is: " +filepath1);
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection,null);
+		System.out.println("upload: " +UploadDashboard);
+		System.out.println("file path : " +filepath1);
+		//StringSelection stringSelection = new StringSelection(UploadFilepath);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
 	    Robot robot = new Robot();
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
-		robot.keyPress(KeyEvent.VK_CONTROL);
-		robot.keyPress(KeyEvent.VK_V);
-		robot.keyRelease(KeyEvent.VK_V);
-		robot.keyRelease(KeyEvent.VK_CONTROL);
-	    robot.keyPress(KeyEvent.VK_ENTER);
-	    robot.keyRelease(KeyEvent.VK_ENTER);
-	    Thread.sleep(HighSleep);
-		}
-		catch(Exception e)
-		{
-			System.out.println("error code is: " +e.getStackTrace());
-		}
-		
+		//robot.keyPress(KeyEvent.VK_CONTROL);
+		//robot.keyPress(KeyEvent.VK_V);
+		//robot.keyRelease(KeyEvent.VK_V);
+		//robot.keyRelease(KeyEvent.VK_CONTROL);
+		//Thread.sleep(2000);
+	    //robot.keyPress(KeyEvent.VK_ENTER);
+	    //robot.keyRelease(KeyEvent.VK_ENTER);
+	    //Thread.sleep(10000);
+	    Actions a=new Actions(driver);
+	    a.sendKeys(Keys.CONTROL+ "V").sendKeys(Keys.ENTER).build().perform();
+	    Thread.sleep(10000);
 
 	    
 		/*

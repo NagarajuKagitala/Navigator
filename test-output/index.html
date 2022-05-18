@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Navigator" class="navigator-link">
-              <span class="suite-name border-passed">Navigator</span>
+              <span class="suite-name border-failed">Navigator</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Navigator" class="navigator-link ">
-                    <span>F:\Automation\Navigator\KafkaSchemaSubjectVersion.xml</span>
+                    <span>F:\Automation\Navigator\IBMAuthInfo.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Navigator" class="hide-methods failed suite-Navigator"> (hide)</a> <!-- hide-methods failed suite-Navigator -->
+                      <a href="#" panel-name="suite-Navigator" class="show-methods failed suite-Navigator"> (show)</a> <!-- show-methods failed suite-Navigator -->
+                    </span>
+                    <div class="method-list-content failed suite-Navigator">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.AuthorizationInfoViewlet" class="method navigator-link" hash-for-method="PropertieOfAuthInfo(org.testng.TestRunner@21c7208d)">PropertieOfAuthInfo(org.testng.TestRunner@21c7208d)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Navigator -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +116,57 @@
                     <div class="method-list-content passed suite-Navigator">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Navigator" title="KafkaGUI.KafkaSchemaSubjectVersion" class="method navigator-link" hash-for-method="Login(webdriver.chrome.driver, Drivers/chromedriver.exe, Kafka Schema subject version, 10, Kafka Schema su...)">Login(webdriver.chrome.driver, Drivers/chromedriver.exe, Kafka Schema subject version, 10, Kafka Schema su...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.AuthorizationInfoViewlet" class="method navigator-link" hash-for-method="AddAuthInfoViewlet(New AuthInfo Viewlet, 10, org.testng.TestRunner@21c7208d)">AddAuthInfoViewlet(New AuthInfo Viewlet, 10, org.testng.TestRunner@21c7208d)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Navigator" title="KafkaGUI.KafkaSchemaSubjectVersion" class="method navigator-link" hash-for-method="Logout(Kafka Schema subject version)">Logout(Kafka Schema subject version)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.AuthorizationInfoViewlet" class="method navigator-link" hash-for-method="AddToFavoriteForMultipleAuthInfo(AuthInfo Verification, AuthInfo Favorite viewlet, org.testng.TestRunner@21c7208d)">AddToFavoriteForMultipleAuthInfo(AuthInfo Verification, AuthInfo Favorite viewlet, org.testng.TestRunner@21c7208d)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Navigator" title="KafkaGUI.KafkaSchemaSubjectVersion" class="method navigator-link" hash-for-method="SchemaSubjectViewlet(9, Kafka Schema subject)">SchemaSubjectViewlet(9, Kafka Schema subject)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.AuthorizationInfoViewlet" class="method navigator-link" hash-for-method="AddToFavoriteViewlet(AuthInfo Favorite viewlet, AuthInfo Verification, org.testng.TestRunner@21c7208d)">AddToFavoriteViewlet(AuthInfo Favorite viewlet, AuthInfo Verification, org.testng.TestRunner@21c7208d)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Navigator" title="KafkaGUI.KafkaSchemaSubjectVersion" class="method navigator-link" hash-for-method="ShowObjectAttributes(Kafka Schema subject version, Schema, org.testng.TestRunner@1e8ab90f)">ShowObjectAttributes(Kafka Schema subject version, Schema, org.testng.TestRunner@1e8ab90f)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.AuthorizationInfoViewlet" class="method navigator-link" hash-for-method="AuthInfoEvents(AuthInfo Verification, org.testng.TestRunner@21c7208d)">AuthInfoEvents(AuthInfo Verification, org.testng.TestRunner@21c7208d)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.AuthorizationInfoViewlet" class="method navigator-link" hash-for-method="CheckDifferencesForAuthInfos(org.testng.TestRunner@21c7208d)">CheckDifferencesForAuthInfos(org.testng.TestRunner@21c7208d)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.AuthorizationInfoViewlet" class="method navigator-link" hash-for-method="CompareAuthInfo(org.testng.TestRunner@21c7208d)">CompareAuthInfo(org.testng.TestRunner@21c7208d)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.AuthorizationInfoViewlet" class="method navigator-link" hash-for-method="Login(webdriver.chrome.driver, Drivers/chromedriver.exe, AuthInfo Verification)">Login(webdriver.chrome.driver, Drivers/chromedriver.exe, AuthInfo Verification)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.AuthorizationInfoViewlet" class="method navigator-link" hash-for-method="Logout(AuthInfo Verification)">Logout(AuthInfo Verification)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.AuthorizationInfoViewlet" class="method navigator-link" hash-for-method="MQSCSnapshot(AuthInfo Verification, org.testng.TestRunner@21c7208d)">MQSCSnapshot(AuthInfo Verification, org.testng.TestRunner@21c7208d)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.AuthorizationInfoViewlet" class="method navigator-link" hash-for-method="SaveAuthinfoSnapshot(org.testng.TestRunner@21c7208d)">SaveAuthinfoSnapshot(org.testng.TestRunner@21c7208d)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.AuthorizationInfoViewlet" class="method navigator-link" hash-for-method="ShowObjectAttributesForAuthInfo(AuthInfo Verification, Attributes, AuthinfoSchema, org.testng.TestRunner@21c7208d)">ShowObjectAttributesForAuthInfo(AuthInfo Verification, Attributes, AuthinfoSchema, org.testng.TestRunner@21c7208d)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Navigator -->
@@ -132,42 +181,135 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Navigator" class="panel Navigator">
-          <div class="suite-Navigator-class-passed">
+          <div class="suite-Navigator-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">KafkaGUI.KafkaSchemaSubjectVersion</span>
+              <img src="failed.png"/>
+              <span class="class-name">ApodGUI.AuthorizationInfoViewlet</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Login(webdriver.chrome.driver, Drivers/chromedriver.exe, Kafka Schema subject version, 10, Kafka Schema su...)">
-                  </a> <!-- Login(webdriver.chrome.driver, Drivers/chromedriver.exe, Kafka Schema subject version, 10, Kafka Schema su...) -->
+                  <a name="PropertieOfAuthInfo(org.testng.TestRunner@21c7208d)">
+                  </a> <!-- PropertieOfAuthInfo(org.testng.TestRunner@21c7208d) -->
+                  <span class="method-name">PropertieOfAuthInfo</span>
+                  <span class="parameters">(org.testng.TestRunner@21c7208d)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i _ngcontent-ayh-c21=&quot;&quot; class=&quot;fa fa-close close-btn ng-tns-c21-9 ng-star-inserted&quot; title=&quot;Clear all selected checkboxes&quot;&gt;&lt;/i&gt; is not clickable at point (66, 254). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
+  (Session info: chrome=101.0.4951.54)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c549fcb4427809445ba00ed45974ac68, clickElement {id=036d6cd6-2587-4ce0-8448-71356ab9a29a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51918}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51918/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c549fcb4427809445ba00ed45974ac68)] -&gt; xpath: //datatable-header-cell[2]/div/i]
+Session ID: c549fcb4427809445ba00ed45974ac68
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at ApodGUI.AuthorizationInfoViewlet.PropertieOfAuthInfo(AuthorizationInfoViewlet.java:162)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Navigator-class-failed -->
+          <div class="suite-Navigator-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ApodGUI.AuthorizationInfoViewlet</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddAuthInfoViewlet(New AuthInfo Viewlet, 10, org.testng.TestRunner@21c7208d)">
+                  </a> <!-- AddAuthInfoViewlet(New AuthInfo Viewlet, 10, org.testng.TestRunner@21c7208d) -->
+                  <span class="method-name">AddAuthInfoViewlet</span>
+                  <span class="parameters">(New AuthInfo Viewlet, 10, org.testng.TestRunner@21c7208d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddToFavoriteForMultipleAuthInfo(AuthInfo Verification, AuthInfo Favorite viewlet, org.testng.TestRunner@21c7208d)">
+                  </a> <!-- AddToFavoriteForMultipleAuthInfo(AuthInfo Verification, AuthInfo Favorite viewlet, org.testng.TestRunner@21c7208d) -->
+                  <span class="method-name">AddToFavoriteForMultipleAuthInfo</span>
+                  <span class="parameters">(AuthInfo Verification, AuthInfo Favorite viewlet, org.testng.TestRunner@21c7208d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddToFavoriteViewlet(AuthInfo Favorite viewlet, AuthInfo Verification, org.testng.TestRunner@21c7208d)">
+                  </a> <!-- AddToFavoriteViewlet(AuthInfo Favorite viewlet, AuthInfo Verification, org.testng.TestRunner@21c7208d) -->
+                  <span class="method-name">AddToFavoriteViewlet</span>
+                  <span class="parameters">(AuthInfo Favorite viewlet, AuthInfo Verification, org.testng.TestRunner@21c7208d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AuthInfoEvents(AuthInfo Verification, org.testng.TestRunner@21c7208d)">
+                  </a> <!-- AuthInfoEvents(AuthInfo Verification, org.testng.TestRunner@21c7208d) -->
+                  <span class="method-name">AuthInfoEvents</span>
+                  <span class="parameters">(AuthInfo Verification, org.testng.TestRunner@21c7208d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckDifferencesForAuthInfos(org.testng.TestRunner@21c7208d)">
+                  </a> <!-- CheckDifferencesForAuthInfos(org.testng.TestRunner@21c7208d) -->
+                  <span class="method-name">CheckDifferencesForAuthInfos</span>
+                  <span class="parameters">(org.testng.TestRunner@21c7208d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CompareAuthInfo(org.testng.TestRunner@21c7208d)">
+                  </a> <!-- CompareAuthInfo(org.testng.TestRunner@21c7208d) -->
+                  <span class="method-name">CompareAuthInfo</span>
+                  <span class="parameters">(org.testng.TestRunner@21c7208d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(webdriver.chrome.driver, Drivers/chromedriver.exe, AuthInfo Verification)">
+                  </a> <!-- Login(webdriver.chrome.driver, Drivers/chromedriver.exe, AuthInfo Verification) -->
                   <span class="method-name">Login</span>
-                  <span class="parameters">(webdriver.chrome.driver, Drivers/chromedriver.exe, Kafka Schema subject version, 10, Kafka Schema subject version)</span>
+                  <span class="parameters">(webdriver.chrome.driver, Drivers/chromedriver.exe, AuthInfo Verification)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Logout(Kafka Schema subject version)">
-                  </a> <!-- Logout(Kafka Schema subject version) -->
+                  <a name="Logout(AuthInfo Verification)">
+                  </a> <!-- Logout(AuthInfo Verification) -->
                   <span class="method-name">Logout</span>
-                  <span class="parameters">(Kafka Schema subject version)</span>
+                  <span class="parameters">(AuthInfo Verification)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="SchemaSubjectViewlet(9, Kafka Schema subject)">
-                  </a> <!-- SchemaSubjectViewlet(9, Kafka Schema subject) -->
-                  <span class="method-name">SchemaSubjectViewlet</span>
-                  <span class="parameters">(9, Kafka Schema subject)</span>
+                  <a name="MQSCSnapshot(AuthInfo Verification, org.testng.TestRunner@21c7208d)">
+                  </a> <!-- MQSCSnapshot(AuthInfo Verification, org.testng.TestRunner@21c7208d) -->
+                  <span class="method-name">MQSCSnapshot</span>
+                  <span class="parameters">(AuthInfo Verification, org.testng.TestRunner@21c7208d)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="ShowObjectAttributes(Kafka Schema subject version, Schema, org.testng.TestRunner@1e8ab90f)">
-                  </a> <!-- ShowObjectAttributes(Kafka Schema subject version, Schema, org.testng.TestRunner@1e8ab90f) -->
-                  <span class="method-name">ShowObjectAttributes</span>
-                  <span class="parameters">(Kafka Schema subject version, Schema, org.testng.TestRunner@1e8ab90f)</span>
+                  <a name="SaveAuthinfoSnapshot(org.testng.TestRunner@21c7208d)">
+                  </a> <!-- SaveAuthinfoSnapshot(org.testng.TestRunner@21c7208d) -->
+                  <span class="method-name">SaveAuthinfoSnapshot</span>
+                  <span class="parameters">(org.testng.TestRunner@21c7208d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ShowObjectAttributesForAuthInfo(AuthInfo Verification, Attributes, AuthinfoSchema, org.testng.TestRunner@21c7208d)">
+                  </a> <!-- ShowObjectAttributesForAuthInfo(AuthInfo Verification, Attributes, AuthinfoSchema, org.testng.TestRunner@21c7208d) -->
+                  <span class="method-name">ShowObjectAttributesForAuthInfo</span>
+                  <span class="parameters">(AuthInfo Verification, Attributes, AuthinfoSchema, org.testng.TestRunner@21c7208d)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -175,35 +317,43 @@
         </div> <!-- panel Navigator -->
         <div panel-name="test-xml-Navigator" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\Automation\Navigator\KafkaSchemaSubjectVersion.xml</span>
+            <span class="header-content">F:\Automation\Navigator\IBMAuthInfo.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Navigator&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test name=&quot;Test kafka Schema Subject version Viewlet&quot;&gt;
-    &lt;parameter name=&quot;ViewletName&quot; value=&quot;Kafka Schema subject version&quot;/&gt;
-    &lt;parameter name=&quot;Dashboardname&quot; value=&quot;Kafka Schema subject version&quot;/&gt;
-    &lt;parameter name=&quot;ViewletName1&quot; value=&quot;Kafka Schema subject&quot;/&gt;
-    &lt;parameter name=&quot;ViewletValue1&quot; value=&quot;9&quot;/&gt;
+  &lt;test name=&quot;Test Auth Info Viewlet&quot;&gt;
+    &lt;parameter name=&quot;ViewletName&quot; value=&quot;New AuthInfo Viewlet&quot;/&gt;
+    &lt;parameter name=&quot;AuthinfoAttributes&quot; value=&quot;Attributes&quot;/&gt;
+    &lt;parameter name=&quot;ConnectionName&quot; value=&quot;New.Connection&quot;/&gt;
+    &lt;parameter name=&quot;Dashboardname&quot; value=&quot;AuthInfo Verification&quot;/&gt;
     &lt;parameter name=&quot;sDriver&quot; value=&quot;webdriver.chrome.driver&quot;/&gt;
-    &lt;parameter name=&quot;SubjectName&quot; value=&quot;SchemaSubjectVersionRecord&quot;/&gt;
     &lt;parameter name=&quot;sDriverpath&quot; value=&quot;Drivers/chromedriver.exe&quot;/&gt;
-    &lt;parameter name=&quot;FavoriteViewletName&quot; value=&quot;Schema subject version Fav&quot;/&gt;
-    &lt;parameter name=&quot;SchemaName&quot; value=&quot;Schema&quot;/&gt;
+    &lt;parameter name=&quot;AuthInfoName&quot; value=&quot;AUTH.INFO.ICON&quot;/&gt;
+    &lt;parameter name=&quot;FavoriteViewletName&quot; value=&quot;AuthInfo Favorite viewlet&quot;/&gt;
+    &lt;parameter name=&quot;schemaName&quot; value=&quot;AuthinfoSchema&quot;/&gt;
     &lt;parameter name=&quot;ViewletValue&quot; value=&quot;10&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;KafkaGUI.KafkaSchemaSubjectVersion&quot;&gt;
+      &lt;class name=&quot;ApodGUI.AuthorizationInfoViewlet&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;Login&quot;/&gt;
-          &lt;include name=&quot;SchemaSubjectViewlet&quot;/&gt;
-          &lt;include name=&quot;ShowObjectAttributes&quot;/&gt;
+          &lt;include name=&quot;AddAuthInfoViewlet&quot;/&gt;
+          &lt;include name=&quot;ShowObjectAttributesForAuthInfo&quot;/&gt;
+          &lt;include name=&quot;PropertieOfAuthInfo&quot;/&gt;
+          &lt;include name=&quot;MQSCSnapshot&quot;/&gt;
+          &lt;include name=&quot;SaveAuthinfoSnapshot&quot;/&gt;
+          &lt;include name=&quot;AuthInfoEvents&quot;/&gt;
+          &lt;include name=&quot;AddToFavoriteViewlet&quot;/&gt;
+          &lt;include name=&quot;CompareAuthInfo&quot;/&gt;
+          &lt;include name=&quot;CheckDifferencesForAuthInfos&quot;/&gt;
+          &lt;include name=&quot;AddToFavoriteForMultipleAuthInfo&quot;/&gt;
           &lt;include name=&quot;Logout&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- KafkaGUI.KafkaSchemaSubjectVersion --&gt;
+      &lt;/class&gt; &lt;!-- ApodGUI.AuthorizationInfoViewlet --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test kafka Schema Subject version Viewlet --&gt;
+  &lt;/test&gt; &lt;!-- Test Auth Info Viewlet --&gt;
 &lt;/suite&gt; &lt;!-- Navigator --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -215,7 +365,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test kafka Schema Subject version Viewlet (1 class)</span>
+                <span class="test-name">Test Auth Info Viewlet (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -241,28 +391,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login')
-data.setCell(0, 2, 'KafkaGUI.KafkaSchemaSubjectVersion')
-data.setCell(0, 3, 65918);
+data.setCell(0, 1, 'ShowObjectAttributesForAuthInfo')
+data.setCell(0, 2, 'ApodGUI.AuthorizationInfoViewlet')
+data.setCell(0, 3, 65605);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SchemaSubjectViewlet')
-data.setCell(1, 2, 'KafkaGUI.KafkaSchemaSubjectVersion')
-data.setCell(1, 3, 31954);
+data.setCell(1, 1, 'AuthInfoEvents')
+data.setCell(1, 2, 'ApodGUI.AuthorizationInfoViewlet')
+data.setCell(1, 3, 52081);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Logout')
-data.setCell(2, 2, 'KafkaGUI.KafkaSchemaSubjectVersion')
-data.setCell(2, 3, 27616);
+data.setCell(2, 1, 'Login')
+data.setCell(2, 2, 'ApodGUI.AuthorizationInfoViewlet')
+data.setCell(2, 3, 46029);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'ShowObjectAttributes')
-data.setCell(3, 2, 'KafkaGUI.KafkaSchemaSubjectVersion')
-data.setCell(3, 3, 25076);
+data.setCell(3, 1, 'AddAuthInfoViewlet')
+data.setCell(3, 2, 'ApodGUI.AuthorizationInfoViewlet')
+data.setCell(3, 3, 42527);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'AddToFavoriteViewlet')
+data.setCell(4, 2, 'ApodGUI.AuthorizationInfoViewlet')
+data.setCell(4, 3, 33917);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Logout')
+data.setCell(5, 2, 'ApodGUI.AuthorizationInfoViewlet')
+data.setCell(5, 3, 27865);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'AddToFavoriteForMultipleAuthInfo')
+data.setCell(6, 2, 'ApodGUI.AuthorizationInfoViewlet')
+data.setCell(6, 3, 27150);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'CompareAuthInfo')
+data.setCell(7, 2, 'ApodGUI.AuthorizationInfoViewlet')
+data.setCell(7, 3, 25549);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'CheckDifferencesForAuthInfos')
+data.setCell(8, 2, 'ApodGUI.AuthorizationInfoViewlet')
+data.setCell(8, 3, 20658);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'MQSCSnapshot')
+data.setCell(9, 2, 'ApodGUI.AuthorizationInfoViewlet')
+data.setCell(9, 3, 17350);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'SaveAuthinfoSnapshot')
+data.setCell(10, 2, 'ApodGUI.AuthorizationInfoViewlet')
+data.setCell(10, 3, 6544);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'PropertieOfAuthInfo')
+data.setCell(11, 2, 'ApodGUI.AuthorizationInfoViewlet')
+data.setCell(11, 3, 1135);
 window.suiteTableData['Navigator']= { tableData: data, tableDiv: 'times-div-Navigator'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-Navigator">
               </div> <!-- times-div-Navigator -->
             </div> <!-- times-div -->
@@ -274,41 +456,94 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">SchemaSubjectViewlet(9, Kafka Schema subject)</span>
+              <span class="reporter-method-name">AddAuthInfoViewlet(New AuthInfo Viewlet, 10, org.testng.TestRunner@21c7208d)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output"><br/></span>
-                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SchemaSubjectViewlet.png" alt="""/" /></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddAuthInfoViewlet.png" alt="""/" /></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">Login(webdriver.chrome.driver, Drivers/chromedriver.exe, Kafka Schema subject version, 10, Kafka Schema su...)</span>
+              <span class="reporter-method-name">MQSCSnapshot(AuthInfo Verification, org.testng.TestRunner@21c7208d)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br/></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MQSCSnapshot.png" alt="""/" /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">AddToFavoriteForMultipleAuthInfo(AuthInfo Verification, AuthInfo Favorite viewlet, org.testng.TestRunner@21c7208d)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br/></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleAuthInfo.png" alt="""/" /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">AuthInfoEvents(AuthInfo Verification, org.testng.TestRunner@21c7208d)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br/></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AuthInfoEvents.png" alt="""/" /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">ShowObjectAttributesForAuthInfo(AuthInfo Verification, Attributes, AuthinfoSchema, org.testng.TestRunner@21c7208d)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br/></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributesForAuthInfo.png" alt="""/" /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CompareAuthInfo(org.testng.TestRunner@21c7208d)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br/></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareAuthInfo.png" alt="""/" /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CheckDifferencesForAuthInfos(org.testng.TestRunner@21c7208d)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br/></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForAuthInfos.png" alt="""/" /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SaveAuthinfoSnapshot(org.testng.TestRunner@21c7208d)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br/></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveAuthinfoSnapshot.png" alt="""/" /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Login(webdriver.chrome.driver, Drivers/chromedriver.exe, AuthInfo Verification)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output"><br/></span>
                 <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">ShowObjectAttributes(Kafka Schema subject version, Schema, org.testng.TestRunner@1e8ab90f)</span>
+              <span class="reporter-method-name">AddToFavoriteViewlet(AuthInfo Favorite viewlet, AuthInfo Verification, org.testng.TestRunner@21c7208d)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output"><br/></span>
-                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributes.png" alt="""/" /></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">PropertieOfAuthInfo(org.testng.TestRunner@21c7208d)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br/>Failed to execute method: PropertieOfAuthInfo<br/></span>
+                <span class="reporter-method-output"><br/></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/PropertieOfAuthInfo.png" alt="""/" /></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Navigator" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">KafkaGUI.KafkaSchemaSubjectVersion</span>
+              <span class="ignored-class-name">ApodGUI.AuthorizationInfoViewlet</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">DeleteSchemaSubjectVersion</span>
-                <br/>
-                <span class="ignored-method-name">CreateKafkaSchemaSubject</span>
-                <br/>
-                <span class="ignored-method-name">Properties</span>
+                <span class="ignored-method-name">CreateAuthInfoFromPlusIcon</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -320,42 +555,108 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">KafkaGUI.KafkaSchemaSubjectVersion</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ApodGUI.AuthorizationInfoViewlet</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">Login(webdriver.chrome.driver, Drivers/chromedriver.exe, Kafka Schema subject version, 10, Kafka Schema su...)</span>
-                <span class="method-start">17 ms</span>
+                <span class="method-name">Login(webdriver.chrome.driver, Drivers/chromedriver.exe, AuthInfo Verification)</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=Login status=SUCCESS method=KafkaSchemaSubjectVersion.Login(java.lang.String, java....)</span>
-                <span class="method-start">65940 ms</span>
+                <span class="method-name">tearDown([TestResult name=Login status=SUCCESS method=AuthorizationInfoViewlet.Login(java.lang.String, java.l...)</span>
+                <span class="method-start">46063 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">SchemaSubjectViewlet(9, Kafka Schema subject)</span>
-                <span class="method-start">66176 ms</span>
+                <span class="method-name">AddAuthInfoViewlet(New AuthInfo Viewlet, 10, org.testng.TestRunner@21c7208d)</span>
+                <span class="method-start">46323 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=SchemaSubjectViewlet status=SUCCESS method=KafkaSchemaSubjectVersion.SchemaSubjectV...)</span>
-                <span class="method-start">98133 ms</span>
+                <span class="method-name">tearDown([TestResult name=AddAuthInfoViewlet status=SUCCESS method=AuthorizationInfoViewlet.AddAuthInfoViewle...)</span>
+                <span class="method-start">99974 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">ShowObjectAttributes(Kafka Schema subject version, Schema, org.testng.TestRunner@1e8ab90f)</span>
-                <span class="method-start">98385 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PropertieOfAuthInfo(org.testng.TestRunner@21c7208d)</span>
+                <span class="method-start">112264 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=ShowObjectAttributes status=SUCCESS method=KafkaSchemaSubjectVersion.ShowObjectAttr...)</span>
-                <span class="method-start">134178 ms</span>
+                <span class="method-name">tearDown([TestResult name=PropertieOfAuthInfo status=FAILURE method=AuthorizationInfoViewlet.PropertieOfAuthI...)</span>
+                <span class="method-start">122991 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">Logout(Kafka Schema subject version)</span>
-                <span class="method-start">136633 ms</span>
+                <span class="method-name">MQSCSnapshot(AuthInfo Verification, org.testng.TestRunner@21c7208d)</span>
+                <span class="method-start">126726 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=Logout status=SUCCESS method=KafkaSchemaSubjectVersion.Logout(java.lang.String)[pri...)</span>
-                <span class="method-start">164251 ms</span>
+                <span class="method-name">tearDown([TestResult name=MQSCSnapshot status=SUCCESS method=AuthorizationInfoViewlet.MQSCSnapshot(java.lang....)</span>
+                <span class="method-start">154874 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">SaveAuthinfoSnapshot(org.testng.TestRunner@21c7208d)</span>
+                <span class="method-start">157832 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=SaveAuthinfoSnapshot status=SUCCESS method=AuthorizationInfoViewlet.SaveAuthinfoSna...)</span>
+                <span class="method-start">174471 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">AuthInfoEvents(AuthInfo Verification, org.testng.TestRunner@21c7208d)</span>
+                <span class="method-start">176868 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=AuthInfoEvents status=SUCCESS method=AuthorizationInfoViewlet.AuthInfoEvents(java.l...)</span>
+                <span class="method-start">239795 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">AddToFavoriteViewlet(AuthInfo Favorite viewlet, AuthInfo Verification, org.testng.TestRunner@21c7208d)</span>
+                <span class="method-start">250819 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=AddToFavoriteViewlet status=SUCCESS method=AuthorizationInfoViewlet.AddToFavoriteVi...)</span>
+                <span class="method-start">294792 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">CompareAuthInfo(org.testng.TestRunner@21c7208d)</span>
+                <span class="method-start">297070 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=CompareAuthInfo status=SUCCESS method=AuthorizationInfoViewlet.CompareAuthInfo(org....)</span>
+                <span class="method-start">333797 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">CheckDifferencesForAuthInfos(org.testng.TestRunner@21c7208d)</span>
+                <span class="method-start">336270 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=CheckDifferencesForAuthInfos status=SUCCESS method=AuthorizationInfoViewlet.CheckDi...)</span>
+                <span class="method-start">367147 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">AddToFavoriteForMultipleAuthInfo(AuthInfo Verification, AuthInfo Favorite viewlet, org.testng.TestRunner@21c7208d)</span>
+                <span class="method-start">445064 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=AddToFavoriteForMultipleAuthInfo status=SUCCESS method=AuthorizationInfoViewlet.Add...)</span>
+                <span class="method-start">482691 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">ShowObjectAttributesForAuthInfo(AuthInfo Verification, Attributes, AuthinfoSchema, org.testng.TestRunner@21c7208d)</span>
+                <span class="method-start">485237 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=ShowObjectAttributesForAuthInfo status=SUCCESS method=AuthorizationInfoViewlet.Show...)</span>
+                <span class="method-start">561030 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Logout(AuthInfo Verification)</span>
+                <span class="method-start">563491 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=Logout status=SUCCESS method=AuthorizationInfoViewlet.Logout(java.lang.String)[pri:...)</span>
+                <span class="method-start">591358 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

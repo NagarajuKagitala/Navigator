@@ -53,7 +53,6 @@ public class AuthorizationInfoViewlet {
 	static int LowSleep;
 	static int MediumSleep;
 	static int HighSleep;
-	static int lowe;
 	
 	
 	@BeforeTest

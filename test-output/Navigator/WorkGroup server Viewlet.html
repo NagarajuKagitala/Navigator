@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>WorkGroup server Viewlet</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>18/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>28/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 24 16:42:51 IST 2022</td>
+<td>Started on:</td><td>Mon May 16 18:36:58 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>618 seconds (618486 ms)</td>
+<tr><td>Total time:</td><td>1313 seconds (1313498 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,195 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.AddNode()'><b>AddNode</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-1802188146" onClick='toggleBox("Output-1802188146", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1802188146" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1802188146">
-<br/>Failed to execute method: AddNode<br/><br/>
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/AddNode.png" alt="""/" /><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Node creation failed because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Node creation failed&apos; is not a valid XPath expression.
-  (Session info: chrome=99.0.4844.82)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac143fe5aab6e5b732bfcd01d0ee7d14, findElement {using=xpath, value=Node creation failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49641/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at ApodGUI.WorkgroupServer.AddNode(WorkgroupServer.java:529)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1802188146", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1802188146'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Node creation failed because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Node creation failed&apos; is not a valid XPath expression.
-  (Session info: chrome=99.0.4844.82)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac143fe5aab6e5b732bfcd01d0ee7d14, findElement {using=xpath, value=Node creation failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49641/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at ApodGUI.WorkgroupServer.AddNode(WorkgroupServer.java:529)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>11</td>
-<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
-<tr>
-<td title='ApodGUI.WorkgroupServer.DefaultConnection()'><b>DefaultConnection</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-1872012709" onClick='toggleBox("Output-1872012709", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1872012709" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1872012709">
-<br/>Failed to execute method: DefaultConnection<br/><br/>
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/DefaultConnection.png" alt="""/" /><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input _ngcontent-axe-c21=&quot;&quot; type=&quot;checkbox&quot; class=&quot;ng-tns-c21-12 ng-star-inserted&quot;&gt; is not clickable at point (38, 283). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block xxlg fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
-  (Session info: chrome=99.0.4844.82)
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac143fe5aab6e5b732bfcd01d0ee7d14, clickElement {id=745ffd7f-28b4-4975-a55a-0dfc84f1dbcf}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49641/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ac143fe5aab6e5b732bfcd01d0ee7d14)] -&gt; xpath: /html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input]
-Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at ApodGUI.WorkgroupServer.DefaultConnection(WorkgroupServer.java:216)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1872012709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1872012709'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input _ngcontent-axe-c21=&quot;&quot; type=&quot;checkbox&quot; class=&quot;ng-tns-c21-12 ng-star-inserted&quot;&gt; is not clickable at point (38, 283). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block xxlg fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
-  (Session info: chrome=99.0.4844.82)
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac143fe5aab6e5b732bfcd01d0ee7d14, clickElement {id=745ffd7f-28b4-4975-a55a-0dfc84f1dbcf}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49641/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ac143fe5aab6e5b732bfcd01d0ee7d14)] -&gt; xpath: /html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input]
-Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at ApodGUI.WorkgroupServer.DefaultConnection(WorkgroupServer.java:216)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>11</td>
-<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
-<tr>
-<td title='ApodGUI.WorkgroupServer.ShowTopology()'><b>ShowTopology</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-1948224958" onClick='toggleBox("Output-1948224958", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1948224958" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1948224958">
-<br/>Failed to execute method: ShowTopology<br/><br/>
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowTopology.png" alt="""/" /><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;svg&quot;}
-  (Session info: chrome=99.0.4844.82)
+<td title='ApodGUI.WorkgroupServer.Logout()'><b>Logout</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(.,&apos;Close&apos;)]&quot;}
+  (Session info: chrome=101.0.4951.54)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac143fe5aab6e5b732bfcd01d0ee7d14, findElement {using=css selector, value=svg}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49641/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
+Command: [10d279cc1ef9bef5906a1aad6372d756, findElement {using=xpath, value=//button[contains(.,&apos;Close&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57427/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10d279cc1ef9bef5906a1aad6372d756
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -275,17 +96,18 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at ApodGUI.WorkgroupServer.ShowTopology(WorkgroupServer.java:185)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1948224958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1948224958'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;svg&quot;}
-  (Session info: chrome=99.0.4844.82)
+	at Common.Dashboard.DeleteExistDashboardForWGSExpert(Dashboard.java:124)
+	at ApodGUI.WorkgroupServer.Logout(WorkgroupServer.java:2305)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2077947235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2077947235'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(.,&apos;Close&apos;)]&quot;}
+  (Session info: chrome=101.0.4951.54)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac143fe5aab6e5b732bfcd01d0ee7d14, findElement {using=css selector, value=svg}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49641/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
+Command: [10d279cc1ef9bef5906a1aad6372d756, findElement {using=xpath, value=//button[contains(.,&apos;Close&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57427/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10d279cc1ef9bef5906a1aad6372d756
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -301,89 +123,8 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at ApodGUI.WorkgroupServer.ShowTopology(WorkgroupServer.java:185)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>53</td>
-<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
-<tr>
-<td title='ApodGUI.WorkgroupServer.WGSProperties()'><b>WGSProperties</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-373682836" onClick='toggleBox("Output-373682836", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-373682836" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-373682836">
-<br/>Failed to execute method: WGSProperties<br/><br/>
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/WGSProperties.png" alt="""/" /><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input _ngcontent-axe-c21=&quot;&quot; type=&quot;checkbox&quot; class=&quot;ng-tns-c21-15 ng-star-inserted&quot;&gt; is not clickable at point (38, 283). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block xxlg fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
-  (Session info: chrome=99.0.4844.82)
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac143fe5aab6e5b732bfcd01d0ee7d14, clickElement {id=1901a879-500a-4835-af31-3316b5f7f789}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49641/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ac143fe5aab6e5b732bfcd01d0ee7d14)] -&gt; xpath: /html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input]
-Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at ApodGUI.WorkgroupServer.WGSProperties(WorkgroupServer.java:345)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace373682836", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace373682836'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input _ngcontent-axe-c21=&quot;&quot; type=&quot;checkbox&quot; class=&quot;ng-tns-c21-15 ng-star-inserted&quot;&gt; is not clickable at point (38, 283). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block xxlg fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
-  (Session info: chrome=99.0.4844.82)
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac143fe5aab6e5b732bfcd01d0ee7d14, clickElement {id=1901a879-500a-4835-af31-3316b5f7f789}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49641/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ac143fe5aab6e5b732bfcd01d0ee7d14)] -&gt; xpath: /html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input]
-Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at ApodGUI.WorkgroupServer.WGSProperties(WorkgroupServer.java:345)
+	at Common.Dashboard.DeleteExistDashboardForWGSExpert(Dashboard.java:124)
+	at ApodGUI.WorkgroupServer.Logout(WorkgroupServer.java:2305)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -411,6 +152,92 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>11</td>
+<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
+<tr>
+<td title='ApodGUI.WorkgroupServer.ShowObjectAttributes()'><b>ShowObjectAttributes</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, WGS Schema, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-1732123890" onClick='toggleBox("Output-1732123890", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1732123890" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1732123890">
+<br/>Failed to execute method: ShowObjectAttributes<br/><br/>
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowObjectAttributes.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Difference\ failed&quot;}
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [10d279cc1ef9bef5906a1aad6372d756, findElement {using=id, value=Difference failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57427/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10d279cc1ef9bef5906a1aad6372d756
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at ApodGUI.WorkgroupServer.ShowObjectAttributes(WorkgroupServer.java:389)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1732123890", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1732123890'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Difference\ failed&quot;}
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [10d279cc1ef9bef5906a1aad6372d756, findElement {using=id, value=Difference failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57427}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57427/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10d279cc1ef9bef5906a1aad6372d756
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at ApodGUI.WorkgroupServer.ShowObjectAttributes(WorkgroupServer.java:389)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>198</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -421,24 +248,37 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.AddRemoteEMSManager()'><b>AddRemoteEMSManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, EMSAGENT01, EMS-Server21, tcp://127.0.0.1:7221, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-513324936" onClick='toggleBox("Output-513324936", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.AddNode()'><b>AddNode</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-823056052" onClick='toggleBox("Output-823056052", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-513324936" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-513324936">
+<a href="#Output-823056052" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-823056052">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddNode.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
+<tr>
+<td title='ApodGUI.WorkgroupServer.AddRemoteEMSManager()'><b>AddRemoteEMSManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, EMSAGENT01, EMS-Server21, tcp://127.0.0.1:7221, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-142561311" onClick='toggleBox("Output-142561311", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-142561311" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-142561311">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddRemoteEMSManager.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>25</td>
+<td>26</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.AddRemoteIIBORACEManagerConnection()'><b>AddRemoteIIBORACEManagerConnection</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, CMACE1, AA, http://localhost:4411, IIB, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-1079872128" onClick='toggleBox("Output-1079872128", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.AddRemoteIIBORACEManagerConnection()'><b>AddRemoteIIBORACEManagerConnection</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, CMACE1, AA, http://localhost:4411, IIB, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-133047331" onClick='toggleBox("Output-133047331", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1079872128" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1079872128">
+<a href="#Output-133047331" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-133047331">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddRemoteIIBORACEManagerConnection.png" alt="""/" /><br/>
 </div>
@@ -447,11 +287,11 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 <td>30</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.AddRemoteKafkaManager()'><b>AddRemoteKafkaManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, ClusterDelete, 127.0.0.1:9369, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-1753607449" onClick='toggleBox("Output-1753607449", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.AddRemoteKafkaManager()'><b>AddRemoteKafkaManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, ClusterDelete, 127.0.0.1:9369, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-46727015" onClick='toggleBox("Output-46727015", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1753607449" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1753607449">
+<a href="#Output-46727015" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-46727015">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddRemoteKafkaManager.png" alt="""/" /><br/>
 </div>
@@ -460,11 +300,11 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 <td>32</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.AddRemoteQueueManager()'><b>AddRemoteQueueManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, REMOTE_QMGRS, QMGR_NAME_DELETE, MQM1, SYSTEM.ADMIN.COMMAND.QUEUE, SYSTEM.DEF.SVRCONN, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-973068874" onClick='toggleBox("Output-973068874", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.AddRemoteQueueManager()'><b>AddRemoteQueueManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, REMOTE_QMGRS, QMGR_NAME_DELETE, MQM1, SYSTEM.ADMIN.COMMAND.QUEUE, SYSTEM.DEF.SVRCONN, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-1202874820" onClick='toggleBox("Output-1202874820", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-973068874" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-973068874">
+<a href="#Output-1202874820" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1202874820">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddRemoteQueueManager.png" alt="""/" /><br/>
 </div>
@@ -473,24 +313,51 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 <td>25</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.AddRemoteSolaceManager()'><b>AddRemoteSolaceManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, CMSOLACEDELETE, SOLACEBROKER, 127.0.0.1:9999, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-735344652" onClick='toggleBox("Output-735344652", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.AddRemoteSolaceManager()'><b>AddRemoteSolaceManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, CMSOLACEDELETE, SOLACEBROKER, 127.0.0.1:9999, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-689549299" onClick='toggleBox("Output-689549299", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-735344652" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-735344652">
+<a href="#Output-689549299" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-689549299">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddRemoteSolaceManager.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>25</td>
+<td>26</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.CopyAsRemoteKafkaManager()'><b>CopyAsRemoteKafkaManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, ClusterDelete, Cluster.Copy, 127.0.0.1:9864, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-948900440" onClick='toggleBox("Output-948900440", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.AddWGSConnection()'><b>AddWGSConnection</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, MQM1, 192.168.1.88, 8010, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-331881413" onClick='toggleBox("Output-331881413", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-948900440" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-948900440">
+<a href="#Output-331881413" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-331881413">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddWGSConnection.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
+<tr>
+<td title='ApodGUI.WorkgroupServer.AddWorkgroupFromPlusIcon()'><b>AddWorkgroupFromPlusIcon</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, MQM1, 192.168.1.88, 8010, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-131553600" onClick='toggleBox("Output-131553600", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-131553600" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-131553600">
+Workgroup server is added successfylly<br/>
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddWorkgroupFromPlusIcon.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
+<tr>
+<td title='ApodGUI.WorkgroupServer.CopyAsRemoteKafkaManager()'><b>CopyAsRemoteKafkaManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, ClusterDelete, Cluster.Copy, 127.0.0.1:9864, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-1507181879" onClick='toggleBox("Output-1507181879", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1507181879" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1507181879">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsRemoteKafkaManager.png" alt="""/" /><br/>
 </div>
@@ -499,11 +366,24 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 <td>23</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.DeleteIIBOrACEConnectionManager()'><b>DeleteIIBOrACEConnectionManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, CMACE1, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-196414950" onClick='toggleBox("Output-196414950", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.DefaultConnection()'><b>DefaultConnection</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-2022417982" onClick='toggleBox("Output-2022417982", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-196414950" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-196414950">
+<a href="#Output-2022417982" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2022417982">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DefaultConnection.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
+<tr>
+<td title='ApodGUI.WorkgroupServer.DeleteIIBOrACEConnectionManager()'><b>DeleteIIBOrACEConnectionManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, CMACE1, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-1189496205" onClick='toggleBox("Output-1189496205", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1189496205" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1189496205">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteIIBOrACEConnectionManager.png" alt="""/" /><br/>
 </div>
@@ -512,11 +392,11 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 <td>28</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.DeleteRemoteEMSServer()'><b>DeleteRemoteEMSServer</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: EMS-Server21, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-1984954272" onClick='toggleBox("Output-1984954272", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.DeleteRemoteEMSServer()'><b>DeleteRemoteEMSServer</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: EMS-Server21, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-1746790527" onClick='toggleBox("Output-1746790527", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1984954272" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1984954272">
+<a href="#Output-1746790527" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1746790527">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteRemoteEMSServer.png" alt="""/" /><br/>
 </div>
@@ -525,11 +405,11 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 <td>11</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.DeleteRemoteKafkaManager()'><b>DeleteRemoteKafkaManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, ClusterDelete, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-962221884" onClick='toggleBox("Output-962221884", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.DeleteRemoteKafkaManager()'><b>DeleteRemoteKafkaManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, ClusterDelete, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-676089602" onClick='toggleBox("Output-676089602", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-962221884" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-962221884">
+<a href="#Output-676089602" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-676089602">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteRemoteKafkaManager.png" alt="""/" /><br/>
 </div>
@@ -538,11 +418,11 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 <td>22</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.DeleteRemoteQueueManager()'><b>DeleteRemoteQueueManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, QMGR_NAME_DELETE, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-1732146867" onClick='toggleBox("Output-1732146867", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.DeleteRemoteQueueManager()'><b>DeleteRemoteQueueManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, QMGR_NAME_DELETE, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-52477555" onClick='toggleBox("Output-52477555", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1732146867" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1732146867">
+<a href="#Output-52477555" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-52477555">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteRemoteQueueManager.png" alt="""/" /><br/>
 </div>
@@ -551,11 +431,11 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 <td>28</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.DeleteRemoteSolaceServer()'><b>DeleteRemoteSolaceServer</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: CMSOLACEDELETE, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-1383947848" onClick='toggleBox("Output-1383947848", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.DeleteRemoteSolaceServer()'><b>DeleteRemoteSolaceServer</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: CMSOLACEDELETE, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-1790806989" onClick='toggleBox("Output-1790806989", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1383947848" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1383947848">
+<a href="#Output-1790806989" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1790806989">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteRemoteSolaceServer.png" alt="""/" /><br/>
 </div>
@@ -564,29 +444,63 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 <td>11</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.Login()'><b>Login</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, New Dashboard, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-178342381" onClick='toggleBox("Output-178342381", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.DeleteWGSConnection()'><b>DeleteWGSConnection</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: MQM2, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-719635492" onClick='toggleBox("Output-719635492", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-178342381" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-178342381">
+<a href="#Output-719635492" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-719635492">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteWGSConnection.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
+<tr>
+<td title='ApodGUI.WorkgroupServer.DeleteWorkgroup()'><b>DeleteWorkgroup</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, MQM1, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-545769785" onClick='toggleBox("Output-545769785", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-545769785" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-545769785">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteWorkgroup.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
+<tr>
+<td title='ApodGUI.WorkgroupServer.EditWorkgroup()'><b>EditWorkgroup</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, MQM1, 6060, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-1367186645" onClick='toggleBox("Output-1367186645", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1367186645" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1367186645">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/EditWorkgroup.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
+<tr>
+<td title='ApodGUI.WorkgroupServer.Login()'><b>Login</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, New Dashboard, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-1421650289" onClick='toggleBox("Output-1421650289", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1421650289" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1421650289">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>38</td>
+<td>35</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.Logout()'><b>Logout</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard</td>
-<td></td>
-<td>28</td>
-<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
-<tr>
-<td title='ApodGUI.WorkgroupServer.ModifyIIBOrACEManagerConnection()'><b>ModifyIIBOrACEManagerConnection</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, CMACE1, http://localhost:1144, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-30770683" onClick='toggleBox("Output-30770683", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.ModifyIIBOrACEManagerConnection()'><b>ModifyIIBOrACEManagerConnection</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, CMACE1, http://localhost:1144, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-864622150" onClick='toggleBox("Output-864622150", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-30770683" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-30770683">
+<a href="#Output-864622150" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-864622150">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ModifyIIBOrACEManagerConnection.png" alt="""/" /><br/>
 </div>
@@ -595,11 +509,11 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 <td>27</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.ModifyRemoteEMSServer()'><b>ModifyRemoteEMSServer</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: tcp://127.0.0.1:7222, EMS-Server21, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-301085187" onClick='toggleBox("Output-301085187", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.ModifyRemoteEMSServer()'><b>ModifyRemoteEMSServer</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: tcp://127.0.0.1:7222, EMS-Server21, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-1319217746" onClick='toggleBox("Output-1319217746", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-301085187" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-301085187">
+<a href="#Output-1319217746" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1319217746">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ModifyRemoteEMSServer.png" alt="""/" /><br/>
 </div>
@@ -608,11 +522,11 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 <td>7</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.ModifyRemoteKafkaManager()'><b>ModifyRemoteKafkaManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, ClusterDelete, 127.0.0.1:9876, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-886693791" onClick='toggleBox("Output-886693791", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.ModifyRemoteKafkaManager()'><b>ModifyRemoteKafkaManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, ClusterDelete, 127.0.0.1:9876, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-2103748960" onClick='toggleBox("Output-2103748960", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-886693791" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-886693791">
+<a href="#Output-2103748960" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2103748960">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ModifyRemoteKafkaManager.png" alt="""/" /><br/>
 </div>
@@ -621,11 +535,11 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 <td>25</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.ModifyRemoteQueueManager()'><b>ModifyRemoteQueueManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, 127.0.0.1(1234), QMGR_NAME_DELETE, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-1905229914" onClick='toggleBox("Output-1905229914", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.ModifyRemoteQueueManager()'><b>ModifyRemoteQueueManager</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, 127.0.0.1(1234), QMGR_NAME_DELETE, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-1163471607" onClick='toggleBox("Output-1163471607", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1905229914" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1905229914">
+<a href="#Output-1163471607" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1163471607">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ModifyRemoteQueueManager.png" alt="""/" /><br/>
 </div>
@@ -634,17 +548,69 @@ Session ID: ac143fe5aab6e5b732bfcd01d0ee7d14
 <td>27</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 <tr>
-<td title='ApodGUI.WorkgroupServer.ModifyRemoteSolaceServer()'><b>ModifyRemoteSolaceServer</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: 127.0.0.1:6666, CMSOLACEDELETE, org.testng.TestRunner@6f44a157<br/>
-<a href="#Output-1962297767" onClick='toggleBox("Output-1962297767", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.WorkgroupServer.ModifyRemoteSolaceServer()'><b>ModifyRemoteSolaceServer</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: 127.0.0.1:6666, CMSOLACEDELETE, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-1493625851" onClick='toggleBox("Output-1493625851", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1962297767" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1962297767">
+<a href="#Output-1493625851" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1493625851">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ModifyRemoteSolaceServer.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
 <td>7</td>
+<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
+<tr>
+<td title='ApodGUI.WorkgroupServer.ModifyWGSConnection()'><b>ModifyWGSConnection</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: MQM1, MQM2, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-814473635" onClick='toggleBox("Output-814473635", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-814473635" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-814473635">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ModifyWGSConnection.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
+<tr>
+<td title='ApodGUI.WorkgroupServer.SearchFilter()'><b>SearchFilter</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-1879326995" onClick='toggleBox("Output-1879326995", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1879326995" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1879326995">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SearchFilter.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
+<tr>
+<td title='ApodGUI.WorkgroupServer.ShowTopology()'><b>ShowTopology</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-1821580597" onClick='toggleBox("Output-1821580597", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1821580597" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1821580597">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowTopology.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>50</td>
+<td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
+<tr>
+<td title='ApodGUI.WorkgroupServer.WGSProperties()'><b>WGSProperties</b><br>Test class: ApodGUI.WorkgroupServer<br>Parameters: New Dashboard, org.testng.TestRunner@6bc407fd<br/>
+<a href="#Output-238612663" onClick='toggleBox("Output-238612663", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-238612663" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-238612663">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/WGSProperties.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
 <td>ApodGUI.WorkgroupServer@59d4cd39</td></tr>
 </table><p>
 </body>

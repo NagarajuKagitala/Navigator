@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="7" passed="4" failed="0" skipped="0">
+<testng-results ignored="1" total="13" passed="11" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[<br/>]]>
@@ -11,25 +11,79 @@
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SchemaSubjectViewlet.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddAuthInfoViewlet.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[Screenshots/ScreenshotsFailure/PropertieOfAuthInfo.png]]>
+    </line>
+    <line>
+      <![CDATA[<br/>Failed to execute method: PropertieOfAuthInfo<br/>]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributes.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/PropertieOfAuthInfo.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MQSCSnapshot.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveAuthinfoSnapshot.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AuthInfoEvents.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareAuthInfo.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForAuthInfos.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleAuthInfo.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributesForAuthInfo.png" alt="""/" />]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-03-30T11:01:14Z" name="Navigator" finished-at="2022-03-30T11:03:59Z" duration-ms="164254">
+  <suite started-at="2022-05-17T16:17:36Z" name="Navigator" finished-at="2022-05-17T16:27:28Z" duration-ms="591363">
     <groups>
     </groups>
-    <test started-at="2022-03-30T11:01:14Z" name="Test kafka Schema Subject version Viewlet" finished-at="2022-03-30T11:03:59Z" duration-ms="164254">
-      <class name="KafkaGUI.KafkaSchemaSubjectVersion">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:31:14Z" name="beforeTest" finished-at="2022-03-30T16:31:14Z" duration-ms="8" status="PASS">
+    <test started-at="2022-05-17T16:17:36Z" name="Test Auth Info Viewlet" finished-at="2022-05-17T16:27:28Z" duration-ms="591363">
+      <class name="ApodGUI.AuthorizationInfoViewlet">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:47:36Z" name="beforeTest" finished-at="2022-05-17T21:47:36Z" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:31:14Z" name="Login" finished-at="2022-03-30T16:32:20Z" duration-ms="65918" status="PASS">
+        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:47:36Z" name="Login" finished-at="2022-05-17T21:48:22Z" duration-ms="46029" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,17 +97,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Kafka Schema subject version]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Kafka Schema subject version]]>
+                <![CDATA[AuthInfo Verification]]>
               </value>
             </param>
           </params>
@@ -66,65 +110,32 @@
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:32:20Z" name="tearDown" finished-at="2022-03-30T16:32:21Z" duration-ms="234" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:48:22Z" name="tearDown" finished-at="2022-05-17T21:48:23Z" duration-ms="258" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login status=SUCCESS method=KafkaSchemaSubjectVersion.Login(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699] output=<br/>]]]>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=AuthorizationInfoViewlet.Login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="SchemaSubjectViewlet(int, java.lang.String)[pri:1, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:32:21Z" name="SchemaSubjectViewlet" finished-at="2022-03-30T16:32:53Z" duration-ms="31954" status="PASS">
+        <test-method signature="AddAuthInfoViewlet(java.lang.String, int, org.testng.ITestContext)[pri:1, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:48:23Z" name="AddAuthInfoViewlet" finished-at="2022-05-17T21:49:05Z" duration-ms="42527" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[9]]>
+                <![CDATA[New AuthInfo Viewlet]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Kafka Schema subject]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SchemaSubjectViewlet.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- SchemaSubjectViewlet -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:32:53Z" name="tearDown" finished-at="2022-03-30T16:32:53Z" duration-ms="252" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SchemaSubjectViewlet status=SUCCESS method=KafkaSchemaSubjectVersion.SchemaSubjectViewlet(int, java.lang.String)[pri:1, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="ShowObjectAttributes(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:11, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:32:53Z" name="ShowObjectAttributes" finished-at="2022-03-30T16:33:18Z" duration-ms="25076" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Kafka Schema subject version]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Schema]]>
+                <![CDATA[10]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@1e8ab90f]]>
+                <![CDATA[org.testng.TestRunner@21c7208d]]>
               </value>
             </param>
           </params>
@@ -133,44 +144,411 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributes.png" alt="""/" />]]>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddAuthInfoViewlet.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- ShowObjectAttributes -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:33:29Z" name="tearDown" finished-at="2022-03-30T16:33:31Z" duration-ms="2455" status="PASS">
+        </test-method> <!-- AddAuthInfoViewlet -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:49:16Z" name="tearDown" finished-at="2022-05-17T21:49:29Z" duration-ms="12289" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ShowObjectAttributes status=SUCCESS method=KafkaSchemaSubjectVersion.ShowObjectAttributes(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:11, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699] output=<br/>]]]>
+                <![CDATA[[TestResult name=AddAuthInfoViewlet status=SUCCESS method=AuthorizationInfoViewlet.AddAuthInfoViewlet(java.lang.String, int, org.testng.ITestContext)[pri:1, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="Logout(java.lang.String)[pri:27, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:33:31Z" name="Logout" finished-at="2022-03-30T16:33:59Z" duration-ms="27616" status="PASS">
+        <test-method signature="PropertieOfAuthInfo(org.testng.ITestContext)[pri:2, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:49:29Z" name="PropertieOfAuthInfo" finished-at="2022-05-17T21:49:30Z" duration-ms="1135" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Kafka Schema subject version]]>
+                <![CDATA[org.testng.TestRunner@21c7208d]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <i _ngcontent-ayh-c21="" class="fa fa-close close-btn ng-tns-c21-9 ng-star-inserted" title="Clear all selected checkboxes"></i> is not clickable at point (66, 254). Other element would receive the click: <ngb-modal-window role="dialog" tabindex="-1" class="modal d-block fade show" aria-modal="true">...</ngb-modal-window>
+  (Session info: chrome=101.0.4951.54)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-9QJNAOQ', ip: '192.168.43.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c549fcb4427809445ba00ed45974ac68, clickElement {id=036d6cd6-2587-4ce0-8448-71356ab9a29a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51918}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51918/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c549fcb4427809445ba00ed45974ac68)] -> xpath: //datatable-header-cell[2]/div/i]
+Session ID: c549fcb4427809445ba00ed45974ac68]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i _ngcontent-ayh-c21="" class="fa fa-close close-btn ng-tns-c21-9 ng-star-inserted" title="Clear all selected checkboxes"></i> is not clickable at point (66, 254). Other element would receive the click: <ngb-modal-window role="dialog" tabindex="-1" class="modal d-block fade show" aria-modal="true">...</ngb-modal-window>
+  (Session info: chrome=101.0.4951.54)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-9QJNAOQ', ip: '192.168.43.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c549fcb4427809445ba00ed45974ac68, clickElement {id=036d6cd6-2587-4ce0-8448-71356ab9a29a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51918}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51918/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c549fcb4427809445ba00ed45974ac68)] -> xpath: //datatable-header-cell[2]/div/i]
+Session ID: c549fcb4427809445ba00ed45974ac68
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at ApodGUI.AuthorizationInfoViewlet.PropertieOfAuthInfo(AuthorizationInfoViewlet.java:162)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>Failed to execute method: PropertieOfAuthInfo<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/PropertieOfAuthInfo.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PropertieOfAuthInfo -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:49:39Z" name="tearDown" finished-at="2022-05-17T21:49:43Z" duration-ms="3734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PropertieOfAuthInfo status=FAILURE method=AuthorizationInfoViewlet.PropertieOfAuthInfo(org.testng.ITestContext)[pri:2, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>Failed to execute method: PropertieOfAuthInfo<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Screenshots/ScreenshotsFailure/PropertieOfAuthInfo.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="MQSCSnapshot(java.lang.String, org.testng.ITestContext)[pri:3, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:49:43Z" name="MQSCSnapshot" finished-at="2022-05-17T21:50:00Z" duration-ms="17350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AuthInfo Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@21c7208d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MQSCSnapshot.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MQSCSnapshot -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:50:11Z" name="tearDown" finished-at="2022-05-17T21:50:14Z" duration-ms="2956" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MQSCSnapshot status=SUCCESS method=AuthorizationInfoViewlet.MQSCSnapshot(java.lang.String, org.testng.ITestContext)[pri:3, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="SaveAuthinfoSnapshot(org.testng.ITestContext)[pri:4, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:50:14Z" name="SaveAuthinfoSnapshot" finished-at="2022-05-17T21:50:21Z" depends-on-methods="ApodGUI.AuthorizationInfoViewlet.MQSCSnapshot" duration-ms="6544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21c7208d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveAuthinfoSnapshot.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SaveAuthinfoSnapshot -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:50:31Z" name="tearDown" finished-at="2022-05-17T21:50:33Z" duration-ms="2396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SaveAuthinfoSnapshot status=SUCCESS method=AuthorizationInfoViewlet.SaveAuthinfoSnapshot(org.testng.ITestContext)[pri:4, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="AuthInfoEvents(java.lang.String, org.testng.ITestContext)[pri:5, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:50:33Z" name="AuthInfoEvents" finished-at="2022-05-17T21:51:25Z" duration-ms="52081" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AuthInfo Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@21c7208d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AuthInfoEvents.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AuthInfoEvents -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:51:36Z" name="tearDown" finished-at="2022-05-17T21:51:47Z" duration-ms="11023" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AuthInfoEvents status=SUCCESS method=AuthorizationInfoViewlet.AuthInfoEvents(java.lang.String, org.testng.ITestContext)[pri:5, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="AddToFavoriteViewlet(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:6, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:51:47Z" name="AddToFavoriteViewlet" finished-at="2022-05-17T21:52:21Z" duration-ms="33917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AuthInfo Favorite viewlet]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AuthInfo Verification]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@21c7208d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddToFavoriteViewlet -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:52:31Z" name="tearDown" finished-at="2022-05-17T21:52:33Z" duration-ms="2277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddToFavoriteViewlet status=SUCCESS method=AuthorizationInfoViewlet.AddToFavoriteViewlet(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:6, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="CompareAuthInfo(org.testng.ITestContext)[pri:7, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:52:33Z" name="CompareAuthInfo" finished-at="2022-05-17T21:52:59Z" duration-ms="25549" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21c7208d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareAuthInfo.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CompareAuthInfo -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:53:10Z" name="tearDown" finished-at="2022-05-17T21:53:13Z" duration-ms="2473" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CompareAuthInfo status=SUCCESS method=AuthorizationInfoViewlet.CompareAuthInfo(org.testng.ITestContext)[pri:7, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="CheckDifferencesForAuthInfos(org.testng.ITestContext)[pri:8, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:53:13Z" name="CheckDifferencesForAuthInfos" finished-at="2022-05-17T21:53:33Z" duration-ms="20658" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21c7208d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForAuthInfos.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CheckDifferencesForAuthInfos -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:53:43Z" name="tearDown" finished-at="2022-05-17T21:55:01Z" duration-ms="77914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckDifferencesForAuthInfos status=SUCCESS method=AuthorizationInfoViewlet.CheckDifferencesForAuthInfos(org.testng.ITestContext)[pri:8, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="AddToFavoriteForMultipleAuthInfo(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:9, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:55:01Z" name="AddToFavoriteForMultipleAuthInfo" finished-at="2022-05-17T21:55:29Z" depends-on-methods="ApodGUI.AuthorizationInfoViewlet.AddToFavoriteViewlet" duration-ms="27150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AuthInfo Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AuthInfo Favorite viewlet]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@21c7208d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleAuthInfo.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddToFavoriteForMultipleAuthInfo -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:55:39Z" name="tearDown" finished-at="2022-05-17T21:55:42Z" duration-ms="2545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddToFavoriteForMultipleAuthInfo status=SUCCESS method=AuthorizationInfoViewlet.AddToFavoriteForMultipleAuthInfo(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:9, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ShowObjectAttributesForAuthInfo(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:17, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:55:42Z" name="ShowObjectAttributesForAuthInfo" finished-at="2022-05-17T21:56:47Z" duration-ms="65605" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AuthInfo Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Attributes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AuthinfoSchema]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[org.testng.TestRunner@21c7208d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributesForAuthInfo.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ShowObjectAttributesForAuthInfo -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:56:57Z" name="tearDown" finished-at="2022-05-17T21:57:00Z" duration-ms="2461" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ShowObjectAttributesForAuthInfo status=SUCCESS method=AuthorizationInfoViewlet.ShowObjectAttributesForAuthInfo(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:17, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Logout(java.lang.String)[pri:18, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:57:00Z" name="Logout" finished-at="2022-05-17T21:57:28Z" duration-ms="27865" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AuthInfo Verification]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699]" started-at="2022-03-30T16:33:59Z" name="tearDown" finished-at="2022-03-30T16:33:59Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:57:28Z" name="tearDown" finished-at="2022-05-17T21:57:28Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Logout status=SUCCESS method=KafkaSchemaSubjectVersion.Logout(java.lang.String)[pri:27, instance:KafkaGUI.KafkaSchemaSubjectVersion@797b0699] output={null}]]]>
+                <![CDATA[[TestResult name=Logout status=SUCCESS method=AuthorizationInfoViewlet.Logout(java.lang.String)[pri:18, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- KafkaGUI.KafkaSchemaSubjectVersion -->
-    </test> <!-- Test kafka Schema Subject version Viewlet -->
+      </class> <!-- ApodGUI.AuthorizationInfoViewlet -->
+    </test> <!-- Test Auth Info Viewlet -->
   </suite> <!-- Navigator -->
 </testng-results>

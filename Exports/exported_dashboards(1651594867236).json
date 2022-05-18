@@ -1,0 +1,731 @@
+{
+  "version": "v10.4.0.7",
+  "wgsConnections": [
+    {
+      "connectionId": 1,
+      "connectionName": "Primary Connection",
+      "serversList": "127.0.0.1",
+      "port": 4040
+    }
+  ],
+  "schemas": [
+    {
+      "id": 53,
+      "name": "Default EMS Manager Dir",
+      "objectType": 50,
+      "defaultSortColumn": "Manager Name",
+      "defaultSortDirection": 1,
+      "secondarySortColumn": "null",
+      "secondarySortDirection": -1,
+      "attributes": [
+        {
+          "schemaId": 53,
+          "attributeParameter": 52015,
+          "sortOrder": 1
+        },
+        {
+          "schemaId": 53,
+          "attributeParameter": 20006,
+          "sortOrder": 2
+        },
+        {
+          "schemaId": 53,
+          "attributeParameter": 20007,
+          "sortOrder": 3
+        },
+        {
+          "schemaId": 53,
+          "attributeParameter": 20410,
+          "sortOrder": 4
+        },
+        {
+          "schemaId": 53,
+          "attributeParameter": 20103,
+          "sortOrder": 5
+        },
+        {
+          "schemaId": 53,
+          "attributeParameter": 30344,
+          "sortOrder": 6
+        },
+        {
+          "schemaId": 53,
+          "attributeParameter": 30329,
+          "sortOrder": 3
+        },
+        {
+          "schemaId": 53,
+          "attributeParameter": 20109,
+          "sortOrder": 6
+        }
+      ],
+      "customAttributes": []
+    },
+    {
+      "id": 48,
+      "name": "Default EMS Queues Dir",
+      "objectType": 45,
+      "defaultSortColumn": "Queue Name",
+      "defaultSortDirection": 1,
+      "secondarySortColumn": "null",
+      "secondarySortDirection": -1,
+      "attributes": [
+        {
+          "schemaId": 48,
+          "attributeParameter": 53011,
+          "sortOrder": 1
+        },
+        {
+          "schemaId": 48,
+          "attributeParameter": 50095,
+          "sortOrder": 2
+        },
+        {
+          "schemaId": 48,
+          "attributeParameter": 50020,
+          "sortOrder": 3
+        },
+        {
+          "schemaId": 48,
+          "attributeParameter": 50003,
+          "sortOrder": 4
+        },
+        {
+          "schemaId": 48,
+          "attributeParameter": 50015,
+          "sortOrder": 5
+        },
+        {
+          "schemaId": 48,
+          "attributeParameter": 20109,
+          "sortOrder": 5
+        }
+      ],
+      "customAttributes": []
+    },
+    {
+      "id": 62,
+      "name": "Default EMS Bridge Info Dir",
+      "objectType": 56,
+      "defaultSortColumn": "Bridge Info name",
+      "defaultSortDirection": 1,
+      "secondarySortColumn": "null",
+      "secondarySortDirection": -1,
+      "attributes": [
+        {
+          "schemaId": 62,
+          "attributeParameter": 30161,
+          "sortOrder": 1
+        },
+        {
+          "schemaId": 62,
+          "attributeParameter": 30160,
+          "sortOrder": 2
+        },
+        {
+          "schemaId": 62,
+          "attributeParameter": 30162,
+          "sortOrder": 3
+        },
+        {
+          "schemaId": 62,
+          "attributeParameter": 30163,
+          "sortOrder": 4
+        },
+        {
+          "schemaId": 62,
+          "attributeParameter": 30164,
+          "sortOrder": 5
+        },
+        {
+          "schemaId": 62,
+          "attributeParameter": 30165,
+          "sortOrder": 6
+        },
+        {
+          "schemaId": 62,
+          "attributeParameter": 20109,
+          "sortOrder": 7
+        }
+      ],
+      "customAttributes": []
+    },
+    {
+      "id": 52,
+      "name": "Default EMS Topics Dir",
+      "objectType": 47,
+      "defaultSortColumn": "Topic Name",
+      "defaultSortDirection": 1,
+      "secondarySortColumn": "null",
+      "secondarySortDirection": -1,
+      "attributes": [
+        {
+          "schemaId": 52,
+          "attributeParameter": 53151,
+          "sortOrder": 1
+        },
+        {
+          "schemaId": 52,
+          "attributeParameter": 50063,
+          "sortOrder": 2
+        },
+        {
+          "schemaId": 52,
+          "attributeParameter": 50234,
+          "sortOrder": 3
+        },
+        {
+          "schemaId": 52,
+          "attributeParameter": 50185,
+          "sortOrder": 4
+        },
+        {
+          "schemaId": 52,
+          "attributeParameter": 50175,
+          "sortOrder": 5
+        },
+        {
+          "schemaId": 52,
+          "attributeParameter": 50184,
+          "sortOrder": 6
+        },
+        {
+          "schemaId": 52,
+          "attributeParameter": 50255,
+          "sortOrder": 7
+        },
+        {
+          "schemaId": 52,
+          "attributeParameter": 50204,
+          "sortOrder": 8
+        },
+        {
+          "schemaId": 52,
+          "attributeParameter": 50215,
+          "sortOrder": 9
+        },
+        {
+          "schemaId": 52,
+          "attributeParameter": 50182,
+          "sortOrder": 10
+        },
+        {
+          "schemaId": 52,
+          "attributeParameter": 52096,
+          "sortOrder": 11
+        },
+        {
+          "schemaId": 52,
+          "attributeParameter": 20109,
+          "sortOrder": 12
+        }
+      ],
+      "customAttributes": []
+    },
+    {
+      "id": 59,
+      "name": "Default Nodes Dir",
+      "objectType": 203,
+      "defaultSortColumn": "Node Name",
+      "defaultSortDirection": 1,
+      "secondarySortColumn": "null",
+      "secondarySortDirection": -1,
+      "attributes": [
+        {
+          "schemaId": 59,
+          "attributeParameter": 20007,
+          "sortOrder": 1
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20912,
+          "sortOrder": 2
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20425,
+          "sortOrder": 3
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20009,
+          "sortOrder": 4
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20106,
+          "sortOrder": 5
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20119,
+          "sortOrder": 6
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20012,
+          "sortOrder": 7
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20137,
+          "sortOrder": 50
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20130,
+          "sortOrder": 51
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20136,
+          "sortOrder": 52
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20128,
+          "sortOrder": 53
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20961,
+          "sortOrder": 54
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20960,
+          "sortOrder": 55
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20909,
+          "sortOrder": 56
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20908,
+          "sortOrder": 100
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20074,
+          "sortOrder": 101
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20071,
+          "sortOrder": 102
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20073,
+          "sortOrder": 103
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20072,
+          "sortOrder": 104
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20914,
+          "sortOrder": 105
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20911,
+          "sortOrder": 106
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20910,
+          "sortOrder": 107
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20324,
+          "sortOrder": 108
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 2010,
+          "sortOrder": 109
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 2045,
+          "sortOrder": 110
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 2077,
+          "sortOrder": 111
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 2031,
+          "sortOrder": 112
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 3152,
+          "sortOrder": 113
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 3554,
+          "sortOrder": 114
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 2092,
+          "sortOrder": 115
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20962,
+          "sortOrder": 116
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20963,
+          "sortOrder": 117
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20325,
+          "sortOrder": 150
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20103,
+          "sortOrder": 151
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20930,
+          "sortOrder": 152
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20334,
+          "sortOrder": 153
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20338,
+          "sortOrder": 154
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20801,
+          "sortOrder": 155
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20105,
+          "sortOrder": 156
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20104,
+          "sortOrder": 157
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20116,
+          "sortOrder": 158
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20109,
+          "sortOrder": 159
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20957,
+          "sortOrder": 200
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20958,
+          "sortOrder": 201
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20955,
+          "sortOrder": 202
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20954,
+          "sortOrder": 203
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20965,
+          "sortOrder": 204
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20966,
+          "sortOrder": 205
+        },
+        {
+          "schemaId": 59,
+          "attributeParameter": 20967,
+          "sortOrder": 206
+        }
+      ],
+      "customAttributes": []
+    },
+    {
+      "id": 42,
+      "name": "Default",
+      "objectType": 41,
+      "defaultSortColumn": "Object Type",
+      "defaultSortDirection": 1,
+      "secondarySortColumn": "null",
+      "secondarySortDirection": -1,
+      "attributes": [
+        {
+          "schemaId": 42,
+          "attributeParameter": 20016,
+          "sortOrder": 1
+        },
+        {
+          "schemaId": 42,
+          "attributeParameter": 20101,
+          "sortOrder": 2
+        }
+      ],
+      "customAttributes": []
+    }
+  ],
+  "attributeFilters": [],
+  "messageCriteria": [],
+  "externalViewlets": [],
+  "searchViewlets": [
+    {
+      "id": 1,
+      "name": "EMS Manager",
+      "connectionId": 1,
+      "searchData": {
+        "nodeName": "*",
+        "qmgrName": "*",
+        "objType": 33,
+        "objSubType": null,
+        "dataLimitOffset": 100,
+        "extraName": null,
+        "projectId": null,
+        "productType": 1,
+        "showEmptyQueues": true,
+        "showSystemObjects": true,
+        "activeAttrFiltering": true,
+        "viewletColor": null,
+        "showInactiveCh": true,
+        "flatColor": false,
+        "activeFindMsgs": true,
+        "attributeFilterId": null,
+        "filterType": 0,
+        "filteredColumns": [],
+        "manageFilterColumns": false,
+        "frozenColumns": []
+      },
+      "searchObjNames": [],
+      "schemaId": 53
+    },
+    {
+      "id": 2,
+      "name": "EMSQueue",
+      "connectionId": 1,
+      "searchData": {
+        "nodeName": "*",
+        "qmgrName": "*",
+        "objType": 50011,
+        "objSubType": 1,
+        "dataLimitOffset": 100,
+        "extraName": null,
+        "projectId": null,
+        "productType": 1,
+        "showEmptyQueues": true,
+        "showSystemObjects": true,
+        "activeAttrFiltering": true,
+        "viewletColor": null,
+        "showInactiveCh": true,
+        "flatColor": false,
+        "activeFindMsgs": true,
+        "attributeFilterId": null,
+        "filterType": 0,
+        "filteredColumns": [],
+        "manageFilterColumns": false,
+        "frozenColumns": []
+      },
+      "searchObjNames": [
+        "*"
+      ],
+      "schemaId": 48
+    },
+    {
+      "id": 3,
+      "name": "bridge",
+      "connectionId": 1,
+      "searchData": {
+        "nodeName": "*",
+        "qmgrName": "*",
+        "objType": 27,
+        "objSubType": null,
+        "dataLimitOffset": 100,
+        "extraName": null,
+        "projectId": null,
+        "productType": 1,
+        "showEmptyQueues": true,
+        "showSystemObjects": true,
+        "activeAttrFiltering": true,
+        "viewletColor": null,
+        "showInactiveCh": true,
+        "flatColor": false,
+        "activeFindMsgs": true,
+        "attributeFilterId": null,
+        "filterType": 0,
+        "filteredColumns": [],
+        "manageFilterColumns": false,
+        "frozenColumns": []
+      },
+      "searchObjNames": [
+        "*"
+      ],
+      "schemaId": 62
+    },
+    {
+      "id": 4,
+      "name": "EMS Topic",
+      "connectionId": 1,
+      "searchData": {
+        "nodeName": "*",
+        "qmgrName": "*",
+        "objType": 50019,
+        "objSubType": null,
+        "dataLimitOffset": 100,
+        "extraName": null,
+        "projectId": null,
+        "productType": 1,
+        "showEmptyQueues": true,
+        "showSystemObjects": true,
+        "activeAttrFiltering": true,
+        "viewletColor": null,
+        "showInactiveCh": true,
+        "flatColor": false,
+        "activeFindMsgs": true,
+        "attributeFilterId": null,
+        "filterType": 0,
+        "filteredColumns": [],
+        "manageFilterColumns": false,
+        "frozenColumns": []
+      },
+      "searchObjNames": [
+        "*"
+      ],
+      "schemaId": 52
+    },
+    {
+      "id": 5,
+      "name": "EMS node",
+      "connectionId": 1,
+      "searchData": {
+        "nodeName": "*",
+        "qmgrName": "null",
+        "objType": 9,
+        "objSubType": null,
+        "dataLimitOffset": 100,
+        "extraName": null,
+        "projectId": null,
+        "productType": 1,
+        "showEmptyQueues": true,
+        "showSystemObjects": true,
+        "activeAttrFiltering": true,
+        "viewletColor": null,
+        "showInactiveCh": true,
+        "flatColor": false,
+        "activeFindMsgs": true,
+        "attributeFilterId": null,
+        "filterType": 0,
+        "filteredColumns": [],
+        "manageFilterColumns": false,
+        "frozenColumns": []
+      },
+      "searchObjNames": [],
+      "schemaId": 59
+    }
+  ],
+  "favoriteViewlets": [
+    {
+      "id": 1,
+      "name": "ems fav",
+      "connectionId": 1,
+      "schemaId": 42,
+      "shortcutObjects": [],
+      "filterType": 0,
+      "filteredColumns": [],
+      "manageFilterColumns": false
+    }
+  ],
+  "dashboards": [
+    {
+      "id": 1,
+      "name": "EMS",
+      "tagsIds": [],
+      "viewletData": [
+        {
+          "viewletId": 1,
+          "viewletType": 723,
+          "pos": 1,
+          "visible": true,
+          "expanded": true,
+          "height": 400
+        },
+        {
+          "viewletId": 2,
+          "viewletType": 720,
+          "pos": 2,
+          "visible": true,
+          "expanded": true,
+          "height": 400
+        },
+        {
+          "viewletId": 3,
+          "viewletType": 718,
+          "pos": 3,
+          "visible": true,
+          "expanded": true,
+          "height": 400
+        },
+        {
+          "viewletId": 4,
+          "viewletType": 721,
+          "pos": 4,
+          "visible": true,
+          "expanded": true,
+          "height": 400
+        },
+        {
+          "viewletId": 5,
+          "viewletType": 701,
+          "pos": 6,
+          "visible": true,
+          "expanded": true,
+          "height": 400
+        },
+        {
+          "viewletId": 1,
+          "viewletType": 715,
+          "pos": 5,
+          "visible": true,
+          "expanded": true,
+          "height": 400
+        }
+      ]
+    }
+  ],
+  "dashTags": []
+}
