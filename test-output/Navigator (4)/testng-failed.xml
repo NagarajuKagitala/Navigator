@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Navigator (4)]" guice-stage="DEVELOPMENT">
+  <test name="Manage Dashboard page options(failed)">
+    <parameter name="Dashboardname" value="ManageDashboard"/>
+    <parameter name="RenamedDashboardName" value="DashboardRenamed"/>
+    <parameter name="TagName" value="NewTag"/>
+    <parameter name="NameTagName" value="TagNastel"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+    <parameter name="ImportedDashboardname" value="ImportedDashboard"/>
+    <classes>
+      <class name="NavigatorCore.ManageDashboardOptions">
+        <methods>
+          <include name="ImportDashboard" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="AddToCurrentViewButton" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- NavigatorCore.ManageDashboardOptions -->
+    </classes>
+  </test> <!-- Manage Dashboard page options(failed) -->
+</suite> <!-- Failed suite [Navigator (4)] -->

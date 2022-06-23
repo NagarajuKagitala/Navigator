@@ -3,8 +3,8 @@
 <suite name="All Suites"> 
   <suite-files>
   
-   <!--  <suite-file path="./xmls/Workgroupserver.xml"/> 
-    <suite-file path="./xmls/Node.xml"/>   
+    <suite-file path="./IBMWorkgroupserver.xml"/> 
+  <!--  <suite-file path="./xmls/Node.xml"/>   
     <suite-file path="./xmls/Manager.xml"/> 
     <suite-file path="./xmls/Queues.xml"/>  
     <suite-file path="./xmls/QueuesInsidemessages.xml"/>
@@ -24,13 +24,13 @@
     <suite-file path="./xmls/Transport.xml"/> 
     <suite-file path="./xmls/Bridge.xml"/>
     <suite-file path="./xmls/Durable.xml"/> 
-    <suite-file path="./xmls/EMSManager.xml"/> --> 
+    <suite-file path="./xmls/EMSManager.xml"/> 
     <suite-file path="./xmls/EMSQueues.xml"/> 
     <suite-file path="./xmls/EMSQueuesInsideBrowse.xml"/> 
     <suite-file path="./xmls/EMSQueueMessages.xml"/>
-   <!--  <suite-file path="./xmls/EMSChannel.xml"/> -->
+    <suite-file path="./xmls/EMSChannel.xml"/>
     <suite-file path="./xmls/EMSTopic.xml"/>  
-   <!-- <suite-file path="./xmls/AddSchema.xml"/> 
+    <suite-file path="./xmls/AddSchema.xml"/> 
     <suite-file path="./xmls/NavigatorSettings.xml"/> 
     <suite-file path="Schedule.xml"/>  
     <suite-file path="./xmls/SearchCriteria.xml"/> 

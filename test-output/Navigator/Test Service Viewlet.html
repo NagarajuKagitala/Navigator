@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test Service Viewlet</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/2/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 11 15:03:07 IST 2022</td>
+<td>Started on:</td><td>Fri May 20 19:17:16 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>857 seconds (857355 ms)</td>
+<tr><td>Total time:</td><td>749 seconds (749581 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,180 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ApodGUI.ServiceViewlet.AddToFavoriteViewlet()'><b>AddToFavoriteViewlet</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, Service Favorite viewlet, org.testng.TestRunner@7c129ef6<br/>
+<a href="#Output-478113430" onClick='toggleBox("Output-478113430", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-478113430" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-478113430">
+<br/>Failed to execute method: AddToFavoriteViewlet<br/><br/>
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/AddToFavoriteViewlet.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-ius-c12=&quot;&quot; class=&quot;g-button-blue button-add&quot; id=&quot;add-viewlet&quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (1463, 98). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [19b61feb03a9c1330dc32c15a70eeb7c, clickElement {id=4ccc403b-8b2c-4dbc-aa93-43381f9e6b0c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50718/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (19b61feb03a9c1330dc32c15a70eeb7c)] -&gt; xpath: //button[3]]
+Session ID: 19b61feb03a9c1330dc32c15a70eeb7c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at ApodGUI.ServiceViewlet.AddToFavoriteViewlet(ServiceViewlet.java:680)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace478113430", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace478113430'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-ius-c12=&quot;&quot; class=&quot;g-button-blue button-add&quot; id=&quot;add-viewlet&quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (1463, 98). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [19b61feb03a9c1330dc32c15a70eeb7c, clickElement {id=4ccc403b-8b2c-4dbc-aa93-43381f9e6b0c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50718/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (19b61feb03a9c1330dc32c15a70eeb7c)] -&gt; xpath: //button[3]]
+Session ID: 19b61feb03a9c1330dc32c15a70eeb7c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at ApodGUI.ServiceViewlet.AddToFavoriteViewlet(ServiceViewlet.java:680)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
+<tr>
+<td title='ApodGUI.ServiceViewlet.ServiceEvents()'><b>ServiceEvents</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, org.testng.TestRunner@7c129ef6<br/>
+<a href="#Output-86509192" onClick='toggleBox("Output-86509192", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-86509192" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-86509192">
+<br/>Failed to execute method: ServiceEvents<br/><br/>
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/ServiceEvents.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input _ngcontent-ius-c21=&quot;&quot; type=&quot;checkbox&quot; class=&quot;ng-tns-c21-40 ng-star-inserted&quot;&gt; is not clickable at point (38, 281). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [19b61feb03a9c1330dc32c15a70eeb7c, clickElement {id=e0734681-8257-460e-aefa-1f280cae9ad1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50718/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (19b61feb03a9c1330dc32c15a70eeb7c)] -&gt; xpath: /html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input]
+Session ID: 19b61feb03a9c1330dc32c15a70eeb7c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Common.AllEvents.Events(AllEvents.java:20)
+	at ApodGUI.ServiceViewlet.ServiceEvents(ServiceViewlet.java:668)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace86509192", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace86509192'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input _ngcontent-ius-c21=&quot;&quot; type=&quot;checkbox&quot; class=&quot;ng-tns-c21-40 ng-star-inserted&quot;&gt; is not clickable at point (38, 281). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [19b61feb03a9c1330dc32c15a70eeb7c, clickElement {id=e0734681-8257-460e-aefa-1f280cae9ad1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50718/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (19b61feb03a9c1330dc32c15a70eeb7c)] -&gt; xpath: /html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input]
+Session ID: 19b61feb03a9c1330dc32c15a70eeb7c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Common.AllEvents.Events(AllEvents.java:20)
+	at ApodGUI.ServiceViewlet.ServiceEvents(ServiceViewlet.java:668)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>12</td>
+<td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,11 +249,11 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ApodGUI.ServiceViewlet.AddServiceViewlet()'><b>AddServiceViewlet</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: New Service Viewlet, 9, org.testng.TestRunner@5b84f14<br/>
-<a href="#Output-663119869" onClick='toggleBox("Output-663119869", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ServiceViewlet.AddServiceViewlet()'><b>AddServiceViewlet</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: New Service Viewlet, 9, org.testng.TestRunner@7c129ef6<br/>
+<a href="#Output-326376794" onClick='toggleBox("Output-326376794", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-663119869" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-663119869">
+<a href="#Output-326376794" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-326376794">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddServiceViewlet.png" alt="""/" /><br/>
 </div>
@@ -88,50 +262,24 @@ function toggleAllBoxes() {
 <td>36</td>
 <td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
 <tr>
-<td title='ApodGUI.ServiceViewlet.AddToFavoriteForMultipleServices()'><b>AddToFavoriteForMultipleServices</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, Service Favorite viewlet, org.testng.TestRunner@5b84f14<br/>
-<a href="#Output-1367421029" onClick='toggleBox("Output-1367421029", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ServiceViewlet.CheckDifferencesForServices()'><b>CheckDifferencesForServices</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: org.testng.TestRunner@7c129ef6<br/>
+<a href="#Output-2007716372" onClick='toggleBox("Output-2007716372", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1367421029" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1367421029">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleServices.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>26</td>
-<td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
-<tr>
-<td title='ApodGUI.ServiceViewlet.AddToFavoriteViewlet()'><b>AddToFavoriteViewlet</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, Service Favorite viewlet, org.testng.TestRunner@5b84f14<br/>
-<a href="#Output-1842314090" onClick='toggleBox("Output-1842314090", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1842314090" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1842314090">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>37</td>
-<td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
-<tr>
-<td title='ApodGUI.ServiceViewlet.CheckDifferencesForServices()'><b>CheckDifferencesForServices</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: org.testng.TestRunner@5b84f14<br/>
-<a href="#Output-1958607371" onClick='toggleBox("Output-1958607371", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1958607371" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1958607371">
+<a href="#Output-2007716372" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2007716372">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForServices.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>20</td>
+<td>21</td>
 <td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
 <tr>
-<td title='ApodGUI.ServiceViewlet.CompareServiceNames()'><b>CompareServiceNames</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: org.testng.TestRunner@5b84f14<br/>
-<a href="#Output-775199986" onClick='toggleBox("Output-775199986", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ServiceViewlet.CompareServiceNames()'><b>CompareServiceNames</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: org.testng.TestRunner@7c129ef6<br/>
+<a href="#Output-1186328673" onClick='toggleBox("Output-1186328673", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-775199986" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-775199986">
+<a href="#Output-1186328673" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1186328673">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareServiceNames.png" alt="""/" /><br/>
 </div>
@@ -140,11 +288,11 @@ function toggleAllBoxes() {
 <td>24</td>
 <td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
 <tr>
-<td title='ApodGUI.ServiceViewlet.CopyAsFromCommands()'><b>CopyAsFromCommands</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, .COPY, SERVICE.FROM.ICON, org.testng.TestRunner@5b84f14<br/>
-<a href="#Output-1097684722" onClick='toggleBox("Output-1097684722", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ServiceViewlet.CopyAsFromCommands()'><b>CopyAsFromCommands</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, .COPY, SERVICE.FROM.ICON, org.testng.TestRunner@7c129ef6<br/>
+<a href="#Output-486715174" onClick='toggleBox("Output-486715174", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1097684722" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1097684722">
+<a href="#Output-486715174" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-486715174">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsFromCommands.png" alt="""/" /><br/>
 </div>
@@ -153,11 +301,11 @@ function toggleAllBoxes() {
 <td>53</td>
 <td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
 <tr>
-<td title='ApodGUI.ServiceViewlet.CreateServiceFromPlusIcon()'><b>CreateServiceFromPlusIcon</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, SERVICE.FROM.ICON, Adding service using Icon, org.testng.TestRunner@5b84f14<br/>
-<a href="#Output-236220307" onClick='toggleBox("Output-236220307", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ServiceViewlet.CreateServiceFromPlusIcon()'><b>CreateServiceFromPlusIcon</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, SERVICE.FROM.ICON, Adding service using Icon, org.testng.TestRunner@7c129ef6<br/>
+<a href="#Output-976042249" onClick='toggleBox("Output-976042249", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-236220307" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-236220307">
+<a href="#Output-976042249" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-976042249">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateServiceFromPlusIcon.png" alt="""/" /><br/>
 </div>
@@ -166,11 +314,11 @@ function toggleAllBoxes() {
 <td>65</td>
 <td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
 <tr>
-<td title='ApodGUI.ServiceViewlet.DeleteFromCommands()'><b>DeleteFromCommands</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, SERVICE.RENAME, org.testng.TestRunner@5b84f14<br/>
-<a href="#Output-1468809177" onClick='toggleBox("Output-1468809177", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ServiceViewlet.DeleteFromCommands()'><b>DeleteFromCommands</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, SERVICE.RENAME, org.testng.TestRunner@7c129ef6<br/>
+<a href="#Output-538441446" onClick='toggleBox("Output-538441446", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1468809177" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1468809177">
+<a href="#Output-538441446" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-538441446">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteFromCommands.png" alt="""/" /><br/>
 </div>
@@ -180,16 +328,16 @@ function toggleAllBoxes() {
 <td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
 <tr>
 <td title='ApodGUI.ServiceViewlet.Login()'><b>Login</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: webdriver.chrome.driver, Drivers/chromeDriver.exe, ServiceViewlet Verification<br/>
-<a href="#Output-775911842" onClick='toggleBox("Output-775911842", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2063275841" onClick='toggleBox("Output-2063275841", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-775911842" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-775911842">
+<a href="#Output-2063275841" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2063275841">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>46</td>
+<td>52</td>
 <td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
 <tr>
 <td title='ApodGUI.ServiceViewlet.Logout()'><b>Logout</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification</td>
@@ -197,11 +345,11 @@ function toggleAllBoxes() {
 <td>27</td>
 <td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
 <tr>
-<td title='ApodGUI.ServiceViewlet.MQSCSnapshot()'><b>MQSCSnapshot</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, org.testng.TestRunner@5b84f14<br/>
-<a href="#Output-438793128" onClick='toggleBox("Output-438793128", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ServiceViewlet.MQSCSnapshot()'><b>MQSCSnapshot</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, org.testng.TestRunner@7c129ef6<br/>
+<a href="#Output-374145466" onClick='toggleBox("Output-374145466", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-438793128" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-438793128">
+<a href="#Output-374145466" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-374145466">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MQSCSnapshot.png" alt="""/" /><br/>
 </div>
@@ -210,24 +358,24 @@ function toggleAllBoxes() {
 <td>15</td>
 <td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
 <tr>
-<td title='ApodGUI.ServiceViewlet.RenameFromCommands()'><b>RenameFromCommands</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, SERVICE.RENAME, SERVICE.FROM.ICON, .COPY, org.testng.TestRunner@5b84f14<br/>
-<a href="#Output-1076856210" onClick='toggleBox("Output-1076856210", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ServiceViewlet.RenameFromCommands()'><b>RenameFromCommands</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, SERVICE.RENAME, SERVICE.FROM.ICON, .COPY, org.testng.TestRunner@7c129ef6<br/>
+<a href="#Output-1073862849" onClick='toggleBox("Output-1073862849", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1076856210" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1076856210">
+<a href="#Output-1073862849" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1073862849">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameFromCommands.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>59</td>
+<td>60</td>
 <td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
 <tr>
-<td title='ApodGUI.ServiceViewlet.SaveServiceSnapshot()'><b>SaveServiceSnapshot</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: org.testng.TestRunner@5b84f14<br/>
-<a href="#Output-2079332573" onClick='toggleBox("Output-2079332573", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ServiceViewlet.SaveServiceSnapshot()'><b>SaveServiceSnapshot</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: org.testng.TestRunner@7c129ef6<br/>
+<a href="#Output-1901712897" onClick='toggleBox("Output-1901712897", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2079332573" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2079332573">
+<a href="#Output-1901712897" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1901712897">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveServiceSnapshot.png" alt="""/" /><br/>
 </div>
@@ -236,24 +384,11 @@ function toggleAllBoxes() {
 <td>6</td>
 <td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
 <tr>
-<td title='ApodGUI.ServiceViewlet.ServiceEvents()'><b>ServiceEvents</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, org.testng.TestRunner@5b84f14<br/>
-<a href="#Output-1248488041" onClick='toggleBox("Output-1248488041", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ServiceViewlet.ServiceProperties()'><b>ServiceProperties</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, org.testng.TestRunner@7c129ef6<br/>
+<a href="#Output-234988139" onClick='toggleBox("Output-234988139", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1248488041" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1248488041">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ServiceEvents.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>41</td>
-<td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
-<tr>
-<td title='ApodGUI.ServiceViewlet.ServiceProperties()'><b>ServiceProperties</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, org.testng.TestRunner@5b84f14<br/>
-<a href="#Output-42898626" onClick='toggleBox("Output-42898626", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-42898626" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-42898626">
+<a href="#Output-234988139" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-234988139">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ServiceProperties.png" alt="""/" /><br/>
 </div>
@@ -262,18 +397,52 @@ function toggleAllBoxes() {
 <td>21</td>
 <td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
 <tr>
-<td title='ApodGUI.ServiceViewlet.ShowObjectAttributesForService()'><b>ShowObjectAttributesForService</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, ServiceSchema, org.testng.TestRunner@5b84f14<br/>
-<a href="#Output-41495592" onClick='toggleBox("Output-41495592", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ServiceViewlet.ShowObjectAttributesForService()'><b>ShowObjectAttributesForService</b><br>Test class: ApodGUI.ServiceViewlet<br>Parameters: ServiceViewlet Verification, ServiceSchema, org.testng.TestRunner@7c129ef6<br/>
+<a href="#Output-1332177152" onClick='toggleBox("Output-1332177152", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-41495592" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-41495592">
+<a href="#Output-1332177152" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1332177152">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributesForService.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>153</td>
+<td>155</td>
 <td>ApodGUI.ServiceViewlet@44a59da3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ApodGUI.ServiceViewlet.AddToFavoriteForMultipleServices()'><b>AddToFavoriteForMultipleServices</b><br>Test class: ApodGUI.ServiceViewlet</td>
+<td><div><pre>java.lang.Throwable: Method ServiceViewlet.AddToFavoriteForMultipleServices(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:13, instance:ApodGUI.ServiceViewlet@44a59da3] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace685605293", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace685605293'><pre>java.lang.Throwable: Method ServiceViewlet.AddToFavoriteForMultipleServices(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:13, instance:ApodGUI.ServiceViewlet@44a59da3] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,25 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Navigator]" guice-stage="DEVELOPMENT">
-  <test name="Test Auth Info Viewlet(failed)">
-    <parameter name="ViewletName" value="New AuthInfo Viewlet"/>
-    <parameter name="AuthinfoAttributes" value="Attributes"/>
-    <parameter name="ConnectionName" value="New.Connection"/>
-    <parameter name="Dashboardname" value="AuthInfo Verification"/>
-    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <test name="Test EMS Queue Viewlet(failed)">
+    <parameter name="ViewletName" value="Local Queue"/>
+    <parameter name="Dashboardname" value="EMS Queues"/>
+    <parameter name="wgs" value="1"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="QueueNameFromOptions" value="EMS_ABC"/>
     <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
-    <parameter name="AuthInfoName" value="AUTH.INFO.ICON"/>
-    <parameter name="FavoriteViewletName" value="AuthInfo Favorite viewlet"/>
-    <parameter name="schemaName" value="AuthinfoSchema"/>
-    <parameter name="ViewletValue" value="10"/>
+    <parameter name="FavoriteViewletName" value="Queues Add to favorite"/>
+    <parameter name="Favwgs" value="1"/>
+    <parameter name="EMSDestinationManager" value="EMS-SERVER"/>
+    <parameter name="QueueDescription" value="Test the Queue"/>
+    <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="ObjectName" value=".Queue1"/>
+    <parameter name="ViewletValue" value="3"/>
+    <parameter name="password" value="admin"/>
+    <parameter name="WGSName" value="WGS10 - 1"/>
+    <parameter name="RenameQueue" value="EMS.QUEUE.RENAME"/>
+    <parameter name="TestDescription" value="Multiple Description"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="SearchInputData" value="999999999"/>
+    <parameter name="QueueName" value="EMS_Add.New.Queue"/>
+    <parameter name="SchemaName" value="QueueSchema"/>
+    <parameter name="EMSDnode" value="EMSAGENT01"/>
     <classes>
-      <class name="ApodGUI.AuthorizationInfoViewlet">
+      <class name="EMS.EMSQueues">
         <methods>
-          <include name="tearDown"/>
-          <include name="PropertieOfAuthInfo" invocation-numbers="0"/>
+          <include name="AddQueueFromPlusIcon" invocation-numbers="0"/>
           <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="ShowObjectAttributesForQueues" invocation-numbers="0"/>
         </methods>
-      </class> <!-- ApodGUI.AuthorizationInfoViewlet -->
+      </class> <!-- EMS.EMSQueues -->
     </classes>
-  </test> <!-- Test Auth Info Viewlet(failed) -->
+  </test> <!-- Test EMS Queue Viewlet(failed) -->
 </suite> <!-- Failed suite [Navigator] -->

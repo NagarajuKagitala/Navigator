@@ -10,8 +10,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
@@ -80,8 +82,8 @@ public class CloseConsoleTabs
 		
 		if(sDriver.equalsIgnoreCase("webdriver.chrome.driver"))
 		{
-		System.setProperty(sDriver, sDriverpath);
-		driver=new ChromeDriver();
+			System.setProperty(sDriver, sDriverpath);		
+		    driver=new ChromeDriver();
 		}
 		else if(sDriver.equalsIgnoreCase("webdriver.ie.driver"))
 		{
@@ -93,10 +95,14 @@ public class CloseConsoleTabs
 			System.setProperty(sDriver, sDriverpath);
 			driver= new EdgeDriver();
 		}
-		else
+		else if(sDriver.equalsIgnoreCase("webdriver.gecko.driver"))
 		{
 			System.setProperty(sDriver, sDriverpath);
 			driver= new FirefoxDriver();
+		}
+		else
+		{
+			driver = new HtmlUnitDriver();
 		}
 		
 		driver.get(URL);

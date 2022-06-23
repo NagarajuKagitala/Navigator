@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test EMS Manager Viewlet options</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 13 12:39:55 IST 2022</td>
+<td>Started on:</td><td>Tue Jun 21 16:21:30 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>1008 seconds (1008591 ms)</td>
+<tr><td>Total time:</td><td>374 seconds (374782 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,181 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='EMS.EMSManagerViewlet.Logout()'><b>Logout</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(.,&apos;Close&apos;)]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bed7658743fd080459076f909ad7a64d, findElement {using=xpath, value=//button[contains(.,&apos;Close&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53152}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53152/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bed7658743fd080459076f909ad7a64d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at Common.Dashboard.DeleteExistDashboard(Dashboard.java:65)
+	at Common.LogoutForAll.LogoutMethod(LogoutForAll.java:12)
+	at EMS.EMSManagerViewlet.Logout(EMSManagerViewlet.java:1252)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace259144923", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace259144923'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(.,&apos;Close&apos;)]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bed7658743fd080459076f909ad7a64d, findElement {using=xpath, value=//button[contains(.,&apos;Close&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53152}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53152/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bed7658743fd080459076f909ad7a64d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at Common.Dashboard.DeleteExistDashboard(Dashboard.java:65)
+	at Common.LogoutForAll.LogoutMethod(LogoutForAll.java:12)
+	at EMS.EMSManagerViewlet.Logout(EMSManagerViewlet.java:1252)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>11</td>
+<td>EMS.EMSManagerViewlet@379614be</td></tr>
+<tr>
+<td title='EMS.EMSManagerViewlet.ShowObjectAttributes()'><b>ShowObjectAttributes</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, EMSManager, org.testng.TestRunner@1bc776b7<br/>
+<a href="#Output-2143233788" onClick='toggleBox("Output-2143233788", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2143233788" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2143233788">
+<br/>Failed to execute method: ShowObjectAttributes<br/><br/>
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowObjectAttributes.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Attributes\ failed&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bed7658743fd080459076f909ad7a64d, findElement {using=id, value=Attributes failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53152}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53152/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bed7658743fd080459076f909ad7a64d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at EMS.EMSManagerViewlet.ShowObjectAttributes(EMSManagerViewlet.java:176)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2143233788", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2143233788'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Attributes\ failed&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bed7658743fd080459076f909ad7a64d, findElement {using=id, value=Attributes failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53152}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53152/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bed7658743fd080459076f909ad7a64d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at EMS.EMSManagerViewlet.ShowObjectAttributes(EMSManagerViewlet.java:176)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>87</td>
+<td>EMS.EMSManagerViewlet@379614be</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,270 +250,96 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='EMS.EMSManagerViewlet.AddQueueACLToUser()'><b>AddQueueACLToUser</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, ACLUser, acluser, Add Acls to user, Queue, org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-2025508923" onClick='toggleBox("Output-2025508923", this, "Show output", "Hide output");'>Show output</a>
+<td title='EMS.EMSManagerViewlet.ApplyEMSScript()'><b>ApplyEMSScript</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, Queue 'TEST.Q1' already exists, Queue 'TEST.Q1' has been created, org.testng.TestRunner@1bc776b7<br/>
+<a href="#Output-2008821270" onClick='toggleBox("Output-2008821270", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2025508923" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2025508923">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddQueueACLToUser.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>43</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
-<tr>
-<td title='EMS.EMSManagerViewlet.AddToFavorites()'><b>AddToFavorites</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, EMS Manager Favorite Viewlet, org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-1956658133" onClick='toggleBox("Output-1956658133", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1956658133" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1956658133">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavorites.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>45</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
-<tr>
-<td title='EMS.EMSManagerViewlet.AddTopicACLToUser()'><b>AddTopicACLToUser</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, ACLUser, Topic, org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-1279369591" onClick='toggleBox("Output-1279369591", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1279369591" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1279369591">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddTopicACLToUser.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>36</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
-<tr>
-<td title='EMS.EMSManagerViewlet.ApplyEMSScript()'><b>ApplyEMSScript</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, Queue 'TEST.Q1' already exists, Queue 'TEST.Q1' has been created, org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-2034046523" onClick='toggleBox("Output-2034046523", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2034046523" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2034046523">
+<a href="#Output-2008821270" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2008821270">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ApplyEMSScript.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>33</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
+<td>34</td>
+<td>EMS.EMSManagerViewlet@379614be</td></tr>
 <tr>
-<td title='EMS.EMSManagerViewlet.ClearEMSScriptResults()'><b>ClearEMSScriptResults</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-247334525" onClick='toggleBox("Output-247334525", this, "Show output", "Hide output");'>Show output</a>
+<td title='EMS.EMSManagerViewlet.ClearEMSScriptResults()'><b>ClearEMSScriptResults</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: org.testng.TestRunner@1bc776b7<br/>
+<a href="#Output-1269749378" onClick='toggleBox("Output-1269749378", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-247334525" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-247334525">
+<a href="#Output-1269749378" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1269749378">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ClearEMSScriptResults.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
 <td>6</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
+<td>EMS.EMSManagerViewlet@379614be</td></tr>
 <tr>
-<td title='EMS.EMSManagerViewlet.ClearMQSCConsoleResponceData()'><b>ClearMQSCConsoleResponceData</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-260620222" onClick='toggleBox("Output-260620222", this, "Show output", "Hide output");'>Show output</a>
+<td title='EMS.EMSManagerViewlet.ClearMQSCConsoleResponceData()'><b>ClearMQSCConsoleResponceData</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: org.testng.TestRunner@1bc776b7<br/>
+<a href="#Output-1406221524" onClick='toggleBox("Output-1406221524", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-260620222" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-260620222">
+<a href="#Output-1406221524" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1406221524">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ClearMQSCConsoleResponceData.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
 <td>5</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
+<td>EMS.EMSManagerViewlet@379614be</td></tr>
 <tr>
-<td title='EMS.EMSManagerViewlet.CreateUser()'><b>CreateUser</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, TestUser, Password, User Description, org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-614785733" onClick='toggleBox("Output-614785733", this, "Show output", "Hide output");'>Show output</a>
+<td title='EMS.EMSManagerViewlet.EMSMQSCConsoleCommandOption()'><b>EMSMQSCConsoleCommandOption</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, show queues, create queue , CommandQueue1, org.testng.TestRunner@1bc776b7<br/>
+<a href="#Output-388444787" onClick='toggleBox("Output-388444787", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-614785733" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-614785733">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateUser.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>33</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
-<tr>
-<td title='EMS.EMSManagerViewlet.CreateUserGroup()'><b>CreateUserGroup</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, EMSGroup, Testing EMS Groups, org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-209667159" onClick='toggleBox("Output-209667159", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-209667159" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-209667159">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateUserGroup.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>48</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
-<tr>
-<td title='EMS.EMSManagerViewlet.DeleteUser()'><b>DeleteUser</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, TestUser, org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-718451316" onClick='toggleBox("Output-718451316", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-718451316" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-718451316">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteUser.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>22</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
-<tr>
-<td title='EMS.EMSManagerViewlet.DeleteUserGroup()'><b>DeleteUserGroup</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, EMSGroup, org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-1567732992" onClick='toggleBox("Output-1567732992", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1567732992" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1567732992">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteUserGroup.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>26</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
-<tr>
-<td title='EMS.EMSManagerViewlet.EMSMQSCConsoleCommandOption()'><b>EMSMQSCConsoleCommandOption</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, show queues, create queue , CommandQueue1, org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-1964514128" onClick='toggleBox("Output-1964514128", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1964514128" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1964514128">
+<a href="#Output-388444787" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-388444787">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/EMSMQSCConsoleCommandOption.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
 <td>34</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
-<tr>
-<td title='EMS.EMSManagerViewlet.EMSManagerProperties()'><b>EMSManagerProperties</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-1657767638" onClick='toggleBox("Output-1657767638", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1657767638" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1657767638">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/EMSManagerProperties.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>25</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
-<tr>
-<td title='EMS.EMSManagerViewlet.EditUser()'><b>EditUser</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, TestUser, Password, Updated User Description, org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-201036751" onClick='toggleBox("Output-201036751", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-201036751" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-201036751">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/EditUser.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>45</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
-<tr>
-<td title='EMS.EMSManagerViewlet.EditUserGroup()'><b>EditUserGroup</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, EMSGroup, Test Edit Groups, org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-1522875398" onClick='toggleBox("Output-1522875398", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1522875398" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1522875398">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/EditUserGroup.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>42</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
+<td>EMS.EMSManagerViewlet@379614be</td></tr>
 <tr>
 <td title='EMS.EMSManagerViewlet.Login()'><b>Login</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, EMS Manager, 2, EMS Manager<br/>
-<a href="#Output-724081353" onClick='toggleBox("Output-724081353", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1401095299" onClick='toggleBox("Output-1401095299", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-724081353" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-724081353">
+<a href="#Output-1401095299" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1401095299">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>94</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
+<td>96</td>
+<td>EMS.EMSManagerViewlet@379614be</td></tr>
 <tr>
-<td title='EMS.EMSManagerViewlet.Logout()'><b>Logout</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager</td>
-<td></td>
-<td>27</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
-<tr>
-<td title='EMS.EMSManagerViewlet.ResetButtonInACLs()'><b>ResetButtonInACLs</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, ACLUser, org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-1275013351" onClick='toggleBox("Output-1275013351", this, "Show output", "Hide output");'>Show output</a>
+<td title='EMS.EMSManagerViewlet.SaveEMSScriptResults()'><b>SaveEMSScriptResults</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: org.testng.TestRunner@1bc776b7<br/>
+<a href="#Output-2124360754" onClick='toggleBox("Output-2124360754", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1275013351" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1275013351">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ResetButtonInACLs.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>22</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
-<tr>
-<td title='EMS.EMSManagerViewlet.SaveButtonInACLs()'><b>SaveButtonInACLs</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, ACLUser, org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-648660703" onClick='toggleBox("Output-648660703", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-648660703" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-648660703">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveButtonInACLs.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>41</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
-<tr>
-<td title='EMS.EMSManagerViewlet.SaveEMSScriptResults()'><b>SaveEMSScriptResults</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-278891646" onClick='toggleBox("Output-278891646", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-278891646" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-278891646">
+<a href="#Output-2124360754" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2124360754">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveEMSScriptResults.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
 <td>6</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
+<td>EMS.EMSManagerViewlet@379614be</td></tr>
 <tr>
-<td title='EMS.EMSManagerViewlet.SaveMQSCConsoleResponceData()'><b>SaveMQSCConsoleResponceData</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-1254907391" onClick='toggleBox("Output-1254907391", this, "Show output", "Hide output");'>Show output</a>
+<td title='EMS.EMSManagerViewlet.SaveMQSCConsoleResponceData()'><b>SaveMQSCConsoleResponceData</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: org.testng.TestRunner@1bc776b7<br/>
+<a href="#Output-1414431049" onClick='toggleBox("Output-1414431049", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1254907391" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1254907391">
+<a href="#Output-1414431049" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1414431049">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveMQSCConsoleResponceData.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
 <td>4</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
-<tr>
-<td title='EMS.EMSManagerViewlet.ShowObjectAttributes()'><b>ShowObjectAttributes</b><br>Test class: EMS.EMSManagerViewlet<br>Parameters: EMS Manager, EMSManager, org.testng.TestRunner@1d5d5621<br/>
-<a href="#Output-2013570947" onClick='toggleBox("Output-2013570947", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2013570947" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2013570947">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributes.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>105</td>
-<td>EMS.EMSManagerViewlet@4b5189ac</td></tr>
+<td>EMS.EMSManagerViewlet@379614be</td></tr>
 </table><p>
 </body>
 </html>

@@ -36,6 +36,7 @@ public class TestMultiple
 
 	// Add xml file which you have to execute
 	suitefiles.add("./xmls/MultipleFilesRunning.xml");
+	//suitefiles.add("./NavigatorCore.xml");
 
 	// now set xml file for execution
 	testng.setTestSuites(suitefiles);

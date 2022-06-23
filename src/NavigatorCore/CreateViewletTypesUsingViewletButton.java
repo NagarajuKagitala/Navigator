@@ -795,9 +795,7 @@ public class CreateViewletTypesUsingViewletButton
 
 		final String dir = System.getProperty("user.dir");
 		String screenshotPath;
-		
-		System.out.println("result getStatus: " + result.getStatus());
-		// System.out.println("dir: " + dir);
+		//System.out.println("dir: " + dir);
 		if (!result.getMethod().getMethodName().contains("Logout")) {
 			if (ITestResult.FAILURE == result.getStatus()) {
 				this.capturescreen(driver, result.getMethod().getMethodName(), "FAILURE");
@@ -822,6 +820,7 @@ public class CreateViewletTypesUsingViewletButton
 			// To add it in the report
 			Reporter.log("<br/>");
 			Reporter.log(path);
+			
 			try {
 				//Update attachment to testrail server
 				int testCaseID=0;
@@ -844,12 +843,11 @@ public class CreateViewletTypesUsingViewletButton
 					//e.printStackTrace();
 				}
 		}
-
 	}
 
 	public void capturescreen(WebDriver driver, String screenShotName, String status) {
 		try {
-
+			
 			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
 			if (status.equals("FAILURE")) {

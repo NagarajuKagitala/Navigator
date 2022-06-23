@@ -18,15 +18,15 @@
        
           <methods>
             <include name="Login"/>
-          <!--   <include name="CreareDashboardUsingNewButton"/>
+            <include name="CreareDashboardUsingNewButton"/>
             <include name="RenameDashboardUsingRenamebutton"/>
             <include name="DeleteDashboardUsingDeleteButton"/> 
             <include name="CreateTagUsingAddButton"/>
             <include name="UpdateTagNameUsingEditButton"/>
             <include name="DeleteTagUsingDeleteButton"/>
-            <include name="ExportDashboard"/>  -->
-            <include name="ImportDashboard"/>
-            <include name="AddToCurrentViewButton"/>  
+            <include name="ExportDashboard"/>  
+           <!--  <include name="ImportDashboard"/>
+            <include name="AddToCurrentViewButton"/>   -->
             <include name="Logout"/>
           </methods> 
           

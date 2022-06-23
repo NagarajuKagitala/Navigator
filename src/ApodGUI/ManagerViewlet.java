@@ -694,7 +694,7 @@ public class ManagerViewlet
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Actions MousehoverIncremental=new Actions(driver);
 		MousehoverIncremental.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
-		driver.findElement(By.linkText("Connections...")).click();
+		driver.findElement(By.linkText("Connections(modal)...")).click();
 		Thread.sleep(8000);
 		
 		//Click on Collapse all button
@@ -748,7 +748,7 @@ public class ManagerViewlet
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Actions MousehoverIncremental=new Actions(driver);
 		MousehoverIncremental.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
-		driver.findElement(By.linkText("Connections...")).click();
+		driver.findElement(By.linkText("Connections(modal)...")).click();
 		Thread.sleep(4000);
 		
 		//Click on Collapse all button
@@ -795,7 +795,56 @@ public class ManagerViewlet
 	}
 	
 	@Parameters({"Dashboardname"})
-	@Test(priority=9)
+	@Test(priority=11)
+	public static void ConnectionsConsole(String Dashboardname, ITestContext context) throws InterruptedException
+	{
+		//Clearing selection of object
+		ClearSelectionofCheckbox che=new ClearSelectionofCheckbox();
+		che.Deselectcheckbox(Dashboardname, driver);
+		
+		//Select the Connections from Commands
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Actions MousehoverIncremental=new Actions(driver);
+		MousehoverIncremental.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
+		driver.findElement(By.linkText("Connections(console)...")).click();
+		Thread.sleep(4000);
+		
+		String Connection=driver.findElement(By.xpath("//th[3]")).getText();
+		System.out.println("Connection window name: " +Connection);
+		
+		
+		//verification
+		if(Connection.equalsIgnoreCase("Active Connection Id") || Connection.equalsIgnoreCase("Application Type"))
+		{
+			System.out.println("Connection console is opened");
+			context.setAttribute("Status", 1);
+			context.setAttribute("Comment", "Connection console is opened");
+		}
+		else
+		{
+			System.out.println("Connection console is not opened");
+			context.setAttribute("Status", 5);
+			context.setAttribute("Comment", "Connection console is not opened");
+			driver.findElement(By.id("failed connection console")).click();
+		}
+			
+		//Close the popup page
+		driver.findElement(By.cssSelector(".close-button")).click();
+		Thread.sleep(4000);
+		
+	}
+	
+	@Test(priority=12, dependsOnMethods = {"ConnectionsConsole"})
+	public static void ConnectionConsoleProperties(ITestContext context) throws InterruptedException
+	{
+		//Click on connection
+		driver.findElement(By.name("name")).click();
+		driver.findElement(By.xpath("//app-console-qmgr-conn-dropdown/div/div/div[2]")).click();
+		Thread.sleep(6000);
+	}
+	
+	@Parameters({"Dashboardname"})
+	@Test(priority=13)
 	@TestRail(testCaseId = 54)
 	public static void Properties(String Dashboardname, ITestContext context) throws InterruptedException
 	{
@@ -841,7 +890,7 @@ public class ManagerViewlet
 	
 	@Parameters({"Dashboardname", "Query"})
 	@TestRail(testCaseId = 55)
-	@Test(priority=10)
+	@Test(priority=14)
 	public static void MQSCConsoleCommandOption(String Dashboardname, String Query, ITestContext context) throws InterruptedException
 	{
 		//Clearing selection of object
@@ -882,7 +931,7 @@ public class ManagerViewlet
 	}
 	
 	@TestRail(testCaseId = 763)
-	@Test(priority=11, dependsOnMethods= {"MQSCConsoleCommandOption"})
+	@Test(priority=15, dependsOnMethods= {"MQSCConsoleCommandOption"})
 	public void SaveMQSCConsoleResponceData(ITestContext context) throws InterruptedException
 	{
 		try
@@ -904,7 +953,7 @@ public class ManagerViewlet
 	}
 	
 	@TestRail(testCaseId = 764)
-	@Test(priority=12, dependsOnMethods= {"MQSCConsoleCommandOption"})
+	@Test(priority=16, dependsOnMethods= {"MQSCConsoleCommandOption"})
 	public void ClearMQSCConsoleResponceData(ITestContext context) throws InterruptedException
 	{
 		//Clear data by using clear button 
@@ -939,7 +988,7 @@ public class ManagerViewlet
 	
 	@Parameters({"Dashboardname"})
 	@TestRail(testCaseId = 966)
-	@Test(priority=13)
+	@Test(priority=17)
 	public static void ApplyMQSCScript(String Dashboardname, ITestContext context) throws InterruptedException, AWTException
 	{
 		//Clearing selection of object
@@ -1002,7 +1051,7 @@ public class ManagerViewlet
 	
 	
 	@TestRail(testCaseId = 967)
-	@Test(priority=14, dependsOnMethods= {"ApplyMQSCScript"})
+	@Test(priority=18, dependsOnMethods= {"ApplyMQSCScript"})
 	public static void SaveMQSCScriptResults(ITestContext context) throws InterruptedException
 	{
 		try
@@ -1027,7 +1076,7 @@ public class ManagerViewlet
 	
 	
 	@TestRail(testCaseId = 968)
-	@Test(priority=15, dependsOnMethods= {"ApplyMQSCScript"})
+	@Test(priority=19, dependsOnMethods= {"ApplyMQSCScript"})
 	public static void ClearMQSCScriptResults(ITestContext context) throws InterruptedException
 	{
 		//Click on clear button
@@ -1060,7 +1109,7 @@ public class ManagerViewlet
 	
 	@Parameters({"Dashboardname"})
 	@TestRail(testCaseId = 993)
-	@Test(priority=16)
+	@Test(priority=20)
 	public void MQSCSnapshot(String Dashboardname, ITestContext context) throws InterruptedException
 	{
 		//Clearing selection of object
@@ -1099,7 +1148,7 @@ public class ManagerViewlet
 	}
 	
 	@TestRail(testCaseId = 994)
-	@Test(priority=17, dependsOnMethods= {"MQSCSnapshot"})
+	@Test(priority=21, dependsOnMethods= {"MQSCSnapshot"})
 	public void SaveManagerSnapshot(ITestContext context)
 	{
 		try
@@ -1126,7 +1175,7 @@ public class ManagerViewlet
 	
 	@Parameters({"Dashboardname"})
 	@TestRail(testCaseId = 56)
-	@Test(priority=18)
+	@Test(priority=22)
 	public static void DiscoverNow(String Dashboardname, ITestContext context) throws InterruptedException
 	{
 		//Clearing selection of object
@@ -1166,7 +1215,7 @@ public class ManagerViewlet
 	
 	@Parameters({"Dashboardname", "DeleteManagerName"})
 	@TestRail(testCaseId = 57)
-	@Test(priority=19)
+	@Test(priority=23)
 	public void Delete(String Dashboardname, String DeleteManagerName, ITestContext context) throws InterruptedException
 	{
 		//Clearing selection of object
@@ -1195,7 +1244,7 @@ public class ManagerViewlet
 	
 	@Parameters({"Dashboardname", "DeleteManagerCheckboxValue", "QueueManagerName"})
 	@TestRail(testCaseId = 58)
-	@Test(priority=20)
+	@Test(priority=24)
 	public void DeleteFromDB(String Dashboardname, int DeleteManagerCheckboxValue, String QueueManagerName, ITestContext context) throws InterruptedException
 	{
 		//Clearing selection of object
@@ -1229,7 +1278,7 @@ public class ManagerViewlet
 	
 	@Parameters({"Dashboardname"})
 	@TestRail(testCaseId = 59)
-	@Test(priority=21)
+	@Test(priority=25)
 	public static void Events(String Dashboardname, ITestContext context) throws InterruptedException
 	{
 		AllEvents obj=new AllEvents();
@@ -1238,7 +1287,7 @@ public class ManagerViewlet
 	
 	@Parameters({"Dashboardname", "FavoriteViewletName"})
 	@TestRail(testCaseId = 60)
-	@Test(priority=22)
+	@Test(priority=26)
 	public static void AddToFavorites(String Dashboardname, String FavoriteViewletName, ITestContext context) throws InterruptedException
 	{
 		//Clearing selection of object
@@ -1338,7 +1387,7 @@ public class ManagerViewlet
 	
 	@Parameters({"Dashboardname"})
 	@TestRail(testCaseId = 969)
-	@Test(priority=23)
+	@Test(priority=27)
 	public static void CreateDefaultViewlets(String Dashboardname, ITestContext context) throws InterruptedException
 	{
 		//Clearing selection of object
@@ -1388,7 +1437,7 @@ public class ManagerViewlet
 	}
 	
 	@TestRail(testCaseId = 970)
-	@Test(priority=24)
+	@Test(priority=28)
 	@Parameters({"Dashboardname"})
 	public static void CreateDefaultTemplateDashboard(String Dashboardname, ITestContext context) throws InterruptedException
 	{
@@ -1463,7 +1512,7 @@ public class ManagerViewlet
 	}
 	
 	
-	@Test(priority=25)
+	@Test(priority=29)
 	@TestRail(testCaseId = 61)
 	public static void CompareManagers(ITestContext context) throws InterruptedException
 	{
@@ -1473,7 +1522,7 @@ public class ManagerViewlet
 	
 	
 	@TestRail(testCaseId = 765)
-	@Test(priority=26)
+	@Test(priority=30)
 	public void CheckDifferencesForManagers(ITestContext context) throws InterruptedException
 	{
 		DifferenceOfObjects diff=new DifferenceOfObjects();
@@ -1481,7 +1530,7 @@ public class ManagerViewlet
 	}
 	
 	
-	@Test(priority=27)
+	@Test(priority=31)
 	@TestRail(testCaseId = 62)
 	public void StartAllWMQObjectsForMultipleManagers(ITestContext context) throws InterruptedException
 	{
@@ -1507,7 +1556,7 @@ public class ManagerViewlet
 		
 	}
 	
-	@Test(priority=28)
+	@Test(priority=32)
 	@TestRail(testCaseId = 63)
 	public void StopAllWMQObjectsForMultipleManagers(ITestContext context) throws InterruptedException
 	{
@@ -1535,7 +1584,7 @@ public class ManagerViewlet
 	
 	@Parameters({"Dashboardname", "MultipleDescription"})
 	@TestRail(testCaseId = 64)
-	@Test(priority=29)
+	@Test(priority=33)
 	public void MultipleManagersProperties(String Dashboardname, String MultipleDescription, ITestContext context) throws InterruptedException
 	{
 		//Clearing selection of object
@@ -1630,7 +1679,7 @@ public class ManagerViewlet
 	
 	
 	@Parameters({"Dashboardname", "FavoriteViewletName"})
-	@Test(priority=30, dependsOnMethods= {"AddToFavorites"})
+	@Test(priority=34, dependsOnMethods= {"AddToFavorites"})
 	@TestRail(testCaseId = 65)
 	public static void AddToFavoriteForMultipleManagers(String Dashboardname, String FavoriteViewletName, ITestContext context) throws InterruptedException
 	{		
@@ -1693,7 +1742,7 @@ public class ManagerViewlet
 	}
 	
 	@Parameters({"Dashboardname", "QueueManagerNameFromOptions", "DefaultTransmissionQueueFromOptions", "DescriptionFromOptions"})
-	@Test(priority=31)
+	@Test(priority=35)
 	@TestRail(testCaseId = 66)
 	public void CreateQueueManagerFromOptions(String Dashboardname, String QueueManagerNameFromOptions, String DefaultTransmissionQueueFromOptions, String DescriptionFromOptions,ITestContext context) throws InterruptedException
 	{
@@ -1782,7 +1831,7 @@ public class ManagerViewlet
 	
 	@Parameters({"Dashboardname"})
 	@TestRail(testCaseId = 67)
-	@Test(priority=32)
+	@Test(priority=36)
 	public static void SearchFilter(String Dashboardname, ITestContext context) throws InterruptedException
 	{
 		//Clearing selection of object

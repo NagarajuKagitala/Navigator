@@ -3,9 +3,10 @@
 <suite name="Navigator">
  <test name="Test Console tabs">
  
- <parameter name="sDriver" value="webdriver.chrome.driver"/>
-  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
-  <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/> 
+  <!-- <parameter name="sDriver" value=""/> -->
+    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+    <parameter name="URL" value="/navigator/#/login"/>
     <parameter name="uname" value="Admin"/>
     <parameter name="password" value="admin"/>
     
@@ -25,8 +26,8 @@
         <include name="CloseAllConsole"/>
         <include name="Logout"/>  
 
- 
-   </methods>
+       </methods>
+   
   </class>
   </classes>
   </test>

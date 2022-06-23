@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Queue Message Options</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 16 18:28:05 IST 2022</td>
+<td>Started on:</td><td>Tue May 24 20:04:33 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>401 seconds (401778 ms)</td>
+<tr><td>Total time:</td><td>1307 seconds (1307632 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,96 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ApodGUI.QueueMessages.MoveAllMessagesFromOneQueueToAnotherQueue()'><b>MoveAllMessagesFromOneQueueToAnotherQueue</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, org.testng.TestRunner@5f7989fa<br/>
+<a href="#Output-1957005830" onClick='toggleBox("Output-1957005830", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1957005830" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1957005830">
+<br/>Failed to execute method: MoveAllMessagesFromOneQueueToAnotherQueue<br/><br/>
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/MoveAllMessagesFromOneQueueToAnotherQueue.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i _ngcontent-wgo-c23=&quot;&quot; class=&quot;fa fa-refresh ng-tns-c23-71 ng-star-inserted no-loading-spinner&quot; style=&quot;font-size: 24px; color: #1aa86f;&quot;&gt;&lt;/i&gt; is not clickable at point (50, 216). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [082053f82aedca25bc78ab1dc29a98d6, clickElement {id=7e5a7088-010c-4fa5-af75-a99001964f5d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50531}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50531/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (082053f82aedca25bc78ab1dc29a98d6)] -&gt; xpath: //div[2]/div/div/div/div[2]/div/div/i]
+Session ID: 082053f82aedca25bc78ab1dc29a98d6
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at ApodGUI.QueueMessages.MoveAllMessagesFromOneQueueToAnotherQueue(QueueMessages.java:713)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1957005830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1957005830'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i _ngcontent-wgo-c23=&quot;&quot; class=&quot;fa fa-refresh ng-tns-c23-71 ng-star-inserted no-loading-spinner&quot; style=&quot;font-size: 24px; color: #1aa86f;&quot;&gt;&lt;/i&gt; is not clickable at point (50, 216). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [082053f82aedca25bc78ab1dc29a98d6, clickElement {id=7e5a7088-010c-4fa5-af75-a99001964f5d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50531}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50531/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (082053f82aedca25bc78ab1dc29a98d6)] -&gt; xpath: //div[2]/div/div/div/div[2]/div/div/i]
+Session ID: 082053f82aedca25bc78ab1dc29a98d6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at ApodGUI.QueueMessages.MoveAllMessagesFromOneQueueToAnotherQueue(QueueMessages.java:713)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>51</td>
+<td>ApodGUI.QueueMessages@6f6745d6</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,74 +165,165 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ApodGUI.QueueMessages.ClearAllMessagesFromQueue()'><b>ClearAllMessagesFromQueue</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, org.testng.TestRunner@35d5ac51<br/>
-<a href="#Output-1069163325" onClick='toggleBox("Output-1069163325", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueueMessages.ClearAllMessagesFromQueue()'><b>ClearAllMessagesFromQueue</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, org.testng.TestRunner@5f7989fa<br/>
+<a href="#Output-1664479306" onClick='toggleBox("Output-1664479306", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1069163325" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1069163325">
+<a href="#Output-1664479306" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1664479306">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ClearAllMessagesFromQueue.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>34</td>
+<td>41</td>
 <td>ApodGUI.QueueMessages@6f6745d6</td></tr>
 <tr>
-<td title='ApodGUI.QueueMessages.Login()'><b>Login</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, Queues Messages Verification, Put the message from Main options, 3, Local Queue<br/>
-<a href="#Output-1594065480" onClick='toggleBox("Output-1594065480", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueueMessages.CopyAllMessagesFromOneQueueToAnotherQueue()'><b>CopyAllMessagesFromOneQueueToAnotherQueue</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, org.testng.TestRunner@5f7989fa<br/>
+<a href="#Output-2126751933" onClick='toggleBox("Output-2126751933", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1594065480" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1594065480">
+<a href="#Output-2126751933" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2126751933">
 <br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAllMessagesFromOneQueueToAnotherQueue.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>127</td>
+<td>45</td>
 <td>ApodGUI.QueueMessages@6f6745d6</td></tr>
 <tr>
-<td title='ApodGUI.QueueMessages.Logout()'><b>Logout</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification</td>
-<td></td>
-<td>26</td>
-<td>ApodGUI.QueueMessages@6f6745d6</td></tr>
-<tr>
-<td title='ApodGUI.QueueMessages.PutHexMessageIntoQueue()'><b>PutHexMessageIntoQueue</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, 10C20000E0A5E6F6FDFFE0AEE00FE6FCFDFFE6FD93, org.testng.TestRunner@35d5ac51<br/>
-<a href="#Output-366008009" onClick='toggleBox("Output-366008009", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueueMessages.DeleteAllMessagesFromQueue()'><b>DeleteAllMessagesFromQueue</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, org.testng.TestRunner@5f7989fa<br/>
+<a href="#Output-540501426" onClick='toggleBox("Output-540501426", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-366008009" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-366008009">
+<a href="#Output-540501426" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-540501426">
 <br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/PutHexMessageIntoQueue.png" alt="""/" /><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteAllMessagesFromQueue.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
 <td>42</td>
 <td>ApodGUI.QueueMessages@6f6745d6</td></tr>
 <tr>
-<td title='ApodGUI.QueueMessages.PutMessageUsingJsonFile()'><b>PutMessageUsingJsonFile</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, org.testng.TestRunner@35d5ac51<br/>
-<a href="#Output-1747237139" onClick='toggleBox("Output-1747237139", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueueMessages.ExportAllMessages()'><b>ExportAllMessages</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, org.testng.TestRunner@5f7989fa<br/>
+<a href="#Output-1957691975" onClick='toggleBox("Output-1957691975", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1747237139" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1747237139">
+<a href="#Output-1957691975" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1957691975">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ExportAllMessages.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>ApodGUI.QueueMessages@6f6745d6</td></tr>
+<tr>
+<td title='ApodGUI.QueueMessages.LoadFromFileUsingConfigurebuttonWithMultipleMessages()'><b>LoadFromFileUsingConfigurebuttonWithMultipleMessages</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, org.testng.TestRunner@5f7989fa<br/>
+<a href="#Output-2108044736" onClick='toggleBox("Output-2108044736", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2108044736" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2108044736">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/LoadFromFileUsingConfigurebuttonWithMultipleMessages.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>72</td>
+<td>ApodGUI.QueueMessages@6f6745d6</td></tr>
+<tr>
+<td title='ApodGUI.QueueMessages.LoadFromFileUsingConfigurebuttonWithSingleMessage()'><b>LoadFromFileUsingConfigurebuttonWithSingleMessage</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, org.testng.TestRunner@5f7989fa<br/>
+<a href="#Output-1217347025" onClick='toggleBox("Output-1217347025", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1217347025" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1217347025">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/LoadFromFileUsingConfigurebuttonWithSingleMessage.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>62</td>
+<td>ApodGUI.QueueMessages@6f6745d6</td></tr>
+<tr>
+<td title='ApodGUI.QueueMessages.LoadFromFileUsingYesbutton()'><b>LoadFromFileUsingYesbutton</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, org.testng.TestRunner@5f7989fa<br/>
+<a href="#Output-2107105388" onClick='toggleBox("Output-2107105388", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2107105388" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2107105388">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/LoadFromFileUsingYesbutton.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>ApodGUI.QueueMessages@6f6745d6</td></tr>
+<tr>
+<td title='ApodGUI.QueueMessages.Login()'><b>Login</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, Queues Messages Verification, Put the message from Main options, 3, Local Queue<br/>
+<a href="#Output-626961003" onClick='toggleBox("Output-626961003", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-626961003" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-626961003">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>172</td>
+<td>ApodGUI.QueueMessages@6f6745d6</td></tr>
+<tr>
+<td title='ApodGUI.QueueMessages.Logout()'><b>Logout</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification</td>
+<td></td>
+<td>27</td>
+<td>ApodGUI.QueueMessages@6f6745d6</td></tr>
+<tr>
+<td title='ApodGUI.QueueMessages.PutHexMessageIntoQueue()'><b>PutHexMessageIntoQueue</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, 10C20000E0A5E6F6FDFFE0AEE00FE6FCFDFFE6FD93, org.testng.TestRunner@5f7989fa<br/>
+<a href="#Output-145382068" onClick='toggleBox("Output-145382068", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-145382068" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-145382068">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/PutHexMessageIntoQueue.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>ApodGUI.QueueMessages@6f6745d6</td></tr>
+<tr>
+<td title='ApodGUI.QueueMessages.PutMessageUsingJsonFile()'><b>PutMessageUsingJsonFile</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, org.testng.TestRunner@5f7989fa<br/>
+<a href="#Output-1819326403" onClick='toggleBox("Output-1819326403", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1819326403" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1819326403">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/PutMessageUsingJsonFile.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>63</td>
+<td>56</td>
 <td>ApodGUI.QueueMessages@6f6745d6</td></tr>
 <tr>
-<td title='ApodGUI.QueueMessages.PutMessageUsingXMLFile()'><b>PutMessageUsingXMLFile</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, org.testng.TestRunner@35d5ac51<br/>
-<a href="#Output-1924563758" onClick='toggleBox("Output-1924563758", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueueMessages.PutMessageUsingXMLFile()'><b>PutMessageUsingXMLFile</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, org.testng.TestRunner@5f7989fa<br/>
+<a href="#Output-1612269828" onClick='toggleBox("Output-1612269828", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1924563758" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1924563758">
+<a href="#Output-1612269828" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1612269828">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/PutMessageUsingXMLFile.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>52</td>
+<td>57</td>
+<td>ApodGUI.QueueMessages@6f6745d6</td></tr>
+<tr>
+<td title='ApodGUI.QueueMessages.PutNewMessageIntoQueue()'><b>PutNewMessageIntoQueue</b><br>Test class: ApodGUI.QueueMessages<br>Parameters: Queues Messages Verification, Put the message from Main options, org.testng.TestRunner@5f7989fa<br/>
+<a href="#Output-883862737" onClick='toggleBox("Output-883862737", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-883862737" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-883862737">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/PutNewMessageIntoQueue.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>54</td>
 <td>ApodGUI.QueueMessages@6f6745d6</td></tr>
 </table><p>
 </body>

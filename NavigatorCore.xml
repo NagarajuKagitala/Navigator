@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Suites"> 
+  <suite-files>
+  
+  
+	<suite-file path="./Core_AddSchema.xml"/>
+	<suite-file path="./Core_CreateViewletTypesUsingViewletButton.xml"/>
+	<suite-file path="./Core_MenubarIcons.xml"/>
+	<suite-file path="./Core_DashboardOptions.xml"/>
+	<suite-file path="./Core_CloseConsoleTabs.xml"/>
+	<suite-file path="./Core_NavigatorSettings.xml"/>
+	<suite-file path="./Core_GlobalSettings.xml"/>
+	<suite-file path="./Core_ManageDashboardOptions.xml"/>
+	<suite-file path="./Core_UserView.xml"/>
+	<suite-file path="./Core_ViewletFilterOptions.xml"/>
+	<suite-file path="./Core_Attributefilter.xml"/>
+	<suite-file path="./Core_SearchCriteria.xml"/>
+	
+	
+  </suite-files>
+</suite>

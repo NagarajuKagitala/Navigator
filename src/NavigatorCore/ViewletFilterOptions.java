@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -499,8 +500,15 @@ public class ViewletFilterOptions
 	@Test(priority=5)
 	public void EmptyCheckboxFilter(ITestContext context) throws InterruptedException
 	{
+		JavascriptExecutor Js1 = (JavascriptExecutor) driver;
+		Js1.executeScript("window.scrollBy(0,100)"); 
+		
 		driver.findElement(By.xpath("//div[4]/div[2]/input")).clear();
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//div[4]/div[2]/input")).click();
+		Thread.sleep(4000);
     	driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys("10000");
+    	Thread.sleep(4000);
     	driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys(Keys.ENTER);
     	Thread.sleep(HighSleep);
     	
@@ -638,10 +646,14 @@ public class ViewletFilterOptions
 	    }
 	    else
 	    {
+	    	JavascriptExecutor Js1 = (JavascriptExecutor) driver;
+			Js1.executeScript("window.scrollBy(0,100)");
+			
 	    	ResultLimitvalue=driver.findElement(By.xpath("//div[4]/div[2]/input")).getAttribute("value");
 	    	System.out.println("Initial limit is: " +ResultLimitvalue);
 	    	
 	    	driver.findElement(By.xpath("//div[4]/div[2]/input")).clear();
+	    	driver.findElement(By.xpath("//div[4]/div[2]/input")).click();
 	    	driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys("1");
 	    	driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys(Keys.ENTER);
 	    	Thread.sleep(MediumSleep);
@@ -665,6 +677,7 @@ public class ViewletFilterOptions
 		    	 context.setAttribute("Status",5);
 				 context.setAttribute("Comment", "Result limit filter is not working");
 				 driver.findElement(By.xpath("//div[4]/div[2]/input")).clear();
+				 driver.findElement(By.xpath("//div[4]/div[2]/input")).click();
 			     driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys("100");
 			     driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys(Keys.ENTER);
 			     Thread.sleep(MediumSleep);
@@ -674,6 +687,7 @@ public class ViewletFilterOptions
 	    }
 	    
 	    driver.findElement(By.xpath("//div[4]/div[2]/input")).clear();
+	    driver.findElement(By.xpath("//div[4]/div[2]/input")).click();
     	driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys("100");
     	driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys(Keys.ENTER);
     	Thread.sleep(MediumSleep);

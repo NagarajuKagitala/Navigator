@@ -40,9 +40,11 @@
         <include name="QueueManagerStatus"/> 
         <include name="Security"/> 
         <include name="PreViewErrorLogs"/> 
-        <include name="SaveErrorLogs"/> 
+        <include name="SaveErrorLogs"/>  
         <include name="CollapseAllbutton"/>
-        <include name="ExpandAllbutton"/>
+        <include name="ExpandAllbutton"/> 
+        <include name="ConnectionsConsole"/>
+        <include name="ConnectionConsoleProperties"/>
         <include name="Properties"/> 
         <include name="MQSCConsoleCommandOption"/>
         <include name="SaveMQSCConsoleResponceData"/>
@@ -63,7 +65,7 @@
         <include name="MultipleManagersProperties"/>
         <include name="AddToFavoriteForMultipleManagers"/>  
         <include name="CreateQueueManagerFromOptions"/>   
-        <include name="SearchFilter"/>    
+        <include name="SearchFilter"/>     
         <include name="Logout"/>  
         
        </methods>

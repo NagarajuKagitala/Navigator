@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="13" passed="11" failed="1" skipped="0">
+<testng-results ignored="0" total="18" passed="16" failed="2" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[<br/>]]>
@@ -11,37 +11,61 @@
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddAuthInfoViewlet.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/BrowseMessages.png" alt="""/" />]]>
     </line>
     <line>
-      <![CDATA[Screenshots/ScreenshotsFailure/PropertieOfAuthInfo.png]]>
+      <![CDATA[Screenshots/ScreenshotsFailure/ShowObjectAttributesForQueues.png]]>
     </line>
     <line>
-      <![CDATA[<br/>Failed to execute method: PropertieOfAuthInfo<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/PropertieOfAuthInfo.png" alt="""/" />]]>
+      <![CDATA[<br/>Failed to execute method: ShowObjectAttributesForQueues<br/>]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MQSCSnapshot.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowObjectAttributesForQueues.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveAuthinfoSnapshot.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowQueueStatus.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AuthInfoEvents.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateQueueFromOptions.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsOptionFromQueueCommands.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameQueueFromCommandsOption.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteoptionFromQueueCommands.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/QueueProperties.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/QueueEvents.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
@@ -53,37 +77,55 @@
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareAuthInfo.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareQueues.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForAuthInfos.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForEMSQueues.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleAuthInfo.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowQueueStatusForMultipleQueues.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributesForAuthInfo.png" alt="""/" />]]>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MultipleQueueProperties.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleQueues.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[Screenshots/ScreenshotsFailure/AddQueueFromPlusIcon.png]]>
+    </line>
+    <line>
+      <![CDATA[<br/>Failed to execute method: AddQueueFromPlusIcon<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/AddQueueFromPlusIcon.png" alt="""/" />]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-05-17T16:17:36Z" name="Navigator" finished-at="2022-05-17T16:27:28Z" duration-ms="591363">
+  <suite started-at="2022-06-21T11:23:49Z" name="Navigator" finished-at="2022-06-21T11:41:00Z" duration-ms="1031487">
     <groups>
     </groups>
-    <test started-at="2022-05-17T16:17:36Z" name="Test Auth Info Viewlet" finished-at="2022-05-17T16:27:28Z" duration-ms="591363">
-      <class name="ApodGUI.AuthorizationInfoViewlet">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:47:36Z" name="beforeTest" finished-at="2022-05-17T21:47:36Z" duration-ms="12" status="PASS">
+    <test started-at="2022-06-21T11:23:49Z" name="Test EMS Queue Viewlet" finished-at="2022-06-21T11:41:00Z" duration-ms="1031487">
+      <class name="EMS.EMSQueues">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T16:53:49Z" name="beforeTest" finished-at="2022-06-21T16:53:49Z" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:47:36Z" name="Login" finished-at="2022-05-17T21:48:22Z" duration-ms="46029" status="PASS">
+        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T16:53:49Z" name="Login" finished-at="2022-06-21T16:55:56Z" duration-ms="127202" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,7 +139,17 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[AuthInfo Verification]]>
+                <![CDATA[EMS Queues]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Local Queue]]>
               </value>
             </param>
           </params>
@@ -110,32 +162,27 @@
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:48:22Z" name="tearDown" finished-at="2022-05-17T21:48:23Z" duration-ms="258" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T16:55:56Z" name="tearDown" finished-at="2022-06-21T16:55:57Z" duration-ms="926" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login status=SUCCESS method=AuthorizationInfoViewlet.Login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=EMSQueues.Login(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="AddAuthInfoViewlet(java.lang.String, int, org.testng.ITestContext)[pri:1, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:48:23Z" name="AddAuthInfoViewlet" finished-at="2022-05-17T21:49:05Z" duration-ms="42527" status="PASS">
+        <test-method signature="BrowseMessages(java.lang.String, org.testng.ITestContext)[pri:1, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T16:55:57Z" name="BrowseMessages" finished-at="2022-06-21T16:56:18Z" duration-ms="20577" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[New AuthInfo Viewlet]]>
+                <![CDATA[EMS Queues]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@21c7208d]]>
+                <![CDATA[org.testng.TestRunner@11f406f8]]>
               </value>
             </param>
           </params>
@@ -144,51 +191,61 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddAuthInfoViewlet.png" alt="""/" />]]>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/BrowseMessages.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- AddAuthInfoViewlet -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:49:16Z" name="tearDown" finished-at="2022-05-17T21:49:29Z" duration-ms="12289" status="PASS">
+        </test-method> <!-- BrowseMessages -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T16:56:29Z" name="tearDown" finished-at="2022-06-21T16:56:32Z" duration-ms="2665" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddAuthInfoViewlet status=SUCCESS method=AuthorizationInfoViewlet.AddAuthInfoViewlet(java.lang.String, int, org.testng.ITestContext)[pri:1, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+                <![CDATA[[TestResult name=BrowseMessages status=SUCCESS method=EMSQueues.BrowseMessages(java.lang.String, org.testng.ITestContext)[pri:1, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="PropertieOfAuthInfo(org.testng.ITestContext)[pri:2, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:49:29Z" name="PropertieOfAuthInfo" finished-at="2022-05-17T21:49:30Z" duration-ms="1135" status="FAIL">
+        <test-method signature="ShowObjectAttributesForQueues(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:2, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T16:56:32Z" name="ShowObjectAttributesForQueues" finished-at="2022-06-21T16:57:06Z" duration-ms="34285" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@21c7208d]]>
+                <![CDATA[EMS Queues]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QueueSchema]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@11f406f8]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <i _ngcontent-ayh-c21="" class="fa fa-close close-btn ng-tns-c21-9 ng-star-inserted" title="Clear all selected checkboxes"></i> is not clickable at point (66, 254). Other element would receive the click: <ngb-modal-window role="dialog" tabindex="-1" class="modal d-block fade show" aria-modal="true">...</ngb-modal-window>
-  (Session info: chrome=101.0.4951.54)
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#Attributes\ failed"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'DESKTOP-9QJNAOQ', ip: '192.168.43.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c549fcb4427809445ba00ed45974ac68, clickElement {id=036d6cd6-2587-4ce0-8448-71356ab9a29a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51918}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51918/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (c549fcb4427809445ba00ed45974ac68)] -> xpath: //datatable-header-cell[2]/div/i]
-Session ID: c549fcb4427809445ba00ed45974ac68]]>
+Command: [cc672917f742697e4a7a576f7d94f310, findElement {using=id, value=Attributes failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58626}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58626/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc672917f742697e4a7a576f7d94f310]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i _ngcontent-ayh-c21="" class="fa fa-close close-btn ng-tns-c21-9 ng-star-inserted" title="Clear all selected checkboxes"></i> is not clickable at point (66, 254). Other element would receive the click: <ngb-modal-window role="dialog" tabindex="-1" class="modal d-block fade show" aria-modal="true">...</ngb-modal-window>
-  (Session info: chrome=101.0.4951.54)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#Attributes\ failed"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'DESKTOP-9QJNAOQ', ip: '192.168.43.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c549fcb4427809445ba00ed45974ac68, clickElement {id=036d6cd6-2587-4ce0-8448-71356ab9a29a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51918}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51918/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (c549fcb4427809445ba00ed45974ac68)] -> xpath: //datatable-header-cell[2]/div/i]
-Session ID: c549fcb4427809445ba00ed45974ac68
+Command: [cc672917f742697e4a7a576f7d94f310, findElement {using=id, value=Attributes failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58626}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58626/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc672917f742697e4a7a576f7d94f310
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -200,9 +257,11 @@ Session ID: c549fcb4427809445ba00ed45974ac68
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at ApodGUI.AuthorizationInfoViewlet.PropertieOfAuthInfo(AuthorizationInfoViewlet.java:162)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at EMS.EMSQueues.ShowObjectAttributesForQueues(EMSQueues.java:235)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -230,43 +289,43 @@ Session ID: c549fcb4427809445ba00ed45974ac68
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[<br/>Failed to execute method: PropertieOfAuthInfo<br/>]]>
+              <![CDATA[<br/>Failed to execute method: ShowObjectAttributesForQueues<br/>]]>
             </line>
             <line>
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/PropertieOfAuthInfo.png" alt="""/" />]]>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowObjectAttributesForQueues.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- PropertieOfAuthInfo -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:49:39Z" name="tearDown" finished-at="2022-05-17T21:49:43Z" duration-ms="3734" status="PASS">
+        </test-method> <!-- ShowObjectAttributesForQueues -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T16:57:17Z" name="tearDown" finished-at="2022-06-21T16:57:19Z" duration-ms="2462" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PropertieOfAuthInfo status=FAILURE method=AuthorizationInfoViewlet.PropertieOfAuthInfo(org.testng.ITestContext)[pri:2, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>Failed to execute method: PropertieOfAuthInfo<br/>]]]>
+                <![CDATA[[TestResult name=ShowObjectAttributesForQueues status=FAILURE method=EMSQueues.ShowObjectAttributesForQueues(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:2, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>Failed to execute method: ShowObjectAttributesForQueues<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Screenshots/ScreenshotsFailure/PropertieOfAuthInfo.png]]>
+              <![CDATA[Screenshots/ScreenshotsFailure/ShowObjectAttributesForQueues.png]]>
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="MQSCSnapshot(java.lang.String, org.testng.ITestContext)[pri:3, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:49:43Z" name="MQSCSnapshot" finished-at="2022-05-17T21:50:00Z" duration-ms="17350" status="PASS">
+        <test-method signature="ShowQueueStatus(java.lang.String, org.testng.ITestContext)[pri:3, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T16:57:19Z" name="ShowQueueStatus" finished-at="2022-06-21T16:57:38Z" duration-ms="18418" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[AuthInfo Verification]]>
+                <![CDATA[EMS Queues]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@21c7208d]]>
+                <![CDATA[org.testng.TestRunner@11f406f8]]>
               </value>
             </param>
           </params>
@@ -275,97 +334,254 @@ Session ID: c549fcb4427809445ba00ed45974ac68
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MQSCSnapshot.png" alt="""/" />]]>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowQueueStatus.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- MQSCSnapshot -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:50:11Z" name="tearDown" finished-at="2022-05-17T21:50:14Z" duration-ms="2956" status="PASS">
+        </test-method> <!-- ShowQueueStatus -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T16:57:48Z" name="tearDown" finished-at="2022-06-21T16:57:50Z" duration-ms="2297" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MQSCSnapshot status=SUCCESS method=AuthorizationInfoViewlet.MQSCSnapshot(java.lang.String, org.testng.ITestContext)[pri:3, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+                <![CDATA[[TestResult name=ShowQueueStatus status=SUCCESS method=EMSQueues.ShowQueueStatus(java.lang.String, org.testng.ITestContext)[pri:3, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="SaveAuthinfoSnapshot(org.testng.ITestContext)[pri:4, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:50:14Z" name="SaveAuthinfoSnapshot" finished-at="2022-05-17T21:50:21Z" depends-on-methods="ApodGUI.AuthorizationInfoViewlet.MQSCSnapshot" duration-ms="6544" status="PASS">
+        <test-method signature="CreateQueueFromOptions(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:4, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T16:57:50Z" name="CreateQueueFromOptions" finished-at="2022-06-21T16:59:08Z" duration-ms="77261" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@21c7208d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveAuthinfoSnapshot.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- SaveAuthinfoSnapshot -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:50:31Z" name="tearDown" finished-at="2022-05-17T21:50:33Z" duration-ms="2396" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SaveAuthinfoSnapshot status=SUCCESS method=AuthorizationInfoViewlet.SaveAuthinfoSnapshot(org.testng.ITestContext)[pri:4, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="AuthInfoEvents(java.lang.String, org.testng.ITestContext)[pri:5, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:50:33Z" name="AuthInfoEvents" finished-at="2022-05-17T21:51:25Z" duration-ms="52081" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AuthInfo Verification]]>
+                <![CDATA[EMS Queues]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@21c7208d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AuthInfoEvents.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AuthInfoEvents -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:51:36Z" name="tearDown" finished-at="2022-05-17T21:51:47Z" duration-ms="11023" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AuthInfoEvents status=SUCCESS method=AuthorizationInfoViewlet.AuthInfoEvents(java.lang.String, org.testng.ITestContext)[pri:5, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="AddToFavoriteViewlet(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:6, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:51:47Z" name="AddToFavoriteViewlet" finished-at="2022-05-17T21:52:21Z" duration-ms="33917" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AuthInfo Favorite viewlet]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[AuthInfo Verification]]>
+                <![CDATA[EMS_ABC]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@21c7208d]]>
+                <![CDATA[org.testng.TestRunner@11f406f8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateQueueFromOptions.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateQueueFromOptions -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T16:59:18Z" name="tearDown" finished-at="2022-06-21T16:59:20Z" duration-ms="2255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CreateQueueFromOptions status=SUCCESS method=EMSQueues.CreateQueueFromOptions(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:4, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="CopyAsOptionFromQueueCommands(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T16:59:20Z" name="CopyAsOptionFromQueueCommands" finished-at="2022-06-21T17:00:23Z" depends-on-methods="EMS.EMSQueues.CreateQueueFromOptions" duration-ms="62159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMS Queues]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[.Queue1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[EMS_ABC]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[org.testng.TestRunner@11f406f8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsOptionFromQueueCommands.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CopyAsOptionFromQueueCommands -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:00:33Z" name="tearDown" finished-at="2022-06-21T17:00:36Z" duration-ms="3036" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CopyAsOptionFromQueueCommands status=SUCCESS method=EMSQueues.CopyAsOptionFromQueueCommands(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="RenameQueueFromCommandsOption(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:6, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:00:36Z" name="RenameQueueFromCommandsOption" finished-at="2022-06-21T17:01:48Z" duration-ms="72610" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMS Queues]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EMS.QUEUE.RENAME]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@11f406f8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameQueueFromCommandsOption.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RenameQueueFromCommandsOption -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:01:59Z" name="tearDown" finished-at="2022-06-21T17:02:01Z" duration-ms="2291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RenameQueueFromCommandsOption status=SUCCESS method=EMSQueues.RenameQueueFromCommandsOption(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:6, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="DeleteoptionFromQueueCommands(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:7, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:02:01Z" name="DeleteoptionFromQueueCommands" finished-at="2022-06-21T17:02:27Z" depends-on-methods="EMS.EMSQueues.RenameQueueFromCommandsOption" duration-ms="26413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMS Queues]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EMS.QUEUE.RENAME]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@11f406f8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteoptionFromQueueCommands.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DeleteoptionFromQueueCommands -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:02:38Z" name="tearDown" finished-at="2022-06-21T17:02:40Z" duration-ms="2330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteoptionFromQueueCommands status=SUCCESS method=EMSQueues.DeleteoptionFromQueueCommands(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:7, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="QueueProperties(java.lang.String, org.testng.ITestContext)[pri:8, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:02:40Z" name="QueueProperties" finished-at="2022-06-21T17:03:14Z" duration-ms="34049" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMS Queues]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@11f406f8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/QueueProperties.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- QueueProperties -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:03:24Z" name="tearDown" finished-at="2022-06-21T17:03:27Z" duration-ms="2304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QueueProperties status=SUCCESS method=EMSQueues.QueueProperties(java.lang.String, org.testng.ITestContext)[pri:8, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="QueueEvents(java.lang.String, org.testng.ITestContext)[pri:9, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:03:27Z" name="QueueEvents" finished-at="2022-06-21T17:04:08Z" duration-ms="41587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMS Queues]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@11f406f8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/QueueEvents.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- QueueEvents -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:04:19Z" name="tearDown" finished-at="2022-06-21T17:04:22Z" duration-ms="3129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QueueEvents status=SUCCESS method=EMSQueues.QueueEvents(java.lang.String, org.testng.ITestContext)[pri:9, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="AddToFavoriteViewlet(java.lang.String, java.lang.String)[pri:10, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:04:22Z" name="AddToFavoriteViewlet" finished-at="2022-06-21T17:04:58Z" duration-ms="35850" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMS Queues]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Queues Add to favorite]]>
               </value>
             </param>
           </params>
@@ -378,22 +594,22 @@ Session ID: c549fcb4427809445ba00ed45974ac68
             </line>
           </reporter-output>
         </test-method> <!-- AddToFavoriteViewlet -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:52:31Z" name="tearDown" finished-at="2022-05-17T21:52:33Z" duration-ms="2277" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:05:08Z" name="tearDown" finished-at="2022-06-21T17:05:11Z" duration-ms="2331" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddToFavoriteViewlet status=SUCCESS method=AuthorizationInfoViewlet.AddToFavoriteViewlet(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:6, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+                <![CDATA[[TestResult name=AddToFavoriteViewlet status=SUCCESS method=EMSQueues.AddToFavoriteViewlet(java.lang.String, java.lang.String)[pri:10, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="CompareAuthInfo(org.testng.ITestContext)[pri:7, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:52:33Z" name="CompareAuthInfo" finished-at="2022-05-17T21:52:59Z" duration-ms="25549" status="PASS">
+        <test-method signature="CompareQueues(org.testng.ITestContext)[pri:11, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:05:11Z" name="CompareQueues" finished-at="2022-06-21T17:05:36Z" duration-ms="24995" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@21c7208d]]>
+                <![CDATA[org.testng.TestRunner@11f406f8]]>
               </value>
             </param>
           </params>
@@ -402,26 +618,26 @@ Session ID: c549fcb4427809445ba00ed45974ac68
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareAuthInfo.png" alt="""/" />]]>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareQueues.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- CompareAuthInfo -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:53:10Z" name="tearDown" finished-at="2022-05-17T21:53:13Z" duration-ms="2473" status="PASS">
+        </test-method> <!-- CompareQueues -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:05:46Z" name="tearDown" finished-at="2022-06-21T17:05:48Z" duration-ms="2255" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CompareAuthInfo status=SUCCESS method=AuthorizationInfoViewlet.CompareAuthInfo(org.testng.ITestContext)[pri:7, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+                <![CDATA[[TestResult name=CompareQueues status=SUCCESS method=EMSQueues.CompareQueues(org.testng.ITestContext)[pri:11, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="CheckDifferencesForAuthInfos(org.testng.ITestContext)[pri:8, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:53:13Z" name="CheckDifferencesForAuthInfos" finished-at="2022-05-17T21:53:33Z" duration-ms="20658" status="PASS">
+        <test-method signature="CheckDifferencesForEMSQueues(org.testng.ITestContext)[pri:12, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:05:48Z" name="CheckDifferencesForEMSQueues" finished-at="2022-06-21T17:06:11Z" duration-ms="22169" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@21c7208d]]>
+                <![CDATA[org.testng.TestRunner@11f406f8]]>
               </value>
             </param>
           </params>
@@ -430,36 +646,31 @@ Session ID: c549fcb4427809445ba00ed45974ac68
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForAuthInfos.png" alt="""/" />]]>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForEMSQueues.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- CheckDifferencesForAuthInfos -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:53:43Z" name="tearDown" finished-at="2022-05-17T21:55:01Z" duration-ms="77914" status="PASS">
+        </test-method> <!-- CheckDifferencesForEMSQueues -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:06:21Z" name="tearDown" finished-at="2022-06-21T17:06:23Z" duration-ms="2174" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CheckDifferencesForAuthInfos status=SUCCESS method=AuthorizationInfoViewlet.CheckDifferencesForAuthInfos(org.testng.ITestContext)[pri:8, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+                <![CDATA[[TestResult name=CheckDifferencesForEMSQueues status=SUCCESS method=EMSQueues.CheckDifferencesForEMSQueues(org.testng.ITestContext)[pri:12, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="AddToFavoriteForMultipleAuthInfo(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:9, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:55:01Z" name="AddToFavoriteForMultipleAuthInfo" finished-at="2022-05-17T21:55:29Z" depends-on-methods="ApodGUI.AuthorizationInfoViewlet.AddToFavoriteViewlet" duration-ms="27150" status="PASS">
+        <test-method signature="ShowQueueStatusForMultipleQueues(java.lang.String, org.testng.ITestContext)[pri:13, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:06:23Z" name="ShowQueueStatusForMultipleQueues" finished-at="2022-06-21T17:06:40Z" duration-ms="17423" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[AuthInfo Verification]]>
+                <![CDATA[EMS Queues]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[AuthInfo Favorite viewlet]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@21c7208d]]>
+                <![CDATA[org.testng.TestRunner@11f406f8]]>
               </value>
             </param>
           </params>
@@ -468,87 +679,230 @@ Session ID: c549fcb4427809445ba00ed45974ac68
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleAuthInfo.png" alt="""/" />]]>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowQueueStatusForMultipleQueues.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- AddToFavoriteForMultipleAuthInfo -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:55:39Z" name="tearDown" finished-at="2022-05-17T21:55:42Z" duration-ms="2545" status="PASS">
+        </test-method> <!-- ShowQueueStatusForMultipleQueues -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:06:51Z" name="tearDown" finished-at="2022-06-21T17:06:54Z" duration-ms="2506" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddToFavoriteForMultipleAuthInfo status=SUCCESS method=AuthorizationInfoViewlet.AddToFavoriteForMultipleAuthInfo(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:9, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+                <![CDATA[[TestResult name=ShowQueueStatusForMultipleQueues status=SUCCESS method=EMSQueues.ShowQueueStatusForMultipleQueues(java.lang.String, org.testng.ITestContext)[pri:13, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="ShowObjectAttributesForAuthInfo(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:17, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:55:42Z" name="ShowObjectAttributesForAuthInfo" finished-at="2022-05-17T21:56:47Z" duration-ms="65605" status="PASS">
+        <test-method signature="MultipleQueueProperties(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:14, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:06:54Z" name="MultipleQueueProperties" finished-at="2022-06-21T17:08:36Z" duration-ms="102857" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[AuthInfo Verification]]>
+                <![CDATA[EMS Queues]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Attributes]]>
+                <![CDATA[Multiple Description]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[AuthinfoSchema]]>
+                <![CDATA[org.testng.TestRunner@11f406f8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MultipleQueueProperties.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MultipleQueueProperties -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:08:47Z" name="tearDown" finished-at="2022-06-21T17:08:50Z" duration-ms="2639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MultipleQueueProperties status=SUCCESS method=EMSQueues.MultipleQueueProperties(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:14, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="AddToFavoriteForMultipleQueues(java.lang.String, java.lang.String)[pri:15, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:08:50Z" name="AddToFavoriteForMultipleQueues" finished-at="2022-06-21T17:09:13Z" depends-on-methods="EMS.EMSQueues.AddToFavoriteViewlet" duration-ms="23558" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMS Queues]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Queues Add to favorite]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleQueues.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddToFavoriteForMultipleQueues -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:09:24Z" name="tearDown" finished-at="2022-06-21T17:09:26Z" duration-ms="2276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddToFavoriteForMultipleQueues status=SUCCESS method=EMSQueues.AddToFavoriteForMultipleQueues(java.lang.String, java.lang.String)[pri:15, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="AddQueueFromPlusIcon(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:16, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:09:26Z" name="AddQueueFromPlusIcon" finished-at="2022-06-21T17:10:06Z" duration-ms="39880" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMS Queues]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EMS_Add.New.Queue]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test the Queue]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[org.testng.TestRunner@21c7208d]]>
+                <![CDATA[org.testng.TestRunner@11f406f8]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-9QJNAOQ', ip: '192.168.43.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cc672917f742697e4a7a576f7d94f310, findElement {using=css selector, value=//div[2]/div/div/div[3]/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58626}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58626/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc672917f742697e4a7a576f7d94f310]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-9QJNAOQ', ip: '192.168.43.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cc672917f742697e4a7a576f7d94f310, findElement {using=css selector, value=//div[2]/div/div/div[3]/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58626}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58626/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc672917f742697e4a7a576f7d94f310
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at EMS.EMSQueues.AddQueueFromPlusIcon(EMSQueues.java:1140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
+            <line>
+              <![CDATA[<br/>Failed to execute method: AddQueueFromPlusIcon<br/>]]>
+            </line>
             <line>
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributesForAuthInfo.png" alt="""/" />]]>
+              <![CDATA[<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/AddQueueFromPlusIcon.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- ShowObjectAttributesForAuthInfo -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:56:57Z" name="tearDown" finished-at="2022-05-17T21:57:00Z" duration-ms="2461" status="PASS">
+        </test-method> <!-- AddQueueFromPlusIcon -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:10:16Z" name="tearDown" finished-at="2022-06-21T17:10:19Z" duration-ms="2262" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ShowObjectAttributesForAuthInfo status=SUCCESS method=AuthorizationInfoViewlet.ShowObjectAttributesForAuthInfo(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:17, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output=<br/>]]]>
+                <![CDATA[[TestResult name=AddQueueFromPlusIcon status=FAILURE method=EMSQueues.AddQueueFromPlusIcon(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:16, instance:EMS.EMSQueues@1e4d3ce5] output=<br/>Failed to execute method: AddQueueFromPlusIcon<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Screenshots/ScreenshotsFailure/AddQueueFromPlusIcon.png]]>
+            </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="Logout(java.lang.String)[pri:18, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:57:00Z" name="Logout" finished-at="2022-05-17T21:57:28Z" duration-ms="27865" status="PASS">
+        <test-method signature="Logout(java.lang.String)[pri:25, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:10:19Z" name="Logout" finished-at="2022-06-21T17:11:00Z" duration-ms="41674" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[AuthInfo Verification]]>
+                <![CDATA[EMS Queues]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb]" started-at="2022-05-17T21:57:28Z" name="tearDown" finished-at="2022-05-17T21:57:28Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:EMS.EMSQueues@1e4d3ce5]" started-at="2022-06-21T17:11:00Z" name="tearDown" finished-at="2022-06-21T17:11:00Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Logout status=SUCCESS method=AuthorizationInfoViewlet.Logout(java.lang.String)[pri:18, instance:ApodGUI.AuthorizationInfoViewlet@79c97cb] output={null}]]]>
+                <![CDATA[[TestResult name=Logout status=SUCCESS method=EMSQueues.Logout(java.lang.String)[pri:25, instance:EMS.EMSQueues@1e4d3ce5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ApodGUI.AuthorizationInfoViewlet -->
-    </test> <!-- Test Auth Info Viewlet -->
+      </class> <!-- EMS.EMSQueues -->
+    </test> <!-- Test EMS Queue Viewlet -->
   </suite> <!-- Navigator -->
 </testng-results>

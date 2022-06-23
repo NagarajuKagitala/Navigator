@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test Channel Auth Records Viewlet</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>14/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 11 15:57:24 IST 2022</td>
+<td>Started on:</td><td>Tue May 24 18:33:58 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>897 seconds (897066 ms)</td>
+<tr><td>Total time:</td><td>757 seconds (757436 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,11 +75,93 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ApodGUI.ChannelAuthRecordsViewlet.DeleteChannelAuthRecordFromCommands()'><b>DeleteChannelAuthRecordFromCommands</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, New.Channel.Auth, org.testng.TestRunner@701bc94e<br/>
-<a href="#Output-1432535753" onClick='toggleBox("Output-1432535753", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelAuthRecordsViewlet.AddToFavoriteForMultipleChannelAuthRecords()'><b>AddToFavoriteForMultipleChannelAuthRecords</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, Channel Auth Favorite viewlet, org.testng.TestRunner@23382f76<br/>
+<a href="#Output-2097711123" onClick='toggleBox("Output-2097711123", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1432535753" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1432535753">
+<a href="#Output-2097711123" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2097711123">
+<br/>Failed to execute method: AddToFavoriteForMultipleChannelAuthRecords<br/><br/>
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/AddToFavoriteForMultipleChannelAuthRecords.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input _ngcontent-wtb-c23=&quot;&quot; type=&quot;checkbox&quot; class=&quot;ng-tns-c23-67 ng-star-inserted&quot;&gt; is not clickable at point (38, 304). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.56&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d9f36c2ac46717930ae96895e1257510, clickElement {id=8838992d-9153-4706-8051-9e26d68f4a0d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61600/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d9f36c2ac46717930ae96895e1257510)] -&gt; xpath: /html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input]
+Session ID: d9f36c2ac46717930ae96895e1257510
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at ApodGUI.ChannelAuthRecordsViewlet.AddToFavoriteForMultipleChannelAuthRecords(ChannelAuthRecordsViewlet.java:833)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2097711123", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2097711123'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input _ngcontent-wtb-c23=&quot;&quot; type=&quot;checkbox&quot; class=&quot;ng-tns-c23-67 ng-star-inserted&quot;&gt; is not clickable at point (38, 304). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.56&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d9f36c2ac46717930ae96895e1257510, clickElement {id=8838992d-9153-4706-8051-9e26d68f4a0d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61600/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d9f36c2ac46717930ae96895e1257510)] -&gt; xpath: /html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input]
+Session ID: d9f36c2ac46717930ae96895e1257510
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at ApodGUI.ChannelAuthRecordsViewlet.AddToFavoriteForMultipleChannelAuthRecords(ChannelAuthRecordsViewlet.java:833)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>12</td>
+<td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
+<tr>
+<td title='ApodGUI.ChannelAuthRecordsViewlet.DeleteChannelAuthRecordFromCommands()'><b>DeleteChannelAuthRecordFromCommands</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, New.Channel.Auth, org.testng.TestRunner@23382f76<br/>
+<a href="#Output-1472200981" onClick='toggleBox("Output-1472200981", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1472200981" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1472200981">
 <br/>Failed to execute method: DeleteChannelAuthRecordFromCommands<br/><br/>
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/DeleteChannelAuthRecordFromCommands.png" alt="""/" /><br/>
@@ -87,14 +169,14 @@ function toggleAllBoxes() {
 </td>
 <td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Channel auth record delete failed because of the following error:
 SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Channel auth record delete failed&apos; is not a valid XPath expression.
-  (Session info: chrome=99.0.4844.51)
+  (Session info: chrome=101.0.4951.67)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.56&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d119f3243614d5e062e332e2e5472192, findElement {using=xpath, value=Channel auth record delete failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49683}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49683/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d119f3243614d5e062e332e2e5472192
+Command: [d9f36c2ac46717930ae96895e1257510, findElement {using=xpath, value=Channel auth record delete failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61600/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d9f36c2ac46717930ae96895e1257510
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -107,17 +189,17 @@ Session ID: d119f3243614d5e062e332e2e5472192
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
 	at ApodGUI.ChannelAuthRecordsViewlet.DeleteChannelAuthRecordFromCommands(ChannelAuthRecordsViewlet.java:286)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1432535753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1432535753'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Channel auth record delete failed because of the following error:
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1472200981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1472200981'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Channel auth record delete failed because of the following error:
 SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Channel auth record delete failed&apos; is not a valid XPath expression.
-  (Session info: chrome=99.0.4844.51)
+  (Session info: chrome=101.0.4951.67)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.56&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d119f3243614d5e062e332e2e5472192, findElement {using=xpath, value=Channel auth record delete failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49683}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49683/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d119f3243614d5e062e332e2e5472192
+Command: [d9f36c2ac46717930ae96895e1257510, findElement {using=xpath, value=Channel auth record delete failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61600/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d9f36c2ac46717930ae96895e1257510
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -160,29 +242,109 @@ Session ID: d119f3243614d5e062e332e2e5472192
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>27</td>
+<td>35</td>
 <td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
 <tr>
-<td title='ApodGUI.ChannelAuthRecordsViewlet.MultipleChannelAuthRecordsProperties()'><b>MultipleChannelAuthRecordsProperties</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, Test Multiple Properties, org.testng.TestRunner@701bc94e<br/>
-<a href="#Output-1662765556" onClick='toggleBox("Output-1662765556", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelAuthRecordsViewlet.Logout()'><b>Logout</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(.,&apos;Close&apos;)]&quot;}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.56&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d9f36c2ac46717930ae96895e1257510, findElement {using=xpath, value=//button[contains(.,&apos;Close&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61600/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d9f36c2ac46717930ae96895e1257510
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at Common.Dashboard.DeleteExistDashboard(Dashboard.java:65)
+	at Common.LogoutForAll.LogoutMethod(LogoutForAll.java:12)
+	at ApodGUI.ChannelAuthRecordsViewlet.Logout(ChannelAuthRecordsViewlet.java:911)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1103007161", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1103007161'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(.,&apos;Close&apos;)]&quot;}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.56&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d9f36c2ac46717930ae96895e1257510, findElement {using=xpath, value=//button[contains(.,&apos;Close&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61600/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d9f36c2ac46717930ae96895e1257510
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at Common.Dashboard.DeleteExistDashboard(Dashboard.java:65)
+	at Common.LogoutForAll.LogoutMethod(LogoutForAll.java:12)
+	at ApodGUI.ChannelAuthRecordsViewlet.Logout(ChannelAuthRecordsViewlet.java:911)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>11</td>
+<td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
+<tr>
+<td title='ApodGUI.ChannelAuthRecordsViewlet.MultipleChannelAuthRecordsProperties()'><b>MultipleChannelAuthRecordsProperties</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, Test Multiple Properties, org.testng.TestRunner@23382f76<br/>
+<a href="#Output-1919584041" onClick='toggleBox("Output-1919584041", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1662765556" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1662765556">
+<a href="#Output-1919584041" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1919584041">
 <br/>Failed to execute method: MultipleChannelAuthRecordsProperties<br/><br/>
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/MultipleChannelAuthRecordsProperties.png" alt="""/" /><br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Properties updation failed because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Properties updation failed&apos; is not a valid XPath expression.
-  (Session info: chrome=99.0.4844.51)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input _ngcontent-wtb-c23=&quot;&quot; type=&quot;checkbox&quot; class=&quot;ng-tns-c23-62 ng-star-inserted&quot;&gt; is not clickable at point (38, 282). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
+  (Session info: chrome=101.0.4951.67)
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.56&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d119f3243614d5e062e332e2e5472192, findElement {using=xpath, value=Properties updation failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49683}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49683/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d119f3243614d5e062e332e2e5472192
+Command: [d9f36c2ac46717930ae96895e1257510, clickElement {id=2a8db1a9-9c4c-4cf0-95be-2036d7e418a0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61600/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d9f36c2ac46717930ae96895e1257510)] -&gt; xpath: /html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input]
+Session ID: d9f36c2ac46717930ae96895e1257510
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -190,22 +352,19 @@ Session ID: d119f3243614d5e062e332e2e5472192
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at ApodGUI.ChannelAuthRecordsViewlet.MultipleChannelAuthRecordsProperties(ChannelAuthRecordsViewlet.java:812)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1662765556", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1662765556'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Properties updation failed because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Properties updation failed&apos; is not a valid XPath expression.
-  (Session info: chrome=99.0.4844.51)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at ApodGUI.ChannelAuthRecordsViewlet.MultipleChannelAuthRecordsProperties(ChannelAuthRecordsViewlet.java:773)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1919584041", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1919584041'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input _ngcontent-wtb-c23=&quot;&quot; type=&quot;checkbox&quot; class=&quot;ng-tns-c23-62 ng-star-inserted&quot;&gt; is not clickable at point (38, 282). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
+  (Session info: chrome=101.0.4951.67)
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.56&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d119f3243614d5e062e332e2e5472192, findElement {using=xpath, value=Properties updation failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49683}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49683/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d119f3243614d5e062e332e2e5472192
+Command: [d9f36c2ac46717930ae96895e1257510, clickElement {id=2a8db1a9-9c4c-4cf0-95be-2036d7e418a0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61600/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d9f36c2ac46717930ae96895e1257510)] -&gt; xpath: /html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input]
+Session ID: d9f36c2ac46717930ae96895e1257510
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -217,11 +376,9 @@ Session ID: d119f3243614d5e062e332e2e5472192
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at ApodGUI.ChannelAuthRecordsViewlet.MultipleChannelAuthRecordsProperties(ChannelAuthRecordsViewlet.java:812)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at ApodGUI.ChannelAuthRecordsViewlet.MultipleChannelAuthRecordsProperties(ChannelAuthRecordsViewlet.java:773)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -248,7 +405,7 @@ Session ID: d119f3243614d5e062e332e2e5472192
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>64</td>
+<td>41</td>
 <td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -259,11 +416,11 @@ Session ID: d119f3243614d5e062e332e2e5472192
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ApodGUI.ChannelAuthRecordsViewlet.AddChannelAuthrecordsViewlet()'><b>AddChannelAuthrecordsViewlet</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: New Channel Auth Records, 13, org.testng.TestRunner@701bc94e<br/>
-<a href="#Output-235154585" onClick='toggleBox("Output-235154585", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelAuthRecordsViewlet.AddChannelAuthrecordsViewlet()'><b>AddChannelAuthrecordsViewlet</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: New Channel Auth Records, 13, org.testng.TestRunner@23382f76<br/>
+<a href="#Output-65305091" onClick='toggleBox("Output-65305091", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-235154585" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-235154585">
+<a href="#Output-65305091" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-65305091">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddChannelAuthrecordsViewlet.png" alt="""/" /><br/>
 </div>
@@ -272,76 +429,63 @@ Session ID: d119f3243614d5e062e332e2e5472192
 <td>38</td>
 <td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
 <tr>
-<td title='ApodGUI.ChannelAuthRecordsViewlet.AddToFavoriteForMultipleChannelAuthRecords()'><b>AddToFavoriteForMultipleChannelAuthRecords</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, Channel Auth Favorite viewlet, org.testng.TestRunner@701bc94e<br/>
-<a href="#Output-1103007161" onClick='toggleBox("Output-1103007161", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelAuthRecordsViewlet.AddToFavoriteViewlet()'><b>AddToFavoriteViewlet</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, Channel Auth Favorite viewlet, org.testng.TestRunner@23382f76<br/>
+<a href="#Output-1817415346" onClick='toggleBox("Output-1817415346", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1103007161" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1103007161">
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleChannelAuthRecords.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>27</td>
-<td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
-<tr>
-<td title='ApodGUI.ChannelAuthRecordsViewlet.AddToFavoriteViewlet()'><b>AddToFavoriteViewlet</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, Channel Auth Favorite viewlet, org.testng.TestRunner@701bc94e<br/>
-<a href="#Output-1308491389" onClick='toggleBox("Output-1308491389", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1308491389" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1308491389">
+<a href="#Output-1817415346" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1817415346">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>47</td>
+<td>62</td>
 <td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
 <tr>
-<td title='ApodGUI.ChannelAuthRecordsViewlet.ChannelAuthEvents()'><b>ChannelAuthEvents</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, org.testng.TestRunner@701bc94e<br/>
-<a href="#Output-528965756" onClick='toggleBox("Output-528965756", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelAuthRecordsViewlet.ChannelAuthEvents()'><b>ChannelAuthEvents</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, org.testng.TestRunner@23382f76<br/>
+<a href="#Output-1644155208" onClick='toggleBox("Output-1644155208", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-528965756" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-528965756">
+<a href="#Output-1644155208" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1644155208">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ChannelAuthEvents.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>42</td>
+<td>43</td>
 <td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
 <tr>
-<td title='ApodGUI.ChannelAuthRecordsViewlet.ChannelAuthProperties()'><b>ChannelAuthProperties</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, org.testng.TestRunner@701bc94e<br/>
-<a href="#Output-1599728268" onClick='toggleBox("Output-1599728268", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelAuthRecordsViewlet.ChannelAuthProperties()'><b>ChannelAuthProperties</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, org.testng.TestRunner@23382f76<br/>
+<a href="#Output-200760156" onClick='toggleBox("Output-200760156", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1599728268" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1599728268">
+<a href="#Output-200760156" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-200760156">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ChannelAuthProperties.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>32</td>
+<td>35</td>
 <td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
 <tr>
-<td title='ApodGUI.ChannelAuthRecordsViewlet.CheckDifferencesForChannelAuths()'><b>CheckDifferencesForChannelAuths</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: org.testng.TestRunner@701bc94e<br/>
-<a href="#Output-1736227182" onClick='toggleBox("Output-1736227182", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelAuthRecordsViewlet.CheckDifferencesForChannelAuths()'><b>CheckDifferencesForChannelAuths</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: org.testng.TestRunner@23382f76<br/>
+<a href="#Output-431618307" onClick='toggleBox("Output-431618307", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1736227182" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1736227182">
+<a href="#Output-431618307" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-431618307">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForChannelAuths.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>22</td>
+<td>21</td>
 <td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
 <tr>
-<td title='ApodGUI.ChannelAuthRecordsViewlet.CompareChannelAuths()'><b>CompareChannelAuths</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: org.testng.TestRunner@701bc94e<br/>
-<a href="#Output-1223820621" onClick='toggleBox("Output-1223820621", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelAuthRecordsViewlet.CompareChannelAuths()'><b>CompareChannelAuths</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: org.testng.TestRunner@23382f76<br/>
+<a href="#Output-1050406642" onClick='toggleBox("Output-1050406642", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1223820621" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1223820621">
+<a href="#Output-1050406642" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1050406642">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareChannelAuths.png" alt="""/" /><br/>
 </div>
@@ -350,87 +494,82 @@ Session ID: d119f3243614d5e062e332e2e5472192
 <td>25</td>
 <td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
 <tr>
-<td title='ApodGUI.ChannelAuthRecordsViewlet.CreateChannelAuthRecordFromOptions()'><b>CreateChannelAuthRecordFromOptions</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, New.Channel.Auth, MQADMIN, org.testng.TestRunner@701bc94e<br/>
-<a href="#Output-2142411945" onClick='toggleBox("Output-2142411945", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelAuthRecordsViewlet.CreateChannelAuthRecordFromOptions()'><b>CreateChannelAuthRecordFromOptions</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, New.Channel.Auth, MQADMIN, org.testng.TestRunner@23382f76<br/>
+<a href="#Output-1742814160" onClick='toggleBox("Output-1742814160", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2142411945" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2142411945">
+<a href="#Output-1742814160" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1742814160">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateChannelAuthRecordFromOptions.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>50</td>
+<td>60</td>
 <td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
 <tr>
-<td title='ApodGUI.ChannelAuthRecordsViewlet.CreateChannelAuthRecordFromPlusIcon()'><b>CreateChannelAuthRecordFromPlusIcon</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, New.Channel.Icon, MQADMIN, org.testng.TestRunner@701bc94e<br/>
-<a href="#Output-171751994" onClick='toggleBox("Output-171751994", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelAuthRecordsViewlet.CreateChannelAuthRecordFromPlusIcon()'><b>CreateChannelAuthRecordFromPlusIcon</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, New.Channel.Icon, MQADMIN, org.testng.TestRunner@23382f76<br/>
+<a href="#Output-1950158148" onClick='toggleBox("Output-1950158148", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-171751994" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-171751994">
+<a href="#Output-1950158148" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1950158148">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateChannelAuthRecordFromPlusIcon.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>70</td>
+<td>93</td>
 <td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
 <tr>
 <td title='ApodGUI.ChannelAuthRecordsViewlet.Login()'><b>Login</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, Channel AuthInfo<br/>
-<a href="#Output-1733903473" onClick='toggleBox("Output-1733903473", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1934908288" onClick='toggleBox("Output-1934908288", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1733903473" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1733903473">
+<a href="#Output-1934908288" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1934908288">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>30</td>
+<td>53</td>
 <td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
 <tr>
-<td title='ApodGUI.ChannelAuthRecordsViewlet.Logout()'><b>Logout</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo</td>
-<td></td>
-<td>27</td>
-<td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
-<tr>
-<td title='ApodGUI.ChannelAuthRecordsViewlet.MQSCSnapshot()'><b>MQSCSnapshot</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, org.testng.TestRunner@701bc94e<br/>
-<a href="#Output-1005928818" onClick='toggleBox("Output-1005928818", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelAuthRecordsViewlet.MQSCSnapshot()'><b>MQSCSnapshot</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, org.testng.TestRunner@23382f76<br/>
+<a href="#Output-406183058" onClick='toggleBox("Output-406183058", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1005928818" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1005928818">
+<a href="#Output-406183058" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-406183058">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MQSCSnapshot.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>15</td>
+<td>17</td>
 <td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
 <tr>
-<td title='ApodGUI.ChannelAuthRecordsViewlet.SaveChannelAuthSnapshot()'><b>SaveChannelAuthSnapshot</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: org.testng.TestRunner@701bc94e<br/>
-<a href="#Output-1931977799" onClick='toggleBox("Output-1931977799", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelAuthRecordsViewlet.SaveChannelAuthSnapshot()'><b>SaveChannelAuthSnapshot</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: org.testng.TestRunner@23382f76<br/>
+<a href="#Output-682182987" onClick='toggleBox("Output-682182987", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1931977799" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1931977799">
+<a href="#Output-682182987" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-682182987">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveChannelAuthSnapshot.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
+<td>10</td>
 <td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
 <tr>
-<td title='ApodGUI.ChannelAuthRecordsViewlet.ShowObjectAttributes()'><b>ShowObjectAttributes</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, ChannelAuthSchema, org.testng.TestRunner@701bc94e<br/>
-<a href="#Output-1632677830" onClick='toggleBox("Output-1632677830", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.ChannelAuthRecordsViewlet.ShowObjectAttributes()'><b>ShowObjectAttributes</b><br>Test class: ApodGUI.ChannelAuthRecordsViewlet<br>Parameters: Channel AuthInfo, ChannelAuthSchema, org.testng.TestRunner@23382f76<br/>
+<a href="#Output-727682657" onClick='toggleBox("Output-727682657", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1632677830" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1632677830">
+<a href="#Output-727682657" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-727682657">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributes.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>159</td>
+<td>12</td>
 <td>ApodGUI.ChannelAuthRecordsViewlet@4b5189ac</td></tr>
 </table><p>
 </body>
