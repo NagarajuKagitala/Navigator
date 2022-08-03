@@ -12,6 +12,9 @@
     
     <parameter name="schemaName" value="ApplicationSchema"/>
     <parameter name="FavoriteViewletName" value="Application Favorite viewlet"/>
+    
+    <parameter name="AttributeName" value="AddCustom"/>
+    <parameter name="AttributeValue" value="Nastel"/>
           
      <classes>
       <class name="IIB.IIBApplicationsViewlet">
@@ -20,10 +23,11 @@
        
         <include name="Login"/>
         <include name="AddIIBApplicationsViewlet"/> 
-        <include name="ShowObjectAttributesForIIBApplication"/>  
+        <include name="ShowObjectAttributesForIIBApplication"/> 
+        <include name="CustomAttributes"/> 
         <include name="AddToFavoriteViewlet"/> 
         <include name="CompareApplication"/>
-        <include name="CheckDifferencesForApplications"/>
+        <include name="CheckDifferencesForApplications"/> 
         <include name="Logout"/> 
         
        </methods>

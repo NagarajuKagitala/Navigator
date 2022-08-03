@@ -12,6 +12,9 @@
     
     <parameter name="schemaName" value="ServerSchema"/>
     <parameter name="FavoriteViewletName" value="Server Favorite viewlet"/>
+    
+    <parameter name="AttributeName" value="AddCustom"/>
+    <parameter name="AttributeValue" value="Nastel"/>
           
      <classes>
       <class name="IIB.IIBServersViewlet">
@@ -20,7 +23,8 @@
        
         <include name="Login"/>
         <include name="AddIIBServerViewlet"/> 
-        <include name="ShowObjectAttributesForIIBServer"/>  
+        <include name="ShowObjectAttributesForIIBServer"/>
+        <include name="CustomAttributes"/>  
         <include name="AddToFavoriteViewlet"/>  
         <include name="Logout"/> 
         

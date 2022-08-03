@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test IIB SubFlow Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="IIB Subflow"/>
+    <parameter name="ViewletName" value="New IIB SubFlow Viewlet"/>
+    <parameter name="AuthinfoAttributes" value="Attributes"/>
+    <parameter name="ViewletValue" value="9"/>
+    
+    <parameter name="schemaName" value="SubflowSchema"/>
+    <parameter name="FavoriteViewletName" value="Subflow Favorite viewlet"/>
+    <parameter name="AttributeName" value="color"/>
+    <parameter name="Value" value="Red"/>
+
+          
+     <classes>
+      <class name="IIB.IIBSubFlowViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddIIBSubFlowViewlet"/> 
+        <include name="ShowObjectAttributesForIIBSubFlow"/>  
+        <include name="AddToFavoriteViewlet"/>
+        <include name="CustomAttribute"/>  
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

@@ -682,7 +682,7 @@ public class CreateViewletTypesUsingViewletButton
 		
 		//select Edit viewlet option
 		driver.findElement(By.linkText("Delete viewlet")).click();
-		Thread.sleep(1000);
+		Thread.sleep(6000);
 		
 		//Confirmation ok button
 		driver.findElement(By.id("accept-true")).click();
@@ -720,6 +720,10 @@ public class CreateViewletTypesUsingViewletButton
 		//select export to csv option
 		driver.findElement(By.linkText("Export data to CSV")).click();
 		Thread.sleep(HighSleep);
+		
+		//Confirmation ok button
+		driver.findElement(By.id("accept-true")).click();
+		Thread.sleep(MediumSleep);
 		
 		System.out.println("Data is exported to csv");
 		context.setAttribute("Status", 1);

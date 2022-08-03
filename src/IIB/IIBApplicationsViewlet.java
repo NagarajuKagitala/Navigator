@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -183,6 +184,79 @@ public class IIBApplicationsViewlet
 		}
 	} 
 	
+	@Parameters({"AttributeName", "AttributeValue"})
+	@Test(priority=7)
+	public void CustomAttributes(String AttributeName, String AttributeValue, ITestContext context) throws InterruptedException
+	{
+		//Clearing selection of object
+		driver.findElement(By.xpath("//datatable-header-cell[2]/div/i")).click();
+		Thread.sleep(6000);
+		
+		//Select Admin logs option
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.linkText("Custom Attributes")).click();
+		Thread.sleep(3000);
+		
+		//Enter the custom Attribute name and value
+		driver.findElement(By.xpath("//div[3]/div/input")).sendKeys(AttributeName);
+		driver.findElement(By.xpath("//div[2]/input")).sendKeys(AttributeValue);
+		
+		//Click on add button
+		driver.findElement(By.xpath("//button[contains(.,'Add')]")).click();
+		Thread.sleep(6000);
+		
+		//click on OK button
+		driver.findElement(By.xpath("//button[contains(.,'Ok')]")).click();
+		Thread.sleep(6000);
+		
+		try
+		{
+			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
+		}
+		catch(Exception e)
+		{
+			System.out.println("No need to click on canecl button");
+		}
+		//Clearing selection of object
+		driver.findElement(By.xpath("//datatable-header-cell[2]/div/i")).click();
+		Thread.sleep(6000);
+		
+		//Show Object Attribute option
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.linkText("Show Object Attributes")).click();
+		Thread.sleep(4000);
+		
+		//search with Attribute value
+		driver.findElement(By.id("attrSearch")).sendKeys(AttributeValue);
+		driver.findElement(By.id("attrSearch")).sendKeys(Keys.ENTER);
+		Thread.sleep(LowSleep);
+		
+		//Get the result count into integer
+		String lim=driver.findElement(By.xpath("//app-console-search/span[2]")).getText();
+		System.out.println("output value is: " +lim);
+		String[] arrOfStr = lim.split("/ ");
+		String part1 = arrOfStr[1];
+		int count=Integer.parseInt(part1);
+		System.out.println("Result limit count is: " +count);
+		
+		//Click on close button
+		driver.findElement(By.cssSelector(".close-button")).click();
+		
+		if(!(count==0))
+		{
+			System.out.println("Custom attribute is working fine");
+			context.setAttribute("Status",1);
+			context.setAttribute("Comment", "Custom attribute is working fine");
+		}
+		else
+		{
+			System.out.println("Custom attribute is not working");
+			context.setAttribute("Status",5);
+			context.setAttribute("Comment", "Custom attribute is not working");
+			driver.findElement(By.cssSelector(".btn-danger")).click();
+			driver.findElement(By.id("Custom attribute failed")).click();
+		}
+	}
 	
 	@Parameters({"Dashboardname", "FavoriteViewletName"})
     @TestRail(testCaseId=1063)
@@ -193,9 +267,9 @@ public class IIBApplicationsViewlet
 		String ApplicationName=driver.findElement(By.xpath("//div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[4]/div/span")).getText();
 		
 		//Create favorite viewlet
-		driver.findElement(By.cssSelector("button.g-button-blue.button-add")).click();
+		driver.findElement(By.id("add-viewlet")).click();
 		driver.findElement(By.id("fav")).click();
-		driver.findElement(By.cssSelector("div.mod-select-viewlet-buttons > button.g-button-blue")).click();
+		driver.findElement(By.id("viewlet-type-ok")).click();
 		
 		//Viewlet Name
 		driver.findElement(By.name("viewlet-name")).click();
@@ -230,7 +304,7 @@ public class IIBApplicationsViewlet
 
 		
 		//Select Add to favorite option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Add to favorites...")).click();
 		Thread.sleep(3000);
 		

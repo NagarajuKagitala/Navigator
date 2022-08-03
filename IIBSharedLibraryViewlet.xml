@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test IIB SharedLibrary Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="IIB SharedLibrary"/>
+    <parameter name="ViewletName" value="New IIB SharedLibrary Viewlet"/>
+    <parameter name="AuthinfoAttributes" value="Attributes"/>
+    <parameter name="ViewletValue" value="7"/>
+    
+    <parameter name="schemaName" value="SharedLibrary Schema"/>
+    <parameter name="FavoriteViewletName" value="SharedLibrary Favorite viewlet"/>
+    <parameter name="AttributeName" value="color"/>
+    <parameter name="Value" value="Red"/>
+          
+     <classes>
+      <class name="IIB.IIBSharedLibraryViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddIIBSharedLibraryViewlet"/> 
+        <include name="ShowObjectAttributesForIIBSharedLibrary"/>  
+        <include name="AddToFavoriteViewlet"/> 
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

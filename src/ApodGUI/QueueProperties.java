@@ -840,11 +840,11 @@ public class QueueProperties
 		//Open properties page
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		
 		//Click on Extend tab
 		driver.findElement(By.linkText("Extended")).click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 		driver.findElement(By.id("maxQueueDepth")).clear();			
 	}

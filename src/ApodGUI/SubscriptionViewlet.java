@@ -270,6 +270,7 @@ public class SubscriptionViewlet {
 		//Give the Subscription name
 		driver.findElement(By.id("name")).clear();
 		driver.findElement(By.id("name")).sendKeys(AddSubscriptionName);
+		Thread.sleep(4000);
 		
 		//Select the Topic name from the list
 		try 
@@ -302,7 +303,7 @@ public class SubscriptionViewlet {
 		
 		//Click on Destination tab
 		driver.findElement(By.linkText("Destination")).click();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		
 		//Select WGS name
 		try
@@ -482,7 +483,7 @@ public class SubscriptionViewlet {
     	driver.findElement(By.xpath("//app-mod-viewlet-object-copy-as/div/div[2]/div/input")).sendKeys(CopyObjectName);
     	Thread.sleep(4000);
     	driver.findElement(By.xpath("//button[contains(.,'Ok')]")).click();
-    	Thread.sleep(MediumSleep);
+    	Thread.sleep(HighSleep);
     	
     	try
 		{
@@ -574,7 +575,7 @@ public class SubscriptionViewlet {
     	//Send the New name into field
     	driver.findElement(By.xpath("//app-mod-viewlet-object-rename/div/div/div[2]/input")).sendKeys(RenameSubscription);
     	driver.findElement(By.cssSelector(".btn-primary")).click();
-    	Thread.sleep(MediumSleep);
+    	Thread.sleep(HighSleep);
     	
     	try
 		{
@@ -650,7 +651,7 @@ public class SubscriptionViewlet {
 		
     	//Click on Yes
     	driver.findElement(By.cssSelector(".btn-primary")).click();
-    	Thread.sleep(MediumSleep);
+    	Thread.sleep(HighSleep);
     	    	    	
     	//Store the viewlet data into string
     	String Subviewlet=driver.findElement(By.xpath("//div[1]/app-viewlet/div/ngx-datatable/div/datatable-body")).getText();
@@ -763,7 +764,7 @@ public class SubscriptionViewlet {
 		//click on checkbox and choose properties
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(MediumSleep);
+		Thread.sleep(HighSleep);
 				
 		try
 		{
@@ -871,6 +872,7 @@ public class SubscriptionViewlet {
 		
 		//Add to favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(4000);
 		driver.findElement(By.linkText("Add to favorites...")).click();
 		Thread.sleep(3000);
 
@@ -1243,7 +1245,7 @@ public class SubscriptionViewlet {
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Copy As...")).click();
-    	Thread.sleep(2000);
+    	Thread.sleep(5000);
     	
     	try
 		{
@@ -1264,7 +1266,7 @@ public class SubscriptionViewlet {
     	//Give the object name
     	driver.findElement(By.xpath("//app-mod-viewlet-object-copy-as/div/div[2]/div/input")).sendKeys(CopyObjectNameForMUltiple);
     	driver.findElement(By.cssSelector(".btn-primary")).click();
-    	Thread.sleep(MediumSleep);
+    	Thread.sleep(HighSleep);
     	    	
     	try
     	{
@@ -1339,7 +1341,7 @@ public class SubscriptionViewlet {
     	//Send the New name into field
     	driver.findElement(By.xpath("//app-mod-viewlet-object-rename/div/div/div[2]/input")).sendKeys(RenameSubscriptionForMultiple);
     	driver.findElement(By.cssSelector(".btn-primary")).click();
-    	Thread.sleep(MediumSleep);
+    	Thread.sleep(HighSleep);
     	    	
     	try
 		{
@@ -1418,7 +1420,7 @@ public class SubscriptionViewlet {
 		
     	//Click on Yes
     	driver.findElement(By.cssSelector(".btn-primary")).click();
-    	Thread.sleep(MediumSleep);
+    	Thread.sleep(HighSleep);
     	    	
     	/*//clear the search data
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
@@ -1473,7 +1475,7 @@ public class SubscriptionViewlet {
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(6000);
+		Thread.sleep(MediumSleep);
 		
 		WebElement ele=driver.findElement(By.id("topicString"));
 		Actions a=new Actions(driver);
@@ -1485,7 +1487,7 @@ public class SubscriptionViewlet {
 		System.out.println("Multiple Properties data:" +Tooltipdata);
 		
 		driver.findElement(By.cssSelector(".btn-primary")).click();
-		Thread.sleep(MediumSleep);
+		Thread.sleep(HighSleep);
 		
 		//Clearing selection of object
 		ClearSelectionofCheckbox che1=new ClearSelectionofCheckbox();
@@ -1499,7 +1501,7 @@ public class SubscriptionViewlet {
 		//click on checkbox and choose properties of first subscription
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		String FistSubscription=driver.findElement(By.id("topicString")).getAttribute("value");
 		
@@ -1508,7 +1510,7 @@ public class SubscriptionViewlet {
 		
 		//Clsoe the properties page
 		driver.findElement(By.cssSelector(".btn-primary")).click();
-		Thread.sleep(MediumSleep);
+		Thread.sleep(HighSleep);
 		
 		//Clearing selection of object
 		ClearSelectionofCheckbox che2=new ClearSelectionofCheckbox();
@@ -1522,7 +1524,7 @@ public class SubscriptionViewlet {
 		//click on checkbox and choose properties of first subscription
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		String SecondSubscription=driver.findElement(By.id("topicString")).getAttribute("value");
 		
@@ -1531,7 +1533,7 @@ public class SubscriptionViewlet {
 		
 		//Clsoe the properties page
 		driver.findElement(By.cssSelector(".btn-primary")).click();
-		Thread.sleep(MediumSleep);
+		Thread.sleep(HighSleep);
 		
 		for(int j=0; j<=SearchdataforMultipleProperties.length(); j++)
     	{
@@ -1572,6 +1574,7 @@ public class SubscriptionViewlet {
 		//Select compare option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(4000);
 		driver.findElement(By.linkText("Add to favorites...")).click();
 		Thread.sleep(3000);
 		

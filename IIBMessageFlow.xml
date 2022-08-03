@@ -12,6 +12,9 @@
     
     <parameter name="schemaName" value="MessageflowSchema"/>
     <parameter name="FavoriteViewletName" value="Message flow Favorite viewlet"/>
+    
+    <parameter name="AttributeName" value="AddCustom"/>
+    <parameter name="AttributeValue" value="Nastel"/>
           
      <classes>
       <class name="IIB.IIBMessageFlowViewlet">
@@ -20,7 +23,8 @@
        
         <include name="Login"/>
         <include name="AddIIBMessageFlowViewlet"/> 
-        <include name="ShowObjectAttributesForIIBMessageFlow"/>  
+        <include name="ShowObjectAttributesForIIBMessageFlow"/> 
+        <include name="CustomAttributes"/> 
         <include name="AddToFavoriteViewlet"/> 
         <include name="CompareMessageFlows"/>
         <include name="CheckDifferencesForMessageFlows"/>

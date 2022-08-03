@@ -553,13 +553,18 @@ public class ManagerViewlet
 		Actions MousehoverIncremental=new Actions(driver);
 		MousehoverIncremental.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
 		driver.findElement(By.linkText("View Error Log...")).click();
+		Thread.sleep(HighSleep);
+		
+		//Click on load logs button
+		driver.findElement(By.xpath("//button[contains(.,'Load Logs')]")).click();
 		Thread.sleep(MediumSleep);
 		Thread.sleep(HighSleep);
+		Thread.sleep(60000);
 		
 		try
 		{
 			//Click on Log file name
-			driver.findElement(By.xpath("//div[4]/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell/div")).click();
+			driver.findElement(By.xpath("//div[5]/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell/div")).click();
 			Thread.sleep(4000);
 			
 			WebElement preview=driver.findElement(By.xpath("//button[contains(.,'Preview')]"));
@@ -637,13 +642,18 @@ public class ManagerViewlet
 		Actions MousehoverIncremental=new Actions(driver);
 		MousehoverIncremental.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
 		driver.findElement(By.linkText("View Error Log...")).click();
+		Thread.sleep(HighSleep);
+		
+		//Click on load logs button
+		driver.findElement(By.xpath("//button[contains(.,'Load Logs')]")).click();
 		Thread.sleep(MediumSleep);
 		Thread.sleep(HighSleep);
+		Thread.sleep(60000);
 		
 		try
 		{
 			//Click on Log file name
-			driver.findElement(By.xpath("//div[4]/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell/div")).click();
+			driver.findElement(By.xpath("//div[5]/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell/div")).click();
 			Thread.sleep(LowSleep);
 			
 			//Click on Preview
@@ -902,7 +912,7 @@ public class ManagerViewlet
 		Actions MousehoverIncremental=new Actions(driver);
 		MousehoverIncremental.moveToElement(driver.findElement(By.linkText("MQSC"))).perform();
 		driver.findElement(By.linkText("Console...")).click();
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 		
 		//Enter the Query and Click on Submit
 		driver.findElement(By.xpath("//app-mod-mqsc-console/div/div[2]/div/div/input")).sendKeys(Query);
@@ -1000,11 +1010,11 @@ public class ManagerViewlet
 		Actions MousehoverIncremental=new Actions(driver);
 		MousehoverIncremental.moveToElement(driver.findElement(By.linkText("MQSC"))).perform();
 		driver.findElement(By.linkText("Apply script...")).click();
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 		
 		//Click on load from file
 		driver.findElement(By.xpath("//button[contains(.,'Load from file')]")).click();
-		Thread.sleep(2000);
+		Thread.sleep(6000);
 		
 		//Loading the file into queue by using robot class
 		String filepath=System.getProperty("user.dir") + "\\" + Uploadmmfscript;
@@ -1024,7 +1034,7 @@ public class ManagerViewlet
 		
 		//Click on Submit button
 	    driver.findElement(By.xpath("//button[contains(.,'Submit')]")).click();
-	    Thread.sleep(MediumSleep);
+	    Thread.sleep(HighSleep);
 	    
 	    //Store the result into string
 	    String Result=driver.findElement(By.xpath("//div[2]/div[2]/div/textarea")).getAttribute("value");
@@ -1340,6 +1350,7 @@ public class ManagerViewlet
 		//----------- Add Manager to favorite viewlet -----------------
 		//Select Add tofavorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(3000);
 		driver.findElement(By.linkText("Add to favorites...")).click();
 		Thread.sleep(4000);
 		

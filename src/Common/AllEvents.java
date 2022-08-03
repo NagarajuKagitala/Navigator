@@ -19,7 +19,7 @@ public class AllEvents
 		//Select channel Events option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Events...")).click();
-		Thread.sleep(20000);
+		Thread.sleep(25000);
 		
 		//Events Popup page
 		String Eventdetails=driver.findElement(By.cssSelector(".custom-column-H-L-border")).getText();

@@ -18,7 +18,7 @@ public class IIBObjectAttributes
 		Thread.sleep(6000);
 		
 		//Show Object Attribute option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Show Object Attributes")).click();
 		Thread.sleep(4000);
 		
@@ -116,8 +116,8 @@ public class IIBObjectAttributes
 		Thread.sleep(6000); 
 				
 		//Search the viewlet data using name
-		driver.findElement(By.xpath("(//input[@type='text'])[2]")).clear();
-		driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys(name);
+		driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
+		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(name);
 		Thread.sleep(2000);
 		
 		//Strore the data into particular string
@@ -130,7 +130,7 @@ public class IIBObjectAttributes
 		Thread.sleep(6000);
 		
 		//Show Object Attribute option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Show Object Attributes")).click();
 		Thread.sleep(1000);
 		
@@ -184,7 +184,7 @@ public class IIBObjectAttributes
 	    for(int j=0; j<=name.length(); j++)
 	    {
 	    	
-	    driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys(Keys.BACK_SPACE);
+	    driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
 	    }
 	    Thread.sleep(4000);
 		
@@ -200,7 +200,7 @@ public class IIBObjectAttributes
 		}
 				
 		//Refresh the Viewlet
-		driver.findElement(By.xpath("//img[@title='Refresh viewlet']")).click();
+		//driver.findElement(By.xpath("//img[@title='Refresh viewlet']")).click();
 		Thread.sleep(4000);
 	}
 	

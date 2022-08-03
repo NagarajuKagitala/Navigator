@@ -12,6 +12,9 @@
     
     <parameter name="schemaName" value="BrokerSchema"/>
     <parameter name="FavoriteViewletName" value="Broker Favorite viewlet"/>
+    
+    <parameter name="AttributeName" value="AddCustom"/>
+    <parameter name="AttributeValue" value="Nastel"/>
           
      <classes>
       <class name="IIB.IIBBrokersViewlet">
@@ -25,8 +28,9 @@
         <include name="SearchWithBIPNumber"/>
         <include name="SearchWithTimeStamp"/>
         <include name="SearchWithSource"/>
-        <include name="SearchWithMessage"/>
-        <include name="AddToFavoriteViewlet"/> 
+        <include name="SearchWithMessage"/> 
+        <include name="CustomAttributes"/>
+        <include name="AddToFavoriteViewlet"/>  
         <include name="Logout"/> 
         
        </methods>

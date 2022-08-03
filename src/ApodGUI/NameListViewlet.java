@@ -662,6 +662,7 @@ public class NameListViewlet
 		
 		//Add to favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(3000);
 		driver.findElement(By.linkText("Add to favorites...")).click();
 		Thread.sleep(3000);
 		
@@ -911,12 +912,12 @@ public class NameListViewlet
     	
     	//click on ok button
     	driver.findElement(By.cssSelector(".btn-primary")).click();
-    	Thread.sleep(MediumSleep);
+    	Thread.sleep(HighSleep);
     	
     	try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(2000);
+			Thread.sleep(8000);
 			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
 			Thread.sleep(3000);
 		}
@@ -1124,7 +1125,7 @@ public class NameListViewlet
 	
 		//Close the properties page
 		driver.findElement(By.cssSelector(".btn-primary")).click();
-		Thread.sleep(MediumSleep);
+		Thread.sleep(HighSleep);
 		
 		//Clearing selection of object
 		ClearSelectionofCheckbox che1=new ClearSelectionofCheckbox();
@@ -1140,7 +1141,7 @@ public class NameListViewlet
 		
 		//Close the properties page
 		driver.findElement(By.cssSelector(".btn-primary")).click();
-		Thread.sleep(MediumSleep);
+		Thread.sleep(HighSleep);
 		
 		//Clearing selection of object
 		ClearSelectionofCheckbox che2=new ClearSelectionofCheckbox();
@@ -1156,7 +1157,7 @@ public class NameListViewlet
 		
 		//Close the properties page
 		driver.findElement(By.cssSelector(".btn-primary")).click();
-		Thread.sleep(MediumSleep);
+		Thread.sleep(HighSleep);
 				
 		//Verification
 		if(FirstDescription.equals(NameListMultipleDescription) && SecondDescription.equals(NameListMultipleDescription))
@@ -1191,6 +1192,7 @@ public class NameListViewlet
 		//Select Add to favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Add to favorites...")).click();
 		Thread.sleep(LowSleep);
 		

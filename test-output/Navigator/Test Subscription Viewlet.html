@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test Subscription Viewlet</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>16/5/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/3/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 20 19:29:51 IST 2022</td>
+<td>Started on:</td><td>Tue Aug 02 16:11:51 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>1385 seconds (1385716 ms)</td>
+<tr><td>Total time:</td><td>1610 seconds (1610821 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,25 +75,26 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.AddToFavoriteViewlet()'><b>AddToFavoriteViewlet</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, Subscription Favorite viewlet, org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-943051773" onClick='toggleBox("Output-943051773", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.AddToFavoriteViewlet()'><b>AddToFavoriteViewlet</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, Subscription Favorite viewlet, org.testng.TestRunner@5918c260<br/>
+<a href="#Output-257999182" onClick='toggleBox("Output-257999182", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-943051773" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-943051773">
+<a href="#Output-257999182" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-257999182">
 <br/>Failed to execute method: AddToFavoriteViewlet<br/><br/>
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/AddToFavoriteViewlet.png" alt="""/" /><br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Add to favorites...&quot;}
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Favorite condition failed because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Favorite condition failed&apos; is not a valid XPath expression.
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;172.16.31.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d0cf0154cc8fa8ac1d69ab330f5fe1a, findElement {using=link text, value=Add to favorites...}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61399/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
+Command: [2e6d420294b7dfb5d9760b0dce4b35f0, findElement {using=xpath, value=Favorite condition failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60684/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e6d420294b7dfb5d9760b0dce4b35f0
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -105,17 +106,18 @@ Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at ApodGUI.SubscriptionViewlet.AddToFavoriteViewlet(SubscriptionViewlet.java:874)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace943051773", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace943051773'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Add to favorites...&quot;}
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+	at ApodGUI.SubscriptionViewlet.AddToFavoriteViewlet(SubscriptionViewlet.java:923)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace257999182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace257999182'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Favorite condition failed because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Favorite condition failed&apos; is not a valid XPath expression.
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;172.16.31.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d0cf0154cc8fa8ac1d69ab330f5fe1a, findElement {using=link text, value=Add to favorites...}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61399/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
+Command: [2e6d420294b7dfb5d9760b0dce4b35f0, findElement {using=xpath, value=Favorite condition failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60684/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e6d420294b7dfb5d9760b0dce4b35f0
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -131,7 +133,7 @@ Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at ApodGUI.SubscriptionViewlet.AddToFavoriteViewlet(SubscriptionViewlet.java:874)
+	at ApodGUI.SubscriptionViewlet.AddToFavoriteViewlet(SubscriptionViewlet.java:923)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -158,14 +160,14 @@ Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>36</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>57</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.CompareSubscription()'><b>CompareSubscription</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-1680628659" onClick='toggleBox("Output-1680628659", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.CompareSubscription()'><b>CompareSubscription</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: org.testng.TestRunner@5918c260<br/>
+<a href="#Output-1438780049" onClick='toggleBox("Output-1438780049", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1680628659" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1680628659">
+<a href="#Output-1438780049" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1438780049">
 <br/>Failed to execute method: CompareSubscription<br/><br/>
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/CompareSubscription.png" alt="""/" /><br/>
@@ -173,14 +175,14 @@ Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
 </td>
 <td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Comparision failed because of the following error:
 SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Comparision failed&apos; is not a valid XPath expression.
-  (Session info: chrome=101.0.4951.67)
+  (Session info: chrome=103.0.5060.134)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;172.16.31.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d0cf0154cc8fa8ac1d69ab330f5fe1a, findElement {using=xpath, value=Comparision failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61399/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
+Command: [2e6d420294b7dfb5d9760b0dce4b35f0, findElement {using=xpath, value=Comparision failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60684/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e6d420294b7dfb5d9760b0dce4b35f0
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -193,18 +195,18 @@ Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
 	at Common.CompareObjects.Compare(CompareObjects.java:53)
-	at ApodGUI.SubscriptionViewlet.CompareSubscription(SubscriptionViewlet.java:934)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1680628659", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1680628659'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Comparision failed because of the following error:
+	at ApodGUI.SubscriptionViewlet.CompareSubscription(SubscriptionViewlet.java:936)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1438780049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1438780049'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Comparision failed because of the following error:
 SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Comparision failed&apos; is not a valid XPath expression.
-  (Session info: chrome=101.0.4951.67)
+  (Session info: chrome=103.0.5060.134)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;172.16.31.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d0cf0154cc8fa8ac1d69ab330f5fe1a, findElement {using=xpath, value=Comparision failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61399/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
+Command: [2e6d420294b7dfb5d9760b0dce4b35f0, findElement {using=xpath, value=Comparision failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60684/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e6d420294b7dfb5d9760b0dce4b35f0
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -221,7 +223,7 @@ Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
 	at Common.CompareObjects.Compare(CompareObjects.java:53)
-	at ApodGUI.SubscriptionViewlet.CompareSubscription(SubscriptionViewlet.java:934)
+	at ApodGUI.SubscriptionViewlet.CompareSubscription(SubscriptionViewlet.java:936)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -249,115 +251,27 @@ Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>20</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.DeleteFromCommands()'><b>DeleteFromCommands</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SUBSCRIPTION.NEW.RENAME, org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-1135026238" onClick='toggleBox("Output-1135026238", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.ShowObjectAttributesForSubscription()'><b>ShowObjectAttributesForSubscription</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, Attributes, SubscriptionSchema, SYSTEM.ADD.NEW.SUBSCRIPTION121.ICON, org.testng.TestRunner@5918c260<br/>
+<a href="#Output-530946829" onClick='toggleBox("Output-530946829", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1135026238" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1135026238">
-<br/>Failed to execute method: DeleteFromCommands<br/><br/>
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/DeleteFromCommands.png" alt="""/" /><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Subscription delete failed because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Subscription delete failed&apos; is not a valid XPath expression.
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d0cf0154cc8fa8ac1d69ab330f5fe1a, findElement {using=xpath, value=Subscription delete failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61399/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at ApodGUI.SubscriptionViewlet.DeleteFromCommands(SubscriptionViewlet.java:672)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1135026238", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1135026238'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Subscription delete failed because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Subscription delete failed&apos; is not a valid XPath expression.
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d0cf0154cc8fa8ac1d69ab330f5fe1a, findElement {using=xpath, value=Subscription delete failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61399/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at ApodGUI.SubscriptionViewlet.DeleteFromCommands(SubscriptionViewlet.java:672)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>27</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
-<tr>
-<td title='ApodGUI.SubscriptionViewlet.ShowObjectAttributesForSubscription()'><b>ShowObjectAttributesForSubscription</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, Attributes, SubscriptionSchema, SYSTEM.ADD.NEW.SUBSCRIPTION121.ICON, org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-724715512" onClick='toggleBox("Output-724715512", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-724715512" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-724715512">
+<a href="#Output-530946829" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-530946829">
 <br/>Failed to execute method: ShowObjectAttributesForSubscription<br/><br/>
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowObjectAttributesForSubscription.png" alt="""/" /><br/>
 </div>
 </td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Attributes\ failed&quot;}
-  (Session info: chrome=101.0.4951.67)
+  (Session info: chrome=103.0.5060.134)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;172.16.31.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d0cf0154cc8fa8ac1d69ab330f5fe1a, findElement {using=id, value=Attributes failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61399/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
+Command: [2e6d420294b7dfb5d9760b0dce4b35f0, findElement {using=id, value=Attributes failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60684/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e6d420294b7dfb5d9760b0dce4b35f0
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -370,16 +284,16 @@ Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
 	at ApodGUI.SubscriptionViewlet.ShowObjectAttributesForSubscription(SubscriptionViewlet.java:212)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace724715512", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace724715512'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Attributes\ failed&quot;}
-  (Session info: chrome=101.0.4951.67)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace530946829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace530946829'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Attributes\ failed&quot;}
+  (Session info: chrome=103.0.5060.134)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;172.16.31.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d0cf0154cc8fa8ac1d69ab330f5fe1a, findElement {using=id, value=Attributes failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61399/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
+Command: [2e6d420294b7dfb5d9760b0dce4b35f0, findElement {using=id, value=Attributes failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60684/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e6d420294b7dfb5d9760b0dce4b35f0
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -422,90 +336,8 @@ Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>192</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
-<tr>
-<td title='ApodGUI.SubscriptionViewlet.ShowSubscriptionStatus()'><b>ShowSubscriptionStatus</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-800878666" onClick='toggleBox("Output-800878666", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-800878666" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-800878666">
-<br/>Failed to execute method: ShowSubscriptionStatus<br/><br/>
-<br/><br/>
-<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowSubscriptionStatus.png" alt="""/" /><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i _ngcontent-tfv-c117=&quot;&quot; class=&quot;fa fa-times g-tab-btn-close close-button&quot;&gt;&lt;/i&gt; is not clickable at point (166, 539). Other element would receive the click: &lt;div _ngcontent-tfv-c9=&quot;&quot; class=&quot;console-table-container console-table-status console-table-status-queues consoleTbodys consoleTbodys-noHeader&quot; style=&quot;height: 289.8px;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=101.0.4951.67)
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d0cf0154cc8fa8ac1d69ab330f5fe1a, clickElement {id=03c23a38-2815-41b0-9705-f8b9d6350c26}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61399/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (7d0cf0154cc8fa8ac1d69ab330f5fe1a)] -&gt; css selector: .close-button]
-Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at ApodGUI.SubscriptionViewlet.ShowSubscriptionStatus(SubscriptionViewlet.java:241)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace800878666", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace800878666'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i _ngcontent-tfv-c117=&quot;&quot; class=&quot;fa fa-times g-tab-btn-close close-button&quot;&gt;&lt;/i&gt; is not clickable at point (166, 539). Other element would receive the click: &lt;div _ngcontent-tfv-c9=&quot;&quot; class=&quot;console-table-container console-table-status console-table-status-queues consoleTbodys consoleTbodys-noHeader&quot; style=&quot;height: 289.8px;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=101.0.4951.67)
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;192.168.43.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d0cf0154cc8fa8ac1d69ab330f5fe1a, clickElement {id=03c23a38-2815-41b0-9705-f8b9d6350c26}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61399/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (7d0cf0154cc8fa8ac1d69ab330f5fe1a)] -&gt; css selector: .close-button]
-Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at ApodGUI.SubscriptionViewlet.ShowSubscriptionStatus(SubscriptionViewlet.java:241)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>3</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>190</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -515,205 +347,231 @@ Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.AddSubscriptionViewlet()'><b>AddSubscriptionViewlet</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: New Subscription Viewlet, 12, org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-1521132614" onClick='toggleBox("Output-1521132614", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.AddSubscriptionViewlet()'><b>AddSubscriptionViewlet</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: New Subscription Viewlet, 12, org.testng.TestRunner@5918c260<br/>
+<a href="#Output-1062163248" onClick='toggleBox("Output-1062163248", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1521132614" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1521132614">
+<a href="#Output-1062163248" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1062163248">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddSubscriptionViewlet.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>36</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>35</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.CheckDifferencesForSubscriptions()'><b>CheckDifferencesForSubscriptions</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-400280074" onClick='toggleBox("Output-400280074", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.CheckDifferencesForSubscriptions()'><b>CheckDifferencesForSubscriptions</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: org.testng.TestRunner@5918c260<br/>
+<a href="#Output-211853855" onClick='toggleBox("Output-211853855", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-400280074" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-400280074">
+<a href="#Output-211853855" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-211853855">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForSubscriptions.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
 <td>21</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.CopyAsFromCommands()'><b>CopyAsFromCommands</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, .Copy, SYSTEM.ADD.NEW.SUBSCRIPTION121.OPTIONS, org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-1493274349" onClick='toggleBox("Output-1493274349", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.CopyAsFromCommands()'><b>CopyAsFromCommands</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, .Copy, SYSTEM.ADD.NEW.SUBSCRIPTION121.OPTIONS, org.testng.TestRunner@5918c260<br/>
+<a href="#Output-2084912180" onClick='toggleBox("Output-2084912180", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1493274349" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1493274349">
+<a href="#Output-2084912180" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2084912180">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsFromCommands.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>60</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>75</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.CopyAsFromCommandsForMultipleSubscriptions()'><b>CopyAsFromCommandsForMultipleSubscriptions</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SUB.MULTIPLE.COPY, SYSTEM.ADD.NEW.SUBSCRIPTION121.ICON, org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-34241760" onClick='toggleBox("Output-34241760", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.CopyAsFromCommandsForMultipleSubscriptions()'><b>CopyAsFromCommandsForMultipleSubscriptions</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SUB.MULTIPLE.COPY, SYSTEM.ADD.NEW.SUBSCRIPTION121.ICON, org.testng.TestRunner@5918c260<br/>
+<a href="#Output-1198143705" onClick='toggleBox("Output-1198143705", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-34241760" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-34241760">
+<a href="#Output-1198143705" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1198143705">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsFromCommandsForMultipleSubscriptions.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>56</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>73</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.CreateSubscriptionFromOptions()'><b>CreateSubscriptionFromOptions</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SYSTEM.ADD.NEW.SUBSCRIPTION121.OPTIONS, Unique2, org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-121245483" onClick='toggleBox("Output-121245483", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.CreateSubscriptionFromOptions()'><b>CreateSubscriptionFromOptions</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SYSTEM.ADD.NEW.SUBSCRIPTION121.OPTIONS, Unique2, org.testng.TestRunner@5918c260<br/>
+<a href="#Output-473163048" onClick='toggleBox("Output-473163048", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-121245483" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-121245483">
+<a href="#Output-473163048" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-473163048">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateSubscriptionFromOptions.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>97</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>107</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.CreateSubscriptionFromPlusIcon()'><b>CreateSubscriptionFromPlusIcon</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SYSTEM.ADD.NEW.SUBSCRIPTION121.ICON, UniqueIcon2, org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-913818888" onClick='toggleBox("Output-913818888", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.CreateSubscriptionFromPlusIcon()'><b>CreateSubscriptionFromPlusIcon</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SYSTEM.ADD.NEW.SUBSCRIPTION121.ICON, UniqueIcon2, org.testng.TestRunner@5918c260<br/>
+<a href="#Output-545535492" onClick='toggleBox("Output-545535492", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-913818888" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-913818888">
+<a href="#Output-545535492" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-545535492">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateSubscriptionFromPlusIcon.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>207</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>209</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.DeleteFromCommandsForMultipleSubscriptions()'><b>DeleteFromCommandsForMultipleSubscriptions</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SYSTEM.SUBSCRIPTION.RENAME1, org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-1114740236" onClick='toggleBox("Output-1114740236", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.DeleteFromCommands()'><b>DeleteFromCommands</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SUBSCRIPTION.NEW.RENAME, org.testng.TestRunner@5918c260<br/>
+<a href="#Output-1693686046" onClick='toggleBox("Output-1693686046", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1114740236" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1114740236">
+<a href="#Output-1693686046" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1693686046">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteFromCommands.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
+<tr>
+<td title='ApodGUI.SubscriptionViewlet.DeleteFromCommandsForMultipleSubscriptions()'><b>DeleteFromCommandsForMultipleSubscriptions</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SYSTEM.SUBSCRIPTION.RENAME1, org.testng.TestRunner@5918c260<br/>
+<a href="#Output-1002092487" onClick='toggleBox("Output-1002092487", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1002092487" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1002092487">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteFromCommandsForMultipleSubscriptions.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>34</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>50</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
 <td title='ApodGUI.SubscriptionViewlet.Login()'><b>Login</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, Subscription Verification<br/>
-<a href="#Output-1260012504" onClick='toggleBox("Output-1260012504", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1172450799" onClick='toggleBox("Output-1172450799", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1260012504" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1260012504">
+<a href="#Output-1172450799" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1172450799">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>50</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>80</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
 <td title='ApodGUI.SubscriptionViewlet.Logout()'><b>Logout</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification</td>
 <td></td>
-<td>27</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>26</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.MQSCSnapshot()'><b>MQSCSnapshot</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-1394241900" onClick='toggleBox("Output-1394241900", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.MQSCSnapshot()'><b>MQSCSnapshot</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, org.testng.TestRunner@5918c260<br/>
+<a href="#Output-728747169" onClick='toggleBox("Output-728747169", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1394241900" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1394241900">
+<a href="#Output-728747169" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-728747169">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MQSCSnapshot.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
 <td>15</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.MultipleSubscriptionProperties()'><b>MultipleSubscriptionProperties</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SYSTEM.ADD.NEW.SUBSCRIPTION121, org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-1280560736" onClick='toggleBox("Output-1280560736", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.MultipleSubscriptionProperties()'><b>MultipleSubscriptionProperties</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SYSTEM.ADD.NEW.SUBSCRIPTION121, org.testng.TestRunner@5918c260<br/>
+<a href="#Output-776207366" onClick='toggleBox("Output-776207366", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1280560736" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1280560736">
+<a href="#Output-776207366" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-776207366">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MultipleSubscriptionProperties.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>70</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>129</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.RenameFromCommands()'><b>RenameFromCommands</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SUBSCRIPTION.NEW.RENAME, .Copy, SYSTEM.ADD.NEW.SUBSCRIPTION121.OPTIONS, org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-1979980170" onClick='toggleBox("Output-1979980170", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.RenameFromCommands()'><b>RenameFromCommands</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SUBSCRIPTION.NEW.RENAME, .Copy, SYSTEM.ADD.NEW.SUBSCRIPTION121.OPTIONS, org.testng.TestRunner@5918c260<br/>
+<a href="#Output-488795943" onClick='toggleBox("Output-488795943", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1979980170" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1979980170">
+<a href="#Output-488795943" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-488795943">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameFromCommands.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>45</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>58</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.RenameFromCommandsForMultipleSubscriptions()'><b>RenameFromCommandsForMultipleSubscriptions</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SYSTEM.SUBSCRIPTION.RENAME1, org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-257655284" onClick='toggleBox("Output-257655284", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.RenameFromCommandsForMultipleSubscriptions()'><b>RenameFromCommandsForMultipleSubscriptions</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SYSTEM.SUBSCRIPTION.RENAME1, org.testng.TestRunner@5918c260<br/>
+<a href="#Output-869058765" onClick='toggleBox("Output-869058765", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-257655284" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-257655284">
+<a href="#Output-869058765" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-869058765">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameFromCommandsForMultipleSubscriptions.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>47</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>62</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.SaveSubscriptionSnapshot()'><b>SaveSubscriptionSnapshot</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-11219580" onClick='toggleBox("Output-11219580", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.SaveSubscriptionSnapshot()'><b>SaveSubscriptionSnapshot</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: org.testng.TestRunner@5918c260<br/>
+<a href="#Output-369270319" onClick='toggleBox("Output-369270319", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-11219580" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-11219580">
+<a href="#Output-369270319" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-369270319">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveSubscriptionSnapshot.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>10</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.SubscriptionEvents()'><b>SubscriptionEvents</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-378817368" onClick='toggleBox("Output-378817368", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.ShowSubscriptionStatus()'><b>ShowSubscriptionStatus</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: org.testng.TestRunner@5918c260<br/>
+<a href="#Output-1775059559" onClick='toggleBox("Output-1775059559", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-378817368" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-378817368">
+<a href="#Output-1775059559" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1775059559">
+<br/><br/>
+<img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowSubscriptionStatus.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
+<tr>
+<td title='ApodGUI.SubscriptionViewlet.SubscriptionEvents()'><b>SubscriptionEvents</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, org.testng.TestRunner@5918c260<br/>
+<a href="#Output-842729010" onClick='toggleBox("Output-842729010", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-842729010" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-842729010">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SubscriptionEvents.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>53</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>58</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 <tr>
-<td title='ApodGUI.SubscriptionViewlet.SubscriptionProperties()'><b>SubscriptionProperties</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SYSTEM.ADD.NEW.SUBSCRIPTION121.OPTIONS, org.testng.TestRunner@25e49cb2<br/>
-<a href="#Output-1290733383" onClick='toggleBox("Output-1290733383", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.SubscriptionViewlet.SubscriptionProperties()'><b>SubscriptionProperties</b><br>Test class: ApodGUI.SubscriptionViewlet<br>Parameters: Subscription Verification, SYSTEM.ADD.NEW.SUBSCRIPTION121.OPTIONS, org.testng.TestRunner@5918c260<br/>
+<a href="#Output-974386787" onClick='toggleBox("Output-974386787", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1290733383" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1290733383">
+<a href="#Output-974386787" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-974386787">
 <br/><br/>
 <img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SubscriptionProperties.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>27</td>
-<td>ApodGUI.SubscriptionViewlet@404bbcbd</td></tr>
+<td>41</td>
+<td>ApodGUI.SubscriptionViewlet@1bab8268</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -724,9 +582,9 @@ Session ID: 7d0cf0154cc8fa8ac1d69ab330f5fe1a
 </tr>
 <tr>
 <td title='ApodGUI.SubscriptionViewlet.AddToFavoriteForMultipleSubscription()'><b>AddToFavoriteForMultipleSubscription</b><br>Test class: ApodGUI.SubscriptionViewlet</td>
-<td><div><pre>java.lang.Throwable: Method SubscriptionViewlet.AddToFavoriteForMultipleSubscription(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:18, instance:ApodGUI.SubscriptionViewlet@404bbcbd] depends on not successfully finished methods
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1229420017", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1229420017'><pre>java.lang.Throwable: Method SubscriptionViewlet.AddToFavoriteForMultipleSubscription(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:18, instance:ApodGUI.SubscriptionViewlet@404bbcbd] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method SubscriptionViewlet.AddToFavoriteForMultipleSubscription(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:18, instance:ApodGUI.SubscriptionViewlet@1bab8268] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1107056165", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1107056165'><pre>java.lang.Throwable: Method SubscriptionViewlet.AddToFavoriteForMultipleSubscription(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:18, instance:ApodGUI.SubscriptionViewlet@1bab8268] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)

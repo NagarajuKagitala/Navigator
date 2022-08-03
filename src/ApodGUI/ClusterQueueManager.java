@@ -246,6 +246,7 @@ public class ClusterQueueManager {
 				
 		//Select Add to favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(6000);
 		driver.findElement(By.linkText("Add to favorites...")).click();
 		Thread.sleep(LowSleep);
 
@@ -268,7 +269,7 @@ public class ClusterQueueManager {
 		}
 		
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-		Thread.sleep(MediumSleep);
+		Thread.sleep(HighSleep);
 		
 		/*
 		 * Select fav=new Select(driver.findElement(By.cssSelector(".fav-select")));

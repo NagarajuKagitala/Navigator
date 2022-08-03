@@ -1,0 +1,1579 @@
++-----------------------------------------------------------------------------+
+|                                                                             |
+| IBM MQ First Failure Symptom Report                                         | 
+| =========================================                                   | 
+|                                                                             |
+| Date/Time         :- Wed May 25 2022 15:15:22 Eastern Daylight Time         | 
+| UTC Time          :- 1653506122.063000                                      | 
+| UTC Time Offset   :- 60 (Eastern Daylight Time)                             | 
+| Host Name         :- LEUNAME                                                | 
+| Operating System  :- Windows 10 Professional x64 Edition, Build 19044       | 
+| PIDS              :- 5724H7251                                              | 
+| LVLS              :- 9.2.3.0                                                | 
+| Product Long Name :- IBM MQ for Windows (x64 platform)                      | 
+| Vendor            :- IBM                                                    | 
+| O/S Registered    :- 1 (amqxcs2.dll)                                        | 
+| Data Path         :- C:\ProgramData\IBM\MQ                                  | 
+| Installation Path :- C:\IBM\WebSphere MQ8                                   | 
+| Installation Name :- WebSphereMQ8     (1)                                   | 
+| License Type      :- Production                                             | 
+| Probe Id          :- XC188012                                               | 
+| Application Name  :- MQM                                                    | 
+| Component         :- xstSpinOffServer                                       | 
+| Source filename   :- F:\build\slot1\p920_P\src\lib\cs\pc\winnt\amqxgmsn     | 
+|                      .c                                                     | 
+| Line Number       :- 1265                                                   | 
+| Build Date        :- Jul  8 2021                                            | 
+| Build Level       :- p923-L210708                                           | 
+| Build Type        :- IKAP - (Production)                                    | 
+| UserID            :- SYSTEM                                                 | 
+| Process Path      :- C:\IBM\WebSphere MQ8\bin64                             | 
+| Process Name      :- endmqm.exe                                             | 
+| Arguments         :- -i QMNEW                                               | 
+| Addressing mode   :- 64-bit                                                 | 
+| Process           :- 00010360                                               | 
+| Thread            :- 00000001                     (15664)                   | 
+| Session           :- 00000000                                               | 
+| QueueManager      :- QMNEW                                                  | 
+| SubpoolName       :- QMNEW                                                  | 
+| UserApp           :- FALSE                                                  | 
+| Last HQC          :- 3.0.0-120000                                           | 
+| Last HSHMEMB      :- 0.0.0-0                                                | 
+| Last ObjectName   :-                                                        | 
+| Major Errorcode   :- STOP                                                   | 
+| Minor Errorcode   :- OK                                                     | 
+| Probe Type        :- HALT6109                                               | 
+| Probe Severity    :- 1                                                      | 
+| Probe Description :- AMQ6109S: An internal IBM MQ error has occurred.       | 
+| FDCSequenceNumber :- 0                                                      | 
+| Arith1            :- 1073766681 (0x40006119)                                | 
+| Comment1          :- Failed to start QMNEW process(amqxssvn.exe)            | 
+|                                                                             |
++-----------------------------------------------------------------------------+
+
+MQM Function Stack
+zsllpiEndQM
+xcsInitialize
+xcsCreateSharedSubpool
+xstSpinOffServer
+xcsFFST
+
+MQM Trace History
+Data: 0x000001ad85804750
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad85805870
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad85806100
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+---} xusReadSingleStanza rc=OK
+---{ xstReadConfigCallback
+---} xstReadConfigCallback rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad858002d0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad858013f0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85802da0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85801c80
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85803630
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85803ec0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85804fe0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85804750
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85805870
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85806100
+---} xcsFreeMemFn rc=OK
+---{ xusReadSingleStanza
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad858002d0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad858013f0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad85802da0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+---} xusReadSingleStanza rc=OK
+---{ xstReadConfigCallback
+---} xstReadConfigCallback rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad858002d0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad858013f0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85802da0
+---} xcsFreeMemFn rc=OK
+---{ xusReadSingleStanza
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad858002d0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad858013f0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad85802da0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad85801c80
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad85803630
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+---} xusReadSingleStanza rc=OK
+---{ xstReadConfigCallback
+---} xstReadConfigCallback rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad858002d0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad858013f0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85802da0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85801c80
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85803630
+---} xcsFreeMemFn rc=OK
+---{ xusReadSingleStanza
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad858002d0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad858013f0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad85802da0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+---} xusReadSingleStanza rc=OK
+---{ xstReadConfigCallback
+---} xstReadConfigCallback rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad858002d0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad858013f0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85802da0
+---} xcsFreeMemFn rc=OK
+---{ xusReadSingleStanza
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad858002d0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad858013f0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad85802da0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+---} xusReadSingleStanza rc=OK
+---{ xstReadConfigCallback
+---} xstReadConfigCallback rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad858002d0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad858013f0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85802da0
+---} xcsFreeMemFn rc=OK
+---{ xusReadSingleStanza
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad858002d0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad858013f0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad85802da0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad85801c80
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad85803630
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad85803ec0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad85804fe0
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad85804750
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+----{ xusGetLineType
+----} xusGetLineType rc=OK
+----{ xusAddStanzaLineList
+-----{ xcsGetMemFn
+Data: 0x000001ad85805870
+-----} xcsGetMemFn rc=OK
+----} xusAddStanzaLineList rc=OK
+---} xusReadSingleStanza rc=OK
+---{ xstReadConfigCallback
+---} xstReadConfigCallback rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad858002d0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad858013f0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85802da0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85801c80
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85803630
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85803ec0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85804fe0
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85804750
+---} xcsFreeMemFn rc=OK
+---{ xcsFreeMemFn
+Data: 0x000001ad85805870
+---} xcsFreeMemFn rc=OK
+---{ xufCloseIniRead
+---} xufCloseIniRead rc=OK
+--} xcsBrowseFileCallback rc=OK
+-} xcsBrowseIniCallback rc=OK
+} xstReadConfig rc=OK
+{ xcsCreateThreadMutexSem
+} xcsCreateThreadMutexSem rc=OK
+{ xllSemsInit
+} xllSemsInit rc=OK
+{ xcsCreateThreadMutexSem
+} xcsCreateThreadMutexSem rc=OK
+{ xstGetSubpoolsLock
+} xstGetSubpoolsLock rc=OK
+{ xcsIsSubpoolActive
+Data: 0x00000002
+Data: 0x00000000 0x00000002 0x00000000
+} xcsIsSubpoolActive rc=xecI_E_NO_SUCH_SUBPOOL
+{ xcsGetMemFn
+Data: 0x000001ad858002d0
+} xcsGetMemFn rc=OK
+{ xstSpinOffServer
+-{ xcsQueryValue
+-} xcsQueryValue rc=OK
+-{ xcsExecProgramProxy
+--{ xcsIsEnvironment
+--} xcsIsEnvironment rc=OK
+--{ xcsGetMemFn
+Data: 0x000001ad857e3e70
+--} xcsGetMemFn rc=OK
+--{ xcsConnectSimplePipe
+---{ xcsGetMemFn
+Data: 0x000001ad857c33e0
+---} xcsGetMemFn rc=OK
+--} xcsConnectSimplePipe rc=OK
+--{ xcsQueryValue
+--} xcsQueryValue rc=OK
+--{ xcsIsEnvironment
+--} xcsIsEnvironment rc=OK
+--{ xcsSimplePipeWrite
+Data: 0x00000001 0x000001d0 0x00000000
+--} xcsSimplePipeWrite rc=OK
+--{ xcsSimplePipeRead
+Data: 0x000001d0
+Data: 0x00000000 0x00000000 0x000003e5
+Data: 0x00000001 0x00000010 0x00000000
+--} xcsSimplePipeRead rc=OK
+--{ xcsFreeMemFn
+Data: 0x000001ad857e3e70
+--} xcsFreeMemFn rc=OK
+--{ xcsDisconnectSimplePipe
+---{ xcsFreeMemFn
+Data: 0x000001ad857c33e0
+---} xcsFreeMemFn rc=OK
+--} xcsDisconnectSimplePipe rc=OK
+-} xcsExecProgramProxy rc=xecF_E_UNEXPECTED_SYSTEM_RC
+-{ xcsFFST
+--{ xcsIsEnvironment
+--} xcsIsEnvironment rc=OK
+
+Thread Control Block (xihTHREAD pCtl)
+{
+  xihEye:                                XIHT
+  xihLength:                             6096
+  {
+    xihTid:                              1
+    xihThreadHandle:                     00000000000000D0
+    xihOSTid:                            15664
+    xihNext:                             0000000000000000
+    xihPrev:                             0000000000000000
+    ThreadState:                         0x00000040
+    ThreadDetached:                      FALSE
+    xihCSCreatedThread:                  FALSE
+    xihThreadType:                       0
+    State:                               3
+    LogMsg:                              0
+    ExceptionNum:                        0
+    RecoveryIndent[0]:                   21
+    RecoveryIndent[1]:                   0
+    RecoveryIndent[2]:                   0
+    RecoveryIndent[3]:                   0
+    RecoveryIndent[4]:                   0
+    RecoveryIndent[5]:                   0
+    RecoveryIndent[6]:                   0
+    RecoveryIndent[7]:                   0
+    RecoveryIndent[8]:                   0
+    RecoveryIndex:                       0
+    bHandled:                            FALSE
+    bAHandled:                           FALSE
+    xihContextSavedNestingCount:         0
+    xihContextUserCode:                  0
+    xihGetUniquePrefix:                  0
+    xihGetUniqueSuffix:                  0
+    xihThreadUserName:                   SYSTEM
+    xihThreadUserSidLen:                 12
+    xihThreadUserSid:
+              000001AD857DC58C:  01010000 00000005 12000000 00000000  ................
+              000001AD857DC59C:  00000000 00000000 00000000 00000000  ................
+              000001AD857DC5AC:  00000000                             ....            
+    xihFFST:                             TRUE
+    pExceptionInfo:                      0000000000000000
+  } TL
+  pCS:                                   000001AD857DD1B0
+  {
+    {
+      {
+        {
+          EEDTraceActive:                FALSE
+        } Control
+      } Trace
+      TraceActiveB:                      FALSE
+      StackTraced:                       FALSE
+      TraceTableIndex:                   59
+      TraceIndent:                       25
+      TraceApar:                         0
+      TraceParmComp:                     0
+      TraceParmFunc:                     0
+      TraceParmDetail:                   0
+      TraceIdent:                        0:0
+      pTraceParmBuff:                    0000000000000000
+      TraceKey:                          1
+      TraceOutputType:                   1
+      AnyTraceActive:                    FALSE
+      trcThrMem:                         0000000000000000
+      TraceHistoryWrittenIdx:            0
+      Spare1:                            0
+      xihTraceOptions:                   0x00000000
+      xihMQTracing:                      FALSE
+      bSharedThread:                     FALSE
+      savedFilename:                     F:\build\slot1\p920_P\src\lib\cs\pc\winnt\amqxgmsn.c
+      savedLineNo:                       1265
+      firstCleanupP:                     0000000000000000
+      connList:                          0000000000000000
+      pStackPointers:                    0000000000000000
+      pHeapStatistics:                   0000000000000000
+      LastMTime:                         2022-05-25 15:15:22.063
+      RemoteAppContext.Host:             
+      DiagnosticClientMessageServices:   0000000000000000
+      JobMonitor.State:                  0
+      JobMonitor.Request:                0
+      JobMonitor.RebalanceQmgr:          
+      JobMonitor.RebalanceQmid:          
+      StartTime:                         1969-12-31 19:00:00.000
+      ThreadRequests:                    0x00000000
+    } TL
+    pCCS:                                000001AD857DD5C0
+  } Common
+  CSStackCount:                          0
+  pBaseCS[0]:                            0000000000000000
+  pBaseCCS[0]:                           0000000000000000
+  pBaseCS[1]:                            0000000000000000
+  pBaseCCS[1]:                           0000000000000000
+} pCtl
+
+000001AD857DB9D0   58494854  D0170000  00000000  00000000    XIHT............
+000001AD857DB9E0   01000000  00000000  D0000000  00000000    ................
+000001AD857DB9F0   303D0000  00000000  00000000  00000000    0=..............
+000001AD857DBA00   00000000  00000000  40000000  00000000    ........@.......
+000001AD857DBA10   00000000  00000000  03000000  00000000    ................
+000001AD857DBA20   00000000  00000000  00000000  00000000    ................
+000001AD857DBA30 to 000001AD857DBB20 suppressed, lines same as above
+000001AD857DBB30   608C2F8E  9F000000  B2001000  00000000    `�/��...........
+000001AD857DBB40   608C2F8E  9F000000  608D2F8E  9F000000    `�/��...`�/��...
+000001AD857DBB50   00000000  00000000  03000000  00000000    ................
+000001AD857DBB60   00000000  00000000  D0B97D85  AD010000    ..........}��...
+000001AD857DBB70   2B000000  00000000  00000000  00000000    +...............
+000001AD857DBB80   E1AC0ED3  FB7F0000  A01F0000  7F020000    �......�.......
+000001AD857DBB90   00000000  00000000  00000000  00000000    ................
+000001AD857DBBA0 to 000001AD857DBC20 suppressed, lines same as above
+000001AD857DBC30   60A92F8E  9F000000  309F7C85  AD010000    `./��...0�|��...
+000001AD857DBC40   60A92F8E  9F000000  60AA2F8E  9F000000    `./��...`�/��...
+000001AD857DBC50   00000000  00000000  03000000  00000000    ................
+000001AD857DBC60   04000000  00000000  20000000  00000000    ........ .......
+000001AD857DBC70   59000000  00000000  00000000  00000000    Y...............
+000001AD857DBC80   0E14E038  F67F0000  801F0000  7F020000    ..�8�...�.......
+000001AD857DBC90   00000000  00000000  00000000  00000000    ................
+000001AD857DBCA0 to 000001AD857DC520 suppressed, lines same as above
+000001AD857DC530   15000000  00000000  00000000  00000000    ................
+000001AD857DC540   00000000  00000000  00000000  00000000    ................
+000001AD857DC550 to 000001AD857DC560 suppressed, lines same as above
+000001AD857DC570   53595354  454D0000  00000000  00000000    SYSTEM..........
+000001AD857DC580   00000000  00000000  0C000000  01010000    ................
+000001AD857DC590   00000005  12000000  00000000  00000000    ................
+000001AD857DC5A0   00000000  00000000  00000000  00000000    ................
+000001AD857DC5B0   01000000  00000000  00000000  00000000    ................
+000001AD857DC5C0   02000000  00000000  E00C74D3  FB7F0000    ........�.t.....
+000001AD857DC5D0   B0D17D85  AD010000  00000000  00000000    ..}��...........
+000001AD857DC5E0   00000000  00000000  00000000  00000000    ................
+000001AD857DC5F0 to 000001AD857DC610 suppressed, lines same as above
+000001AD857DC620   00000000  00000000  598000F0  015C00F0    ........Y�...\..
+000001AD857DC630   7B6100F0  BC5C00F0  035C00F0  155C00F0    {a...\...\...\..
+000001AD857DC640   885E00F0  B46000F0  065C00F0  065C00F0    �^...`...\...\..
+000001AD857DC650   055C00F0  565F00F0  725E00F0  00000000    .\..V_..r^......
+000001AD857DC660   00000000  00000000  00000000  00000000    ................
+000001AD857DC670 to 000001AD857DC6F0 suppressed, lines same as above
+000001AD857DC700   00000000  00000000  48B80000  AD010000    ........H...�...
+000001AD857DC710   F0587C85  065C0000  C8607560  065C00F0    .X|�.\...`u`.\..
+000001AD857DC720   48B80000  AD010000  A0098385  065C0000    H...�...�	��.\..
+000001AD857DC730   065C00F0  48B80000  AD010000  306D8285    .\..H...�...0m��
+000001AD857DC740   065C0000  165C0000  B46000F0  B4600000    .\...\...`...`..
+000001AD857DC750   715F0000  6C5F0000  B36000F0  B3600000    q_..l_...`...`..
+000001AD857DC760   135C00F0  135C0000  D15E00F0  D15E0000    .\...\...^...^..
+000001AD857DC770   CB5D00F0  CB5D0000  055C00F0  48B80000    .]...]...\..H...
+000001AD857DC780   AD010000  709F7F85  055C0000  CB5D00F0    �...p�.�.\...]..
+000001AD857DC790   CB5D0000  515F00F0  515F0000  135C00F0    .]..Q_..Q_...\..
+000001AD857DC7A0   135C0000  135C00F0  135C0000  135C00F0    .\...\...\...\..
+000001AD857DC7B0   135C0000  1F5E00F0  205E00F0  205E0000    .\...^.. ^.. ^..
+000001AD857DC7C0   1F5E0000  135C00F0  135C0000  135C00F0    .^...\...\...\..
+000001AD857DC7D0   135C0000  135C00F0  885E00F0  885E0000    .\...\..�^..�^..
+000001AD857DC7E0   135C0000  655D00F0  655D0000  155C00F0    .\..e]..e]...\..
+000001AD857DC7F0   155C0000  065C00F0  48B80000  AD010000    .\...\..H...�...
+000001AD857DC800   E04F8085  065C0000  065C00F0  48B80000    �O��.\...\..H...
+000001AD857DC810   AD010000  50478085  065C0000  065C00F0    �...PG��.\...\..
+000001AD857DC820   48B80000  AD010000  70588085  065C0000    H...�...pX��.\..
+000001AD857DC830   126000F0  12600000  30610000  09600000    .`...`..0a..	`..
+000001AD857DC840   AD610000  B16000F0  B1600000  A55C00F0    �a...`...`..�\..
+000001AD857DC850   A55C0000  B16000F0  B1600000  446100F0    �\...`...`..Da..
+000001AD857DC860   44610000  E46100F0  04B80000  02000000    Da..�a..........
+000001AD857DC870   0CB80000  00000000  02000000  00000000    ................
+000001AD857DC880   E4616961  055C00F0  48B80000  AD010000    �aia.\..H...�...
+000001AD857DC890   D0028085  055C0000  BC5C00F0  135C00F0    ..��.\...\...\..
+000001AD857DC8A0   135C0000  F95D00F0  CB5D00F0  CB5D0000    .\...]...]...]..
+000001AD857DC8B0   055C00F0  48B80000  AD010000  703E7E85    .\..H...�...p>~�
+000001AD857DC8C0   055C0000  D26100F0  055C00F0  48B80000    .\...a...\..H...
+000001AD857DC8D0   AD010000  E0337C85  055C0000  D2610000    �...�3|�.\...a..
+000001AD857DC8E0   135C00F0  135C0000  CB5D00F0  CB5D0000    .\...\...]...]..
+000001AD857DC8F0   D86100F0  0CB80000  01000000  D0010000    .a..............
+000001AD857DC900   00000000  D8610000  D76100F0  04B80000    .....a...a......
+000001AD857DC910   D0010000  0CB80000  00000000  00000000    ................
+000001AD857DC920   E5030000  0CB80000  01000000  10000000    �...............
+000001AD857DC930   00000000  D7610000  065C00F0  48B80000    .....a...\..H...
+000001AD857DC940   AD010000  703E7E85  065C0000  D36100F0    �...p>~�.\...a..
+000001AD857DC950   065C00F0  48B80000  AD010000  E0337C85    .\..H...�...�3|�
+000001AD857DC960   065C0000  D3610000  F95D1961  035C00F0    .\...a...].a.\..
+000001AD857DC970   CB5D00F0  CB5D0000  A05F00F0  055C00F0    .]...]..�_...\..
+000001AD857DC980   48B80000  AD010000  709F7F85  055C0000    H...�...p�.�.\..
+000001AD857DC990   CA6000F0  C96000F0  C9600000  CA600000    .`...`...`...`..
+000001AD857DC9A0   CC5D00F0  CC5D9361  175C00F0  2B5C00F0    .]...]�a.\..+\..
+000001AD857DC9B0   465F00F0  465FB034  2B5C0000  2B5C00F0    F_..F_.4+\..+\..
+000001AD857DC9C0   465F00F0  465FE404  2B5C0000  545E00F0    F_..F_�.+\..T^..
+000001AD857DC9D0   465F00F0  465FB034  465F00F0  465FE404    F_..F_.4F_..F_�.
+000001AD857DC9E0   565F00F0  725E00F0  B36000F0  B3600000    V_..r^...`...`..
+000001AD857DC9F0   B46000F0  B4600000  B36000F0  B3600000    .`...`...`...`..
+000001AD857DCA00   B46000F0  B4600000  B36000F0  B3600000    .`...`...`...`..
+000001AD857DCA10   135C00F0  135C0000  B46000F0  B4600000    .\...\...`...`..
+000001AD857DCA20   725E0000  565F0000  545E0000  475F00F0    r^..V_..T^..G_..
+000001AD857DCA30   475F0000  175C0000  065C00F0  48B80000    G_...\...\..H...
+000001AD857DCA40   AD010000  709F7F85  065C0000  A05F0000    �...p�.�.\..�_..
+000001AD857DCA50   6C5F00F0  04B80000  09614040  6E5F00F0    l_......	a@@n_..
+000001AD857DCA60   135C00F0  135C0000  6D5F00F0  6D5F0000    .\...\..m_..m_..
+000001AD857DCA70   6E5F0000  CC5D00F0  CC5D9361  C05D00F0    n_...]...]�a.]..
+000001AD857DCA80   985D00F0  6F5F00F0  135C00F0  135C0000    �]..o_...\...\..
+000001AD857DCA90   515F00F0  515F0000  6F5F0000  985D0000    Q_..Q_..o_..�]..
+000001AD857DCAA0   C05D0000  715F00F0  B36000F0  B3600000    .]..q_...`...`..
+000001AD857DCAB0   165C00F0  04B80000  09614040  055C00F0    .\......	a@@.\..
+000001AD857DCAC0   48B80000  AD010000  709F7F85  055C0000    H...�...p�.�.\..
+000001AD857DCAD0   055C00F0  48B80000  AD010000  306D8285    .\..H...�...0m��
+000001AD857DCAE0   055C0000  A05F00F0  055C00F0  48B80000    .\..�_...\..H...
+000001AD857DCAF0   AD010000  A0098385  055C0000  CA6000F0    �...�	��.\...`..
+000001AD857DCB00   C96000F0  C9600000  CA600000  175C00F0    .`...`...`...\..
+000001AD857DCB10   2B5C00F0  465F00F0  465FB034  2B5C0000    +\..F_..F_.4+\..
+000001AD857DCB20   2B5C00F0  465F00F0  465FE404  2B5C0000    +\..F_..F_�.+\..
+000001AD857DCB30   545E00F0  465F00F0  465FB034  465F00F0    T^..F_..F_.4F_..
+000001AD857DCB40   465FE404  565F00F0  725E00F0  725E0000    F_�.V_..r^..r^..
+000001AD857DCB50   565F0000  545E0000  475F00F0  475F0000    V_..T^..G_..G_..
+000001AD857DCB60   175C0000  065C00F0  48B80000  AD010000    .\...\..H...�...
+000001AD857DCB70   A0098385  065C0000  A05F0000  CB5D00F0    �	��.\..�_...]..
+000001AD857DCB80   CB5D0000  925D00F0  D15E00F0  D15E0000    .]..�]...^...^..
+000001AD857DCB90   925D0000  A05F00F0  055C00F0  48B80000    �]..�_...\..H...
+000001AD857DCBA0   AD010000  A0098385  055C0000  CA6000F0    �...�	��.\...`..
+000001AD857DCBB0   C96000F0  C9600000  CA600000  175C00F0    .`...`...`...\..
+000001AD857DCBC0   2B5C00F0  465F00F0  465FB034  2B5C0000    +\..F_..F_.4+\..
+000001AD857DCBD0   2B5C00F0  465F00F0  465FE404  2B5C0000    +\..F_..F_�.+\..
+000001AD857DCBE0   545E00F0  465F00F0  465FB034  465F00F0    T^..F_..F_.4F_..
+000001AD857DCBF0   465FE404  565F00F0  725E00F0  725E0000    F_�.V_..r^..r^..
+000001AD857DCC00   565F0000  545E0000  475F00F0  475F0000    V_..T^..G_..G_..
+000001AD857DCC10   175C0000  065C00F0  48B80000  AD010000    .\...\..H...�...
+000001AD857DCC20   A0098385  065C0000  A05F0000  A05F00F0    �	��.\..�_..�_..
+000001AD857DCC30   055C00F0  48B80000  AD010000  A0098385    .\..H...�...�	��
+000001AD857DCC40   055C0000  CA6000F0  C96000F0  C9600000    .\...`...`...`..
+000001AD857DCC50   CA600000  175C00F0  2B5C00F0  465F00F0    .`...\..+\..F_..
+000001AD857DCC60   465FB034  2B5C0000  2B5C00F0  465F00F0    F_.4+\..+\..F_..
+000001AD857DCC70   465FE404  2B5C0000  545E00F0  465F00F0    F_�.+\..T^..F_..
+000001AD857DCC80   465FB034  465F00F0  465FE404  565F00F0    F_.4F_..F_�.V_..
+000001AD857DCC90   725E00F0  725E0000  565F0000  545E0000    r^..r^..V_..T^..
+000001AD857DCCA0   475F00F0  475F0000  175C0000  065C00F0    G_..G_...\...\..
+000001AD857DCCB0   48B80000  AD010000  A0098385  065C0000    H...�...�	��.\..
+000001AD857DCCC0   A05F0000  895E00F0  895E0000  935D00F0    �_..�^..�^..�]..
+000001AD857DCCD0   935D0000  C86000F0  CF6000F0  CF600000    �]...`...`...`..
+000001AD857DCCE0   535C00F0  055C00F0  48B80000  AD010000    S\...\..H...�...
+000001AD857DCCF0   A02D8085  055C0000  535C0000  035C00F0    �-��.\..S\...\..
+000001AD857DCD00   0CB80000  18000000  C8000000  03000000    ................
+000001AD857DCD10   035C0000  065C00F0  48B80000  AD010000    .\...\..H...�...
+000001AD857DCD20   A02D8085  065C0000  C8607560  065C00F0    �-��.\...`u`.\..
+000001AD857DCD30   48B80000  AD010000  709F7F85  065C0000    H...�...p�.�.\..
+000001AD857DCD40   065C00F0  48B80000  AD010000  306D8285    .\..H...�...0m��
+000001AD857DCD50   065C0000  165C0000  B46000F0  B4600000    .\...\...`...`..
+000001AD857DCD60   715F0000  6C5F0000  6C5F00F0  04B80000    q_..l_..l_......
+000001AD857DCD70   84610010  6E5F00F0  135C00F0  135C0000    �a..n_...\...\..
+000001AD857DCD80   6D5F00F0  6D5F0000  6E5F0000  CC5D00F0    m_..m_..n_...]..
+000001AD857DCD90   CC5D9361  C05D00F0  985D00F0  6F5F00F0    .]�a.]..�]..o_..
+000001AD857DCDA0   135C00F0  135C0000  515F00F0  515F0000    .\...\..Q_..Q_..
+000001AD857DCDB0   6F5F0000  985D0000  C05D0000  715F00F0    o_..�]...]..q_..
+000001AD857DCDC0   B36000F0  B3600000  165C00F0  04B80000    .`...`...\......
+000001AD857DCDD0   84610010  055C00F0  48B80000  AD010000    �a...\..H...�...
+000001AD857DCDE0   A0098385  055C0000  055C00F0  48B80000    �	��.\...\..H...
+000001AD857DCDF0   AD010000  306D8285  055C0000  A05F00F0    �...0m��.\..�_..
+000001AD857DCE00   055C00F0  48B80000  AD010000  709F7F85    .\..H...�...p�.�
+000001AD857DCE10   055C0000  CA6000F0  C96000F0  C9600000    .\...`...`...`..
+000001AD857DCE20   CA600000  175C00F0  2B5C00F0  465F00F0    .`...\..+\..F_..
+000001AD857DCE30   465FB034  2B5C0000  2B5C00F0  465F00F0    F_.4+\..+\..F_..
+000001AD857DCE40   465FE404  2B5C0000  545E00F0  465F00F0    F_�.+\..T^..F_..
+000001AD857DCE50   465FB034  465F00F0  465FE404  565F00F0    F_.4F_..F_�.V_..
+000001AD857DCE60   725E00F0  725E0000  565F0000  545E0000    r^..r^..V_..T^..
+000001AD857DCE70   475F00F0  475F0000  175C0000  065C00F0    G_..G_...\...\..
+000001AD857DCE80   48B80000  AD010000  709F7F85  065C0000    H...�...p�.�.\..
+000001AD857DCE90   A05F0000  CB5D00F0  CB5D0000  925D00F0    �_...]...]..�]..
+000001AD857DCEA0   D15E00F0  D15E0000  925D0000  895E00F0    .^...^..�]..�^..
+000001AD857DCEB0   895E0000  935D00F0  935D0000  C86000F0    �^..�]..�]...`..
+000001AD857DCEC0   CF6000F0  CF600000  535C00F0  055C00F0    .`...`..S\...\..
+000001AD857DCED0   48B80000  AD010000  F0587C85  055C0000    H...�....X|�.\..
+000001AD857DCEE0   535C0000  035C00F0  0CB80000  18000000    S\...\..........
+000001AD857DCEF0   C8000000  03000000  035C0000  065C00F0    .........\...\..
+000001AD857DCF00   00000000  00000000  00000000  00000000    ................
+000001AD857DCF10   3B000000  19000000  00000000  00000000    ;...............
+000001AD857DCF20   00000000  00000000  00000000  00000000    ................
+000001AD857DCF30   00000000  00000000  01000000  01000000    ................
+000001AD857DCF40   00000000  00000000  00000000  00000000    ................
+000001AD857DCF50   00000000  00000000  00000000  00000000    ................
+000001AD857DCF60   00000000  463A5C62  75696C64  5C736C6F    ....F:\build\slo
+000001AD857DCF70   74315C70  3932305F  505C7372  635C6C69    t1\p920_P\src\li
+000001AD857DCF80   625C6373  5C70635C  77696E6E  745C616D    b\cs\pc\winnt\am
+000001AD857DCF90   7178676D  736E2E63  00000000  F1040000    qxgmsn.c....�...
+000001AD857DCFA0   1700BC00  00000000  00000000  00000000    ................
+000001AD857DCFB0   00000000  00000000  00000000  00000000    ................
+000001AD857DCFC0   00000000  00000000  671E0AE5  DADF0500    ........g..�....
+000001AD857DCFD0   00000000  00000000  00000000  00000000    ................
+000001AD857DCFE0 to 000001AD857DD150 suppressed, lines same as above
+000001AD857DD160   00000000  00000000  C0D57D85  AD010000    ..........}��...
+000001AD857DD170   00000000  00000000  00000000  00000000    ................
+000001AD857DD180 to 000001AD857DD190 suppressed, lines same as above
+
+
+Thread Common Services (xihTHREADCOMMONSERVICES pCtl->pCS)
+{
+  xihEye:                                XICS
+  xihInServiceModule:                    FALSE
+  xihServiceInitialised:                 FALSE
+  xihServiceModuleArea:                  0000000000000000
+  xihSpinLockInProgress:                 0000000000000000
+  xihThreadInitsCount:                   1
+  xihPrivateInitsCount:                  1
+  xihClientInitsCount:                   0
+  xihPreInitialized:                     FALSE
+  {
+    threadConnectedSubpools:             00007FFBD31C0D20
+    threadConnectCount:                  0
+    threadCachedSubpools:                0000000000000000
+    threadCachedCount:                   0
+    hthreadConnector:                    0::0::0-0
+    pthreadConnector:                    0000000000000000
+    threadConnId:                        0
+    threadSubpoolFlags:                  0x00000000
+    threadConnSetList:                   0000000000000000
+    pSRA:                                0000000000000000
+  } Subpool[0]
+  {
+    threadConnectedSubpools:             0000000000000000
+    threadConnectCount:                  0
+    threadCachedSubpools:                0000000000000000
+    threadCachedCount:                   0
+    hthreadConnector:                    0::0::0-0
+    pthreadConnector:                    0000000000000000
+    threadConnId:                        0
+    threadSubpoolFlags:                  0x00000000
+    threadConnSetList:                   0000000000000000
+    pSRA:                                0000000000000000
+  } Subpool[1]
+  {
+    threadConnectedSubpools:             0000000000000000
+    threadConnectCount:                  0
+    threadCachedSubpools:                0000000000000000
+    threadCachedCount:                   0
+    hthreadConnector:                    0::0::0-0
+    pthreadConnector:                    0000000000000000
+    threadConnId:                        0
+    threadSubpoolFlags:                  0x00000000
+    threadConnSetList:                   0000000000000000
+    pSRA:                                0000000000000000
+  } Subpool[2]
+  {
+    threadConnectedSubpools:             0000000000000000
+    threadConnectCount:                  0
+    threadCachedSubpools:                0000000000000000
+    threadCachedCount:                   0
+    hthreadConnector:                    0::0::0-0
+    pthreadConnector:                    0000000000000000
+    threadConnId:                        0
+    threadSubpoolFlags:                  0x00000000
+    threadConnSetList:                   0000000000000000
+    pSRA:                                0000000000000000
+  } Subpool[3]
+  {
+    threadConnectedSubpools:             0000000000000000
+    threadConnectCount:                  0
+    threadCachedSubpools:                0000000000000000
+    threadCachedCount:                   0
+    hthreadConnector:                    0::0::0-0
+    pthreadConnector:                    0000000000000000
+    threadConnId:                        0
+    threadSubpoolFlags:                  0x00000000
+    threadConnSetList:                   0000000000000000
+    pSRA:                                0000000000000000
+  } Subpool[4]
+  {
+    threadConnectedSubpools:             0000000000000000
+    threadConnectCount:                  0
+    threadCachedSubpools:                0000000000000000
+    threadCachedCount:                   0
+    hthreadConnector:                    0::0::0-0
+    pthreadConnector:                    0000000000000000
+    threadConnId:                        0
+    threadSubpoolFlags:                  0x00000000
+    threadConnSetList:                   0000000000000000
+    pSRA:                                0000000000000000
+  } Subpool[5]
+  {
+    threadConnectedSubpools:             0000000000000000
+    threadConnectCount:                  0
+    threadCachedSubpools:                0000000000000000
+    threadCachedCount:                   0
+    hthreadConnector:                    0::0::0-0
+    pthreadConnector:                    0000000000000000
+    threadConnId:                        0
+    threadSubpoolFlags:                  0x00000000
+    threadConnSetList:                   0000000000000000
+    pSRA:                                0000000000000000
+  } Subpool[6]
+  xihMustComplete_Set:                   0000000000000000
+  xihMustComplete_ExtentList:            0000000000000000
+  xihMustComplete_Extent:                0000000000000000
+  {
+    to_cp:                               1252
+    from_cp:                             134880
+    index:                               2
+  } xihConvListCache[0]
+  {
+    to_cp:                               437
+    from_cp:                             134880
+    index:                               1
+  } xihConvListCache[1]
+  {
+    to_cp:                               0
+    from_cp:                             0
+    index:                               0
+  } xihConvListCache[2]
+  {
+    to_cp:                               0
+    from_cp:                             0
+    index:                               0
+  } xihConvListCache[3]
+  xihEHandleStart[ 0]:                   0
+  xihEHandleStart[ 1]:                   0
+  xihEHandleStart[ 2]:                   0
+  xihEHandleStart[ 3]:                   0
+  xihEHandleStart[ 4]:                   0
+  xihEHandleStart[ 5]:                   0
+  xihEHandleStart[ 6]:                   0
+  xihEHandleStart[ 7]:                   0
+  xihEHandleStart[ 8]:                   0
+  xihEHandleStart[ 9]:                   0
+  xihEHandleStart[10]:                   0
+  xihEHandleStart[11]:                   0
+  xihEHandleStart[12]:                   0
+  xihEHandleStart[13]:                   0
+  xihEHandleStart[14]:                   0
+  xihEHandleStart[15]:                   0
+  xihEHandleStart[16]:                   0
+  xihEHandleMax:                         0
+  xihEHAccessCount:                      3
+  xihMHandleStart[ 0]:                   0
+  xihMHandleStart[ 1]:                   0
+  xihMHandleStart[ 2]:                   0
+  xihMHandleStart[ 3]:                   0
+  xihMHandleStart[ 4]:                   0
+  xihMHandleStart[ 5]:                   0
+  xihMHandleStart[ 6]:                   0
+  xihMHandleStart[ 7]:                   0
+  xihMHandleStart[ 8]:                   0
+  xihMHandleStart[ 9]:                   0
+  xihMHandleStart[10]:                   0
+  xihMHandleStart[11]:                   0
+  xihMHandleStart[12]:                   0
+  xihMHandleStart[13]:                   0
+  xihMHandleStart[14]:                   0
+  xihMHandleStart[15]:                   0
+  xihMHandleStart[16]:                   0
+  xihMHandleMax:                         0
+  xihMHAccessCount:                      0
+  xihMHTrimCount:                        0
+  xihFFSTQMName:                         QMNEW
+  xihQMName:                             QMNEW
+  xihDumpPtrSet:                         0000000000000000
+} pCtl->pCS
+
+000001AD857DD1B0   58494353  00000000  00000000  00000000    XICS............
+000001AD857DD1C0   00000000  00000000  00000000  00000000    ................
+000001AD857DD1D0   01000000  01000000  00000000  00000000    ................
+000001AD857DD1E0   200D1CD3  FB7F0000  00000000  00000000     ...............
+000001AD857DD1F0   00000000  00000000  00000000  00000000    ................
+000001AD857DD200 to 000001AD857DD3C0 suppressed, lines same as above
+000001AD857DD3D0   00000000  00000000  E4040000  E00E0200    ........�...�...
+000001AD857DD3E0   02000000  00000000  E09F7E85  AD010000    ........��~��...
+000001AD857DD3F0   B5010000  E00E0200  01000000  00000000    ....�...........
+000001AD857DD400   D0578285  AD010000  00000000  00000000    .W���...........
+000001AD857DD410   00000000  00000000  00000000  00000000    ................
+000001AD857DD420 to 000001AD857DD470 suppressed, lines same as above
+000001AD857DD480   00000000  00000000  03000000  00000000    ................
+000001AD857DD490   00000000  00000000  00000000  00000000    ................
+000001AD857DD4A0 to 000001AD857DD4D0 suppressed, lines same as above
+000001AD857DD4E0   00000000  00000000  514D4E45  57000000    ........QMNEW...
+000001AD857DD4F0   00000000  00000000  00000000  00000000    ................
+000001AD857DD500 to 000001AD857DD530 suppressed, lines same as above
+000001AD857DD540   00000000  00000000  00000000  514D4E45    ............QMNE
+000001AD857DD550   57000000  00000000  00000000  00000000    W...............
+000001AD857DD560   00000000  00000000  00000000  00000000    ................
+000001AD857DD570 to 000001AD857DD5A0 suppressed, lines same as above
+000001AD857DD5B0   00000000  00000000                        ........
+
+
+Thread Common Common Services (xihTHREADCOMMONSERVICES pCtl->Common.pCCS)
+{
+  xihEye:                                XICC
+  CheckProcessConnId:                    0
+  CheckProcessCount:                     0
+  CheckProcessHandle:                    0::0::0-0
+  IHaveSubpoolLock:                      2
+  SubpoolLockSemId:                      0
+  zstThreadPCD:                          0000000000000000
+  zstChannelSavedPCD:                    0000000000000000
+  zsqThreadAnchor:                       0000000000000000
+  zfuThreadAnchor:                       0000000000000000
+  kpiThreadAnchor:                       0000000000000000
+  apiThreadAnchor:                       0000000000000000
+  hosThreadAnchor:                       0000000000000000
+  jcThreadAnchor:                        0000000000000000
+  rrxAnchor[LQM]:                        0000000000000000
+  rrxAnchorFreeFn[LQM]:                  0000000000000000
+  rrxAnchor[CHL]:                        0000000000000000
+  rrxAnchorFreeFn[CHL]:                  0000000000000000
+  rrxAnchor[FASTNET]:                    0000000000000000
+  rrxAnchorFreeFn[FASTNET]:              0000000000000000
+  rrxAnchor[CHLAUTH]:                    0000000000000000
+  rrxAnchorFreeFn[CHLAUTH]:              0000000000000000
+  rrxAnchor[ASYNCCONSUME]:               0000000000000000
+  rrxAnchorFreeFn[ASYNCCONSUME]:         0000000000000000
+  rrxCLSClusWorkAnchor:                  0000000000000000
+  pscThreadAnchor:                       0000000000000000
+  kqiKtoraThreadAnchor:                  0000000000000000
+  MainThreadAnchor:                      0000000000000000
+  MainThreadAnchor2:                     0000000000000000
+  xstCurrentHeap:                        0000000000000000
+  xlsRWCurrentMtx:                       0000000000000000
+  DummyPointer2:                         0000000000000000
+  lastHQC:                               3::0::0-120000
+  lastHSHMEMB:                           0::0::0-0
+  lastObjectName:                                                                        
+  firstCleanupP:                         0000000000000000
+  pCBMem:                                000001AD857C1FE0
+  xihPriority:                           16777216
+  xihCurrentMutex:                       0000000000000000
+  xihCurrentSpinLock:                    0000000000000000
+  xihCurrentEvent:                       0000000000000000
+  xihCurrentRWLock:                      0000000000000000
+  xruThread:                             0000000000000000
+  TestOption1:                           0
+} pCtl->Common.pCCS
+
+000001AD857DD5C0   58494343  00000000  00000000  00000000    XICC............
+000001AD857DD5D0   00000000  00000000  02000000  00000000    ................
+000001AD857DD5E0   00000000  00000000  00000000  00000000    ................
+000001AD857DD5F0 to 000001AD857DD7B0 suppressed, lines same as above
+000001AD857DD7C0   03000000  00000000  C0D40100  00000000    ................
+000001AD857DD7D0   00000000  00000000  00000000  00000000    ................
+000001AD857DD7E0 to 000001AD857DD800 suppressed, lines same as above
+000001AD857DD810   E01F7C85  AD010000  00000001  00000000    �.|��...........
+000001AD857DD820   00000000  00000000  00000000  00000000    ................
+000001AD857DD830 to 000001AD857DD840 suppressed, lines same as above
+
+{
+  Eye:             xtgm
+  Attributes:      0x2
+  Count:           1
+  LastOwnerTid:    1
+  TimedOut:        0
+  RequestCount:    17
+  Next:            000001AD857DAE20
+  hmtx:            00000000000000C8
+  Owner:           00000000000000D0
+  ThreadMutexName: htmtxCSCtrl
+}htmtxCSCTRL   (000001AD857DAE90)
+
+Common Services Control Block (CSCtrl)
+{
+  xihEye:                                XIH 
+  xihLength:                             896
+  xihCSInitialized:                      TRUE
+  xxxInit:                               TRUE
+  xihCS_CCSID:                           437
+  xihCS_CCSIDType:                       2.1
+  xihDefault_ASCII_CCSID:                0
+  xihDefault_EBCDIC_CCSID:               0
+  xihCCSID_root:                         000001AD857F1790
+  uCcsidTree:                            12352
+  xihM_data:                             000001AD857C4AC0
+  uM_data:                               1
+  xihP_data:                             000001AD857B6880
+  uP_data:                               196
+  xihE_data:                             000001AD857D9F10
+  uE_data:                               60
+  xihConvLock:                           000001AD857DA880
+  xihpszMiniPrefix:                      C:\ProgramData\IBM\MQ
+  xihHandleHigh:                         0
+  xihHandleMax:                          128
+  xihHandleTable:                        000001AD857F7F30
+  xihExitPathRead:                       FALSE
+  xihExitPathInit:                       FALSE
+  xihExitPath:                           
+  xihSecAttrFlags:                       0x00000007
+  {
+    processConnectedSubpools:            0000000000000000
+    processCachedSubpools:               0000000000000000
+  } Subpool[0]
+  {
+    processConnectedSubpools:            0000000000000000
+    processCachedSubpools:               0000000000000000
+  } Subpool[1]
+  {
+    processConnectedSubpools:            0000000000000000
+    processCachedSubpools:               0000000000000000
+  } Subpool[2]
+  {
+    processConnectedSubpools:            0000000000000000
+    processCachedSubpools:               0000000000000000
+  } Subpool[3]
+  {
+    processConnectedSubpools:            0000000000000000
+    processCachedSubpools:               0000000000000000
+  } Subpool[4]
+  {
+    processConnectedSubpools:            0000000000000000
+    processCachedSubpools:               0000000000000000
+  } Subpool[5]
+  {
+    processConnectedSubpools:            0000000000000000
+    processCachedSubpools:               0000000000000000
+  } Subpool[6]
+  {
+    flags:                               0x00000000
+    xihConvertNLSet:                     FALSE
+    xihConvertNL:                        
+    xihCCSID_BASE:                       000001AD857F1790
+    xruProcess:                          0000000000000000
+    xruProcessSubpool:                   0
+  } Common
+} CSCtrl
+
+000001AD857E52E0   58494820  80030000  01000000  01000000    XIH �...........
+000001AD857E52F0   B5010000  02000000  01000000  00000000    ................
+000001AD857E5300   00000000  00000000  90177F85  AD010000    ........�..��...
+000001AD857E5310   40300000  00000000  80687B85  AD010000    @0......�h{��...
+000001AD857E5320   C4000000  00000000  109F7D85  AD010000    .........�}��...
+000001AD857E5330   3C000000  00000000  C04A7C85  AD010000    <........J|��...
+000001AD857E5340   01000000  00000000  80A87D85  AD010000    ........��}��...
+000001AD857E5350   433A5C50  726F6772  616D4461  74615C49    C:\ProgramData\I
+000001AD857E5360   424D5C4D  51000000  00000000  00000000    BM\MQ...........
+000001AD857E5370   00000000  00000000  00000000  00000000    ................
+000001AD857E5380 to 000001AD857E5440 suppressed, lines same as above
+000001AD857E5450   00000000  00000000  00000000  80000000    ............�...
+000001AD857E5460   307F7F85  AD010000  00000000  00000000    0..��...........
+000001AD857E5470   00000000  00000000  00000000  00000000    ................
+000001AD857E5480 to 000001AD857E5560 suppressed, lines same as above
+000001AD857E5570   00000000  00000000  07000000  00000000    ................
+000001AD857E5580   00000000  00000000  00000000  00000000    ................
+000001AD857E5590 to 000001AD857E5600 suppressed, lines same as above
+000001AD857E5610   90177F85  AD010000  E4040000  00000000    �..��...�.......
+000001AD857E5620   01000000  00000000  70C771D3  FB7F0000    ........p.q.....
+000001AD857E5630   00000000  00000000  00000000  00000000    ................
+000001AD857E5640 to 000001AD857E5650 suppressed, lines same as above
+
+
+Process Control Block (xihPROCESS)
+{
+  xihEye:                                XIHP
+  xihLength:                             7856
+  xihPID:                                10360
+  LogIndex:                              0 (next 0)
+  xihCurrentTid:                         1
+  xihThreadDied:                         FALSE
+  xihFirstThread:                        000001AD857DB9D0
+  xihLastThread:                         000001AD857DB9D0
+  xihThreaded:                           TRUE
+  xihUserSidLen:                         12
+  xihUserSid:
+            00007FFBD33F7B90:  01010000 00000005 12000000 00000000  ................
+            00007FFBD33F7BA0:  00000000 00000000 00000000 00000000  ................
+            00007FFBD33F7BB0:  00000000                             ....            
+  xihTraceEntriesMissing:                FALSE
+  xihTraceInitialised:                   TRUE
+  xihTraceSharedSegName:                 C:\ProgramData\IBM\MQ\sockets\@SYSTEM\qmgrlocl\LEUNAME\1\Trace.shm
+  xihTraceSharedSegFd:                   00000000000000D4
+  xihTraceSharedMapping:                 00000000000000D8
+  xihTraceReadOnly:                      FALSE
+  xihpTraceControlMem:                   000001AD85710000
+  xihTraceFileName:                      
+  xihTraceFileNum:                       FFFFFFFFFFFFFFFF
+  xihTraceFileSeqNumber:                 -1
+  xihTraceMaxFileSize:                   0
+  xihFDCFileSeqNumber:                   0
+  xihFDCSequenceNumber:                  1
+  xihTraceUserDataSize:                  -2
+  xihTraceOverrideFlags:                 0x00000000
+  xihTraceOptionsOvr:                    0
+  ProcessTraceOutputType:                1
+  Exiting:                               0
+  xihszUserName:                         SYSTEM
+  xihUserApp:                            FALSE
+  xehSignalFlags:                        0x03000000
+  {
+    CallInitTermFunction:                FALSE
+    CallTraceFunction:                   FALSE
+    CallFFSTFunction:                    FALSE
+    InitTermFunction:                    0000000000000000
+    TraceFunction:                       0000000000000000
+    FFSTFunction:                        0000000000000000
+    ServiceModuleArea:                   0000000000000000
+    ModuleHandle:                        0000000000000000
+    Initialised:                         FALSE
+  } xihService
+  SIDFlags:                              31
+  MqmSID:
+            00007FFBD33F7F2C:  01050000 00000005 15000000 E48FCE5E  ............�.^
+            00007FFBD33F7F3C:  47F02E84 31B2C180 E9030000 00000000  G..�1..��.......
+            00007FFBD33F7F4C:  00000000                             ....            
+  SystemSID:
+            00007FFBD33F7F50:  01010000 00000005 12000000 00000000  ................
+            00007FFBD33F7F60:  00000000 00000000 00000000 00000000  ................
+            00007FFBD33F7F70:  00000000                             ....            
+  AdminSID:
+            00007FFBD33F7F74:  01020000 00000005 20000000 20020000  ........ ... ...
+            00007FFBD33F7F84:  00000000 00000000 00000000 00000000  ................
+            00007FFBD33F7F94:  00000000                             ....            
+  WorldSID:
+            00007FFBD33F7F98:  01010000 00000001 00000000 00000000  ................
+            00007FFBD33F7FA8:  00000000 00000000 00000000 00000000  ................
+            00007FFBD33F7FB8:  00000000                             ....            
+  UserGrpSID:
+            00007FFBD33F7FBC:  00000000 00000000 00000000 00000000  ................
+            00007FFBD33F7FCC:  00000000 00000000 00000000 00000000  ................
+            00007FFBD33F7FDC:  00000000                             ....            
+  xihPipeWaitRetryCount:                 1200
+  xihPipeWaitRetryTimeout:               30
+  SessionId:                             0
+  {
+    Eye:             xtgm
+    Attributes:      0x2
+    Count:           1
+    LastOwnerTid:    1
+    TimedOut:        0
+    RequestCount:    1
+    Next:            000001AD857DAE90
+    hmtx:            00000000000000CC
+    Owner:           00000000000000D0
+    ThreadMutexName: xihFFSTThreadMutex
+  }xihFFSTThreadMutex (000001AD857DAF00)
+  OSMajorVersion:                        10
+  OSMinorVersion:                        0
+  OSFlags:                               0x00000005
+  OSServicePackMajor:                    0
+  OSServicePackMinor:                    0
+  OSBuildNumber:                         19044
+  OSProductType:                         48
+  OSReleaseId:                           2009
+  xihIniAttributeCP:                     0
+  CachedModules[0].hModule:              00007FFBD36C0000
+  CachedModules[0].ModulePath:           C:\IBM\WebSphere MQ8\bin64\amqzi.dll
+  CachedModules[1].hModule:              0000000000000000
+  CachedModules[1].ModulePath:           
+  CachedModules[2].hModule:              00007FFBD36A0000
+  CachedModules[2].ModulePath:           C:\IBM\WebSphere MQ8\bin64\amqzc.dll
+  CachedModules[3].hModule:              0000000000000000
+  CachedModules[3].ModulePath:           
+  xihConversionTableOverride:            <null>
+  xihCcsidTableOverride:                 <null>
+  BackwardsLimit:                        10000000
+  BackwardsCheckDisabled:                FALSE
+  HighestTime:                           2022-05-25 15:15:22.063
+  xihAsyncThreadDestructorTid:           0
+  xihAsyncThreadDestructorCreateRc:      0
+  {
+    flags:                               0x00004000
+    {
+      xihEye:                            XISC
+      OpenMax:                           4294967295
+      PageSize:                          4096
+      CacheLineSize:                     64
+    } SysConf
+    ffstInfo:                            0x00000000
+    TraceElapsedMicroseconds:            0
+    TraceTimed:                          FALSE
+    TraceIdent:                          0:0
+    TraceActiveThreads:                  0
+    TraceDebugSeq:                       0
+    TraceExtensions:                     0x00000000
+    ProcessDebugOptions:                 0x00000000
+    ThreadDumpActive:                    FALSE
+    TimeDiff:                            60
+    TimeZone:                            Eastern Daylight Time
+    QMName:                              QMNEW
+    CBMReuseFactor:                      4
+    CBMMaxCacheableSize:                 10240
+    CBMLen:                              10
+    pErrorLogDaemonCB:                   0000000000000000
+    xihMQInstallId:                      1
+    xihMQInstallIdString:                1
+    xihMQInstallName:                    WebSphereMQ8
+    xihMQInstallPath:                    C:\IBM\WebSphere MQ8
+    xihMQInstallKey:                     SOFTWARE\IBM\WebSphere MQ\Installation\WebSphereMQ8
+    xihMQInstallQualifier:               1
+    xihMQLicenseDesc:                    Production
+    xihAllInitsCount:                    1
+    xihInitRc:                           0
+    xihProcessInitCount:                 0
+    xihClearCSCount:                     0
+    argc:                                3
+    argv:                                000001AD857C9F30
+    xihProcessType:                      endmqm
+    ExecIndex:                           0 (next 0)
+    {
+    } ChildExecLog
+    ExecUnlockedCount:                   0
+    ChildExecExpiry:                     0
+    DiagnosticMessageServices:           0000000000000000
+    DiagnosticSystemMessageServices:     000001AD858196B0
+    xcsFILECONTEXT {
+      eyeCatcher:                          xeeF
+      type:                                File
+      stanza:                              DiagnosticSystemMessage
+      format:                              QMErrorLog
+      flags:                               SYSTEM_LOG|IMPLICIT|INLINE
+      originalFlags:                       SYSTEM_LOG|IMPLICIT|INLINE
+      severities:                          0x0000003F
+      tags:                                0xFFFFFFFF
+      primaryfd:                           FFFFFFFFFFFFFFFF
+      error:                               FALSE
+      savedOSError:                        0
+      name:                                '#IMPLICIT'
+      messageBacklog:                      5000
+      messageBatchSize:                    100
+      {
+        Eye:             xtgm
+        Attributes:      0x2
+        Count:           0
+        LastOwnerTid:    1
+        TimedOut:        0
+        RequestCount:    3
+        Next:            000001AD857F5100
+        hmtx:            00000000000002B0
+        Owner:           FFFFFFFFFFFFFFFF
+        ThreadMutexName: hcontextMutex
+      } hcontextMutex (000001AD857F5560)
+      excludeListSize:                     0
+      excludeListEntries:                  0
+      excludeMsgList:                      0000000000000000
+      suppressListSize:                    0
+      suppressListEntries:                 0
+      suppressMsgList:                     0000000000000000
+      psuppressMsgFirst:                   0000000000000000
+      psuppressMsgLast:                    0000000000000000
+      suppressTimeInterval:                30
+      service.file.locked:                 FALSE
+      service.file.locktid:                0
+      service.file.maxFileSize:            33554432
+      service.file.logDirectory:           C:\ProgramData\IBM\MQ\errors
+      service.file.missingDirectory:       
+      service.file.prefix:                 AMQERR
+      service.file.extension:              LOG
+      service.file.perUserFileSuffix:      
+      service.file.rolloverCount:          0
+      service.file.renameCount:            0
+      service.file.retryOpenCount:         0
+      service.file.deadlockCount:          0
+      service.file.bufferedLength:         0
+      service.file.writeBuffer:            ''
+      messagesDisplayed:                   3
+      messagesNotDisplayed:                0
+      messagesHidden:                      0
+      messagesFilteredBySeverity:          0
+      messagesFilteredByTag:               0
+      messagesDiscarded:                   0
+      displayTimeMin:                      357
+      displayTimeMax:                      819
+      displayTimeAvg:                      546
+      displayLatencyMin:                   473
+      displayLatencyMax:                   834
+      displayLatencyAvg:                   677
+      pnext:                               0000000000000000
+    } 000001AD858196B0
+    DiagnosticMessageTemplateServices:   0000000000000000
+    BootTime:                            2022-05-23 15:16:11.614
+    InitTime:                            2022-05-25 15:14:49.192
+    LastInitTime:                        1969-12-31 19:00:00.000
+    ThreadStartIndex:                    0 (next 0)
+    {
+    } ThreadStartLog
+    ThreadEndIndex:                      0 (next 0)
+    {
+    } ThreadEndLog
+    xihPrimaryPatch:                     
+    xihIFIXData:                         
+    xihErrorsPath:                       C:\ProgramData\IBM\MQ\errors
+    xihFFSTInstanceName:                 
+  } Process
+} xihProcess
+
+00007FFBD33F7A60   58494850  B01E0000  78280000  00000000    XIHP....x(......
+00007FFBD33F7A70   00000000  00000000  00000000  00000000    ................
+00007FFBD33F7A80 to 00007FFBD33F7B60 suppressed, lines same as above
+00007FFBD33F7B70   01000000  00000000  D0B97D85  AD010000    ..........}��...
+00007FFBD33F7B80   D0B97D85  AD010000  01000000  0C000000    ..}��...........
+00007FFBD33F7B90   01010000  00000005  12000000  00000000    ................
+00007FFBD33F7BA0   00000000  00000000  00000000  00000000    ................
+00007FFBD33F7BB0   00000000  00000000  01000000  433A5C50    ............C:\P
+00007FFBD33F7BC0   726F6772  616D4461  74615C49  424D5C4D    rogramData\IBM\M
+00007FFBD33F7BD0   515C736F  636B6574  735C4053  59535445    Q\sockets\@SYSTE
+00007FFBD33F7BE0   4D5C716D  67726C6F  636C5C4C  45554E41    M\qmgrlocl\LEUNA
+00007FFBD33F7BF0   4D455C31  5C547261  63652E73  686D0000    ME\1\Trace.shm..
+00007FFBD33F7C00   00000000  00000000  00000000  00000000    ................
+00007FFBD33F7C10 to 00007FFBD33F7CB0 suppressed, lines same as above
+00007FFBD33F7CC0   00000000  00000000  D4000000  00000000    ................
+00007FFBD33F7CD0   D8000000  00000000  00000000  00000000    ................
+00007FFBD33F7CE0   00007185  AD010000  00000000  00000000    ..q��...........
+00007FFBD33F7CF0   00000000  00000000  00000000  00000000    ................
+00007FFBD33F7D00 to 00007FFBD33F7DE0 suppressed, lines same as above
+00007FFBD33F7DF0   FFFFFFFF  FFFFFFFF  FFFFFFFF  00000000    ������������....
+00007FFBD33F7E00   00000000  01000000  90DA7D85  AD010000    ........�.}��...
+00007FFBD33F7E10   00000000  FEFFFFFF  00000000  00000000    .....���........
+00007FFBD33F7E20   01000000  00000000  FFFFFFFF  FFFFFFFF    ........��������
+00007FFBD33F7E30   FFFFFFFF  00000000  00000000  00000000    ����............
+00007FFBD33F7E40   00000000  00000000  D0070002  00000000    ................
+00007FFBD33F7E50   FFFFFFFF  FFFFFFFF  FFFFFFFF  00000000    ������������....
+00007FFBD33F7E60   00000000  00000000  00000000  00000000    ................
+00007FFBD33F7E70   D0070002  00000000  FFFFFFFF  FFFFFFFF    ........��������
+00007FFBD33F7E80   FFFFFFFF  00000000  00000000  00000000    ����............
+00007FFBD33F7E90   00000000  00000000  D0070002  00000000    ................
+00007FFBD33F7EA0   FFFFFFFF  FFFFFFFF  FFFFFFFF  00000000    ������������....
+00007FFBD33F7EB0   00000000  00000000  00000000  00000000    ................
+00007FFBD33F7EC0   D0070002  00000000  53595354  454D0000    ........SYSTEM..
+00007FFBD33F7ED0   00000000  00000000  00000000  00000000    ................
+00007FFBD33F7EE0   00000000  00000003  00000000  00000000    ................
+00007FFBD33F7EF0   00000000  00000000  00000000  00000000    ................
+00007FFBD33F7F00 to 00007FFBD33F7F10 suppressed, lines same as above
+00007FFBD33F7F20   00000000  00000000  1F000000  01050000    ................
+00007FFBD33F7F30   00000005  15000000  E48FCE5E  47F02E84    ........�.^G..�
+00007FFBD33F7F40   31B2C180  E9030000  00000000  00000000    1..��...........
+00007FFBD33F7F50   01010000  00000005  12000000  00000000    ................
+00007FFBD33F7F60   00000000  00000000  00000000  00000000    ................
+00007FFBD33F7F70   00000000  01020000  00000005  20000000    ............ ...
+00007FFBD33F7F80   20020000  00000000  00000000  00000000     ...............
+00007FFBD33F7F90   00000000  00000000  01010000  00000001    ................
+00007FFBD33F7FA0   00000000  00000000  00000000  00000000    ................
+00007FFBD33F7FB0 to 00007FFBD33F7FD0 suppressed, lines same as above
+00007FFBD33F7FE0   B0040000  1E000000  00000000  00000000    ................
+00007FFBD33F7FF0   00AF7D85  AD010000  0A000000  00000000    .�}��...........
+00007FFBD33F8000   05000000  00000000  00000000  644A0000    ............dJ..
+00007FFBD33F8010   30000000  D9070000  00000000  00000000    0...............
+00007FFBD33F8020   00006CD3  FB7F0000  433A5C49  424D5C57    ..l.....C:\IBM\W
+00007FFBD33F8030   65625370  68657265  204D5138  5C62696E    ebSphere MQ8\bin
+00007FFBD33F8040   36345C61  6D717A69  2E646C6C  00000000    64\amqzi.dll....
+00007FFBD33F8050   00000000  00000000  00000000  00000000    ................
+00007FFBD33F8060 to 00007FFBD33F8230 suppressed, lines same as above
+00007FFBD33F8240   00006AD3  FB7F0000  433A5C49  424D5C57    ..j.....C:\IBM\W
+00007FFBD33F8250   65625370  68657265  204D5138  5C62696E    ebSphere MQ8\bin
+00007FFBD33F8260   36345C61  6D717A63  2E646C6C  00000000    64\amqzc.dll....
+00007FFBD33F8270   00000000  00000000  00000000  00000000    ................
+00007FFBD33F8280 to 00007FFBD33F8460 suppressed, lines same as above
+00007FFBD33F8470   80969800  00000000  671E0AE5  DADF0500    ���.....g..�....
+00007FFBD33F8480   00000000  00000000  00400000  58495343    .........@..XISC
+00007FFBD33F8490   FFFFFFFF  00100000  40000000  00000000    ����....@.......
+00007FFBD33F84A0   00000000  00000000  00000000  00000000    ................
+00007FFBD33F84B0   00000000  00000000  00000000  00000000    ................
+00007FFBD33F84C0   00000000  00000000  3C000000  45617374    ........<...East
+00007FFBD33F84D0   65726E20  4461796C  69676874  2054696D    ern Daylight Tim
+00007FFBD33F84E0   65000000  00000000  00000000  00000000    e...............
+00007FFBD33F84F0   00000000  00000000  00000000  00000000    ................
+00007FFBD33F8500   00000000  00000000  00000000  00514D4E    .............QMN
+00007FFBD33F8510   45570000  00000000  00000000  00000000    EW..............
+00007FFBD33F8520   00000000  00000000  00000000  00000000    ................
+00007FFBD33F8530 to 00007FFBD33F8560 suppressed, lines same as above
+00007FFBD33F8570   00000000  04000000  00280000  0A000000    .........(......
+00007FFBD33F8580   00000000  00000000  01000000  31000000    ............1...
+00007FFBD33F8590   00000000  00000000  00000000  00576562    .............Web
+00007FFBD33F85A0   53706865  72654D51  38000000  0000433A    SphereMQ8.....C:
+00007FFBD33F85B0   5C49424D  5C576562  53706865  7265204D    \IBM\WebSphere M
+00007FFBD33F85C0   51380000  00000000  00000000  00000000    Q8..............
+00007FFBD33F85D0   00000000  00000000  00000000  00000000    ................
+00007FFBD33F85E0 to 00007FFBD33F8690 suppressed, lines same as above
+00007FFBD33F86A0   00000000  00000000  00000000  00000053    ...............S
+00007FFBD33F86B0   4F465457  4152455C  49424D5C  57656253    OFTWARE\IBM\WebS
+00007FFBD33F86C0   70686572  65204D51  5C496E73  74616C6C    phere MQ\Install
+00007FFBD33F86D0   6174696F  6E5C5765  62537068  6572654D    ation\WebSphereM
+00007FFBD33F86E0   51380000  00000000  31000000  00000000    Q8......1.......
+00007FFBD33F86F0   00000000  00000000  00000000  00000000    ................
+00007FFBD33F8700 to 00007FFBD33F87D0 suppressed, lines same as above
+00007FFBD33F87E0   00000000  00000000  00000000  0050726F    .............Pro
+00007FFBD33F87F0   64756374  696F6E00  00000000  00000000    duction.........
+00007FFBD33F8800   00000000  01000000  00000000  00000000    ................
+00007FFBD33F8810   00000000  03000000  309F7C85  AD010000    ........0�|��...
+00007FFBD33F8820   1F000000  00000000  00000000  00000000    ................
+00007FFBD33F8830   00000000  00000000  00000000  00000000    ................
+00007FFBD33F8840   B0968185  AD010000  00000000  00000000    .����...........
+00007FFBD33F8850   2D764FAC  B2DF0500  3D8D14E3  DADF0500    -vO�....=�.�....
+00007FFBD33F8860   00000000  00000000  00000000  00000000    ................
+00007FFBD33F8870 to 00007FFBD33F97C0 suppressed, lines same as above
+00007FFBD33F97D0   00000000  00000000  433A5C50  726F6772    ........C:\Progr
+00007FFBD33F97E0   616D4461  74615C49  424D5C4D  515C6572    amData\IBM\MQ\er
+00007FFBD33F97F0   726F7273  00000000  00000000  00000000    rors............
+00007FFBD33F9800   00000000  00000000  00000000  00000000    ................
+00007FFBD33F9810 to 00007FFBD33F9900 suppressed, lines same as above
+
+{
+  Eye:             xtgm
+  Attributes:      0x2
+  Count:           0
+  LastOwnerTid:    1
+  TimedOut:        0
+  RequestCount:    3
+  Next:            0000000000000000
+  hmtx:            00000000000000C4
+  Owner:           FFFFFFFFFFFFFFFF
+  ThreadMutexName: htmtxProcess
+}htmtxProcess   (000001AD857DAE20)
+
+Zut Common Anchor (zutCOMMON_ANCHOR)
+00007FFBD33F67D0   5A554341  5A535441  00000000  00000000    ZUCAZSTA........
+00007FFBD33F67E0   524D5141  00000000  FFFFFFFF  FFFFFFFF    RMQA....��������
+00007FFBD33F67F0   FFFFFFFF  00000000  00000000  00000000    ����............
+00007FFBD33F6800   00000000  00000000  D0070002  00000000    ................
+00007FFBD33F6810   0000403F  1F000000  00000000  00000000    ..@?............
+00007FFBD33F6820   70AF7D85  AD010000  00000000  00000000    p�}��...........
+00007FFBD33F6830   00000000  64000000  64000000  00000000    ....d...d.......
+00007FFBD33F6840   00000000  00000000  00000000  00000000    ................
+00007FFBD33F6850   02000000  00000000  00000000  00000000    ................
+00007FFBD33F6860   00000000  00000000  70D87D85  AD010000    ........p.}��...
+00007FFBD33F6870   68D97D85  AD010000  00000000  00000000    h.}��...........
+00007FFBD33F6880   00000000  00000000  00000000  00000000    ................
+00007FFBD33F6890 to 00007FFBD33F68A0 suppressed, lines same as above
+00007FFBD33F68B0   10683FD3  FB7F0000  00000000  00000000    .h?.............
+00007FFBD33F68C0   00000000  00000000  00000000  00000000    ................
+00007FFBD33F68D0   00000000  00000000  05000000  00000000    ................
+00007FFBD33F68E0   08000000  00000000  00000000  00000000    ................
+
+
+pCtl->pCS->threadConnectCount[1] = 0
+pCtl->pCS->threadConnectedSubpools[1] = 0000000000000000
+pCtl->pCS->threadCachedCount[1] = 0
+pCtl->pCS->threadCachedSubpools[1] = 0000000000000000
+pCtl->pCS->threadConnSetList[1] = 0000000000000000
+pCtl->pCS->threadConnectCount[2] = 0
+pCtl->pCS->threadConnectedSubpools[2] = 0000000000000000
+pCtl->pCS->threadCachedCount[2] = 0
+pCtl->pCS->threadCachedSubpools[2] = 0000000000000000
+pCtl->pCS->threadConnSetList[2] = 0000000000000000
+pCtl->pCS->threadConnectCount[3] = 0
+pCtl->pCS->threadConnectedSubpools[3] = 0000000000000000
+pCtl->pCS->threadCachedCount[3] = 0
+pCtl->pCS->threadCachedSubpools[3] = 0000000000000000
+pCtl->pCS->threadConnSetList[3] = 0000000000000000
+pCtl->pCS->threadConnectCount[4] = 0
+pCtl->pCS->threadConnectedSubpools[4] = 0000000000000000
+pCtl->pCS->threadCachedCount[4] = 0
+pCtl->pCS->threadCachedSubpools[4] = 0000000000000000
+pCtl->pCS->threadConnSetList[4] = 0000000000000000
+pCtl->pCS->threadConnectCount[5] = 0
+pCtl->pCS->threadConnectedSubpools[5] = 0000000000000000
+pCtl->pCS->threadCachedCount[5] = 0
+pCtl->pCS->threadCachedSubpools[5] = 0000000000000000
+pCtl->pCS->threadConnSetList[5] = 0000000000000000
+pCtl->pCS->threadConnectCount[6] = 0
+pCtl->pCS->threadConnectedSubpools[6] = 0000000000000000
+pCtl->pCS->threadCachedCount[6] = 0
+pCtl->pCS->threadCachedSubpools[6] = 0000000000000000
+pCtl->pCS->threadConnSetList[6] = 0000000000000000
+
+Component Dumps (Thread 00000001)
+------< ZSW "Switching Interface(zsw)" >-----
+
+ThisTid:
+0000009F8E2F7480   303D0000                                  0=..
+
+pMQIAnchor (0x8581A740)
+{
+  EyeCatcher:             'ZSWA'
+  Version:                3
+  StrucLength:            41100
+  BufferLength:           45192
+  Flags:                  0x00000000
+  ThreadKey:              0
+  SingleInstallationOnly: FALSE
+  ClientInstallation:     4294967295
+  DependentInstallation:  1
+  pFirstInstallation:     0xD375B660
+  MaxInstallId:           1
+
+  LockOwnerTid:
+000001AD85824780   303D0000                                  0=..
+
+  pXAInfo:                0x00000000
+  zswINSTALL 1
+  {
+    Name:                 'WebSphereMQ8'
+    Identifier:           1
+    Path:                 'C:\IBM\WebSphere MQ8'
+    Server entrypoints:   0xD375B660
+    Client entrypoints:   0x00000000
+    LockedInquirers:      0
+  }
+  zswINSTALL 0
+  {
+    Name:                 ''
+    Identifier:           0
+    Path:                 ''
+    Server entrypoints:   0x00000000
+    Client entrypoints:   0x00000000
+    LockedInquirers:      0
+  }
+  LockRequests:           2
+  QMgrLookups:            0
+  InstallationLookups:    0
+  LoadAttempts:           0
+  MissingInstallations:   0
+  InstallMismatches:      0
+  NowTryClientRequests:   0
+  AllowOptimizedConnect:  TRUE
+  ThreadKeyCreator:       0
+  LockOwnerInstallation:  1
+}
+-------------------------------------
+
+ Environment Variables
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\WINDOWS\system32\config\systemprofile\AppData\Roaming
+APWMQ_CM_OPTIONS=-mMQM; -nREMOTE_QMGRS; -s5020; -u; -e
+APWMQ_EVT_OPTIONS=-mMQM;
+APWMQ_GS_OPTIONS=-mMQM; -u; -a; -e
+APWMQ_HOME=C:\Nastel\apwmq\
+APWMQ_LA_OPTIONS=-mMQM;-i
+APWMQ_LS_OPTIONS=-mWGS10; -s5016; -u; -e
+APWMQ_MS_OPTIONS=-m*;
+AUTOPILOT_HOME=C:\Nastel\AutoPilotM6
+CATALINA_HOME=C:\Nastel\AutoPilotM6\apache-tomcat
+CLASSPATH=C:\IBM\WebSphere MQ8\java\lib\com.ibm.mqjms.jar;C:\IBM\WebSphere MQ8\java\lib\com.ibm.mq.jar
+CommonProgramFiles=C:\Program Files\Common Files
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+CommonProgramW6432=C:\Program Files\Common Files
+COMPUTERNAME=LEUNAME
+ComSpec=C:\WINDOWS\system32\cmd.exe
+DellClientSystemUpdatePath=C:\Program Files (x86)\Dell\ClientSystemUpdate\
+DriverData=C:\Windows\System32\Drivers\DriverData
+FP_NO_HOST_CHECK=NO
+INCLUDE=C:\IBM\WebSphere MQ8\tools\c\include;C:\IBM\WebSphere MQ8\tools\cplus\include
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_211
+LIB=C:\IBM\WebSphere MQ8\tools\lib64;C:\IBM\WebSphere MQ8\tools\lib
+LOCALAPPDATA=C:\WINDOWS\system32\config\systemprofile\AppData\Local
+MAVEN_OPTS=-Dhttps.protocols=TLSv1.2
+MQ_FILE_PATH=C:\IBM\WebSphere MQ8
+MQ_JAVA_DATA_PATH=C:\ProgramData\IBM\MQ
+MQ_JAVA_INSTALL_PATH=C:\IBM\WebSphere MQ8\java
+MQ_JAVA_LIB_PATH=C:\IBM\WebSphere MQ8\java\lib64;C:\IBM\WebSphere MQ8\java\lib
+MQ_JRE_PATH=C:\IBM\WebSphere MQ8\java\jre
+NUMBER_OF_PROCESSORS=4
+OPENSSL_CONF=C:\Program Files\PostgreSQL\psqlODBC\etc\openssl.cnf
+OS=Windows_NT
+PATH=C:\IBM\WebSphere MQ8\bin64;C:\IBM\WebSphere MQ8\bin;C:\IBM\WebSphere MQ8\java\lib;C:\IBM\WebSphere MQ8\java\lib64;C:\IBM\WebSphere MQ8\java\lib;C:\IBM\WebSphere MQ8\java\lib64;C:\Nastel\apwmq\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32\wbem;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\nastel\AutoPilotM6\bin;C:\Nastel\AutoPilotM6\bin;C:\dev\apache-maven-3.5.0\bin;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;c:\tools;;C:\WINDOWS\System32\OpenSSH\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\IBM\WebSphere MQ8\bin64;C:\IBM\WebSphere MQ8\bin;C:\IBM\WebSphere MQ8\tools\c\samples\bin64;C:\IBM\WebSphere MQ8\tools\c\samples\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE=AMD64
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+PROCESSOR_LEVEL=6
+PROCESSOR_REVISION=3c03
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+ProgramFiles(x86)=C:\Program Files (x86)
+ProgramW6432=C:\Program Files
+PSModulePath=C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\PowerShell\Modules\
+PUBLIC=C:\Users\Public
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=C:\WINDOWS\TEMP
+TMP=C:\WINDOWS\TEMP
+USERDOMAIN=NASTEL1
+USERNAME=LEUNAME$
+USERPROFILE=C:\WINDOWS\system32\config\systemprofile
+VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\
+windir=C:\WINDOWS
+windows_tracing_flags=3
+windows_tracing_logfile=C:\BVTBin\Tests\installpackage\csilogfile.log
+
+
+------ End of Report ------

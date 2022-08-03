@@ -1,38 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Navigator]" guice-stage="DEVELOPMENT">
-  <test name="Test EMS Queue Viewlet(failed)">
-    <parameter name="ViewletName" value="Local Queue"/>
-    <parameter name="Dashboardname" value="EMS Queues"/>
-    <parameter name="wgs" value="1"/>
-    <parameter name="uname" value="Admin"/>
-    <parameter name="QueueNameFromOptions" value="EMS_ABC"/>
-    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
-    <parameter name="FavoriteViewletName" value="Queues Add to favorite"/>
-    <parameter name="Favwgs" value="1"/>
-    <parameter name="EMSDestinationManager" value="EMS-SERVER"/>
-    <parameter name="QueueDescription" value="Test the Queue"/>
-    <parameter name="URL" value="/navigator/#/login"/>
-    <parameter name="ObjectName" value=".Queue1"/>
-    <parameter name="ViewletValue" value="3"/>
-    <parameter name="password" value="admin"/>
-    <parameter name="WGSName" value="WGS10 - 1"/>
-    <parameter name="RenameQueue" value="EMS.QUEUE.RENAME"/>
-    <parameter name="TestDescription" value="Multiple Description"/>
+  <test name="Test Channel Auth Records Viewlet(failed)">
+    <parameter name="ViewletName" value="New Channel Auth Records"/>
+    <parameter name="ChannelAuthNameFromIcon" value="New.Channel.Icon"/>
+    <parameter name="Dashboardname" value="Channel AuthInfo"/>
     <parameter name="sDriver" value="webdriver.chrome.driver"/>
-    <parameter name="SearchInputData" value="999999999"/>
-    <parameter name="QueueName" value="EMS_Add.New.Queue"/>
-    <parameter name="SchemaName" value="QueueSchema"/>
-    <parameter name="EMSDnode" value="EMSAGENT01"/>
+    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+    <parameter name="FavoriteViewletName" value="Channel Auth Favorite viewlet"/>
+    <parameter name="ChannelAuthNameFromOptions" value="New.Channel.Auth"/>
+    <parameter name="MultipleDescription" value="Test Multiple Properties"/>
+    <parameter name="UserList" value="MQADMIN"/>
+    <parameter name="SchemaName" value="ChannelAuthSchema"/>
+    <parameter name="ViewletValue" value="13"/>
     <classes>
-      <class name="EMS.EMSQueues">
+      <class name="ApodGUI.ChannelAuthRecordsViewlet">
         <methods>
-          <include name="AddQueueFromPlusIcon" invocation-numbers="0"/>
-          <include name="beforeTest"/>
+          <include name="Logout" invocation-numbers="0"/>
+          <include name="AddToFavoriteForMultipleChannelAuthRecords" invocation-numbers="0"/>
+          <include name="AddToFavoriteViewlet" invocation-numbers="0"/>
+          <include name="MultipleChannelAuthRecordsProperties" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="ShowObjectAttributesForQueues" invocation-numbers="0"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- EMS.EMSQueues -->
+      </class> <!-- ApodGUI.ChannelAuthRecordsViewlet -->
     </classes>
-  </test> <!-- Test EMS Queue Viewlet(failed) -->
+  </test> <!-- Test Channel Auth Records Viewlet(failed) -->
 </suite> <!-- Failed suite [Navigator] -->

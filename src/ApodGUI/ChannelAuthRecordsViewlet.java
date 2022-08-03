@@ -115,7 +115,7 @@ public class ChannelAuthRecordsViewlet
 		driver.findElement(By.id("username")).sendKeys(uname);
 		driver.findElement(By.id("password")).sendKeys(password);
 		driver.findElement(By.cssSelector("button.btn-submit")).click();
-		Thread.sleep(6000);
+		Thread.sleep(HighSleep);
 				
 		//Delete existing dashboard
 		Dashboard ob=new Dashboard();
@@ -462,8 +462,12 @@ public class ChannelAuthRecordsViewlet
 			driver.findElement(By.cssSelector("div.g-block-bottom-buttons.buttons-block > button.g-button-blue")).click();
 			Thread.sleep(LowSleep);
 			
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+		    js.executeScript("window.scrollBy(0,-350)", "");
+			
 			//Select Add to Favorites option
 			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			Thread.sleep(MediumSleep);
 			driver.findElement(By.linkText("Add to favorites...")).click();
 			Thread.sleep(LowSleep);
 			
