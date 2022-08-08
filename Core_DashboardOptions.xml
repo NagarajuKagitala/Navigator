@@ -24,7 +24,7 @@
         <include name="RenameDashboard"/>  
         <include name="DeleteDashboardUsingCrossIcon"/>  
         <include name="DeleteDashboardUsingDeleteOption"/>
-        <include name="RemoveDashboardUsingOption"/>
+        <include name="RemoveDashboardUsingOption"/> 
        
         <include name="Logout"/>  
         

@@ -15,6 +15,7 @@
           <include name="ResultLimitFilter" invocation-numbers="0"/>
           <include name="beforeTest"/>
           <include name="tearDown"/>
+          <include name="ManagerFilter" invocation-numbers="0"/>
         </methods>
       </class> <!-- NavigatorCore.ViewletFilterOptions -->
     </classes>

@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 //import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -288,23 +289,26 @@ public class DashboardOptions
 		String uname=Settings.getNav_Username();
 		String password=Settings.getNav_Password();
 		
-		WebElement cla=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul"));
-		List<WebElement> lis=cla.findElements(By.tagName("li"));
-		System.out.println("No of dashboards are: " +lis.size());
+		WebElement cla1=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul"));
+		List<WebElement> lis1=cla1.findElements(By.tagName("li"));
+		System.out.println("No of dashboards are: " +lis1.size());
 		
-		for(WebElement li: lis)
+		for(WebElement li1: lis1)
 		{
 			//System.out.println("titles are: " +li.getAttribute("class"));
-			WebElement fi=li.findElement(By.className("g-tab-title"));
-			//System.out.println("Names are: " +fi.getText());
+			WebElement fi1=li1.findElement(By.className("g-tab-title"));
+			System.out.println("Names are: " +fi1.getText());
 			
-			if(fi.getText().equalsIgnoreCase(Dashboardname))
+			if(fi1.getText().equalsIgnoreCase(Dashboardname))
 			{
-				Actions a=new Actions(driver);
-				a.contextClick(fi).perform();
-				Thread.sleep(5000);
+				 WebElement element=fi1;
+				 JavascriptExecutor js = (JavascriptExecutor)driver;
+				 js.executeScript("arguments[0].click();", element);
+				 Thread.sleep(5000);
+				 Actions a=new Actions(driver);
+				 a.contextClick(element).perform();
 				break;
-			}
+			} 
 		}
 				
 		//Click on Set as default
@@ -318,20 +322,20 @@ public class DashboardOptions
 		this.login(uname, password);
 		Thread.sleep(MediumSleep);
 		
-		WebElement cla1=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul"));
-		List<WebElement> lis1=cla1.findElements(By.tagName("li"));
-		System.out.println("No of dashboards are: " +lis1.size());
+		WebElement cla2=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul"));
+		List<WebElement> lis2=cla2.findElements(By.tagName("li"));
+		System.out.println("No of dashboards are: " +lis2.size());
 		
-		for(WebElement li1: lis1)
+		for(WebElement li2: lis2)
 		{
 			//System.out.println("titles are: " +li1.getAttribute("class"));
 			
-			if(li1.getAttribute("class").contains("active"))
+			if(li2.getAttribute("class").contains("active"))
 			{
-				WebElement fi2=li1.findElement(By.className("g-tab-title"));
+				WebElement fi3=li2.findElement(By.className("g-tab-title"));
 				//System.out.println("Names are: " +fi2.getText());
 				
-				if(fi2.getText().equalsIgnoreCase(Dashboardname))
+				if(fi3.getText().equalsIgnoreCase(Dashboardname))
 				{
 					System.out.println("Default dashboard is set ");
 					context.setAttribute("Status", 1);
@@ -360,23 +364,25 @@ public class DashboardOptions
 	@Parameters({"Dashboardname"})
 	public void SetASDefaultTemplate(String Dashboardname, ITestContext context) throws InterruptedException
 	{
-		WebElement cla=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul"));
-		List<WebElement> lis=cla.findElements(By.tagName("li"));
-		System.out.println("No of dashboards are: " +lis.size());
+		WebElement cla1=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul"));
+		List<WebElement> lis1=cla1.findElements(By.tagName("li"));
+		System.out.println("No of dashboards are: " +lis1.size());
 		
-		for(WebElement li: lis)
+		for(WebElement li1: lis1)
 		{
 			//System.out.println("titles are: " +li.getAttribute("class"));
-			WebElement fi=li.findElement(By.className("g-tab-title"));
-			//System.out.println("Names are: " +fi.getText());
+			WebElement fi1=li1.findElement(By.className("g-tab-title"));
+			System.out.println("Names are: " +fi1.getText());
 			
-			if(fi.getText().equalsIgnoreCase(Dashboardname))
+			if(fi1.getText().equalsIgnoreCase(Dashboardname))
 			{
-				Actions a=new Actions(driver);
-				a.contextClick(fi).perform();
-				Thread.sleep(5000);
-				break;
-			}
+				 WebElement element=fi1;
+				 JavascriptExecutor js = (JavascriptExecutor)driver;
+				 js.executeScript("arguments[0].click();", element);
+				 Actions a=new Actions(driver);
+				 a.contextClick(element).perform();
+				 break;
+			} 
 		}
 		
 		//Select set as template option
@@ -431,23 +437,25 @@ public class DashboardOptions
 	@Parameters({"NewDashboardName", "Dashboardname"})
 	public void RenameDashboard(String NewDashboardName, String Dashboardname, ITestContext context) throws InterruptedException
 	{
-		WebElement cla=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul"));
-		List<WebElement> lis=cla.findElements(By.tagName("li"));
-		System.out.println("No of dashboards are: " +lis.size());
+		WebElement cla1=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul"));
+		List<WebElement> lis1=cla1.findElements(By.tagName("li"));
+		System.out.println("No of dashboards are: " +lis1.size());
 		
-		for(WebElement li: lis)
+		for(WebElement li1: lis1)
 		{
 			//System.out.println("titles are: " +li.getAttribute("class"));
-			WebElement fi=li.findElement(By.className("g-tab-title"));
+			WebElement fi1=li1.findElement(By.className("g-tab-title"));
 			//System.out.println("Names are: " +fi.getText());
 			
-			if(fi.getText().equalsIgnoreCase(Dashboardname))
+			if(fi1.getText().equalsIgnoreCase(Dashboardname))
 			{
-				Actions a=new Actions(driver);
-				a.contextClick(fi).perform();
-				Thread.sleep(5000);
+				 WebElement element=fi1;
+				 JavascriptExecutor js = (JavascriptExecutor)driver;
+				 js.executeScript("arguments[0].click();", element);
+				 Actions a=new Actions(driver);
+				 a.contextClick(element).perform();
 				break;
-			}
+			} 
 		}
 		
 		//Click on rename
@@ -462,17 +470,17 @@ public class DashboardOptions
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(HighSleep);
 		
-		WebElement cla1=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul"));
-		List<WebElement> lis1=cla1.findElements(By.tagName("li"));
-		System.out.println("No of dashboards are: " +lis1.size());
+		WebElement cla2=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul"));
+		List<WebElement> lis2=cla2.findElements(By.tagName("li"));
+		System.out.println("No of dashboards are: " +lis2.size());
 		
 		StringBuffer buffer=new StringBuffer();
-		for(WebElement li1: lis1)
+		for(WebElement li2: lis2)
 		{
 			//System.out.println("titles are: " +li.getAttribute("class"));
-			WebElement fi1=li1.findElement(By.className("g-tab-title"));
+			WebElement fi2=li2.findElement(By.className("g-tab-title"));
 			//System.out.println("Names are: " +fi.getText());
-			buffer.append(fi1.getText());
+			buffer.append(fi2.getText());
 			buffer.append(",");
 		}
 		
@@ -671,6 +679,7 @@ public class DashboardOptions
 				
 				for(WebElement fi:trs)
 				{
+					System.out.println("Dashboard names are: " +fi.getText());
 					if(fi.getText().equalsIgnoreCase(NewDashboardName))
 					{
 						Actions a=new Actions(driver);
@@ -702,8 +711,13 @@ public class DashboardOptions
 			
 			if(fi1.getText().equalsIgnoreCase(NewDashboardName))
 			{
+				WebElement element=fi1;
+				JavascriptExecutor js = (JavascriptExecutor)driver;
+				js.executeScript("arguments[0].click();", element);
+				Thread.sleep(5000);
+				 
 				Actions a=new Actions(driver);
-				a.contextClick(fi1).perform();
+				a.contextClick(element).perform();
 				Thread.sleep(5000);
 				break;
 			}
@@ -775,9 +789,9 @@ public class DashboardOptions
 			
 			if(fi.getText().equalsIgnoreCase(EMSDashboardname))
 			{
-				fi.click();
-				/*Actions a=new Actions(driver);
-				a.contextClick(fi).perform();*/
+				WebElement element=fi;
+				JavascriptExecutor js = (JavascriptExecutor)driver;
+				js.executeScript("arguments[0].click();", element);
 				Thread.sleep(5000);
 				break;
 			}
@@ -789,6 +803,8 @@ public class DashboardOptions
 	{
 		//Click on Work space dashboard
 		WebElement Workspace=driver.findElement(By.xpath("//li[contains(.,'WorkSpace')]"));
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", Workspace);
 		Actions a=new Actions(driver);
 		a.contextClick(Workspace).perform();
 		

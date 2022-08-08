@@ -438,22 +438,26 @@ public class CreateViewletTypesUsingViewletButton
 		driver.findElement(By.cssSelector("button.btn-submit")).click();
 		Thread.sleep(HighSleep);
 		
-		//Go to that dashboard
-		WebElement cla=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul"));
-		List<WebElement> lis=cla.findElements(By.tagName("li"));
-		System.out.println("No of dashboards are: " +lis.size());
+		WebElement cla1=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul"));
+		List<WebElement> lis1=cla1.findElements(By.tagName("li"));
+		System.out.println("No of dashboards are: " +lis1.size());
 		
-		for(WebElement li: lis)
+		for(WebElement li1: lis1)
 		{
 			//System.out.println("titles are: " +li.getAttribute("class"));
-			WebElement fi=li.findElement(By.className("g-tab-title"));
-			System.out.println("Names are: " +fi.getText());
+			WebElement fi1=li1.findElement(By.className("g-tab-title"));
+			//System.out.println("Names are: " +fi.getText());
 			
-			if(fi.getText().equalsIgnoreCase(Dashboardname))
-			{
-				fi.click();
-				break;
-			}
+			 if(fi1.getAttribute("textContent").equalsIgnoreCase(Dashboardname)) 
+			  { 
+				  WebElement element=fi1;
+				  JavascriptExecutor js = (JavascriptExecutor)driver;
+				  js.executeScript("arguments[0].click();", element);
+				 // Actions a=new Actions(driver); 
+				  //a.click(fi1).perform(); 
+				  Thread.sleep(5000); 
+				  break; 
+				} 
 		}
 		Thread.sleep(LowSleep);
 		

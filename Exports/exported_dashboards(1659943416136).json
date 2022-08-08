@@ -1,0 +1,19 @@
+{
+  "version": "v10.4.2.1",
+  "wgsConnections": [],
+  "schemas": [],
+  "attributeFilters": [],
+  "messageCriteria": [],
+  "externalViewlets": [],
+  "searchViewlets": [],
+  "favoriteViewlets": [],
+  "dashboards": [
+    {
+      "id": 2279,
+      "name": "AutomationDashboard",
+      "tagsIds": [],
+      "viewletData": []
+    }
+  ],
+  "dashTags": []
+}

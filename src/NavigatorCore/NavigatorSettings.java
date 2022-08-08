@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 //import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -762,13 +763,15 @@ public class NavigatorSettings
 			
 			if(fi.getText().equalsIgnoreCase(Dashboardname))
 			{
-				fi.click();
+				 WebElement element=fi;
+				 JavascriptExecutor js = (JavascriptExecutor)driver;
+				 js.executeScript("arguments[0].click();", element);
 				break;
 			}
 		}
 		Thread.sleep(MediumSleep);
 		
-		String title=driver.findElement(By.xpath("//div[2]/div/div/div/div/i")).getAttribute("title");
+		String title=driver.findElement(By.xpath("//app-viewlet/div/div[2]/div/div/div/div/i")).getAttribute("title");
 		System.out.println("title is: " +title);
 	
 		if(title.contains("Expand"))

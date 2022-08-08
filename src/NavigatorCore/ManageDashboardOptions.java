@@ -417,7 +417,7 @@ public class ManageDashboardOptions
 		
 		//Clikc on Cancel button
 		driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(8000);
 	}
 	
 

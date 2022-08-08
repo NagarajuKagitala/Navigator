@@ -403,7 +403,7 @@ public class ViewletFilterOptions
 		}
 		else
 		{
-			driver.findElement(By.xpath("//tr[18]/td/div")).click();
+			driver.findElement(By.xpath("//tr[23]/td/div")).click();
 			Thread.sleep(MediumSleep);
 		}
 		
@@ -736,10 +736,11 @@ public class ViewletFilterOptions
 		// Changing the Settings 
 		driver.findElement(By.cssSelector(".fa-cog")).click();
 		driver.findElement(By.xpath("//button[contains(.,'Restore Default')]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(8000);
 		driver.findElement(By.id("accept-true")).click();
+		Thread.sleep(4000);
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		
 		LogoutForAll lo=new LogoutForAll();
 		lo.LogoutMethod(driver, Dashboardname);
@@ -777,7 +778,7 @@ public class ViewletFilterOptions
         for(int i=1; i<=Manager.length(); i++)
         {
         	driver.findElement(By.xpath("//div[2]/div/div/div[2]/div/input")).sendKeys(Keys.BACK_SPACE);
-        	Thread.sleep(1000);
+        	Thread.sleep(1000);           
         }
         driver.findElement(By.xpath("//div[2]/div/div/div[2]/div/input")).sendKeys(Keys.ENTER);
         Thread.sleep(MediumSleep);
@@ -786,6 +787,8 @@ public class ViewletFilterOptions
 	public void CheckEmptyCheckbox() throws InterruptedException
 	{
 		boolean empty=driver.findElement(By.xpath("(//input[@type='checkbox'])[2]")).isSelected();
+		Thread.sleep(6000);
+		System.out.println("Status at the end: " +empty);
 		
 		if(empty)
 		{
