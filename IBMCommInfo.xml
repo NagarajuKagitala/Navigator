@@ -40,7 +40,7 @@
         <include name="CompareCommunicationInfos"/>  
         <include name="DifferencesOfCommunicationInfos"/> 
         <include name="AddMultipleCommumicationInfosToFavoriteViewlet"/>
-        <include name="AddCommunicationInfoUsingPlusIcon"/>  
+       <!--  <include name="AddCommunicationInfoUsingPlusIcon"/>   -->
         <include name="Logout"/>  
         
        </methods>

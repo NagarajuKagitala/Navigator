@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Navigator]" guice-stage="DEVELOPMENT">
-  <test name="Dashboard functions(failed)">
-    <parameter name="Dashboardname" value="Dashboard Verficaton"/>
-    <parameter name="EMSDashboardname" value="EMS Dashboard"/>
-    <parameter name="sDriver" value="webdriver.chrome.driver"/>
-    <parameter name="NewDashboardName" value="DashboardRenamed"/>
+  <test name="Test Comm info Viewlet options(failed)">
+    <parameter name="ViewletName" value="Commn info viewlet"/>
+    <parameter name="Dashboardname" value="Comm info"/>
+    <parameter name="uname" value="Admin"/>
     <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+    <parameter name="NewCommunicationInfoName" value="COMMUNICATION.INFO.ICON"/>
+    <parameter name="DownloadPath" value="F:\Navigator Exported Messages\Export Query From MQSC Console"/>
+    <parameter name="FavoriteViewletName" value="Communication info fav"/>
+    <parameter name="CopyAsName" value="COMMUNICATION.INFO.COPY"/>
+    <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="ViewletValue" value="14"/>
+    <parameter name="MessageHistory" value="100"/>
+    <parameter name="password" value="admin"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="PortNo" value="4020"/>
+    <parameter name="GroupAddress" value="24.23.22.21"/>
+    <parameter name="SchemaName" value="Comm info schema"/>
+    <parameter name="CommInfoPort" value="4321"/>
     <classes>
-      <class name="NavigatorCore.DashboardOptions">
+      <class name="ApodGUI.CommInfoViewlet">
         <methods>
-          <include name="tearDown"/>
+          <include name="DeleteCommunicationInfo" invocation-numbers="0"/>
           <include name="beforeTest"/>
-          <include name="RemoveDashboardUsingOption" invocation-numbers="0"/>
+          <include name="CopyAsOfCommumicationInfo"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- NavigatorCore.DashboardOptions -->
+      </class> <!-- ApodGUI.CommInfoViewlet -->
     </classes>
-  </test> <!-- Dashboard functions(failed) -->
+  </test> <!-- Test Comm info Viewlet options(failed) -->
 </suite> <!-- Failed suite [Navigator] -->

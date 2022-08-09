@@ -959,7 +959,7 @@ public class QueuesViewlet
 			context.setAttribute("Status", 1);
 			context.setAttribute("Comment", "Queue Name field is UnEditable");
 			 driver.findElement(By.cssSelector(".btn-primary")).click();
-			 Thread.sleep(4000);
+			 Thread.sleep(8000);
 		}
 		else
 		{
@@ -967,7 +967,7 @@ public class QueuesViewlet
 			context.setAttribute("Status", 5);
 			context.setAttribute("Comment", "Queue Name field is Editable");
 			driver.findElement(By.cssSelector(".btn-primary")).click();
-			Thread.sleep(4000);
+			Thread.sleep(8000);
 			driver.findElement(By.xpath("Queue name edit function Failed")).click();
 			
 		}

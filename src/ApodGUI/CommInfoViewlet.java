@@ -296,7 +296,7 @@ public class CommInfoViewlet
 	
 	@TestRail(testCaseId = 1037)
 	@Parameters({"CopyAsName"})
-	@Test(priority=4)
+	@Test(priority=4,dependsOnMethods= {"CopyAsOfCommumicationInfo"})
 	public void DeleteCommunicationInfo(String CopyAsName, ITestContext context) throws InterruptedException
 	{
 		//Click on clear all check box button
@@ -633,6 +633,7 @@ public class CommInfoViewlet
 		//Select Two Comm info and choose Add to favorite viewlet option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(5000);
 		driver.findElement(By.linkText("Add to favorites...")).click();
 		Thread.sleep(LowSleep);
 			

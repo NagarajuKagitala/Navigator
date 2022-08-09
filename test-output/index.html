@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Navigator" class="navigator-link">
-              <span class="suite-name border-passed">Navigator</span>
+              <span class="suite-name border-failed">Navigator</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Navigator" class="navigator-link ">
-                    <span>F:\Automation\Navigator\Core_DashboardOptions.xml</span>
+                    <span>F:\Automation\Navigator\IBMCommInfo.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Navigator" class="hide-methods failed suite-Navigator"> (hide)</a> <!-- hide-methods failed suite-Navigator -->
+                      <a href="#" panel-name="suite-Navigator" class="show-methods failed suite-Navigator"> (show)</a> <!-- show-methods failed suite-Navigator -->
+                    </span>
+                    <div class="method-list-content failed suite-Navigator">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.CommInfoViewlet" class="method navigator-link" hash-for-method="DeleteCommunicationInfo(COMMUNICATION.INFO.COPY, org.testng.TestRunner@554cd74a)">DeleteCommunicationInfo(COMMUNICATION.INFO.COPY, org.testng.TestRunner@554cd74a)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Navigator -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,52 +116,52 @@
                     <div class="method-list-content passed suite-Navigator">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Navigator" title="NavigatorCore.DashboardOptions" class="method navigator-link" hash-for-method="CreateEMSDashboard(EMS Dashboard, org.testng.TestRunner@35f639fa)">CreateEMSDashboard(EMS Dashboard, org.testng.TestRunner@35f639fa)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.CommInfoViewlet" class="method navigator-link" hash-for-method="AddCommInfoViewlet(Commn info viewlet, 14, org.testng.TestRunner@554cd74a)">AddCommInfoViewlet(Commn info viewlet, 14, org.testng.TestRunner@554cd74a)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Navigator" title="NavigatorCore.DashboardOptions" class="method navigator-link" hash-for-method="CreateWGSDashboard(Dashboard Verficaton, org.testng.TestRunner@35f639fa)">CreateWGSDashboard(Dashboard Verficaton, org.testng.TestRunner@35f639fa)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.CommInfoViewlet" class="method navigator-link" hash-for-method="AddCommunicationInfoToFavoriteViewlet(Communication info fav, org.testng.TestRunner@554cd74a)">AddCommunicationInfoToFavoriteViewlet(Communication info fav, org.testng.TestRunner@554cd74a)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Navigator" title="NavigatorCore.DashboardOptions" class="method navigator-link" hash-for-method="DeleteDashboardUsingCrossIcon(DashboardRenamed, org.testng.TestRunner@35f639fa)">DeleteDashboardUsingCrossIcon(DashboardRenamed, org.testng.TestRunner@35f639fa)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.CommInfoViewlet" class="method navigator-link" hash-for-method="AddMultipleCommumicationInfosToFavoriteViewlet(Communication info fav, org.testng.TestRunner@554cd74a)">AddMultipleCommumicationInfosToFavoriteViewlet(Communication info fav, org.testng.TestRunner@554cd74a)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Navigator" title="NavigatorCore.DashboardOptions" class="method navigator-link" hash-for-method="DeleteDashboardUsingDeleteOption(EMS Dashboard, org.testng.TestRunner@35f639fa)">DeleteDashboardUsingDeleteOption(EMS Dashboard, org.testng.TestRunner@35f639fa)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.CommInfoViewlet" class="method navigator-link" hash-for-method="CompareCommunicationInfos(Comm info, org.testng.TestRunner@554cd74a)">CompareCommunicationInfos(Comm info, org.testng.TestRunner@554cd74a)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Navigator" title="NavigatorCore.DashboardOptions" class="method navigator-link" hash-for-method="Login(webdriver.chrome.driver, Drivers/chromedriver.exe, EMS Dashboard)">Login(webdriver.chrome.driver, Drivers/chromedriver.exe, EMS Dashboard)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.CommInfoViewlet" class="method navigator-link" hash-for-method="CopyAsOfCommumicationInfo(COMMUNICATION.INFO.COPY, org.testng.TestRunner@554cd74a)">CopyAsOfCommumicationInfo(COMMUNICATION.INFO.COPY, org.testng.TestRunner@554cd74a)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Navigator" title="NavigatorCore.DashboardOptions" class="method navigator-link" hash-for-method="Logout(DashboardRenamed)">Logout(DashboardRenamed)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.CommInfoViewlet" class="method navigator-link" hash-for-method="DifferencesOfCommunicationInfos(Comm info, org.testng.TestRunner@554cd74a)">DifferencesOfCommunicationInfos(Comm info, org.testng.TestRunner@554cd74a)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Navigator" title="NavigatorCore.DashboardOptions" class="method navigator-link" hash-for-method="RemoveDashboardUsingOption(DashboardRenamed, org.testng.TestRunner@35f639fa)">RemoveDashboardUsingOption(DashboardRenamed, org.testng.TestRunner@35f639fa)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.CommInfoViewlet" class="method navigator-link" hash-for-method="Login(webdriver.chrome.driver, Drivers/chromedriver.exe, Comm info)">Login(webdriver.chrome.driver, Drivers/chromedriver.exe, Comm info)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Navigator" title="NavigatorCore.DashboardOptions" class="method navigator-link" hash-for-method="RenameDashboard(DashboardRenamed, Dashboard Verficaton, org.testng.TestRunner@35f639fa)">RenameDashboard(DashboardRenamed, Dashboard Verficaton, org.testng.TestRunner@35f639fa)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.CommInfoViewlet" class="method navigator-link" hash-for-method="Logout(Comm info)">Logout(Comm info)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Navigator" title="NavigatorCore.DashboardOptions" class="method navigator-link" hash-for-method="SetASDefaultTemplate(Dashboard Verficaton, org.testng.TestRunner@35f639fa)">SetASDefaultTemplate(Dashboard Verficaton, org.testng.TestRunner@35f639fa)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.CommInfoViewlet" class="method navigator-link" hash-for-method="Properties(org.testng.TestRunner@554cd74a)">Properties(org.testng.TestRunner@554cd74a)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Navigator" title="NavigatorCore.DashboardOptions" class="method navigator-link" hash-for-method="SetAsDeafaultOption(Dashboard Verficaton, org.testng.TestRunner@35f639fa)">SetAsDeafaultOption(Dashboard Verficaton, org.testng.TestRunner@35f639fa)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Navigator" title="ApodGUI.CommInfoViewlet" class="method navigator-link" hash-for-method="ShowObjectAttributes(Comm info, Comm info schema, org.testng.TestRunner@554cd74a)">ShowObjectAttributes(Comm info, Comm info schema, org.testng.TestRunner@554cd74a)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Navigator -->
@@ -162,90 +176,130 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Navigator" class="panel Navigator">
-          <div class="suite-Navigator-class-passed">
+          <div class="suite-Navigator-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">NavigatorCore.DashboardOptions</span>
+              <img src="failed.png"/>
+              <span class="class-name">ApodGUI.CommInfoViewlet</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateEMSDashboard(EMS Dashboard, org.testng.TestRunner@35f639fa)">
-                  </a> <!-- CreateEMSDashboard(EMS Dashboard, org.testng.TestRunner@35f639fa) -->
-                  <span class="method-name">CreateEMSDashboard</span>
-                  <span class="parameters">(EMS Dashboard, org.testng.TestRunner@35f639fa)</span>
+                  <a name="DeleteCommunicationInfo(COMMUNICATION.INFO.COPY, org.testng.TestRunner@554cd74a)">
+                  </a> <!-- DeleteCommunicationInfo(COMMUNICATION.INFO.COPY, org.testng.TestRunner@554cd74a) -->
+                  <span class="method-name">DeleteCommunicationInfo</span>
+                  <span class="parameters">(COMMUNICATION.INFO.COPY, org.testng.TestRunner@554cd74a)</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Communication info delete failed because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Communication info delete failed&apos; is not a valid XPath expression.
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-9QJNAOQ&apos;, ip: &apos;10.1.4.139&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [242420a100baa95531d2ad71237e5f10, findElement {using=xpath, value=Communication info delete failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Nagaraju\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58387/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 242420a100baa95531d2ad71237e5f10
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at ApodGUI.CommInfoViewlet.DeleteCommunicationInfo(CommInfoViewlet.java:344)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Navigator-class-failed -->
+          <div class="suite-Navigator-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ApodGUI.CommInfoViewlet</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddCommInfoViewlet(Commn info viewlet, 14, org.testng.TestRunner@554cd74a)">
+                  </a> <!-- AddCommInfoViewlet(Commn info viewlet, 14, org.testng.TestRunner@554cd74a) -->
+                  <span class="method-name">AddCommInfoViewlet</span>
+                  <span class="parameters">(Commn info viewlet, 14, org.testng.TestRunner@554cd74a)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateWGSDashboard(Dashboard Verficaton, org.testng.TestRunner@35f639fa)">
-                  </a> <!-- CreateWGSDashboard(Dashboard Verficaton, org.testng.TestRunner@35f639fa) -->
-                  <span class="method-name">CreateWGSDashboard</span>
-                  <span class="parameters">(Dashboard Verficaton, org.testng.TestRunner@35f639fa)</span>
+                  <a name="AddCommunicationInfoToFavoriteViewlet(Communication info fav, org.testng.TestRunner@554cd74a)">
+                  </a> <!-- AddCommunicationInfoToFavoriteViewlet(Communication info fav, org.testng.TestRunner@554cd74a) -->
+                  <span class="method-name">AddCommunicationInfoToFavoriteViewlet</span>
+                  <span class="parameters">(Communication info fav, org.testng.TestRunner@554cd74a)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="DeleteDashboardUsingCrossIcon(DashboardRenamed, org.testng.TestRunner@35f639fa)">
-                  </a> <!-- DeleteDashboardUsingCrossIcon(DashboardRenamed, org.testng.TestRunner@35f639fa) -->
-                  <span class="method-name">DeleteDashboardUsingCrossIcon</span>
-                  <span class="parameters">(DashboardRenamed, org.testng.TestRunner@35f639fa)</span>
+                  <a name="AddMultipleCommumicationInfosToFavoriteViewlet(Communication info fav, org.testng.TestRunner@554cd74a)">
+                  </a> <!-- AddMultipleCommumicationInfosToFavoriteViewlet(Communication info fav, org.testng.TestRunner@554cd74a) -->
+                  <span class="method-name">AddMultipleCommumicationInfosToFavoriteViewlet</span>
+                  <span class="parameters">(Communication info fav, org.testng.TestRunner@554cd74a)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="DeleteDashboardUsingDeleteOption(EMS Dashboard, org.testng.TestRunner@35f639fa)">
-                  </a> <!-- DeleteDashboardUsingDeleteOption(EMS Dashboard, org.testng.TestRunner@35f639fa) -->
-                  <span class="method-name">DeleteDashboardUsingDeleteOption</span>
-                  <span class="parameters">(EMS Dashboard, org.testng.TestRunner@35f639fa)</span>
+                  <a name="CompareCommunicationInfos(Comm info, org.testng.TestRunner@554cd74a)">
+                  </a> <!-- CompareCommunicationInfos(Comm info, org.testng.TestRunner@554cd74a) -->
+                  <span class="method-name">CompareCommunicationInfos</span>
+                  <span class="parameters">(Comm info, org.testng.TestRunner@554cd74a)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Login(webdriver.chrome.driver, Drivers/chromedriver.exe, EMS Dashboard)">
-                  </a> <!-- Login(webdriver.chrome.driver, Drivers/chromedriver.exe, EMS Dashboard) -->
+                  <a name="CopyAsOfCommumicationInfo(COMMUNICATION.INFO.COPY, org.testng.TestRunner@554cd74a)">
+                  </a> <!-- CopyAsOfCommumicationInfo(COMMUNICATION.INFO.COPY, org.testng.TestRunner@554cd74a) -->
+                  <span class="method-name">CopyAsOfCommumicationInfo</span>
+                  <span class="parameters">(COMMUNICATION.INFO.COPY, org.testng.TestRunner@554cd74a)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DifferencesOfCommunicationInfos(Comm info, org.testng.TestRunner@554cd74a)">
+                  </a> <!-- DifferencesOfCommunicationInfos(Comm info, org.testng.TestRunner@554cd74a) -->
+                  <span class="method-name">DifferencesOfCommunicationInfos</span>
+                  <span class="parameters">(Comm info, org.testng.TestRunner@554cd74a)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(webdriver.chrome.driver, Drivers/chromedriver.exe, Comm info)">
+                  </a> <!-- Login(webdriver.chrome.driver, Drivers/chromedriver.exe, Comm info) -->
                   <span class="method-name">Login</span>
-                  <span class="parameters">(webdriver.chrome.driver, Drivers/chromedriver.exe, EMS Dashboard)</span>
+                  <span class="parameters">(webdriver.chrome.driver, Drivers/chromedriver.exe, Comm info)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Logout(DashboardRenamed)">
-                  </a> <!-- Logout(DashboardRenamed) -->
+                  <a name="Logout(Comm info)">
+                  </a> <!-- Logout(Comm info) -->
                   <span class="method-name">Logout</span>
-                  <span class="parameters">(DashboardRenamed)</span>
+                  <span class="parameters">(Comm info)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="RemoveDashboardUsingOption(DashboardRenamed, org.testng.TestRunner@35f639fa)">
-                  </a> <!-- RemoveDashboardUsingOption(DashboardRenamed, org.testng.TestRunner@35f639fa) -->
-                  <span class="method-name">RemoveDashboardUsingOption</span>
-                  <span class="parameters">(DashboardRenamed, org.testng.TestRunner@35f639fa)</span>
+                  <a name="Properties(org.testng.TestRunner@554cd74a)">
+                  </a> <!-- Properties(org.testng.TestRunner@554cd74a) -->
+                  <span class="method-name">Properties</span>
+                  <span class="parameters">(org.testng.TestRunner@554cd74a)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="RenameDashboard(DashboardRenamed, Dashboard Verficaton, org.testng.TestRunner@35f639fa)">
-                  </a> <!-- RenameDashboard(DashboardRenamed, Dashboard Verficaton, org.testng.TestRunner@35f639fa) -->
-                  <span class="method-name">RenameDashboard</span>
-                  <span class="parameters">(DashboardRenamed, Dashboard Verficaton, org.testng.TestRunner@35f639fa)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SetASDefaultTemplate(Dashboard Verficaton, org.testng.TestRunner@35f639fa)">
-                  </a> <!-- SetASDefaultTemplate(Dashboard Verficaton, org.testng.TestRunner@35f639fa) -->
-                  <span class="method-name">SetASDefaultTemplate</span>
-                  <span class="parameters">(Dashboard Verficaton, org.testng.TestRunner@35f639fa)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SetAsDeafaultOption(Dashboard Verficaton, org.testng.TestRunner@35f639fa)">
-                  </a> <!-- SetAsDeafaultOption(Dashboard Verficaton, org.testng.TestRunner@35f639fa) -->
-                  <span class="method-name">SetAsDeafaultOption</span>
-                  <span class="parameters">(Dashboard Verficaton, org.testng.TestRunner@35f639fa)</span>
+                  <a name="ShowObjectAttributes(Comm info, Comm info schema, org.testng.TestRunner@554cd74a)">
+                  </a> <!-- ShowObjectAttributes(Comm info, Comm info schema, org.testng.TestRunner@554cd74a) -->
+                  <span class="method-name">ShowObjectAttributes</span>
+                  <span class="parameters">(Comm info, Comm info schema, org.testng.TestRunner@554cd74a)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -253,36 +307,49 @@
         </div> <!-- panel Navigator -->
         <div panel-name="test-xml-Navigator" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\Automation\Navigator\Core_DashboardOptions.xml</span>
+            <span class="header-content">F:\Automation\Navigator\IBMCommInfo.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Navigator&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test name=&quot;Dashboard functions&quot;&gt;
-    &lt;parameter name=&quot;Dashboardname&quot; value=&quot;Dashboard Verficaton&quot;/&gt;
-    &lt;parameter name=&quot;EMSDashboardname&quot; value=&quot;EMS Dashboard&quot;/&gt;
-    &lt;parameter name=&quot;sDriver&quot; value=&quot;webdriver.chrome.driver&quot;/&gt;
-    &lt;parameter name=&quot;NewDashboardName&quot; value=&quot;DashboardRenamed&quot;/&gt;
+  &lt;test name=&quot;Test Comm info Viewlet options&quot;&gt;
+    &lt;parameter name=&quot;ViewletName&quot; value=&quot;Commn info viewlet&quot;/&gt;
+    &lt;parameter name=&quot;Dashboardname&quot; value=&quot;Comm info&quot;/&gt;
+    &lt;parameter name=&quot;uname&quot; value=&quot;Admin&quot;/&gt;
     &lt;parameter name=&quot;sDriverpath&quot; value=&quot;Drivers/chromedriver.exe&quot;/&gt;
+    &lt;parameter name=&quot;NewCommunicationInfoName&quot; value=&quot;COMMUNICATION.INFO.ICON&quot;/&gt;
+    &lt;parameter name=&quot;DownloadPath&quot; value=&quot;F:\Navigator Exported Messages\Export Query From MQSC Console&quot;/&gt;
+    &lt;parameter name=&quot;FavoriteViewletName&quot; value=&quot;Communication info fav&quot;/&gt;
+    &lt;parameter name=&quot;CopyAsName&quot; value=&quot;COMMUNICATION.INFO.COPY&quot;/&gt;
+    &lt;parameter name=&quot;URL&quot; value=&quot;/navigator/#/login&quot;/&gt;
+    &lt;parameter name=&quot;ViewletValue&quot; value=&quot;14&quot;/&gt;
+    &lt;parameter name=&quot;MessageHistory&quot; value=&quot;100&quot;/&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;admin&quot;/&gt;
+    &lt;parameter name=&quot;sDriver&quot; value=&quot;webdriver.chrome.driver&quot;/&gt;
+    &lt;parameter name=&quot;PortNo&quot; value=&quot;4020&quot;/&gt;
+    &lt;parameter name=&quot;GroupAddress&quot; value=&quot;24.23.22.21&quot;/&gt;
+    &lt;parameter name=&quot;SchemaName&quot; value=&quot;Comm info schema&quot;/&gt;
+    &lt;parameter name=&quot;CommInfoPort&quot; value=&quot;4321&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;NavigatorCore.DashboardOptions&quot;&gt;
+      &lt;class name=&quot;ApodGUI.CommInfoViewlet&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;Login&quot;/&gt;
-          &lt;include name=&quot;CreateWGSDashboard&quot;/&gt;
-          &lt;include name=&quot;CreateEMSDashboard&quot;/&gt;
-          &lt;include name=&quot;SetAsDeafaultOption&quot;/&gt;
-          &lt;include name=&quot;SetASDefaultTemplate&quot;/&gt;
-          &lt;include name=&quot;RenameDashboard&quot;/&gt;
-          &lt;include name=&quot;DeleteDashboardUsingCrossIcon&quot;/&gt;
-          &lt;include name=&quot;DeleteDashboardUsingDeleteOption&quot;/&gt;
-          &lt;include name=&quot;RemoveDashboardUsingOption&quot;/&gt;
+          &lt;include name=&quot;AddCommInfoViewlet&quot;/&gt;
+          &lt;include name=&quot;ShowObjectAttributes&quot;/&gt;
+          &lt;include name=&quot;Properties&quot;/&gt;
+          &lt;include name=&quot;CopyAsOfCommumicationInfo&quot;/&gt;
+          &lt;include name=&quot;DeleteCommunicationInfo&quot;/&gt;
+          &lt;include name=&quot;AddCommunicationInfoToFavoriteViewlet&quot;/&gt;
+          &lt;include name=&quot;CompareCommunicationInfos&quot;/&gt;
+          &lt;include name=&quot;DifferencesOfCommunicationInfos&quot;/&gt;
+          &lt;include name=&quot;AddMultipleCommumicationInfosToFavoriteViewlet&quot;/&gt;
           &lt;include name=&quot;Logout&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- NavigatorCore.DashboardOptions --&gt;
+      &lt;/class&gt; &lt;!-- ApodGUI.CommInfoViewlet --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Dashboard functions --&gt;
+  &lt;/test&gt; &lt;!-- Test Comm info Viewlet options --&gt;
 &lt;/suite&gt; &lt;!-- Navigator --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -294,7 +361,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Dashboard functions (1 class)</span>
+                <span class="test-name">Test Comm info Viewlet options (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -320,52 +387,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login')
-data.setCell(0, 2, 'NavigatorCore.DashboardOptions')
-data.setCell(0, 3, 62998);
+data.setCell(0, 1, 'ShowObjectAttributes')
+data.setCell(0, 2, 'ApodGUI.CommInfoViewlet')
+data.setCell(0, 3, 131224);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'RemoveDashboardUsingOption')
-data.setCell(1, 2, 'NavigatorCore.DashboardOptions')
-data.setCell(1, 3, 51874);
+data.setCell(1, 1, 'Login')
+data.setCell(1, 2, 'ApodGUI.CommInfoViewlet')
+data.setCell(1, 3, 93586);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'SetAsDeafaultOption')
-data.setCell(2, 2, 'NavigatorCore.DashboardOptions')
-data.setCell(2, 3, 50350);
+data.setCell(2, 1, 'AddCommunicationInfoToFavoriteViewlet')
+data.setCell(2, 2, 'ApodGUI.CommInfoViewlet')
+data.setCell(2, 3, 57342);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'DeleteDashboardUsingDeleteOption')
-data.setCell(3, 2, 'NavigatorCore.DashboardOptions')
-data.setCell(3, 3, 31100);
+data.setCell(3, 1, 'CopyAsOfCommumicationInfo')
+data.setCell(3, 2, 'ApodGUI.CommInfoViewlet')
+data.setCell(3, 3, 46829);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'RenameDashboard')
-data.setCell(4, 2, 'NavigatorCore.DashboardOptions')
-data.setCell(4, 3, 28574);
+data.setCell(4, 1, 'DeleteCommunicationInfo')
+data.setCell(4, 2, 'ApodGUI.CommInfoViewlet')
+data.setCell(4, 3, 39301);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Logout')
-data.setCell(5, 2, 'NavigatorCore.DashboardOptions')
-data.setCell(5, 3, 27698);
+data.setCell(5, 1, 'AddCommInfoViewlet')
+data.setCell(5, 2, 'ApodGUI.CommInfoViewlet')
+data.setCell(5, 3, 36942);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'CreateWGSDashboard')
-data.setCell(6, 2, 'NavigatorCore.DashboardOptions')
-data.setCell(6, 3, 24560);
+data.setCell(6, 1, 'AddMultipleCommumicationInfosToFavoriteViewlet')
+data.setCell(6, 2, 'ApodGUI.CommInfoViewlet')
+data.setCell(6, 3, 32677);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'DeleteDashboardUsingCrossIcon')
-data.setCell(7, 2, 'NavigatorCore.DashboardOptions')
-data.setCell(7, 3, 21619);
+data.setCell(7, 1, 'Logout')
+data.setCell(7, 2, 'ApodGUI.CommInfoViewlet')
+data.setCell(7, 3, 27080);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'CreateEMSDashboard')
-data.setCell(8, 2, 'NavigatorCore.DashboardOptions')
-data.setCell(8, 3, 21574);
+data.setCell(8, 1, 'Properties')
+data.setCell(8, 2, 'ApodGUI.CommInfoViewlet')
+data.setCell(8, 3, 24229);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'SetASDefaultTemplate')
-data.setCell(9, 2, 'NavigatorCore.DashboardOptions')
-data.setCell(9, 3, 20130);
+data.setCell(9, 1, 'CompareCommunicationInfos')
+data.setCell(9, 2, 'ApodGUI.CommInfoViewlet')
+data.setCell(9, 3, 22091);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'DifferencesOfCommunicationInfos')
+data.setCell(10, 2, 'ApodGUI.CommInfoViewlet')
+data.setCell(10, 3, 21757);
 window.suiteTableData['Navigator']= { tableData: data, tableDiv: 'times-div-Navigator'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
               <div id="times-div-Navigator">
               </div> <!-- times-div-Navigator -->
             </div> <!-- times-div -->
@@ -377,75 +448,90 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">Login(webdriver.chrome.driver, Drivers/chromedriver.exe, EMS Dashboard)</span>
+              <span class="reporter-method-name">Properties(org.testng.TestRunner@554cd74a)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br/></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Properties.png" alt="""/" /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">DifferencesOfCommunicationInfos(Comm info, org.testng.TestRunner@554cd74a)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br/></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DifferencesOfCommunicationInfos.png" alt="""/" /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">AddMultipleCommumicationInfosToFavoriteViewlet(Communication info fav, org.testng.TestRunner@554cd74a)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br/></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddMultipleCommumicationInfosToFavoriteViewlet.png" alt="""/" /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">ShowObjectAttributes(Comm info, Comm info schema, org.testng.TestRunner@554cd74a)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br/></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributes.png" alt="""/" /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CompareCommunicationInfos(Comm info, org.testng.TestRunner@554cd74a)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br/></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareCommunicationInfos.png" alt="""/" /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CopyAsOfCommumicationInfo(COMMUNICATION.INFO.COPY, org.testng.TestRunner@554cd74a)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br/></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsOfCommumicationInfo.png" alt="""/" /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Login(webdriver.chrome.driver, Drivers/chromedriver.exe, Comm info)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output"><br/></span>
                 <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">RenameDashboard(DashboardRenamed, Dashboard Verficaton, org.testng.TestRunner@35f639fa)</span>
+              <span class="reporter-method-name">AddCommunicationInfoToFavoriteViewlet(Communication info fav, org.testng.TestRunner@554cd74a)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output"><br/></span>
-                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameDashboard.png" alt="""/" /></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddCommunicationInfoToFavoriteViewlet.png" alt="""/" /></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">CreateWGSDashboard(Dashboard Verficaton, org.testng.TestRunner@35f639fa)</span>
+              <span class="reporter-method-name">AddCommInfoViewlet(Commn info viewlet, 14, org.testng.TestRunner@554cd74a)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output"><br/></span>
-                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateWGSDashboard.png" alt="""/" /></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddCommInfoViewlet.png" alt="""/" /></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">DeleteDashboardUsingCrossIcon(DashboardRenamed, org.testng.TestRunner@35f639fa)</span>
+              <span class="reporter-method-name">DeleteCommunicationInfo(COMMUNICATION.INFO.COPY, org.testng.TestRunner@554cd74a)</span>
               <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br/>Failed to execute method: DeleteCommunicationInfo<br/></span>
                 <span class="reporter-method-output"><br/></span>
-                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteDashboardUsingCrossIcon.png" alt="""/" /></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">SetAsDeafaultOption(Dashboard Verficaton, org.testng.TestRunner@35f639fa)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><br/></span>
-                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SetAsDeafaultOption.png" alt="""/" /></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">RemoveDashboardUsingOption(DashboardRenamed, org.testng.TestRunner@35f639fa)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><br/></span>
-                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RemoveDashboardUsingOption.png" alt="""/" /></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">CreateEMSDashboard(EMS Dashboard, org.testng.TestRunner@35f639fa)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><br/></span>
-                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateEMSDashboard.png" alt="""/" /></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">SetASDefaultTemplate(Dashboard Verficaton, org.testng.TestRunner@35f639fa)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><br/></span>
-                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SetASDefaultTemplate.png" alt="""/" /></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">DeleteDashboardUsingDeleteOption(EMS Dashboard, org.testng.TestRunner@35f639fa)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><br/></span>
-                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteDashboardUsingDeleteOption.png" alt="""/" /></span>
+                <span class="reporter-method-output"><img src=" F:\Automation\Navigator/Screenshots/ScreenshotsFailure/DeleteCommunicationInfo.png" alt="""/" /></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Navigator" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ApodGUI.CommInfoViewlet</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">AddCommunicationInfoUsingPlusIcon</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Navigator" class="panel">
@@ -454,90 +540,100 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">NavigatorCore.DashboardOptions</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ApodGUI.CommInfoViewlet</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">Login(webdriver.chrome.driver, Drivers/chromedriver.exe, EMS Dashboard)</span>
-                <span class="method-start">24 ms</span>
+                <span class="method-name">Login(webdriver.chrome.driver, Drivers/chromedriver.exe, Comm info)</span>
+                <span class="method-start">19 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=Login status=SUCCESS method=DashboardOptions.Login(java.lang.String, java.lang.Stri...)</span>
-                <span class="method-start">63026 ms</span>
+                <span class="method-name">tearDown([TestResult name=Login status=SUCCESS method=CommInfoViewlet.Login(java.lang.String, java.lang.Strin...)</span>
+                <span class="method-start">93611 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">CreateWGSDashboard(Dashboard Verficaton, org.testng.TestRunner@35f639fa)</span>
-                <span class="method-start">63405 ms</span>
+                <span class="method-name">AddCommInfoViewlet(Commn info viewlet, 14, org.testng.TestRunner@554cd74a)</span>
+                <span class="method-start">93927 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=CreateWGSDashboard status=SUCCESS method=DashboardOptions.CreateWGSDashboard(java.l...)</span>
-                <span class="method-start">89286 ms</span>
+                <span class="method-name">tearDown([TestResult name=AddCommInfoViewlet status=SUCCESS method=CommInfoViewlet.AddCommInfoViewlet(java.la...)</span>
+                <span class="method-start">141401 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">CreateEMSDashboard(EMS Dashboard, org.testng.TestRunner@35f639fa)</span>
-                <span class="method-start">90520 ms</span>
+                <span class="method-name">Properties(org.testng.TestRunner@554cd74a)</span>
+                <span class="method-start">143670 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=CreateEMSDashboard status=SUCCESS method=DashboardOptions.CreateEMSDashboard(java.l...)</span>
-                <span class="method-start">113141 ms</span>
+                <span class="method-name">tearDown([TestResult name=Properties status=SUCCESS method=CommInfoViewlet.Properties(org.testng.ITestContext...)</span>
+                <span class="method-start">177823 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">SetAsDeafaultOption(Dashboard Verficaton, org.testng.TestRunner@35f639fa)</span>
-                <span class="method-start">114347 ms</span>
+                <span class="method-name">CopyAsOfCommumicationInfo(COMMUNICATION.INFO.COPY, org.testng.TestRunner@554cd74a)</span>
+                <span class="method-start">179958 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=SetAsDeafaultOption status=SUCCESS method=DashboardOptions.SetAsDeafaultOption(java...)</span>
-                <span class="method-start">165874 ms</span>
+                <span class="method-name">tearDown([TestResult name=CopyAsOfCommumicationInfo status=SUCCESS method=CommInfoViewlet.CopyAsOfCommumicati...)</span>
+                <span class="method-start">236649 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">SetASDefaultTemplate(Dashboard Verficaton, org.testng.TestRunner@35f639fa)</span>
-                <span class="method-start">167052 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DeleteCommunicationInfo(COMMUNICATION.INFO.COPY, org.testng.TestRunner@554cd74a)</span>
+                <span class="method-start">238704 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=SetASDefaultTemplate status=SUCCESS method=DashboardOptions.SetASDefaultTemplate(ja...)</span>
-                <span class="method-start">188289 ms</span>
+                <span class="method-name">tearDown([TestResult name=DeleteCommunicationInfo status=FAILURE method=CommInfoViewlet.DeleteCommunicationIn...)</span>
+                <span class="method-start">287977 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">RenameDashboard(DashboardRenamed, Dashboard Verficaton, org.testng.TestRunner@35f639fa)</span>
-                <span class="method-start">189423 ms</span>
+                <span class="method-name">AddCommunicationInfoToFavoriteViewlet(Communication info fav, org.testng.TestRunner@554cd74a)</span>
+                <span class="method-start">290111 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=RenameDashboard status=SUCCESS method=DashboardOptions.RenameDashboard(java.lang.St...)</span>
-                <span class="method-start">219131 ms</span>
+                <span class="method-name">tearDown([TestResult name=AddCommunicationInfoToFavoriteViewlet status=SUCCESS method=CommInfoViewlet.AddComm...)</span>
+                <span class="method-start">357635 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">DeleteDashboardUsingCrossIcon(DashboardRenamed, org.testng.TestRunner@35f639fa)</span>
-                <span class="method-start">220268 ms</span>
+                <span class="method-name">CompareCommunicationInfos(Comm info, org.testng.TestRunner@554cd74a)</span>
+                <span class="method-start">359714 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=DeleteDashboardUsingCrossIcon status=SUCCESS method=DashboardOptions.DeleteDashboar...)</span>
-                <span class="method-start">242888 ms</span>
+                <span class="method-name">tearDown([TestResult name=CompareCommunicationInfos status=SUCCESS method=CommInfoViewlet.CompareCommunicatio...)</span>
+                <span class="method-start">391738 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">DeleteDashboardUsingDeleteOption(EMS Dashboard, org.testng.TestRunner@35f639fa)</span>
-                <span class="method-start">244145 ms</span>
+                <span class="method-name">DifferencesOfCommunicationInfos(Comm info, org.testng.TestRunner@554cd74a)</span>
+                <span class="method-start">393804 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=DeleteDashboardUsingDeleteOption status=SUCCESS method=DashboardOptions.DeleteDashb...)</span>
-                <span class="method-start">276508 ms</span>
+                <span class="method-name">tearDown([TestResult name=DifferencesOfCommunicationInfos status=SUCCESS method=CommInfoViewlet.DifferencesOf...)</span>
+                <span class="method-start">425523 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">RemoveDashboardUsingOption(DashboardRenamed, org.testng.TestRunner@35f639fa)</span>
-                <span class="method-start">277689 ms</span>
+                <span class="method-name">AddMultipleCommumicationInfosToFavoriteViewlet(Communication info fav, org.testng.TestRunner@554cd74a)</span>
+                <span class="method-start">427527 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=RemoveDashboardUsingOption status=SUCCESS method=DashboardOptions.RemoveDashboardUs...)</span>
-                <span class="method-start">330910 ms</span>
+                <span class="method-name">tearDown([TestResult name=AddMultipleCommumicationInfosToFavoriteViewlet status=SUCCESS method=CommInfoViewle...)</span>
+                <span class="method-start">470384 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">Logout(DashboardRenamed)</span>
-                <span class="method-start">332000 ms</span>
+                <span class="method-name">ShowObjectAttributes(Comm info, Comm info schema, org.testng.TestRunner@554cd74a)</span>
+                <span class="method-start">472609 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=Logout status=SUCCESS method=DashboardOptions.Logout(java.lang.String)[pri:20, inst...)</span>
-                <span class="method-start">359700 ms</span>
+                <span class="method-name">tearDown([TestResult name=ShowObjectAttributes status=SUCCESS method=CommInfoViewlet.ShowObjectAttributes(jav...)</span>
+                <span class="method-start">613969 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Logout(Comm info)</span>
+                <span class="method-start">616000 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=Logout status=SUCCESS method=CommInfoViewlet.Logout(java.lang.String)[pri:21, insta...)</span>
+                <span class="method-start">643081 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

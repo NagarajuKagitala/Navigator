@@ -47,9 +47,9 @@
         <include name="ComapareChannels"/> 
         <include name="CheckDifferencesForChannels"/>
         <include name="ShowChannelStatusForMultiple"/> 
-        <include name="CopyAsMultipleChannels"/>
+      <!--   <include name="CopyAsMultipleChannels"/>
         <include name="RenameMultipleChannels"/>
-        <include name="DeleteMultipleChannels"/>
+        <include name="DeleteMultipleChannels"/> -->
         <include name="MultipleProperties"/> 
         <include name="AddToFavoriteForMultipleChannels"/>    
         <include name="Logout"/> 
