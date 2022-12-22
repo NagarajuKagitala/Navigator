@@ -124,8 +124,9 @@ public class ChannelAuthRecordsViewlet
 		//Click on Create button
 		//driver.findElement(By.xpath("//app-side-dashboard-menu/div/div/div[2]/div[2]")).click();
 		driver.findElement(By.cssSelector("div.block-with-border")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("dashboardName")).sendKeys(Dashboardname);
+		Thread.sleep(LowSleep);
 			
 		//Create viewlet button
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
@@ -176,13 +177,15 @@ public class ChannelAuthRecordsViewlet
 			//Give the process name
 			driver.findElement(By.id("name")).clear();
 			driver.findElement(By.id("name")).sendKeys(ChannelAuthNameFromOptions);
+			Thread.sleep(LowSleep);
 			
 			//Go to Block tab
 			driver.findElement(By.linkText("Block")).click();
 			Thread.sleep(LowSleep);
 			
 			//Give the User list name
-			driver.findElement(By.id("userIdList")).sendKeys(UserList);		
+			driver.findElement(By.id("userIdList")).sendKeys(UserList);	
+			Thread.sleep(LowSleep);
 			
 			//Click on Submit the ChannelAuth
 			driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -254,6 +257,7 @@ public class ChannelAuthRecordsViewlet
 	    	//Search with added channelAuth record
 	    	driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
 	    	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(ChannelAuthNameFromOptions);
+	    	Thread.sleep(LowSleep);
 	    	
 			//Select Delete From commands
 			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
@@ -432,12 +436,16 @@ public class ChannelAuthRecordsViewlet
 			
 			//Create favorite viewlet
 			driver.findElement(By.xpath("//button[3]")).click();
+			Thread.sleep(LowSleep);
 			driver.findElement(By.id("fav")).click();
+			Thread.sleep(LowSleep);
 			driver.findElement(By.cssSelector("div.mod-select-viewlet-buttons > button.g-button-blue")).click();
+			Thread.sleep(LowSleep);
 			
 			//Viewlet Name
 			driver.findElement(By.name("viewlet-name")).click();
 			driver.findElement(By.name("viewlet-name")).sendKeys(FavoriteViewletName);
+			Thread.sleep(LowSleep);
 			
 			//Select WGS dropdown
 			driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div/div[2]/div/ng-select/div/span")).click();
@@ -604,13 +612,15 @@ public class ChannelAuthRecordsViewlet
 			//Give the name of the Channel auth name
 			driver.findElement(By.id("name")).clear();
 			driver.findElement(By.id("name")).sendKeys(ChannelAuthNameFromIcon);
+			Thread.sleep(LowSleep);
 			
 			//Go to Block tab
 			driver.findElement(By.linkText("Block")).click();
 			Thread.sleep(LowSleep);
 			
 			//Give the User list name
-			driver.findElement(By.id("userIdList")).sendKeys(UserList);		
+			driver.findElement(By.id("userIdList")).sendKeys(UserList);	
+			Thread.sleep(LowSleep);
 			
 			//Click on Submit the ChannelAuth
 			driver.findElement(By.xpath("//div[2]/div/div/div/button")).click();
@@ -620,11 +630,13 @@ public class ChannelAuthRecordsViewlet
 			{
 				driver.findElement(By.id("yes")).click();
 				driver.findElement(By.xpath("//div[2]/div/div/div[3]/button")).click();
+				Thread.sleep(LowSleep);
 				
 				try
 				{
 					driver.findElement(By.id("yes")).click();
 					driver.findElement(By.xpath("//div[2]/div/div/div[3]/button")).click();
+					Thread.sleep(LowSleep);
 				}
 				catch (Exception e)
 				{
@@ -702,23 +714,24 @@ public class ChannelAuthRecordsViewlet
 			//Send the New name into field
 			driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
 	    	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(DeletedChannelAuthRecords);
-	    	Thread.sleep(2000);
+	    	Thread.sleep(LowSleep);
 	    	
 	    	//Select the multiple processes and choose Add to favorite viewlet option
 			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 			Actions Mousehoverdelete=new Actions(driver);
 	    	Mousehoverdelete.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
 	    	driver.findElement(By.linkText("Delete")).click();
-			Thread.sleep(1000);
+			Thread.sleep(LowSleep);
 			
 	    	//Click on Yes
 	    	driver.findElement(By.cssSelector(".btn-primary")).click();
-	    	Thread.sleep(8000);
+	    	Thread.sleep(MediumSleep);
 	    	
 	    	//Refresh the viewlet
 	    	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-	    	Thread.sleep(4000);
+	    	Thread.sleep(MediumSleep);
 	    	
 	    	//Store the viewlet data into string
 	    	String Subviewlet=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -757,6 +770,7 @@ public class ChannelAuthRecordsViewlet
 			
 			//Select the multiple processes and choose Add to favorite viewlet option
 			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 			driver.findElement(By.linkText("Properties...")).click();
 			Thread.sleep(LowSleep);
@@ -764,6 +778,7 @@ public class ChannelAuthRecordsViewlet
 			//Give the description for multiple channel auth records
 			driver.findElement(By.id("chAuthDescription")).clear();
 			driver.findElement(By.id("chAuthDescription")).sendKeys(MultipleDescription);
+			Thread.sleep(LowSleep);
 						
 			//click on OK
 			driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -835,6 +850,7 @@ public class ChannelAuthRecordsViewlet
 			
 			//Select the multiple processes and choose Add to favorite viewlet option
 			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 			driver.findElement(By.linkText("Add to favorites...")).click();
 			Thread.sleep(LowSleep);

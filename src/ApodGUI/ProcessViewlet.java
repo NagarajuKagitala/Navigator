@@ -125,9 +125,9 @@ public class ProcessViewlet
 		//Click on Create button
 		//driver.findElement(By.xpath("//app-side-dashboard-menu/div/div/div[2]/div[2]")).click();
 		driver.findElement(By.cssSelector("div.block-with-border")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("dashboardName")).sendKeys(Dashboardname);
-		
+		Thread.sleep(LowSleep);
 		
 		/*driver.findElement(By.id("createInitialViewlets")).click();
 		//Work group server selection
@@ -182,6 +182,7 @@ public class ProcessViewlet
 		{
 		//Click on + Icon for creating the process
 		driver.findElement(By.xpath("//img[@title='Add Process']")).click();
+		Thread.sleep(LowSleep);
 		
 		//Select WGS
 		/*
@@ -249,17 +250,20 @@ public class ProcessViewlet
 		
 		//Click on Select path
         driver.findElement(By.xpath("//button[contains(.,'Select path')]")).click();
-		Thread.sleep(2000);
+        Thread.sleep(LowSleep);
 		
 		//Enter the process name
 		driver.findElement(By.id("name")).clear();
 		driver.findElement(By.id("name")).sendKeys(NewProcessName);
+		Thread.sleep(LowSleep);
 		
 		//Enter the description
 		driver.findElement(By.id("description")).sendKeys(ProcessDescription);
+		Thread.sleep(LowSleep);
 		
 		//Enter the application id
 		driver.findElement(By.id("applicationId")).sendKeys(ApplicationId);
+		Thread.sleep(LowSleep);
 		
 		//Click on Submit the process
 		driver.findElement(By.xpath("//div[2]/div/div/div/button")).click();
@@ -268,10 +272,10 @@ public class ProcessViewlet
 		try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(2000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//div[2]/div/div/div[3]/button")).click();
 			//driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -338,7 +342,7 @@ public class ProcessViewlet
 		
 		//Search with the added process name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(NewProcessName);
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
     	
     			
 		//Select Copy as From commands
@@ -346,7 +350,7 @@ public class ProcessViewlet
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Copy As...")).click();
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
     	
     	//Give the object name   
     	driver.findElement(By.xpath("//app-mod-viewlet-object-copy-as/div/div[2]/div/input")).sendKeys(CopyObjectName);
@@ -356,9 +360,9 @@ public class ProcessViewlet
     	try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(2000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -369,7 +373,7 @@ public class ProcessViewlet
     	for(int i=0; i<=2; i++)
     	{
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	}
     	
     	//Combining the strings 
@@ -420,14 +424,14 @@ public class ProcessViewlet
     	
 		//Search with that name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(CopyasProcessName);
-    	Thread.sleep(2000); 
+    	Thread.sleep(LowSleep); 
     	    	
 		//Select Rename From commands
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Rename")).click();
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
 		
     	//Send the New name into field
     	driver.findElement(By.xpath("//app-mod-viewlet-object-rename/div/div/div[2]/input")).sendKeys(RenameProcess);
@@ -437,9 +441,9 @@ public class ProcessViewlet
     	try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(2000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -452,18 +456,18 @@ public class ProcessViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);	
+    	Thread.sleep(LowSleep);
     	
     	//Refresh the viewlet
     	for(int i=0; i<=2; i++)
     	{
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	}
     	
     	//Search with renamed name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(RenameProcess);
-    	Thread.sleep(3000); 
+    	Thread.sleep(LowSleep); 
     	
     	//Store the Subscription name into string
     	String ModifiedName=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -475,7 +479,7 @@ public class ProcessViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);
+		Thread.sleep(LowSleep);
     	
     	//Verification condition
     	if(ModifiedName.contains(RenameProcess))
@@ -505,14 +509,14 @@ public class ProcessViewlet
 		
 		//Search with renamed name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(RenameProcess);
-    	Thread.sleep(3000);   	
+    	Thread.sleep(LowSleep);   	
     	    	
 		//Select Delete From commands
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Delete")).click();
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
 		
     	//Click on Yes
     	driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -528,7 +532,7 @@ public class ProcessViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);
+		Thread.sleep(LowSleep);
     	
     	//Verification of Subscription delete
     	if(Subviewlet.contains(RenameProcess))
@@ -565,7 +569,7 @@ public class ProcessViewlet
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("MQSC"))).perform();
     	driver.findElement(By.linkText("Snapshot...")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(MediumSleep);
     	
     	//Get the snapshot data and store into string
     	String SnapshotData=driver.findElement(By.xpath("//textarea")).getText();
@@ -672,13 +676,16 @@ public class ProcessViewlet
 		
 		//Create favorite viewlet
 		driver.findElement(By.xpath("//button[3]")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("fav")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector("div.mod-select-viewlet-buttons > button.g-button-blue")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Viewlet Name
 		driver.findElement(By.name("viewlet-name")).click();
 		driver.findElement(By.name("viewlet-name")).sendKeys(FavoriteViewletName);
+		Thread.sleep(LowSleep);
 		
 		//Select WGS dropdown
 		driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div/div[2]/div/ng-select/div/span")).click();
@@ -710,7 +717,7 @@ public class ProcessViewlet
 		//Select Add to Favorites option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Add to favorites...")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Select favorite viewlet
 		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();
@@ -767,12 +774,12 @@ public class ProcessViewlet
 		//Select create process option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Create Process")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Give the process name
 		driver.findElement(By.id("name")).clear();
 		driver.findElement(By.id("name")).sendKeys(ProcessNameFromOptions);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		/*//Select Topic name
 		Select Topic=new Select(driver.findElement(By.xpath("//ng-select/div")));
@@ -786,10 +793,11 @@ public class ProcessViewlet
 		
 		//Enter the description
 		driver.findElement(By.id("description")).sendKeys(ProcessDescriptionFromOptions);
+		Thread.sleep(LowSleep);
 		
 		//Enter the application id
 		driver.findElement(By.id("applicationId")).sendKeys(ApplicationIdFromOptions);
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		//Click on Submit the process
 		driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -798,9 +806,9 @@ public class ProcessViewlet
 		try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(2000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -895,7 +903,7 @@ public class ProcessViewlet
 					Actions Mousehovercopy=new Actions(driver);
 					Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
 			    	driver.findElement(By.linkText("Copy As...")).click();
-					Thread.sleep(4000);
+			    	Thread.sleep(LowSleep);
 					
 					//Get the Existing process name
 					String ExistingProcess=driver.findElement(By.xpath("//app-mod-viewlet-object-copy-as/div/div[2]/div/input")).getAttribute("value");
@@ -911,9 +919,9 @@ public class ProcessViewlet
 			    	try
 					{
 						driver.findElement(By.id("yes")).click();
-						Thread.sleep(2000);
+						Thread.sleep(LowSleep);
 						driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-						Thread.sleep(3000);
+						Thread.sleep(LowSleep);
 					}
 					catch (Exception e)
 					{
@@ -922,12 +930,12 @@ public class ProcessViewlet
 			    	   	
 			    	//Refresh the viewlet
 			    	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			    	Thread.sleep(4000);
+			    	Thread.sleep(LowSleep);
 			    	
 			    	//Search with that name
 			    	driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
 			    	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(FinalProcess);
-			    	Thread.sleep(2000);
+			    	Thread.sleep(LowSleep);
 			    	
 			    	//Store the viewlet data into string
 			    	String Subviewlet=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -982,18 +990,18 @@ public class ProcessViewlet
 		//Search
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(FinalProcess);
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
     	    	
 		//Select the multiple processes and choose Add to favorite viewlet option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Actions Mousehovercopy=new Actions(driver);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Rename")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
     	//Send the New name into field
     	driver.findElement(By.xpath("//app-mod-viewlet-object-rename/div/div/div[2]/input")).sendKeys(RenameProcessForMultiple);
@@ -1003,9 +1011,9 @@ public class ProcessViewlet
     	try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(2000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -1019,12 +1027,12 @@ public class ProcessViewlet
     	
     	//Refresh the viewlet
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	
     	//Search with that name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(RenameProcessForMultiple);
-    	Thread.sleep(1000);
+    	Thread.sleep(LowSleep);
     	    	
     	//Store the Subscription name into string
     	String ModifiedName=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -1064,7 +1072,7 @@ public class ProcessViewlet
 		//Send the New name into field
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(RenameProcessForMultiple);
-    	Thread.sleep(2000);
+    	Thread.sleep(LowSleep);
     	    	
     	//Select the multiple processes and choose Add to favorite viewlet option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
@@ -1080,7 +1088,7 @@ public class ProcessViewlet
     	
     	//Refresh the viewlet
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	
     	//Store the viewlet data into string
     	String Subviewlet=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -1131,10 +1139,12 @@ public class ProcessViewlet
 		//Give the description for multiple process
 		driver.findElement(By.id("description")).clear();
 		driver.findElement(By.id("description")).sendKeys(MultipleDescription);
+		Thread.sleep(LowSleep);
 		
 		//Give the application id for multiple process
 		driver.findElement(By.id("applicationId")).clear();
 		driver.findElement(By.id("applicationId")).sendKeys(AppID);
+		Thread.sleep(LowSleep);
 		
 		//click on OK
 		driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -1147,7 +1157,7 @@ public class ProcessViewlet
 		//Open the properties for First process
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(LowSleep);
+		Thread.sleep(MediumSleep);
 		
 		//Get the description and application id for First process
 		String FirstDescription=driver.findElement(By.id("description")).getAttribute("value");
@@ -1164,7 +1174,7 @@ public class ProcessViewlet
 		//Open the properties for First process
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(LowSleep);
+		Thread.sleep(MediumSleep);
 				
 		//Get the description and application id for First process
 		String SecondDescription=driver.findElement(By.id("description")).getAttribute("value");
@@ -1210,7 +1220,7 @@ public class ProcessViewlet
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Add to favorites...")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
         //Select favorite viewlet
 		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();

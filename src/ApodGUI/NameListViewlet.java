@@ -126,7 +126,7 @@ public class NameListViewlet
 		//Click on Create button
 		//driver.findElement(By.xpath("//app-side-dashboard-menu/div/div/div[2]/div[2]")).click();
 		driver.findElement(By.cssSelector("div.block-with-border")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("dashboardName")).sendKeys(Dashboardname);
 		
 		
@@ -156,7 +156,8 @@ public class NameListViewlet
 	{
 		Viewlets obj=new Viewlets();
 		obj.IBMMQViewlet(driver, ViewletValue, ViewletName, WGSName, Node_Hostname);
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
+		
 		//System.out.println(driver.getPageSource());
 		if(driver.getPageSource().contains(ViewletName))
 		{
@@ -212,9 +213,11 @@ public class NameListViewlet
 		//Give the process name
 		driver.findElement(By.id("name")).clear();
 		driver.findElement(By.id("name")).sendKeys(NameListNameFromOptions);
+		Thread.sleep(LowSleep);
 				
 		//Enter the description
 		driver.findElement(By.id("description")).sendKeys(NameListDescriptionFromOptions);
+		Thread.sleep(LowSleep);
 		
 		//Enter the application id
 		//driver.findElement(By.id("namelistNames")).sendKeys(NameListNamesFromOptions);
@@ -227,9 +230,9 @@ public class NameListViewlet
 		try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(2000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -238,7 +241,7 @@ public class NameListViewlet
 		
 		//Search with renamed name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(NameListNameFromOptions);
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
 		
 		//Store the process viewlet data into string
 		String NameListdata=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -250,7 +253,7 @@ public class NameListViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
     	//Verification 
 		if(NameListdata.contains(NameListNameFromOptions))
@@ -275,6 +278,7 @@ public class NameListViewlet
     		context.setAttribute("Comment", "Got an exception while creating name list name, check details: "+ e.getMessage());
 			//Click on Close button
 			driver.findElement(By.xpath("//div[3]/button")).click();
+			Thread.sleep(LowSleep);
 			
 			System.out.println("Unable to create the name list from options");
 			
@@ -292,14 +296,14 @@ public class NameListViewlet
 		
 		//Search with the added process name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(NameListNameFromOptions);
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
     			
 		//Select Copy as From commands
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Copy As...")).click();
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
     	
     	//Give the object name
     	driver.findElement(By.xpath("//app-mod-viewlet-object-copy-as/div/div[2]/div/input")).sendKeys(CopyObjectName);
@@ -309,9 +313,9 @@ public class NameListViewlet
     	try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(2000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -322,7 +326,7 @@ public class NameListViewlet
     	for(int i=0; i<=2; i++)
     	{
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	}
     	
     	//Combining the strings 
@@ -339,7 +343,7 @@ public class NameListViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	
     	//Verification condition
     	if(Subviewlet.contains(CopyasNameList))
@@ -373,14 +377,14 @@ public class NameListViewlet
     	
 		//Search with that name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(CopyasNameListName);
-    	Thread.sleep(2000); 
+    	Thread.sleep(LowSleep); 
     	    			
 		//Select Rename From commands
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Rename")).click();
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
 		
     	//Send the New name into field
     	driver.findElement(By.xpath("//app-mod-viewlet-object-rename/div/div/div[2]/input")).sendKeys(RenameNameList);
@@ -390,9 +394,9 @@ public class NameListViewlet
     	try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(2000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -405,18 +409,18 @@ public class NameListViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);	
+    	Thread.sleep(LowSleep);	
     	
     	//Refresh the viewlet
     	for(int i=0; i<=2; i++)
     	{
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	}
     	
     	//Search with renamed name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(RenameNameList);
-    	Thread.sleep(3000); 
+    	Thread.sleep(LowSleep);
     	
     	//Store the Subscription name into string
     	String ModifiedName=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -428,7 +432,7 @@ public class NameListViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);
+		Thread.sleep(LowSleep);
     	
     	//Verification condition
     	if(ModifiedName.contains(RenameNameList))
@@ -458,14 +462,14 @@ public class NameListViewlet
 		
 		//Search with renamed name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(RenameNameList);
-    	Thread.sleep(3000);   
+    	Thread.sleep(LowSleep);   
     	    	
 		//Select Delete From commands
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Delete")).click();
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
 		
     	//Click on Yes
     	driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -481,7 +485,7 @@ public class NameListViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);
+		Thread.sleep(LowSleep);
     	
     	//Verification of Subscription delete
     	if(Subviewlet.contains(RenameNameList))
@@ -518,7 +522,7 @@ public class NameListViewlet
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("MQSC"))).perform();
     	driver.findElement(By.linkText("Snapshot...")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	
     	//Get the snapshot data and store into string
     	String SnapshotData=driver.findElement(By.xpath("//textarea")).getText();
@@ -625,13 +629,16 @@ public class NameListViewlet
 		
 		//Create favorite viewlet
 		driver.findElement(By.xpath("//button[3]")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("fav")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector("div.mod-select-viewlet-buttons > button.g-button-blue")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Viewlet Name
 		driver.findElement(By.name("viewlet-name")).click();
 		driver.findElement(By.name("viewlet-name")).sendKeys(FavoriteViewletName);
+		Thread.sleep(LowSleep);
 		
 		//Select WGS dropdown
 		driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div/div[2]/div/ng-select/div/span")).click();
@@ -662,9 +669,9 @@ public class NameListViewlet
 		
 		//Add to favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Add to favorites...")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();
 		Thread.sleep(LowSleep); 
@@ -748,6 +755,7 @@ public class NameListViewlet
 		{
 		//Click on + icon present in the viewlet
 		driver.findElement(By.xpath("//img[@title='Add Namelist']")).click();
+		Thread.sleep(LowSleep);
 		
 		//Select WGS
 		/*
@@ -756,7 +764,7 @@ public class NameListViewlet
 		 */
 		
 		driver.findElement(By.xpath("//app-mod-select-object-path-for-create/div/div/ng-select/div/span")).click();
-		Thread.sleep(5000);
+		Thread.sleep(LowSleep);
 		try 
 		{
 			WebElement ChannelauthNode=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -791,7 +799,7 @@ public class NameListViewlet
 		
 		//Select Manager
 		driver.findElement(By.xpath("//app-mod-select-object-path-for-create/div/div[2]/ng-select/div/span")).click();
-		Thread.sleep(5000);
+		Thread.sleep(LowSleep);
         try 
 		{
         	WebElement ChannelAuthManager=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -815,15 +823,16 @@ public class NameListViewlet
 				
 		//Click on Select path button
         driver.findElement(By.xpath("//button[contains(.,'Select path')]")).click();
-		Thread.sleep(4000);
+        Thread.sleep(LowSleep);
 		
 		//Create page
 		driver.findElement(By.id("name")).clear();
 		driver.findElement(By.id("name")).sendKeys(NameListFromICon);
+		Thread.sleep(LowSleep);
 		
 		//Description
 		driver.findElement(By.id("description")).sendKeys(DescriptionFromIcon);
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		//Click on OK button
 		driver.findElement(By.xpath("//button[contains(.,'Ok')]")).click();
@@ -832,10 +841,10 @@ public class NameListViewlet
 		try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(2000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//div[2]/div/div/div[3]/button")).click();
 			//driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -844,11 +853,11 @@ public class NameListViewlet
 		
 		//Click on Refresh
 		driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		//Search option
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(NameListFromICon);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Store the viewlet data into string
 		String NameListdata=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -891,7 +900,7 @@ public class NameListViewlet
 		//Search with that name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(NameListFromICon);
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
     	    	
 		//Select Copy as From commands
     	driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
@@ -899,7 +908,7 @@ public class NameListViewlet
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Copy As...")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	
     	//Get the existing name
     	String ExistingNameList=driver.findElement(By.xpath("//app-mod-viewlet-object-copy-as/div/div[2]/div/input")).getAttribute("value");
@@ -909,6 +918,7 @@ public class NameListViewlet
     	System.out.println("Existing name list name is: " +ExistingNameList1);
     	
     	driver.findElement(By.xpath("//app-mod-viewlet-object-copy-as/div/div[2]/div/input")).sendKeys(CopyObjectNameForMUltiple);
+    	Thread.sleep(LowSleep);
     	
     	//click on ok button
     	driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -917,9 +927,9 @@ public class NameListViewlet
     	try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(8000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -935,12 +945,12 @@ public class NameListViewlet
     	
     	//Refresh the viewlet
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	
     	//Search with that name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(FinalListenerName);
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
     	
     	//Store the viewlet data into string
     	String Subviewlet=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -980,15 +990,16 @@ public class NameListViewlet
 		//Search with that name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(FinalListenerName);
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
     	    	
 		//Select Rename From commands
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Rename")).click();
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
 		
     	//Send the New name into field
     	driver.findElement(By.xpath("//app-mod-viewlet-object-rename/div/div/div[2]/input")).sendKeys(RenameNameListForMultiple);
@@ -998,9 +1009,9 @@ public class NameListViewlet
     	try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(2000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -1014,12 +1025,12 @@ public class NameListViewlet
     	
     	//Refresh the viewlet
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	
     	//Search with that name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(RenameNameListForMultiple);
-    	Thread.sleep(3000);  	
+    	Thread.sleep(LowSleep); 	
     	
     	//Store the Subscription name into string
     	String ModifiedName=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -1059,15 +1070,16 @@ public class NameListViewlet
 		//Search with that name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(RenameNameListForMultiple);
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
     	    	
 		//Select Delete From commands
     	driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+    	Thread.sleep(LowSleep);
+    	driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Delete")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
 		
     	//Click on Yes
     	driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -1075,7 +1087,7 @@ public class NameListViewlet
     	
     	//Refresh the viewlet
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	
     	//Store the viewlet data into string
     	String Subviewlet=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -1116,12 +1128,12 @@ public class NameListViewlet
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		//give the description
 		driver.findElement(By.id("description")).clear();
 		driver.findElement(By.id("description")).sendKeys(NameListMultipleDescription);
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 	
 		//Close the properties page
 		driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -1134,7 +1146,7 @@ public class NameListViewlet
 		//Open the first listener properties page
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		//Store the First listener description into string
 		String FirstDescription=driver.findElement(By.id("description")).getAttribute("value");
@@ -1150,7 +1162,7 @@ public class NameListViewlet
 		//Open the second listener name
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		//Store the second listener description into string
 		String SecondDescription=driver.findElement(By.id("description")).getAttribute("value");

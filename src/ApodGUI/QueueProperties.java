@@ -25,7 +25,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import org.w3c.dom.NodeList;
+//import org.w3c.dom.NodeList;
 
 import Common.ClearSelectionofCheckbox;
 import Common.Dashboard;
@@ -116,8 +116,9 @@ public class QueueProperties
 		//Click on Create button
 		//driver.findElement(By.xpath("//app-side-dashboard-menu/div/div/div[2]/div[2]")).click();
 		driver.findElement(By.cssSelector("div.block-with-border")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("dashboardName")).sendKeys(Dashboardname);
+		Thread.sleep(LowSleep);
 			
 		//Create viewlet button
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
@@ -182,7 +183,7 @@ public class QueueProperties
 		//Select Browse Messages Option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		//change put message to inhibited
 		Select inhibited=new Select(driver.findElement(By.id("putAllowed")));
@@ -196,7 +197,7 @@ public class QueueProperties
 		che1.Deselectcheckbox(Dashboardname,driver);
 		
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		Thread.sleep(6000);
+		Thread.sleep(MediumSleep);
 		
 		WebElement ele=driver.findElement(By.className("wrapper-dropdown")).findElement(By.tagName("ul"));
 		List<WebElement> lst=ele.findElements(By.tagName("span"));
@@ -239,7 +240,7 @@ public class QueueProperties
 		
 		//Refresh viewlet
 		driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		if(Listofoptions.contains("Put New Message"))
 		{
@@ -271,12 +272,12 @@ public class QueueProperties
 		//Select Browse Messages Option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		//change put message to inhibited
 		Select inhibited=new Select(driver.findElement(By.id("getAllowed")));
 		inhibited.selectByVisibleText(GetMessageOption);
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(HighSleep);
@@ -315,7 +316,7 @@ public class QueueProperties
 		
 		//Refresh viewlet
 		driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		if(OptionsNames.contains("Browse messages"))
 		{
@@ -370,7 +371,7 @@ public class QueueProperties
 		
 		driver.findElement(By.id("maxQueueDepth")).clear();
 		driver.findElement(By.id("maxQueueDepth")).sendKeys(Integer.toString(MaxDepth));
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//click on ok button
 		driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -382,12 +383,12 @@ public class QueueProperties
 		for(int i=0; i<=3; i++)
 		{
 			driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			Thread.sleep(5000);
+			Thread.sleep(LowSleep);
 		}
 		
 		MaximumDepth(Dashboardname);
 		driver.findElement(By.id("maxQueueDepth")).sendKeys(valuem);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//click on ok button
 		driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -455,6 +456,7 @@ public class QueueProperties
 		
 		//Edit max message length
 		driver.findElement(By.id("maxMsgLength")).sendKeys("100");
+		Thread.sleep(LowSleep);
 		
 		//click on ok button
 		driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -466,7 +468,7 @@ public class QueueProperties
 		for(int i=0; i<=3; i++)
 		{
 			driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			Thread.sleep(5000);
+			Thread.sleep(LowSleep);
 		}
 		
 		//get the current depth and store into string
@@ -492,7 +494,7 @@ public class QueueProperties
 			
 			//click on ok button
 			driver.findElement(By.cssSelector(".btn-primary")).click();
-			Thread.sleep(4000);
+			Thread.sleep(MediumSleep);
 			
 			driver.findElement(By.id("Maximum msg length failed")).click();
 		}
@@ -501,7 +503,7 @@ public class QueueProperties
 		//Get the depth				
 		driver.findElement(By.id("maxMsgLength")).clear();
 		driver.findElement(By.id("maxMsgLength")).sendKeys(MsgDepth);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//click on ok button
 		driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -840,11 +842,11 @@ public class QueueProperties
 		//Open properties page
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(6000);
+		Thread.sleep(MediumSleep);
 		
 		//Click on Extend tab
 		driver.findElement(By.linkText("Extended")).click();
-		Thread.sleep(5000);
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.id("maxQueueDepth")).clear();			
 	}
@@ -858,11 +860,11 @@ public class QueueProperties
 		//Open properties page
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		//Click on Extend tab
 		driver.findElement(By.linkText("Extended")).click();
-		Thread.sleep(3000);			
+		Thread.sleep(LowSleep);		
 	}
 	
 	public void Putmessage(String Dashboardname, String Message, int size) throws InterruptedException
@@ -876,25 +878,27 @@ public class QueueProperties
 		Actions PutMessagesMousehour=new Actions(driver);
 		PutMessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Put New Message")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Select the number of messages
 		driver.findElement(By.name("generalNumberOfMsgs")).click();
 		driver.findElement(By.name("generalNumberOfMsgs")).clear();
 		driver.findElement(By.name("generalNumberOfMsgs")).sendKeys(Integer.toString(size));
+		Thread.sleep(LowSleep);
 		
 		//Put a message data
 		//driver.findElement(By.id("encoding-text-9")).click();
 		driver.findElement(By.xpath("//textarea")).sendKeys(Message);
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector("button.btn.btn-primary")).click();
 		Thread.sleep(MediumSleep);
 		
 		try
 		{
 			driver.findElement(By.id("yes")).click();
+			Thread.sleep(LowSleep);
 			driver.findElement(By.cssSelector(".btn-danger")).click();
-			Thread.sleep(2000);
+			Thread.sleep(MediumSleep);
 		}
 		catch (Exception e)
 		{
@@ -978,12 +982,12 @@ public class QueueProperties
 		//Select Browse Messages Option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		//change put message to inhibited
 		Select inhibited=new Select(driver.findElement(By.id("getAllowed")));
 		inhibited.selectByVisibleText("Allowed");
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);	
@@ -998,12 +1002,12 @@ public class QueueProperties
 		//Select Browse Messages Option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		//change put message to inhibited
 		Select inhibited=new Select(driver.findElement(By.id("putAllowed")));
 		inhibited.selectByVisibleText("Allowed");
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);	

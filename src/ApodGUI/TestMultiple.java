@@ -8,18 +8,18 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import javax.xml.parsers.ParserConfigurationException;
+//import javax.xml.parsers.ParserConfigurationException;
 import org.testng.xml.Parser;
 import org.testng.xml.XmlSuite;
 
 import org.testng.TestNG;
-import org.xml.sax.SAXException;
+//import org.xml.sax.SAXException;
 
 
 public class TestMultiple 
 {
 
-	public static void main(String[] args) throws FileNotFoundException, ParserConfigurationException, SAXException, IOException {
+	public static void main(String[] args) throws FileNotFoundException, IOException {
 		
 	//PrintStream fileOut = new PrintStream("Log.txt");
 	//System.setOut(fileOut);

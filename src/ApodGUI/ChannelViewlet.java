@@ -124,7 +124,7 @@ public class ChannelViewlet
 		//Click on Create button
 		//driver.findElement(By.xpath("//app-side-dashboard-menu/div/div/div[2]/div[2]")).click();
 		driver.findElement(By.cssSelector("div.block-with-border")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("dashboardName")).sendKeys(Dashboardname);
 		/*driver.findElement(By.id("createInitialViewlets")).click();
 		
@@ -158,6 +158,7 @@ public class ChannelViewlet
 		WebElement Checkbox = driver.findElement(By.id("inactive-channels"));
 		if (Checkbox.isSelected()) {
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
+			Thread.sleep(LowSleep);
 		} else {
 			Checkbox.click();
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
@@ -240,13 +241,13 @@ public class ChannelViewlet
 			context.setAttribute("Comment", "Failed to verify channel status");
 			//Close Channel status popup page
 			driver.findElement(By.cssSelector(".close-button")).click();
-			Thread.sleep(1000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.cssSelector("Channel status failed")).click();
 		}
 		
 		//Close Channel status popup page
 		driver.findElement(By.cssSelector(".close-button")).click();
-		Thread.sleep(LowSleep);
+		Thread.sleep(MediumSleep);
 	}
 	
 	@TestRail(testCaseId=758)
@@ -260,6 +261,7 @@ public class ChannelViewlet
 		
 		//Click on + icon
 		driver.findElement(By.xpath("//img[@title='Add Channel']")).click();
+		Thread.sleep(LowSleep);
 		
 		//Select WGS
 		/*
@@ -363,10 +365,12 @@ public class ChannelViewlet
 		//Channel name
 		driver.findElement(By.id("name")).clear();
 		driver.findElement(By.id("name")).sendKeys(ChannelName);
+		Thread.sleep(LowSleep);
 		
 		//Connection name
 		driver.findElement(By.id("connectionName")).clear();
 		driver.findElement(By.id("connectionName")).sendKeys(ConnectionName);
+		Thread.sleep(LowSleep);
 		
 		//Click on Transmission queue
 		driver.findElement(By.cssSelector("#generalObjName input")).click();
@@ -390,7 +394,7 @@ public class ChannelViewlet
 		
 		//Click on Ok button
 		driver.findElement(By.xpath("//button[contains(.,'Ok')]")).click();
-		Thread.sleep(MediumSleep);
+		Thread.sleep(HighSleep);
 				
 		try
 		{
@@ -416,7 +420,7 @@ public class ChannelViewlet
 			Checkbox.click();
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		}
-		Thread.sleep(LowSleep);
+		Thread.sleep(MediumSleep);
 		
 		//Search with Added channel name
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(ChannelName);
@@ -624,14 +628,16 @@ public class ChannelViewlet
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Copy As...")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	
     	//Give the object name
     	driver.findElement(By.id("name")).sendKeys(CopyObjectName);
+    	Thread.sleep(LowSleep);
     	
     	//Give connection name
     	driver.findElement(By.id("connectionName")).clear();
     	driver.findElement(By.id("connectionName")).sendKeys(CopyAsConnection);
+    	Thread.sleep(LowSleep);
     	
     	//Click on OK button
     	driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -653,7 +659,7 @@ public class ChannelViewlet
     	for(int i=0; i<=2; i++)
     	{
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	}
     	
     	//Combining the strings 
@@ -670,7 +676,7 @@ public class ChannelViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	
     	//Verification condition
     	if(Subviewlet.contains(CopyasChannel))
@@ -736,13 +742,13 @@ public class ChannelViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);	
+    	Thread.sleep(LowSleep);	
     	
     	//Refresh the viewlet
     	for(int i=0; i<=2; i++)
     	{
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	}
     	
     	//Search with renamed name
@@ -759,7 +765,7 @@ public class ChannelViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	
     	//Verification condition
     	if(ModifiedName.contains(RenameChannel))
@@ -863,7 +869,7 @@ public class ChannelViewlet
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("MQSC"))).perform();
     	driver.findElement(By.linkText("Snapshot...")).click();
-    	Thread.sleep(LowSleep);
+    	Thread.sleep(MediumSleep);
     	
     	//Get the snapshot data and store into string
     	String SnapshotData=driver.findElement(By.xpath("//textarea")).getText();
@@ -924,7 +930,7 @@ public class ChannelViewlet
 		//Select channel properties option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(MediumSleep);
+		Thread.sleep(HighSleep);
 		
 		//Store the editable function in to a string
 		boolean FieldNamevalue=driver.findElement(By.id("name")).isEnabled();
@@ -937,7 +943,7 @@ public class ChannelViewlet
 			 driver.findElement(By.cssSelector(".btn-primary")).click();
 			 context.setAttribute("Status", 1);
 			 context.setAttribute("Comment", "Channel Name field is UnEditable");
-			 Thread.sleep(3000);
+			 Thread.sleep(MediumSleep);
 		}
 		else
 		{
@@ -945,7 +951,7 @@ public class ChannelViewlet
 			context.setAttribute("Status", 5);
 			 context.setAttribute("Comment", "Channel Name field is Editable");
 			driver.findElement(By.cssSelector(".btn-primary")).click();
-			Thread.sleep(3000);
+			Thread.sleep(MediumSleep);
 			driver.findElement(By.xpath("Channel name edit function Failed")).click();
 			
 		}
@@ -972,7 +978,9 @@ public class ChannelViewlet
 		
 		//CLick on Viewlet and choose favorite viewlet crate check box
 		driver.findElement(By.xpath("//button[3]")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("fav")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector("div.mod-select-viewlet-buttons > button.g-button-blue")).click();
 		Thread.sleep(LowSleep);
 		
@@ -1001,7 +1009,7 @@ public class ChannelViewlet
 		
 		//Submit
 		driver.findElement(By.cssSelector("div.g-block-bottom-buttons.buttons-block > button.g-button-blue")).click();
-		Thread.sleep(LowSleep);
+		Thread.sleep(MediumSleep);
 		
 		//Store String value
 		String channelName=driver.findElement(By.xpath("//datatable-body-cell[4]/div/span")).getText();
@@ -1011,7 +1019,7 @@ public class ChannelViewlet
 	       
 		//Select Add to Favorites option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		Thread.sleep(5000);
+		Thread.sleep(MediumSleep);
 		driver.findElement(By.linkText("Add to favorites...")).click();
 		Thread.sleep(LowSleep);
 		
@@ -1097,6 +1105,7 @@ public class ChannelViewlet
 		//Select Two channels and choose show channel status
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Show Channels Status")).click();
 		Thread.sleep(MediumSleep);
 		
@@ -1198,7 +1207,7 @@ public class ChannelViewlet
 		
 		//Close the popup window
 		driver.findElement(By.cssSelector(".close-button")).click();
-		Thread.sleep(1000);	
+		Thread.sleep(MediumSleep);	
 		
 	}
 	
@@ -1317,6 +1326,7 @@ public class ChannelViewlet
 					//Object Details
 					driver.findElement(By.id("name")).clear();
 					driver.findElement(By.id("name")).sendKeys(CopyAsNameForMultiple);
+					Thread.sleep(LowSleep);
 					
 					driver.findElement(By.cssSelector(".btn-primary")).click();
 					Thread.sleep(MediumSleep);
@@ -1337,7 +1347,7 @@ public class ChannelViewlet
 					for(int z=0; z<=2; z++)
 					{
 						driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-						Thread.sleep(6000);
+						Thread.sleep(LowSleep);
 					}
 					
 					//Search with empty queue name
@@ -1353,7 +1363,7 @@ public class ChannelViewlet
 					{
 						driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
 					}
-					Thread.sleep(2000);
+					Thread.sleep(LowSleep);
 					
 					if(ViewletData.contains(CopyAsNameForMultiple))
 					{
@@ -1395,7 +1405,8 @@ public class ChannelViewlet
 		//Select Rename From commands
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-    	Actions Mousehovercopy=new Actions(driver);
+		Thread.sleep(LowSleep);
+		Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Rename")).click();
     	Thread.sleep(LowSleep);
@@ -1404,6 +1415,7 @@ public class ChannelViewlet
     	driver.findElement(By.xpath("//app-mod-viewlet-object-rename/div/div/div[2]/input")).sendKeys(RenameMultipleChannels);
     	driver.findElement(By.cssSelector(".btn-primary")).click();
     	Thread.sleep(MediumSleep);
+    	
     	try
 		{
 			driver.findElement(By.id("yes")).click();
@@ -1422,13 +1434,13 @@ public class ChannelViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);	
+    	Thread.sleep(LowSleep);	
     	
     	//Refresh the viewlet
     	for(int i=0; i<=2; i++)
     	{
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	}
     	
     	//Search with renamed name
@@ -1445,7 +1457,7 @@ public class ChannelViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	
     	//Verification condition
     	if(ModifiedName.contains(RenameMultipleChannels))
@@ -1481,6 +1493,7 @@ public class ChannelViewlet
 		//Click on checkbox and choose delete option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(LowSleep);
 		Actions Commands=new Actions(driver);
 		Commands.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
 		driver.findElement(By.linkText("Delete Channel")).click();
@@ -1493,7 +1506,7 @@ public class ChannelViewlet
 		for(int i=0; i<=2; i++)
 		{
 			driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 		}
 		
 		
@@ -1546,12 +1559,14 @@ public class ChannelViewlet
 		//Select Two channels and choose properties option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Properties...")).click();
 		Thread.sleep(LowSleep);
 		
 		//Enter the Description
 		driver.findElement(By.id("description")).clear();
 		driver.findElement(By.id("description")).sendKeys(ChannelDescription);
+		Thread.sleep(LowSleep);
 		
 		//Enter the Connection name
 		//driver.findElement(By.id("connectionName")).clear();
@@ -1635,7 +1650,7 @@ public class ChannelViewlet
 		//Select Addto favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		Thread.sleep(5000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Add to favorites...")).click();
 		Thread.sleep(LowSleep);
 		
@@ -1686,11 +1701,13 @@ public class ChannelViewlet
 	{
 		//Restore default settings
 		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Restore Default')]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("accept-true")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(MediumSleep);
 		
 		LogoutForAll lo=new LogoutForAll();
 		lo.LogoutMethod(driver, Dashboardname);

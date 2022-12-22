@@ -124,8 +124,9 @@ public class ServiceViewlet {
 		//Click on Create button
 		//driver.findElement(By.xpath("//app-side-dashboard-menu/div/div/div[2]/div[2]")).click();
 		driver.findElement(By.cssSelector("div.block-with-border")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("dashboardName")).sendKeys(Dashboardname);
+		Thread.sleep(LowSleep);
 		
 		
 		/*driver.findElement(By.id("createInitialViewlets")).click();
@@ -199,6 +200,7 @@ public class ServiceViewlet {
 				
 		//Click on + icon present in the viewlet
 		driver.findElement(By.xpath("//img[@title='Add Service']")).click();
+		Thread.sleep(LowSleep);
 		
 		//Select WGS
 		/*
@@ -207,7 +209,7 @@ public class ServiceViewlet {
 		 */
 		
 		driver.findElement(By.xpath("//app-mod-select-object-path-for-create/div/div/ng-select/div/span")).click();
-		Thread.sleep(5000);
+		Thread.sleep(LowSleep);
 		try 
 		{
 			WebElement ChannelauthNode=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -242,7 +244,7 @@ public class ServiceViewlet {
 		
 		//Select Manager
 		driver.findElement(By.xpath("//app-mod-select-object-path-for-create/div/div[2]/ng-select/div/span")).click();
-		Thread.sleep(5000);
+		Thread.sleep(LowSleep);
         try 
 		{
         	WebElement ChannelAuthManager=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -266,15 +268,16 @@ public class ServiceViewlet {
 				
 		//Click on Select path button
         driver.findElement(By.xpath("//button[contains(.,'Select path')]")).click();
-		Thread.sleep(2000);
+        Thread.sleep(LowSleep);
 		
 		//Create page
 		driver.findElement(By.id("name")).clear();
 		driver.findElement(By.id("name")).sendKeys(ServiceFromICon);
+		Thread.sleep(LowSleep);
 		
 		//Description
 		driver.findElement(By.id("description")).sendKeys(DescriptionFromIcon);
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		//Click on OK button
 		driver.findElement(By.xpath("//button[contains(.,'Ok')]")).click();
@@ -283,9 +286,9 @@ public class ServiceViewlet {
 		try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//div[2]/div/div/div[3]/button")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -294,11 +297,11 @@ public class ServiceViewlet {
 		
 		//Click on Refresh
 		driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-		Thread.sleep(2000);
+		Thread.sleep(MediumSleep);
 		
 		//Search option
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(ServiceFromICon);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Store the viewlet data into string
 		String NameListdata=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -339,14 +342,14 @@ public class ServiceViewlet {
 		
 		//Search with the added process name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(ServiceFromICon);
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
     			
 		//Select Copy as From commands
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Copy As...")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(MediumSleep);
     	
 		/*
 		 * //Get existing object name String
@@ -356,15 +359,16 @@ public class ServiceViewlet {
     	
     	//Give the object name
     	driver.findElement(By.id("name")).sendKeys(CopyObjectName);
+    	Thread.sleep(LowSleep);
     	driver.findElement(By.cssSelector(".btn-primary")).click();
     	Thread.sleep(MediumSleep);
     	    	
     	try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -426,26 +430,27 @@ public class ServiceViewlet {
     	
 		//Search with that name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(CopyasServiceName);
-    	Thread.sleep(2000); 
+    	Thread.sleep(LowSleep);
     	    	
 		//Select Rename From commands
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Rename")).click();
-    	Thread.sleep(3000);
+    	Thread.sleep(MediumSleep);
 		
     	//Send the New name into field
     	driver.findElement(By.xpath("//app-mod-viewlet-object-rename/div/div/div[2]/input")).sendKeys(RenameService);
+    	Thread.sleep(LowSleep);
     	driver.findElement(By.cssSelector(".btn-primary")).click();
     	Thread.sleep(MediumSleep);
     	
     	try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -469,7 +474,7 @@ public class ServiceViewlet {
     	
     	//Search with renamed name
     	driver.findElement(By.xpath("(//input[@type='text'])[4]")).sendKeys(RenameService);
-    	Thread.sleep(3000); 
+    	Thread.sleep(LowSleep); 
     	
     	//Store the Subscription name into string
     	String ModifiedName=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -511,14 +516,14 @@ public class ServiceViewlet {
 		
 		//Search with renamed name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(RenameService);
-    	Thread.sleep(3000);  
+    	Thread.sleep(LowSleep);  
     	    	
 		//Select Delete From commands
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Delete")).click();
-    	Thread.sleep(3000);
+    	Thread.sleep(MediumSleep);
 		
     	//Click on Yes
     	driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -571,7 +576,7 @@ public class ServiceViewlet {
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("MQSC"))).perform();
     	driver.findElement(By.linkText("Snapshot...")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(MediumSleep);
     	
     	//Get the snapshot data and store into string
     	String SnapshotData=driver.findElement(By.xpath("//textarea")).getText();
@@ -605,6 +610,7 @@ public class ServiceViewlet {
 			
 			//Click on cancel button
 			driver.findElement(By.xpath("//button[contains(.,'Close')]")).click();
+			Thread.sleep(LowSleep);
 			
 			context.setAttribute("Status",1);
 			context.setAttribute("Comment", "MQSC Snapshot is saved");
@@ -678,12 +684,16 @@ public class ServiceViewlet {
 		
 		//Create favorite viewlet
 		driver.findElement(By.xpath("//button[3]")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("fav")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector("div.mod-select-viewlet-buttons > button.g-button-blue")).click();
+		Thread.sleep(LowSleep);
 		
 		//Viewlet Name
 		driver.findElement(By.name("viewlet-name")).click();
 		driver.findElement(By.name("viewlet-name")).sendKeys(FavoriteViewletName);
+		Thread.sleep(LowSleep);
 		
 		//Select WGS dropdown
 		driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div/div[2]/div/ng-select/div/span")).click();
@@ -715,7 +725,7 @@ public class ServiceViewlet {
 		//Select Add to favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Add to favorites...")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();
 		Thread.sleep(LowSleep); 
@@ -797,8 +807,9 @@ public class ServiceViewlet {
 		//Select Add to favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Add to favorites...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Select favorite viewlet
 		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();

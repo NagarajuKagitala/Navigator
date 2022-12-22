@@ -19,6 +19,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chromium.ChromiumDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -125,6 +126,10 @@ public class QueueMessages
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
 		
+		driver.manage().deleteAllCookies();
+	    ((ChromiumDriver) driver).getSessionStorage().clear();
+	    ((ChromiumDriver) driver).getLocalStorage().clear();
+		
 		//Login page
 		driver.findElement(By.id("username")).sendKeys(uname);
 		driver.findElement(By.id("password")).sendKeys(password);
@@ -138,9 +143,11 @@ public class QueueMessages
 		//Click on Create button
 		//driver.findElement(By.xpath("//app-side-dashboard-menu/div/div/div[2]/div[2]")).click();
 		driver.findElement(By.cssSelector("div.block-with-border")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("dashboardName")).sendKeys(Dashboardname);
+		Thread.sleep(LowSleep);
 		/*driver.findElement(By.id("createInitialViewlets")).click();
+		 
 		
 		
 		//Work group server selection
@@ -167,12 +174,12 @@ public class QueueMessages
 		//Go to edit viewlet
 		driver.findElement(By.id("dropdownMenuButton")).click();
 		driver.findElement(By.linkText("Edit viewlet")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Update result limit
 		driver.findElement(By.xpath("//input[@type='number']")).clear();
 		driver.findElement(By.xpath("//input[@type='number']")).sendKeys("1000");
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Click on Apply changes
 		driver.findElement(By.xpath("//button[contains(.,'Apply changes')]")).click(); 
@@ -180,50 +187,51 @@ public class QueueMessages
 		
 		//Restoring the Default Settings
 		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Restore Default')]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("accept-true")).click();
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(HighSleep);
 		
 		//Check Show Empty Queues check box
 		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("empty-queues")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		Thread.sleep(MediumSleep);
 		
 		//put the messages into empty queues for testing
-		/*
-		 * for(int m=1; m<=5; m++) { //Select the put new message option
-		 * driver.findElement(By.xpath(
-		 * "/html/body/app-root/div/app-main-page/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper["+
-		 * m +"]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		 * Actions PutMessagesMousehour=new Actions(driver);
-		 * PutMessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages")
-		 * )).perform(); driver.findElement(By.linkText("Put New Message")).click();
-		 * Thread.sleep(4000);
-		 * 
-		 * //Select the number of messages
-		 * driver.findElement(By.name("generalNumberOfMsgs")).click();
-		 * driver.findElement(By.name("generalNumberOfMsgs")).clear();
-		 * driver.findElement(By.name("generalNumberOfMsgs")).sendKeys("4");
-		 * 
-		 * //Put a message data //driver.findElement(By.id("encoding-text-9")).click();
-		 * driver.findElement(By.xpath("//textarea")).sendKeys(MessageData);
-		 * driver.findElement(By.cssSelector("button.btn.btn-primary")).click();
-		 * Thread.sleep(2000);
-		 * 
-		 * try { driver.findElement(By.id("yes")).click();
-		 * driver.findElement(By.cssSelector(".btn-danger")).click();
-		 * Thread.sleep(2000); } catch (Exception e) {
-		 * System.out.println("No Exception"); } }
-		 */
+		  for(int m=1; m<=5; m++) 
+		  { 
+			  //Select the put new message option
+		  driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper["+ m +"]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		  Actions PutMessagesMousehour=new Actions(driver);
+		  PutMessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform(); driver.findElement(By.linkText("Put New Message")).click();
+		  Thread.sleep(4000);
+		  
+		  //Select the number of messages
+		  driver.findElement(By.name("generalNumberOfMsgs")).click();
+		  driver.findElement(By.name("generalNumberOfMsgs")).clear();
+		  driver.findElement(By.name("generalNumberOfMsgs")).sendKeys("4");
+		  
+		  //Put a message data //driver.findElement(By.id("encoding-text-9")).click();
+		  driver.findElement(By.xpath("//textarea")).sendKeys(MessageData);
+		  driver.findElement(By.cssSelector("button.btn.btn-primary")).click();
+		  Thread.sleep(2000);
+		  
+		  try { driver.findElement(By.id("yes")).click();
+		  driver.findElement(By.cssSelector(".btn-danger")).click();
+		  Thread.sleep(2000); } catch (Exception e) {
+		  System.out.println("No Exception"); } }
+		 
 		
 		//Restoring the Default Settings
 		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Restore Default')]")).click(); 
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("accept-true")).click();
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 	    Thread.sleep(MediumSleep);
@@ -248,7 +256,7 @@ public class QueueMessages
 		Actions MessagesMousehour=new Actions(driver);
 		MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Put New Message")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 				
 		//Message data
 		//driver.findElement(By.id("encoding-text-9")).click();
@@ -260,7 +268,7 @@ public class QueueMessages
 	    for(int i=0; i<=3; i++)
 	    {
 	    	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-	    	Thread.sleep(4000);
+	    	Thread.sleep(LowSleep);
 	    }
 		
 		//verification of message
@@ -305,9 +313,9 @@ public class QueueMessages
 		Actions MessagesMousehour=new Actions(driver);
 		MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Load From File...")).click();
-		Thread.sleep(1000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("accept-true")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Loading the file into queue by using robot class
 		String filepath=System.getProperty("user.dir") + "\\" + UploadFilepath;
@@ -328,7 +336,7 @@ public class QueueMessages
 	    for(int i=0; i<=2; i++)
 		 {
 			 driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			 Thread.sleep(4000);
+			 Thread.sleep(LowSleep);
 		 }
 	    	    
 	    //store the queue depth after loading file
@@ -372,20 +380,20 @@ public class QueueMessages
 		Actions MessagesMousehour=new Actions(driver);
 		MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Load From File...")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Click on Configure
 		driver.findElement(By.xpath("//button[contains(.,'Configure')]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Select single option
 		Select dd=new Select(driver.findElement(By.xpath("//div[3]/div/div/select")));
 		dd.selectByVisibleText("Create Single Message");
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Use once button
 		driver.findElement(By.xpath("//button[contains(.,'Use Once')]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Loading the file into queue by using robot class
 		String filepath=System.getProperty("user.dir") + "\\" + UploadLargeFile;
@@ -406,7 +414,7 @@ public class QueueMessages
 	    for(int i=0; i<=2; i++)
 		 {
 			 driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			 Thread.sleep(4000);
+			 Thread.sleep(LowSleep);
 		 }
 	    	    
 	    //store the queue depth after loading file
@@ -452,20 +460,20 @@ public class QueueMessages
 		Actions MessagesMousehour=new Actions(driver);
 		MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Load From File...")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Click on Configure
 		driver.findElement(By.xpath("//button[contains(.,'Configure')]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Select single option
 		Select dd=new Select(driver.findElement(By.xpath("//div[3]/div/div/select")));
 		dd.selectByVisibleText("Create Multiple Messages");
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Use once button
 		driver.findElement(By.xpath("//button[contains(.,'Use Once')]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Loading the file into queue by using robot class
 		String filepath=System.getProperty("user.dir") + "\\" + UploadLargeFile;
@@ -500,7 +508,7 @@ public class QueueMessages
 	    for(int i=0; i<=3; i++)
 	    {
 	    	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-	    	Thread.sleep(4000);
+	    	Thread.sleep(LowSleep);
 	    }
 	    
 	    //store the queue depth after loading file
@@ -541,7 +549,7 @@ public class QueueMessages
 		MMFMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		MMFMousehour.moveToElement(driver.findElement(By.linkText("Export All Messages..."))).perform();
 		driver.findElement(By.linkText("As .MMF")).click();
-		Thread.sleep(2000);                                       
+		Thread.sleep(LowSleep);                                      
 		
 		//Click on Yes button
 		driver.findElement(By.cssSelector(".btn-group > .ng-star-inserted")).click();
@@ -557,7 +565,7 @@ public class QueueMessages
 		TXTMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		TXTMousehour.moveToElement(driver.findElement(By.linkText("Export All Messages..."))).perform();
 		driver.findElement(By.linkText("As .TXT")).click();
-		Thread.sleep(1000);
+		Thread.sleep(LowSleep);
 		
 		//Click on Yes button
 		driver.findElement(By.cssSelector(".btn-group > .ng-star-inserted")).click();
@@ -586,7 +594,7 @@ public class QueueMessages
 		
 		//Search with that manager
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Managername);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Find the queue current depth
 		String depthbeforeCopy=driver.findElement(By.xpath("//datatable-body-cell[6]/div/span")).getText();
@@ -609,19 +617,20 @@ public class QueueMessages
 		Actions CopyAllMessagesMousehour=new Actions(driver);
 		CopyAllMessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Copy All")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Search with target queue name 
 		driver.findElement(By.xpath("//div[2]/div/div/div/input")).sendKeys(SecondQueueName);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".viewlet-cell-checkbox > input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
 		
 		 for(int i=0; i<=2; i++)
 		 {
 			 driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			 Thread.sleep(4000);
+			 Thread.sleep(LowSleep);
 		 }
 				
 		//Getting the Second Queue depth after copying the all messages
@@ -657,7 +666,7 @@ public class QueueMessages
 		
 		//uncheck the show empty queues checkbox
 		  driver.findElement(By.cssSelector(".fa-cog")).click();
-		  Thread.sleep(3000);
+		  Thread.sleep(LowSleep);
 		  
 		  boolean emptyqueues=driver.findElement(By.id("empty-queues")).isSelected();
 		  
@@ -675,7 +684,7 @@ public class QueueMessages
 		
 		//Search with that manager
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Managername);
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Find the queue current depth
 		String depthbeforeMove=driver.findElement(By.xpath("//datatable-body-cell[6]/div/span")).getText();
@@ -698,12 +707,13 @@ public class QueueMessages
 		Actions MoveAllMessagesMousehour=new Actions(driver);
 		MoveAllMessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Move All")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 			
 		//Search with the target queue name
 		driver.findElement(By.xpath("//div[2]/div/div/div/input")).sendKeys(DestinationQueueName);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".viewlet-cell-checkbox > input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
 		
@@ -711,7 +721,7 @@ public class QueueMessages
 		for(int i=0; i<=5; i++)
 		{
 			driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			Thread.sleep(4000);
+			Thread.sleep(LowSleep);
 		}
 		
 				
@@ -774,7 +784,7 @@ public class QueueMessages
 		Actions DeleteAllMessagesMousehour=new Actions(driver);
 		DeleteAllMessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Delete All")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Click on Yes button for deleting the queue
 		driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -783,7 +793,7 @@ public class QueueMessages
 		 for(int i=0; i<=2; i++)
 		 {
 			 driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			 Thread.sleep(4000);
+			 Thread.sleep(LowSleep);
 		 }
 		 
 		//Queue name after deleting the messages
@@ -862,7 +872,7 @@ public class QueueMessages
 		 for(int i=0; i<=2; i++)
 		 {
 			 driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			 Thread.sleep(4000);
+			 Thread.sleep(LowSleep);
 		 }
 		//Queue name after deleting the messages
 		String QueuenameAfter=driver.findElement(By.xpath("//datatable-body-cell[4]/div/span")).getText();
@@ -918,11 +928,11 @@ public class QueueMessages
 		Actions MessagesMousehour=new Actions(driver);
 		MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Put New Message")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//click on Attache file option
 		driver.findElement(By.xpath("//input[3]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Loading the file into queue by using robot class
 		String filepath=System.getProperty("user.dir") + "\\" + "Screenshots\\Staticimages\\File.json";
@@ -947,7 +957,7 @@ public class QueueMessages
 	    for(int i=0; i<=3; i++)
 	    {
 	    	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-	    	Thread.sleep(4000);
+	    	Thread.sleep(LowSleep);
 	    }
 				 
 		//verification of message
@@ -992,11 +1002,11 @@ public class QueueMessages
 		Actions MessagesMousehour=new Actions(driver);
 		MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Put New Message")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//click on Attache file option
 		driver.findElement(By.xpath("//input[3]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Loading the file into queue by using robot class
 		String filepath=System.getProperty("user.dir") + "\\" + "Screenshots\\Staticimages\\FileX.xml";
@@ -1021,7 +1031,7 @@ public class QueueMessages
 	    for(int i=0; i<=3; i++)
 	    {
 	    	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-	    	Thread.sleep(4000);
+	    	Thread.sleep(LowSleep);
 	    }
 		
 		//verification of message
@@ -1066,16 +1076,16 @@ public class QueueMessages
 		Actions MessagesMousehour=new Actions(driver);
 		MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Put New Message")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Message data
 		//driver.findElement(By.xpath("//textarea")).click();
 		driver.findElement(By.xpath("//textarea")).sendKeys(HexMessageData);
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		//Clickon HEX button
 		driver.findElement(By.xpath("//button[contains(.,'Hex')]")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 				
 		//Close the popup window 
 		driver.findElement(By.id("save-message")).click();
@@ -1085,7 +1095,7 @@ public class QueueMessages
 	    for(int i=0; i<=3; i++)
 	    {
 	    	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-	    	Thread.sleep(4000);
+	    	Thread.sleep(LowSleep);
 	    }
 		
 		

@@ -14,6 +14,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chromium.ChromiumDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -113,6 +114,10 @@ public class QueuesViewlet
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
 		
+		driver.manage().deleteAllCookies();
+	    ((ChromiumDriver) driver).getSessionStorage().clear();
+	    ((ChromiumDriver) driver).getLocalStorage().clear();
+		
 		//Login page
 		driver.findElement(By.id("username")).sendKeys(uname);
 		driver.findElement(By.id("password")).sendKeys(password);
@@ -126,8 +131,9 @@ public class QueuesViewlet
 		//Click on Create button
 		//driver.findElement(By.xpath("//app-side-dashboard-menu/div/div/div[2]/div[2]")).click();
 		driver.findElement(By.cssSelector("div.block-with-border")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("dashboardName")).sendKeys(Dashboardname);
+		Thread.sleep(LowSleep);
 		/*driver.findElement(By.id("createInitialViewlets")).click();
 		
 		
@@ -156,13 +162,14 @@ public class QueuesViewlet
 		
 		//Go to edit viewlet
 		driver.findElement(By.id("dropdownMenuButton")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Edit viewlet")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Update result limit
 		driver.findElement(By.xpath("//input[@type='number']")).clear();
 		driver.findElement(By.xpath("//input[@type='number']")).sendKeys("1000");
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Click on Apply changes
 		driver.findElement(By.xpath("//button[contains(.,'Apply changes')]")).click(); 
@@ -170,9 +177,11 @@ public class QueuesViewlet
 		
 		//Restore Default settings
 		  driver.findElement(By.cssSelector(".fa-cog")).click();
+		  Thread.sleep(LowSleep);
 		  driver.findElement(By.xpath("//button[contains(.,'Restore Default')]")).click(); 
-		  Thread.sleep(4000);
+		  Thread.sleep(LowSleep);
 		  driver.findElement(By.id("accept-true")).click();
+		  Thread.sleep(LowSleep);
 		  driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		  Thread.sleep(MediumSleep);
 		
@@ -183,13 +192,15 @@ public class QueuesViewlet
 			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper["+ m +"]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 			Actions PutMessagesMousehour=new Actions(driver);
 			PutMessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
+			Thread.sleep(LowSleep);
 			driver.findElement(By.linkText("Put New Message")).click();
-			Thread.sleep(1000);
+			Thread.sleep(LowSleep);
 			
 			//Select the number of messages
 			driver.findElement(By.name("generalNumberOfMsgs")).click();
 			driver.findElement(By.name("generalNumberOfMsgs")).clear();
 			driver.findElement(By.name("generalNumberOfMsgs")).sendKeys("2");
+			Thread.sleep(LowSleep);
 			
 			//Put a message data
 			//driver.findElement(By.id("encoding-text-9")).click();
@@ -200,8 +211,9 @@ public class QueuesViewlet
 			try
 			{
 				driver.findElement(By.id("yes")).click();
+				Thread.sleep(LowSleep);
 				driver.findElement(By.cssSelector(".btn-danger")).click();
-				Thread.sleep(1000);
+				Thread.sleep(LowSleep);
 			}
 			catch (Exception e)
 			{
@@ -329,11 +341,13 @@ public class QueuesViewlet
 		//Select show object Attributes Option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Create Queue")).click();
-		Thread.sleep(1000);
+		Thread.sleep(LowSleep);
 		
 		//Create Queue Window
 		driver.findElement(By.name("name")).sendKeys(QueueNameFromOptions);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("description")).sendKeys(QueueDescriptionFromOptions);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(HighSleep);
 				
@@ -345,7 +359,7 @@ public class QueuesViewlet
 		{
 			System.out.println("No Exception occured");
 		}
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		/*
 		 * //Change the Settings We need to check show empty queues for verification
@@ -357,7 +371,7 @@ public class QueuesViewlet
 		
 		//Serach with empty queue name
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(QueueNameFromOptions);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Store the first queue name into string
 		String Firstqueue=driver.findElement(By.xpath("//datatable-body-cell[4]/div/span")).getText();
@@ -436,20 +450,22 @@ public class QueuesViewlet
 		Actions CopyMousehover=new Actions(driver);
 		CopyMousehover.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
 		driver.findElement(By.linkText("Copy As...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Object Details
 		driver.findElement(By.xpath("//app-mod-viewlet-object-copy-as/div/div[2]/div/input")).sendKeys(ObjectName);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//div[2]/div[2]/input")).sendKeys(ObjectDescription);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
 		
 		try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(4000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-			Thread.sleep(4000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -468,7 +484,7 @@ public class QueuesViewlet
 		
 		//Search with empty queue name
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(FinalQueuename);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Store the Queue name after deleting the Queue
 		String ViewletData=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -507,17 +523,18 @@ public class QueuesViewlet
 		
 		//Search with that name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(FinalQueuename);
-    	Thread.sleep(2000); 
+    	Thread.sleep(LowSleep); 
     	
 		//Select Rename From commands
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
     	Actions Mousehovercopy=new Actions(driver);
     	Mousehovercopy.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
     	driver.findElement(By.linkText("Rename")).click();
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
 		
     	//Send the New name into field
     	driver.findElement(By.xpath("//app-mod-viewlet-object-rename/div/div/div[2]/input")).sendKeys(RenameQueue);
+    	Thread.sleep(LowSleep);
     	driver.findElement(By.cssSelector(".btn-primary")).click();
     	Thread.sleep(MediumSleep);
     	driver.findElement(By.id("accept-true")).click();
@@ -526,9 +543,9 @@ public class QueuesViewlet
     	try
 		{
 			driver.findElement(By.id("yes")).click();
-			Thread.sleep(4000);
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-			Thread.sleep(4000);
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -553,7 +570,7 @@ public class QueuesViewlet
     	
     	//Search with renamed name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(RenameQueue);
-    	Thread.sleep(3000); 
+    	Thread.sleep(LowSleep); 
     	
     	//Store the Subscription name into string
     	String ModifiedName=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -565,7 +582,7 @@ public class QueuesViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	
     	//Verification condition
     	if(ModifiedName.contains(RenameQueue))
@@ -596,14 +613,14 @@ public class QueuesViewlet
 		
 		//Search with empty queue name
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(RenameQueue);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 				
 		//Select Commands option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Actions DeleteMousehover=new Actions(driver);
 		DeleteMousehover.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
 		driver.findElement(By.linkText("Delete Queue")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Delete option
 		driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -620,9 +637,11 @@ public class QueuesViewlet
 		if(driver.findElement(By.xpath("//app-mod-errors-display/div/button")).isDisplayed())
 		{
 			driver.findElement(By.xpath("//app-mod-errors-display/div/button")).click();
+			Thread.sleep(LowSleep);
 			
 			//Click on Cancel button
 			driver.findElement(By.xpath("//div[3]/button")).click();
+			Thread.sleep(LowSleep);
 		}
 		
 		else
@@ -702,6 +721,7 @@ public class QueuesViewlet
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Actions DeleteMousehover=new Actions(driver);
 		DeleteMousehover.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Inhibit Get")).click();
 		Thread.sleep(MediumSleep);
 		
@@ -744,7 +764,7 @@ public class QueuesViewlet
 		
 		//Refresh viewlet
 		driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		if(OptionsNames.contains("Browse messages"))
 		{
@@ -777,6 +797,7 @@ public class QueuesViewlet
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Actions DeleteMousehover=new Actions(driver);
 		DeleteMousehover.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Inhibit Put")).click();
 		Thread.sleep(MediumSleep);
 		
@@ -820,7 +841,7 @@ public class QueuesViewlet
 		
 		//Refresh viewlet
 		driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		if(Listofoptions.contains("Put New Message"))
 		{
@@ -902,7 +923,7 @@ public class QueuesViewlet
 		Actions DeleteMousehover=new Actions(driver);
 		DeleteMousehover.moveToElement(driver.findElement(By.linkText("MQSC"))).perform();
 		driver.findElement(By.linkText("Snapshot...")).click();
-		Thread.sleep(8000);
+		Thread.sleep(MediumSleep);
 		
 		//Click on Save button
 		driver.findElement(By.xpath("//button[contains(.,'Save')]")).click();
@@ -993,13 +1014,17 @@ public class QueuesViewlet
 		
 		//Select the viewlet option and select the favorite checkbox
 		driver.findElement(By.xpath("//button[3]")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("fav")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector("div.mod-select-viewlet-buttons > button.g-button-blue")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Viewlet Name
 		driver.findElement(By.name("viewlet-name")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("viewlet-name")).sendKeys(FavoriteViewletName);
+		Thread.sleep(LowSleep);
 		
 		//Select WGS dropdown
 		driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div/div[2]/div/ng-select/div/span")).click();
@@ -1028,7 +1053,7 @@ public class QueuesViewlet
 		
 		//Select Add to favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Add to favorites...")).click();
 		Thread.sleep(MediumSleep);
 		
@@ -1119,9 +1144,11 @@ public class QueuesViewlet
 		
 		//Select show queue status option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Show Queues Status")).click();
-		Thread.sleep(6000);
+		Thread.sleep(MediumSleep);
 		
 		//Store result depth
 		String ResultFirst=driver.findElement(By.xpath("//tr[3]/td[3]")).getText();
@@ -1162,6 +1189,7 @@ public class QueuesViewlet
 		{
 		//Click on + icon
 		driver.findElement(By.xpath("//img[@title='Add Queue']")).click();
+		Thread.sleep(LowSleep);
 		
 		//Select WGS
 		/*
@@ -1231,18 +1259,22 @@ public class QueuesViewlet
 		
         //Click on Select path button
 		driver.findElement(By.xpath("//button[contains(.,'Select path')]")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		//Create Queue Window
 		driver.findElement(By.name("name")).sendKeys(Q_QueueName);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("description")).sendKeys(QueueDescription);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//div[2]/div/div/div/button")).click();
 		Thread.sleep(MediumSleep);         
 				
 		try
 		{
 			driver.findElement(By.id("yes")).click();
+			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("//div[2]/div/div/div[3]/button")).click();
+			Thread.sleep(LowSleep);
 		}
 		catch (Exception e)
 		{
@@ -1252,7 +1284,7 @@ public class QueuesViewlet
 		
 		//Change the Settings We need to check show empty queues for verification
 		driver.findElement(By.cssSelector(".fa-cog")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		boolean empty=driver.findElement(By.id("empty-queues")).isSelected();
 		if(empty)
 		{
@@ -1268,7 +1300,7 @@ public class QueuesViewlet
 		
 		//Serach with empty queue name
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Q_QueueName);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Store the first queue name into string
 		String Firstqueue=driver.findElement(By.xpath("//datatable-body-cell[4]/div/span")).getText();
@@ -1357,25 +1389,28 @@ public class QueuesViewlet
 					System.out.println("Index values is: " +i);
 					driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 					driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper["+ k +"]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-					Thread.sleep(4000);
+					Thread.sleep(LowSleep);
 					Actions CopyMousehover=new Actions(driver);
 					CopyMousehover.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
 					driver.findElement(By.linkText("Copy As...")).click();
-					Thread.sleep(3000);
+					Thread.sleep(MediumSleep);
 					
 					//Object Details
 					driver.findElement(By.xpath("//app-mod-viewlet-object-copy-as/div/div[2]/div/input")).clear();
+					Thread.sleep(LowSleep);
 					driver.findElement(By.xpath("//app-mod-viewlet-object-copy-as/div/div[2]/div/input")).sendKeys(CopyAsNameForMultiple);
+					Thread.sleep(LowSleep);
 					driver.findElement(By.xpath("//div[2]/div[2]/input")).sendKeys(ObjectDescriptionForMultiples);
+					Thread.sleep(LowSleep);
 					driver.findElement(By.cssSelector(".btn-primary")).click();
 					Thread.sleep(MediumSleep);
 					
 					try
 					{
 						driver.findElement(By.id("yes")).click();
-						Thread.sleep(4000);
+						Thread.sleep(LowSleep);
 						driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-						Thread.sleep(4000);
+						Thread.sleep(LowSleep);
 					}
 					catch (Exception e)
 					{
@@ -1392,7 +1427,7 @@ public class QueuesViewlet
 					
 					//Search with empty queue name
 					driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(CopyAsNameForMultiple);
-					Thread.sleep(2000);
+					Thread.sleep(LowSleep);
 										
 					//Store the Queue name after deleting the Queue
 					String ViewletData=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -1447,7 +1482,7 @@ public class QueuesViewlet
 			
 			//Search with empty queue name
 			driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(CopyAsNameForMultiple);
-			Thread.sleep(2000);
+			Thread.sleep(LowSleep);
 					
 		String[] Managers = new String[10];
 		for(int i=0; i<10; i++)
@@ -1470,16 +1505,19 @@ public class QueuesViewlet
 				{
 					System.out.println("Index values is: " +i);
 					driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+					Thread.sleep(LowSleep);
 					driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper["+ k +"]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-					Thread.sleep(4000);
+					Thread.sleep(LowSleep);
 					Actions CopyMousehover=new Actions(driver);
 					CopyMousehover.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
+					Thread.sleep(LowSleep);
 					driver.findElement(By.linkText("Rename")).click();
-					Thread.sleep(3000);
+					Thread.sleep(LowSleep);
 					
 					//Object Details
 					driver.findElement(By.xpath("//app-mod-viewlet-object-rename/div/div/div[2]/input")).clear();
 					driver.findElement(By.xpath("//app-mod-viewlet-object-rename/div/div/div[2]/input")).sendKeys(ReameForMultiple);
+					Thread.sleep(LowSleep);
 					
 					driver.findElement(By.cssSelector(".btn-primary")).click();
 					Thread.sleep(MediumSleep);
@@ -1489,9 +1527,9 @@ public class QueuesViewlet
 					try
 					{
 						driver.findElement(By.id("yes")).click();
-						Thread.sleep(4000);
+						Thread.sleep(LowSleep);
 						driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-						Thread.sleep(4000);
+						Thread.sleep(LowSleep);
 					}
 					catch (Exception e)
 					{
@@ -1514,7 +1552,7 @@ public class QueuesViewlet
 					
 					//Search with empty queue name
 					driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(ReameForMultiple);
-					Thread.sleep(2000);
+					Thread.sleep(LowSleep);
 					
 										
 					//Store the Queue name after deleting the Queue
@@ -1568,15 +1606,16 @@ public class QueuesViewlet
 		
 		//Search with empty queue name
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(ReameForMultiple);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 				
 		//Select Commands option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Actions DeleteMousehover=new Actions(driver);
 		DeleteMousehover.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Delete Queue")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Delete option
 		driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -1676,11 +1715,12 @@ public class QueuesViewlet
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		//Give description
 		driver.findElement(By.id("description")).clear();
 		driver.findElement(By.id("description")).sendKeys(TestDescription);
+		Thread.sleep(LowSleep);
 		
 		//close the properties page
 		driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -1693,7 +1733,7 @@ public class QueuesViewlet
 		//Open the properties of first queue
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		//Save the Connection URL value into string
 		String FirstQueuedata=driver.findElement(By.id("description")).getAttribute("value");
@@ -1710,7 +1750,7 @@ public class QueuesViewlet
 		//Open the properties of Second queue
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Properties...")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		//Save the Connection URL value into string
 		String SecondQueuedata=driver.findElement(By.id("description")).getAttribute("value");
@@ -1753,11 +1793,11 @@ public class QueuesViewlet
 		
 		//Select Queue Events option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Add to favorites...")).click();
-		Thread.sleep(5000);
+		Thread.sleep(LowSleep);
 		
 		//Select the favorite viewlet name
 		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();
@@ -1818,7 +1858,7 @@ public class QueuesViewlet
 		
 		//Enter the data into search field
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(SearchData);
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		//Store the vielet data into string after searching 
 		String Viewletdata=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -1849,11 +1889,13 @@ public class QueuesViewlet
 	{
 		// Changing the Settings 
 		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Restore Default')]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("accept-true")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(MediumSleep);
 		
 		LogoutForAll lo=new LogoutForAll();
 		lo.LogoutMethod(driver, Dashboardname);

@@ -21,6 +21,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chromium.ChromiumDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -140,6 +141,10 @@ public class QueuesInsideBrowseMessages
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
 		
+		driver.manage().deleteAllCookies();
+	    ((ChromiumDriver) driver).getSessionStorage().clear();
+	    ((ChromiumDriver) driver).getLocalStorage().clear();
+		
 		//Login details
 		driver.findElement(By.id("username")).sendKeys(uname);
 		driver.findElement(By.id("password")).sendKeys(password);
@@ -153,8 +158,9 @@ public class QueuesInsideBrowseMessages
 		//Click on Create button
 		//driver.findElement(By.xpath("//app-side-dashboard-menu/div/div/div[2]/div[2]")).click();
 		driver.findElement(By.cssSelector("div.block-with-border")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("dashboardName")).sendKeys(Dashboardname);
+		Thread.sleep(LowSleep);
 		/*driver.findElement(By.id("createInitialViewlets")).click();
 		
 		
@@ -181,13 +187,14 @@ public class QueuesInsideBrowseMessages
 		
 		//Go to edit viewlet
 		driver.findElement(By.id("dropdownMenuButton")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Edit viewlet")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Update result limit
 		driver.findElement(By.xpath("//input[@type='number']")).clear();
 		driver.findElement(By.xpath("//input[@type='number']")).sendKeys("1000");
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Click on Apply changes
 		driver.findElement(By.xpath("//button[contains(.,'Apply changes')]")).click(); 
@@ -236,9 +243,11 @@ public class QueuesInsideBrowseMessages
 		
 		//Restoring the Default Settings
 		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Restore Default')]")).click(); 
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("accept-true")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		Thread.sleep(MediumSleep);
 		
@@ -262,9 +271,11 @@ public class QueuesInsideBrowseMessages
 		
 		//Select put New symbole
 		driver.findElement(By.xpath("//img[@title='Put New']")).click();
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.name("generalNumberOfMsgs")).clear();
 		driver.findElement(By.name("generalNumberOfMsgs")).sendKeys("6");
+		Thread.sleep(LowSleep);
 		
 		//Message data
 		//driver.findElement(By.id("encoding-text-9")).click();
@@ -275,7 +286,7 @@ public class QueuesInsideBrowseMessages
 		for(int i=0; i<=2; i++)
 		{
 			driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			Thread.sleep(4000);
+			Thread.sleep(LowSleep);
 		}
 				
 		//Store the depth value into string after adding the message into queue
@@ -314,6 +325,7 @@ public class QueuesInsideBrowseMessages
 				
 		//Select Message check box
 		driver.findElement(By.xpath("//input[@name='name']")).click();
+		Thread.sleep(LowSleep);
 		
 		//Delete Icon
 		driver.findElement(By.xpath("//img[@title='Delete']")).click();
@@ -323,7 +335,7 @@ public class QueuesInsideBrowseMessages
 		for(int i=0; i<=2; i++)
 		{
 			driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			Thread.sleep(4000);
+			Thread.sleep(LowSleep);
 		}
 		
 			
@@ -360,6 +372,7 @@ public class QueuesInsideBrowseMessages
 		
 		//Search with that manager
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Managername);
+		Thread.sleep(LowSleep);
 		
 		//Second Queue name
 		String SecondQueueName=driver.findElement(By.xpath("//datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[4]/div/span")).getText();
@@ -372,13 +385,16 @@ public class QueuesInsideBrowseMessages
 		
 		//Select Message check box
 		driver.findElement(By.xpath("//input[@name='name']")).click();
+		Thread.sleep(LowSleep);
 		
 		//Copy Icon
 		driver.findElement(By.xpath("//img[@title='Copy message']")).click();
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.xpath("//div[2]/div/div/div/input")).sendKeys(SecondQueueName);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//td/div/span/input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
 		
@@ -433,13 +449,16 @@ public class QueuesInsideBrowseMessages
 		
 		//Select Message check box
 		driver.findElement(By.xpath("//input[@name='name']")).click();
+		Thread.sleep(LowSleep);
 		
 		//Move Icon
 		driver.findElement(By.xpath("//img[@title='Move message']")).click();
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.xpath("//div[2]/div/div/div/input")).sendKeys(SecondQueueName);
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//td/div/span/input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
 		
@@ -489,10 +508,11 @@ public class QueuesInsideBrowseMessages
 		{
 		//Select Message check box
 		driver.findElement(By.xpath("//input[@name='name']")).click();
+		Thread.sleep(LowSleep);
 		
 		//Edit Icon
 		driver.findElement(By.xpath("//img[@title='Edit message']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		//Store the edit message popup page title into string
 		String EditMessage=driver.findElement(By.cssSelector(".modal-title")).getText();
@@ -516,6 +536,7 @@ public class QueuesInsideBrowseMessages
 		//Message data
 		driver.findElement(By.id("encoding-text-7")).click();
 		driver.findElement(By.id("encoding-text-7")).sendKeys(MessageData);
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.id("save-message")).click();
 		/*
@@ -549,10 +570,11 @@ public class QueuesInsideBrowseMessages
 		
 		//Select Message check box
 		driver.findElement(By.xpath("//input[@name='name']")).click();
+		Thread.sleep(LowSleep);
 		
 		//Edit Icon
 		driver.findElement(By.xpath("//img[@title='Load from file']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.id("accept-true")).click();
 		Thread.sleep(MediumSleep);
@@ -610,26 +632,31 @@ public class QueuesInsideBrowseMessages
 		try {
 		//Select Message check box
 		driver.findElement(By.xpath("//input[@name='name']")).click();
+		Thread.sleep(LowSleep);
 				
 		//Export Icon (MMF Export)
 		driver.findElement(By.xpath("//div[10]/button")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Export in MMF')]")).click();
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.cssSelector(".btn-group > .ng-star-inserted")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		Actions a=new Actions(driver);
 		a.sendKeys(Keys.ENTER).perform();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Select Message check box
 		driver.findElement(By.xpath("//input[@name='name']")).click();
+		Thread.sleep(LowSleep);
 		
 		//Export Icon (Text Export)
 		driver.findElement(By.xpath("//div[10]/button")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Export in text')]")).click();
-		
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".btn-group > .ng-star-inserted")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		Actions a1=new Actions(driver);
 		a1.sendKeys(Keys.ENTER).perform();
 		
@@ -653,11 +680,11 @@ public class QueuesInsideBrowseMessages
 	{
 		//Select Message check box
 		driver.findElement(By.xpath("//input[@name='name']")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Edit option                   
 		driver.findElement(By.cssSelector(".item-dropdown:nth-child(1)")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		String MessagesHeader=driver.findElement(By.xpath("//app-modal-title/div")).getText();
 		System.out.println("View page title is: " +MessagesHeader);
@@ -679,7 +706,7 @@ public class QueuesInsideBrowseMessages
 		
 		//Close popup page
 		driver.findElement(By.cssSelector(".btn-danger")).click();
-		Thread.sleep(6000);
+		Thread.sleep(MediumSleep);
 	}
 	
 	
@@ -692,11 +719,11 @@ public class QueuesInsideBrowseMessages
 		{
 		//Select Message check box
 		driver.findElement(By.xpath("//input[@name='name']")).click();
-		Thread.sleep(1000);
+		Thread.sleep(LowSleep);
 		
 		//Edit option                   
 		driver.findElement(By.cssSelector(".item-dropdown:nth-child(2)")).click();
-		Thread.sleep(2000);
+		Thread.sleep(MediumSleep);
 		
 		//Store the Edit message popup page title into string
 		String EditMessage=driver.findElement(By.cssSelector(".modal-title")).getText();
@@ -715,10 +742,12 @@ public class QueuesInsideBrowseMessages
 		
 		//Click on Data
 		driver.findElement(By.cssSelector(".g-tab:nth-child(7)")).click();
+		Thread.sleep(LowSleep);
 		
 		//Message data
 		driver.findElement(By.id("encoding-text-7")).click();
 		driver.findElement(By.id("encoding-text-7")).sendKeys(MessageData);
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.id("save-message")).click();
 		
@@ -754,9 +783,11 @@ public class QueuesInsideBrowseMessages
 				
 		//Select Message check box
 		driver.findElement(By.xpath("//input[@name='name']")).click();
+		Thread.sleep(LowSleep);
 		
 		//Delete option
 		driver.findElement(By.cssSelector(".item-dropdown:nth-child(3)")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
 				
@@ -799,6 +830,7 @@ public class QueuesInsideBrowseMessages
 		
 		//Search with that manager
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Managername);
+		Thread.sleep(LowSleep);
 				
 		//Second Queue name
 		String SecondQueueName=driver.findElement(By.xpath("//datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[4]/div/span")).getText();
@@ -810,13 +842,16 @@ public class QueuesInsideBrowseMessages
 		
 		//Select Message check box
 		driver.findElement(By.xpath("//input[@name='name']")).click();
+		Thread.sleep(LowSleep);
 		
 		//Copy option
 		driver.findElement(By.cssSelector(".item-dropdown:nth-child(4)")).click();
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.xpath("//div[2]/div/div/div/input")).sendKeys(SecondQueueName);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//td/div/span/input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
 		
@@ -872,13 +907,15 @@ public class QueuesInsideBrowseMessages
 		
 		//Select Message check box
 		driver.findElement(By.xpath("//input[@name='name']")).click();
-		
+		Thread.sleep(LowSleep);
 		//Move option
 		driver.findElement(By.cssSelector(".item-dropdown:nth-child(5)")).click();
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.xpath("//div[2]/div/div/div/input")).sendKeys(SecondQueueName);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//td/div/span/input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
 		

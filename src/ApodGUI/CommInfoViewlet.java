@@ -122,8 +122,9 @@ public class CommInfoViewlet
 		//Click on Create button
 		//driver.findElement(By.xpath("//app-side-dashboard-menu/div/div/div[2]/div[2]")).click();
 		driver.findElement(By.cssSelector("div.block-with-border")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("dashboardName")).sendKeys(Dashboardname);
+		Thread.sleep(LowSleep);
 		
 		
 		/*driver.findElement(By.id("createInitialViewlets")).click();
@@ -237,12 +238,12 @@ public class CommInfoViewlet
 	{
 		//Click on clear all check box button
 		driver.findElement(By.xpath("//datatable-header-cell[2]/div/i")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		//Select Copy as From commands
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
     	driver.findElement(By.linkText("Copy As...")).click();
-    	Thread.sleep(6000);
+    	Thread.sleep(MediumSleep);
     	
     	//Give the copy as name
     	driver.findElement(By.id("name")).clear();
@@ -257,12 +258,12 @@ public class CommInfoViewlet
     	for(int i=0; i<=2; i++)
     	{
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	}
     	
     	//Search with the copy as name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(CopyAsName);
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
     	
     	//Store the viewlet data into string
     	String CommInfoviewlet=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -274,7 +275,7 @@ public class CommInfoViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	
     	//Verification condition
     	if(CommInfoviewlet.contains(CopyAsName))
@@ -301,11 +302,11 @@ public class CommInfoViewlet
 	{
 		//Click on clear all check box button
 		driver.findElement(By.xpath("//datatable-header-cell[2]/div/i")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		//Search with the copy as name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(CopyAsName);
-    	Thread.sleep(3000);
+    	Thread.sleep(LowSleep);
     	
     	//Select Delete From commands
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
@@ -320,7 +321,7 @@ public class CommInfoViewlet
     	for(int i=0; i<=2; i++)
     	{
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	}
     	
     	//Store the viewlet data into string
@@ -333,7 +334,7 @@ public class CommInfoViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	
     	//Verification of Subscription delete
     	if(CommInfoviewlet.contains(CopyAsName))
@@ -362,7 +363,9 @@ public class CommInfoViewlet
 		
 		//Create favorite viewlet 
 		driver.findElement(By.xpath("//button[3]")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("fav")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector("div.mod-select-viewlet-buttons > button.g-button-blue")).click();
 		Thread.sleep(LowSleep);
 		
@@ -453,7 +456,7 @@ public class CommInfoViewlet
 	{
 		//Click on clear all check box button
 		driver.findElement(By.xpath("//datatable-header-cell[2]/div/i")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		//Get the First object Name
 		String compare1 = driver.findElement(By.xpath("//datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[4]/div/span")).getText();
@@ -466,7 +469,7 @@ public class CommInfoViewlet
 		
 		// Select compare option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Thread.sleep(LowSleep);
 		
@@ -495,7 +498,7 @@ public class CommInfoViewlet
 			driver.findElement(By.xpath("Comparision failed")).click();
 		}
 		driver.findElement(By.cssSelector(".close-button")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		
 	}
@@ -507,19 +510,19 @@ public class CommInfoViewlet
 	{
 		//Click on clear all check box button
 		driver.findElement(By.xpath("//datatable-header-cell[2]/div/i")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		// Select compare option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Compare")).click();
 		Thread.sleep(LowSleep);
 		
 		// Check differences only option while compare
 		driver.findElement(By.cssSelector(".differences .slider")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 			
 		try {
 			
@@ -628,12 +631,12 @@ public class CommInfoViewlet
 		
 		//Click on clear all check box button
 		driver.findElement(By.xpath("//datatable-header-cell[2]/div/i")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Select Two Comm info and choose Add to favorite viewlet option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		Thread.sleep(5000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Add to favorites...")).click();
 		Thread.sleep(LowSleep);
 			
@@ -685,12 +688,13 @@ public class CommInfoViewlet
 	{
 		//Click on clear all check box button
 		driver.findElement(By.xpath("//datatable-header-cell[2]/div/i")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		try
 		{
 		//Click on + Icon for creating the process
 		driver.findElement(By.xpath("//img[@title='Add CommInfo']")).click();
+		Thread.sleep(LowSleep);
 		
 		//Select WGS
 		/*
@@ -763,22 +767,22 @@ public class CommInfoViewlet
 		//Enter the Communication info name
 		driver.findElement(By.id("name")).clear();
 		driver.findElement(By.id("name")).sendKeys(NewCommunicationInfoName);
-		Thread.sleep(1000);
+		Thread.sleep(LowSleep);
 		
 		//Enter the Group address
 		driver.findElement(By.id("grpAddress")).clear();
 		driver.findElement(By.id("grpAddress")).sendKeys(GroupAddress);
-		Thread.sleep(1000);
+		Thread.sleep(LowSleep);
 		
 		//Enter the Comm info port number
 		driver.findElement(By.id("port")).clear();
 		driver.findElement(By.id("port")).sendKeys(CommInfoPort);
-		Thread.sleep(1000);
+		Thread.sleep(LowSleep);
 		
 		//Enter message history value
 		driver.findElement(By.id("msgHistory")).clear();
 		driver.findElement(By.id("msgHistory")).sendKeys(MessageHistory);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Click on Submit the process
 		driver.findElement(By.xpath("//button[contains(.,'Ok')]")).click();
@@ -788,11 +792,11 @@ public class CommInfoViewlet
 		{
 			driver.findElement(By.id("yes")).click();
 			driver.findElement(By.xpath("//div[2]/div/div/div[3]/button")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 			try
 			{
 				driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-				Thread.sleep(3000);
+				Thread.sleep(LowSleep);
 			}
 			catch (Exception e1)
 			{
@@ -808,12 +812,12 @@ public class CommInfoViewlet
     	for(int i=0; i<=2; i++)
     	{
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	}
 		
 		//Search with the added Comm info name
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(NewCommunicationInfoName);
-    	Thread.sleep(1000);
+    	Thread.sleep(LowSleep);
 		
 		//Store the Comm info viewlet data into string
 		String CommInfodata=driver.findElement(By.xpath("//datatable-body")).getText();
