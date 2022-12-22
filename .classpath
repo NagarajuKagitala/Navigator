@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="F:/Automation/Lib/javax.mail-1.6.2.jar"/>
-	<classpathentry kind="lib" path="F:/Automation/Lib/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="F:/Automation/Lib/testng-6.11.jar"/>
-	<classpathentry kind="lib" path="F:/Automation/Lib/selenium-api-4.0.0.jar"/>
-	<classpathentry kind="lib" path="F:/Automation/Lib/selenium-api-4.0.0-sources.jar"/>
-	<classpathentry kind="lib" path="F:/Automation/Lib/selenium-server-4.0.0.jar"/>
-	<classpathentry kind="src" path="src_benchmarks"/>
-	<classpathentry kind="lib" path="C:/Users/Nagaraju/.p2/pool/plugins/com.gocypher.cybench.externals_1.0.0.202104080943.jar"/>
 	<classpathentry kind="src" path="jmh-generated-tests">
 		<attributes>
 			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="F:/Automation/Lib/htmlunit-driver-3.61.0-jar-with-dependencies.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/Automation/Lib/selenium-java-4.4.0/selenium-java-4.4.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Lib/selenium-java-4.4.0/selenium-java-4.4.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Lib/htmlunit-driver-3.61.0-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Lib/javax.mail-1.6.2.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Lib/json-simple-2.3.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Lib/selenium-htmlunit-driver-2.9.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Lib/selenium-server-4.4.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Lib/TestNG/testng-7.3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

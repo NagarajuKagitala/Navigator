@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="RESTAPI">
+<test name="RESTAPI options">
+    
+     <parameter name="sDriver" value="webdriver.chrome.driver"/>
+     <parameter name="sDriverpath" value="Drivers\\chromedriver.exe"/>
+     <parameter name="URL" value="http://172.16.31.147:8019/rest/v1/api-docs?url=/rest/v1/openapi.json"/>
+     <parameter name="uname" value="Admin"/>
+     <parameter name="password" value="admin"/>
+     <parameter name="nodename" value="EMSNODE"/>
+     <parameter name="emsserver" value="EMS-SERVER2"/>
+     <parameter name="tcpIp" value="tcp://172.16.31.147:7222"/>
+	           
+     <classes>
+     <class name="EMS.Node">
+       
+       <methods>
+        <include name="Login"/>
+        <include name="createEMSmanagers"/>
+        <!--<include name="readEMSmanagers"/>
+        <include name="searchEMSmanagers"/>
+        <include name="changeEMSmanagers"/>
+        <include name="delEMSmanagers"/>-->
+        <include name="Logout"/>
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

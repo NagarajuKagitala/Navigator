@@ -48,10 +48,10 @@
         <include name="Properties"/> 
         <include name="MQSCConsoleCommandOption"/>
         <include name="SaveMQSCConsoleResponceData"/>
-        <include name="ClearMQSCConsoleResponceData"/>
+        <include name="ClearMQSCConsoleResponceData"/> 
         <include name="ApplyMQSCScript"/>
         <include name="SaveMQSCScriptResults"/>
-        <include name="ClearMQSCScriptResults"/>
+        <include name="ClearMQSCScriptResults"/> 
         <include name="MQSCSnapshot"/>
         <include name="SaveManagerSnapshot"/>
         <include name="DiscoverNow"/> 
@@ -65,7 +65,7 @@
         <include name="MultipleManagersProperties"/>
         <include name="AddToFavoriteForMultipleManagers"/>  
         <include name="CreateQueueManagerFromOptions"/>   
-        <include name="SearchFilter"/>     
+        <include name="SearchFilter"/>    
         <include name="Logout"/>  
         
        </methods>

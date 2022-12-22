@@ -23,7 +23,7 @@
             <include name="ObjectFilter"/> 
             <include name="AttributeFilter"/>
             <include name="EmptyCheckboxFilter"/>
-            <include name="SystemCheckboxFilter"/>
+            <include name="SystemCheckboxFilter"/> 
             <include name="ResultLimitFilter"/>
             <include name="ViewletCheckboxClear"/>  
             <include name="Logout"/>

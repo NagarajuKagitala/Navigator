@@ -51,7 +51,7 @@
         <include name="InhibitPutFromCommands"/>
         <include name="MQSCSnapshot"/>
         <include name="SaveMQSCSnapshot"/> 
-        <include name="QueueProperties"/>
+        <include name="QueueProperties"/> 
         <include name="QueueEvents"/> 
         <include name="AddToFavoriteViewlet"/>  
          
