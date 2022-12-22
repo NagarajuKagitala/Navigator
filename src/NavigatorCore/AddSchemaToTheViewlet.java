@@ -1,6 +1,7 @@
 package NavigatorCore;
 
 import java.io.File;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 //import org.apache.commons.io.FileUtils;
@@ -126,7 +127,7 @@ public class AddSchemaToTheViewlet
 		
 		//Create viewlet button
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		Thread.sleep(LowSleep);
+		Thread.sleep(MediumSleep);
 		
 		//--------- Create Queue viewlet-----------
 		Viewlets obj=new Viewlets();
@@ -158,20 +159,21 @@ public class AddSchemaToTheViewlet
 		String[] AttributeLoop = AttributeValues.split(",");
 				
 		driver.findElement(By.cssSelector("img[title=\"Manage viewlet schemas\"]")).click();
+		Thread.sleep(MediumSleep);
 		
 		try
 		{
 			//Click on existing schema name
 			driver.findElement(By.xpath("//tr[contains(.,'"+ SchemaName +"')]")).click();
-			Thread.sleep(2000);
+			Thread.sleep(LowSleep);
 			
 			//Click on Delete button
 			driver.findElement(By.xpath("//button[contains(.,'Delete')]")).click();
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 			
 			//Click on confirmation yes button
 			driver.findElement(By.id("accept-true")).click();
-			Thread.sleep(4000);
+			Thread.sleep(MediumSleep);
 		}
 		catch(Exception e)
 		{
@@ -179,10 +181,11 @@ public class AddSchemaToTheViewlet
 		}
 		
 		driver.findElement(By.cssSelector("button.g-btn-blue-style")).click();
+		Thread.sleep(LowSleep);
 		
 		//Creating schema
 		driver.findElement(By.name("name")).sendKeys(SchemaName);
-		
+		Thread.sleep(LowSleep);
 		
 		//System.out.println(AttributeNames);
 		for (String FinalValues : AttributeLoop)
@@ -225,6 +228,7 @@ public class AddSchemaToTheViewlet
 	public static void DeleteSchema(String SchemaName, ITestContext context) throws Exception
 	{
 		driver.findElement(By.cssSelector("img[title=\"Manage viewlet schemas\"]")).click();
+		Thread.sleep(LowSleep); 
 		//Delete procedure
 		driver.findElement(By.xpath("//button[contains(.,'Delete')]")).click();
 		Thread.sleep(LowSleep); 
@@ -244,7 +248,7 @@ public class AddSchemaToTheViewlet
 		
 		//Click on OK button
 		driver.findElement(By.xpath("//button[contains(.,'OK')]")).click();
-		Thread.sleep(6000);
+		Thread.sleep(MediumSleep);
 		
 			
 		
@@ -341,6 +345,7 @@ public class AddSchemaToTheViewlet
 		Thread.sleep(MediumSleep);
 		
 		String DisplayedAttribute=driver.findElement(By.xpath("//div[3]/table/tbody")).getText();
+		System.out.println("Result data is: " +DisplayedAttribute);
 		
 		if(DisplayedAttribute.contains(AttributeName))
 		{
@@ -397,9 +402,11 @@ public class AddSchemaToTheViewlet
 	{
 		//Click on Add All button
 		driver.findElement(By.xpath("//button[contains(.,'Add all ')]")).click();
+		Thread.sleep(LowSleep); 
 		
 		//Select a Attribute
 		driver.findElement(By.xpath("//tr[6]/td")).click();
+		Thread.sleep(LowSleep); 
 		
 		//store the Selected attribute into string
 		String AttributeName=driver.findElement(By.xpath("//tr[6]/td")).getText();
@@ -407,6 +414,7 @@ public class AddSchemaToTheViewlet
 		
 		//Click on Move to top Button
 		driver.findElement(By.xpath("//button[contains(.,'Move to Top')]")).click();
+		Thread.sleep(LowSleep); 
 		
 		//Store the Top Attribute value into string
 		String Top=driver.findElement(By.xpath("//td")).getText();
@@ -428,12 +436,13 @@ public class AddSchemaToTheViewlet
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority=12)
+	@Test(priority=9)
 	@TestRail(testCaseId=324)
 	public void MoveToBottomButton(ITestContext context) throws InterruptedException
 	{
 		//Select a Attribute
 		driver.findElement(By.xpath("//tr[6]/td")).click();
+		Thread.sleep(LowSleep); 
 		
 		//store the Selected attribute into string
 		String AttributeName=driver.findElement(By.xpath("//tr[6]/td")).getText();
@@ -442,6 +451,14 @@ public class AddSchemaToTheViewlet
 		//click on move to bottom button
 		driver.findElement(By.xpath("//button[contains(.,'Move to Bottom')]")).click();
 		Thread.sleep(LowSleep);
+		
+		WebElement ele=driver.findElement(By.className("displayed-attrs")).findElement(By.tagName("table")).findElement(By.tagName("tbody"));
+		List<WebElement> trs=ele.findElements(By.tagName("tr"));
+		System.out.println("no of attributes: " +trs.size());
+		
+		int count=trs.size();
+		String BottomAttribute2=driver.findElement(By.xpath("//tr["+ count +"]/td")).getText();
+		System.out.println("Bottom attribute is using list: " +BottomAttribute2);
 		
 		try
 		{
@@ -458,7 +475,7 @@ public class AddSchemaToTheViewlet
 			
 		}
 		
-		if(BottomAttribute.equalsIgnoreCase(AttributeName) || BottomAttribute1.equalsIgnoreCase(AttributeName))
+		if(BottomAttribute.equalsIgnoreCase(AttributeName) || BottomAttribute1.equalsIgnoreCase(AttributeName) || BottomAttribute2.equalsIgnoreCase(AttributeName))
 		{
 			System.out.println("Move to Bottom button is working fine");
 			context.setAttribute("Status", 1);
@@ -549,7 +566,7 @@ public class AddSchemaToTheViewlet
 	}
 	
 	@Parameters({"Dashboardname"})
-	@Test(priority=12)
+	@Test(priority=15)
 	public static void Logout(String Dashboardname) throws InterruptedException
 	{
 		//Click on Cancel buttons

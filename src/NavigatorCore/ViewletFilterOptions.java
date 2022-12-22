@@ -44,6 +44,7 @@ public class ViewletFilterOptions
 	static String Manager1; 
 	static String Manager1Queuename;
 	static String Manager="";
+	static String Object="";
 	static int countvalue=0;
 	static int syscount=0;
 	static String ResultLimitvalue="";
@@ -119,6 +120,7 @@ public class ViewletFilterOptions
 		
 		//Create New Dashboard
 		driver.findElement(By.cssSelector("div.block-with-border")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("dashboardName")).sendKeys(Dashboardname);
 						
 		//Create viewlet button
@@ -129,15 +131,16 @@ public class ViewletFilterOptions
 		//Click on Viewlet		
 		Viewlets obj=new Viewlets();
 		obj.IBMMQViewlet(driver, ViewletValue, ViewletName, WGSName, Node_Hostname);
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		 //Restore Default settings
 		  driver.findElement(By.cssSelector(".fa-cog")).click();
+		  Thread.sleep(LowSleep);
 		  driver.findElement(By.xpath("//button[contains(.,'Restore Default')]")).click(); 
-		  Thread.sleep(4000);
+		  Thread.sleep(LowSleep);
 		  driver.findElement(By.id("accept-true")).click();
 		  driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-		  Thread.sleep(4000);
+		  Thread.sleep(HighSleep);
 	}
 	
 	@TestRail(testCaseId=1013)
@@ -145,7 +148,7 @@ public class ViewletFilterOptions
 	public void AdvancedViewletFiletercheckbox(ITestContext context) throws InterruptedException
 	{
 		driver.findElement(By.cssSelector(".fa-cog")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Show Empty Queues check box
 		WebElement Checkbox=driver.findElement(By.id("advanced-filtering"));
@@ -158,7 +161,7 @@ public class ViewletFilterOptions
 			Checkbox.click();
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		}
-		Thread.sleep(8000);
+		Thread.sleep(HighSleep);
 		
 		//Store criteria into string
 		String Filter=driver.findElement(By.cssSelector(".col-lg-3 b")).getText();
@@ -207,7 +210,7 @@ public class ViewletFilterOptions
 		{
 			ex.printStackTrace();
 		}
-        Thread.sleep(8000);
+        Thread.sleep(HighSleep);
         
         //Get the results count into string
         String res=driver.findElement(By.cssSelector(".pull-left")).getText();
@@ -216,12 +219,12 @@ public class ViewletFilterOptions
         String[] cou = res.split(" "); 
         int count=Integer.parseInt(cou[1]);
         System.out.println("values: "+count);
-        if(count<=10)
+        if(count>=10)
         {
-        for(int i=0; i<count; i++)
+        for(int i=2; i<11; i++)
         {
-        	String ManagerResult=driver.findElement(By.xpath("//datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[5]/div/span")).getText();
-        	//System.out.println("Managers are: " +ManagerResult);
+        	String ManagerResult=driver.findElement(By.xpath("//datatable-row-wrapper["+ i +"]/datatable-body-row/div[2]/datatable-body-cell[5]/div/span")).getText();
+        	System.out.println("Managers are: " +ManagerResult);
         	
         	if(ManagerResult.equalsIgnoreCase(Manager1))
         	{
@@ -240,14 +243,14 @@ public class ViewletFilterOptions
         }
         
         ClearManager();
-        Thread.sleep(3000);
+        Thread.sleep(LowSleep);
         }
         else
         {
-        	 for(int i=0; i<10; i++)
-             {
-             	String ManagerResult=driver.findElement(By.xpath("//datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[5]/div/span")).getText();
-             	//System.out.println("Managers are: " +ManagerResult);
+        	 for(int i=2; i<10; i++)
+             {                                                    
+             	String ManagerResult=driver.findElement(By.xpath("//datatable-row-wrapper["+ i +"]/datatable-body-row/div[2]/datatable-body-cell[5]/div/span")).getText();
+             	System.out.println("Else condition Managers are: " +ManagerResult);
              	
              	if(ManagerResult.equalsIgnoreCase(Manager1))
              	{
@@ -278,11 +281,11 @@ public class ViewletFilterOptions
 	public void ObjectFilter(ITestContext context) throws InterruptedException
 	{
 		//Get the Object name
-		Manager=driver.findElement(By.xpath("//datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[4]/div/span")).getText();
-		//System.out.println("Manager name is: "+Manager);
+		Object=driver.findElement(By.xpath("//datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[4]/div/span")).getText();
+		System.out.println("Object name is: "+Object);
 		
 		//Send object name
-		driver.findElement(By.xpath("//div[2]/div/div/div[2]/div/input")).sendKeys(Manager);
+		driver.findElement(By.xpath("//div[2]/div/div/div[2]/div/input")).sendKeys(Object);
 		driver.findElement(By.xpath("//div[2]/div/div/div[2]/div/input")).sendKeys(Keys.ENTER);
 		Thread.sleep(MediumSleep);
 		
@@ -295,12 +298,10 @@ public class ViewletFilterOptions
         System.out.println("values: "+count);
         if(count<=10)
         {
-        for(int i=0; i<count; i++)
-        {
-        	String ManagerResult=driver.findElement(By.xpath("//datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[4]/div/span")).getText();
-        	//System.out.println("Managers are: " +ManagerResult);
+        	String ObjectResult=driver.findElement(By.xpath("//datatable-body-cell[4]/div/span")).getText();
+        	System.out.println("object filter results are: " +ObjectResult);
         	
-        	if(ManagerResult.equalsIgnoreCase(Manager) || ManagerResult.contains(Manager))
+        	if(ObjectResult.equalsIgnoreCase(Object) || ObjectResult.contains(Object))
         	{
         		System.out.println("Object filter working fine");
         		context.setAttribute("Status",1);
@@ -314,17 +315,15 @@ public class ViewletFilterOptions
     			ClearObject();
     			driver.findElement(By.id("Object filter failed")).click();
         	}
-        }
+        
     	ClearObject();
-        }
+	}
         else
         {
-        	for(int i=0; i<count; i++)
-            {
-            	String ManagerResult=driver.findElement(By.xpath("//datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[4]/div/span")).getText();
-            	//System.out.println("Managers are: " +ManagerResult);
+            	String ObjectResult=driver.findElement(By.xpath("//datatable-body-cell[4]/div/span")).getText();
+            	System.out.println("Object filter Managers are: " +ObjectResult);
             	
-            	if(ManagerResult.equalsIgnoreCase(Manager) || ManagerResult.contains(Manager))
+            	if(ObjectResult.equalsIgnoreCase(Object) || ObjectResult.contains(Object))
             	{
             		System.out.println("Object filter working fine");
             		context.setAttribute("Status",1);
@@ -338,7 +337,7 @@ public class ViewletFilterOptions
         			ClearObject();
         			driver.findElement(By.id("Object filter failed")).click();
             	}
-            }
+            
         	ClearObject();
         }
         
@@ -354,11 +353,11 @@ public class ViewletFilterOptions
 			//Get the depth value into string
 			String Depth=driver.findElement(By.xpath("//datatable-body-cell[7]/div/span")).getText();
 			System.out.println("Depth is: " +Depth);
-			Thread.sleep(3000);
+			Thread.sleep(LowSleep);
 			
 		//Click on attribute filter
 		driver.findElement(By.xpath("//div[1]/app-viewlet/div/div[2]/div/div/div[3]/div/div/div/button/i")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 				
 		WebElement el=driver.findElement(By.className("maf-table-filters")).findElement(By.tagName("table"));
 		List<WebElement> rows=el.findElements(By.tagName("tr"));
@@ -381,7 +380,7 @@ public class ViewletFilterOptions
 			}
 			
 		}
-		Thread.sleep(8000);
+		Thread.sleep(HighSleep);
 		
 		//Click on Add button
 		driver.findElement(By.xpath("//button[contains(.,'Add...')]")).click();
@@ -392,29 +391,34 @@ public class ViewletFilterOptions
 		driver.findElement(By.xpath("//div[5]/button")).click();
 		Thread.sleep(LowSleep);
 		
-		//Select the attribute
-		String attribute=driver.findElement(By.xpath("//tr[12]/td/div")).getText();
-		System.out.println("Attribute name is: " +attribute);
+		//Search with attribute name
+		driver.findElement(By.xpath("//app-mod-manage-attribute-filter-add-available-attr/div/div/div/div/input")).sendKeys("Maximum Depth");
+		Thread.sleep(LowSleep);
 		
-		if(attribute.equalsIgnoreCase("Maximum Depth"))
-		{
-			driver.findElement(By.xpath("//tr[12]/td/div")).click();
-			Thread.sleep(MediumSleep);
-		}
-		else
-		{
-			driver.findElement(By.xpath("//tr[23]/td/div")).click();
-			Thread.sleep(MediumSleep);
-		}
+		//Click on required attribute
+		driver.findElement(By.xpath("//td/div")).click();
+		Thread.sleep(LowSleep);
+		 
+		/*
+		 * //Select the attribute String
+		 * attribute=driver.findElement(By.xpath("//tr[12]/td/div")).getText();
+		 * System.out.println("Attribute name is: " +attribute);
+		 * 
+		 * if(attribute.equalsIgnoreCase("Maximum Depth")) {
+		 * driver.findElement(By.xpath("//tr[12]/td/div")).click();
+		 * Thread.sleep(MediumSleep); } else {
+		 * driver.findElement(By.xpath("//tr[23]/td/div")).click();
+		 * Thread.sleep(MediumSleep); }
+		 */
 		
 		//driver.findElement(By.xpath("//td[contains(.,'Maximum Depth')]")).click();
 		driver.findElement(By.xpath("//app-mod-manage-attribute-filter-add-available-attr/div/div/div[3]/button")).click();
 		Thread.sleep(MediumSleep);
 		
 		//Comparison operater name
-		Select Compare=new Select(driver.findElement(By.xpath("//td[2]/select")));
+		Select Compare=new Select(driver.findElement(By.xpath("//select")));
 		Compare.selectByVisibleText(CompareOperation);
-		
+		Thread.sleep(LowSleep);
 		
 		/*//Filter the data
 		driver.findElement(By.xpath("//app-mod-manage-attribute-filter-add-available-attr/div/div/div/div/input")).sendKeys(RowValue);
@@ -426,7 +430,7 @@ public class ViewletFilterOptions
 		//Enter the Condition value 
 		driver.findElement(By.cssSelector(".filter-value")).click();
 		driver.findElement(By.cssSelector(".filter-value")).sendKeys(Depth);
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Click on Ok
 		driver.findElement(By.xpath("//div[5]/button[2]")).click();
@@ -455,7 +459,7 @@ public class ViewletFilterOptions
 		
 		//driver.findElement(By.xpath("//td/input")).click();
 		driver.findElement(By.xpath("//button[contains(.,'OK')]")).click();
-		Thread.sleep(LowSleep);
+		Thread.sleep(HighSleep);
 		
 		String Noofqueues=driver.findElement(By.xpath("//datatable-footer/div/div/span")).getText();
 		//System.out.println("no of Queues are: " +Noofqueues);
@@ -463,11 +467,11 @@ public class ViewletFilterOptions
 		String[] Index1=Noofqueues.split(" Visible");
 		String[] Index2=Index1[0].split(": ");
 		int k=Integer.parseInt(Index2[1]);
-		//System.out.println("No of results are: " +k);
-		for(int i=1; i<=k; i++)
+		System.out.println("No of results are: " +k);
+		for(int i=2; i<=12; i++)
 		{
-			String Result=driver.findElement(By.xpath("//datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[7]/div/span")).getText();
-			int integer=Integer.parseInt(Result);
+			String Result=driver.findElement(By.xpath("//datatable-row-wrapper["+ i +"]/datatable-body-row/div[2]/datatable-body-cell[7]/div/span")).getText();
+			int integer=Integer.parseInt(Result);     
 			System.out.println("Values are: " +integer+ " ConditionData is: " +Depth);
 			if(integer==Integer.parseInt(Depth))
 			{
@@ -491,7 +495,7 @@ public class ViewletFilterOptions
 		
 		//Deselect the condition     
 		driver.findElement(By.xpath("//div[3]/div/div/div/input")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 	}
 	
@@ -504,11 +508,11 @@ public class ViewletFilterOptions
 		Js1.executeScript("window.scrollBy(0,100)"); 
 		
 		driver.findElement(By.xpath("//div[4]/div[2]/input")).clear();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//div[4]/div[2]/input")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
     	driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys("10000");
-    	Thread.sleep(4000);
+    	Thread.sleep(LowSleep);
     	driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys(Keys.ENTER);
     	Thread.sleep(HighSleep);
     	
@@ -653,8 +657,11 @@ public class ViewletFilterOptions
 	    	System.out.println("Initial limit is: " +ResultLimitvalue);
 	    	
 	    	driver.findElement(By.xpath("//div[4]/div[2]/input")).clear();
+	    	Thread.sleep(MediumSleep);
 	    	driver.findElement(By.xpath("//div[4]/div[2]/input")).click();
+	    	Thread.sleep(LowSleep);
 	    	driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys("1");
+	    	 Thread.sleep(MediumSleep);
 	    	driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys(Keys.ENTER);
 	    	Thread.sleep(MediumSleep);
 	    	
@@ -677,8 +684,11 @@ public class ViewletFilterOptions
 		    	 context.setAttribute("Status",5);
 				 context.setAttribute("Comment", "Result limit filter is not working");
 				 driver.findElement(By.xpath("//div[4]/div[2]/input")).clear();
+				 Thread.sleep(MediumSleep);
 				 driver.findElement(By.xpath("//div[4]/div[2]/input")).click();
-			     driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys("100");
+				 Thread.sleep(LowSleep);
+			     driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys("1000");
+			     Thread.sleep(MediumSleep);
 			     driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys(Keys.ENTER);
 			     Thread.sleep(MediumSleep);
 			     
@@ -687,8 +697,11 @@ public class ViewletFilterOptions
 	    }
 	    
 	    driver.findElement(By.xpath("//div[4]/div[2]/input")).clear();
+	    Thread.sleep(MediumSleep);
 	    driver.findElement(By.xpath("//div[4]/div[2]/input")).click();
-    	driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys("100");
+	    Thread.sleep(LowSleep);
+    	driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys("1000");
+    	 Thread.sleep(MediumSleep);
     	driver.findElement(By.xpath("//div[4]/div[2]/input")).sendKeys(Keys.ENTER);
     	Thread.sleep(MediumSleep);
 		
@@ -735,12 +748,13 @@ public class ViewletFilterOptions
 	{
 		// Changing the Settings 
 		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Restore Default')]")).click();
-		Thread.sleep(8000);
+		Thread.sleep(MediumSleep);
 		driver.findElement(By.id("accept-true")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-		Thread.sleep(8000);
+		Thread.sleep(HighSleep);
 		
 		LogoutForAll lo=new LogoutForAll();
 		lo.LogoutMethod(driver, Dashboardname);
@@ -751,7 +765,7 @@ public class ViewletFilterOptions
 		//Click on manager dropdown and remove selected manager
 		driver.findElement(By.xpath("//div[2]/div/div/ng-select/div/div/div[3]/input")).click();
 		driver.findElement(By.xpath("//div[2]/div/div/ng-select/div/div/div[3]/input")).sendKeys(Keys.BACK_SPACE);
-		Thread.sleep(6000);
+		Thread.sleep(LowSleep);
 		
 		//Click on header in the navigator
 		driver.findElement(By.xpath("//app-header/div")).click();
@@ -767,7 +781,7 @@ public class ViewletFilterOptions
 		 * 
 		 * for(WebElement e : tag) { System.out.println("Title is :"
 		 * +e.getAttribute("title")); System.out.println("html :"
-		 * +e.getAttribute("innerHTML")); if(e.getAttribute("innerHTML").contains("×"))
+		 * +e.getAttribute("innerHTML")); if(e.getAttribute("innerHTML").contains("ï¿½"))
 		 * { e.click(); System.out.println("Element clicked"); break; } }
 		 */
 	}
@@ -775,10 +789,10 @@ public class ViewletFilterOptions
 	private void ClearObject() throws InterruptedException 
 	{
 		//Clear object name
-        for(int i=1; i<=Manager.length(); i++)
+        for(int i=1; i<=Object.length(); i++)
         {
         	driver.findElement(By.xpath("//div[2]/div/div/div[2]/div/input")).sendKeys(Keys.BACK_SPACE);
-        	Thread.sleep(1000);           
+        	Thread.sleep(1000);            
         }
         driver.findElement(By.xpath("//div[2]/div/div/div[2]/div/input")).sendKeys(Keys.ENTER);
         Thread.sleep(MediumSleep);
@@ -787,7 +801,7 @@ public class ViewletFilterOptions
 	public void CheckEmptyCheckbox() throws InterruptedException
 	{
 		boolean empty=driver.findElement(By.xpath("(//input[@type='checkbox'])[2]")).isSelected();
-		Thread.sleep(6000);
+		Thread.sleep(LowSleep);
 		System.out.println("Status at the end: " +empty);
 		
 		if(empty)

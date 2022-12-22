@@ -125,11 +125,14 @@ public class DashboardOptions
 	{
 		//Create New Dashboard
 		driver.findElement(By.cssSelector("div.block-with-border")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("dashboardName")).sendKeys(Dashboardname);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("iv_yes")).click();
 		Thread.sleep(MediumSleep);
 		
 		driver.findElement(By.xpath("//div[3]/div/div[2]/ng-select/div/span")).click();
+		Thread.sleep(LowSleep);
 		
 		WebElement drop=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
 		List<WebElement> div=drop.findElements(By.tagName("div")); 
@@ -206,12 +209,14 @@ public class DashboardOptions
 	{
 		//Create New Dashboard
 		driver.findElement(By.cssSelector("div.block-with-border")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("dashboardName")).sendKeys(EMSDashboardname);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("iv_yes")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.xpath("//div[3]/div/div[2]/ng-select/div/span")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		WebElement drop=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
 		List<WebElement> div=drop.findElements(By.tagName("div")); 
@@ -222,7 +227,7 @@ public class DashboardOptions
 			if(ele.getText().equalsIgnoreCase(EMSWGS_CreateDashboard))
 			{
 					ele.click();
-					Thread.sleep(2000);
+					Thread.sleep(LowSleep);
 					break;
 				
 			}
@@ -317,7 +322,9 @@ public class DashboardOptions
 		
 		//Click on signout button
 		driver.findElement(By.cssSelector(".fa-power-off")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("yesButton")).click();
+		Thread.sleep(LowSleep);
 		
 		this.login(uname, password);
 		Thread.sleep(MediumSleep);
@@ -328,12 +335,12 @@ public class DashboardOptions
 		
 		for(WebElement li2: lis2)
 		{
-			//System.out.println("titles are: " +li1.getAttribute("class"));
+			System.out.println("titles are: " +li2.getAttribute("class"));
 			
 			if(li2.getAttribute("class").contains("active"))
 			{
 				WebElement fi3=li2.findElement(By.className("g-tab-title"));
-				//System.out.println("Names are: " +fi2.getText());
+				System.out.println("dashboards are : " +fi3.getText());
 				
 				if(fi3.getText().equalsIgnoreCase(Dashboardname))
 				{
@@ -391,6 +398,7 @@ public class DashboardOptions
 		
 		//click on Add dashboard icon
 		driver.findElement(By.cssSelector(".btn-add")).click();
+		Thread.sleep(LowSleep);
 		
 		//Click on yes checkbox
 		driver.findElement(By.id("iv_yes")).click();
@@ -398,6 +406,7 @@ public class DashboardOptions
 		
 		//click on viewlets template dropdown
 		driver.findElement(By.xpath("//div[3]/div/div/ng-select/div/span")).click();
+		Thread.sleep(LowSleep);
 		
 		WebElement ChannelauthNode=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
 		List<WebElement> divs=ChannelauthNode.findElements(By.tagName("div"));
@@ -415,7 +424,7 @@ public class DashboardOptions
 		
 		//click on cancel button
 		driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-		Thread.sleep(LowSleep);
+		Thread.sleep(MediumSleep);
 		
 		if(Templates.contains(Dashboardname))
 		{
@@ -512,6 +521,7 @@ public class DashboardOptions
 		try
 		{
 			driver.findElement(By.cssSelector(".active .g-tab-btn-close-block")).click();
+			Thread.sleep(LowSleep);
 			//driver.findElement(By.cssSelector(".fa-times")).click();
 			driver.findElement(By.cssSelector(".btn-primary")).click();
 			Thread.sleep(HighSleep);
@@ -594,7 +604,7 @@ public class DashboardOptions
 		{
 			//click on dashboard button
 			driver.findElement(By.id("add-dashboard")).click();
-			Thread.sleep(4000);
+			Thread.sleep(LowSleep);
 			
 		WebElement cla1=driver.findElement(By.tagName("app-mod-manage-dashboard"));
 		List<WebElement> lis1=cla1.findElements(By.tagName("div"));
@@ -626,7 +636,7 @@ public class DashboardOptions
 		System.out.println("List of dashboards are: " +DashboardNames);
 		
 		driver.findElement(By.xpath("//button[contains(.,'Close')]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		if(DashboardNames.contains(EMSDashboardname))
 		{
@@ -648,6 +658,7 @@ public class DashboardOptions
 		{
 			System.out.println("Dashboard is not existing with same name");
 			driver.findElement(By.xpath("//button[contains(.,'Close')]")).click();
+			Thread.sleep(LowSleep);
 		}
 		
 	}
@@ -659,7 +670,7 @@ public class DashboardOptions
 	{
 		//click on dashboard button
 		driver.findElement(By.id("add-dashboard")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		WebElement cla=driver.findElement(By.tagName("app-mod-manage-dashboard"));
 		List<WebElement> lis=cla.findElements(By.tagName("div"));
@@ -682,13 +693,13 @@ public class DashboardOptions
 					System.out.println("Dashboard names are: " +fi.getText());
 					if(fi.getText().equalsIgnoreCase(NewDashboardName))
 					{
-						Actions a=new Actions(driver);
-						a.click(fi).perform();
-						Thread.sleep(5000);
+						
+						fi.click();
+						Thread.sleep(LowSleep);
 						
 						//click on add to current view button
-						driver.findElement(By.xpath("//button[contains(.,' Add To Current View')]")).click();
-						Thread.sleep(6000);
+						driver.findElement(By.xpath("//button[contains(.,' Add To Current Perspective')]")).click();
+						Thread.sleep(LowSleep);
 						break;
 					}
 				}
@@ -696,7 +707,7 @@ public class DashboardOptions
 			}
 		}
 		driver.findElement(By.xpath("//button[contains(.,'Close')]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		//select dashboard and choose remove option
 		WebElement cla1=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul"));
@@ -714,11 +725,11 @@ public class DashboardOptions
 				WebElement element=fi1;
 				JavascriptExecutor js = (JavascriptExecutor)driver;
 				js.executeScript("arguments[0].click();", element);
-				Thread.sleep(5000);
+				Thread.sleep(LowSleep);
 				 
 				Actions a=new Actions(driver);
 				a.contextClick(element).perform();
-				Thread.sleep(5000);
+				Thread.sleep(LowSleep);
 				break;
 			}
 		}
@@ -810,7 +821,7 @@ public class DashboardOptions
 		
 		//Select set default option
 		driver.findElement(By.linkText("Set as default")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 	}
 	
 	
@@ -819,7 +830,9 @@ public class DashboardOptions
 	{
 		//Login
 		driver.findElement(By.id("username")).sendKeys(uname);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("password")).sendKeys(password);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector("button.btn-submit")).click();
 		Thread.sleep(HighSleep);
 	}

@@ -152,13 +152,15 @@ public class ManageDashboardOptions
 	{
 		//click on dashboard button
 		driver.findElement(By.id("add-dashboard")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Click on new button
 		driver.findElement(By.xpath("//button[contains(.,' New')]")).click();
+		Thread.sleep(LowSleep);
 		
 		//give the dashboard name
 		driver.findElement(By.id("dashboardName")).sendKeys(Dashboardname);
+		Thread.sleep(LowSleep);
 		
 		//Click on create button
 		driver.findElement(By.xpath("//button[contains(.,'Create')]")).click();
@@ -211,7 +213,7 @@ public class ManageDashboardOptions
 					if(fi.getText().equalsIgnoreCase(Dashboardname))
 					{
 						fi.click();
-						Thread.sleep(5000);
+						Thread.sleep(LowSleep);
 						break;
 					}
 				}
@@ -257,9 +259,9 @@ public class ManageDashboardOptions
 	{
 		//Delete the existing dashboard
 		driver.findElement(By.xpath("//button[contains(.,' Delete')]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("accept-true")).click();
-		Thread.sleep(8000);
+		Thread.sleep(MediumSleep);
 				
 		ListofDashboards();
 		System.out.println("dashboards are : "+DashboardNames);
@@ -290,24 +292,24 @@ public class ManageDashboardOptions
 				
 		//Select dashboard
 		driver.findElement(By.xpath("//td/input")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Click on tag button
 		driver.findElement(By.xpath("//button[contains(.,' Tags')]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		//Click on +add button
 		driver.findElement(By.xpath("//app-mod-manage-dashboard-tags/div[3]/div/div/div/button")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		//give the dashboard name   
 		driver.findElement(By.xpath("//app-mod-manage-dashboard-tags-properties/div[2]/input")).sendKeys(TagName);
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Click on Add button
 		driver.findElement(By.xpath("//app-mod-manage-dashboard-tags-properties/div[2]/button")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		//Click on save button
 		driver.findElement(By.xpath("//div[4]/div/div/div/button")).click();
-		Thread.sleep(3000);
+		Thread.sleep(MediumSleep);
 		
 		//Get the tags
 		ListOfTags();
@@ -353,14 +355,14 @@ public class ManageDashboardOptions
 		
 		//Click on edit button 
 		driver.findElement(By.xpath("//app-mod-manage-dashboard-tags/div[3]/div/div/div[2]/button")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		//enter TagName
 		driver.findElement(By.xpath("//div[3]/div/div/input")).clear();
 		driver.findElement(By.xpath("//div[3]/div/div/input")).sendKeys(NameTagName);
-		Thread.sleep(3000);		
+		Thread.sleep(LowSleep);		
 		//Save Changes 
 		driver.findElement(By.xpath("//div[4]/div/div/div/button")).click();		
-		Thread.sleep(3000);
+		Thread.sleep(MediumSleep);
 		
 		//Get the tags
 		ListOfTags();
@@ -388,11 +390,11 @@ public class ManageDashboardOptions
 	{
 		//Click on Delete button
 		driver.findElement(By.xpath("//app-mod-manage-dashboard-tags/div[3]/div/div/div[3]/button")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Click on confirmation yes button
 		driver.findElement(By.id("accept-true")).click();
-		Thread.sleep(3000);
+		Thread.sleep(MediumSleep);
 		
 		//Get the list of tags
 		ListOfTags();
@@ -417,7 +419,7 @@ public class ManageDashboardOptions
 		
 		//Clikc on Cancel button
 		driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-		Thread.sleep(8000);
+		Thread.sleep(MediumSleep);
 	}
 	
 
@@ -450,7 +452,7 @@ public class ManageDashboardOptions
 	public void ImportDashboard(String ImportedDashboardname, ITestContext context) throws InterruptedException, AWTException
 	{
 		driver.findElement(By.id("add-dashboard")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//click on Import button
 		driver.findElement(By.xpath("//button[contains(.,' Import')]")).click();
@@ -458,7 +460,7 @@ public class ManageDashboardOptions
 		
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", driver.findElement(By.id("fileSelect")));
-		Thread.sleep(8000);
+		Thread.sleep(MediumSleep);
 				
 		//Loading the file into queue by using robot class
 		String filepath1=System.getProperty("user.dir") + "\\" + UploadDashboard;
@@ -479,7 +481,7 @@ public class ManageDashboardOptions
 	    //Thread.sleep(10000);
 	    Actions a=new Actions(driver);
 	    a.sendKeys(Keys.CONTROL+ "V").sendKeys(Keys.ENTER).build().perform();
-	    Thread.sleep(10000);
+	    Thread.sleep(HighSleep);
 
 	    
 		/*
@@ -549,7 +551,7 @@ public class ManageDashboardOptions
 					if(fi.getText().equalsIgnoreCase(ImportedDashboardname))
 					{
 						fi.click();
-						Thread.sleep(5000);
+						Thread.sleep(MediumSleep);
 						break;
 					}
 				}
@@ -563,7 +565,7 @@ public class ManageDashboardOptions
 		
 		//Clikc on Cancel button
 		driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		WebElement cla2=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul"));
 		List<WebElement> lis2=cla2.findElements(By.tagName("li"));

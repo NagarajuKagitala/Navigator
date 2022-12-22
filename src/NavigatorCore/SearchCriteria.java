@@ -169,16 +169,17 @@ public class SearchCriteria
 				
 		//Select the put new message option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		Actions PutMessagesMousehour=new Actions(driver);
 		PutMessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Put New Message")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Select the number of messages
 		driver.findElement(By.name("generalNumberOfMsgs")).click();
 		driver.findElement(By.name("generalNumberOfMsgs")).clear();
 		driver.findElement(By.name("generalNumberOfMsgs")).sendKeys("1");
+		Thread.sleep(LowSleep);
 		
 		//Put a message data
 		//driver.findElement(By.id("encoding-text-9")).click();
@@ -215,9 +216,9 @@ public class SearchCriteria
 	{
 		//Edit Viewlet page
 		driver.findElement(By.id("dropdownMenuButton")).click();
-		Thread.sleep(8000);
+		Thread.sleep(MediumSleep);
 		driver.findElement(By.linkText("Edit viewlet")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		
 		//Search Criteria
 		boolean FindMessagesCheckbox=driver.findElement(By.id("sc-find-messages-checkbox")).isSelected();
@@ -227,7 +228,7 @@ public class SearchCriteria
 		}
 		
 		driver.findElement(By.cssSelector("div.right > div.g-text-and-input.line > button.btn-white-round")).click();
-		Thread.sleep(1000);
+		Thread.sleep(LowSleep);
 		
 		//Get the list of conditions
 		String Conditions=driver.findElement(By.xpath("//div/div[3]/ngx-datatable/div/datatable-body")).getText();
@@ -259,12 +260,15 @@ public class SearchCriteria
 		driver.findElement(By.xpath("//datatable-body-cell[3]/div/input")).sendKeys(SearchCriteriaName);
 		//driver.findElement(By.xpath("(//input[@type='text'])[13]")).click();           
 		//driver.findElement(By.xpath("(//input[@type='text'])[13]")).sendKeys(SearchCriteriaName);
+		Thread.sleep(LowSleep);
 						
 		//Click on Data enter icon
 		driver.findElement(By.xpath("//img[@alt='Data']")).click();
+		Thread.sleep(LowSleep);
 		
 		//Enter the search data
 		driver.findElement(By.xpath("//div[2]/textarea")).sendKeys(SearchCriteriaData);
+		Thread.sleep(LowSleep);
 				
 		//Click on Save button
 		driver.findElement(By.xpath("//app-mod-data/div/div[2]/div/div/div/button")).click();
@@ -272,11 +276,11 @@ public class SearchCriteria
 			
 		//Click on save button in windo
 		driver.findElement(By.xpath("//button[contains(.,'Save')]")).click();
-		Thread.sleep(LowSleep);
+		Thread.sleep(MediumSleep);
 		
 		//Click on Apply changes button
 		driver.findElement(By.cssSelector(".btn-primary")).click();
-		Thread.sleep(HighSleep);
+		Thread.sleep(40000);
 		
 		/*//Search criteria name
 		driver.findElement(By.cssSelector(".input-group > .form-control")).sendKeys(SearchCriteriaName);
@@ -333,9 +337,10 @@ public class SearchCriteria
 	{
 		//Click on clear all check box button
 		driver.findElement(By.xpath("//datatable-header-cell[2]/div/i")).click();
-		Thread.sleep(2000);  
+		Thread.sleep(LowSleep); 
 		
 		//Search with Queue name
+		driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Queue);
 		Thread.sleep(LowSleep);
 		
@@ -348,14 +353,14 @@ public class SearchCriteria
 		{
 			//Choose the Active filter
 			driver.findElement(By.xpath("//ng-select/div/span[2]")).click();
-			Thread.sleep(4000);
+			Thread.sleep(LowSleep);
 		
 		}
 		catch (Exception e)
 		{
 			System.out.println("condition not selected");
 			driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
-			Thread.sleep(4000);
+			Thread.sleep(LowSleep);
 		}
 		
 		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));

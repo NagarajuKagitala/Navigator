@@ -25,6 +25,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Common.Dashboard;
+import Common.LogoutForAll;
 import testrail.Settings;
 import testrail.TestClass;
 import testrail.TestRail;
@@ -112,6 +113,7 @@ static WebDriver driver;
 		//Create New Dashboard
 		driver.findElement(By.cssSelector("div.block-with-border")).click();
 		driver.findElement(By.name("dashboardName")).sendKeys(Dashboardname);
+		Thread.sleep(LowSleep);
 		//driver.findElement(By.id("iv_yes")).click();
 			
 		//Create viewlet button
@@ -148,6 +150,7 @@ static WebDriver driver;
 		//Enter the notice data
 		driver.findElement(By.id("global-notice")).clear();
 		driver.findElement(By.id("global-notice")).sendKeys(GlobalNoticedata);
+		Thread.sleep(LowSleep);
 		
 		//Click on save changes button
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
@@ -209,6 +212,7 @@ static WebDriver driver;
 		//Give the environment data
 		driver.findElement(By.id("env_level_txt")).clear();
 		driver.findElement(By.id("env_level_txt")).sendKeys(EnvironmentData);
+		Thread.sleep(LowSleep);
 		
 		//Click on save changes button
 		driver.findElement(By.xpath("//app-modal-main-environment-level-properties/div[2]/div/div/div/button")).click();
@@ -315,10 +319,11 @@ static WebDriver driver;
 						{
 							System.out.println("button text is: " +fin.getText());
 							fin.click();
-							Thread.sleep(6000);
+							Thread.sleep(MediumSleep);
 							//Give the environment data
 							driver.findElement(By.id("env_level_txt")).clear();
 							driver.findElement(By.id("env_level_txt")).sendKeys(UpdatedEnvironmentData);
+							Thread.sleep(LowSleep);
 							
 							//Click on save changes button
 							driver.findElement(By.xpath("//app-modal-main-environment-level-properties/div[2]/div/div/div/button")).click();
@@ -477,9 +482,11 @@ static WebDriver driver;
 		
 		//Login with user
 		driver.findElement(By.id("username")).sendKeys(NewOwner);
-		driver.findElement(By.id("password")).sendKeys("User");
-		driver.findElement(By.cssSelector("button.btn-submit")).click();
 		Thread.sleep(LowSleep);
+		driver.findElement(By.id("password")).sendKeys("User");
+		Thread.sleep(LowSleep);
+		driver.findElement(By.cssSelector("button.btn-submit")).click();
+		Thread.sleep(MediumSleep);
 		
 		//Click on cancel button
 		driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
@@ -489,7 +496,9 @@ static WebDriver driver;
 		
 		//Login with main user
 		driver.findElement(By.id("username")).sendKeys(uname);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("password")).sendKeys(password);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector("button.btn-submit")).click();
 		Thread.sleep(HighSleep);
 		
@@ -502,7 +511,7 @@ static WebDriver driver;
 		//Search with dashboard name
 		driver.findElement(By.xpath("//app-modal-main-settings-dashboard-ownership-management/div/div/div[2]/input")).sendKeys(Dashboardname);
 		driver.findElement(By.xpath("//app-modal-main-settings-dashboard-ownership-management/div/div/div[2]/input[2]")).click();
-		Thread.sleep(LowSleep);
+		Thread.sleep(MediumSleep);
 		
 		//Select check box
 		driver.findElement(By.xpath("//td/input")).click();
@@ -528,6 +537,38 @@ static WebDriver driver;
 		String OwnerName=driver.findElement(By.xpath("//td[3]")).getText();
 		System.out.println("Owner ship name is: " +OwnerName);
 		
+		//Set back to Admin
+		driver.findElement(By.xpath("//td/input")).click();
+		Thread.sleep(MediumSleep);
+		
+		//Click on change owner button
+		driver.findElement(By.xpath("//button[contains(.,' Change Owner')]")).click();
+		Thread.sleep(MediumSleep);
+		
+		//Search with owner
+		driver.findElement(By.xpath("//app-modal-change-dashboard-owner/div/div/div[2]/input")).sendKeys(uname);
+		driver.findElement(By.xpath("//app-modal-change-dashboard-owner/div/div/div[2]/input[2]")).click();
+		Thread.sleep(MediumSleep);
+		
+		//Set owner
+		driver.findElement(By.xpath("//button[contains(.,' Set owner')]")).click();
+		Thread.sleep(LowSleep);
+		
+		try
+		{
+			driver.findElement(By.xpath("//div[2]/div/div/table/tr[3]/td[2]/button")).click();
+			Thread.sleep(LowSleep);
+		}
+		
+		catch(Exception e)
+		{
+			
+		}
+		
+		//Click on confirmation yes
+		driver.findElement(By.id("accept-true")).click();
+		Thread.sleep(MediumSleep);
+		
 		//Click on save changes
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		Thread.sleep(MediumSleep);
@@ -548,14 +589,12 @@ static WebDriver driver;
 		}
 	}
 	
+	@Parameters({"Dashboardname"})
 	@Test(priority=30)
-	public void Logout() throws InterruptedException 
+	public void Logout(String Dashboardname) throws InterruptedException 
 	{
-		//Logout option
-		driver.findElement(By.cssSelector(".fa-power-off")).click();
-		Thread.sleep(4000);
-		driver.findElement(By.id("yesButton")).click();
-		driver.close();
+		LogoutForAll lo=new LogoutForAll();
+		lo.LogoutMethod(driver, Dashboardname);
 
 	}
 	
@@ -563,7 +602,7 @@ static WebDriver driver;
 	{
 		//Click on Settings icon
 		driver.findElement(By.cssSelector(".fa-cog")).click();
-		Thread.sleep(3000);
+		Thread.sleep(MediumSleep);
 		
 		//Click on Edit global settings icon
 		driver.findElement(By.xpath("//button[contains(.,'Edit global settings')]")).click();
@@ -594,14 +633,14 @@ static WebDriver driver;
 		
 		//Click on save changes button
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-		Thread.sleep(MediumSleep);	
+		Thread.sleep(HighSleep);	
 	}
 	
 	public void EnvironmentTab() throws InterruptedException
 	{
 		//Click on Settings icon
 		driver.findElement(By.cssSelector(".fa-cog")).click();
-		Thread.sleep(3000);
+		Thread.sleep(MediumSleep);
 		
 		//Click on Edit global settings icon
 		driver.findElement(By.xpath("//button[contains(.,'Edit global settings')]")).click();
@@ -632,7 +671,7 @@ static WebDriver driver;
 		
 		//Click on save changes button
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-		Thread.sleep(MediumSleep);	
+		Thread.sleep(HighSleep);	
 	}
 	
 	public void DeleteExistingEnvironment(String EnvironmentData) throws InterruptedException
@@ -669,9 +708,9 @@ static WebDriver driver;
 						{
 							System.out.println("button text is: " +fin.getText());
 							fin.click();
-							Thread.sleep(6000);
+							Thread.sleep(LowSleep);
 							driver.findElement(By.id("accept-true")).click();
-							Thread.sleep(6000);
+							Thread.sleep(LowSleep);
 							cond=true;
 							break;
 						}
@@ -730,7 +769,7 @@ static WebDriver driver;
 	{
 		//Click on Settings icon
 		driver.findElement(By.cssSelector(".fa-cog")).click();
-		Thread.sleep(3000);
+		Thread.sleep(MediumSleep);
 		
 		//Click on Edit global settings icon
 		driver.findElement(By.xpath("//button[contains(.,'Edit global settings')]")).click();

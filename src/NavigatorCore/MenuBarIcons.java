@@ -135,7 +135,7 @@ public class MenuBarIcons
 	{
 		//Click on request history icon
 		driver.findElement(By.cssSelector(".fa-server")).click();
-		Thread.sleep(3000);
+		Thread.sleep(MediumSleep);
 		
 		//Get the title
 		String Requesttitle=driver.findElement(By.xpath("//app-modal-title/div")).getText();
@@ -167,7 +167,7 @@ public class MenuBarIcons
 	{
 		//Click on schedular icon
 		driver.findElement(By.cssSelector(".fa-clock-o")).click();
-		Thread.sleep(3000);
+		Thread.sleep(MediumSleep);
 		
 		//Store the page title into string
 		String ScheduleTitle=driver.findElement(By.xpath("//app-modal-title/div")).getText();
@@ -201,7 +201,7 @@ public class MenuBarIcons
 	{
 		//Click on schedular icon
 		driver.findElement(By.cssSelector(".fa-clock-o")).click();
-		Thread.sleep(3000);
+		Thread.sleep(MediumSleep);
 		
 		//Click on column button
 		driver.findElement(By.xpath("//button[contains(.,'Columns')]")).click();
@@ -222,6 +222,7 @@ public class MenuBarIcons
 		else
 		{
 			driver.findElement(By.xpath("//td/input")).click();
+			Thread.sleep(LowSleep);
 		}
 		
 		//Click on OK button
@@ -243,6 +244,7 @@ public class MenuBarIcons
 		if(sta1)
 		{
 			driver.findElement(By.xpath("//td/input")).click();
+			Thread.sleep(LowSleep);
 			
 		}
 		else
@@ -273,7 +275,7 @@ public class MenuBarIcons
 		}
 		//Click on cancel button
 		driver.findElement(By.cssSelector(".btn-danger")).click();
-		Thread.sleep(3000);
+		Thread.sleep(MediumSleep);
 	}
 	
 	@TestRail(testCaseId = 1022)

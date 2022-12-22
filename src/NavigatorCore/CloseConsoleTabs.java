@@ -123,6 +123,7 @@ public class CloseConsoleTabs
 		//Create New Dashboard
 		driver.findElement(By.cssSelector("div.block-with-border")).click();
 		driver.findElement(By.name("dashboardName")).sendKeys(Dashboardname);
+		Thread.sleep(MediumSleep); 
 			
 		//Create viewlet button
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
@@ -166,9 +167,11 @@ public class CloseConsoleTabs
 				{
 					System.out.println("Index values is: " +i);
 					driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+					Thread.sleep(LowSleep); 
 					driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper["+ k +"]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 					Thread.sleep(LowSleep);
 					driver.findElement(By.linkText("Browse messages")).click();
+					Thread.sleep(LowSleep); 
 					break;
 				}
 			}

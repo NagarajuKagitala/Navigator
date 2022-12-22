@@ -155,10 +155,11 @@ public class AttributeFilterCondition
 		//Edit Viewlet page
 		driver.findElement(By.id("dropdownMenuButton")).click();
 		driver.findElement(By.linkText("Edit viewlet")).click();
+		Thread.sleep(LowSleep); 
 		
 		//Add attribute filter
 		driver.findElement(By.cssSelector("button.btn-white-round")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep); 
 		
 		WebElement el=driver.findElement(By.className("maf-table-filters")).findElement(By.tagName("table"));
 		List<WebElement> rows=el.findElements(By.tagName("tr"));
@@ -178,6 +179,7 @@ public class AttributeFilterCondition
 				driver.findElement(By.xpath("//button[contains(.,'Delete')]")).click();
 				Thread.sleep(MediumSleep);
 				driver.findElement(By.id("accept-true")).click();
+				Thread.sleep(LowSleep); 
 				break;
 			}
 			}

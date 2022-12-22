@@ -139,16 +139,21 @@ public class NavigatorSettings
 		//Add Favorite Viewlet
 		//driver.findElement(By.cssSelector("button.g-button-blue.button-add")).click();
 		driver.findElement(By.id("add-viewlet")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("fav")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector("div.mod-select-viewlet-buttons > button.g-button-blue")).click();
+		Thread.sleep(LowSleep);
 		
 		//Viewlet Name
 		driver.findElement(By.name("viewlet-name")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("viewlet-name")).sendKeys(FavoriteViewletName);
+		Thread.sleep(LowSleep);
 		
 		//select WGS
 		driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div/div[2]/div/ng-select/div/span")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		WebElement drop1=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
 		List<WebElement> div1=drop1.findElements(By.tagName("div"));
@@ -166,31 +171,33 @@ public class NavigatorSettings
 		
 		//Submit
 		driver.findElement(By.cssSelector("div.g-block-bottom-buttons.buttons-block > button.g-button-blue")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		//Go to edit viewlet
 		driver.findElement(By.id("dropdownMenuButton")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.linkText("Edit viewlet")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Update result limit
 		driver.findElement(By.xpath("//input[@type='number']")).clear();
 		driver.findElement(By.xpath("//input[@type='number']")).sendKeys("1000");
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		
 		//Click on Apply changes
 		driver.findElement(By.xpath("//button[contains(.,'Apply changes')]")).click();
-		Thread.sleep(8000);
+		Thread.sleep(HighSleep);
 		
 		//Restoring the Default Settings
 		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Restore Default')]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(MediumSleep);
 		//Click on confirmation yes
 		driver.findElement(By.id("accept-true")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(HighSleep);
 		
 	}
 	
@@ -202,6 +209,7 @@ public class NavigatorSettings
 		{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(LowSleep);
 		
 		//Show Inactive channels check box
 		WebElement Checkbox=driver.findElement(By.id("inactive-channels"));
@@ -255,6 +263,7 @@ public class NavigatorSettings
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(LowSleep);
 		
 		//Show Empty Queues check box
 		WebElement Checkbox=driver.findElement(By.id("empty-queues"));
@@ -305,6 +314,7 @@ public class NavigatorSettings
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(LowSleep);
 		
 		//Show Show managers for default schema check box
 		WebElement SystemCheckbox=driver.findElement(By.id("system-objects"));
@@ -318,7 +328,7 @@ public class NavigatorSettings
 			SystemCheckbox.click();
 			//driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		}
-		Thread.sleep(8000);
+		Thread.sleep(MediumSleep);
 		
 		//Show Empty Queues check box
 		WebElement Checkbox=driver.findElement(By.id("temporary-dynamic-queues"));
@@ -331,18 +341,21 @@ public class NavigatorSettings
 			Checkbox.click();
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		}
-		Thread.sleep(8000);
+		Thread.sleep(HighSleep);
 		
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys("INQ");
+		Thread.sleep(LowSleep);
 		String INQ=driver.findElement(By.xpath("//datatable-body")).getText();
 		
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys("HASH");
+		Thread.sleep(LowSleep);
 		String HASH=driver.findElement(By.xpath("//datatable-body")).getText();
 		
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys("NSQ");
+		Thread.sleep(LowSleep);
 		String NSQ=driver.findElement(By.xpath("//datatable-body")).getText();
 		
 		for(int j=0; j<=4; j++)
@@ -371,6 +384,7 @@ public class NavigatorSettings
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(LowSleep);
 		
 		//Show Empty Queues check box
 		WebElement Checkbox=driver.findElement(By.id("full-names-for-favorites"));
@@ -383,7 +397,7 @@ public class NavigatorSettings
 			Checkbox.click();
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		}
-		Thread.sleep(8000);
+		Thread.sleep(HighSleep);
 		
 		//Select Add to favorite option in queue
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
@@ -441,6 +455,7 @@ public class NavigatorSettings
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(LowSleep);
 		
 		//Show Empty Queues check box
 		WebElement Checkbox=driver.findElement(By.id("full-names-for-search-results"));
@@ -453,7 +468,7 @@ public class NavigatorSettings
 			Checkbox.click();
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		}
-		Thread.sleep(8000);
+		Thread.sleep(HighSleep);
 		
 		String SearchQueuename=driver.findElement(By.xpath("//datatable-body-cell[4]/div/span")).getText();
 		System.out.println(SearchQueuename);
@@ -481,7 +496,7 @@ public class NavigatorSettings
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.cssSelector(".fa-cog")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		//Show Show managers for default schema check box
 		WebElement Checkbox=driver.findElement(By.id("system-objects"));
@@ -494,7 +509,7 @@ public class NavigatorSettings
 		{
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		}
-		Thread.sleep(8000);
+		Thread.sleep(HighSleep);
 		
 		String ColumnValues=driver.findElement(By.xpath("//datatable-body")).getText();
 	    //System.out.println(ColumnValues);
@@ -549,13 +564,16 @@ public class NavigatorSettings
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.cssSelector(".fa-cog")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("inactive-channels")).click();
+		Thread.sleep(LowSleep);
 		//driver.findElement(By.id("empty-queues")).click();
 		driver.findElement(By.id("temporary-dynamic-queues")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("full-names-for-favorites")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.id("full-names-for-search-results")).click();
-		Thread.sleep(1000);
+		Thread.sleep(LowSleep);
 		
 		//Show Show managers for default schema check box
 		WebElement Checkbox=driver.findElement(By.id("active-managers-only"));
@@ -568,7 +586,7 @@ public class NavigatorSettings
 		{
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		}
-		Thread.sleep(8000);
+		Thread.sleep(HighSleep);
 		try
 		{
 			
@@ -617,9 +635,10 @@ public class NavigatorSettings
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.cssSelector(".fa-cog")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.id("empty-queues")).click();
+		Thread.sleep(LowSleep);
 		
 		//Show Show managers for default schema check box
 		WebElement Checkbox=driver.findElement(By.id("manager-for-default-schemas"));
@@ -632,7 +651,7 @@ public class NavigatorSettings
 		{
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		}
-		Thread.sleep(8000);
+		Thread.sleep(HighSleep);
 		
 		boolean verified=false;
 	    for(int i=4; i<=10; i++)
@@ -670,7 +689,7 @@ public class NavigatorSettings
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.cssSelector(".fa-cog")).click();
-		Thread.sleep(2000);
+		Thread.sleep(LowSleep);
 			
 		//Show Logout window check box
 		WebElement Checkbox=driver.findElement(By.id("showAgain"));
@@ -683,7 +702,7 @@ public class NavigatorSettings
 			Checkbox.click();
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		}
-		Thread.sleep(8000);
+		Thread.sleep(HighSleep);
 		
 		//click on logout
 		driver.findElement(By.cssSelector(".fa-power-off")).click();
@@ -724,7 +743,7 @@ public class NavigatorSettings
 		
 		//click on settings icon
 		driver.findElement(By.cssSelector(".fa-cog")).click();
-		Thread.sleep(6000);
+		Thread.sleep(LowSleep);
 			
 		//Show Logout window check box
 		WebElement Collapseviewlet=driver.findElement(By.id("collapse-all-viewlets"));
@@ -737,7 +756,7 @@ public class NavigatorSettings
 			Collapseviewlet.click();
 			driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		}
-		Thread.sleep(8000);
+		Thread.sleep(HighSleep);
 		
 		//Logout option
 		driver.findElement(By.cssSelector(".fa-power-off")).click();
@@ -796,13 +815,14 @@ public class NavigatorSettings
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		//Restoring the Default Settings
 		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Restore Default')]")).click();
-		Thread.sleep(4000);	
+		Thread.sleep(MediumSleep);
 		//Click on confirmation yes
 		driver.findElement(By.id("accept-true")).click();
-		Thread.sleep(3000);
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(HighSleep);
 				
 		//Delete the dashboard 
 		LogoutForAll lo=new LogoutForAll();
@@ -813,8 +833,9 @@ public class NavigatorSettings
 	{
 		//Click on Viewlet button
 		driver.findElement(By.xpath("//button[3]")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//app-mod-select-viewlet-type/div/div[2]/button[2]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Select IBM MQ product
 		//Select IBM=new Select(driver.findElement(By.name("productType")));
@@ -822,7 +843,7 @@ public class NavigatorSettings
 		//Thread.sleep(4000); 
 		
 		driver.findElement(By.cssSelector(".field-workgroup-input > .ng-select-container")).click();
-		Thread.sleep(3000);  
+		Thread.sleep(LowSleep);
 		
 		WebElement drop=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
 		List<WebElement> div=drop.findElements(By.tagName("div")); 
@@ -841,6 +862,7 @@ public class NavigatorSettings
 		
 		//Create Manager                  
 		driver.findElement(By.cssSelector(".object-type:nth-child(3)")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("viewletName")).clear();
 		driver.findElement(By.name("viewletName")).sendKeys("Local Queue");
 		
@@ -849,7 +871,7 @@ public class NavigatorSettings
 		//WGSSelection.selectByVisibleText(WGSName);
 		
 		driver.findElement(By.xpath("//div[2]/div/div/div[2]/ng-select/div/span")).click();
-		Thread.sleep(3000);   
+		Thread.sleep(LowSleep);
 		
 		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
 		List<WebElement> divw=dropw.findElements(By.tagName("div")); 
@@ -864,11 +886,11 @@ public class NavigatorSettings
 				break;
 			}	
 		}
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Select node value  
 		driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		 try 
 			{
 	        	WebElement ChannelAuthManager=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -892,7 +914,7 @@ public class NavigatorSettings
 				
 		//driver.findElement(By.cssSelector(".btn-primary")).click();
 		driver.findElement(By.id("save-viewlet")).click();
-		Thread.sleep(10000);
+		Thread.sleep(HighSleep);
 		
 	}
 	
@@ -900,8 +922,9 @@ public class NavigatorSettings
 	{
 		//Click on Viewlet button
 		driver.findElement(By.xpath("//button[3]")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//app-mod-select-viewlet-type/div/div[2]/button[2]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		
 		//Select IBM MQ product
 		//Select IBM=new Select(driver.findElement(By.name("productType")));
@@ -909,7 +932,7 @@ public class NavigatorSettings
 		//Thread.sleep(4000); 
 		
 		driver.findElement(By.cssSelector(".field-workgroup-input > .ng-select-container")).click();
-		Thread.sleep(3000);  
+		Thread.sleep(LowSleep);  
 		
 		WebElement drop=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
 		List<WebElement> div=drop.findElements(By.tagName("div")); 
@@ -928,6 +951,7 @@ public class NavigatorSettings
 		
 		//Create Manager                  
 		driver.findElement(By.cssSelector(".object-type:nth-child(4)")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.name("viewletName")).clear();
 		driver.findElement(By.name("viewletName")).sendKeys("Channel");
 		
@@ -936,7 +960,7 @@ public class NavigatorSettings
 		//WGSSelection.selectByVisibleText(WGSName);
 		
 		driver.findElement(By.xpath("//div[2]/div/div/div[2]/ng-select/div/span")).click();
-		Thread.sleep(3000);   
+		Thread.sleep(LowSleep);
 		
 		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
 		List<WebElement> divw=dropw.findElements(By.tagName("div")); 
@@ -951,11 +975,11 @@ public class NavigatorSettings
 				break;
 			}	
 		}
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		
 		//Select node value
 		driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
-		Thread.sleep(4000);
+		Thread.sleep(LowSleep);
 		 try 
 			{
 	        	WebElement ChannelAuthManager=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -979,7 +1003,7 @@ public class NavigatorSettings
 				
 		//driver.findElement(By.cssSelector(".btn-primary")).click();
 		driver.findElement(By.id("save-viewlet")).click();
-		Thread.sleep(10000);
+		Thread.sleep(HighSleep);
 		
 	}
 	

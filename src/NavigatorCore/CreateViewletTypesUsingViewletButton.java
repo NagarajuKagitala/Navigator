@@ -146,6 +146,7 @@ public class CreateViewletTypesUsingViewletButton
 		//Click on Viewlet
 		driver.findElement(By.id("add-viewlet")).click();
 		driver.findElement(By.cssSelector("div.mod-select-viewlet-buttons > button.g-button-blue")).click(); 
+		Thread.sleep(LowSleep); 
 			
 		driver.findElement(By.cssSelector(".field-workgroup-input > .ng-select-container")).click();
 		Thread.sleep(LowSleep);  
@@ -167,6 +168,7 @@ public class CreateViewletTypesUsingViewletButton
 		
 		//Create a Node
 		driver.findElement(By.cssSelector("div.object-type")).click();
+		Thread.sleep(LowSleep); 
 		driver.findElement(By.name("viewletName")).clear();
 		//Thread.sleep(2000);
 		driver.findElement(By.name("viewletName")).sendKeys(Nodename);
@@ -216,9 +218,11 @@ public class CreateViewletTypesUsingViewletButton
 		//Click on Viewlet
 		//driver.findElement(By.cssSelector("button.g-button-blue.button-add")).click();
 		driver.findElement(By.id("add-viewlet")).click();
+		Thread.sleep(LowSleep); 
 		
 		//Click on Temporary viewlet check box
 		driver.findElement(By.id("temp")).click();
+		Thread.sleep(LowSleep); 
 		
 		//Click on Create Button
 		driver.findElement(By.cssSelector("div.mod-select-viewlet-buttons > button.g-button-blue")).click(); 
@@ -273,8 +277,11 @@ public class CreateViewletTypesUsingViewletButton
 		//Create favorite viewlet
 		//driver.findElement(By.cssSelector("button.g-button-blue.button-add")).click();
 		driver.findElement(By.id("add-viewlet")).click();
+		Thread.sleep(LowSleep); 
 		driver.findElement(By.id("fav")).click();
+		Thread.sleep(LowSleep); 
 		driver.findElement(By.cssSelector("div.mod-select-viewlet-buttons > button.g-button-blue")).click();
+		Thread.sleep(LowSleep); 
 		
 		//Viewlet Name
 		driver.findElement(By.name("viewlet-name")).click();
@@ -324,7 +331,9 @@ public class CreateViewletTypesUsingViewletButton
 	{
 		//Delete Existing viewlet
 		driver.findElement(By.id("dropdownMenuButton")).click();
+		Thread.sleep(LowSleep); 
 		driver.findElement(By.linkText("Remove viewlet")).click();
+		Thread.sleep(LowSleep); 
 		
 		//Confirmation yes button
 		driver.findElement(By.id("accept-true")).click();
@@ -333,8 +342,10 @@ public class CreateViewletTypesUsingViewletButton
 		//Click on Viewlet
 		//driver.findElement(By.cssSelector("button.g-button-blue.button-add")).click();
 		driver.findElement(By.id("add-viewlet")).click();
+		Thread.sleep(LowSleep); 
 		
 		driver.findElement(By.id("existing")).click();
+		Thread.sleep(LowSleep); 
 		
 		driver.findElement(By.id("viewlet-type-ok")).click();
 		Thread.sleep(HighSleep);
@@ -378,6 +389,7 @@ public class CreateViewletTypesUsingViewletButton
 		
 		//Click on Viewlet button
 		driver.findElement(By.xpath("//button[3]")).click();
+		Thread.sleep(LowSleep); 
 		
 		//select temporary viewlet checkbox
 		//driver.findElement(By.id("temp")).click();
@@ -488,6 +500,7 @@ public class CreateViewletTypesUsingViewletButton
 	{		
 		//Click on Dropdown menu
 		driver.findElement(By.id("dropdownMenuButton")).click();
+		Thread.sleep(LowSleep); 
 		
 		//select Edit viewlet option
 		driver.findElement(By.linkText("Edit viewlet")).click();
@@ -496,20 +509,42 @@ public class CreateViewletTypesUsingViewletButton
 		//Change the viewlet name
 		driver.findElement(By.name("viewletName")).clear();
 		driver.findElement(By.name("viewletName")).sendKeys(NewViewletName);
+		Thread.sleep(LowSleep); 
 		
 		//Change viewlet type to queues
 		driver.findElement(By.cssSelector(".object-type:nth-child(3)")).click();
-		Thread.sleep(LowSleep);
+		Thread.sleep(MediumSleep);
 		
-		//Increase the result limit
-		driver.findElement(By.xpath("//input[@type='number']")).clear();
-		driver.findElement(By.xpath("//input[@type='number']")).sendKeys("10000");
+		try
+		{
+			driver.findElement(By.xpath("//input[@type='number']")).clear();
+			driver.findElement(By.xpath("//input[@type='number']")).sendKeys("10000");
+			Thread.sleep(MediumSleep);
+			
+			//click on apply changes
+			driver.findElement(By.cssSelector(".btn-primary")).click();
+			Thread.sleep(HighSleep);
+		}
+		catch(Exception e)
+		{
+			
+			System.out.println("exception occured with invisible elements");
+		//Increase the result limit  
+		WebElement element=driver.findElement(By.xpath("//input[@type='number']"));
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].clear();", element);
 		Thread.sleep(LowSleep);
+		driver.findElement(By.xpath("//input[@type='number']")).sendKeys("10000");
+		
 		
 		//click on Apply changes
 		//driver.findElement(By.id("save-viewlet")).click();
-		driver.findElement(By.cssSelector(".btn-primary")).click();
+		WebElement app=driver.findElement(By.cssSelector(".btn-primary"));
+		JavascriptExecutor js1 = (JavascriptExecutor)driver;
+		js1.executeScript("arguments[0].click();", app);
 		Thread.sleep(HighSleep);
+		}
 		
 		//Store the viewlet name into string
 		String ViewletName=driver.findElement(By.cssSelector(".title-table")).getText();
@@ -537,6 +572,7 @@ public class CreateViewletTypesUsingViewletButton
 	{
 		//Click on Dropdown menu
 		driver.findElement(By.id("dropdownMenuButton")).click();
+		Thread.sleep(LowSleep); 
 		
 		//Choose manage filter column value 
 		try
@@ -551,6 +587,7 @@ public class CreateViewletTypesUsingViewletButton
 			
 			//Click on Dropdown menu
 			driver.findElement(By.id("dropdownMenuButton")).click();
+			Thread.sleep(LowSleep); 
 			
 			driver.findElement(By.linkText("Manage Filtered Columns")).click();
 			Thread.sleep(MediumSleep);
@@ -558,6 +595,7 @@ public class CreateViewletTypesUsingViewletButton
 		
 		//Choose column 
 		driver.findElement(By.xpath("//span/i")).click();
+		Thread.sleep(LowSleep); 
 		
 		//Choose filter by chosen icon
 		driver.findElement(By.xpath("//div[4]/div/i")).click();
@@ -588,6 +626,7 @@ public class CreateViewletTypesUsingViewletButton
 		
 		//Click on Dropdown menu
 		driver.findElement(By.id("dropdownMenuButton")).click();
+		Thread.sleep(LowSleep); 
 		
 		//Stop manage filter
 		driver.findElement(By.linkText("Stop Managing Filtered Columns")).click();
@@ -616,6 +655,7 @@ public class CreateViewletTypesUsingViewletButton
 	{
 		//Click on Dropdown menu
 		driver.findElement(By.id("dropdownMenuButton")).click();
+		Thread.sleep(LowSleep); 
 		
 		//Choose manage filter column value 
 		try
@@ -653,6 +693,7 @@ public class CreateViewletTypesUsingViewletButton
 		
 		//Click on Dropdown menu
 		driver.findElement(By.id("dropdownMenuButton")).click();
+		Thread.sleep(LowSleep); 
 		
 		//Stop manage filter
 		driver.findElement(By.linkText("Stop Managing Frozen Columns")).click();
@@ -683,10 +724,11 @@ public class CreateViewletTypesUsingViewletButton
 		
 		//Click on Dropdown menu
 		driver.findElement(By.id("dropdownMenuButton")).click();
+		Thread.sleep(LowSleep); 
 		
 		//select Edit viewlet option
 		driver.findElement(By.linkText("Delete viewlet")).click();
-		Thread.sleep(6000);
+		Thread.sleep(MediumSleep);
 		
 		//Confirmation ok button
 		driver.findElement(By.id("accept-true")).click();
@@ -720,6 +762,7 @@ public class CreateViewletTypesUsingViewletButton
 		{
 		//Click on Dropdown menu
 		driver.findElement(By.id("dropdownMenuButton")).click();
+		Thread.sleep(LowSleep); 
 		
 		//select export to csv option
 		driver.findElement(By.linkText("Export data to CSV")).click();
