@@ -112,6 +112,7 @@ public class AuthorizationInfoViewlet {
 		
 		//Login page
 		driver.findElement(By.id("username")).sendKeys(uname);
+		Thread.sleep(2000);
 		driver.findElement(By.id("password")).sendKeys(password);
 		driver.findElement(By.cssSelector("button.btn-submit")).click();
 		Thread.sleep(HighSleep);
