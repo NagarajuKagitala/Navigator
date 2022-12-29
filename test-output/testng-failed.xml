@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Navigator]" guice-stage="DEVELOPMENT">
-  <test name="Test Comm info Viewlet options(failed)">
-    <parameter name="ViewletName" value="Commn info viewlet"/>
-    <parameter name="Dashboardname" value="Comm info"/>
-    <parameter name="uname" value="Admin"/>
+  <test thread-count="5" name="Test Subscription Viewlet(failed)">
+    <parameter name="ViewletName" value="New Subscription Viewlet"/>
+    <parameter name="Dashboardname" value="Subscription Verification"/>
+    <parameter name="AddSubscriptionNameFromIcon" value="SYSTEM.ADD.NEW.SUBSCRIPTION121.ICON"/>
     <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
-    <parameter name="NewCommunicationInfoName" value="COMMUNICATION.INFO.ICON"/>
-    <parameter name="DownloadPath" value="F:\Navigator Exported Messages\Export Query From MQSC Console"/>
-    <parameter name="FavoriteViewletName" value="Communication info fav"/>
-    <parameter name="CopyAsName" value="COMMUNICATION.INFO.COPY"/>
-    <parameter name="URL" value="/navigator/#/login"/>
-    <parameter name="ViewletValue" value="14"/>
-    <parameter name="MessageHistory" value="100"/>
-    <parameter name="password" value="admin"/>
+    <parameter name="SearchdataforMultipleProperties" value="SYSTEM.ADD.NEW.SUBSCRIPTION121"/>
+    <parameter name="DestinationTopicName" value="SYSTEM.ADMIN.TOPIC"/>
+    <parameter name="FavoriteViewletName" value="Subscription Favorite viewlet"/>
+    <parameter name="RenameSubscription" value="SUBSCRIPTION.NEW.RENAME"/>
+    <parameter name="schemaName" value="SubscriptionSchema"/>
+    <parameter name="CopyObjectName" value=".Copy"/>
+    <parameter name="TopicStringDataFromICon" value="UniqueIcon2"/>
+    <parameter name="ViewletValue" value="12"/>
+    <parameter name="RenameSubscriptionForMultiple" value="SYSTEM.SUBSCRIPTION.RENAME1"/>
+    <parameter name="AddSubscriptionName" value="SYSTEM.ADD.NEW.SUBSCRIPTION121.OPTIONS"/>
     <parameter name="sDriver" value="webdriver.chrome.driver"/>
-    <parameter name="PortNo" value="4020"/>
-    <parameter name="GroupAddress" value="24.23.22.21"/>
-    <parameter name="SchemaName" value="Comm info schema"/>
-    <parameter name="CommInfoPort" value="4321"/>
+    <parameter name="CopyObjectNameForMUltiple" value="SUB.MULTIPLE.COPY"/>
+    <parameter name="TopicStringData" value="Unique2"/>
+    <parameter name="SubscriptionAttributes" value="Attributes"/>
     <classes>
-      <class name="ApodGUI.CommInfoViewlet">
+      <class name="ApodGUI.SubscriptionViewlet">
         <methods>
-          <include name="DeleteCommunicationInfo" invocation-numbers="0"/>
+          <include name="CompareSubscription" invocation-numbers="0"/>
+          <include name="AddToFavoriteViewlet" invocation-numbers="0"/>
+          <include name="AddToFavoriteForMultipleSubscription"/>
           <include name="beforeTest"/>
-          <include name="CopyAsOfCommumicationInfo"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- ApodGUI.CommInfoViewlet -->
+      </class> <!-- ApodGUI.SubscriptionViewlet -->
     </classes>
-  </test> <!-- Test Comm info Viewlet options(failed) -->
+  </test> <!-- Test Subscription Viewlet(failed) -->
 </suite> <!-- Failed suite [Navigator] -->

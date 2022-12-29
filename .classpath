@@ -19,5 +19,10 @@
 	<classpathentry kind="lib" path="E:/Automation/Lib/selenium-htmlunit-driver-2.9.0.jar"/>
 	<classpathentry kind="lib" path="E:/Automation/Lib/selenium-server-4.4.0.jar"/>
 	<classpathentry kind="lib" path="E:/Automation/Lib/TestNG/testng-7.3.0.jar"/>
+	<classpathentry kind="src" path=".apt_generated">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
