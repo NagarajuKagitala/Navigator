@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Navigator">
- <test name="Test Queue Viewlet">
+ <test name="Test Queue Properties">
   <parameter name="sDriver" value="webdriver.chrome.driver"/>
   <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
   <parameter name="URL" value="/navigator/#/login"/>
