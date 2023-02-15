@@ -10,6 +10,7 @@
     <parameter name="ViewletValue" value="13"/>
     
     <parameter name="ChannelAuthNameFromOptions" value="New.Channel.Auth"/>
+    <parameter name="ChannelAuthNameOptions" value="SYSTEM.DEF.SERVER"/>
     <parameter name="UserList" value="MQADMIN"/>
     
     <parameter name="MultipleDescription" value="Test Multiple Properties"/>
@@ -19,6 +20,7 @@
     <parameter name="FavoriteViewletName" value="Channel Auth Favorite viewlet"/>
         
     <parameter name="ChannelAuthNameFromIcon" value="New.Channel.Icon"/>
+    <parameter name="ChannelAuthNameIcon" value="SYSTEM.DEF.SENDER"/>
    
      <classes>
       <class name="ApodGUI.ChannelAuthRecordsViewlet">
@@ -26,19 +28,19 @@
        <methods>
         <include name="Login"/>
         <include name="AddChannelAuthrecordsViewlet"/> 
-        <include name="ShowObjectAttributes"/>
+        <include name="ShowObjectAttributes"/> 
         <include name="CreateChannelAuthRecordFromOptions"/>
         <include name="DeleteChannelAuthRecordFromCommands"/>
         <include name="MQSCSnapshot"/>
-        <include name="SaveChannelAuthSnapshot"/>
+        <include name="SaveChannelAuthSnapshot"/> 
         <include name="ChannelAuthProperties"/> 
         <include name="ChannelAuthEvents"/>  
-        <include name="AddToFavoriteViewlet"/>  
-        <include name="CreateChannelAuthRecordFromPlusIcon"/>
+        <include name="AddToFavoriteViewlet"/>    
+        <include name="CreateChannelAuthRecordFromPlusIcon"/> 
         <include name="CompareChannelAuths"/>
-        <include name="CheckDifferencesForChannelAuths"/>
-        <include name="MultipleChannelAuthRecordsProperties"/>
-        <include name="AddToFavoriteForMultipleChannelAuthRecords"/>    
+        <include name="CheckDifferencesForChannelAuths"/> 
+        <include name="MultipleChannelAuthRecordsProperties"/> 
+        <include name="AddToFavoriteForMultipleChannelAuthRecords"/>   
         <include name="Logout"/> 
         
        </methods>

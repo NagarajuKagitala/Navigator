@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="22" passed="10" failed="2" skipped="1">
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[<br/>]]>
@@ -11,85 +11,61 @@
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddSubscriptionViewlet.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddClusterQueueManagerViewlet.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateSubscriptionFromOptions.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ClusterQMEvents.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsFromCommands.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameFromCommands.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareClusterQueueManagers.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteFromCommands.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForClusterQMs.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SubscriptionEvents.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleClusterQMs.png" alt="""/" />]]>
     </line>
     <line>
-      <![CDATA[Screenshots/ScreenshotsFailure/AddToFavoriteViewlet.png]]>
+      <![CDATA[Screenshots/ScreenshotsFailure/ShowObjectAttributesForClusterQM.png]]>
     </line>
     <line>
-      <![CDATA[<br/>Failed to execute method: AddToFavoriteViewlet<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/AddToFavoriteViewlet.png" alt="""/" />]]>
-    </line>
-    <line>
-      <![CDATA[Screenshots/ScreenshotsFailure/CompareSubscription.png]]>
-    </line>
-    <line>
-      <![CDATA[<br/>Failed to execute method: CompareSubscription<br/>]]>
+      <![CDATA[<br/>Failed to execute method: ShowObjectAttributesForClusterQM<br/>]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/CompareSubscription.png" alt="""/" />]]>
-    </line>
-    <line>
-      <![CDATA[<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForSubscriptions.png" alt="""/" />]]>
-    </line>
-    <line>
-      <![CDATA[<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MultipleSubscriptionProperties.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowObjectAttributesForClusterQM.png" alt="""/" />]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-12-27T15:29:27 IST" name="Navigator" finished-at="2022-12-27T15:43:34 IST" duration-ms="846963">
+  <suite started-at="2023-01-30T16:02:38 IST" name="Navigator" finished-at="2023-01-30T16:11:02 IST" duration-ms="504265">
     <groups>
     </groups>
-    <test started-at="2022-12-27T15:29:27 IST" name="Test Subscription Viewlet" finished-at="2022-12-27T15:43:34 IST" duration-ms="846963">
-      <class name="ApodGUI.SubscriptionViewlet">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:29:27 IST" name="beforeTest" finished-at="2022-12-27T15:29:27 IST" duration-ms="10" status="PASS">
+    <test started-at="2023-01-30T16:02:38 IST" name="Test Cluster QM Viewlet" finished-at="2023-01-30T16:11:02 IST" duration-ms="504265">
+      <class name="ApodGUI.ClusterQueueManager">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:02:38 IST" name="beforeTest" finished-at="2023-01-30T16:02:38 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:29:27 IST" name="Login" finished-at="2022-12-27T15:30:41 IST" duration-ms="73774" status="PASS">
+        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:02:38 IST" name="Login" finished-at="2023-01-30T16:04:20 IST" duration-ms="101799" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -103,7 +79,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Subscription Verification]]>
+                <![CDATA[Cluster QM Verification]]>
               </value>
             </param>
           </params>
@@ -116,32 +92,32 @@
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:30:41 IST" name="tearDown" finished-at="2022-12-27T15:30:41 IST" duration-ms="114" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:04:20 IST" name="tearDown" finished-at="2023-01-30T16:04:20 IST" duration-ms="158" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login status=SUCCESS method=SubscriptionViewlet.Login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ApodGUI.SubscriptionViewlet@4b0d79fc] output=<br/>]]]>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=ClusterQueueManager.Login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ApodGUI.ClusterQueueManager@71a8adcf] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="AddSubscriptionViewlet(java.lang.String, int, org.testng.ITestContext)[pri:1, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:30:41 IST" name="AddSubscriptionViewlet" finished-at="2022-12-27T15:31:17 IST" duration-ms="35989" status="PASS">
+        <test-method signature="AddClusterQueueManagerViewlet(java.lang.String, int, org.testng.ITestContext)[pri:1, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:04:20 IST" name="AddClusterQueueManagerViewlet" finished-at="2023-01-30T16:04:56 IST" duration-ms="36072" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[New Subscription Viewlet]]>
+                <![CDATA[New Cluster Queue Manager Viewlet]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[12]]>
+                <![CDATA[11]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@d74bac4]]>
+                <![CDATA[org.testng.TestRunner@6940f685]]>
               </value>
             </param>
           </params>
@@ -150,41 +126,69 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddSubscriptionViewlet.png" alt="""/" />]]>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddClusterQueueManagerViewlet.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- AddSubscriptionViewlet -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:31:28 IST" name="tearDown" finished-at="2022-12-27T15:31:31 IST" duration-ms="2861" status="PASS">
+        </test-method> <!-- AddClusterQueueManagerViewlet -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:04:57 IST" name="tearDown" finished-at="2023-01-30T16:04:58 IST" duration-ms="998" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddSubscriptionViewlet status=SUCCESS method=SubscriptionViewlet.AddSubscriptionViewlet(java.lang.String, int, org.testng.ITestContext)[pri:1, instance:ApodGUI.SubscriptionViewlet@4b0d79fc] output=<br/>]]]>
+                <![CDATA[[TestResult name=AddClusterQueueManagerViewlet status=SUCCESS method=ClusterQueueManager.AddClusterQueueManagerViewlet(java.lang.String, int, org.testng.ITestContext)[pri:1, instance:ApodGUI.ClusterQueueManager@71a8adcf] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="CreateSubscriptionFromOptions(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:2, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:31:31 IST" name="CreateSubscriptionFromOptions" finished-at="2022-12-27T15:33:32 IST" duration-ms="120711" status="PASS">
+        <test-method signature="ClusterQMEvents(java.lang.String, org.testng.ITestContext)[pri:3, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:04:58 IST" name="ClusterQMEvents" finished-at="2023-01-30T16:05:45 IST" duration-ms="46526" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Subscription Verification]]>
+                <![CDATA[Cluster QM Verification]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[SYSTEM.ADD.NEW.SUBSCRIPTION121.OPTIONS]]>
+                <![CDATA[org.testng.TestRunner@6940f685]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ClusterQMEvents.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ClusterQMEvents -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:05:46 IST" name="tearDown" finished-at="2023-01-30T16:05:47 IST" duration-ms="1254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ClusterQMEvents status=SUCCESS method=ClusterQueueManager.ClusterQMEvents(java.lang.String, org.testng.ITestContext)[pri:3, instance:ApodGUI.ClusterQueueManager@71a8adcf] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="AddToFavoriteViewlet(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:4, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:05:47 IST" name="AddToFavoriteViewlet" finished-at="2023-01-30T16:07:22 IST" duration-ms="95295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cluster QM Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cluster QM Favorite viewlet]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Unique2]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[org.testng.TestRunner@d74bac4]]>
+                <![CDATA[org.testng.TestRunner@6940f685]]>
               </value>
             </param>
           </params>
@@ -193,330 +197,160 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateSubscriptionFromOptions.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CreateSubscriptionFromOptions -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:33:42 IST" name="tearDown" finished-at="2022-12-27T15:33:45 IST" duration-ms="2834" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CreateSubscriptionFromOptions status=SUCCESS method=SubscriptionViewlet.CreateSubscriptionFromOptions(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:2, instance:ApodGUI.SubscriptionViewlet@4b0d79fc] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="CopyAsFromCommands(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:33:45 IST" name="CopyAsFromCommands" finished-at="2022-12-27T15:35:01 IST" depends-on-methods="ApodGUI.SubscriptionViewlet.CreateSubscriptionFromOptions" duration-ms="76464" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Subscription Verification]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[.Copy]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[SYSTEM.ADD.NEW.SUBSCRIPTION121.OPTIONS]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[org.testng.TestRunner@d74bac4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsFromCommands.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CopyAsFromCommands -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:35:12 IST" name="tearDown" finished-at="2022-12-27T15:35:14 IST" duration-ms="2505" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CopyAsFromCommands status=SUCCESS method=SubscriptionViewlet.CopyAsFromCommands(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:ApodGUI.SubscriptionViewlet@4b0d79fc] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="RenameFromCommands(java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:4, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:35:14 IST" name="RenameFromCommands" finished-at="2022-12-27T15:36:22 IST" depends-on-methods="ApodGUI.SubscriptionViewlet.CopyAsFromCommands" duration-ms="67542" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Subscription Verification]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SUBSCRIPTION.NEW.RENAME]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[.Copy]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[SYSTEM.ADD.NEW.SUBSCRIPTION121.OPTIONS]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[org.testng.TestRunner@d74bac4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameFromCommands.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- RenameFromCommands -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:36:32 IST" name="tearDown" finished-at="2022-12-27T15:36:34 IST" duration-ms="2196" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=RenameFromCommands status=SUCCESS method=SubscriptionViewlet.RenameFromCommands(java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:4, instance:ApodGUI.SubscriptionViewlet@4b0d79fc] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="DeleteFromCommands(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:36:34 IST" name="DeleteFromCommands" finished-at="2022-12-27T15:37:19 IST" depends-on-methods="ApodGUI.SubscriptionViewlet.RenameFromCommands" duration-ms="44809" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Subscription Verification]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SUBSCRIPTION.NEW.RENAME]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@d74bac4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteFromCommands.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- DeleteFromCommands -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:37:29 IST" name="tearDown" finished-at="2022-12-27T15:37:31 IST" duration-ms="2211" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DeleteFromCommands status=SUCCESS method=SubscriptionViewlet.DeleteFromCommands(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:ApodGUI.SubscriptionViewlet@4b0d79fc] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="SubscriptionEvents(java.lang.String, org.testng.ITestContext)[pri:9, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:37:31 IST" name="SubscriptionEvents" finished-at="2022-12-27T15:38:30 IST" duration-ms="58401" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Subscription Verification]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@d74bac4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SubscriptionEvents.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- SubscriptionEvents -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:38:40 IST" name="tearDown" finished-at="2022-12-27T15:38:43 IST" duration-ms="2812" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SubscriptionEvents status=SUCCESS method=SubscriptionViewlet.SubscriptionEvents(java.lang.String, org.testng.ITestContext)[pri:9, instance:ApodGUI.SubscriptionViewlet@4b0d79fc] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="AddToFavoriteViewlet(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:10, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:38:43 IST" name="AddToFavoriteViewlet" finished-at="2022-12-27T15:39:46 IST" duration-ms="62979" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Subscription Verification]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Subscription Favorite viewlet]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@d74bac4]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression Favorite condition failed because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Favorite condition failed' is not a valid XPath expression.
-  (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'DESKTOP-K4AEKHO', ip: '172.16.31.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9481737e7d4adb5a7b0cee4d61be29fc, findElement {using=xpath, value=Favorite condition failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57648}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57648/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9481737e7d4adb5a7b0cee4d61be29fc]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Favorite condition failed because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Favorite condition failed' is not a valid XPath expression.
-  (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'DESKTOP-K4AEKHO', ip: '172.16.31.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9481737e7d4adb5a7b0cee4d61be29fc, findElement {using=xpath, value=Favorite condition failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57648}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57648/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9481737e7d4adb5a7b0cee4d61be29fc
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-at ApodGUI.SubscriptionViewlet.AddToFavoriteViewlet(SubscriptionViewlet.java:930)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>Failed to execute method: AddToFavoriteViewlet<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/AddToFavoriteViewlet.png" alt="""/" />]]>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" />]]>
             </line>
           </reporter-output>
         </test-method> <!-- AddToFavoriteViewlet -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:39:57 IST" name="tearDown" finished-at="2022-12-27T15:40:00 IST" duration-ms="3090" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:07:23 IST" name="tearDown" finished-at="2023-01-30T16:07:24 IST" duration-ms="935" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddToFavoriteViewlet status=FAILURE method=SubscriptionViewlet.AddToFavoriteViewlet(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:10, instance:ApodGUI.SubscriptionViewlet@4b0d79fc] output=<br/>Failed to execute method: AddToFavoriteViewlet<br/>]]]>
+                <![CDATA[[TestResult name=AddToFavoriteViewlet status=SUCCESS method=ClusterQueueManager.AddToFavoriteViewlet(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:4, instance:ApodGUI.ClusterQueueManager@71a8adcf] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="CompareClusterQueueManagers(java.lang.String, org.testng.ITestContext)[pri:5, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:07:24 IST" name="CompareClusterQueueManagers" finished-at="2023-01-30T16:08:08 IST" duration-ms="43515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cluster QM Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6940f685]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Screenshots/ScreenshotsFailure/AddToFavoriteViewlet.png]]>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareClusterQueueManagers.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="CompareSubscription(org.testng.ITestContext)[pri:11, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:40:00 IST" name="CompareSubscription" finished-at="2022-12-27T15:40:20 IST" duration-ms="20572" status="FAIL">
+        </test-method> <!-- CompareClusterQueueManagers -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:08:08 IST" name="tearDown" finished-at="2023-01-30T16:08:09 IST" duration-ms="1015" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@d74bac4]]>
+                <![CDATA[[TestResult name=CompareClusterQueueManagers status=SUCCESS method=ClusterQueueManager.CompareClusterQueueManagers(java.lang.String, org.testng.ITestContext)[pri:5, instance:ApodGUI.ClusterQueueManager@71a8adcf] output=<br/>]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="CheckDifferencesForClusterQMs(org.testng.ITestContext)[pri:6, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:08:09 IST" name="CheckDifferencesForClusterQMs" finished-at="2023-01-30T16:08:31 IST" duration-ms="21152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6940f685]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForClusterQMs.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CheckDifferencesForClusterQMs -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:08:31 IST" name="tearDown" finished-at="2023-01-30T16:08:32 IST" duration-ms="960" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckDifferencesForClusterQMs status=SUCCESS method=ClusterQueueManager.CheckDifferencesForClusterQMs(org.testng.ITestContext)[pri:6, instance:ApodGUI.ClusterQueueManager@71a8adcf] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="AddToFavoriteForMultipleClusterQMs(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:7, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:08:32 IST" name="AddToFavoriteForMultipleClusterQMs" finished-at="2023-01-30T16:09:17 IST" depends-on-methods="ApodGUI.ClusterQueueManager.AddToFavoriteViewlet" duration-ms="44582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cluster QM Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cluster QM Favorite viewlet]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@6940f685]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleClusterQMs.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddToFavoriteForMultipleClusterQMs -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:09:18 IST" name="tearDown" finished-at="2023-01-30T16:09:19 IST" duration-ms="971" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddToFavoriteForMultipleClusterQMs status=SUCCESS method=ClusterQueueManager.AddToFavoriteForMultipleClusterQMs(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:7, instance:ApodGUI.ClusterQueueManager@71a8adcf] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ShowObjectAttributesForClusterQM(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:8, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:09:19 IST" name="ShowObjectAttributesForClusterQM" finished-at="2023-01-30T16:10:33 IST" duration-ms="74333" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cluster QM Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ClusterQMSchema]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@6940f685]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression Comparision failed because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Comparision failed' is not a valid XPath expression.
-  (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#Attributes\ failed"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
 System info: host: 'DESKTOP-K4AEKHO', ip: '172.16.31.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9481737e7d4adb5a7b0cee4d61be29fc, findElement {using=xpath, value=Comparision failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57648}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57648/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9481737e7d4adb5a7b0cee4d61be29fc]]>
+Command: [036cfe6236682137572acc052eca2a0f, findElement {using=id, value=Attributes failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64856/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 036cfe6236682137572acc052eca2a0f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Comparision failed because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Comparision failed' is not a valid XPath expression.
-  (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#Attributes\ failed"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
 System info: host: 'DESKTOP-K4AEKHO', ip: '172.16.31.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9481737e7d4adb5a7b0cee4d61be29fc, findElement {using=xpath, value=Comparision failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57648}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57648/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9481737e7d4adb5a7b0cee4d61be29fc
+Command: [036cfe6236682137572acc052eca2a0f, findElement {using=id, value=Attributes failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64856/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 036cfe6236682137572acc052eca2a0f
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -532,8 +366,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-at Common.CompareObjects.Compare(CompareObjects.java:53)
-at ApodGUI.SubscriptionViewlet.CompareSubscription(SubscriptionViewlet.java:943)
+at ApodGUI.ClusterQueueManager.ShowObjectAttributesForClusterQM(ClusterQueueManager.java:187)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -564,154 +397,56 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[<br/>Failed to execute method: CompareSubscription<br/>]]>
+              <![CDATA[<br/>Failed to execute method: ShowObjectAttributesForClusterQM<br/>]]>
             </line>
             <line>
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/CompareSubscription.png" alt="""/" />]]>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowObjectAttributesForClusterQM.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- CompareSubscription -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:40:31 IST" name="tearDown" finished-at="2022-12-27T15:40:33 IST" duration-ms="2814" status="PASS">
+        </test-method> <!-- ShowObjectAttributesForClusterQM -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:10:34 IST" name="tearDown" finished-at="2023-01-30T16:10:35 IST" duration-ms="1281" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CompareSubscription status=FAILURE method=SubscriptionViewlet.CompareSubscription(org.testng.ITestContext)[pri:11, instance:ApodGUI.SubscriptionViewlet@4b0d79fc] output=<br/>Failed to execute method: CompareSubscription<br/>]]]>
+                <![CDATA[[TestResult name=ShowObjectAttributesForClusterQM status=FAILURE method=ClusterQueueManager.ShowObjectAttributesForClusterQM(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:8, instance:ApodGUI.ClusterQueueManager@71a8adcf] output=<br/>Failed to execute method: ShowObjectAttributesForClusterQM<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Screenshots/ScreenshotsFailure/CompareSubscription.png]]>
+              <![CDATA[Screenshots/ScreenshotsFailure/ShowObjectAttributesForClusterQM.png]]>
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="CheckDifferencesForSubscriptions(org.testng.ITestContext)[pri:12, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:40:33 IST" name="CheckDifferencesForSubscriptions" finished-at="2022-12-27T15:40:55 IST" duration-ms="21462" status="PASS">
+        <test-method signature="Logout(java.lang.String)[pri:11, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:10:35 IST" name="Logout" finished-at="2023-01-30T16:11:02 IST" duration-ms="26669" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@d74bac4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForSubscriptions.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CheckDifferencesForSubscriptions -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:41:05 IST" name="tearDown" finished-at="2022-12-27T15:41:08 IST" duration-ms="2793" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CheckDifferencesForSubscriptions status=SUCCESS method=SubscriptionViewlet.CheckDifferencesForSubscriptions(org.testng.ITestContext)[pri:12, instance:ApodGUI.SubscriptionViewlet@4b0d79fc] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="MultipleSubscriptionProperties(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:17, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:41:08 IST" name="MultipleSubscriptionProperties" finished-at="2022-12-27T15:42:54 IST" duration-ms="106109" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Subscription Verification]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SYSTEM.ADD.NEW.SUBSCRIPTION121]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@d74bac4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MultipleSubscriptionProperties.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- MultipleSubscriptionProperties -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:43:05 IST" name="tearDown" finished-at="2022-12-27T15:43:08 IST" duration-ms="2783" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MultipleSubscriptionProperties status=SUCCESS method=SubscriptionViewlet.MultipleSubscriptionProperties(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:17, instance:ApodGUI.SubscriptionViewlet@4b0d79fc] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="AddToFavoriteForMultipleSubscription(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:18, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:43:08 IST" name="AddToFavoriteForMultipleSubscription" finished-at="2022-12-27T15:43:08 IST" depends-on-methods="ApodGUI.SubscriptionViewlet.AddToFavoriteViewlet" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method SubscriptionViewlet.AddToFavoriteForMultipleSubscription(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:18, instance:ApodGUI.SubscriptionViewlet@4b0d79fc] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method SubscriptionViewlet.AddToFavoriteForMultipleSubscription(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:18, instance:ApodGUI.SubscriptionViewlet@4b0d79fc] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddToFavoriteForMultipleSubscription -->
-        <test-method signature="Logout(java.lang.String)[pri:25, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:43:08 IST" name="Logout" finished-at="2022-12-27T15:43:34 IST" duration-ms="26552" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Subscription Verification]]>
+                <![CDATA[Cluster QM Verification]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.SubscriptionViewlet@4b0d79fc]" started-at="2022-12-27T15:43:34 IST" name="tearDown" finished-at="2022-12-27T15:43:34 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ClusterQueueManager@71a8adcf]" started-at="2023-01-30T16:11:02 IST" name="tearDown" finished-at="2023-01-30T16:11:02 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Logout status=SUCCESS method=SubscriptionViewlet.Logout(java.lang.String)[pri:25, instance:ApodGUI.SubscriptionViewlet@4b0d79fc] output={null}]]]>
+                <![CDATA[[TestResult name=Logout status=SUCCESS method=ClusterQueueManager.Logout(java.lang.String)[pri:11, instance:ApodGUI.ClusterQueueManager@71a8adcf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ApodGUI.SubscriptionViewlet -->
-    </test> <!-- Test Subscription Viewlet -->
+      </class> <!-- ApodGUI.ClusterQueueManager -->
+    </test> <!-- Test Cluster QM Viewlet -->
   </suite> <!-- Navigator -->
 </testng-results>

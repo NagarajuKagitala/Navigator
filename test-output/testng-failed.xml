@@ -1,35 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Navigator]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test Subscription Viewlet(failed)">
-    <parameter name="ViewletName" value="New Subscription Viewlet"/>
-    <parameter name="Dashboardname" value="Subscription Verification"/>
-    <parameter name="AddSubscriptionNameFromIcon" value="SYSTEM.ADD.NEW.SUBSCRIPTION121.ICON"/>
-    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
-    <parameter name="SearchdataforMultipleProperties" value="SYSTEM.ADD.NEW.SUBSCRIPTION121"/>
-    <parameter name="DestinationTopicName" value="SYSTEM.ADMIN.TOPIC"/>
-    <parameter name="FavoriteViewletName" value="Subscription Favorite viewlet"/>
-    <parameter name="RenameSubscription" value="SUBSCRIPTION.NEW.RENAME"/>
-    <parameter name="schemaName" value="SubscriptionSchema"/>
-    <parameter name="CopyObjectName" value=".Copy"/>
-    <parameter name="TopicStringDataFromICon" value="UniqueIcon2"/>
-    <parameter name="ViewletValue" value="12"/>
-    <parameter name="RenameSubscriptionForMultiple" value="SYSTEM.SUBSCRIPTION.RENAME1"/>
-    <parameter name="AddSubscriptionName" value="SYSTEM.ADD.NEW.SUBSCRIPTION121.OPTIONS"/>
+  <test thread-count="5" name="Test Cluster QM Viewlet(failed)">
+    <parameter name="ViewletName" value="New Cluster Queue Manager Viewlet"/>
+    <parameter name="Dashboardname" value="Cluster QM Verification"/>
     <parameter name="sDriver" value="webdriver.chrome.driver"/>
-    <parameter name="CopyObjectNameForMUltiple" value="SUB.MULTIPLE.COPY"/>
-    <parameter name="TopicStringData" value="Unique2"/>
-    <parameter name="SubscriptionAttributes" value="Attributes"/>
+    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+    <parameter name="FavoriteViewletName" value="Cluster QM Favorite viewlet"/>
+    <parameter name="schemaName" value="ClusterQMSchema"/>
+    <parameter name="ViewletValue" value="11"/>
     <classes>
-      <class name="ApodGUI.SubscriptionViewlet">
+      <class name="ApodGUI.ClusterQueueManager">
         <methods>
-          <include name="CompareSubscription" invocation-numbers="0"/>
-          <include name="AddToFavoriteViewlet" invocation-numbers="0"/>
-          <include name="AddToFavoriteForMultipleSubscription"/>
           <include name="beforeTest"/>
           <include name="tearDown"/>
+          <include name="ShowObjectAttributesForClusterQM" invocation-numbers="0"/>
         </methods>
-      </class> <!-- ApodGUI.SubscriptionViewlet -->
+      </class> <!-- ApodGUI.ClusterQueueManager -->
     </classes>
-  </test> <!-- Test Subscription Viewlet(failed) -->
+  </test> <!-- Test Cluster QM Viewlet(failed) -->
 </suite> <!-- Failed suite [Navigator] -->

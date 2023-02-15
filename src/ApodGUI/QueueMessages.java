@@ -206,10 +206,11 @@ public class QueueMessages
 		  for(int m=1; m<=5; m++) 
 		  { 
 			  //Select the put new message option
-		  driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper["+ m +"]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		  Actions PutMessagesMousehour=new Actions(driver);
-		  PutMessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform(); driver.findElement(By.linkText("Put New Message")).click();
-		  Thread.sleep(4000);
+			  driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper["+m+"]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+				Actions MessagesMousehour=new Actions(driver);
+				MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
+				driver.findElement(By.linkText("Put New Message")).click();
+				Thread.sleep(LowSleep);
 		  
 		  //Select the number of messages
 		  driver.findElement(By.name("generalNumberOfMsgs")).click();

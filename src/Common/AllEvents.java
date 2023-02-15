@@ -51,7 +51,9 @@ public class AllEvents
 				Thread.sleep(16000);
 				
 				//Click on daignostic tab
-				driver.findElement(By.xpath("//button[contains(.,'Diagnostic')]")).click();
+				WebElement diagnostic=driver.findElement(By.xpath("//button[contains(.,'Diagnostic')]"));
+				JavascriptExecutor dia = (JavascriptExecutor)driver;
+				dia.executeScript("arguments[0].click();", diagnostic);
 				Thread.sleep(6000);
 				
 				//get the vents count and store the into string
@@ -68,13 +70,16 @@ public class AllEvents
 					WebElement close=driver.findElement(By.xpath("//app-mod-event-details/div/div[2]/button"));
 					JavascriptExecutor js = (JavascriptExecutor)driver;
 					js.executeScript("arguments[0].click();", close);
+					Thread.sleep(6000);
 				}
 				else
 				{
 					System.out.println("Events count is not matched");
 					context.setAttribute("Status", 5);
 					context.setAttribute("Comment", "Got exception while opening events page, check details: ");
-					driver.findElement(By.xpath("//app-mod-event-details/div/div[2]/button")).click();
+					WebElement close=driver.findElement(By.xpath("//app-mod-event-details/div/div[2]/button"));
+					JavascriptExecutor js = (JavascriptExecutor)driver;
+					js.executeScript("arguments[0].click();", close);
 					driver.findElement(By.cssSelector(".close-button")).click();
 					driver.findElement(By.id("Events count failed")).click();
 				}

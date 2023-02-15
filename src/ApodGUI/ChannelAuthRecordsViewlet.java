@@ -57,6 +57,8 @@ public class ChannelAuthRecordsViewlet
 	static int LowSleep;
 	static int MediumSleep;
 	static int HighSleep;
+	static boolean Objectnamefiled;
+	static boolean Objectname;
 	
 	@BeforeTest
 	public void beforeTest() throws Exception {
@@ -159,9 +161,9 @@ public class ChannelAuthRecordsViewlet
     }
 	 
 	 @TestRail(testCaseId=532)
-	 @Parameters({"Dashboardname", "ChannelAuthNameFromOptions", "UserList"})
+	 @Parameters({"Dashboardname", "ChannelAuthNameFromOptions", "UserList", "ChannelAuthNameOptions"})
 	 @Test(priority=2)
-		public void CreateChannelAuthRecordFromOptions(String Dashboardname, String ChannelAuthNameFromOptions, String UserList, ITestContext context) throws InterruptedException
+		public void CreateChannelAuthRecordFromOptions(String Dashboardname, String ChannelAuthNameFromOptions, String UserList, String ChannelAuthNameOptions, ITestContext context) throws InterruptedException
 		{
 		    //Clearing selection of object
 			ClearSelectionofCheckbox che=new ClearSelectionofCheckbox();
@@ -172,12 +174,37 @@ public class ChannelAuthRecordsViewlet
 			//Select create process option
 			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 			driver.findElement(By.linkText("Create ChAuthRec")).click();
-			Thread.sleep(LowSleep);
+			Thread.sleep(MediumSleep);
+			
 			
 			//Give the process name
+			try
+			{
 			driver.findElement(By.id("name")).clear();
-			driver.findElement(By.id("name")).sendKeys(ChannelAuthNameFromOptions);
+		    driver.findElement(By.id("name")).sendKeys(ChannelAuthNameFromOptions);
 			Thread.sleep(LowSleep);
+			}
+			catch(Exception E1)
+			{
+				System.out.println("dropdown selection executed");
+				driver.findElement(By.xpath("//app-ng-select-input/div/div/ng-select/div/span")).click();
+				Thread.sleep(LowSleep);
+				
+				WebElement a=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
+				List<WebElement>b=a.findElements(By.tagName("div"));
+				System.out.println("number of divs are"+b.size());
+				
+				for(WebElement c:b)
+				{
+					//System.out.println("Channel names: " +c.getText());
+					if(c.getText().equals(ChannelAuthNameOptions))
+					{
+						c.click();
+						Thread.sleep(6000);
+						break;
+					}
+				}
+			}
 			
 			//Go to Block tab
 			driver.findElement(By.linkText("Block")).click();
@@ -210,7 +237,7 @@ public class ChannelAuthRecordsViewlet
 				System.out.println("Error popup is not present");
 			}
 			
-			//Refresh viewlet
+			//Refresh viewlet      
 			driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
 			Thread.sleep(LowSleep);
 			
@@ -219,7 +246,7 @@ public class ChannelAuthRecordsViewlet
 			//System.out.println(ChannelAuthdata);
 			 
 			//Verification
-			if(ChannelAuthdata.contains(ChannelAuthNameFromOptions))
+			if(ChannelAuthdata.contains(ChannelAuthNameFromOptions) || ChannelAuthdata.contains(ChannelAuthNameOptions))
 			{
 				System.out.println("Channel auth record is created from the options");
 				context.setAttribute("Status",1);
@@ -245,15 +272,17 @@ public class ChannelAuthRecordsViewlet
 		}
 	 
 	 
-	    @Parameters({"Dashboardname", "ChannelAuthNameFromOptions"})
+	    @Parameters({"Dashboardname", "ChannelAuthNameFromOptions", "ChannelAuthNameOptions"})
 	    @TestRail(testCaseId=533)
 		@Test(priority=3)
-		public void DeleteChannelAuthRecordFromCommands(String Dashboardname, String ChannelAuthNameFromOptions, ITestContext context) throws InterruptedException
+		public void DeleteChannelAuthRecordFromCommands(String Dashboardname, String ChannelAuthNameFromOptions, String ChannelAuthNameOptions, ITestContext context) throws InterruptedException
 		{
 	    	//Clearing selection of object
 			ClearSelectionofCheckbox che=new ClearSelectionofCheckbox();
 			che.Deselectcheckbox(Dashboardname,driver);
 			
+			try
+			{
 	    	//Search with added channelAuth record
 	    	driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
 	    	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(ChannelAuthNameFromOptions);
@@ -276,13 +305,39 @@ public class ChannelAuthRecordsViewlet
 				driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
 	    	}
 	    	Thread.sleep(LowSleep);
+			}
+			catch(Exception ee)
+			{
+				//Search with added channelAuth record
+		    	driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
+		    	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(ChannelAuthNameOptions);
+		    	Thread.sleep(LowSleep);
+		    	
+				//Select Delete From commands
+				driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		    	Actions Mousehoverdelete=new Actions(driver);
+		    	Mousehoverdelete.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
+		    	driver.findElement(By.linkText("Delete")).click();
+		    	Thread.sleep(LowSleep);
+				
+		    	//Click on Yes
+		    	driver.findElement(By.cssSelector(".btn-primary")).click();
+		    	Thread.sleep(MediumSleep);
+		    	
+		    	//Search with the new name
+				for(int j=0; j<=ChannelAuthNameFromOptions.length(); j++)
+		    	{
+					driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
+		    	}
+				
+			}
 	    	
 	    	//Store the viewlet data into string
 	    	String Subviewlet=driver.findElement(By.xpath("//datatable-body")).getText();
 	    	//System.out.println(Subviewlet);
 	    	
 	    	//Verification of Subscription delete
-	    	if(Subviewlet.contains(ChannelAuthNameFromOptions))
+	    	if(Subviewlet.contains(ChannelAuthNameFromOptions) || Subviewlet.contains(ChannelAuthNameOptions))
 	    	{
 	    		System.out.println("Channel Auth record is not deleted");
 	    		context.setAttribute("Status",5);
@@ -388,12 +443,21 @@ public class ChannelAuthRecordsViewlet
 			driver.findElement(By.linkText("Properties...")).click();
 			Thread.sleep(MediumSleep);
 			
+			try
+			{
 			//Store the Name field status into boolean
-			boolean NameField=driver.findElement(By.id("name")).isEnabled();
-			System.out.println(NameField);
+			Objectnamefiled=driver.findElement(By.id("name")).isEnabled();
+			System.out.println(Objectnamefiled);
+			
+			}
+			catch(Exception ee)
+			{
+				Objectname=driver.findElement(By.xpath("//app-ng-select-input/div/div/ng-select/div")).isEnabled();
+				System.out.println("Dropdown field: " +Objectname);
+			}
 			
 			//Verification Condition
-			if(NameField == false)
+			if(Objectnamefiled == false || Objectname ==false)
 			{
 				System.out.println("The Channel Auth name is Disabled");
 				context.setAttribute("Status",1);
@@ -470,10 +534,11 @@ public class ChannelAuthRecordsViewlet
 			driver.findElement(By.cssSelector("div.g-block-bottom-buttons.buttons-block > button.g-button-blue")).click();
 			Thread.sleep(LowSleep);
 			
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-		    js.executeScript("window.scrollBy(0,-350)", "");
 			
 			//Select Add to Favorites option
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			Thread.sleep(2000);
 			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 			Thread.sleep(MediumSleep);
 			driver.findElement(By.linkText("Add to favorites...")).click();
@@ -529,9 +594,9 @@ public class ChannelAuthRecordsViewlet
 		}
 		
 	    @TestRail(testCaseId=537)
-		@Parameters({"Dashboardname", "ChannelAuthNameFromIcon", "UserList"})
+		@Parameters({"Dashboardname", "ChannelAuthNameFromIcon", "UserList", "ChannelAuthNameIcon"})
 		@Test(priority=9)
-		public void CreateChannelAuthRecordFromPlusIcon(String Dashboardname, String ChannelAuthNameFromIcon, String UserList, ITestContext context) throws InterruptedException
+		public void CreateChannelAuthRecordFromPlusIcon(String Dashboardname, String ChannelAuthNameFromIcon, String UserList, String ChannelAuthNameIcon, ITestContext context) throws InterruptedException
 		{
 	    	//Clearing selection of object
 			ClearSelectionofCheckbox che=new ClearSelectionofCheckbox();
@@ -610,9 +675,34 @@ public class ChannelAuthRecordsViewlet
 			Thread.sleep(LowSleep);
 			
 			//Give the name of the Channel auth name
+			try
+			{
 			driver.findElement(By.id("name")).clear();
-			driver.findElement(By.id("name")).sendKeys(ChannelAuthNameFromIcon);
+		    driver.findElement(By.id("name")).sendKeys(ChannelAuthNameFromIcon);
 			Thread.sleep(LowSleep);
+			}
+			catch(Exception E21)
+			{
+				System.out.println("dropdown selection executed");
+				driver.findElement(By.xpath("//app-ng-select-input/div/div/ng-select/div/span")).click();
+				Thread.sleep(LowSleep);
+				
+				WebElement a=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
+				List<WebElement>b=a.findElements(By.tagName("div"));
+				System.out.println("number of divs are"+b.size());
+				
+				for(WebElement c:b)
+				{
+					//System.out.println("Channel names are: " +c.getText());
+					if(c.getText().equals(ChannelAuthNameIcon))
+					{
+						c.click();
+						Thread.sleep(6000);
+						break;
+					}
+				}
+			}
+			
 			
 			//Go to Block tab
 			driver.findElement(By.linkText("Block")).click();
@@ -650,9 +740,9 @@ public class ChannelAuthRecordsViewlet
 			Thread.sleep(1000);
 			
 			//Edit the search field data
-			driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
-	    	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(ChannelAuthNameFromIcon);
-	    	Thread.sleep(LowSleep);
+			//driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
+	    	//driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(ChannelAuthNameFromIcon);
+	    	//Thread.sleep(LowSleep);
 	    	
 			
 			//Store the Topic viewlet data into string
@@ -660,15 +750,15 @@ public class ChannelAuthRecordsViewlet
 			//System.out.println(Viewletdata);
 			
 			//Edit the search field data
-	    	for(int j=0; j<=ChannelAuthNameFromIcon.length(); j++)
-	    	{
+	    	//for(int j=0; j<=ChannelAuthNameFromIcon.length(); j++)
+	    	//{
 	    	
-	    	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
-	    	}
+	    	//driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
+	    	//}
 	    	Thread.sleep(LowSleep);
 			
 			//Verification condition
-			if(Viewletdata.contains(ChannelAuthNameFromIcon))
+			if(Viewletdata.contains(ChannelAuthNameFromIcon) || Viewletdata.contains(ChannelAuthNameIcon))
 			{
 				System.out.println("Channel auth record is created successfully from ICon");
 				context.setAttribute("Status",1);
@@ -789,7 +879,8 @@ public class ChannelAuthRecordsViewlet
 			che1.Deselectcheckbox(Dashboardname,driver);
 			
 			//Open the properties for First process
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			Thread.sleep(LowSleep);
 			driver.findElement(By.linkText("Properties...")).click();
 			Thread.sleep(LowSleep);
 			
@@ -805,7 +896,8 @@ public class ChannelAuthRecordsViewlet
 			che2.Deselectcheckbox(Dashboardname,driver);
 			
 			//Open the properties for First process
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			Thread.sleep(LowSleep);
 			driver.findElement(By.linkText("Properties...")).click();
 			Thread.sleep(LowSleep);
 					
