@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Navigator]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test Cluster QM Viewlet(failed)">
-    <parameter name="ViewletName" value="New Cluster Queue Manager Viewlet"/>
-    <parameter name="Dashboardname" value="Cluster QM Verification"/>
+  <test thread-count="5" name="Menu bar icons(failed)">
     <parameter name="sDriver" value="webdriver.chrome.driver"/>
     <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
-    <parameter name="FavoriteViewletName" value="Cluster QM Favorite viewlet"/>
-    <parameter name="schemaName" value="ClusterQMSchema"/>
-    <parameter name="ViewletValue" value="11"/>
+    <parameter name="SecurityManagerURL" value="http://jenkins.nastel.com:8080/navxwsm/login"/>
+    <parameter name="HelpURL" value="https://customers.nastel.com/hc/en-us/categories/360002068774-Nastel-Navigator"/>
+    <parameter name="SecurityManagerURLLocal" value="http://localhost:8080/navxwsm/login"/>
     <classes>
-      <class name="ApodGUI.ClusterQueueManager">
+      <class name="NavigatorCore.MenuBarIcons">
         <methods>
           <include name="beforeTest"/>
+          <include name="HelpIcon" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="ShowObjectAttributesForClusterQM" invocation-numbers="0"/>
         </methods>
-      </class> <!-- ApodGUI.ClusterQueueManager -->
+      </class> <!-- NavigatorCore.MenuBarIcons -->
     </classes>
-  </test> <!-- Test Cluster QM Viewlet(failed) -->
+  </test> <!-- Menu bar icons(failed) -->
 </suite> <!-- Failed suite [Navigator] -->

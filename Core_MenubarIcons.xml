@@ -7,7 +7,7 @@
   
   <parameter name="SecurityManagerURLLocal" value="http://localhost:8080/navxwsm/login"/>
   <parameter name="SecurityManagerURL" value="http://jenkins.nastel.com:8080/navxwsm/login"/>
-  <parameter name="HelpURL" value="https://customers.nastel.com/hc/en-us/categories/360002068774-Nastel-Navigator"/>
+  <parameter name="HelpURL" value="https://www.meshiq.com/navigator-online-help/"/>
     
       
      <classes>

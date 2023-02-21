@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Testing Viewlet Filters]" guice-stage="DEVELOPMENT">
-  <test name="Viewlet filters reports(failed)">
+  <test thread-count="5" name="Viewlet filters reports(failed)">
     <parameter name="ViewletName" value="Queues Viewlest"/>
     <parameter name="Dashboardname" value="Viewlet Filters"/>
     <parameter name="sDriver" value="webdriver.chrome.driver"/>
@@ -12,10 +12,9 @@
     <classes>
       <class name="NavigatorCore.ViewletFilterOptions">
         <methods>
-          <include name="ResultLimitFilter" invocation-numbers="0"/>
           <include name="beforeTest"/>
           <include name="tearDown"/>
-          <include name="ManagerFilter" invocation-numbers="0"/>
+          <include name="EmptyCheckboxFilter" invocation-numbers="0"/>
         </methods>
       </class> <!-- NavigatorCore.ViewletFilterOptions -->
     </classes>
