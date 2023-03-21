@@ -15,6 +15,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -106,7 +107,9 @@ public class NodeViewlet {
 		
 		if (sDriver.equalsIgnoreCase("webdriver.chrome.driver")) {
 			System.setProperty(sDriver, sDriverpath);
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions(); 
+			options.addArguments("--remote-allow-origins=*");
+			driver=new ChromeDriver(options);
 		} else if (sDriver.equalsIgnoreCase("webdriver.ie.driver")) {
 			System.setProperty(sDriver, sDriverpath);
 			driver = new InternetExplorerDriver();

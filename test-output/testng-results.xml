@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="2" total="11" passed="9" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[<br/>]]>
@@ -11,37 +11,55 @@
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Properties.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreareDashboardUsingNewButton.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Events.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameDashboardUsingRenamebutton.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteDashboardUsingDeleteButton.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributes.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateTagUsingAddButton.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/UpdateTagNameUsingEditButton.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteTagUsingDeleteButton.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ExportDashboard.png" alt="""/" />]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-02-21T14:19:14 IST" name="Navigator" finished-at="2023-02-21T14:23:03 IST" duration-ms="228530">
+  <suite started-at="2023-03-21T11:32:17 IST" name="Navigator" finished-at="2023-03-21T11:37:59 IST" duration-ms="342104">
     <groups>
     </groups>
-    <test started-at="2023-02-21T14:19:14 IST" name="Test kafka Schema Viewlet" finished-at="2023-02-21T14:23:03 IST" duration-ms="228530">
-      <class name="KafkaGUI.KafkaSchemaViewlet">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406]" started-at="2023-02-21T14:19:14 IST" name="beforeTest" finished-at="2023-02-21T14:19:14 IST" duration-ms="24" status="PASS">
+    <test started-at="2023-03-21T11:32:17 IST" name="Manage Dashboard page options" finished-at="2023-03-21T11:37:59 IST" duration-ms="342104">
+      <class name="NavigatorCore.ManageDashboardOptions">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:32:17 IST" name="beforeTest" finished-at="2023-03-21T11:32:17 IST" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406]" started-at="2023-02-21T14:19:14 IST" name="Login" finished-at="2023-02-21T14:20:17 IST" duration-ms="62509" status="PASS">
+        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:32:17 IST" name="Login" finished-at="2023-03-21T11:33:31 IST" duration-ms="74090" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,17 +73,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Kafka Schema]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Kafka Schema Viewlet]]>
+                <![CDATA[ManageDashboard]]>
               </value>
             </param>
           </params>
@@ -78,27 +86,27 @@
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406]" started-at="2023-02-21T14:20:17 IST" name="tearDown" finished-at="2023-02-21T14:20:17 IST" duration-ms="198" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:33:31 IST" name="tearDown" finished-at="2023-03-21T11:33:31 IST" duration-ms="175" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login status=SUCCESS method=KafkaSchemaViewlet.Login(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406] output=<br/>]]]>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=ManageDashboardOptions.Login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="Properties(java.lang.String, org.testng.ITestContext)[pri:2, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406]" started-at="2023-02-21T14:20:17 IST" name="Properties" finished-at="2023-02-21T14:20:38 IST" duration-ms="20356" status="PASS">
+        <test-method signature="CreareDashboardUsingNewButton(java.lang.String, org.testng.ITestContext)[pri:1, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:33:31 IST" name="CreareDashboardUsingNewButton" finished-at="2023-03-21T11:34:11 IST" duration-ms="40342" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Kafka Schema]]>
+                <![CDATA[ManageDashboard]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c58dcb1]]>
+                <![CDATA[org.testng.TestRunner@35342d2f]]>
               </value>
             </param>
           </params>
@@ -107,69 +115,36 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Properties.png" alt="""/" />]]>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreareDashboardUsingNewButton.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Properties -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406]" started-at="2023-02-21T14:20:39 IST" name="tearDown" finished-at="2023-02-21T14:20:40 IST" duration-ms="900" status="PASS">
+        </test-method> <!-- CreareDashboardUsingNewButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:34:13 IST" name="tearDown" finished-at="2023-03-21T11:34:13 IST" duration-ms="950" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Properties status=SUCCESS method=KafkaSchemaViewlet.Properties(java.lang.String, org.testng.ITestContext)[pri:2, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406] output=<br/>]]]>
+                <![CDATA[[TestResult name=CreareDashboardUsingNewButton status=SUCCESS method=ManageDashboardOptions.CreareDashboardUsingNewButton(java.lang.String, org.testng.ITestContext)[pri:1, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="Events(java.lang.String, org.testng.ITestContext)[pri:3, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406]" started-at="2023-02-21T14:20:40 IST" name="Events" finished-at="2023-02-21T14:21:26 IST" duration-ms="46284" status="PASS">
+        <test-method signature="RenameDashboardUsingRenamebutton(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:2, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:34:13 IST" name="RenameDashboardUsingRenamebutton" finished-at="2023-03-21T11:34:54 IST" duration-ms="40287" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Kafka Schema]]>
+                <![CDATA[ManageDashboard]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2c58dcb1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Events.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Events -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406]" started-at="2023-02-21T14:21:27 IST" name="tearDown" finished-at="2023-02-21T14:21:28 IST" duration-ms="921" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Events status=SUCCESS method=KafkaSchemaViewlet.Events(java.lang.String, org.testng.ITestContext)[pri:3, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="AddToFavoriteViewlet(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:6, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406]" started-at="2023-02-21T14:21:28 IST" name="AddToFavoriteViewlet" finished-at="2023-02-21T14:22:07 IST" duration-ms="39519" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Kafka Schema]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Schema Fav]]>
+                <![CDATA[DashboardRenamed]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@2c58dcb1]]>
+                <![CDATA[org.testng.TestRunner@35342d2f]]>
               </value>
             </param>
           </params>
@@ -178,36 +153,31 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" />]]>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameDashboardUsingRenamebutton.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- AddToFavoriteViewlet -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406]" started-at="2023-02-21T14:22:08 IST" name="tearDown" finished-at="2023-02-21T14:22:09 IST" duration-ms="943" status="PASS">
+        </test-method> <!-- RenameDashboardUsingRenamebutton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:34:55 IST" name="tearDown" finished-at="2023-03-21T11:34:55 IST" duration-ms="914" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddToFavoriteViewlet status=SUCCESS method=KafkaSchemaViewlet.AddToFavoriteViewlet(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:6, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406] output=<br/>]]]>
+                <![CDATA[[TestResult name=RenameDashboardUsingRenamebutton status=SUCCESS method=ManageDashboardOptions.RenameDashboardUsingRenamebutton(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:2, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="ShowObjectAttributes(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:11, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406]" started-at="2023-02-21T14:22:09 IST" name="ShowObjectAttributes" finished-at="2023-02-21T14:22:34 IST" duration-ms="25029" status="PASS">
+        <test-method signature="DeleteDashboardUsingDeleteButton(java.lang.String, org.testng.ITestContext)[pri:3, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:34:55 IST" name="DeleteDashboardUsingDeleteButton" finished-at="2023-03-21T11:35:19 IST" duration-ms="23772" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Kafka Schema]]>
+                <![CDATA[DashboardRenamed]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Schema]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@2c58dcb1]]>
+                <![CDATA[org.testng.TestRunner@35342d2f]]>
               </value>
             </param>
           </params>
@@ -216,44 +186,176 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowObjectAttributes.png" alt="""/" />]]>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteDashboardUsingDeleteButton.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- ShowObjectAttributes -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406]" started-at="2023-02-21T14:22:35 IST" name="tearDown" finished-at="2023-02-21T14:22:36 IST" duration-ms="911" status="PASS">
+        </test-method> <!-- DeleteDashboardUsingDeleteButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:35:20 IST" name="tearDown" finished-at="2023-03-21T11:35:21 IST" duration-ms="913" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ShowObjectAttributes status=SUCCESS method=KafkaSchemaViewlet.ShowObjectAttributes(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:11, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406] output=<br/>]]]>
+                <![CDATA[[TestResult name=DeleteDashboardUsingDeleteButton status=SUCCESS method=ManageDashboardOptions.DeleteDashboardUsingDeleteButton(java.lang.String, org.testng.ITestContext)[pri:3, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="Logout(java.lang.String)[pri:27, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406]" started-at="2023-02-21T14:22:36 IST" name="Logout" finished-at="2023-02-21T14:23:03 IST" duration-ms="26902" status="PASS">
+        <test-method signature="CreateTagUsingAddButton(java.lang.String, org.testng.ITestContext)[pri:4, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:35:21 IST" name="CreateTagUsingAddButton" finished-at="2023-03-21T11:36:17 IST" duration-ms="56149" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Kafka Schema]]>
+                <![CDATA[NewTag]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@35342d2f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateTagUsingAddButton.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateTagUsingAddButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:36:18 IST" name="tearDown" finished-at="2023-03-21T11:36:19 IST" duration-ms="877" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CreateTagUsingAddButton status=SUCCESS method=ManageDashboardOptions.CreateTagUsingAddButton(java.lang.String, org.testng.ITestContext)[pri:4, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="UpdateTagNameUsingEditButton(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:36:19 IST" name="UpdateTagNameUsingEditButton" finished-at="2023-03-21T11:36:51 IST" duration-ms="31832" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NewTag]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TagNastel]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@35342d2f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/UpdateTagNameUsingEditButton.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- UpdateTagNameUsingEditButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:36:51 IST" name="tearDown" finished-at="2023-03-21T11:36:52 IST" duration-ms="880" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UpdateTagNameUsingEditButton status=SUCCESS method=ManageDashboardOptions.UpdateTagNameUsingEditButton(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="DeleteTagUsingDeleteButton(java.lang.String, org.testng.ITestContext)[pri:6, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:36:52 IST" name="DeleteTagUsingDeleteButton" finished-at="2023-03-21T11:37:31 IST" duration-ms="38608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TagNastel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@35342d2f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteTagUsingDeleteButton.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DeleteTagUsingDeleteButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:37:35 IST" name="tearDown" finished-at="2023-03-21T11:37:36 IST" duration-ms="891" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteTagUsingDeleteButton status=SUCCESS method=ManageDashboardOptions.DeleteTagUsingDeleteButton(java.lang.String, org.testng.ITestContext)[pri:6, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ExportDashboard(org.testng.ITestContext)[pri:7, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:37:36 IST" name="ExportDashboard" finished-at="2023-03-21T11:37:51 IST" duration-ms="15138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@35342d2f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ExportDashboard.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ExportDashboard -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:37:52 IST" name="tearDown" finished-at="2023-03-21T11:37:53 IST" duration-ms="874" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ExportDashboard status=SUCCESS method=ManageDashboardOptions.ExportDashboard(org.testng.ITestContext)[pri:7, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Logout(java.lang.String)[pri:20, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:37:53 IST" name="Logout" finished-at="2023-03-21T11:37:59 IST" duration-ms="5919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ManageDashboard]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406]" started-at="2023-02-21T14:23:03 IST" name="tearDown" finished-at="2023-02-21T14:23:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:37:59 IST" name="tearDown" finished-at="2023-03-21T11:37:59 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Logout status=SUCCESS method=KafkaSchemaViewlet.Logout(java.lang.String)[pri:27, instance:KafkaGUI.KafkaSchemaViewlet@1e1a0406] output={null}]]]>
+                <![CDATA[[TestResult name=Logout status=SUCCESS method=ManageDashboardOptions.Logout(java.lang.String)[pri:20, instance:NavigatorCore.ManageDashboardOptions@201a4587] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- KafkaGUI.KafkaSchemaViewlet -->
-    </test> <!-- Test kafka Schema Viewlet -->
+      </class> <!-- NavigatorCore.ManageDashboardOptions -->
+    </test> <!-- Manage Dashboard page options -->
   </suite> <!-- Navigator -->
 </testng-results>

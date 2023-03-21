@@ -5,7 +5,7 @@
  
     
    <parameter name="sDriver" value="webdriver.chrome.driver"/>
-   <parameter name="sPath" value="Drivers/chromedriver.exe"/>
+   <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
    <parameter name="dashboardname" value="JNDI"/>
    <parameter name="ViewletName" value="JNDI Viewlet"/>
    <parameter name="ViewletValue" value="13"/>

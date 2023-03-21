@@ -82,8 +82,10 @@ public class CloseConsoleTabs
 		
 		if(sDriver.equalsIgnoreCase("webdriver.chrome.driver"))
 		{
-			System.setProperty(sDriver, sDriverpath);		
-		    driver=new ChromeDriver();
+			System.setProperty(sDriver, sDriverpath);
+			ChromeOptions options = new ChromeOptions(); 
+			options.addArguments("--remote-allow-origins=*");
+			driver=new ChromeDriver(options);
 		}
 		else if(sDriver.equalsIgnoreCase("webdriver.ie.driver"))
 		{

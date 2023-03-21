@@ -10,6 +10,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestContext;
@@ -67,17 +71,37 @@ public class EMSJNDI
 		HighSleep=Integer.parseInt(High);
 	}
 	
-	@Parameters({"sDriver","sPath","dashboardname"})
+	@Parameters({"sDriver","sDriverpath","dashboardname"})
 	@Test(priority=1)
-	public static void Login(String sDriver,  String  sPath, String dashboardname) throws Exception
+	public static void Login(String sDriver,  String  sDriverpath, String dashboardname) throws Exception
 	{
 		Settings.read();
 		String URL=Settings.getSettingURL();
 		String uname=Settings.getNav_Username();
 		String password=Settings.getNav_Password();
 		
-		System.setProperty(sDriver, sPath);
-		driver=new ChromeDriver();
+		if(sDriver.equalsIgnoreCase("webdriver.chrome.driver"))
+		{
+			System.setProperty(sDriver, sDriverpath);
+			ChromeOptions options = new ChromeOptions(); 
+			options.addArguments("--remote-allow-origins=*");
+			driver=new ChromeDriver(options);
+		}
+		else if(sDriver.equalsIgnoreCase("webdriver.ie.driver"))
+		{
+			System.setProperty(sDriver, sDriverpath);
+			driver=new InternetExplorerDriver();
+		}
+		else if(sDriver.equalsIgnoreCase("webdriver.edge.driver"))
+		{
+			System.setProperty(sDriver, sDriverpath);
+			driver= new EdgeDriver();
+		}
+		else
+		{
+			System.setProperty(sDriver, sDriverpath);
+			driver= new FirefoxDriver();
+		}
 		
 		//for maximize window
 		driver.manage().window().maximize();

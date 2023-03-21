@@ -106,7 +106,8 @@ public class EMSManagerViewlet
 		chromePrefs.put("download.prompt_for_download", "false");
 		chromePrefs.put("download.default_directory", filepath);
 		ChromeOptions options = new ChromeOptions();
-		options.setExperimentalOption("prefs", chromePrefs);
+		options.setExperimentalOption("prefs", chromePrefs); 
+		options.addArguments("--remote-allow-origins=*");
 		driver=new ChromeDriver(options);
 		}
 		else if(sDriver.equalsIgnoreCase("webdriver.ie.driver"))

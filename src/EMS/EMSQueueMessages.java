@@ -99,6 +99,8 @@ public class EMSQueueMessages
 		chromePrefs.put("download.default_directory", filepath);
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("prefs", chromePrefs);
+	 
+		options.addArguments("--remote-allow-origins=*");
 		driver=new ChromeDriver(options);
 		}
 		else if(sDriver.equalsIgnoreCase("webdriver.ie.driver"))

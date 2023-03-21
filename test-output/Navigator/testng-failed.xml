@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Navigator]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Menu bar icons(failed)">
+  <test thread-count="5" name="Test Console tabs(failed)">
+    <parameter name="ViewletName" value="Local Queue"/>
+    <parameter name="Dashboardname" value="Console tabs"/>
+    <parameter name="password" value="admin"/>
+    <parameter name="uname" value="Admin"/>
     <parameter name="sDriver" value="webdriver.chrome.driver"/>
     <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
-    <parameter name="SecurityManagerURL" value="http://jenkins.nastel.com:8080/navxwsm/login"/>
-    <parameter name="HelpURL" value="https://customers.nastel.com/hc/en-us/categories/360002068774-Nastel-Navigator"/>
-    <parameter name="SecurityManagerURLLocal" value="http://localhost:8080/navxwsm/login"/>
+    <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="ViewletValue" value="3"/>
     <classes>
-      <class name="NavigatorCore.MenuBarIcons">
+      <class name="NavigatorCore.CloseConsoleTabs">
         <methods>
+          <include name="CloseAllConsole" invocation-numbers="0"/>
+          <include name="Login" invocation-numbers="0"/>
+          <include name="Logout" invocation-numbers="0"/>
           <include name="beforeTest"/>
-          <include name="HelpIcon" invocation-numbers="0"/>
+          <include name="CloseOtherConsole" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- NavigatorCore.MenuBarIcons -->
+      </class> <!-- NavigatorCore.CloseConsoleTabs -->
     </classes>
-  </test> <!-- Menu bar icons(failed) -->
+  </test> <!-- Test Console tabs(failed) -->
 </suite> <!-- Failed suite [Navigator] -->
