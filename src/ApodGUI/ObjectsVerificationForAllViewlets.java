@@ -87,7 +87,7 @@ public class ObjectsVerificationForAllViewlets
 		}
 		
 		//Click on Add button
-		driver.findElement(By.xpath("//app-mod-manage-schemas/div/div/div[2]/button")).click();
+		driver.findElement(By.xpath("//button[contains(.,'Add...')]")).click();
 		Thread.sleep(2000);
 		
 		//Give schema name
@@ -260,7 +260,7 @@ public class ObjectsVerificationForAllViewlets
 		}
 		
 		//Click on add button
-		driver.findElement(By.xpath("//app-mod-manage-schemas/div/div/div[2]/button")).click();
+		driver.findElement(By.xpath("//button[contains(.,'Add...')]")).click();
 		
 		//Give schema name
 		driver.findElement(By.name("name")).sendKeys(SchemaName);
@@ -489,7 +489,7 @@ public class ObjectsVerificationForAllViewlets
 			}
 			
 			//Click on add button
-			driver.findElement(By.xpath("//app-mod-manage-schemas/div/div/div[2]/button")).click();
+			driver.findElement(By.xpath("//button[contains(.,'Add...')]")).click();
 			
 			//Give schema name
 			driver.findElement(By.name("name")).sendKeys(SchemaName);
@@ -734,7 +734,7 @@ public class ObjectsVerificationForAllViewlets
 			}
 			
 			//Click on add button
-			driver.findElement(By.xpath("//app-mod-manage-schemas/div/div/div[2]/button")).click();
+			driver.findElement(By.xpath("//button[contains(.,'Add...')]")).click();
 			
 			//Give schema name
 			driver.findElement(By.name("name")).sendKeys(schemaName);
@@ -963,7 +963,7 @@ public class ObjectsVerificationForAllViewlets
 			}
 			
 			//Click on add button
-			driver.findElement(By.xpath("//app-mod-manage-schemas/div/div/div[2]/button")).click();
+			driver.findElement(By.xpath("//button[contains(.,'Add...')]")).click();
 			
 			//Give schema name
 			driver.findElement(By.name("name")).sendKeys(schemaName);
@@ -1207,7 +1207,7 @@ public class ObjectsVerificationForAllViewlets
 			}
 			
 			//Click on add button
-			driver.findElement(By.xpath("//app-mod-manage-schemas/div/div/div[2]/button")).click();
+			driver.findElement(By.xpath("//button[contains(.,'Add...')]")).click();
 			
 			//Give schema name
 			driver.findElement(By.name("name")).sendKeys(schemaName);
@@ -1399,7 +1399,7 @@ public class ObjectsVerificationForAllViewlets
 			}
 			
 			//Click on add button
-			driver.findElement(By.xpath("//app-mod-manage-schemas/div/div/div[2]/button")).click();
+			driver.findElement(By.xpath("//button[contains(.,'Add...')]")).click();
 			
 			//Give schema name
 			driver.findElement(By.name("name")).sendKeys(schemaName);
@@ -1591,7 +1591,7 @@ public class ObjectsVerificationForAllViewlets
 			}
 			
 			//Click on add button
-			driver.findElement(By.xpath("//app-mod-manage-schemas/div/div/div[2]/button")).click();
+			driver.findElement(By.xpath("//button[contains(.,'Add...')]")).click();
 			Thread.sleep(3000);
 			
 			//Give schema name
@@ -1784,7 +1784,7 @@ public class ObjectsVerificationForAllViewlets
 			}
 			
 			//Click on add button
-			driver.findElement(By.xpath("//app-mod-manage-schemas/div/div/div[2]/button")).click();
+			driver.findElement(By.xpath("//button[contains(.,'Add...')]")).click();
 			Thread.sleep(4000);
 			
 			//Give schema name
@@ -1985,7 +1985,7 @@ public class ObjectsVerificationForAllViewlets
 		}
 		
 		//Click on add button
-		driver.findElement(By.xpath("//app-mod-manage-schemas/div/div/div[2]/button")).click();
+		driver.findElement(By.xpath("//button[contains(.,'Add...')]")).click();
 		
 		//Give schema name
 		driver.findElement(By.name("name")).sendKeys(schemaName);
@@ -2141,7 +2141,7 @@ public class ObjectsVerificationForAllViewlets
 		}
 		
 		//Click on Add button
-		driver.findElement(By.xpath("//app-mod-manage-schemas/div/div/div[2]/button")).click();
+		driver.findElement(By.xpath("//button[contains(.,'Add...')]")).click();
 		
 		//Give schema name
 		driver.findElement(By.name("name")).sendKeys(schemaName);
@@ -2292,7 +2292,7 @@ public class ObjectsVerificationForAllViewlets
 		}
 		
 		//Click on add button
-		driver.findElement(By.xpath("//app-mod-manage-schemas/div/div/div[2]/button")).click();
+		driver.findElement(By.xpath("//button[contains(.,'Add...')]")).click();
 		
 		//Give schema name
 		driver.findElement(By.name("name")).sendKeys(schemaName);
@@ -2483,7 +2483,7 @@ public class ObjectsVerificationForAllViewlets
 		}
 		
 		//Click on add button
-		driver.findElement(By.xpath("//app-mod-manage-schemas/div/div/div[2]/button")).click();
+		driver.findElement(By.xpath("//button[contains(.,'Add...')]")).click();
 		
 		//Give schema name
 		driver.findElement(By.name("name")).sendKeys(SchemaName);
@@ -2676,7 +2676,7 @@ public class ObjectsVerificationForAllViewlets
 		}
 		
 		//Click on add button
-		driver.findElement(By.xpath("//app-mod-manage-schemas/div/div/div[2]/button")).click();
+		driver.findElement(By.xpath("//button[contains(.,'Add...')]")).click();
 		
 		//Give schema name
 		driver.findElement(By.name("name")).sendKeys(SchemaName);

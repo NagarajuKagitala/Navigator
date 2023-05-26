@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="11" passed="9" failed="0" skipped="0">
+<testng-results ignored="10" total="28" passed="14" failed="3" skipped="1">
   <reporter-output>
     <line>
       <![CDATA[<br/>]]>
@@ -11,55 +11,121 @@
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreareDashboardUsingNewButton.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowChannelStatus.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameDashboardUsingRenamebutton.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateChannelFromIcon.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteDashboardUsingDeleteButton.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsFromCommands.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateTagUsingAddButton.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameFromCommands.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/UpdateTagNameUsingEditButton.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteChannel.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteTagUsingDeleteButton.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MQSCSnapshot.png" alt="""/" />]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ExportDashboard.png" alt="""/" />]]>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveChannelSnapshot.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Properties.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Events.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[Screenshots/ScreenshotsFailure/AddToFavorites.png]]>
+    </line>
+    <line>
+      <![CDATA[<br/>Failed to execute method: AddToFavorites<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/AddToFavorites.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ComapareChannels.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForChannels.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[Screenshots/ScreenshotsFailure/ShowChannelStatusForMultiple.png]]>
+    </line>
+    <line>
+      <![CDATA[<br/>Failed to execute method: ShowChannelStatusForMultiple<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowChannelStatusForMultiple.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MultipleProperties.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[Screenshots/ScreenshotsFailure/ShowObjectAttributes.png]]>
+    </line>
+    <line>
+      <![CDATA[<br/>Failed to execute method: ShowObjectAttributes<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowObjectAttributes.png" alt="""/" />]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-03-21T11:32:17 IST" name="Navigator" finished-at="2023-03-21T11:37:59 IST" duration-ms="342104">
+  <suite started-at="2023-05-25T19:09:08 IST" name="Navigator" finished-at="2023-05-25T19:34:28 IST" duration-ms="1520305">
     <groups>
     </groups>
-    <test started-at="2023-03-21T11:32:17 IST" name="Manage Dashboard page options" finished-at="2023-03-21T11:37:59 IST" duration-ms="342104">
-      <class name="NavigatorCore.ManageDashboardOptions">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:32:17 IST" name="beforeTest" finished-at="2023-03-21T11:32:17 IST" duration-ms="63" status="PASS">
+    <test started-at="2023-05-25T19:09:08 IST" name="Test Channel Viewlet" finished-at="2023-05-25T19:34:28 IST" duration-ms="1520305">
+      <class name="ApodGUI.ChannelViewlet">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:09:08 IST" name="beforeTest" finished-at="2023-05-25T19:09:08 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:32:17 IST" name="Login" finished-at="2023-03-21T11:33:31 IST" duration-ms="74090" status="PASS">
+        <test-method signature="Login(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:09:08 IST" name="Login" finished-at="2023-05-25T19:11:54 IST" duration-ms="166351" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,7 +139,17 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[ManageDashboard]]>
+                <![CDATA[Channel Verification]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Channel Viewlet]]>
               </value>
             </param>
           </params>
@@ -86,27 +162,27 @@
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:33:31 IST" name="tearDown" finished-at="2023-03-21T11:33:31 IST" duration-ms="175" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:11:54 IST" name="tearDown" finished-at="2023-05-25T19:11:55 IST" duration-ms="173" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login status=SUCCESS method=ManageDashboardOptions.Login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=ChannelViewlet.Login(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="CreareDashboardUsingNewButton(java.lang.String, org.testng.ITestContext)[pri:1, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:33:31 IST" name="CreareDashboardUsingNewButton" finished-at="2023-03-21T11:34:11 IST" duration-ms="40342" status="PASS">
+        <test-method signature="ShowChannelStatus(java.lang.String, org.testng.ITestContext)[pri:2, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:11:55 IST" name="ShowChannelStatus" finished-at="2023-05-25T19:12:29 IST" duration-ms="34793" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ManageDashboard]]>
+                <![CDATA[Channel Verification]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@35342d2f]]>
+                <![CDATA[org.testng.TestRunner@131ff6fa]]>
               </value>
             </param>
           </params>
@@ -115,36 +191,46 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreareDashboardUsingNewButton.png" alt="""/" />]]>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowChannelStatus.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- CreareDashboardUsingNewButton -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:34:13 IST" name="tearDown" finished-at="2023-03-21T11:34:13 IST" duration-ms="950" status="PASS">
+        </test-method> <!-- ShowChannelStatus -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:12:31 IST" name="tearDown" finished-at="2023-05-25T19:12:32 IST" duration-ms="971" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CreareDashboardUsingNewButton status=SUCCESS method=ManageDashboardOptions.CreareDashboardUsingNewButton(java.lang.String, org.testng.ITestContext)[pri:1, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
+                <![CDATA[[TestResult name=ShowChannelStatus status=SUCCESS method=ChannelViewlet.ShowChannelStatus(java.lang.String, org.testng.ITestContext)[pri:2, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="RenameDashboardUsingRenamebutton(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:2, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:34:13 IST" name="RenameDashboardUsingRenamebutton" finished-at="2023-03-21T11:34:54 IST" duration-ms="40287" status="PASS">
+        <test-method signature="CreateChannelFromIcon(java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:12:32 IST" name="CreateChannelFromIcon" finished-at="2023-05-25T19:15:28 IST" duration-ms="176671" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ManageDashboard]]>
+                <![CDATA[Channel Verification]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[DashboardRenamed]]>
+                <![CDATA[Sender]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@35342d2f]]>
+                <![CDATA[SENDER.ICON.CL]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[192.168.1.204(4343)]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@131ff6fa]]>
               </value>
             </param>
           </params>
@@ -153,102 +239,46 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameDashboardUsingRenamebutton.png" alt="""/" />]]>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateChannelFromIcon.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- RenameDashboardUsingRenamebutton -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:34:55 IST" name="tearDown" finished-at="2023-03-21T11:34:55 IST" duration-ms="914" status="PASS">
+        </test-method> <!-- CreateChannelFromIcon -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:15:29 IST" name="tearDown" finished-at="2023-05-25T19:15:30 IST" duration-ms="944" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=RenameDashboardUsingRenamebutton status=SUCCESS method=ManageDashboardOptions.RenameDashboardUsingRenamebutton(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:2, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
+                <![CDATA[[TestResult name=CreateChannelFromIcon status=SUCCESS method=ChannelViewlet.CreateChannelFromIcon(java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:3, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="DeleteDashboardUsingDeleteButton(java.lang.String, org.testng.ITestContext)[pri:3, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:34:55 IST" name="DeleteDashboardUsingDeleteButton" finished-at="2023-03-21T11:35:19 IST" duration-ms="23772" status="PASS">
+        <test-method signature="CopyAsFromCommands(java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:9, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:15:30 IST" name="CopyAsFromCommands" finished-at="2023-05-25T19:17:41 IST" depends-on-methods="ApodGUI.ChannelViewlet.CreateChannelFromIcon" duration-ms="130864" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[DashboardRenamed]]>
+                <![CDATA[Channel Verification]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@35342d2f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteDashboardUsingDeleteButton.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- DeleteDashboardUsingDeleteButton -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:35:20 IST" name="tearDown" finished-at="2023-03-21T11:35:21 IST" duration-ms="913" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DeleteDashboardUsingDeleteButton status=SUCCESS method=ManageDashboardOptions.DeleteDashboardUsingDeleteButton(java.lang.String, org.testng.ITestContext)[pri:3, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="CreateTagUsingAddButton(java.lang.String, org.testng.ITestContext)[pri:4, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:35:21 IST" name="CreateTagUsingAddButton" finished-at="2023-03-21T11:36:17 IST" duration-ms="56149" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NewTag]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@35342d2f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br/>]]>
-            </line>
-            <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateTagUsingAddButton.png" alt="""/" />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CreateTagUsingAddButton -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:36:18 IST" name="tearDown" finished-at="2023-03-21T11:36:19 IST" duration-ms="877" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CreateTagUsingAddButton status=SUCCESS method=ManageDashboardOptions.CreateTagUsingAddButton(java.lang.String, org.testng.ITestContext)[pri:4, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="UpdateTagNameUsingEditButton(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:36:19 IST" name="UpdateTagNameUsingEditButton" finished-at="2023-03-21T11:36:51 IST" duration-ms="31832" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NewTag]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[TagNastel]]>
+                <![CDATA[.COPY]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@35342d2f]]>
+                <![CDATA[SENDER.ICON.CL]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[127.0.0.1(4682)]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@131ff6fa]]>
               </value>
             </param>
           </params>
@@ -257,31 +287,46 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/UpdateTagNameUsingEditButton.png" alt="""/" />]]>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsFromCommands.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- UpdateTagNameUsingEditButton -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:36:51 IST" name="tearDown" finished-at="2023-03-21T11:36:52 IST" duration-ms="880" status="PASS">
+        </test-method> <!-- CopyAsFromCommands -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:17:42 IST" name="tearDown" finished-at="2023-05-25T19:17:44 IST" duration-ms="1232" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UpdateTagNameUsingEditButton status=SUCCESS method=ManageDashboardOptions.UpdateTagNameUsingEditButton(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
+                <![CDATA[[TestResult name=CopyAsFromCommands status=SUCCESS method=ChannelViewlet.CopyAsFromCommands(java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:9, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="DeleteTagUsingDeleteButton(java.lang.String, org.testng.ITestContext)[pri:6, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:36:52 IST" name="DeleteTagUsingDeleteButton" finished-at="2023-03-21T11:37:31 IST" duration-ms="38608" status="PASS">
+        <test-method signature="RenameFromCommands(java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:10, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:17:44 IST" name="RenameFromCommands" finished-at="2023-05-25T19:19:55 IST" depends-on-methods="ApodGUI.ChannelViewlet.CopyAsFromCommands" duration-ms="131866" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[TagNastel]]>
+                <![CDATA[Channel Verification]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@35342d2f]]>
+                <![CDATA[CHANNEL.RENAME]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SENDER.ICON.CL]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[.COPY]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@131ff6fa]]>
               </value>
             </param>
           </params>
@@ -290,26 +335,36 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteTagUsingDeleteButton.png" alt="""/" />]]>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameFromCommands.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- DeleteTagUsingDeleteButton -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:37:35 IST" name="tearDown" finished-at="2023-03-21T11:37:36 IST" duration-ms="891" status="PASS">
+        </test-method> <!-- RenameFromCommands -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:19:56 IST" name="tearDown" finished-at="2023-05-25T19:19:58 IST" duration-ms="1192" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DeleteTagUsingDeleteButton status=SUCCESS method=ManageDashboardOptions.DeleteTagUsingDeleteButton(java.lang.String, org.testng.ITestContext)[pri:6, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
+                <![CDATA[[TestResult name=RenameFromCommands status=SUCCESS method=ChannelViewlet.RenameFromCommands(java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:10, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="ExportDashboard(org.testng.ITestContext)[pri:7, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:37:36 IST" name="ExportDashboard" finished-at="2023-03-21T11:37:51 IST" duration-ms="15138" status="PASS">
+        <test-method signature="DeleteChannel(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:11, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:19:58 IST" name="DeleteChannel" finished-at="2023-05-25T19:21:33 IST" depends-on-methods="ApodGUI.ChannelViewlet.CreateChannelFromIcon" duration-ms="95389" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@35342d2f]]>
+                <![CDATA[Channel Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SENDER.ICON.CL]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@131ff6fa]]>
               </value>
             </param>
           </params>
@@ -318,44 +373,641 @@
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ExportDashboard.png" alt="""/" />]]>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteChannel.png" alt="""/" />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- ExportDashboard -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:37:52 IST" name="tearDown" finished-at="2023-03-21T11:37:53 IST" duration-ms="874" status="PASS">
+        </test-method> <!-- DeleteChannel -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:21:34 IST" name="tearDown" finished-at="2023-05-25T19:21:35 IST" duration-ms="1276" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ExportDashboard status=SUCCESS method=ManageDashboardOptions.ExportDashboard(org.testng.ITestContext)[pri:7, instance:NavigatorCore.ManageDashboardOptions@201a4587] output=<br/>]]]>
+                <![CDATA[[TestResult name=DeleteChannel status=SUCCESS method=ChannelViewlet.DeleteChannel(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:11, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="Logout(java.lang.String)[pri:20, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:37:53 IST" name="Logout" finished-at="2023-03-21T11:37:59 IST" duration-ms="5919" status="PASS">
+        <test-method signature="MQSCSnapshot(java.lang.String, org.testng.ITestContext)[pri:12, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:21:35 IST" name="MQSCSnapshot" finished-at="2023-05-25T19:22:03 IST" duration-ms="27424" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ManageDashboard]]>
+                <![CDATA[Channel Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@131ff6fa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MQSCSnapshot.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MQSCSnapshot -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:22:03 IST" name="tearDown" finished-at="2023-05-25T19:22:04 IST" duration-ms="937" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MQSCSnapshot status=SUCCESS method=ChannelViewlet.MQSCSnapshot(java.lang.String, org.testng.ITestContext)[pri:12, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="SaveChannelSnapshot(org.testng.ITestContext)[pri:13, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:22:04 IST" name="SaveChannelSnapshot" finished-at="2023-05-25T19:22:20 IST" depends-on-methods="ApodGUI.ChannelViewlet.MQSCSnapshot" duration-ms="15353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@131ff6fa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveChannelSnapshot.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SaveChannelSnapshot -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:22:20 IST" name="tearDown" finished-at="2023-05-25T19:22:21 IST" duration-ms="898" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SaveChannelSnapshot status=SUCCESS method=ChannelViewlet.SaveChannelSnapshot(org.testng.ITestContext)[pri:13, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Properties(java.lang.String, org.testng.ITestContext)[pri:14, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:22:21 IST" name="Properties" finished-at="2023-05-25T19:23:14 IST" duration-ms="52581" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Channel Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@131ff6fa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Properties.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Properties -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:23:15 IST" name="tearDown" finished-at="2023-05-25T19:23:16 IST" duration-ms="902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Properties status=SUCCESS method=ChannelViewlet.Properties(java.lang.String, org.testng.ITestContext)[pri:14, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Events(java.lang.String, org.testng.ITestContext)[pri:15, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:23:16 IST" name="Events" finished-at="2023-05-25T19:24:21 IST" duration-ms="64976" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Channel Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@131ff6fa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Events.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Events -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:24:21 IST" name="tearDown" finished-at="2023-05-25T19:24:22 IST" duration-ms="924" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Events status=SUCCESS method=ChannelViewlet.Events(java.lang.String, org.testng.ITestContext)[pri:15, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="AddToFavorites(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:16, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:24:22 IST" name="AddToFavorites" finished-at="2023-05-25T19:25:55 IST" duration-ms="92111" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Channel Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Favorite for Channels]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@131ff6fa]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Add to favorites..."}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-K4AEKHO', ip: '172.16.31.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a59730080ad037305777077c8ba0b05, findElement {using=link text, value=Add to favorites...}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64268}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64268/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a59730080ad037305777077c8ba0b05]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Add to favorites..."}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-K4AEKHO', ip: '172.16.31.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a59730080ad037305777077c8ba0b05, findElement {using=link text, value=Add to favorites...}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64268}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64268/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a59730080ad037305777077c8ba0b05
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at ApodGUI.ChannelViewlet.AddToFavorites(ChannelViewlet.java:1043)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>Failed to execute method: AddToFavorites<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/AddToFavorites.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddToFavorites -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:25:56 IST" name="tearDown" finished-at="2023-05-25T19:25:57 IST" duration-ms="1231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddToFavorites status=FAILURE method=ChannelViewlet.AddToFavorites(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:16, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>Failed to execute method: AddToFavorites<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Screenshots/ScreenshotsFailure/AddToFavorites.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ComapareChannels(org.testng.ITestContext)[pri:17, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:25:57 IST" name="ComapareChannels" finished-at="2023-05-25T19:26:22 IST" duration-ms="24971" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@131ff6fa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ComapareChannels.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ComapareChannels -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:26:23 IST" name="tearDown" finished-at="2023-05-25T19:26:23 IST" duration-ms="928" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ComapareChannels status=SUCCESS method=ChannelViewlet.ComapareChannels(org.testng.ITestContext)[pri:17, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="CheckDifferencesForChannels(org.testng.ITestContext)[pri:18, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:26:23 IST" name="CheckDifferencesForChannels" finished-at="2023-05-25T19:26:52 IST" duration-ms="28035" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@131ff6fa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForChannels.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CheckDifferencesForChannels -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:26:52 IST" name="tearDown" finished-at="2023-05-25T19:26:53 IST" duration-ms="955" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckDifferencesForChannels status=SUCCESS method=ChannelViewlet.CheckDifferencesForChannels(org.testng.ITestContext)[pri:18, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ShowChannelStatusForMultiple(java.lang.String, org.testng.ITestContext)[pri:19, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:26:53 IST" name="ShowChannelStatusForMultiple" finished-at="2023-05-25T19:27:50 IST" duration-ms="56570" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Channel Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@131ff6fa]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"Channel status failed"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-K4AEKHO', ip: '172.16.31.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a59730080ad037305777077c8ba0b05, findElement {using=css selector, value=Channel status failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64268}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64268/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a59730080ad037305777077c8ba0b05]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"Channel status failed"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-K4AEKHO', ip: '172.16.31.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a59730080ad037305777077c8ba0b05, findElement {using=css selector, value=Channel status failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64268}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64268/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a59730080ad037305777077c8ba0b05
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at ApodGUI.ChannelViewlet.ShowChannelStatusForMultiple(ChannelViewlet.java:1181)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>Failed to execute method: ShowChannelStatusForMultiple<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowChannelStatusForMultiple.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ShowChannelStatusForMultiple -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:27:51 IST" name="tearDown" finished-at="2023-05-25T19:27:52 IST" duration-ms="1248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ShowChannelStatusForMultiple status=FAILURE method=ChannelViewlet.ShowChannelStatusForMultiple(java.lang.String, org.testng.ITestContext)[pri:19, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>Failed to execute method: ShowChannelStatusForMultiple<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Screenshots/ScreenshotsFailure/ShowChannelStatusForMultiple.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="MultipleProperties(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:25, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:27:52 IST" name="MultipleProperties" finished-at="2023-05-25T19:30:22 IST" duration-ms="150162" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Channel Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Multiple channel Description]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Multiple channel connection]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[org.testng.TestRunner@131ff6fa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MultipleProperties.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MultipleProperties -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:30:23 IST" name="tearDown" finished-at="2023-05-25T19:30:25 IST" duration-ms="1221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MultipleProperties status=SUCCESS method=ChannelViewlet.MultipleProperties(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:25, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="AddToFavoriteForMultipleChannels(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:26, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:30:25 IST" name="AddToFavoriteForMultipleChannels" finished-at="2023-05-25T19:30:25 IST" depends-on-methods="ApodGUI.ChannelViewlet.AddToFavorites" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ChannelViewlet.AddToFavoriteForMultipleChannels(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:26, instance:ApodGUI.ChannelViewlet@4efac082] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ChannelViewlet.AddToFavoriteForMultipleChannels(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:26, instance:ApodGUI.ChannelViewlet@4efac082] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToFavoriteForMultipleChannels -->
+        <test-method signature="ShowObjectAttributes(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:28, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:30:25 IST" name="ShowObjectAttributes" finished-at="2023-05-25T19:33:20 IST" duration-ms="175776" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Channel Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ChannelSchema]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Channel Name,Channel Description,Channel Type,Transport Type,Connection Name,Local Address,Bytes Sent,Bytes Received,Messages,Maximum Message Length (bytes),Sequence Number Wrap,Disconnect Interval (sec.),Heartbeat Interval (sec.),Batch Heartbeat Interval (msec.),Batch Size,Batch Interval (msec.),Batch Data Limit,Keep Alive Interval (sec.),Data Conversion,Property Control Attribute,Use Dead Letter Queue,MCA Name,MCA Type,Send Exit,Send Exit Data,Receive Exit,Receive Exit Data,Security Exit,Security Exit Data,Message Exit,Message Exit Data,Mode Name,Transaction Program Name,User ID,Password,Short Retry Count,Short Retry Timer (sec.),Long Retry Count,Long Retry Timer (sec.),SSL Cipher Specification,SSL Peer Name,SSL Client Authentication,Header Compression,Message Compression,Channel Monitoring,Channel Statistics,Alteration Date,Last Updated,Last Event Time,Last Action,Status]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[org.testng.TestRunner@131ff6fa]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#Object\ attributes\ failed"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-K4AEKHO', ip: '172.16.31.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a59730080ad037305777077c8ba0b05, findElement {using=id, value=Object attributes failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64268}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64268/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a59730080ad037305777077c8ba0b05]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#Object\ attributes\ failed"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-K4AEKHO', ip: '172.16.31.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a59730080ad037305777077c8ba0b05, findElement {using=id, value=Object attributes failed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64268}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64268/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a59730080ad037305777077c8ba0b05
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at ApodGUI.ChannelViewlet.ShowObjectAttributes(ChannelViewlet.java:189)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>Failed to execute method: ShowObjectAttributes<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowObjectAttributes.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ShowObjectAttributes -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:33:21 IST" name="tearDown" finished-at="2023-05-25T19:33:22 IST" duration-ms="917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ShowObjectAttributes status=FAILURE method=ChannelViewlet.ShowObjectAttributes(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:28, instance:ApodGUI.ChannelViewlet@4efac082] output=<br/>Failed to execute method: ShowObjectAttributes<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Screenshots/ScreenshotsFailure/ShowObjectAttributes.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Logout(java.lang.String)[pri:30, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:33:22 IST" name="Logout" finished-at="2023-05-25T19:34:28 IST" duration-ms="66305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Channel Verification]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:NavigatorCore.ManageDashboardOptions@201a4587]" started-at="2023-03-21T11:37:59 IST" name="tearDown" finished-at="2023-03-21T11:37:59 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ApodGUI.ChannelViewlet@4efac082]" started-at="2023-05-25T19:34:28 IST" name="tearDown" finished-at="2023-05-25T19:34:28 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Logout status=SUCCESS method=ManageDashboardOptions.Logout(java.lang.String)[pri:20, instance:NavigatorCore.ManageDashboardOptions@201a4587] output={null}]]]>
+                <![CDATA[[TestResult name=Logout status=SUCCESS method=ChannelViewlet.Logout(java.lang.String)[pri:30, instance:ApodGUI.ChannelViewlet@4efac082] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- NavigatorCore.ManageDashboardOptions -->
-    </test> <!-- Manage Dashboard page options -->
+      </class> <!-- ApodGUI.ChannelViewlet -->
+    </test> <!-- Test Channel Viewlet -->
   </suite> <!-- Navigator -->
 </testng-results>

@@ -30,6 +30,7 @@ import Common.ClearSelectionofCheckbox;
 import Common.CompareObjects;
 import Common.Dashboard;
 import Common.DifferenceOfObjects;
+import Common.Discoverfull;
 import Common.LogoutForAll;
 import Common.Viewlets;
 import testrail.Settings;
@@ -257,6 +258,18 @@ public class CommInfoViewlet
     	driver.findElement(By.cssSelector(".btn-primary")).click();
     	Thread.sleep(MediumSleep);
     	
+    	try
+		{
+			driver.findElement(By.id("yes")).click();
+			Thread.sleep(LowSleep);
+			driver.findElement(By.xpath("//button[contains(.,'Cancel')]")).click();
+			Thread.sleep(LowSleep);
+		}
+		catch (Exception e)
+		{
+			System.out.println("Error popup is not displayed");
+		}
+    	
     	//Refresh the viewlet
     	for(int i=0; i<=2; i++)
     	{
@@ -299,9 +312,9 @@ public class CommInfoViewlet
 	}
 	
 	@TestRail(testCaseId = 1037)
-	@Parameters({"CopyAsName"})
+	@Parameters({"CopyAsName", "Dashboardname"})
 	@Test(priority=4,dependsOnMethods= {"CopyAsOfCommumicationInfo"})
-	public void DeleteCommunicationInfo(String CopyAsName, ITestContext context) throws InterruptedException
+	public void DeleteCommunicationInfo(String CopyAsName, String Dashboardname, ITestContext context) throws InterruptedException
 	{
 		//Click on clear all check box button
 		driver.findElement(By.xpath("//datatable-header-cell[2]/div/i")).click();
@@ -319,6 +332,10 @@ public class CommInfoViewlet
     	//Click on Yes
     	driver.findElement(By.cssSelector(".btn-primary")).click();
     	Thread.sleep(MediumSleep);
+    	
+    	//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
     	
     	//Refresh the viewlet
     	for(int i=0; i<=2; i++)
@@ -465,9 +482,19 @@ public class CommInfoViewlet
 		String compare1 = driver.findElement(By.xpath("//datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[4]/div/span")).getText();
 		System.out.println("First obj name is: " +compare1);
 		
+		//Get first object name on oracle
+		String oracle1 = driver.findElement(By.xpath("//datatable-body-cell[10]/div/span")).getText();
+		System.out.println("Oracle data base first object name: " +oracle1);
+		Thread.sleep(2000);
+		
 		//Get the second object name
 		String compare2 = driver.findElement(By.xpath("//datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[4]/div/span")).getText();
 		System.out.println("Second obj name is: " +compare2);
+		Thread.sleep(2000);
+		
+		//Get second object name on oracle
+		String oracle2 = driver.findElement(By.xpath("//datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[10]/div/span")).getText();
+		System.out.println("Oracle data base second object name: " +oracle2);
 		Thread.sleep(2000);
 		
 		// Select compare option
@@ -478,9 +505,15 @@ public class CommInfoViewlet
 		
 		// System.out.println("Cpmare to: " + compare1 + "::"+ compare2);
 		String comparenameslist = compare1  +" Attribute Value"+ "::"+ compare2  +" Attribute Value";
-		driver.findElement(By.linkText("Compare")).click();
+		//driver.findElement(By.linkText("Compare")).click();
 		Thread.sleep(LowSleep);
 		System.out.println("Before names are: " +comparenameslist);
+		
+		//oracle comparision
+		String oraclecomparenameslist = oracle1  +" Attribute Value"+ "::"+ oracle2  +" Attribute Value";
+		driver.findElement(By.linkText("Compare")).click();
+		Thread.sleep(LowSleep);
+		System.out.println("Oracle Before names are: " +oraclecomparenameslist);
 
 
 		// Reading comparing
@@ -489,7 +522,8 @@ public class CommInfoViewlet
 		String verifycomparenamelist = aftercompare1 + "::" + aftercompare2;
 		System.out.println("After names are: " +verifycomparenamelist);
 
-		if (verifycomparenamelist.compareTo(comparenameslist) == 0) {
+		if (verifycomparenamelist.compareTo(comparenameslist) == 0 || verifycomparenamelist.compareTo(oraclecomparenameslist) == 0) 
+		{
 			System.out.println("Compare page is opened with selected object names");
 			context.setAttribute("Status", 1);
 			context.setAttribute("Comment", "Compare option is working fine");

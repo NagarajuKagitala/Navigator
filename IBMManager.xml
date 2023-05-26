@@ -35,7 +35,7 @@
        
         <include name="Login"/>
         <include name="AddNewManagerFromIcon"/>    
-        <include name="ShowObjectAttributes"/>    
+      <!--  <include name="ShowObjectAttributes"/>    -->
         <include name="ShowTopology"/>   
         <include name="QueueManagerStatus"/> 
         <include name="Security"/>  

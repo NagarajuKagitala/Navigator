@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -356,7 +357,9 @@ public class AuthorizationInfoViewlet {
 		//select Add to favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Thread.sleep(LowSleep);
-		driver.findElement(By.linkText("Add to favorites...")).click();
+		WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+		JavascriptExecutor addfav = (JavascriptExecutor)driver;
+		addfav.executeScript("arguments[0].click();", fav);
 		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();
@@ -596,7 +599,9 @@ public class AuthorizationInfoViewlet {
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Thread.sleep(LowSleep);
-		driver.findElement(By.linkText("Add to favorites...")).click();
+		WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+		JavascriptExecutor addfav = (JavascriptExecutor)driver;
+		addfav.executeScript("arguments[0].click();", fav);
 		Thread.sleep(LowSleep);
 		
 		//Select fav viewlet name

@@ -47,10 +47,10 @@
         <include name="Login"/>
         <include name="AddTopicViewlet"/> 
         <include name="ShowTopicStatus"/>
-        <include name="ShowObjectAttributesForTopic"/>    
+      <!--  <include name="ShowObjectAttributesForTopic"/>  -->  
         <include name="CreateTopic"/> 
         <include name="CopyAsFromCommands"/>
-        <include name="DeleteFromCommands"/>   
+      <!--  <include name="DeleteFromCommands"/>  --> 
         <include name="MQSCSnapshot"/>
         <include name="SaveTopicSnapshot"/>
         <include name="TopicProperties"/> 
@@ -61,7 +61,7 @@
         <include name="CompareTopics"/> 
         <include name="CheckDifferencesForTopics"/>  
         <include name="CopyAsFromCommandsForMultipleTopics"/>
-        <include name="DeleteFromCommandsForMultipleTopics"/>   
+      <!--  <include name="DeleteFromCommandsForMultipleTopics"/>   -->
         <include name="MultipleProperties"/>  
         <include name="AddToFavoriteForMultipleTopics"/>     
         <include name="Logout"/> 

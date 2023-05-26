@@ -159,7 +159,7 @@ public class Viewlets
 		}
 		Thread.sleep(4000);
 		
-		//Select node value
+		//Select node value          
 		driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
 		Thread.sleep(4000);
 		 try 

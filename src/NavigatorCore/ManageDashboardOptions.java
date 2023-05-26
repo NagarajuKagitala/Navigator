@@ -255,7 +255,7 @@ public class ManageDashboardOptions
 	
 	@Parameters({"RenamedDashboardName"})
 	@TestRail(testCaseId = 1151)
-	@Test(priority=3)
+	@Test(priority=7)
 	public void DeleteDashboardUsingDeleteButton(String RenamedDashboardName, ITestContext context) throws InterruptedException
 	{
 		//Delete the existing dashboard
@@ -284,16 +284,23 @@ public class ManageDashboardOptions
 	
 	@Parameters({"TagName"})
 	@TestRail(testCaseId = 1152)
-	@Test(priority=4)
+	@Test(priority=3)
 	public void CreateTagUsingAddButton(String TagName, ITestContext context) throws InterruptedException 
 	{
-		//click on dashboard button
-		//driver.findElement(By.id("add-dashboard")).click();
-		//Thread.sleep(4000);
-				
-		//Select dashboard
-		driver.findElement(By.xpath("//td/input")).click();
-		Thread.sleep(LowSleep);
+		boolean tag=driver.findElement(By.xpath("//button[contains(.,' Tags')]")).isEnabled();
+		System.out.println("tag status: " +tag);
+		
+		if(tag)
+		{
+			System.out.println("Tag is already enabled");
+		}
+		else
+		{
+			//Select dashboard
+			driver.findElement(By.xpath("//td/input")).click();
+			Thread.sleep(LowSleep);
+		}
+		
 		
 		//Click on tag button
 		driver.findElement(By.xpath("//button[contains(.,' Tags')]")).click();
@@ -333,7 +340,7 @@ public class ManageDashboardOptions
 	
 	@Parameters({"TagName", "NameTagName"})
 	@TestRail(testCaseId = 1153)
-	@Test(priority=5)
+	@Test(priority=4)
 	public void UpdateTagNameUsingEditButton(String TagName, String NameTagName, ITestContext context) throws InterruptedException
 	{
 		WebElement ta=driver.findElement(By.className("parts-container")).findElement(By.className("left-part")).findElement(By.className("filter-table"));
@@ -386,7 +393,7 @@ public class ManageDashboardOptions
 	
 	@Parameters({"NameTagName"})
 	@TestRail(testCaseId = 1154)
-	@Test(priority=6)
+	@Test(priority=5)
 	public void DeleteTagUsingDeleteButton(String NameTagName, ITestContext context) throws InterruptedException
 	{
 		//Click on Delete button
@@ -425,7 +432,7 @@ public class ManageDashboardOptions
 	
 
 	//@Parameters({"ExportDashboardname"})
-	@Test(priority=7)
+	@Test(priority=6)
 	@TestRail(testCaseId = 1155)
 	public static void ExportDashboard(ITestContext context) throws InterruptedException
 	{

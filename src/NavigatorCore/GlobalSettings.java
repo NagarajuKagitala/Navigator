@@ -508,7 +508,7 @@ static WebDriver driver;
 		EditGlobalSettings();
 		
 		//Choose Dashboard ownership management tab
-		driver.findElement(By.xpath("//div[12]")).click();
+		driver.findElement(By.xpath("//div[13]")).click();
 		Thread.sleep(MediumSleep);
 		
 		//Search with dashboard name

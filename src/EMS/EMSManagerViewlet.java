@@ -1114,7 +1114,7 @@ public class EMSManagerViewlet
 		Thread.sleep(8000);
 		
 		//Store the Name field status into boolean
-		boolean NameField=driver.findElement(By.id("name")).isEnabled();
+		boolean NameField=driver.findElement(By.id("emsServerName")).isEnabled();
 		System.out.println(NameField);
 		
 		//Verification Condition

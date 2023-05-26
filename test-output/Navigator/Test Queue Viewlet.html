@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test Queue Viewlet</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>23/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>21/3/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jan 20 13:12:21 IST 2023</td>
+<td>Started on:</td><td>Tue May 16 13:57:29 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>1395 seconds (1395262 ms)</td>
+<tr><td>Total time:</td><td>1329 seconds (1329449 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,116 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ApodGUI.QueuesViewlet.Logout()'><b>Logout</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i _ngcontent-wgi-c4=&quot;&quot; class=&quot;fa fa-cog fa-lg&quot; title=&quot;User Settings&quot;&gt;&lt;/i&gt; is not clickable at point (1363, 21). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block w400 fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
-  (Session info: chrome=109.0.5414.75)
+<td title='ApodGUI.QueuesViewlet.AddToFavoriteViewlet()'><b>AddToFavoriteViewlet</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, Queues Add to favorite, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-1771326096" onClick='toggleBox("Output-1771326096", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1771326096" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1771326096">
+<br/>Failed to execute method: AddToFavoriteViewlet<br/><br/>
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/AddToFavoriteViewlet.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Add to favorites...&quot;}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
-System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.16.31.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.29.97.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fe22a8ac96ce9658fcc663fdc582b008, clickElement {id=0b160f05-efa6-43b6-97df-2402e2ca8347}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49906/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (fe22a8ac96ce9658fcc663fdc582b008)] -&gt; css selector: .fa-cog]
-Session ID: fe22a8ac96ce9658fcc663fdc582b008
+Command: [13b241134c43d5219542783a396389ff, findElement {using=link text, value=Add to favorites...}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60565/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b241134c43d5219542783a396389ff
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at ApodGUI.QueuesViewlet.AddToFavoriteViewlet(QueuesViewlet.java:1060)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1771326096", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1771326096'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Add to favorites...&quot;}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.29.97.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b241134c43d5219542783a396389ff, findElement {using=link text, value=Add to favorites...}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60565/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b241134c43d5219542783a396389ff
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at ApodGUI.QueuesViewlet.AddToFavoriteViewlet(QueuesViewlet.java:1060)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>48</td>
+<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
+<tr>
+<td title='ApodGUI.QueuesViewlet.CompareQueues()'><b>CompareQueues</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-1337741679" onClick='toggleBox("Output-1337741679", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1337741679" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1337741679">
+<br/>Failed to execute method: CompareQueues<br/><br/>
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/CompareQueues.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.29.97.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b241134c43d5219542783a396389ff, clickElement {id=638B5BE6AB513F69AB27AFC4FE7B6B74_element_643}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60565/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (13b241134c43d5219542783a396389ff)] -&gt; xpath: /html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input]
+Session ID: 13b241134c43d5219542783a396389ff
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -94,18 +194,20 @@ Session ID: fe22a8ac96ce9658fcc663fdc582b008
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at ApodGUI.QueuesViewlet.Logout(QueuesViewlet.java:1891)
+	at Common.CompareObjects.Compare(CompareObjects.java:28)
+	at ApodGUI.QueuesViewlet.CompareQueues(QueuesViewlet.java:1119)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1725548614", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1725548614'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i _ngcontent-wgi-c4=&quot;&quot; class=&quot;fa fa-cog fa-lg&quot; title=&quot;User Settings&quot;&gt;&lt;/i&gt; is not clickable at point (1363, 21). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; class=&quot;modal d-block w400 fade show&quot; aria-modal=&quot;true&quot;&gt;...&lt;/ngb-modal-window&gt;
-  (Session info: chrome=109.0.5414.75)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1337741679", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1337741679'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
-System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.16.31.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.29.97.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fe22a8ac96ce9658fcc663fdc582b008, clickElement {id=0b160f05-efa6-43b6-97df-2402e2ca8347}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49906/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (fe22a8ac96ce9658fcc663fdc582b008)] -&gt; css selector: .fa-cog]
-Session ID: fe22a8ac96ce9658fcc663fdc582b008
+Command: [13b241134c43d5219542783a396389ff, clickElement {id=638B5BE6AB513F69AB27AFC4FE7B6B74_element_643}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60565/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (13b241134c43d5219542783a396389ff)] -&gt; xpath: /html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input]
+Session ID: 13b241134c43d5219542783a396389ff
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -119,7 +221,8 @@ Session ID: fe22a8ac96ce9658fcc663fdc582b008
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at ApodGUI.QueuesViewlet.Logout(QueuesViewlet.java:1891)
+	at Common.CompareObjects.Compare(CompareObjects.java:28)
+	at ApodGUI.QueuesViewlet.CompareQueues(QueuesViewlet.java:1119)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -149,28 +252,29 @@ Session ID: fe22a8ac96ce9658fcc663fdc582b008
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
+<td>11</td>
 <td>ApodGUI.QueuesViewlet@428640fa</td></tr>
 <tr>
-<td title='ApodGUI.QueuesViewlet.ShowObjectAttributesForQueues()'><b>ShowObjectAttributesForQueues</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, QueueSchema, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-433079208" onClick='toggleBox("Output-433079208", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueuesViewlet.MultipleQueueProperties()'><b>MultipleQueueProperties</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, Multiple Description, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-2140284195" onClick='toggleBox("Output-2140284195", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-433079208" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-433079208">
-<br/>Failed to execute method: ShowObjectAttributesForQueues<br/><br/>
+<a href="#Output-2140284195" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2140284195">
+<br/>Failed to execute method: MultipleQueueProperties<br/><br/>
 <br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowObjectAttributesForQueues.png" alt="""/" /><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/MultipleQueueProperties.png" alt="""/" /><br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Objects\ verification\ failed&quot;}
-  (Session info: chrome=109.0.5414.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
-System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.16.31.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.29.97.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fe22a8ac96ce9658fcc663fdc582b008, findElement {using=id, value=Objects verification failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49906/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fe22a8ac96ce9658fcc663fdc582b008
+Command: [13b241134c43d5219542783a396389ff, clickElement {id=638B5BE6AB513F69AB27AFC4FE7B6B74_element_1039}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60565/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (13b241134c43d5219542783a396389ff)] -&gt; link text: Properties...]
+Session ID: 13b241134c43d5219542783a396389ff
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -178,22 +282,21 @@ Session ID: fe22a8ac96ce9658fcc663fdc582b008
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at ApodGUI.QueuesViewlet.ShowObjectAttributesForQueues(QueuesViewlet.java:278)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at ApodGUI.QueuesViewlet.MultipleQueueProperties(QueuesViewlet.java:1720)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace433079208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace433079208'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Objects\ verification\ failed&quot;}
-  (Session info: chrome=109.0.5414.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2140284195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2140284195'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
-System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.16.31.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.29.97.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fe22a8ac96ce9658fcc663fdc582b008, findElement {using=id, value=Objects verification failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49906/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fe22a8ac96ce9658fcc663fdc582b008
+Command: [13b241134c43d5219542783a396389ff, clickElement {id=638B5BE6AB513F69AB27AFC4FE7B6B74_element_1039}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60565/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (13b241134c43d5219542783a396389ff)] -&gt; link text: Properties...]
+Session ID: 13b241134c43d5219542783a396389ff
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -205,11 +308,9 @@ Session ID: fe22a8ac96ce9658fcc663fdc582b008
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at ApodGUI.QueuesViewlet.ShowObjectAttributesForQueues(QueuesViewlet.java:278)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at ApodGUI.QueuesViewlet.MultipleQueueProperties(QueuesViewlet.java:1720)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -239,97 +340,7 @@ Session ID: fe22a8ac96ce9658fcc663fdc582b008
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>32</td>
-<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
-<tr>
-<td title='ApodGUI.QueuesViewlet.ShowQueueStatus()'><b>ShowQueueStatus</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-1174694918" onClick='toggleBox("Output-1174694918", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1174694918" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1174694918">
-<br/>Failed to execute method: ShowQueueStatus<br/><br/>
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowQueueStatus.png" alt="""/" /><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tr[3]/td[3]&quot;}
-  (Session info: chrome=109.0.5414.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
-System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.16.31.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fe22a8ac96ce9658fcc663fdc582b008, findElement {using=xpath, value=//tr[3]/td[3]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49906/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fe22a8ac96ce9658fcc663fdc582b008
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at ApodGUI.QueuesViewlet.ShowQueueStatus(QueuesViewlet.java:303)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1174694918", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1174694918'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tr[3]/td[3]&quot;}
-  (Session info: chrome=109.0.5414.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
-System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.16.31.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fe22a8ac96ce9658fcc663fdc582b008, findElement {using=xpath, value=//tr[3]/td[3]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49906/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fe22a8ac96ce9658fcc663fdc582b008
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at ApodGUI.QueuesViewlet.ShowQueueStatus(QueuesViewlet.java:303)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>27</td>
+<td>14</td>
 <td>ApodGUI.QueuesViewlet@428640fa</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -340,219 +351,172 @@ Session ID: fe22a8ac96ce9658fcc663fdc582b008
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ApodGUI.QueuesViewlet.AddQueueFromPlusIcon()'><b>AddQueueFromPlusIcon</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: Test the Queue, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-250488509" onClick='toggleBox("Output-250488509", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueuesViewlet.AddQueueFromPlusIcon()'><b>AddQueueFromPlusIcon</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: Test the Queue, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-1312634562" onClick='toggleBox("Output-1312634562", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-250488509" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-250488509">
+<a href="#Output-1312634562" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1312634562">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddQueueFromPlusIcon.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>57</td>
+<td>60</td>
 <td>ApodGUI.QueuesViewlet@428640fa</td></tr>
 <tr>
-<td title='ApodGUI.QueuesViewlet.AddToFavoriteForMultipleQueues()'><b>AddToFavoriteForMultipleQueues</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, Queues Add to favorite, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-603023442" onClick='toggleBox("Output-603023442", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueuesViewlet.BrowseMessages()'><b>BrowseMessages</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-912054991" onClick='toggleBox("Output-912054991", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-603023442" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-603023442">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleQueues.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>35</td>
-<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
-<tr>
-<td title='ApodGUI.QueuesViewlet.AddToFavoriteViewlet()'><b>AddToFavoriteViewlet</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, Queues Add to favorite, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-1210663640" onClick='toggleBox("Output-1210663640", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1210663640" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1210663640">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>56</td>
-<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
-<tr>
-<td title='ApodGUI.QueuesViewlet.BrowseMessages()'><b>BrowseMessages</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-1567857145" onClick='toggleBox("Output-1567857145", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1567857145" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1567857145">
+<a href="#Output-912054991" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-912054991">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/BrowseMessages.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>18</td>
-<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
-<tr>
-<td title='ApodGUI.QueuesViewlet.CheckDifferencesForQueues()'><b>CheckDifferencesForQueues</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: org.testng.TestRunner@45cec376<br/>
-<a href="#Output-1753609207" onClick='toggleBox("Output-1753609207", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1753609207" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1753609207">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForQueues.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>22</td>
-<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
-<tr>
-<td title='ApodGUI.QueuesViewlet.CompareQueues()'><b>CompareQueues</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: org.testng.TestRunner@45cec376<br/>
-<a href="#Output-820849190" onClick='toggleBox("Output-820849190", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-820849190" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-820849190">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareQueues.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>25</td>
-<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
-<tr>
-<td title='ApodGUI.QueuesViewlet.CopyAsForMultipleQueues()'><b>CopyAsForMultipleQueues</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, MultipleQueues.Copy, Multiple queues copy as, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-1827192676" onClick='toggleBox("Output-1827192676", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1827192676" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1827192676">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsForMultipleQueues.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>75</td>
-<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
-<tr>
-<td title='ApodGUI.QueuesViewlet.CopyAsQueueCommands()'><b>CopyAsQueueCommands</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, Copy, TesttheobjectDescription, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-1987428721" onClick='toggleBox("Output-1987428721", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1987428721" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1987428721">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsQueueCommands.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>63</td>
-<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
-<tr>
-<td title='ApodGUI.QueuesViewlet.CreateQueueFromOptions()'><b>CreateQueueFromOptions</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, ABCTest, Description of Queue from options, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-2145001473" onClick='toggleBox("Output-2145001473", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2145001473" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2145001473">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateQueueFromOptions.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>58</td>
-<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
-<tr>
-<td title='ApodGUI.QueuesViewlet.DeleteMultipleQueues()'><b>DeleteMultipleQueues</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, RENAMEMULTIQUEUES, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-663613990" onClick='toggleBox("Output-663613990", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-663613990" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-663613990">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteMultipleQueues.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>54</td>
-<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
-<tr>
-<td title='ApodGUI.QueuesViewlet.DeleteQueueFromCommandsOption()'><b>DeleteQueueFromCommandsOption</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, RENAMEQUEUE, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-1703837357" onClick='toggleBox("Output-1703837357", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1703837357" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1703837357">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteQueueFromCommandsOption.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>49</td>
-<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
-<tr>
-<td title='ApodGUI.QueuesViewlet.InhibitGetFromCommands()'><b>InhibitGetFromCommands</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-1396827930" onClick='toggleBox("Output-1396827930", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1396827930" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1396827930">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/InhibitGetFromCommands.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>81</td>
-<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
-<tr>
-<td title='ApodGUI.QueuesViewlet.InhibitPutFromCommands()'><b>InhibitPutFromCommands</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-1777766520" onClick='toggleBox("Output-1777766520", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1777766520" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1777766520">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/InhibitPutFromCommands.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>90</td>
-<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
-<tr>
-<td title='ApodGUI.QueuesViewlet.Login()'><b>Login</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, QueuesViewlet Verification, 3, Local Queue<br/>
-<a href="#Output-1361931872" onClick='toggleBox("Output-1361931872", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1361931872" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1361931872">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>198</td>
-<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
-<tr>
-<td title='ApodGUI.QueuesViewlet.MQSCSnapshot()'><b>MQSCSnapshot</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-1757718624" onClick='toggleBox("Output-1757718624", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1757718624" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1757718624">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MQSCSnapshot.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
 <td>19</td>
 <td>ApodGUI.QueuesViewlet@428640fa</td></tr>
 <tr>
-<td title='ApodGUI.QueuesViewlet.MultipleQueueProperties()'><b>MultipleQueueProperties</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, Multiple Description, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-1378863496" onClick='toggleBox("Output-1378863496", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueuesViewlet.CheckDifferencesForQueues()'><b>CheckDifferencesForQueues</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-1040394205" onClick='toggleBox("Output-1040394205", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1378863496" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1378863496">
+<a href="#Output-1040394205" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1040394205">
 <br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MultipleQueueProperties.png" alt="""/" /><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForQueues.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>76</td>
+<td>28</td>
 <td>ApodGUI.QueuesViewlet@428640fa</td></tr>
 <tr>
-<td title='ApodGUI.QueuesViewlet.QueueEvents()'><b>QueueEvents</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-698477669" onClick='toggleBox("Output-698477669", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueuesViewlet.CopyAsForMultipleQueues()'><b>CopyAsForMultipleQueues</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, MultipleQueues.Copy, Multiple queues copy as, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-873546358" onClick='toggleBox("Output-873546358", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-698477669" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-698477669">
+<a href="#Output-873546358" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-873546358">
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsForMultipleQueues.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>79</td>
+<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
+<tr>
+<td title='ApodGUI.QueuesViewlet.CopyAsQueueCommands()'><b>CopyAsQueueCommands</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, Copy, TesttheobjectDescription, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-90050962" onClick='toggleBox("Output-90050962", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-90050962" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-90050962">
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsQueueCommands.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>64</td>
+<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
+<tr>
+<td title='ApodGUI.QueuesViewlet.CreateQueueFromOptions()'><b>CreateQueueFromOptions</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, ABCTest, Description of Queue from options, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-1699826397" onClick='toggleBox("Output-1699826397", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1699826397" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1699826397">
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateQueueFromOptions.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
+<tr>
+<td title='ApodGUI.QueuesViewlet.DeleteMultipleQueues()'><b>DeleteMultipleQueues</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, RENAMEMULTIQUEUES, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-2075455645" onClick='toggleBox("Output-2075455645", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2075455645" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2075455645">
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteMultipleQueues.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
+<tr>
+<td title='ApodGUI.QueuesViewlet.DeleteQueueFromCommandsOption()'><b>DeleteQueueFromCommandsOption</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, RENAMEQUEUE, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-1559258941" onClick='toggleBox("Output-1559258941", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1559258941" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1559258941">
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteQueueFromCommandsOption.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>50</td>
+<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
+<tr>
+<td title='ApodGUI.QueuesViewlet.InhibitGetFromCommands()'><b>InhibitGetFromCommands</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-1823100357" onClick='toggleBox("Output-1823100357", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1823100357" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1823100357">
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/InhibitGetFromCommands.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>85</td>
+<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
+<tr>
+<td title='ApodGUI.QueuesViewlet.InhibitPutFromCommands()'><b>InhibitPutFromCommands</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-772166315" onClick='toggleBox("Output-772166315", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-772166315" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-772166315">
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/InhibitPutFromCommands.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>92</td>
+<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
+<tr>
+<td title='ApodGUI.QueuesViewlet.Login()'><b>Login</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, QueuesViewlet Verification, 3, Local Queue<br/>
+<a href="#Output-1786872722" onClick='toggleBox("Output-1786872722", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1786872722" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1786872722">
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>201</td>
+<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
+<tr>
+<td title='ApodGUI.QueuesViewlet.Logout()'><b>Logout</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification</td>
+<td></td>
+<td>46</td>
+<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
+<tr>
+<td title='ApodGUI.QueuesViewlet.MQSCSnapshot()'><b>MQSCSnapshot</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-900682460" onClick='toggleBox("Output-900682460", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-900682460" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-900682460">
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MQSCSnapshot.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
+<tr>
+<td title='ApodGUI.QueuesViewlet.QueueEvents()'><b>QueueEvents</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-203361403" onClick='toggleBox("Output-203361403", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-203361403" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-203361403">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/QueueEvents.png" alt="""/" /><br/>
 </div>
@@ -561,11 +525,11 @@ Session ID: fe22a8ac96ce9658fcc663fdc582b008
 <td>64</td>
 <td>ApodGUI.QueuesViewlet@428640fa</td></tr>
 <tr>
-<td title='ApodGUI.QueuesViewlet.QueueProperties()'><b>QueueProperties</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-1353454153" onClick='toggleBox("Output-1353454153", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueuesViewlet.QueueProperties()'><b>QueueProperties</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-1896461827" onClick='toggleBox("Output-1896461827", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1353454153" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1353454153">
+<a href="#Output-1896461827" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1896461827">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/QueueProperties.png" alt="""/" /><br/>
 </div>
@@ -574,69 +538,118 @@ Session ID: fe22a8ac96ce9658fcc663fdc582b008
 <td>25</td>
 <td>ApodGUI.QueuesViewlet@428640fa</td></tr>
 <tr>
-<td title='ApodGUI.QueuesViewlet.RenameForMultipleQueues()'><b>RenameForMultipleQueues</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, MultipleQueues.Copy, RENAMEMULTIQUEUES, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-1337906940" onClick='toggleBox("Output-1337906940", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueuesViewlet.RenameForMultipleQueues()'><b>RenameForMultipleQueues</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, MultipleQueues.Copy, RENAMEMULTIQUEUES, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-328246330" onClick='toggleBox("Output-328246330", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1337906940" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1337906940">
+<a href="#Output-328246330" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-328246330">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameForMultipleQueues.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>84</td>
+<td>88</td>
 <td>ApodGUI.QueuesViewlet@428640fa</td></tr>
 <tr>
-<td title='ApodGUI.QueuesViewlet.RenameQueueFromCommandsOption()'><b>RenameQueueFromCommandsOption</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, RENAMEQUEUE, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-2096690266" onClick='toggleBox("Output-2096690266", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueuesViewlet.RenameQueueFromCommandsOption()'><b>RenameQueueFromCommandsOption</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, RENAMEQUEUE, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-716985796" onClick='toggleBox("Output-716985796", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2096690266" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2096690266">
+<a href="#Output-716985796" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-716985796">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameQueueFromCommandsOption.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>70</td>
+<td>71</td>
 <td>ApodGUI.QueuesViewlet@428640fa</td></tr>
 <tr>
-<td title='ApodGUI.QueuesViewlet.SaveMQSCSnapshot()'><b>SaveMQSCSnapshot</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-603456365" onClick='toggleBox("Output-603456365", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueuesViewlet.SaveMQSCSnapshot()'><b>SaveMQSCSnapshot</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-56859396" onClick='toggleBox("Output-56859396", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-603456365" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-603456365">
+<a href="#Output-56859396" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-56859396">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveMQSCSnapshot.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>25</td>
+<td>26</td>
 <td>ApodGUI.QueuesViewlet@428640fa</td></tr>
 <tr>
-<td title='ApodGUI.QueuesViewlet.SearchFilter()'><b>SearchFilter</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: org.testng.TestRunner@45cec376<br/>
-<a href="#Output-861720625" onClick='toggleBox("Output-861720625", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueuesViewlet.SearchFilter()'><b>SearchFilter</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-357350214" onClick='toggleBox("Output-357350214", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-861720625" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-861720625">
+<a href="#Output-357350214" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-357350214">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SearchFilter.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>5</td>
+<td>12</td>
 <td>ApodGUI.QueuesViewlet@428640fa</td></tr>
 <tr>
-<td title='ApodGUI.QueuesViewlet.ShowQueueStatusForMultipleQueues()'><b>ShowQueueStatusForMultipleQueues</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@45cec376<br/>
-<a href="#Output-450728160" onClick='toggleBox("Output-450728160", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.QueuesViewlet.ShowQueueStatus()'><b>ShowQueueStatus</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-409007038" onClick='toggleBox("Output-409007038", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-450728160" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-450728160">
+<a href="#Output-409007038" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-409007038">
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowQueueStatus.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
+<tr>
+<td title='ApodGUI.QueuesViewlet.ShowQueueStatusForMultipleQueues()'><b>ShowQueueStatusForMultipleQueues</b><br>Test class: ApodGUI.QueuesViewlet<br>Parameters: QueuesViewlet Verification, org.testng.TestRunner@6e7c351d<br/>
+<a href="#Output-1489660835" onClick='toggleBox("Output-1489660835", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1489660835" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1489660835">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/ShowQueueStatusForMultipleQueues.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>25</td>
+<td>28</td>
+<td>ApodGUI.QueuesViewlet@428640fa</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ApodGUI.QueuesViewlet.AddToFavoriteForMultipleQueues()'><b>AddToFavoriteForMultipleQueues</b><br>Test class: ApodGUI.QueuesViewlet</td>
+<td><div><pre>java.lang.Throwable: Method QueuesViewlet.AddToFavoriteForMultipleQueues(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:22, instance:ApodGUI.QueuesViewlet@428640fa] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace683572661", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace683572661'><pre>java.lang.Throwable: Method QueuesViewlet.AddToFavoriteForMultipleQueues(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:22, instance:ApodGUI.QueuesViewlet@428640fa] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
 <td>ApodGUI.QueuesViewlet@428640fa</td></tr>
 </table><p>
 </body>

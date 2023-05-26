@@ -36,6 +36,7 @@ import Common.ClearSelectionofCheckbox;
 import Common.CompareObjects;
 import Common.Dashboard;
 import Common.DifferenceOfObjects;
+import Common.Discoverfull;
 import Common.LogoutForAll;
 import Common.Viewlets;
 import testrail.Settings;
@@ -222,6 +223,10 @@ public class QueuesViewlet
 			{
 				System.out.println("No Exception");
 			}
+			
+			//clear selection
+			driver.findElement(By.xpath("//datatable-header-cell[2]/div/i")).click();
+			Thread.sleep(LowSleep);
 		}
 		
 	}
@@ -474,7 +479,11 @@ public class QueuesViewlet
 		{
 			System.out.println("No Exception occured");
 		}
-		Thread.sleep(2000);
+		Thread.sleep(2000); 
+		
+		//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
 		
 		//Refresh viewlet
 		for(int i=0; i<=2; i++)
@@ -562,7 +571,11 @@ public class QueuesViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(4000);	
+    	Thread.sleep(4000);	 
+    	
+    	//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
     	
     	//Refresh the viewlet
     	for(int i=0; i<=2; i++)
@@ -1057,8 +1070,10 @@ public class QueuesViewlet
 		//Select Add to favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Thread.sleep(LowSleep);
-		driver.findElement(By.linkText("Add to favorites...")).click();
-		Thread.sleep(MediumSleep);
+		WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+		JavascriptExecutor addfav = (JavascriptExecutor)driver;
+		addfav.executeScript("arguments[0].click();", fav);
+		Thread.sleep(LowSleep);
 		
 		//Select the favorite viewlet name
 		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();
@@ -1421,6 +1436,10 @@ public class QueuesViewlet
 					}
 					Thread.sleep(2000);
 					
+					 //discover full
+			    	Discoverfull dis=new Discoverfull();
+			    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+			    	
 					//Refresh viewlet
 					for(int z=0; z<=2; z++)
 					{
@@ -1546,6 +1565,10 @@ public class QueuesViewlet
 					}
 					Thread.sleep(2000);
 					
+					 //discover full
+			    	Discoverfull dis=new Discoverfull();
+			    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+			    	
 					//Refresh viewlet
 					for(int z=0; z<=2; z++)
 					{
@@ -1799,7 +1822,9 @@ public class QueuesViewlet
 		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Thread.sleep(LowSleep);
-		driver.findElement(By.linkText("Add to favorites...")).click();
+		WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+		JavascriptExecutor addfav = (JavascriptExecutor)driver;
+		addfav.executeScript("arguments[0].click();", fav);
 		Thread.sleep(LowSleep);
 		
 		//Select the favorite viewlet name

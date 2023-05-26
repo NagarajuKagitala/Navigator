@@ -131,47 +131,31 @@ public class QueueProperties
 		Viewlets obj=new Viewlets();
 		obj.IBMMQViewlet(driver, ViewletValue, ViewletName, WGSName, Node_Hostname);
 		
+		
+		//Go to edit viewlet
+		driver.findElement(By.id("dropdownMenuButton")).click();
+		Thread.sleep(LowSleep);
+		driver.findElement(By.linkText("Edit viewlet")).click();
+		Thread.sleep(LowSleep);
+		
+		//Update result limit
+		driver.findElement(By.xpath("//input[@type='number']")).clear();
+		driver.findElement(By.xpath("//input[@type='number']")).sendKeys("1000");
+		Thread.sleep(LowSleep);
+		
+		//Click on Apply changes
+		driver.findElement(By.xpath("//button[contains(.,'Apply changes')]")).click(); 
+		Thread.sleep(MediumSleep);
+		
+		
+		
 		/*//Restore Default settings 
 		driver.findElement(By.cssSelector(".fa-cog")).click();
 		driver.findElement(By.xpath("//div[2]/div/div/div[2]/button")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//div[3]/button")).click();
-		Thread.sleep(1000);
-		
-		// ---- Creating Manager Viewlet ----
-		//Click on Viewlet button
-		driver.findElement(By.xpath("//button[2]")).click();
-		driver.findElement(By.xpath("//app-mod-select-viewlet-type/div/div[2]/button[2]")).click(); 
+		Thread.sleep(1000); */
 			
-		//Create Manager
-		driver.findElement(By.cssSelector(".object-type:nth-child(2)")).click();
-		driver.findElement(By.name("viewletName")).clear();
-		driver.findElement(By.name("viewletName")).sendKeys(Managername);
-		
-		//Select WGS type
-		Select WGSSelection=new Select(driver.findElement(By.name("wgsKey")));
-		WGSSelection.selectByVisibleText(WGSName);
-		
-		driver.findElement(By.cssSelector(".btn-primary")).click();
-		Thread.sleep(1000);
-		
-		// ---- Creating Channel Viewlet ----
-		//Click on Viewlet button
-		driver.findElement(By.xpath("//button[2]")).click();
-		driver.findElement(By.xpath("//app-mod-select-viewlet-type/div/div[2]/button[2]")).click(); 
-			
-		//Create Manager
-		driver.findElement(By.cssSelector(".object-type:nth-child(4)")).click();
-		driver.findElement(By.name("viewletName")).clear();
-		driver.findElement(By.name("viewletName")).sendKeys(Channelname);
-		
-		//Select WGS type
-		Select WGSSelection1=new Select(driver.findElement(By.name("wgsKey")));
-		WGSSelection1.selectByVisibleText(WGSName);
-		
-		driver.findElement(By.cssSelector(".btn-primary")).click();
-		Thread.sleep(1000);*/
-		
 	}
 	
 	@TestRail(testCaseId = 830)
@@ -340,7 +324,7 @@ public class QueueProperties
 	
 	@TestRail(testCaseId = 832)
 	@Parameters({"Dashboardname", "MessageData", "messagesize"})
-	@Test(priority=3)
+	@Test(priority=4)
 	public void MaximumQueueDepth(String Dashboardname, String MessageData, int messagesize, ITestContext context) throws InterruptedException
 	{	
 		//Clearing selection of object
@@ -386,7 +370,7 @@ public class QueueProperties
 		for(int i=0; i<=3; i++)
 		{
 			driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			Thread.sleep(LowSleep);
+			Thread.sleep(MediumSleep);
 		}
 		
 		MaximumDepth(Dashboardname);
@@ -428,7 +412,7 @@ public class QueueProperties
 	
 	@TestRail(testCaseId = 833)
 	@Parameters({"Dashboardname", "MessageLength", "length"})
-	@Test(priority=4)
+	@Test(priority=3)
 	public void MessageLength(String Dashboardname, String MessageLength, int length, ITestContext context) throws InterruptedException
 	{
 		//Clearing selection of object

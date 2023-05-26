@@ -206,7 +206,7 @@ public class ManagerViewlet
 		Thread.sleep(2000);
 		
 		//Select Node 
-		driver.findElement(By.xpath("//app-mod-select-object-path-for-create/div/div/ng-select/div/span")).click();
+		driver.findElement(By.xpath("//ng-select[2]/div/span")).click();
 		Thread.sleep(LowSleep);
 		try 
 		{
@@ -857,12 +857,51 @@ public class ManagerViewlet
 		
 	}
 	
+	@Parameters({"Dashboardname"})
 	@Test(priority=12, dependsOnMethods = {"ConnectionsConsole"})
-	public static void ConnectionConsoleProperties(ITestContext context) throws InterruptedException
-	{
+	public static void ConnectionConsoleProperties(String Dashboardname, ITestContext context) throws InterruptedException
+	{  
+		//Clearing selection of object
+		ClearSelectionofCheckbox che=new ClearSelectionofCheckbox();
+		che.Deselectcheckbox(Dashboardname, driver);
+		
+		//Select the Connections from Commands
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Actions MousehoverIncremental=new Actions(driver);
+		MousehoverIncremental.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
+		driver.findElement(By.linkText("Connections(console)...")).click();
+		Thread.sleep(MediumSleep);
+		
 		//Click on connection
 		driver.findElement(By.name("name")).click();
 		driver.findElement(By.xpath("//app-console-qmgr-conn-dropdown/div/div/div[2]")).click();
+		Thread.sleep(LowSleep);
+		
+		String Connectionproperties=driver.findElement(By.xpath("//app-modal-title/div/div/span")).getText();
+		System.out.println("Connection window name: " +Connectionproperties);
+		
+		
+		//verification
+		if(Connectionproperties.contains("Properties"))
+		{
+			System.out.println("Connection console properties page is opened");
+			context.setAttribute("Status", 1);
+			context.setAttribute("Comment", "Connection console properties is opened");
+		}
+		else
+		{
+			System.out.println("Connection console properties is not opened");
+			context.setAttribute("Status", 5);
+			context.setAttribute("Comment", "Connection console properties is not opened");
+			driver.findElement(By.id("failed connection console")).click();
+		}
+		
+		//Click on properties close button
+		driver.findElement(By.xpath("//button[contains(.,'Close')]")).click();
+		Thread.sleep(LowSleep);
+			
+		//Close the popup page
+		driver.findElement(By.cssSelector(".close-button")).click();
 		Thread.sleep(LowSleep);
 	}
 	
@@ -1357,7 +1396,11 @@ public class ManagerViewlet
 		//Submit
 		driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div[2]/button[2]")).click();
 		Thread.sleep(LowSleep);           
-				
+			
+		//Refresh the viewlet
+		driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
+		Thread.sleep(LowSleep);
+		
 		//Manager names data storage
 		String Manager1=driver.findElement(By.xpath("//datatable-body-cell[4]/div/span")).getText();
 		System.out.println(Manager1);
@@ -1365,8 +1408,10 @@ public class ManagerViewlet
 		//----------- Add Manager to favorite viewlet -----------------
 		//Select Add tofavorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		Thread.sleep(LowSleep);
-		driver.findElement(By.linkText("Add to favorites...")).click();
+		Thread.sleep(MediumSleep);
+		WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+		JavascriptExecutor addfav = (JavascriptExecutor)driver;
+		addfav.executeScript("arguments[0].click();", fav);
 		Thread.sleep(LowSleep);
 		
 		//Select favorite viewlet  
@@ -1730,10 +1775,13 @@ public class ManagerViewlet
 		
 		//Select Add to favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Thread.sleep(LowSleep);
-		driver.findElement(By.linkText("Add to favorites...")).click();
-		Thread.sleep(MediumSleep);
+		WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+		JavascriptExecutor addfav = (JavascriptExecutor)driver;
+		addfav.executeScript("arguments[0].click();", fav);
+		Thread.sleep(LowSleep);
 		
 		//Select favorite viewlet
 		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();

@@ -36,6 +36,7 @@ import Common.ClearSelectionofCheckbox;
 import Common.CompareObjects;
 import Common.Dashboard;
 import Common.DifferenceOfObjects;
+import Common.Discoverfull;
 import Common.LogoutForAll;
 import Common.Viewlets;
 import testrail.Settings;
@@ -308,7 +309,7 @@ public class ChannelViewlet
 		
 		//Select Manager 
 		driver.findElement(By.xpath("//app-mod-select-object-path-for-create/div/div[2]/ng-select/div/span")).click();
-		Thread.sleep(LowSleep);
+		Thread.sleep(LowSleep); 
         try 
 		{
         	WebElement ChannelAuthManager=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -411,6 +412,10 @@ public class ChannelViewlet
 			System.out.println("No error messages");
 		}
 		
+		//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
 		//Select the inactive checkbox
 		driver.findElement(By.cssSelector(".fa-cog")).click();
 		Thread.sleep(LowSleep);
@@ -657,7 +662,11 @@ public class ChannelViewlet
 		{
 			System.out.println("No error messages");
 		}
-    	    	
+    	
+    	//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
     	//Refresh the viewlet
     	for(int i=0; i<=2; i++)
     	{
@@ -747,6 +756,10 @@ public class ChannelViewlet
     	}
     	Thread.sleep(LowSleep);	
     	
+    	//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
     	//Refresh the viewlet
     	for(int i=0; i<=2; i++)
     	{
@@ -811,6 +824,10 @@ public class ChannelViewlet
 		//Click on Confirmation ok button
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
+		
+		//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
 		
 		for(int i=0; i<=2; i++)
 		{
@@ -1023,7 +1040,9 @@ public class ChannelViewlet
 		//Select Add to Favorites option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Thread.sleep(MediumSleep);
-		driver.findElement(By.linkText("Add to favorites...")).click();
+		WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+		JavascriptExecutor addfav = (JavascriptExecutor)driver;
+		addfav.executeScript("arguments[0].click();", fav);
 		Thread.sleep(LowSleep);
 		
 		//Select favorite viewlet
@@ -1654,7 +1673,9 @@ public class ChannelViewlet
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Thread.sleep(LowSleep);
-		driver.findElement(By.linkText("Add to favorites...")).click();
+		WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+		JavascriptExecutor addfav = (JavascriptExecutor)driver;
+		addfav.executeScript("arguments[0].click();", fav);
 		Thread.sleep(LowSleep);
 		
 		//Select favorite viewlet

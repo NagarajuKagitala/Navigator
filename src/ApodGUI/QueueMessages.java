@@ -37,6 +37,7 @@ import org.testng.annotations.Test;
 
 import Common.ClearSelectionofCheckbox;
 import Common.Dashboard;
+import Common.Discoverfull;
 import Common.LogoutForAll;
 import Common.Viewlets;
 import testrail.Settings;
@@ -196,13 +197,6 @@ public class QueueMessages
 		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
 		Thread.sleep(HighSleep);
 		
-		//Check Show Empty Queues check box
-		driver.findElement(By.cssSelector(".fa-cog")).click();
-		Thread.sleep(LowSleep);
-		driver.findElement(By.id("empty-queues")).click();
-		Thread.sleep(LowSleep);
-		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-		Thread.sleep(MediumSleep);
 		
 		//put the messages into empty queues for testing
 		  for(int m=1; m<=5; m++) 
@@ -224,10 +218,21 @@ public class QueueMessages
 		  driver.findElement(By.cssSelector("button.btn.btn-primary")).click();
 		  Thread.sleep(2000);
 		  
-		  try { driver.findElement(By.id("yes")).click();
-		  driver.findElement(By.cssSelector(".btn-danger")).click();
-		  Thread.sleep(2000); } catch (Exception e) {
-		  System.out.println("No Exception"); } }
+		  try 
+		  { 
+			  driver.findElement(By.id("yes")).click();
+			  driver.findElement(By.cssSelector(".btn-danger")).click();
+			  Thread.sleep(2000);
+		  } 
+		  catch (Exception e) 
+		  {
+		  System.out.println("No Exception"); 
+		  } 
+		  
+		  //clear selection
+			driver.findElement(By.xpath("//datatable-header-cell[2]/div/i")).click();
+			Thread.sleep(LowSleep);
+		  }
 		 
 		
 		//Restoring the Default Settings
@@ -336,10 +341,14 @@ public class QueueMessages
 	    robot.keyRelease(KeyEvent.VK_ENTER);
 	    Thread.sleep(HighSleep);
 	    
-	    for(int i=0; i<=2; i++)
+	    //discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+	    
+	    for(int i=0; i<=4; i++)
 		 {
 			 driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			 Thread.sleep(LowSleep);
+			 Thread.sleep(MediumSleep);
 		 }
 	    	    
 	    //store the queue depth after loading file
@@ -414,10 +423,14 @@ public class QueueMessages
 	    robot.keyRelease(KeyEvent.VK_ENTER);
 	    Thread.sleep(HighSleep);
 	    
-	    for(int i=0; i<=2; i++)
+	    //discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+	    
+	    for(int i=0; i<=3; i++)
 		 {
 			 driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			 Thread.sleep(LowSleep);
+			 Thread.sleep(MediumSleep);
 		 }
 	    	    
 	    //store the queue depth after loading file
@@ -507,11 +520,15 @@ public class QueueMessages
 	    }
 	    Thread.sleep(6000);
 	    
+	    //discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+	    
 	    //Click on Refresh button
 	    for(int i=0; i<=3; i++)
 	    {
 	    	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-	    	Thread.sleep(LowSleep);
+	    	Thread.sleep(MediumSleep);
 	    }
 	    
 	    //store the queue depth after loading file
@@ -630,6 +647,10 @@ public class QueueMessages
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
 		
+		//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+		
 		 for(int i=0; i<=2; i++)
 		 {
 			 driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
@@ -720,6 +741,10 @@ public class QueueMessages
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
 		
+		//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+		
 		//Refresh the viewlet
 		for(int i=0; i<=5; i++)
 		{
@@ -793,6 +818,10 @@ public class QueueMessages
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
 		
+		//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
 		 for(int i=0; i<=2; i++)
 		 {
 			 driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
@@ -871,6 +900,10 @@ public class QueueMessages
 		//Click on Yes for clearing the Messages from the queue
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
+		
+		//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
 				
 		 for(int i=0; i<=2; i++)
 		 {
@@ -956,8 +989,12 @@ public class QueueMessages
 		driver.findElement(By.id("save-message")).click();
 		Thread.sleep(MediumSleep);
 		
+		//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
 		//Click on Refresh button
-	    for(int i=0; i<=3; i++)
+	    for(int i=0; i<=2; i++)
 	    {
 	    	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
 	    	Thread.sleep(LowSleep);
@@ -1030,6 +1067,10 @@ public class QueueMessages
 		driver.findElement(By.id("save-message")).click();
 		Thread.sleep(MediumSleep);
 		
+		//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+		
 		//Click on Refresh button
 	    for(int i=0; i<=3; i++)
 	    {
@@ -1093,6 +1134,10 @@ public class QueueMessages
 		//Close the popup window 
 		driver.findElement(By.id("save-message")).click();
 		Thread.sleep(MediumSleep);
+		
+		//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
 		
 		//Click on Refresh button
 	    for(int i=0; i<=3; i++)

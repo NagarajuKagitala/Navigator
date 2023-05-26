@@ -35,6 +35,7 @@ import Common.ClearSelectionofCheckbox;
 import Common.CompareObjects;
 import Common.Dashboard;
 import Common.DifferenceOfObjects;
+import Common.Discoverfull;
 import Common.LogoutForAll;
 
 //import com.gargoylesoftware.htmlunit.javascript.host.Set;
@@ -60,6 +61,7 @@ public class TopicViewlet
 	static String Manager2;
 	static String Manager1Queuename;
 	static String Manager2Queuename;
+	static String Node_Hostname;
 	static String Low;
 	static String Medium;
 	static String High;
@@ -82,6 +84,7 @@ public class TopicViewlet
 		Manager2 =Settings.getManager2();
 		Manager1Queuename =Settings.getManager1Queuename();
 		Manager2Queuename =Settings.getManager2Queuename();
+		Node_Hostname =Settings.getNode_Hostname();
 		Low =Settings.getLow();
 		Medium =Settings.getMedium();
 		High =Settings.getHigh();
@@ -427,7 +430,15 @@ public class TopicViewlet
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
     	Thread.sleep(4000);
-    	        	
+    	
+    	 //discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
+    	//Refresh the viewlet
+    	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
+    	Thread.sleep(MediumSleep);
+    	
     	//Combining the strings 
     	String CopyasTopicName=TopicNameFromOptions+CopyObjectName;
     	System.out.println(CopyasTopicName);
@@ -508,6 +519,14 @@ public class TopicViewlet
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
     	Thread.sleep(4000);
+    	
+    	//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
+    	//Refresh the viewlet
+    	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
+    	Thread.sleep(MediumSleep);
     	
     	//Store the viewlet data into string
     	String Subviewlet=driver.findElement(By.xpath("//datatable-body")).getText();
@@ -895,8 +914,11 @@ public class TopicViewlet
 		
 		//Select Add to favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-		driver.findElement(By.linkText("Add to favorites...")).click();
-		Thread.sleep(MediumSleep);
+		Thread.sleep(LowSleep);
+		WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+		JavascriptExecutor addfav = (JavascriptExecutor)driver;
+		addfav.executeScript("arguments[0].click();", fav);
+		Thread.sleep(LowSleep);
 		
 		//Select favorite viewlet
 		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();
@@ -1321,7 +1343,11 @@ public class TopicViewlet
 		{
 			System.out.println("Error popup is not displayed");
 		}
-    	    	
+    	
+    	//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
     	//Refresh the viewlet
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
     	Thread.sleep(MediumSleep);
@@ -1399,6 +1425,14 @@ public class TopicViewlet
     	{
     		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
+    	
+    	//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
+    	//Refresh the viewlet
+    	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
+    	Thread.sleep(MediumSleep);
     	
     	//Verification of Subscription delete
     	if(Subviewlet.contains(FinaleCopyAsName))
@@ -1725,7 +1759,9 @@ public class TopicViewlet
 		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Thread.sleep(LowSleep);
-		driver.findElement(By.linkText("Add to favorites...")).click();
+		WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+		JavascriptExecutor addfav = (JavascriptExecutor)driver;
+		addfav.executeScript("arguments[0].click();", fav);
 		Thread.sleep(MediumSleep);
 		
 		//Select favorite viewlet

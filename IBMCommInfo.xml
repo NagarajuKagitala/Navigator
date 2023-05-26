@@ -33,14 +33,14 @@
         <include name="Login"/>
         <include name="AddCommInfoViewlet"/> 
         <include name="ShowObjectAttributes"/>
-        <include name="Properties"/>
+        <include name="Properties"/> 
         <include name="CopyAsOfCommumicationInfo"/>   
         <include name="DeleteCommunicationInfo"/> 
         <include name="AddCommunicationInfoToFavoriteViewlet"/> 
         <include name="CompareCommunicationInfos"/>  
         <include name="DifferencesOfCommunicationInfos"/> 
         <include name="AddMultipleCommumicationInfosToFavoriteViewlet"/>
-       <!--  <include name="AddCommunicationInfoUsingPlusIcon"/>   -->
+        <include name="AddCommunicationInfoUsingPlusIcon"/>  
         <include name="Logout"/>  
         
        </methods>

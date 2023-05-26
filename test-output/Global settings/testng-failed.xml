@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Global settings]" guice-stage="DEVELOPMENT">
-  <test name="Global settings(failed)">
+  <test thread-count="5" name="Global settings(failed)">
+    <parameter name="Dashboardname" value="AutomationDashboard"/>
     <parameter name="GlobalNoticedata" value="Testing Global Notice Using Automation"/>
+    <parameter name="NewOwner" value="Automation"/>
     <parameter name="sDriver" value="webdriver.chrome.driver"/>
     <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
     <parameter name="EnvironmentData" value="Testing Environment Text"/>
@@ -11,13 +13,10 @@
     <classes>
       <class name="NavigatorCore.GlobalSettings">
         <methods>
-          <include name="EnvironmentLevel" invocation-numbers="0"/>
-          <include name="DeleteEnvironmentLevel" invocation-numbers="0"/>
-          <include name="Logout"/>
-          <include name="MinimumRefreshInterval" invocation-numbers="0"/>
+          <include name="DashboardOwnershipManagement" invocation-numbers="0"/>
+          <include name="Logout" invocation-numbers="0"/>
           <include name="beforeTest"/>
           <include name="tearDown"/>
-          <include name="UpdateEnvironmentLevel" invocation-numbers="0"/>
         </methods>
       </class> <!-- NavigatorCore.GlobalSettings -->
     </classes>

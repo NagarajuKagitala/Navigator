@@ -36,6 +36,7 @@ import Common.ClearSelectionofCheckbox;
 import Common.CompareObjects;
 import Common.Dashboard;
 import Common.DifferenceOfObjects;
+import Common.Discoverfull;
 import Common.LogoutForAll;
 import Common.Viewlets;
 import testrail.Settings;
@@ -308,7 +309,19 @@ public class ChannelAuthRecordsViewlet
 				driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
 	    	}
 	    	Thread.sleep(LowSleep);
+	    	
+	    	//discover full
+	    	Discoverfull dis=new Discoverfull();
+	    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+	    	
+	    	//Refresh the viewlet
+	    	for(int i=0; i<=2; i++)
+	    	{
+	    	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
+	    	Thread.sleep(LowSleep);
+	    	}
 			}
+			
 			catch(Exception ee)
 			{
 				//Search with added channelAuth record
@@ -331,6 +344,17 @@ public class ChannelAuthRecordsViewlet
 				for(int j=0; j<=ChannelAuthNameFromOptions.length(); j++)
 		    	{
 					driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
+		    	}
+				
+				//discoverfull
+		    	Discoverfull dis=new Discoverfull();
+		    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+		    	
+		    	//Refresh the viewlet
+		    	for(int i=0; i<=2; i++)
+		    	{
+		    	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
+		    	Thread.sleep(LowSleep);
 		    	}
 				
 			}
@@ -539,12 +563,14 @@ public class ChannelAuthRecordsViewlet
 			
 			
 			//Select Add to Favorites option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			//driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			//driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 			Thread.sleep(MediumSleep);
-			driver.findElement(By.linkText("Add to favorites...")).click();
+			WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+			JavascriptExecutor addfav = (JavascriptExecutor)driver;
+			addfav.executeScript("arguments[0].click();", fav);
 			Thread.sleep(LowSleep);
 			
 			//Select the favorite viewlet name
@@ -947,7 +973,9 @@ public class ChannelAuthRecordsViewlet
 			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 			Thread.sleep(LowSleep);
 			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-			driver.findElement(By.linkText("Add to favorites...")).click();
+			WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+			JavascriptExecutor addfav = (JavascriptExecutor)driver;
+			addfav.executeScript("arguments[0].click();", fav);
 			Thread.sleep(LowSleep);
 			
 			//Select the favorite viewlet name

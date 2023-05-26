@@ -13,8 +13,8 @@ public class ClearSelectionofCheckbox
 	
 	public void Deselectcheckbox(String Dashboardname, WebDriver driver) throws InterruptedException
 	{	
-		  WebElement cla=driver.findElement(By.className("tabs-panel-left-relative-block")).
-		  findElement(By.tagName("ul")); List<WebElement> lis=cla.findElements(By.tagName("li"));
+		  WebElement cla=driver.findElement(By.className("tabs-panel-left-relative-block")).findElement(By.tagName("ul")); 
+		  List<WebElement> lis=cla.findElements(By.tagName("li"));
 		  System.out.println("No of dashboards are: " +lis.size());
 		  
 		  for(WebElement li: lis) 

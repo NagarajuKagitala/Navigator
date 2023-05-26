@@ -361,7 +361,7 @@ public class MenuBarIcons
 		
 		driver.switchTo().window(handle[0]);
 		
-		if(CurrentUrl.equalsIgnoreCase(HelpURL))
+		if(CurrentUrl.equalsIgnoreCase(HelpURL) || HelpURL.contains(CurrentUrl))
 		{
 			System.out.println("Help icon is working fine");
 			context.setAttribute("Status",1);

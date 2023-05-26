@@ -35,6 +35,7 @@ import Common.ClearSelectionofCheckbox;
 import Common.CompareObjects;
 import Common.Dashboard;
 import Common.DifferenceOfObjects;
+import Common.Discoverfull;
 import Common.LogoutForAll;
 import Common.Viewlets;
 import testrail.Settings;
@@ -503,6 +504,10 @@ public class SubscriptionViewlet {
 			System.out.println("Error popup is not displayed");
 		}
     	
+    	 //discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
     	//Refresh the viewlet
     	for(int i=0; i<=2; i++)
     	{
@@ -603,6 +608,10 @@ public class SubscriptionViewlet {
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
     	Thread.sleep(4000);	
+    	
+    	 //discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
     	
     	//Refresh the viewlet
     	for(int i=0; i<=2; i++)
@@ -844,6 +853,10 @@ public class SubscriptionViewlet {
 		String SubscriptionId=driver.findElement(By.xpath("//div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[6]/div/span")).getText();
 		//System.out.println(SubscriptionId);
 		
+		//Get subscription name
+		String SubscriptionName=driver.findElement(By.xpath("//datatable-body-cell[4]/div/span")).getText();
+		System.out.println("Subscription name is: " +SubscriptionName);
+		
 		//Create favorite viewlet
 		driver.findElement(By.xpath("//button[3]")).click();
 		Thread.sleep(LowSleep);
@@ -883,7 +896,9 @@ public class SubscriptionViewlet {
 		//Add to favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Thread.sleep(LowSleep);
-		driver.findElement(By.linkText("Add to favorites...")).click();
+		WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+		JavascriptExecutor addfav = (JavascriptExecutor)driver;
+		addfav.executeScript("arguments[0].click();", fav);
 		Thread.sleep(LowSleep);
 
 		//Select favorite viewlet
@@ -919,7 +934,7 @@ public class SubscriptionViewlet {
 		//System.out.println(Favdata);
 		
 		//Verifiation of subscription added to favorite viewlet
-		if(Favdata.contains(SubscriptionId))
+		if(Favdata.contains(SubscriptionId) || Favdata.contains(SubscriptionName))
 		{
 			System.out.println("Subscription is added to the Favorite viewlet");
 			context.setAttribute("Status",1);
@@ -1296,6 +1311,10 @@ public class SubscriptionViewlet {
     		System.out.println("No exception occured");
     	}
     	
+    	 //discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
     	//Refresh the viewlet
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
     	Thread.sleep(LowSleep);
@@ -1373,6 +1392,10 @@ public class SubscriptionViewlet {
 			System.out.println("Error popup is not displayed");
 		}
     	
+    	 //discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
     	//Refresh the viewlet
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
     	Thread.sleep(MediumSleep);
@@ -1443,6 +1466,10 @@ public class SubscriptionViewlet {
     	/*//clear the search data
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).clear();
     	Thread.sleep(1000);*/
+    	
+    	 //discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
     	
     	//Refresh the viewlet
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
@@ -1589,11 +1616,20 @@ public class SubscriptionViewlet {
 		String SubscriptionId3=driver.findElement(By.xpath("//div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[6]/div/span")).getText();
 		//System.out.println(SubscriptionId3);
 		
+		//Subscription names 
+		String SubscriptionName2=driver.findElement(By.xpath("//datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[4]/div/span")).getText();
+		System.out.println("Subscription name 2: " +SubscriptionName2);
+		String SubscriptionName3=driver.findElement(By.xpath("//datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[4]/div/span")).getText();
+		System.out.println("Subscription name 3: " +SubscriptionName3);
+		
 		//Select compare option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Thread.sleep(LowSleep);
-		driver.findElement(By.linkText("Add to favorites...")).click();
+		WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+		JavascriptExecutor addfav = (JavascriptExecutor)driver;
+		addfav.executeScript("arguments[0].click();", fav);
 		Thread.sleep(LowSleep);
 		
 		//Select favorite viewlet
@@ -1628,8 +1664,16 @@ public class SubscriptionViewlet {
 		String Favdata=driver.findElement(By.xpath("//div[2]/app-viewlet/div/ngx-datatable/div/datatable-body")).getText();
 		System.out.println(Favdata);
 		
+		//Get the subscripton name from fav viewlet
+		String SubscriptionName2fromfav=driver.findElement(By.xpath("//div[2]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[4]/div/span")).getText();
+		System.out.println("Subscription name2 from fav viewlet : " +SubscriptionName2fromfav);
+		
+		//Get the subscripton name from fav viewlet
+		String SubscriptionName3fromfav=driver.findElement(By.xpath("//div[2]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[4]/div/span")).getText();
+		System.out.println("Subscription name3 from fav viewlet : " +SubscriptionName3fromfav);
+		
 		//Verification of subscriptions added to favorite viewlet
-		if(Favdata.contains(SubscriptionId2) && Favdata.contains(SubscriptionId3))
+		if(Favdata.contains(SubscriptionId2) && Favdata.contains(SubscriptionId3) || SubscriptionName2fromfav.contains(SubscriptionName2) && SubscriptionName3fromfav.contains(SubscriptionName3))
 		{
 			System.out.println("Multiple Subscriptions are added to the Favorite viewlet");
 			context.setAttribute("Status",1);

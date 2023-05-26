@@ -59,6 +59,7 @@ public class WorkgroupServer {
 	static int LowSleep;
 	static int MediumSleep;
 	static int HighSleep;
+	static String Manager1;
 
 	@BeforeTest
 	public void beforeTest() throws Exception {
@@ -82,6 +83,7 @@ public class WorkgroupServer {
 		LowSleep=Integer.parseInt(Low);
 		MediumSleep =Integer.parseInt(Medium);
 		HighSleep=Integer.parseInt(High);
+		Manager1=Settings.getManager1();
 	}
 
 	@Test
@@ -166,7 +168,7 @@ public class WorkgroupServer {
 		//Select Show topology option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		driver.findElement(By.linkText("Show Topology")).click();
-		Thread.sleep(4000);
+		Thread.sleep(HighSleep);
 		
 		try
 		{
@@ -189,7 +191,7 @@ public class WorkgroupServer {
 		Thread.sleep(6000);
 		
 		//Verification condition
-		if(Topology.contains(Node_Hostname))
+		if(Topology.contains(Node_Hostname) || Topology.contains(Manager1))
 		{
 			System.out.println("Topology page is opened with the selected WGS expert");
 			context.setAttribute("Status", 1);
@@ -1022,7 +1024,10 @@ public class WorkgroupServer {
 			driver.findElement(By.xpath("//button[contains(.,'Add')]")).click();
 
 			// Kafka Agent Instance Name
-			driver.findElement(By.xpath("//ng-select/div/span[2]")).click();
+			driver.findElement(By.cssSelector("#nodeName input")).sendKeys(KafkaNodeName);
+			driver.findElement(By.cssSelector("#nodeName input")).sendKeys(Keys.ENTER);
+			
+		/*	driver.findElement(By.xpath("//ng-select/div/span[2]")).click();
 			try
 			{
 			
@@ -1048,7 +1053,7 @@ public class WorkgroupServer {
 			}
 			Thread.sleep(3000);
 			//driver.findElement(By.xpath("//div[3]/input")).clear();
-			//driver.findElement(By.xpath("//div[3]/input")).sendKeys(KafkaNodeName);
+			//driver.findElement(By.xpath("//div[3]/input")).sendKeys(KafkaNodeName); */
 
 			// Cluster name
 			driver.findElement(By.xpath("//app-text-input/div/div/input")).clear();

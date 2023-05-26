@@ -34,6 +34,7 @@ import Common.ClearSelectionofCheckbox;
 import Common.CompareObjects;
 import Common.Dashboard;
 import Common.DifferenceOfObjects;
+import Common.Discoverfull;
 import Common.LogoutForAll;
 import Common.Viewlets;
 import testrail.Settings;
@@ -324,7 +325,11 @@ public class NameListViewlet
 		{
 			System.out.println("Error popup is not displayed");
 		}
-    	    	
+    	
+    	//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);	
+    	
     	//Refresh the viewlet
     	for(int i=0; i<=2; i++)
     	{
@@ -412,7 +417,11 @@ public class NameListViewlet
     	
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
-    	Thread.sleep(LowSleep);	
+    	Thread.sleep(LowSleep);
+    	
+    	//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
     	
     	//Refresh the viewlet
     	for(int i=0; i<=2; i++)
@@ -478,10 +487,6 @@ public class NameListViewlet
     	driver.findElement(By.cssSelector(".btn-primary")).click();
     	Thread.sleep(MediumSleep);
     	
-    	//Store the viewlet data into string
-    	String Subviewlet=driver.findElement(By.xpath("//datatable-body")).getText();
-    	System.out.println("Viewlet data after deleting: " +Subviewlet);
-    	
     	//Search with the new name
 		for(int j=0; j<=RenameNameList.length(); j++)
     	{
@@ -489,6 +494,21 @@ public class NameListViewlet
     	driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
 		Thread.sleep(LowSleep);
+    	
+    	//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
+    	//Refresh the viewlet
+    	for(int i=0; i<=2; i++)
+    	{
+    	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
+    	Thread.sleep(LowSleep);
+    	}
+    	
+    	//Store the viewlet data into string
+    	String Subviewlet=driver.findElement(By.xpath("//datatable-body")).getText();
+    	System.out.println("Viewlet data after deleting: " +Subviewlet);
     	
     	//Verification of Subscription delete
     	if(Subviewlet.contains(RenameNameList))
@@ -673,7 +693,9 @@ public class NameListViewlet
 		//Add to favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Thread.sleep(LowSleep);
-		driver.findElement(By.linkText("Add to favorites...")).click();
+		WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+		JavascriptExecutor addfav = (JavascriptExecutor)driver;
+		addfav.executeScript("arguments[0].click();", fav);
 		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();
@@ -946,6 +968,10 @@ public class NameListViewlet
     	
     	FinalListenerName=ExistingNameList+CopyObjectNameForMUltiple;
     	
+    	//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
     	//Refresh the viewlet
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
     	Thread.sleep(LowSleep);
@@ -1026,6 +1052,10 @@ public class NameListViewlet
     		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
     	}
     	
+    	//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
     	//Refresh the viewlet
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
     	Thread.sleep(LowSleep);
@@ -1088,6 +1118,15 @@ public class NameListViewlet
     	driver.findElement(By.cssSelector(".btn-primary")).click();
     	Thread.sleep(MediumSleep);
     	
+    	for(int j=0; j<=RenameNameListForMultiple.length(); j++)
+    	{
+    		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
+    	}
+    	
+    	//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
     	//Refresh the viewlet
     	driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
     	Thread.sleep(LowSleep);
@@ -1095,12 +1134,7 @@ public class NameListViewlet
     	//Store the viewlet data into string
     	String Subviewlet=driver.findElement(By.xpath("//datatable-body")).getText();
     	//System.out.println(Subviewlet);
-    	
-    	for(int j=0; j<=RenameNameListForMultiple.length(); j++)
-    	{
-    		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Keys.BACK_SPACE);
-    	}
-    	
+    	    	
     	//Verification of Subscription delete
     	if(Subviewlet.contains(RenameNameListForMultiple))
     	{
@@ -1206,9 +1240,12 @@ public class NameListViewlet
 				
 		//Select Add to favorite option
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 		Thread.sleep(LowSleep);
-		driver.findElement(By.linkText("Add to favorites...")).click();
+		WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
+		JavascriptExecutor addfav = (JavascriptExecutor)driver;
+		addfav.executeScript("arguments[0].click();", fav);
 		Thread.sleep(LowSleep);
 		
 		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();

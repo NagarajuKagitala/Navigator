@@ -39,6 +39,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Common.Dashboard;
+import Common.Discoverfull;
 import Common.LogoutForAll;
 import Common.Viewlets;
 import testrail.Settings;
@@ -203,13 +204,14 @@ public class QueuesInsideBrowseMessages
 		driver.findElement(By.xpath("//button[contains(.,'Apply changes')]")).click(); 
 		Thread.sleep(MediumSleep);
 		
-		
-		  //Check Show Empty Queues check box
-		  driver.findElement(By.cssSelector(".fa-cog")).click();
-		  driver.findElement(By.id("empty-queues")).click();
-		  driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
-		  Thread.sleep(2000);
-		 
+		//Restoring the Default Settings
+		driver.findElement(By.cssSelector(".fa-cog")).click();
+		Thread.sleep(LowSleep);
+		driver.findElement(By.xpath("//button[contains(.,'Restore Default')]")).click();
+		Thread.sleep(LowSleep);
+		driver.findElement(By.id("accept-true")).click();
+		driver.findElement(By.xpath("//button[contains(.,'Save Changes')]")).click();
+		Thread.sleep(HighSleep);		 
 	
 		
 		//put the messages into empty queues for testing
@@ -371,8 +373,9 @@ public class QueuesInsideBrowseMessages
 	}
 	
 	@Test(priority=3)
+	@Parameters({"Dashboardname"})
 	@TestRail(testCaseId = 91)
-	public static void CopyMessageUsingCopyIcon(ITestContext context) throws InterruptedException
+	public static void CopyMessageUsingCopyIcon(String Dashboardname, ITestContext context) throws InterruptedException
 	{		
 		//Get the Manager name of first one
 		String Managername=driver.findElement(By.xpath("//datatable-body-cell[5]/div/span")).getText();
@@ -404,6 +407,10 @@ public class QueuesInsideBrowseMessages
 		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
+		
+		//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
 		
 		for(int i=0; i<=6; i++)
 		{
@@ -439,8 +446,9 @@ public class QueuesInsideBrowseMessages
 	}
 	
 	@Test(priority=4)
+	@Parameters({"Dashboardname"})
 	@TestRail(testCaseId = 92)
-	public static void MoveMessageUsingMoveIcon(ITestContext context) throws InterruptedException
+	public static void MoveMessageUsingMoveIcon(String Dashboardname, ITestContext context) throws InterruptedException
 	{		
 		//Get the Manager name of first one
 		String Managername=driver.findElement(By.xpath("//datatable-body-cell[5]/div/span")).getText();
@@ -468,6 +476,10 @@ public class QueuesInsideBrowseMessages
 		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
+		
+		//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
 		
 		//Refresh the viewlet
 		for(int i=0; i<=6; i++)
@@ -567,8 +579,9 @@ public class QueuesInsideBrowseMessages
 	}
 	
 	@Test(priority=6)
+	@Parameters({"Dashboardname"})
 	@TestRail(testCaseId = 94)
-	public static void LoadMessageFromFileUsingIcon(ITestContext context) throws InterruptedException, AWTException
+	public static void LoadMessageFromFileUsingIcon(String Dashboardname, ITestContext context) throws InterruptedException, AWTException
 	{		
 		//Find the queue current depth
 		String depthbefore=driver.findElement(By.xpath("//datatable-body-cell[6]/div/span")).getText();
@@ -602,10 +615,14 @@ public class QueuesInsideBrowseMessages
 	    robot.keyRelease(KeyEvent.VK_ENTER);
 	    Thread.sleep(HighSleep);
 	    
+	    //discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+	    
 	    for(int i=0; i<=2; i++)
 		{
 			driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-			Thread.sleep(4000);
+			Thread.sleep(MediumSleep);
 		}
 	        
 	    //verification of message
@@ -797,6 +814,7 @@ public class QueuesInsideBrowseMessages
 		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
+		
 				
 		 for(int i=0; i<=2; i++)
 		 {
@@ -829,8 +847,9 @@ public class QueuesInsideBrowseMessages
 	}
 	
 	@Test(priority=11)
+	@Parameters({"Dashboardname"})
 	@TestRail(testCaseId = 98)
-	public static void CopyMessageUsingCopyOption(ITestContext context) throws InterruptedException
+	public static void CopyMessageUsingCopyOption(String Dashboardname, ITestContext context) throws InterruptedException
 	{		
 		//Get the Manager name of first one
 		String Managername=driver.findElement(By.xpath("//datatable-body-cell[5]/div/span")).getText();
@@ -861,6 +880,10 @@ public class QueuesInsideBrowseMessages
 		Thread.sleep(LowSleep);
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
+		
+		//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
 		
 		//Refresh the viewlet
 		for(int i=0; i<=5; i++)
@@ -896,8 +919,9 @@ public class QueuesInsideBrowseMessages
 	}
 	
 	@Test(priority=12)
+	@Parameters({"Dashboardname"})
 	@TestRail(testCaseId = 99)
-	public static void MoveMessageUsingMoveOption(ITestContext context) throws InterruptedException
+	public static void MoveMessageUsingMoveOption(String Dashboardname, ITestContext context) throws InterruptedException
 	{		
 		//Get the Manager name of first one
 		String Managername=driver.findElement(By.xpath("//datatable-body-cell[5]/div/span")).getText();
@@ -926,6 +950,10 @@ public class QueuesInsideBrowseMessages
 		driver.findElement(By.cssSelector(".btn-primary")).click();
 		Thread.sleep(MediumSleep);
 		
+		//discover full
+    	Discoverfull dis=new Discoverfull();
+    	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
 		//Refresh the viewlet
 		for(int i=0; i<=6; i++)
 		{

@@ -5,7 +5,7 @@
     <parameter name="sDriver" value="webdriver.chrome.driver"/>
     <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
     
-    <parameter name="Dashboardname" value="Channel AuthInfo"/>
+    <parameter name="Dashboardname" value="Channel Auth Rec"/>
     <parameter name="ViewletName" value="New Channel Auth Records"/>
     <parameter name="ViewletValue" value="13"/>
     
@@ -29,7 +29,7 @@
         <include name="Login"/>
         <include name="AddChannelAuthrecordsViewlet"/> 
         <include name="ShowObjectAttributes"/> 
-        <include name="CreateChannelAuthRecordFromOptions"/>
+        <include name="CreateChannelAuthRecordFromOptions"/> 
         <include name="DeleteChannelAuthRecordFromCommands"/>
         <include name="MQSCSnapshot"/>
         <include name="SaveChannelAuthSnapshot"/> 

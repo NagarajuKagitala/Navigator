@@ -420,7 +420,7 @@ public class AddSchemaToTheViewlet
 		Thread.sleep(LowSleep); 
 		
 		//Store the Top Attribute value into string
-		String Top=driver.findElement(By.xpath("//td")).getText();
+		String Top=driver.findElement(By.xpath("//div[3]/table/tbody/tr/td")).getText();
 		System.out.println("Top attribute name is: " +Top);
 		
 		if(AttributeName.equalsIgnoreCase(Top))
