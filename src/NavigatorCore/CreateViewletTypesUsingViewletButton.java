@@ -177,7 +177,7 @@ public class CreateViewletTypesUsingViewletButton
 		driver.findElement(By.name("viewletName")).sendKeys(Nodename);
 		
 		//Select WGS
-		driver.findElement(By.xpath("//div/div/div[2]/div/div/div[2]/ng-select/div/span")).click();
+		driver.findElement(By.xpath("//app-mod-select-input-connection-list/ng-select/div/span")).click();
 		Thread.sleep(LowSleep);   
 		
 		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -235,7 +235,7 @@ public class CreateViewletTypesUsingViewletButton
 		System.out.println(ViewletName);
 		
 		//Select WGS
-		driver.findElement(By.xpath("//div/div/div[2]/div/div/div[2]/ng-select/div/span")).click();
+		driver.findElement(By.xpath("//app-mod-select-input-connection-list/ng-select/div/span")).click();
 		Thread.sleep(LowSleep);   
 		
 		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -290,9 +290,14 @@ public class CreateViewletTypesUsingViewletButton
 		driver.findElement(By.name("viewlet-name")).click();
 		driver.findElement(By.name("viewlet-name")).sendKeys(FavoriteViewletName);
 		
+		
+		//Remove selection
+		driver.findElement(By.xpath("//span[2]/i")).click();
+		Thread.sleep(MediumSleep);
+		
 		//select WGS
-		driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div/div[2]/div/ng-select/div/span")).click();
-		Thread.sleep(LowSleep);
+		//driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div/div[2]/div/ng-select/div/span")).click();
+		//Thread.sleep(LowSleep);
 		
 		WebElement drop1=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
 		List<WebElement> div1=drop1.findElements(By.tagName("div"));
@@ -300,7 +305,8 @@ public class CreateViewletTypesUsingViewletButton
 		
 		for(WebElement di1 : div1)
 		{
-			//System.out.println("text is :" +di.getText());
+			//System.out.println("text is :" +di1.getText());
+			//System.out.println("WGS name is:" +WGSName);
 			if(di1.getText().equalsIgnoreCase(WGSName))
 			{
 				di1.click();
@@ -415,7 +421,7 @@ public class CreateViewletTypesUsingViewletButton
 		}
 		
 		//Select WGS type
-		driver.findElement(By.xpath("//div/div/div[2]/div/div/div[2]/ng-select/div/span")).click();
+		driver.findElement(By.xpath("//app-mod-select-input-connection-list/ng-select/div/span")).click();
 		Thread.sleep(LowSleep);   
 		
 		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -520,8 +526,8 @@ public class CreateViewletTypesUsingViewletButton
 		
 		try
 		{
-			driver.findElement(By.xpath("//input[@type='number']")).clear();
-			driver.findElement(By.xpath("//input[@type='number']")).sendKeys("10000");
+			driver.findElement(By.xpath("//div[5]/div/div[3]/input")).clear();
+			driver.findElement(By.xpath("//div[5]/div/div[3]/input")).sendKeys("10000");
 			Thread.sleep(MediumSleep);
 			
 			//click on apply changes
@@ -533,12 +539,12 @@ public class CreateViewletTypesUsingViewletButton
 			
 			System.out.println("exception occured with invisible elements");
 		//Increase the result limit  
-		WebElement element=driver.findElement(By.xpath("//input[@type='number']"));
+		WebElement element=driver.findElement(By.xpath("//div[5]/div/div[3]/input"));
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].clear();", element);
 		Thread.sleep(LowSleep);
-		driver.findElement(By.xpath("//input[@type='number']")).sendKeys("10000");
+		driver.findElement(By.xpath("//div[5]/div/div[3]/input")).sendKeys("10000");
 		
 		
 		//click on Apply changes

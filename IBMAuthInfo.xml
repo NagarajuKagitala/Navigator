@@ -23,7 +23,7 @@
        
         <include name="Login"/>
         <include name="AddAuthInfoViewlet"/> 
-        <include name="ShowObjectAttributesForAuthInfo"/>  
+      <!--  <include name="ShowObjectAttributesForAuthInfo"/>  -->
         <include name="PropertieOfAuthInfo"/>
         <include name="MQSCSnapshot"/>  
         <include name="SaveAuthinfoSnapshot"/>

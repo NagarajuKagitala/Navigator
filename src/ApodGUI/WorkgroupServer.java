@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -166,7 +167,7 @@ public class WorkgroupServer {
 		obj.MoveDashboard(NewDashboardname, driver);
 		
 		//Select Show topology option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		driver.findElement(By.linkText("Show Topology")).click();
 		Thread.sleep(HighSleep);
 		
@@ -218,7 +219,7 @@ public class WorkgroupServer {
 		ClearSelectionofCheckbox obj=new ClearSelectionofCheckbox();
 		obj.MoveDashboard(NewDashboardname, driver);
 				
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		/*driver.findElement(By.linkText("Default Connection")).click();
 		Thread.sleep(4000);
 		
@@ -234,7 +235,7 @@ public class WorkgroupServer {
 			if(li.getText().equalsIgnoreCase("Default Connection"))
 			{
 				try {
-				li.findElement(By.tagName("i"));
+				//li.findElement(By.tagName("i"));
 								
 				driver.findElement(By.linkText("Default Connection")).click();
 				Thread.sleep(4000);
@@ -247,7 +248,7 @@ public class WorkgroupServer {
 				ClearSelectionofCheckbox obj1=new ClearSelectionofCheckbox();
 				obj1.MoveDashboard(NewDashboardname, driver);
 				
-				driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+				driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 				
 				boolean Def=false;
 				List<WebElement> innerlst=Getlist();
@@ -263,7 +264,7 @@ public class WorkgroupServer {
 						//Open dash board
 						ClearSelectionofCheckbox obj2=new ClearSelectionofCheckbox();
 						obj2.MoveDashboard(NewDashboardname, driver);
-						driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+						driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 						driver.findElement(By.linkText("Default Connection")).click();
 						Thread.sleep(4000);
 						System.out.println("Default");
@@ -299,7 +300,7 @@ public class WorkgroupServer {
 					ClearSelectionofCheckbox obj3=new ClearSelectionofCheckbox();
 					obj3.MoveDashboard(NewDashboardname, driver);
 					
-					driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+					driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 					boolean verifyconnection=false;
 					List<WebElement> innerlst=Getlist();
 					System.out.println("Exception list");
@@ -347,7 +348,7 @@ public class WorkgroupServer {
 		obj.MoveDashboard(NewDashboardname, driver);
 				
 		//Click on check box and choose Properties option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		driver.findElement(By.linkText("Properties")).click();
 		Thread.sleep(6000);
 		
@@ -401,7 +402,7 @@ public class WorkgroupServer {
 		try {
 						
 			// Select the Edit WGS option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input"))
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input"))
 					.click();
 
 			// driver.findElement(By.xpath("//app-dropdown[@id='dropdown-block']/div/div/div[2]")).click();
@@ -476,7 +477,7 @@ public class WorkgroupServer {
 			obj.MoveDashboard(NewDashboardname, driver);
 						
 			// Click on checbox and Select the create node option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Actions MousehourNode = new Actions(driver);
 			MousehourNode.moveToElement(driver.findElement(By.linkText("Create"))).perform();
 			driver.findElement(By.linkText("Node...")).click();
@@ -495,7 +496,8 @@ public class WorkgroupServer {
 			
 			//Select Node type
 			Select dd=new Select(driver.findElement(By.xpath("//select")));
-			dd.selectByVisibleText("M6-WMQ Agent-managed MQ Node");
+			Thread.sleep(3000);
+			dd.selectByVisibleText("IBM MQ Agent");
 			Thread.sleep(3000);
 
 			// Submit
@@ -547,7 +549,7 @@ public class WorkgroupServer {
 			obj.MoveDashboard(NewDashboardname, driver);
 						
 			// Select Remote queue manager option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Actions Mousehour = new Actions(driver);
 			Mousehour.moveToElement(driver.findElement(By.linkText("Create"))).perform();
 			driver.findElement(By.linkText("Remote Queue Managers...")).click();
@@ -582,6 +584,16 @@ public class WorkgroupServer {
 			// click on OK button        
 			driver.findElement(By.xpath("//app-mod-remote-queue-manager-options/div/div[2]/div/div/div/button")).click();
 			Thread.sleep(8000);
+			
+			try
+			{
+				driver.findElement(By.id("accept-true")).click();
+				Thread.sleep(5000);
+			}
+			catch (Exception e)
+			{
+				System.out.println("no confirmation dailouge");
+			}
 
 			// Store the Queue managers into string            
 			String Queuemanagers = driver.findElement(By.xpath("//app-mod-remote-queue-manager-connections/div/div/div/div[2]")).getText();
@@ -622,7 +634,7 @@ public class WorkgroupServer {
 			obj.MoveDashboard(NewDashboardname, driver);
 			
 			// Select Remote queue manager option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Actions Mousehour = new Actions(driver);
 			Mousehour.moveToElement(driver.findElement(By.linkText("Create"))).perform();
 			driver.findElement(By.linkText("Remote Queue Managers...")).click();
@@ -644,7 +656,15 @@ public class WorkgroupServer {
 			// click on OK button
 			driver.findElement(By.xpath("//app-mod-remote-queue-manager-options/div/div[2]/div/div/div/button")).click();
 			Thread.sleep(8000);
-			
+			try
+			{
+				driver.findElement(By.id("accept-true")).click();
+				Thread.sleep(5000);
+			}
+			catch (Exception e)
+			{
+				System.out.println("no confirmation dailouge");
+			}
 			this.ServerSelection(RemoteQueueManagerName);
 			Thread.sleep(2000);
 
@@ -685,7 +705,7 @@ public class WorkgroupServer {
 			obj.MoveDashboard(NewDashboardname, driver);
 			
 			// Select Remote queue manager option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Actions Mousehour = new Actions(driver);
 			Mousehour.moveToElement(driver.findElement(By.linkText("Create"))).perform();
 			driver.findElement(By.linkText("Remote Queue Managers...")).click();
@@ -770,7 +790,7 @@ public class WorkgroupServer {
 			obj.MoveDashboard(NewDashboardname, driver);
 			
 			// Select Remote EMS manager option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Thread.sleep(2000);
 
 			Actions Mousehour = new Actions(driver);
@@ -796,6 +816,16 @@ public class WorkgroupServer {
 			// click on OK button
 			driver.findElement(By.xpath("//app-mod-remote-ems-manager-options/div/div[2]/div/div/div/button")).click();
 			Thread.sleep(8000);
+			
+			try
+			{
+				driver.findElement(By.id("accept-true")).click();
+				Thread.sleep(5000);
+			}
+			catch (Exception e)
+			{
+				System.out.println("no confirmation dailouge");
+			}
 
 			// Store the EMS servers data into string
 			String RemoteEMSserver = driver.findElement(By.xpath("//app-mod-remote-ems-manager-connections/div/div/div/div[2]")).getText();
@@ -874,8 +904,20 @@ public class WorkgroupServer {
 			driver.findElement(By.id("serverURL")).sendKeys(UpdatedServerURL);
 
 			// click on OK button
-			driver.findElement(By.xpath("//app-mod-remote-ems-manager-options/div/div[2]/div/div/div/button")).click();
-			Thread.sleep(5000);
+			WebElement ok=driver.findElement(By.xpath("//app-mod-remote-ems-manager-options/div/div[2]/div/div/div/button"));
+			JavascriptExecutor js = (JavascriptExecutor)driver;
+			js.executeScript("arguments[0].click();", ok);
+			Thread.sleep(5000);          
+			
+			try
+			{
+				driver.findElement(By.id("accept-true")).click();
+				Thread.sleep(5000);
+			}
+			catch (Exception e)
+			{
+				System.out.println("no confirmation dailouge");
+			}
 			
 			WebElement but=driver.findElement(By.tagName("table")).findElement(By.tagName("tbody"));
 			List<WebElement> tr1=but.findElements(By.tagName("tr"));
@@ -967,7 +1009,7 @@ public class WorkgroupServer {
 			Thread.sleep(2000);
 
 			// Click on Delete button
-			driver.findElement(By.xpath("//div[3]/button")).click();
+			driver.findElement(By.xpath("//button[contains(.,'Delete')]")).click();
 
 			// Click on Confirmation yes button
 			driver.findElement(By.id("accept-true")).click();
@@ -1012,7 +1054,7 @@ public class WorkgroupServer {
 			obj.MoveDashboard(NewDashboardname, driver);
 			
 			// Select Remote kafka manager option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Thread.sleep(2000);
 
 			Actions Mousehour = new Actions(driver);
@@ -1066,6 +1108,16 @@ public class WorkgroupServer {
 			// click on OK button   
 			driver.findElement(By.xpath("//app-mod-remote-kafka-manager-options/div/div[2]/div/div/div/button")).click();
 			Thread.sleep(8000);
+			
+			try
+			{
+				driver.findElement(By.id("accept-true")).click();
+				Thread.sleep(5000);
+			}
+			catch (Exception e)
+			{
+				System.out.println("no confirmation dailouge");
+			}
 
 			// Store the EMS servers data into string
 			String Remotekafkaserver = driver.findElement(By.xpath("//app-mod-remote-kafka-manager-connections/div/div/div/div[2]")).getText();
@@ -1103,7 +1155,7 @@ public class WorkgroupServer {
 			obj.MoveDashboard(NewDashboardname, driver);
 			
 			// Select Remote queue manager option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Actions Mousehour = new Actions(driver);
 			Mousehour.moveToElement(driver.findElement(By.linkText("Create"))).perform();
 			driver.findElement(By.linkText("Remote Kafka Managers...")).click();
@@ -1141,6 +1193,16 @@ public class WorkgroupServer {
 			// click on OK button
 			driver.findElement(By.xpath("//app-mod-remote-kafka-manager-options/div/div[2]/div/div/div/button")).click();
 			Thread.sleep(8000);
+			
+			try
+			{
+				driver.findElement(By.id("accept-true")).click();
+				Thread.sleep(5000);
+			}
+			catch (Exception e)
+			{
+				System.out.println("no confirmation dailouge");
+			}
 			
 			WebElement bu1=driver.findElement(By.tagName("table")).findElement(By.tagName("tbody"));
 			List<WebElement> tr1=bu1.findElements(By.tagName("tr"));
@@ -1202,7 +1264,7 @@ public class WorkgroupServer {
 			obj.MoveDashboard(NewDashboardname, driver);
 			
 			// Select Remote queue manager option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Actions Mousehour = new Actions(driver);
 			Mousehour.moveToElement(driver.findElement(By.linkText("Create"))).perform();
 			driver.findElement(By.linkText("Remote Kafka Managers...")).click();
@@ -1244,6 +1306,16 @@ public class WorkgroupServer {
 			// click on OK button
 			driver.findElement(By.xpath("//app-mod-remote-kafka-manager-options/div/div[2]/div/div/div/button")).click();
 			Thread.sleep(8000);
+			
+			try
+			{
+				driver.findElement(By.id("accept-true")).click();
+				Thread.sleep(5000);
+			}
+			catch (Exception e)
+			{
+				System.out.println("no confirmation dailouge");
+			}
 
 			// Store the connection ip into string after modifying the name
 			String Remotekafkaserver = driver.findElement(By.xpath("//app-mod-remote-kafka-manager-connections/div/div/div/div[2]")).getText();
@@ -1282,7 +1354,7 @@ public class WorkgroupServer {
 			obj.MoveDashboard(NewDashboardname, driver);
 			
 			// Select Remote queue manager option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Actions Mousehour = new Actions(driver);
 			Mousehour.moveToElement(driver.findElement(By.linkText("Create"))).perform();
 			driver.findElement(By.linkText("Remote Kafka Managers...")).click();
@@ -1359,7 +1431,7 @@ public class WorkgroupServer {
 			obj.MoveDashboard(NewDashboardname, driver);
 						
 			// Select Remote iib/ace manager connections
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Actions Mousehour = new Actions(driver);
 			Mousehour.moveToElement(driver.findElement(By.linkText("Create"))).perform();
 			driver.findElement(By.linkText("Remote ACE/IIB Managers...")).click();
@@ -1390,6 +1462,16 @@ public class WorkgroupServer {
 			// click on OK button        
 			driver.findElement(By.xpath("//app-mod-remote-ace-manager-options/div/div[2]/div/div/div/button")).click();
 			Thread.sleep(8000);
+			
+			try
+			{
+				driver.findElement(By.id("accept-true")).click();
+				Thread.sleep(5000);
+			}
+			catch (Exception e)
+			{
+				System.out.println("no confirmation dailouge");
+			}
 
 			// Store the Queue managers into string            
 			String IIBACEManagerConnection = driver.findElement(By.xpath("//app-mod-remote-ace-manager-connections/div/div/div/div[2]")).getText();
@@ -1430,7 +1512,7 @@ public class WorkgroupServer {
 			obj.MoveDashboard(NewDashboardname, driver);
 			
 			// Select Remote queue manager option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Actions Mousehour = new Actions(driver);
 			Mousehour.moveToElement(driver.findElement(By.linkText("Create"))).perform();
 			driver.findElement(By.linkText("Remote ACE/IIB Managers...")).click();
@@ -1468,6 +1550,16 @@ public class WorkgroupServer {
 			// click on OK button         
 			driver.findElement(By.xpath("//app-mod-remote-ace-manager-options/div/div[2]/div/div/div/button")).click();
 			Thread.sleep(8000);
+			
+			try
+			{
+				driver.findElement(By.id("accept-true")).click();
+				Thread.sleep(5000);
+			}
+			catch (Exception e)
+			{
+				System.out.println("no confirmation dailouge");
+			}
 			
 			WebElement bu1=driver.findElement(By.tagName("table")).findElement(By.tagName("tbody"));
 			List<WebElement> tr1=bu1.findElements(By.tagName("tr"));
@@ -1528,7 +1620,7 @@ public class WorkgroupServer {
 			obj.MoveDashboard(NewDashboardname, driver);
 			
 			// Select Remote queue manager option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Actions Mousehour = new Actions(driver);
 			Mousehour.moveToElement(driver.findElement(By.linkText("Create"))).perform();
 			driver.findElement(By.linkText("Remote ACE/IIB Managers...")).click();
@@ -1614,7 +1706,7 @@ public class WorkgroupServer {
 			obj.MoveDashboard(NewDashboardname, driver);
 			
 			// Select Remote Solace manager option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Thread.sleep(2000);
 
 			Actions Mousehour = new Actions(driver);
@@ -1640,6 +1732,15 @@ public class WorkgroupServer {
 			// click on OK button
 			driver.findElement(By.xpath("//app-mod-remote-solace-manager-options/div/div[2]/div/div/div/button")).click();
 			Thread.sleep(8000);
+			try
+			{
+				driver.findElement(By.id("accept-true")).click();
+				Thread.sleep(5000);
+			}
+			catch (Exception e)
+			{
+				System.out.println("no confirmation dailouge");
+			}
 
 			// Store the EMS servers data into string
 			String RemoteSolaceserver = driver.findElement(By.xpath("//app-mod-remote-solace-manager-connections/div/div/div/div[2]")).getText();
@@ -1700,6 +1801,16 @@ public class WorkgroupServer {
 			// click on OK button
 			driver.findElement(By.xpath("//app-mod-remote-solace-manager-options/div/div[2]/div/div/div/button")).click();
 			Thread.sleep(5000);
+			
+			try
+			{
+				driver.findElement(By.id("accept-true")).click();
+				Thread.sleep(5000);
+			}
+			catch (Exception e)
+			{
+				System.out.println("no confirmation dailouge");
+			}
 			
 			WebElement but=driver.findElement(By.tagName("table")).findElement(By.tagName("tbody"));
 			List<WebElement> tr1=but.findElements(By.tagName("tr"));
@@ -1773,7 +1884,7 @@ public class WorkgroupServer {
 			Thread.sleep(2000);
 
 			// Click on Delete button
-			driver.findElement(By.xpath("//div[3]/button")).click();
+			driver.findElement(By.xpath("//button[contains(.,'Delete')]")).click();
 
 			// Click on Confirmation yes button
 			driver.findElement(By.id("accept-true")).click();
@@ -2110,7 +2221,7 @@ public class WorkgroupServer {
 			driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(ConnectionName);
 						
 			// Select the Edit WGS option
-			WebElement EditWGS = driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input"));
+			WebElement EditWGS = driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input"));
 			EditWGS.click();
 			Thread.sleep(LowSleep);
 			driver.findElement(By.linkText("Edit workgroup server")).click();
@@ -2214,7 +2325,7 @@ public class WorkgroupServer {
 			//Search with connection name
 			driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(ConnectionName);
 			
-			WebElement DeleteWGS = driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input"));
+			WebElement DeleteWGS = driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input"));
 			if (DeleteWGS.isDisplayed()) {
 				// Select the Delete WGS option
 				System.out.println("Condition");

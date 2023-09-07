@@ -26,10 +26,11 @@
             <include name="PutAMessageUsingPutNewIcon"/>
             <include name="DeleteMessageUsingDeleteIcon"/>
             <include name="CopyMessageUsingCopyIcon"/> 
-            <include name="MoveMessageUsingMoveIcon"/>  
+            <include name="MoveMessageUsingMoveIcon"/> 
             <include name="LoadMessageFromFileUsingIcon"/> 
             <include name="ExportSelectedMessageUsingExportIcon"/> 
             
+        
             <include name="DeleteMessageUsingDeleteOption"/> 
             <include name="CopyMessageUsingCopyOption"/> 
             <include name="MoveMessageUsingMoveOption"/> 

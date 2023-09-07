@@ -1,0 +1,11 @@
+TIBCO Enterprise Message Service Administration Tool.
+Copyright 1997-2022 by TIBCO Software Inc.
+All rights reserved.
+
+Version 10.2.1 V1 2022-11-03
+
+Connected to: tcp://172.16.31.143:7222
+Command: create queue TEST.Q1
+Error: Queue 'TEST.Q1' already exists
+Error occurred executing script file 'C:\Users\CHANDR~1.LOC\AppData\Local\Temp\nsq12208415540130102193.tmp'
+Error in line 1: invalid syntax or command failed

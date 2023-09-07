@@ -33,7 +33,7 @@
        <methods>
        
         <include name="Login"/>
-        <include name="ShowObjectAttributes"/>   
+       <!-- <include name="ShowObjectAttributes"/>   -->
         <include name="ShowChannelStatus"/>   
         <include name="CreateChannelFromIcon"/>
         <include name="CopyAsFromCommands"/>

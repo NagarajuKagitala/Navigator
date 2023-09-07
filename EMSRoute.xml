@@ -34,7 +34,7 @@
        
         <include name="Login"/>
         <include name="AddRouteViewlet"/> 
-        <include name="ShowObjectAttributesForRoute"/>  
+      <!--  <include name="ShowObjectAttributesForRoute"/>  -->
         <include name="RouteStatus"/> 
         <include name="DeleteCommand"/>   
         <include name="Properties"/>

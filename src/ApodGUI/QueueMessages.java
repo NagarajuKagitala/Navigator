@@ -199,10 +199,10 @@ public class QueueMessages
 		
 		
 		//put the messages into empty queues for testing
-		  for(int m=1; m<=5; m++) 
+	   for(int m=1; m<=5; m++) 
 		  { 
 			  //Select the put new message option
-			  driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper["+m+"]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			  driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper["+ m +"]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 				Actions MessagesMousehour=new Actions(driver);
 				MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 				driver.findElement(By.linkText("Put New Message")).click();
@@ -260,7 +260,7 @@ public class QueueMessages
 		che.Deselectcheckbox(Dashboardname,driver);
 		
 		//Select put new message Option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Actions MessagesMousehour=new Actions(driver);
 		MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Put New Message")).click();
@@ -317,7 +317,7 @@ public class QueueMessages
 		che.Deselectcheckbox(Dashboardname,driver);
 		
 		//Select Load from file Option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Actions MessagesMousehour=new Actions(driver);
 		MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Load From File...")).click();
@@ -388,7 +388,7 @@ public class QueueMessages
 		che.Deselectcheckbox(Dashboardname,driver);
 		
 		//Select Load from file Option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Actions MessagesMousehour=new Actions(driver);
 		MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Load From File...")).click();
@@ -472,7 +472,7 @@ public class QueueMessages
 		che.Deselectcheckbox(Dashboardname,driver);
 		
 		//Select Load from file Option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Actions MessagesMousehour=new Actions(driver);
 		MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Load From File...")).click();
@@ -564,7 +564,7 @@ public class QueueMessages
 			che.Deselectcheckbox(Dashboardname,driver);
 			
 		//Export All Messages As MMF
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Actions MMFMousehour=new Actions(driver);
 		MMFMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		MMFMousehour.moveToElement(driver.findElement(By.linkText("Export All Messages..."))).perform();
@@ -580,7 +580,7 @@ public class QueueMessages
 		che1.Deselectcheckbox(Dashboardname,driver);
 		
 		//Export All Messages as TXT
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Actions TXTMousehour=new Actions(driver);
 		TXTMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		TXTMousehour.moveToElement(driver.findElement(By.linkText("Export All Messages..."))).perform();
@@ -633,7 +633,7 @@ public class QueueMessages
 		System.out.println(SecondQueueName);
 		
 		//Copy All Messages
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Actions CopyAllMessagesMousehour=new Actions(driver);
 		CopyAllMessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Copy All")).click();
@@ -650,6 +650,10 @@ public class QueueMessages
 		//discover full
     	Discoverfull dis=new Discoverfull();
     	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
+    	//Search with that manager
+		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Managername);
+		Thread.sleep(LowSleep);
 		
 		 for(int i=0; i<=2; i++)
 		 {
@@ -727,7 +731,7 @@ public class QueueMessages
 		System.out.println(DestinationQueueName);
 		
 		//Move All Messages
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Actions MoveAllMessagesMousehour=new Actions(driver);
 		MoveAllMessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Move All")).click();
@@ -744,6 +748,10 @@ public class QueueMessages
 		//discover full
     	Discoverfull dis=new Discoverfull();
     	dis.NodeDiscoverfull(Dashboardname, Node_Hostname, driver);
+    	
+    	//Search with that manager
+		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(Managername);
+		Thread.sleep(LowSleep);
 		
 		//Refresh the viewlet
 		for(int i=0; i<=5; i++)
@@ -808,7 +816,7 @@ public class QueueMessages
 		System.out.println("Manager name is: " +Managername);
 		
 		//Select Delete All option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Actions DeleteAllMessagesMousehour=new Actions(driver);
 		DeleteAllMessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Delete All")).click();
@@ -891,7 +899,7 @@ public class QueueMessages
 		System.out.println("Manager name is: " +Managername);
 		
 		//Select Clear All option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Actions DeleteAllMessagesMousehour=new Actions(driver);
 		DeleteAllMessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Clear All")).click();
@@ -960,7 +968,7 @@ public class QueueMessages
 		System.out.println(result);
 		
 		//Select put new message Option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Actions MessagesMousehour=new Actions(driver);
 		MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Put New Message")).click();
@@ -1038,7 +1046,7 @@ public class QueueMessages
 		System.out.println(result);
 		
 		//Select put new message Option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Actions MessagesMousehour=new Actions(driver);
 		MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Put New Message")).click();
@@ -1116,7 +1124,7 @@ public class QueueMessages
 		System.out.println("Before putting hex message: " +result);
 		
 		//Select put new message Option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Actions MessagesMousehour=new Actions(driver);
 		MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 		driver.findElement(By.linkText("Put New Message")).click();

@@ -415,7 +415,7 @@ public class ViewletFilterOptions
 		 */
 		
 		//driver.findElement(By.xpath("//td[contains(.,'Maximum Depth')]")).click();
-		driver.findElement(By.xpath("//app-mod-manage-attribute-filter-add-available-attr/div/div/div[3]/button")).click();
+		driver.findElement(By.xpath("//div[3]/button[2]")).click();
 		Thread.sleep(MediumSleep);
 		
 		//Comparison operater name
@@ -714,7 +714,7 @@ public class ViewletFilterOptions
 	@Test(priority=8)
 	public void ViewletCheckboxClear(ITestContext context) throws InterruptedException 
 	{
-		WebElement checkbox=driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input"));
+		WebElement checkbox=driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input"));
 		
 		checkbox.click();
 		Thread.sleep(MediumSleep);

@@ -1,0 +1,264 @@
+{
+  "version": "v10.3.0.11",
+  "wgsConnections": [
+    {
+      "connectionId": 1,
+      "connectionName": "Primary Connection",
+      "serversList": "127.0.0.1",
+      "port": 4040
+    }
+  ],
+  "schemas": [
+    {
+      "id": 53,
+      "name": "Default EMS Manager Dir",
+      "objectType": 50,
+      "defaultSortColumn": "Manager Name",
+      "defaultSortDirection": 0,
+      "attributes": [
+        {
+          "schemaId": 53,
+          "attributeParameter": 52015,
+          "sortOrder": 1
+        },
+        {
+          "schemaId": 53,
+          "attributeParameter": 20006,
+          "sortOrder": 2
+        },
+        {
+          "schemaId": 53,
+          "attributeParameter": 20007,
+          "sortOrder": 3
+        },
+        {
+          "schemaId": 53,
+          "attributeParameter": 20410,
+          "sortOrder": 4
+        },
+        {
+          "schemaId": 53,
+          "attributeParameter": 20103,
+          "sortOrder": 5
+        },
+        {
+          "schemaId": 53,
+          "attributeParameter": 30344,
+          "sortOrder": 6
+        },
+        {
+          "schemaId": 53,
+          "attributeParameter": 30329,
+          "sortOrder": 3
+        },
+        {
+          "schemaId": 53,
+          "attributeParameter": 20109,
+          "sortOrder": 6
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Default EMS Queues Dir",
+      "objectType": 45,
+      "defaultSortColumn": "Queue Name",
+      "defaultSortDirection": 0,
+      "attributes": [
+        {
+          "schemaId": 48,
+          "attributeParameter": 53011,
+          "sortOrder": 1
+        },
+        {
+          "schemaId": 48,
+          "attributeParameter": 50095,
+          "sortOrder": 2
+        },
+        {
+          "schemaId": 48,
+          "attributeParameter": 50020,
+          "sortOrder": 3
+        },
+        {
+          "schemaId": 48,
+          "attributeParameter": 50003,
+          "sortOrder": 4
+        },
+        {
+          "schemaId": 48,
+          "attributeParameter": 50015,
+          "sortOrder": 5
+        },
+        {
+          "schemaId": 48,
+          "attributeParameter": 20109,
+          "sortOrder": 5
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Default EMS Bridge Info Dir",
+      "objectType": 56,
+      "defaultSortColumn": "Bridge Info name",
+      "defaultSortDirection": 0,
+      "attributes": [
+        {
+          "schemaId": 62,
+          "attributeParameter": 30161,
+          "sortOrder": 1
+        },
+        {
+          "schemaId": 62,
+          "attributeParameter": 30160,
+          "sortOrder": 2
+        },
+        {
+          "schemaId": 62,
+          "attributeParameter": 30162,
+          "sortOrder": 3
+        },
+        {
+          "schemaId": 62,
+          "attributeParameter": 30163,
+          "sortOrder": 4
+        },
+        {
+          "schemaId": 62,
+          "attributeParameter": 30164,
+          "sortOrder": 5
+        },
+        {
+          "schemaId": 62,
+          "attributeParameter": 30165,
+          "sortOrder": 6
+        },
+        {
+          "schemaId": 62,
+          "attributeParameter": 20109,
+          "sortOrder": 7
+        }
+      ]
+    }
+  ],
+  "attributeFilters": [],
+  "messageCriteria": [],
+  "externalViewlets": [],
+  "searchViewlets": [
+    {
+      "id": 1,
+      "name": "EMS Manager",
+      "connectionId": 1,
+      "searchData": {
+        "nodeName": "*",
+        "qmgrName": "*",
+        "objType": 33,
+        "objSubType": null,
+        "dataLimitOffset": 100,
+        "extraName": null,
+        "projectId": null,
+        "productType": 1,
+        "showEmptyQueues": true,
+        "showSystemObjects": true,
+        "activeAttrFiltering": true,
+        "viewletColor": null,
+        "showInactiveCh": true,
+        "flatColor": false,
+        "activeFindMsgs": true,
+        "attributeFilterId": null
+      },
+      "searchObjNames": [],
+      "schemaId": 53
+    },
+    {
+      "id": 2,
+      "name": "EMSQueue",
+      "connectionId": 1,
+      "searchData": {
+        "nodeName": "*",
+        "qmgrName": "*",
+        "objType": 50011,
+        "objSubType": 1,
+        "dataLimitOffset": 100,
+        "extraName": null,
+        "projectId": null,
+        "productType": 1,
+        "showEmptyQueues": true,
+        "showSystemObjects": true,
+        "activeAttrFiltering": true,
+        "viewletColor": null,
+        "showInactiveCh": true,
+        "flatColor": false,
+        "activeFindMsgs": true,
+        "attributeFilterId": null
+      },
+      "searchObjNames": [
+        "*"
+      ],
+      "schemaId": 48
+    },
+    {
+      "id": 3,
+      "name": "bridge",
+      "connectionId": 1,
+      "searchData": {
+        "nodeName": "*",
+        "qmgrName": "*",
+        "objType": 27,
+        "objSubType": null,
+        "dataLimitOffset": 100,
+        "extraName": null,
+        "projectId": null,
+        "productType": 1,
+        "showEmptyQueues": true,
+        "showSystemObjects": true,
+        "activeAttrFiltering": true,
+        "viewletColor": null,
+        "showInactiveCh": true,
+        "flatColor": false,
+        "activeFindMsgs": true,
+        "attributeFilterId": null
+      },
+      "searchObjNames": [
+        "*"
+      ],
+      "schemaId": 62
+    }
+  ],
+  "favoriteViewlets": [],
+  "dashboards": [
+    {
+      "id": 1,
+      "name": "EMS",
+      "tagsIds": [],
+      "viewletData": [
+        {
+          "viewletId": 1,
+          "viewletType": 723,
+          "pos": 1,
+          "visible": true,
+          "expanded": true,
+          "height": 400
+        },
+        {
+          "viewletId": 2,
+          "viewletType": 720,
+          "pos": 2,
+          "visible": true,
+          "expanded": true,
+          "height": 400
+        },
+        {
+          "viewletId": 3,
+          "viewletType": 718,
+          "pos": 3,
+          "visible": true,
+          "expanded": true,
+          "height": 400
+        }
+      ]
+    }
+  ],
+  "dashTags": []
+}

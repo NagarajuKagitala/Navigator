@@ -25,7 +25,7 @@
        
         <include name="Login"/>
         <include name="AddServiceViewlet"/> 
-        <include name="ShowObjectAttributesForService"/> 
+     <!--   <include name="ShowObjectAttributesForService"/> --> 
         <include name="CreateServiceFromPlusIcon"/>
         <include name="CopyAsFromCommands"/>
         <include name="RenameFromCommands"/>

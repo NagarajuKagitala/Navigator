@@ -1,0 +1,9 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!-- xslplane.1.xml -->
+<?xml-stylesheet type = "text/xsl"  href = "xslplane.1.xsl" ?>
+<plane>
+   <year> 2019 </year>
+   <make> Iphone </make>
+   <model> S8 </model>
+   <color> blue </color>
+</plane>

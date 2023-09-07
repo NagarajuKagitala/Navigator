@@ -1,0 +1,197 @@
+{
+  "version": "v10.3.0.11",
+  "wgsConnections": [
+    {
+      "connectionId": 1,
+      "connectionName": "Primary Connection",
+      "serversList": "127.0.0.1",
+      "port": 4040
+    }
+  ],
+  "schemas": [
+    {
+      "id": 22,
+      "name": "Default Local Queues Dir",
+      "objectType": 21,
+      "defaultSortColumn": "Queue Name",
+      "defaultSortDirection": 0,
+      "attributes": [
+        {
+          "schemaId": 22,
+          "attributeParameter": 3011,
+          "sortOrder": 1
+        },
+        {
+          "schemaId": 22,
+          "attributeParameter": 3,
+          "sortOrder": 2
+        },
+        {
+          "schemaId": 22,
+          "attributeParameter": 15,
+          "sortOrder": 3
+        },
+        {
+          "schemaId": 22,
+          "attributeParameter": 9,
+          "sortOrder": 4
+        },
+        {
+          "schemaId": 22,
+          "attributeParameter": 10,
+          "sortOrder": 5
+        },
+        {
+          "schemaId": 22,
+          "attributeParameter": 17,
+          "sortOrder": 6
+        },
+        {
+          "schemaId": 22,
+          "attributeParameter": 18,
+          "sortOrder": 7
+        },
+        {
+          "schemaId": 22,
+          "attributeParameter": 20109,
+          "sortOrder": 8
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Default Channels Dir",
+      "objectType": 25,
+      "defaultSortColumn": "Channel Name",
+      "defaultSortDirection": 0,
+      "attributes": [
+        {
+          "schemaId": 26,
+          "attributeParameter": 3512,
+          "sortOrder": 1
+        },
+        {
+          "schemaId": 26,
+          "attributeParameter": 1511,
+          "sortOrder": 2
+        },
+        {
+          "schemaId": 26,
+          "attributeParameter": 1527,
+          "sortOrder": 3
+        },
+        {
+          "schemaId": 26,
+          "attributeParameter": 1535,
+          "sortOrder": 5
+        },
+        {
+          "schemaId": 26,
+          "attributeParameter": 1536,
+          "sortOrder": 6
+        },
+        {
+          "schemaId": 26,
+          "attributeParameter": 1534,
+          "sortOrder": 7
+        },
+        {
+          "schemaId": 26,
+          "attributeParameter": 20109,
+          "sortOrder": 8
+        },
+        {
+          "schemaId": 26,
+          "attributeParameter": 3505,
+          "sortOrder": 4
+        }
+      ]
+    }
+  ],
+  "attributeFilters": [],
+  "messageCriteria": [],
+  "externalViewlets": [],
+  "searchViewlets": [
+    {
+      "id": 31,
+      "name": "Local Queues",
+      "connectionId": 1,
+      "searchData": {
+        "nodeName": "*",
+        "qmgrName": "*",
+        "objType": 11,
+        "objSubType": 1,
+        "dataLimitOffset": 100,
+        "extraName": null,
+        "projectId": null,
+        "productType": 0,
+        "showEmptyQueues": true,
+        "showSystemObjects": true,
+        "activeAttrFiltering": true,
+        "viewletColor": null,
+        "showInactiveCh": true,
+        "flatColor": false,
+        "activeFindMsgs": true,
+        "attributeFilterId": null
+      },
+      "searchObjNames": [
+        "*"
+      ],
+      "schemaId": 22
+    },
+    {
+      "id": 30,
+      "name": "Channels",
+      "connectionId": 1,
+      "searchData": {
+        "nodeName": "*",
+        "qmgrName": "*",
+        "objType": 6,
+        "objSubType": 5,
+        "dataLimitOffset": 100,
+        "extraName": null,
+        "projectId": null,
+        "productType": 0,
+        "showEmptyQueues": true,
+        "showSystemObjects": true,
+        "activeAttrFiltering": true,
+        "viewletColor": null,
+        "showInactiveCh": true,
+        "flatColor": false,
+        "activeFindMsgs": true,
+        "attributeFilterId": null
+      },
+      "searchObjNames": [
+        "*"
+      ],
+      "schemaId": 26
+    }
+  ],
+  "favoriteViewlets": [],
+  "dashboards": [
+    {
+      "id": 29,
+      "name": "ImportedDashboard",
+      "tagsIds": [],
+      "viewletData": [
+        {
+          "viewletId": 31,
+          "viewletType": 714,
+          "pos": 1,
+          "visible": true,
+          "expanded": true,
+          "height": 400
+        },
+        {
+          "viewletId": 30,
+          "viewletType": 704,
+          "pos": 1,
+          "visible": true,
+          "expanded": true,
+          "height": 400
+        }
+      ]
+    }
+  ],
+  "dashTags": []
+}

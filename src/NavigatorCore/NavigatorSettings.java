@@ -154,8 +154,12 @@ public class NavigatorSettings
 		driver.findElement(By.name("viewlet-name")).sendKeys(FavoriteViewletName);
 		Thread.sleep(LowSleep);
 		
+		//Deselect WGS 
+		driver.findElement(By.xpath("//span[2]/i")).click();
+		Thread.sleep(LowSleep);
+		
 		//select WGS
-		driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div/div[2]/div/ng-select/div/span")).click();
+		//driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div/div[2]/div/ng-select/div/span")).click();
 		Thread.sleep(LowSleep);
 		
 		WebElement drop1=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -403,12 +407,13 @@ public class NavigatorSettings
 		Thread.sleep(HighSleep);
 		
 		//Select Add to favorite option in queue
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		driver.findElement(By.linkText("Add to favorites...")).click();
 		Thread.sleep(LowSleep);
 		
-		//Select favorite viewlet
-		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();
+			
+		//Select favorite viewlet  
+		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div/span")).click();
 		Thread.sleep(MediumSleep); 
 		
 		WebElement drop=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -873,7 +878,7 @@ public class NavigatorSettings
 		//Select WGSSelection=new Select(driver.findElement(By.name("wgsKey")));
 		//WGSSelection.selectByVisibleText(WGSName);
 		
-		driver.findElement(By.xpath("//div[2]/div/div/div[2]/ng-select/div/span")).click();
+		driver.findElement(By.xpath("//app-mod-select-input-connection-list/ng-select/div/span")).click();
 		Thread.sleep(LowSleep);
 		
 		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -892,7 +897,7 @@ public class NavigatorSettings
 		Thread.sleep(LowSleep);
 		
 		//Select node value  
-		driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
+		driver.findElement(By.xpath("//ng-select/div/span[2]")).click();
 		Thread.sleep(LowSleep);
 		 try 
 			{
@@ -962,7 +967,7 @@ public class NavigatorSettings
 		//Select WGSSelection=new Select(driver.findElement(By.name("wgsKey")));
 		//WGSSelection.selectByVisibleText(WGSName);
 		
-		driver.findElement(By.xpath("//div[2]/div/div/div[2]/ng-select/div/span")).click();
+		driver.findElement(By.xpath("//app-mod-select-input-connection-list/ng-select/div/span")).click();
 		Thread.sleep(LowSleep);
 		
 		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -981,7 +986,7 @@ public class NavigatorSettings
 		Thread.sleep(4000);
 		
 		//Select node value
-		driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
+		driver.findElement(By.xpath("//ng-select/div/span[2]")).click();
 		Thread.sleep(LowSleep);
 		 try 
 			{

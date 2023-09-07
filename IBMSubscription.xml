@@ -35,7 +35,7 @@
         <include name="Login"/>
         <include name="AddSubscriptionViewlet"/> 
         <include name="ShowSubscriptionStatus"/>
-        <include name="ShowObjectAttributesForSubscription"/> 
+      <!--   <include name="ShowObjectAttributesForSubscription"/> -->
         <include name="CreateSubscriptionFromOptions"/>  
         <include name="CopyAsFromCommands"/>
         <include name="RenameFromCommands"/>

@@ -1,0 +1,56 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test Route Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="password" value="admin"/>
+    <parameter name="Dashboardname" value="RouteViewlet Verification"/>
+    <parameter name="wgs" value="1"/>
+    
+    <parameter name="ViewletName" value="New Route Viewlet"/>
+    <parameter name="WGSName" value="WGS10 - 1"/>
+    <parameter name="ViewletValue" value="6"/>
+    
+    <parameter name="schemaName" value="RouteSchema"/>
+    
+    <parameter name="DeleteRouteName" value="DeleteRoute"/>
+    <parameter name="ConnectionURLName" value="tcp://127.0.0.1:7222"/>
+        
+    <parameter name="FavoriteViewletName" value="Route Favorite viewlet"/>
+    <parameter name="Favwgs" value="1"/>
+    
+    <parameter name="WGSName" value="WGS10 - 1"/>
+    <parameter name="RouteNameFromIcon" value="Route-New"/>
+    <parameter name="ConnectionURLNameField" value="Test Connection"/>
+
+  
+     <classes>
+      <class name="EMS.RouteViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="AddRouteViewlet"/> 
+    <!--    <include name="ShowObjectAttributesForRoute"/>  -->
+        <include name="RouteStatus"/> 
+        <include name="DeleteCommand"/>   
+        <include name="Properties"/>
+        <include name="RouteEvents"/>  
+        <include name="AddToFavoriteViewlet"/>  
+         
+        <include name="CompareRoutes"/> 
+        <include name="CheckDifferencesForRoutes"/>  
+        <include name="MultipleProperties"/> 
+        <include name="AddToFavoriteForMultipleRoutes"/> 
+        <include name="AddRouteFromPlusIcon"/>    
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

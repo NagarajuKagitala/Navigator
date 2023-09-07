@@ -12,9 +12,14 @@
     <classes>
       <class name="NavigatorCore.ViewletFilterOptions">
         <methods>
+          <include name="ResultLimitFilter" invocation-numbers="0"/>
+          <include name="ViewletCheckboxClear" invocation-numbers="0"/>
           <include name="beforeTest"/>
+          <include name="AttributeFilter" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="EmptyCheckboxFilter" invocation-numbers="0"/>
+          <include name="SystemCheckboxFilter" invocation-numbers="0"/>
+          <include name="Logout" invocation-numbers="0"/>
         </methods>
       </class> <!-- NavigatorCore.ViewletFilterOptions -->
     </classes>

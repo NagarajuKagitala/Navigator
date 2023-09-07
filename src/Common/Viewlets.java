@@ -3,6 +3,7 @@ package Common;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -49,7 +50,7 @@ public class Viewlets
 		//Select WGSSelection=new Select(driver.findElement(By.name("wgsKey")));
 		//WGSSelection.selectByVisibleText(WGSName);
 		
-		driver.findElement(By.xpath("//div/div/div[2]/div/div/div[2]/ng-select/div/span")).click();
+		driver.findElement(By.xpath("//app-mod-select-input-connection-list/ng-select/div/span")).click();
 		Thread.sleep(3000);   
 		
 		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -141,7 +142,7 @@ public class Viewlets
 		//Select WGSSelection=new Select(driver.findElement(By.name("wgsKey")));
 		//WGSSelection.selectByVisibleText(WGSName);
 		
-		driver.findElement(By.xpath("//div/div/div[2]/div/div/div[2]/ng-select/div/span")).click();
+		driver.findElement(By.xpath("//app-mod-select-input-connection-list/ng-select/div/span")).click();
 		Thread.sleep(3000);   
 		
 		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -159,8 +160,17 @@ public class Viewlets
 		}
 		Thread.sleep(4000);
 		
-		//Select node value          
-		driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
+		try
+		{
+		   //Select node value 
+			driver.findElement(By.xpath("//ng-select/div/span[2]")).click();
+		}
+		catch(Exception n)
+		{
+			System.out.println("checkbox");
+			driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
+		}
+		
 		Thread.sleep(4000);
 		 try 
 			{
@@ -228,7 +238,7 @@ public class Viewlets
 		//Select WGSSelection=new Select(driver.findElement(By.name("wgsKey")));
 		//WGSSelection.selectByVisibleText(WGSName);
 		
-		driver.findElement(By.xpath("//div[2]/div/div/div[2]/ng-select/div/span")).click();
+		driver.findElement(By.xpath("//app-mod-select-input-connection-list/ng-select/div/span")).click();
 		Thread.sleep(3000);     
 		
 		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -247,7 +257,7 @@ public class Viewlets
 		Thread.sleep(2000);
 		
 		//Select node value
-		driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
+		driver.findElement(By.xpath("//div[2]/div/ng-select/div/span")).click();
 		Thread.sleep(4000);    
 		try 
 		{
@@ -317,7 +327,7 @@ public class Viewlets
 		//Select WGSSelection=new Select(driver.findElement(By.name("wgsKey")));
 		//WGSSelection.selectByVisibleText(WGSName);
 		
-		driver.findElement(By.xpath("//div[2]/div/div/div[2]/ng-select/div/span")).click();
+		driver.findElement(By.xpath("//app-mod-select-input-connection-list/ng-select/div/span")).click();
 		Thread.sleep(4000);   
 		
 		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -338,7 +348,7 @@ public class Viewlets
 		if(ViewletName.equalsIgnoreCase("Kafka Node Viewlet"))
 		{
 			//Select node value 
-			driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
+			driver.findElement(By.xpath("//div[2]/div/ng-select/div/span ")).click();
 			Thread.sleep(2000);
 			 try 
 				{
@@ -407,8 +417,8 @@ public class Viewlets
 		//WGSSelection.selectByVisibleText(EMS_WGSNAME);
 		
 		
-		driver.findElement(By.xpath("//div/div/div[2]/div/div/div[2]/ng-select/div/span")).click();
-		Thread.sleep(6000);   
+		driver.findElement(By.xpath("//app-mod-select-input-connection-list/ng-select/div/span")).click();
+		Thread.sleep(6000);         
 		
 		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
 		List<WebElement> divw=dropw.findElements(By.tagName("div")); 
@@ -426,8 +436,8 @@ public class Viewlets
 		Thread.sleep(9000);
 		
 		//Select node value
-		driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
-		Thread.sleep(6000);          
+		driver.findElement(By.xpath("//div[2]/div/ng-select/div/span ")).click();
+		Thread.sleep(6000);           
 		try 
 		{
 			List<WebElement> Manager=driver.findElement(By.className("ng-dropdown-panel-items")).findElements(By.className("ng-option"));
@@ -498,7 +508,7 @@ public class Viewlets
 		//Select WGSSelection=new Select(driver.findElement(By.name("wgsKey")));
 		//WGSSelection.selectByVisibleText(EMS_WGSNAME);
 		
-		driver.findElement(By.xpath("//div[2]/div/div/div[2]/ng-select/div/span")).click();
+		driver.findElement(By.xpath("//app-mod-select-input-connection-list/ng-select/div/span")).click();
 		Thread.sleep(3000);          
 		
 		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -518,7 +528,7 @@ public class Viewlets
 	
 		
 		//Select node value
-		driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
+		driver.findElement(By.xpath("//div[2]/div/ng-select/div/span ")).click();
 		Thread.sleep(4000);
 		try 
 		{

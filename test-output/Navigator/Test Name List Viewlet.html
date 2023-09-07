@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test Name List Viewlet</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>19/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 16 16:37:52 IST 2023</td>
+<td>Started on:</td><td>Wed Sep 06 12:18:15 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>967 seconds (967668 ms)</td>
+<tr><td>Total time:</td><td>1529 seconds (1529574 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,110 +75,26 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.Logout()'><b>Logout</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(.,&apos;Close&apos;)]&quot;}
-  (Session info: chrome=113.0.5672.93)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
-System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.29.97.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d1fdde547ab963e8b79956bac0be603d, findElement {using=xpath, value=//button[contains(.,&apos;Close&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58747/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d1fdde547ab963e8b79956bac0be603d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at Common.Dashboard.DeleteExistDashboard(Dashboard.java:65)
-	at Common.LogoutForAll.LogoutMethod(LogoutForAll.java:12)
-	at ApodGUI.NameListViewlet.Logout(NameListViewlet.java:1269)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1004728150", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1004728150'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(.,&apos;Close&apos;)]&quot;}
-  (Session info: chrome=113.0.5672.93)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
-System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.29.97.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d1fdde547ab963e8b79956bac0be603d, findElement {using=xpath, value=//button[contains(.,&apos;Close&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58747/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d1fdde547ab963e8b79956bac0be603d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at Common.Dashboard.DeleteExistDashboard(Dashboard.java:65)
-	at Common.LogoutForAll.LogoutMethod(LogoutForAll.java:12)
-	at ApodGUI.NameListViewlet.Logout(NameListViewlet.java:1269)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>11</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
-<tr>
-<td title='ApodGUI.NameListViewlet.ShowObjectAttributesForNameList()'><b>ShowObjectAttributesForNameList</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, NameListSchema, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-938872020" onClick='toggleBox("Output-938872020", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.CopyAsFromCommands()'><b>CopyAsFromCommands</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, .COPY, NAMELIST.FROM.OPTIONS, org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-1976788674" onClick='toggleBox("Output-1976788674", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-938872020" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-938872020">
-<br/>Failed to execute method: ShowObjectAttributesForNameList<br/><br/>
+<a href="#Output-1976788674" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1976788674">
+<br/>Failed to execute method: CopyAsFromCommands<br/><br/>
 <br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/ShowObjectAttributesForNameList.png" alt="""/" /><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/CopyAsFromCommands.png" alt="""/" /><br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Attributes\ failed&quot;}
-  (Session info: chrome=113.0.5672.93)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Name list failed to copy because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Name list failed to copy&apos; is not a valid XPath expression.
+  (Session info: chrome=116.0.5845.141)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
-System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.29.97.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.16.31.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d1fdde547ab963e8b79956bac0be603d, findElement {using=id, value=Attributes failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58747/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d1fdde547ab963e8b79956bac0be603d
+Command: [bfb561618689539de63e1be3e902cff2, findElement {using=xpath, value=Name list failed to copy}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64945}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64945/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bfb561618689539de63e1be3e902cff2
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -190,18 +106,19 @@ Session ID: d1fdde547ab963e8b79956bac0be603d
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at ApodGUI.NameListViewlet.ShowObjectAttributesForNameList(NameListViewlet.java:196)
+	at ApodGUI.NameListViewlet.CopyAsFromCommands(NameListViewlet.java:368)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace938872020", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace938872020'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Attributes\ failed&quot;}
-  (Session info: chrome=113.0.5672.93)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1976788674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1976788674'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression Name list failed to copy because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;Name list failed to copy&apos; is not a valid XPath expression.
+  (Session info: chrome=116.0.5845.141)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
-System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.29.97.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.16.31.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d1fdde547ab963e8b79956bac0be603d, findElement {using=id, value=Attributes failed}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58747/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d1fdde547ab963e8b79956bac0be603d
+Command: [bfb561618689539de63e1be3e902cff2, findElement {using=xpath, value=Name list failed to copy}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64945}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64945/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bfb561618689539de63e1be3e902cff2
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -217,7 +134,7 @@ Session ID: d1fdde547ab963e8b79956bac0be603d
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at ApodGUI.NameListViewlet.ShowObjectAttributesForNameList(NameListViewlet.java:196)
+	at ApodGUI.NameListViewlet.CopyAsFromCommands(NameListViewlet.java:368)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -247,8 +164,8 @@ Session ID: d1fdde547ab963e8b79956bac0be603d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>48</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>124</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -258,252 +175,282 @@ Session ID: d1fdde547ab963e8b79956bac0be603d
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.AddNameListViewlet()'><b>AddNameListViewlet</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: New NameList Viewlet, 8, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-156855528" onClick='toggleBox("Output-156855528", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.AddNameListViewlet()'><b>AddNameListViewlet</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: New NameList Viewlet, 8, org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-963165280" onClick='toggleBox("Output-963165280", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-156855528" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-156855528">
+<a href="#Output-963165280" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-963165280">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddNameListViewlet.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>38</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>53</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.AddToFavoriteForMultipleNameLists()'><b>AddToFavoriteForMultipleNameLists</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, NameList Favorite viewlet, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-1322732803" onClick='toggleBox("Output-1322732803", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.AddToFavoriteForMultipleNameLists()'><b>AddToFavoriteForMultipleNameLists</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, NameList Favorite viewlet, org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-728386983" onClick='toggleBox("Output-728386983", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1322732803" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1322732803">
+<a href="#Output-728386983" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-728386983">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteForMultipleNameLists.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>29</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>60</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.AddToFavoriteViewlet()'><b>AddToFavoriteViewlet</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, NameList Favorite viewlet, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-1013700132" onClick='toggleBox("Output-1013700132", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.AddToFavoriteViewlet()'><b>AddToFavoriteViewlet</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, NameList Favorite viewlet, org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-1114375302" onClick='toggleBox("Output-1114375302", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1013700132" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1013700132">
+<a href="#Output-1114375302" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1114375302">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddToFavoriteViewlet.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>51</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>118</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.CheckDifferencesForNameList()'><b>CheckDifferencesForNameList</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: org.testng.TestRunner@1a891add<br/>
-<a href="#Output-1285601713" onClick='toggleBox("Output-1285601713", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.CheckDifferencesForNameList()'><b>CheckDifferencesForNameList</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-1566390876" onClick='toggleBox("Output-1566390876", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1285601713" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1285601713">
+<a href="#Output-1566390876" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1566390876">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CheckDifferencesForNameList.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>21</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>23</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.CompareNameLists()'><b>CompareNameLists</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: org.testng.TestRunner@1a891add<br/>
-<a href="#Output-142273642" onClick='toggleBox("Output-142273642", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.CompareNameLists()'><b>CompareNameLists</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-614482519" onClick='toggleBox("Output-614482519", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-142273642" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-142273642">
+<a href="#Output-614482519" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-614482519">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CompareNameLists.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>25</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>26</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.CopyAsFromCommands()'><b>CopyAsFromCommands</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, .COPY, NAMELIST.FROM.OPTIONS, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-930641076" onClick='toggleBox("Output-930641076", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.CopyAsFromCommandsForMultiple()'><b>CopyAsFromCommandsForMultiple</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, .MULTIPLE.COPY, NAMELIST.FROM.ICON, org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-1078839705" onClick='toggleBox("Output-1078839705", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-930641076" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-930641076">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsFromCommands.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>48</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
-<tr>
-<td title='ApodGUI.NameListViewlet.CopyAsFromCommandsForMultiple()'><b>CopyAsFromCommandsForMultiple</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, .MULTIPLE.COPY, NAMELIST.FROM.ICON, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-1213257323" onClick='toggleBox("Output-1213257323", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1213257323" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1213257323">
+<a href="#Output-1078839705" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1078839705">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CopyAsFromCommandsForMultiple.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>62</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>125</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.CreateNameList()'><b>CreateNameList</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, NAMELIST.FROM.OPTIONS, Test create name list, NameList Name, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-1330415865" onClick='toggleBox("Output-1330415865", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.CreateNameList()'><b>CreateNameList</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, NAMELIST.FROM.OPTIONS, Test create name list, NameList Name, org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-1369541409" onClick='toggleBox("Output-1369541409", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1330415865" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1330415865">
+<a href="#Output-1369541409" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1369541409">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateNameList.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>54</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>97</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.CreateNameListFromPlusIcon()'><b>CreateNameListFromPlusIcon</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, NAMELIST.FROM.ICON, Adding from icon, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-212207240" onClick='toggleBox("Output-212207240", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.CreateNameListFromPlusIcon()'><b>CreateNameListFromPlusIcon</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, NAMELIST.FROM.ICON, Adding from icon, org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-474210166" onClick='toggleBox("Output-474210166", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-212207240" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-212207240">
+<a href="#Output-474210166" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-474210166">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/CreateNameListFromPlusIcon.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>129</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>223</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.DeleteFromCommands()'><b>DeleteFromCommands</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, NAMELIST.RENAME, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-1444477983" onClick='toggleBox("Output-1444477983", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.DeleteFromCommandsForMultiple()'><b>DeleteFromCommandsForMultiple</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, NAMELIST.MULTIPLE.RENAME, org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-1691272400" onClick='toggleBox("Output-1691272400", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1444477983" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1444477983">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteFromCommands.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>29</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
-<tr>
-<td title='ApodGUI.NameListViewlet.DeleteFromCommandsForMultiple()'><b>DeleteFromCommandsForMultiple</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, NAMELIST.MULTIPLE.RENAME, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-627937047" onClick='toggleBox("Output-627937047", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-627937047" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-627937047">
+<a href="#Output-1691272400" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1691272400">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/DeleteFromCommandsForMultiple.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>34</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>95</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 <tr>
 <td title='ApodGUI.NameListViewlet.Login()'><b>Login</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, NameListViewlet Verification<br/>
-<a href="#Output-81194567" onClick='toggleBox("Output-81194567", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-880908391" onClick='toggleBox("Output-880908391", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-81194567" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-81194567">
+<a href="#Output-880908391" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-880908391">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>40</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>126</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.MQSCSnapshot()'><b>MQSCSnapshot</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-1436136891" onClick='toggleBox("Output-1436136891", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.Logout()'><b>Logout</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification</td>
+<td></td>
+<td>26</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
+<tr>
+<td title='ApodGUI.NameListViewlet.MQSCSnapshot()'><b>MQSCSnapshot</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-875865328" onClick='toggleBox("Output-875865328", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1436136891" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1436136891">
+<a href="#Output-875865328" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-875865328">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/MQSCSnapshot.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>14</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>20</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.NameListEvents()'><b>NameListEvents</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-1663485420" onClick='toggleBox("Output-1663485420", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.NameListEvents()'><b>NameListEvents</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-1630903943" onClick='toggleBox("Output-1630903943", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1663485420" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1663485420">
+<a href="#Output-1630903943" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1630903943">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/NameListEvents.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
 <td>46</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.NameListMultipleProperties()'><b>NameListMultipleProperties</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, Multiple name list properties, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-1880872680" onClick='toggleBox("Output-1880872680", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.NameListMultipleProperties()'><b>NameListMultipleProperties</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, Multiple name list properties, org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-742199288" onClick='toggleBox("Output-742199288", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1880872680" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1880872680">
+<a href="#Output-742199288" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-742199288">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/NameListMultipleProperties.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>112</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>166</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.NameListProperties()'><b>NameListProperties</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-861339480" onClick='toggleBox("Output-861339480", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.NameListProperties()'><b>NameListProperties</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-506518405" onClick='toggleBox("Output-506518405", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-861339480" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-861339480">
+<a href="#Output-506518405" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-506518405">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/NameListProperties.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>21</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>30</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.RenameFromCommands()'><b>RenameFromCommands</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, NAMELIST.RENAME, NAMELIST.FROM.OPTIONS, .COPY, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-1618326377" onClick='toggleBox("Output-1618326377", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.RenameFromCommandsForMultiple()'><b>RenameFromCommandsForMultiple</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, NAMELIST.MULTIPLE.RENAME, .MULTIPLE.COPY, org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-868063939" onClick='toggleBox("Output-868063939", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1618326377" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1618326377">
-<br/><br/>
-<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameFromCommands.png" alt="""/" /><br/>
-</div>
-</td>
-<td></td>
-<td>55</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
-<tr>
-<td title='ApodGUI.NameListViewlet.RenameFromCommandsForMultiple()'><b>RenameFromCommandsForMultiple</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: NameListViewlet Verification, NAMELIST.MULTIPLE.RENAME, .MULTIPLE.COPY, org.testng.TestRunner@1a891add<br/>
-<a href="#Output-406488308" onClick='toggleBox("Output-406488308", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-406488308" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-406488308">
+<a href="#Output-868063939" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-868063939">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/RenameFromCommandsForMultiple.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>50</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>116</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 <tr>
-<td title='ApodGUI.NameListViewlet.SaveNamelistSnapshot()'><b>SaveNamelistSnapshot</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: org.testng.TestRunner@1a891add<br/>
-<a href="#Output-1513945124" onClick='toggleBox("Output-1513945124", this, "Show output", "Hide output");'>Show output</a>
+<td title='ApodGUI.NameListViewlet.SaveNamelistSnapshot()'><b>SaveNamelistSnapshot</b><br>Test class: ApodGUI.NameListViewlet<br>Parameters: org.testng.TestRunner@95bb2a2<br/>
+<a href="#Output-686327949" onClick='toggleBox("Output-686327949", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1513945124" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1513945124">
+<a href="#Output-686327949" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-686327949">
 <br/><br/>
 <img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/SaveNamelistSnapshot.png" alt="""/" /><br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
-<td>ApodGUI.NameListViewlet@1b11171f</td></tr>
+<td>15</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ApodGUI.NameListViewlet.DeleteFromCommands()'><b>DeleteFromCommands</b><br>Test class: ApodGUI.NameListViewlet</td>
+<td><div><pre>java.lang.Throwable: Method NameListViewlet.DeleteFromCommands(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:ApodGUI.NameListViewlet@37d4349f] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1865539378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1865539378'><pre>java.lang.Throwable: Method NameListViewlet.DeleteFromCommands(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:5, instance:ApodGUI.NameListViewlet@37d4349f] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
+<tr>
+<td title='ApodGUI.NameListViewlet.RenameFromCommands()'><b>RenameFromCommands</b><br>Test class: ApodGUI.NameListViewlet</td>
+<td><div><pre>java.lang.Throwable: Method NameListViewlet.RenameFromCommands(java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:4, instance:ApodGUI.NameListViewlet@37d4349f] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace33847681", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33847681'><pre>java.lang.Throwable: Method NameListViewlet.RenameFromCommands(java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:4, instance:ApodGUI.NameListViewlet@37d4349f] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>ApodGUI.NameListViewlet@37d4349f</td></tr>
 </table><p>
 </body>
 </html>

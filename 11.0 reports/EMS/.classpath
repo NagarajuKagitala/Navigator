@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/Jar files/libs/htmlunit-driver-3.61.0-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="D:/Jar files/libs/javax.mail-1.6.2.jar"/>
+	<classpathentry kind="lib" path="D:/Jar files/libs/json-simple-2.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jar files/libs/selenium-json-4.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jar files/libs/selenium-json-4.4.0-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Jar files/libs/selenium-server-4.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jar files/libs/testng-7.3.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

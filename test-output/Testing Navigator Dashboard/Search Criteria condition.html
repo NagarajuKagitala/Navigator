@@ -1,0 +1,219 @@
+<html>
+<head>
+<title>TestNG:  Search Criteria condition</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Search Criteria condition</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 20 15:24:42 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>489 seconds (489814 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='NavigatorCore.SearchCriteria.ActiveFilterInBrowseMessagePage()'><b>ActiveFilterInBrowseMessagePage</b><br>Test class: NavigatorCore.SearchCriteria<br>Parameters: Search Queues, Message Search criteria, org.testng.TestRunner@146dcfe6<br/>
+<a href="#Output-1907228381" onClick='toggleBox("Output-1907228381", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1907228381" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1907228381">
+<br/>Failed to execute method: ActiveFilterInBrowseMessagePage<br/><br/>
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsFailure/ActiveFilterInBrowseMessagePage.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.16.31.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [69f0659c4eb3a3e36357eb75ea5c6de2, sendKeysToElement {id=C2A4B693CF4D55AF93D08991F47F8865_element_268, value=[Ljava.lang.CharSequence;@35c4e864}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59347}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59347/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[[[ChromeDriver: chrome on WINDOWS (69f0659c4eb3a3e36357eb75ea5c6de2)] -&gt; class name: ng-dropdown-panel]] -&gt; class name: ng-dropdown-panel-items]] -&gt; tag name: div]
+Session ID: 69f0659c4eb3a3e36357eb75ea5c6de2
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+	at NavigatorCore.SearchCriteria.ActiveFilterInBrowseMessagePage(SearchCriteria.java:382)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1907228381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1907228381'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-K4AEKHO&apos;, ip: &apos;172.16.31.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [69f0659c4eb3a3e36357eb75ea5c6de2, sendKeysToElement {id=C2A4B693CF4D55AF93D08991F47F8865_element_268, value=[Ljava.lang.CharSequence;@35c4e864}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59347}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59347/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[[[ChromeDriver: chrome on WINDOWS (69f0659c4eb3a3e36357eb75ea5c6de2)] -&gt; class name: ng-dropdown-panel]] -&gt; class name: ng-dropdown-panel-items]] -&gt; tag name: div]
+Session ID: 69f0659c4eb3a3e36357eb75ea5c6de2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+	at NavigatorCore.SearchCriteria.ActiveFilterInBrowseMessagePage(SearchCriteria.java:382)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>58</td>
+<td>NavigatorCore.SearchCriteria@58d75e99</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='NavigatorCore.SearchCriteria.AddSearchCriteriaCondition()'><b>AddSearchCriteriaCondition</b><br>Test class: NavigatorCore.SearchCriteria<br>Parameters: Search Queues, Message Search criteria, org.testng.TestRunner@146dcfe6<br/>
+<a href="#Output-999211009" onClick='toggleBox("Output-999211009", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-999211009" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-999211009">
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/AddSearchCriteriaCondition.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>168</td>
+<td>NavigatorCore.SearchCriteria@58d75e99</td></tr>
+<tr>
+<td title='NavigatorCore.SearchCriteria.Login()'><b>Login</b><br>Test class: NavigatorCore.SearchCriteria<br>Parameters: webdriver.chrome.driver, Drivers/chromedriver.exe, Search Criteria Dashboard, 3, Queues Viewlest<br/>
+<a href="#Output-1702178880" onClick='toggleBox("Output-1702178880", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1702178880" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1702178880">
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>156</td>
+<td>NavigatorCore.SearchCriteria@58d75e99</td></tr>
+<tr>
+<td title='NavigatorCore.SearchCriteria.Logout()'><b>Logout</b><br>Test class: NavigatorCore.SearchCriteria<br>Parameters: Search Criteria Dashboard</td>
+<td></td>
+<td>26</td>
+<td>NavigatorCore.SearchCriteria@58d75e99</td></tr>
+<tr>
+<td title='NavigatorCore.SearchCriteria.PutAmessageIntoQueue()'><b>PutAmessageIntoQueue</b><br>Test class: NavigatorCore.SearchCriteria<br>Parameters: Search Criteria Dashboard, Message Search criteria<br/>
+<a href="#Output-1484397819" onClick='toggleBox("Output-1484397819", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1484397819" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1484397819">
+<br/><br/>
+<img src=" E:\Automation\Navigator/Screenshots/ScreenshotsSuccess/PutAmessageIntoQueue.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>73</td>
+<td>NavigatorCore.SearchCriteria@58d75e99</td></tr>
+</table><p>
+</body>
+</html>

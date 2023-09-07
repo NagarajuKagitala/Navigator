@@ -90,7 +90,7 @@
 				    <include name="EditWorkgroup" />   
 				    <include name="DeleteWorkgroup" />
 				    <include name="SearchFilter"/>    
-					<include name="ShowObjectAttributes"/>    
+			 <!--   <include name="ShowObjectAttributes"/>    -->
 					<include name="Logout" />
 				</methods>
 

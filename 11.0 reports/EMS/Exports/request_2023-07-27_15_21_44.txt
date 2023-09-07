@@ -1,0 +1,14 @@
+TIBCO Enterprise Message Service Administration Tool.
+Copyright 1997-2022 by TIBCO Software Inc.
+All rights reserved.
+
+Version 10.2.1 V1 2022-11-03
+
+Connected to: tcp://172.16.31.143:7222
+Command: create queue TEST.Q1
+Queue 'TEST.Q1' has been created
+Command: create queue TEST.Q2
+Queue 'TEST.Q2' has been created
+Warning: command script did not commit changes before exiting
+Trying to commit now...
+Configuration has been saved

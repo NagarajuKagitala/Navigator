@@ -16,7 +16,7 @@
     <classes>
       <class name="NavigatorCore.AddSchemaToTheViewlet">
         <methods>
-          <include name="MoveToTopButton" invocation-numbers="0"/>
+          <include name="Logout" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="beforeTest"/>
         </methods>

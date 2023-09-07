@@ -1,0 +1,54 @@
+TIBCO Enterprise Message Service Administration Tool.
+Copyright 1997-2022 by TIBCO Software Inc.
+All rights reserved.
+
+Version 10.2.1 V1 2022-11-03
+
+Connected to: tcp://172.16.31.143:7222
+Command: show queues
+                                                               All Msgs            Persistent Msgs  
+  Queue Name                         SNFGXIBCT  Pre  Rcvrs     Msgs    Size        Msgs    Size   
+  $sys.admin                         +-----+--    5*     0        0     0.0 Kb        0     0.0 Kb
+  $sys.lookup                        ------+--    5*     0        0     0.0 Kb        0     0.0 Kb
+  $sys.redelivery.delay              +--------    5*     0        0     0.0 Kb        0     0.0 Kb
+  $sys.undelivered                   +-----+--    5*     0        0     0.0 Kb        0     0.0 Kb
+* $TMP$.EMS-SERVER.4E5C64BFCD9D17.1  ---------    5      1        0     0.0 Kb        0     0.0 Kb
+* $TMP$.EMS-SERVER.4E5C64BFCD9D9.1   ---------    5      1        0     0.0 Kb        0     0.0 Kb
+* $TMP$.EMS-SERVER.4E5C64BFCD9DB.2   ---------    5      1        0     0.0 Kb        0     0.0 Kb
+  AAA                                ------+--    5*     0        4     1.3 Kb        4     1.3 Kb
+  AAQ                                ------+--    5*     0        1     0.1 Kb        1     0.1 Kb
+  AAQ1                               ---------    5      0        0     0.0 Kb        0     0.0 Kb
+  abcd44                             ---------    5*    65        0     0.0 Kb        0     0.0 Kb
+  CITIQ1                             +--+-----    5*     0        0     0.0 Kb        0     0.0 Kb
+  CITIQ2                             +--+-----    5*     0        0     0.0 Kb        0     0.0 Kb
+  CITIQ3                             +--+--+--    5*     0        0     0.0 Kb        0     0.0 Kb
+  CommandQueue1                      ---------    5*     0        0     0.0 Kb        0     0.0 Kb
+  consoleq1                          +--+-----    5*     0        0     0.0 Kb        0     0.0 Kb
+  consoleq2                          +--+-----    5*     0        0     0.0 Kb        0     0.0 Kb
+  consoleq3                          +--+-----    5*     0        0     0.0 Kb        0     0.0 Kb
+  consoleq4                          +--+-----    5*     0        0     0.0 Kb        0     0.0 Kb
+  consoleq5                          +--+-----    5*     0        0     0.0 Kb        0     0.0 Kb
+  ddd gnfgn                          ---------    5*     0        0     0.0 Kb        0     0.0 Kb
+  EMS.QUEUE                          ---------    5*     0        4     0.5 Kb        4     0.5 Kb
+  EMS.QUEUE.RENAME                   ---------    5      0        0     0.0 Kb        0     0.0 Kb
+  EMS_ABC                            ---------    5*     0        0     0.0 Kb        0     0.0 Kb
+  EMS_ABC.Queue1                     ---------    5      0        0     0.0 Kb        0     0.0 Kb
+  EMSQ                               ---------    5*   132        0     0.0 Kb        0     0.0 Kb
+  EMSQ1                              ---------    5*     0      508    54.5 Kb      508    54.5 Kb
+  EMSQ2                              ------+--    5*     0      100    10.4 Kb      100    10.4 Kb
+  EMSQ3                              ---------    5      0      100    10.4 Kb      100    10.4 Kb
+  EMSQ4                              ---------    5*     0     1499   163.0 Kb     1499   163.0 Kb
+  hello                              ---------    5*     0        0     0.0 Kb        0     0.0 Kb
+  NEW.Q1.TST                         ---------    5*     0        3     0.3 Kb        3     0.3 Kb
+  NEW.Q2.TST                         ---------    5*   122        0     0.0 Kb        0     0.0 Kb
+  NEW.Q3.TST                         ---------    5*     0        0     0.0 Kb        0     0.0 Kb
+  queue.sample                       ---------    5*     0        0     0.0 Kb        0     0.0 Kb
+  sample                             ---------    5*   259        0     0.0 Kb        0     0.0 Kb
+  TEST                               ------+--    5*     0        5     1.4 Kb        5     1.4 Kb
+  TEST.Q1                            ---------    5*     0        0     0.0 Kb        0     0.0 Kb
+  TEST.Q2                            ---------    5*     0        0     0.0 Kb        0     0.0 Kb
+  TEST JNDI                          ---------    5*     0        0     0.0 Kb        0     0.0 Kb
+  test1                              ---------    5*     0        0     0.0 Kb        0     0.0 Kb
+  TEST123                            ---------    5*     0        0     0.0 Kb        0     0.0 Kb
+  test3                              ---------    5*     0        0     0.0 Kb        0     0.0 Kb
+  testEMS                            ---------    5*     0        0     0.0 Kb        0     0.0 Kb

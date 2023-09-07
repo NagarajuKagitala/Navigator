@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Testing Navigator Dashboard]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Add Dashboard reports(failed)">
+  <test thread-count="5" name="Search Criteria condition(failed)">
     <parameter name="ViewletName" value="Queues Viewlest"/>
     <parameter name="Dashboardname" value="Search Criteria Dashboard"/>
     <parameter name="SearchCriteriaData" value="Message Search criteria"/>
@@ -19,5 +19,5 @@
         </methods>
       </class> <!-- NavigatorCore.SearchCriteria -->
     </classes>
-  </test> <!-- Add Dashboard reports(failed) -->
+  </test> <!-- Search Criteria condition(failed) -->
 </suite> <!-- Failed suite [Testing Navigator Dashboard] -->

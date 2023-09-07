@@ -39,7 +39,7 @@
         <include name="Login"/>
         <include name="AddProcessViewlet"/>
         <include name="CreateProcessFromPlusIcon"/>   
-        <include name="ShowObjectAttributesForProcess"/> 
+       <!-- <include name="ShowObjectAttributesForProcess"/> -->
         <include name="CopyAsFromCommands"/>
         <include name="RenameFromCommands"/>
         <include name="DeleteFromCommands"/>

@@ -22,7 +22,7 @@
     <parameter name="Favwgs" value="1"/>
     
     <parameter name="DurableName" value="EMS.Add.Selenium"/>
-    <parameter name="SelectTopicName" value="EMS.Topic1"/>
+    <parameter name="SelectTopicName" value="EMS.Topic"/>
 
   
      <classes>
@@ -33,7 +33,7 @@
         <include name="Login"/>
         <include name="AddDurableViewlet"/>
         <include name="AddDurableFromPlusIcon"/> 
-        <include name="ShowObjectAttributesForDurable"/> 
+      <!--   <include name="ShowObjectAttributesForDurable"/> -->
         <include name="DeleteCommand"/>  
         <include name="Purge"/> 
         <include name="Properties"/>

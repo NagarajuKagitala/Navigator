@@ -187,7 +187,7 @@ public class NodeViewlet {
 			che.Deselectcheckbox(Dashboardname,driver);
 
 			// Select Show Topology option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			driver.findElement(By.linkText("Show Topology")).click();
 			Thread.sleep(MediumSleep);
 			try
@@ -255,7 +255,7 @@ public class NodeViewlet {
 			che.Deselectcheckbox(Dashboardname,driver);
 			
 			// Select Manage option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			driver.findElement(By.linkText("Manage")).click();
 			Thread.sleep(MediumSleep);
 
@@ -280,7 +280,7 @@ public class NodeViewlet {
 			che1.Deselectcheckbox(Dashboardname,driver);
 
 			// Select UnManage option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			driver.findElement(By.linkText("Manage")).click();
 			Thread.sleep(MediumSleep);
 
@@ -319,7 +319,7 @@ public class NodeViewlet {
 			che.Deselectcheckbox(Dashboardname,driver);
 			
 			// Select Incremental option from Discover now
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Actions MousehoverIncremental = new Actions(driver);
 			MousehoverIncremental.moveToElement(driver.findElement(By.linkText("Discover now"))).perform();
 			Thread.sleep(LowSleep);
@@ -331,7 +331,7 @@ public class NodeViewlet {
 			che1.Deselectcheckbox(Dashboardname,driver);
 			
 			// Select Full option from Discover now
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Actions MousehoverFull = new Actions(driver);
 			MousehoverFull.moveToElement(driver.findElement(By.linkText("Discover now"))).perform();
 			Thread.sleep(LowSleep);
@@ -358,7 +358,7 @@ public class NodeViewlet {
 		che.Deselectcheckbox(Dashboardname,driver);
 				
 		// Select Manage
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		driver.findElement(By.linkText("Manage")).click();
 		Thread.sleep(MediumSleep);
 		try {
@@ -367,7 +367,7 @@ public class NodeViewlet {
 			che1.Deselectcheckbox(Dashboardname,driver);
 			
 			// Properties option selection
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			driver.findElement(By.linkText("Properties...")).click();
 			Thread.sleep(HighSleep);
 
@@ -400,7 +400,7 @@ public class NodeViewlet {
 			che2.Deselectcheckbox(Dashboardname,driver);
 			
 			// Select Manage
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			driver.findElement(By.linkText("Manage")).click();
 			Thread.sleep(MediumSleep);
 			driver.findElement(By.cssSelector(".btn-danger")).click();
@@ -413,7 +413,7 @@ public class NodeViewlet {
 		che3.Deselectcheckbox(Dashboardname,driver);
 
 		// Select Manage
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		driver.findElement(By.linkText("Manage")).click();
 		Thread.sleep(MediumSleep);
 
@@ -434,7 +434,7 @@ public class NodeViewlet {
 		driver.findElement(By.linkText("Edit viewlet")).click();
 		Thread.sleep(LowSleep);
 		
-		WebElement els=driver.findElement(By.className("ng-select-taggable")).findElement(By.className("ng-select-container"));
+		WebElement els=driver.findElement(By.className("ng-select-clearable")).findElement(By.className("ng-select-container"));
 		List<WebElement> tag=els.findElements(By.tagName("span"));
 		System.out.println("Size is: " +tag.size());
 		
@@ -478,7 +478,7 @@ public class NodeViewlet {
 		
 		//Select Node type
 		Select dd=new Select(driver.findElement(By.xpath("//select")));
-		dd.selectByVisibleText("M6-WMQ Agent-managed MQ Node");
+		dd.selectByVisibleText("IBM MQ Agent");
 		Thread.sleep(LowSleep);
 
 		// Submit
@@ -496,11 +496,11 @@ public class NodeViewlet {
 
 		// Refresh the viewlet
 		driver.findElement(By.xpath("//div[2]/div/div/div/div[2]/div/div/i")).click();
-		Thread.sleep(MediumSleep);
+		Thread.sleep(MediumSleep);  
 
 		// Store the Viewlet data into string
 		String NodeViewletdata = driver.findElement(By.xpath("//datatable-body")).getText();
-		System.out.println("Node data is: " +NodeViewletdata);
+		System.out.println("End Node data is : " +NodeViewletdata);
 
 		// Verification
 		if (NodeViewletdata.contains(NodeNameFromIcon)) {
@@ -803,7 +803,7 @@ public class NodeViewlet {
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys(NodeNameFromIcon);
 		Thread.sleep(LowSleep);
 		
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		String Options=driver.findElement(By.id("dropdown-block")).getText();
 		System.out.println("Options are: " +Options);
 		
@@ -832,7 +832,7 @@ public class NodeViewlet {
 			Thread.sleep(LowSleep);
 			
 			// Delete the Node
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			driver.findElement(By.linkText("Delete")).click();
 			Thread.sleep(LowSleep);
 			driver.findElement(By.id("accept-true")).click();
@@ -1018,7 +1018,7 @@ public class NodeViewlet {
 		Thread.sleep(MediumSleep);
 			
 		// Select Create Queue manager option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		driver.findElement(By.linkText("Create Queue Manager")).click();
 		Thread.sleep(LowSleep);
 

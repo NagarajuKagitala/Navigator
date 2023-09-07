@@ -218,7 +218,7 @@ public class QueuesInsideBrowseMessages
 		for(int m=1; m<=3; m++)
 		{
 			//Select the put new message option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper["+m+"]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper["+ m +"]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Actions MessagesMousehour=new Actions(driver);
 			MessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
 			driver.findElement(By.linkText("Put New Message")).click();
@@ -261,7 +261,7 @@ public class QueuesInsideBrowseMessages
 		Thread.sleep(MediumSleep);
 		
 		//Select Browse Message option
-		WebElement Queuecheckbox=driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input"));
+		WebElement Queuecheckbox=driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input"));
 		Queuecheckbox.click();
 		driver.findElement(By.linkText("Browse messages")).click();
 		Thread.sleep(LowSleep);
@@ -592,9 +592,13 @@ public class QueuesInsideBrowseMessages
 		driver.findElement(By.xpath("//input[@name='name']")).click();
 		Thread.sleep(LowSleep);
 		
-		//Edit Icon
-		driver.findElement(By.xpath("//img[@title='Load from file']")).click();
+		//Click Icon        
+		driver.findElement(By.xpath("//img[@title='Load from']")).click();
 		Thread.sleep(LowSleep);
+		
+		//Select option
+		driver.findElement(By.xpath("//button[contains(.,'Load from file')]")).click();
+		Thread.sleep(MediumSleep);
 		
 		driver.findElement(By.id("accept-true")).click();
 		Thread.sleep(MediumSleep);
@@ -659,7 +663,7 @@ public class QueuesInsideBrowseMessages
 		Thread.sleep(LowSleep);
 				
 		//Export Icon (MMF Export)
-		driver.findElement(By.xpath("//div[10]/button")).click();
+		driver.findElement(By.xpath("//div[10]/button/img")).click();
 		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Export in MMF')]")).click();
 		Thread.sleep(LowSleep);
@@ -675,7 +679,7 @@ public class QueuesInsideBrowseMessages
 		Thread.sleep(LowSleep);
 		
 		//Export Icon (Text Export)
-		driver.findElement(By.xpath("//div[10]/button")).click();
+		driver.findElement(By.xpath("//div[10]/button/img")).click();
 		Thread.sleep(LowSleep);
 		driver.findElement(By.xpath("//button[contains(.,'Export in text')]")).click();
 		Thread.sleep(LowSleep);

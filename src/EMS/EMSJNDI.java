@@ -28,7 +28,7 @@ import org.testng.annotations.Test;
 import Common.Dashboard;
 import Common.LogoutForAll;
 import Common.Viewlets;
-import io.opentelemetry.sdk.metrics.View;
+
 import testrail.Settings;
 import testrail.TestClass;
 import testrail.TestRail;
@@ -172,7 +172,7 @@ public class EMSJNDI
 		Thread.sleep(3000);
 		
 		//for selecting WGS dropdown
-		driver.findElement(By.xpath("//app-mod-select-object-path-for-create/div/div/ng-select/div/span")).click();
+		/*driver.findElement(By.xpath("//app-mod-select-object-path-for-create/div/div/ng-select/div/span")).click();
 		Thread.sleep(3000);
 		
 		WebElement a=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -189,7 +189,7 @@ public class EMSJNDI
 				break;
 			}
 			
-		}
+		}*/
 		//for selecting EMS Server dropdown
 		driver.findElement(By.xpath("//app-mod-select-object-path-for-create/div/div[2]/ng-select/div/span")).click();
 		Thread.sleep(3000);
@@ -278,7 +278,7 @@ public class EMSJNDI
 		Thread.sleep(3000);
 		
 		//for checking checkbox
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Thread.sleep(3000);
 		//click on properties
 		driver.findElement(By.linkText("Properties...")).click();
@@ -326,7 +326,7 @@ public class EMSJNDI
 		System.out.println("jndi name is: " +JNDIname);
 		
 		//for checking checkbox
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//ul[2]/li")).click();
 		Thread.sleep(2000);
@@ -336,8 +336,12 @@ public class EMSJNDI
 		Thread.sleep(3000);
 		driver.findElement(By.name("viewlet-name")).sendKeys(favviewletname);
 		Thread.sleep(3000);
+		
+		//Deselect WGS  
+		driver.findElement(By.xpath("//span[2]/i")).click();  
+		Thread.sleep(LowSleep);
 		//for wgs selection
-		driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div/div[2]/div/ng-select/div/span")).click();
+		//driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div/div[2]/div/ng-select/div/span")).click();
 		Thread.sleep(3000);
 		
 		WebElement a=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -360,7 +364,7 @@ public class EMSJNDI
 		Thread.sleep(3000);
 		
 		//Select the created fav
-		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();
+		driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div/span")).click();
 		Thread.sleep(3000); 
 		
 		WebElement drop=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -415,7 +419,7 @@ public class EMSJNDI
 		Thread.sleep(3000);
 		
 		//for checking checkbox
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Thread.sleep(3000);
 		
 		//for mouse actions

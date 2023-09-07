@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test JNDI Viewlet">
+ 
+    
+   <parameter name="sDriver" value="webdriver.chrome.driver"/>
+   <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+   <parameter name="dashboardname" value="JNDI"/>
+   <parameter name="ViewletName" value="JNDI Viewlet"/>
+   <parameter name="ViewletValue" value="13"/>
+   <parameter name="favviewletname" value="fav viewlet"/>
+   <parameter name="JNDIname" value="JNDIABC"/>
+      
+
+  
+     <classes>
+       <class name="EMS.EMSJNDI">
+       
+       <methods>
+        <include name="Login"/>
+        <include name="CreateViewlet"/>
+        <include name="CreateJNDIplusicon"/>
+        <include name="Properties"/>
+        <include name="AddtoFavViewlet"/>
+        <include name="DeleteEMSJNDI"/>
+        <include name="Logout"/>
+        
+       
+       
+    
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

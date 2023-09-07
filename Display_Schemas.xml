@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Add a Schema">
+ <test name="Add Schema Condition">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  <parameter name="viewletname" value="Manager"/>
+  <parameter name="nodename" value="IBM MQ"/>
+  <parameter name="schemaname" value="automation schema"/>
+  <parameter name="ownername" value="rcdn"/> 
+     
+     
+     <classes>
+      <class name="NavigatorCore.Display_Schemas">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="CreateSchema"/>
+        <include name="Changeowner"/>
+        <include name="Logout"/>
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>

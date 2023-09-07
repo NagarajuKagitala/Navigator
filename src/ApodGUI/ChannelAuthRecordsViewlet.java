@@ -165,58 +165,128 @@ public class ChannelAuthRecordsViewlet
     }
 	 
 	 @TestRail(testCaseId=532)
-	 @Parameters({"Dashboardname", "ChannelAuthNameFromOptions", "UserList", "ChannelAuthNameOptions"})
+	 @Parameters({"Dashboardname", "ChannelAuthNameFromOptions", "BlockUser", "ChannelAuthNameOptions", "BlockAddress", "SSLPeer", "Addressmap", "UserMap", "QueueManager"})
 	 @Test(priority=2)
-		public void CreateChannelAuthRecordFromOptions(String Dashboardname, String ChannelAuthNameFromOptions, String UserList, String ChannelAuthNameOptions, ITestContext context) throws InterruptedException
+		public void CreateChannelAuthRecordFromOptions(String Dashboardname, String ChannelAuthNameFromOptions, String BlockUser, String ChannelAuthNameOptions, String BlockAddress, String SSLPeer, String Addressmap, String UserMap, String QueueManager, ITestContext context) throws InterruptedException
 		{
 		    //Clearing selection of object
 			ClearSelectionofCheckbox che=new ClearSelectionofCheckbox();
 			che.Deselectcheckbox(Dashboardname, driver);
 			
-			try
-			{
-			//Select create process option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-			driver.findElement(By.linkText("Create ChAuthRec")).click();
-			Thread.sleep(MediumSleep);
 			
+			String Authtype=driver.findElement(By.xpath("//datatable-body-cell[16]/div/span")).getText();
+			System.out.println("Channel auth type is: " +Authtype);
 			
-			//Give the process name
-			try
+			if(Authtype.equalsIgnoreCase("Block User"))
 			{
-			driver.findElement(By.id("name")).clear();
-		    driver.findElement(By.id("name")).sendKeys(ChannelAuthNameFromOptions);
-			Thread.sleep(LowSleep);
-			}
-			catch(Exception E1)
-			{
-				System.out.println("dropdown selection executed");
-				driver.findElement(By.xpath("//app-ng-select-input/div/div/ng-select/div/span")).click();
+				//Select create process option
+				driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
+				driver.findElement(By.linkText("Create ChAuthRec")).click();
+				Thread.sleep(MediumSleep);
+				
+				//Object selection
+				this.ObjectSelection(ChannelAuthNameFromOptions, ChannelAuthNameOptions);
+				
+				//Go to Block tab
+				driver.findElement(By.linkText("Block")).click();
 				Thread.sleep(LowSleep);
 				
-				WebElement a=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
-				List<WebElement>b=a.findElements(By.tagName("div"));
-				System.out.println("number of divs are"+b.size());
+				//Give the User list name
+				driver.findElement(By.id("userIdList")).sendKeys(BlockUser);	
+				Thread.sleep(LowSleep);
 				
-				for(WebElement c:b)
-				{
-					//System.out.println("Channel names: " +c.getText());
-					if(c.getText().equals(ChannelAuthNameOptions))
-					{
-						c.click();
-						Thread.sleep(6000);
-						break;
-					}
-				}
+			}
+			else if(Authtype.equalsIgnoreCase("Block Address"))
+			{
+				//Select create process option
+				driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
+				driver.findElement(By.linkText("Create ChAuthRec")).click();
+				Thread.sleep(MediumSleep);
+								
+				//Go to Block tab
+				driver.findElement(By.linkText("Block")).click();
+				Thread.sleep(LowSleep);
+				
+				//Give the User list name
+				driver.findElement(By.id("connectionNameList")).sendKeys(BlockAddress);	
+				Thread.sleep(LowSleep);
 			}
 			
-			//Go to Block tab
-			driver.findElement(By.linkText("Block")).click();
-			Thread.sleep(LowSleep);
+			else if(Authtype.equalsIgnoreCase("SSL Peer Map"))
+			{
+				//Select create process option
+				driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
+				driver.findElement(By.linkText("Create ChAuthRec")).click();
+				Thread.sleep(MediumSleep);
+				
+				//Object selection
+				this.ObjectSelection(ChannelAuthNameFromOptions, ChannelAuthNameOptions);
+				
+				//Go to Block tab
+				driver.findElement(By.linkText("SSL Peer")).click();
+				Thread.sleep(LowSleep);
+				
+				//Give the User list name
+				driver.findElement(By.id("sslPeerName")).sendKeys(SSLPeer);	
+				Thread.sleep(LowSleep);
+				
+			}
 			
-			//Give the User list name
-			driver.findElement(By.id("userIdList")).sendKeys(UserList);	
-			Thread.sleep(LowSleep);
+			else if(Authtype.equalsIgnoreCase("Address Map"))
+			{
+				//Select create process option
+				driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
+				driver.findElement(By.linkText("Create ChAuthRec")).click();
+				Thread.sleep(MediumSleep);
+				
+				//Object selection
+				this.ObjectSelection(ChannelAuthNameFromOptions, ChannelAuthNameOptions);
+				
+				//Go to Block tab
+				driver.findElement(By.linkText("Address")).click();
+				Thread.sleep(LowSleep);
+				
+				//Give the User list name
+				driver.findElement(By.id("connectionName")).sendKeys(Addressmap);	
+				Thread.sleep(LowSleep);
+			}
+			
+			else if(Authtype.equalsIgnoreCase("User Map"))
+			{
+				//Select create process option
+				driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
+				driver.findElement(By.linkText("Create ChAuthRec")).click();
+				Thread.sleep(MediumSleep);
+				
+				//Object selection
+				this.ObjectSelection(ChannelAuthNameFromOptions, ChannelAuthNameOptions);
+				
+				//Go to Block tab
+				driver.findElement(By.linkText("ClientUser")).click();
+				Thread.sleep(LowSleep);
+				
+				//Give the User list name
+				driver.findElement(By.id("clientUserId")).sendKeys(UserMap);	
+				Thread.sleep(LowSleep);
+			}
+			else
+			{
+				//Select create process option
+				driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
+				driver.findElement(By.linkText("Create ChAuthRec")).click();
+				Thread.sleep(MediumSleep);
+				
+				//Object selection
+				this.ObjectSelection(ChannelAuthNameFromOptions, ChannelAuthNameOptions);
+				
+				//Go to Block tab
+				driver.findElement(By.linkText("Queue Manager")).click();
+				Thread.sleep(LowSleep);
+				
+				//Give the User list name
+				driver.findElement(By.id("remoteQmgrName")).sendKeys(QueueManager);	
+				Thread.sleep(LowSleep);
+			}
 			
 			//Click on Submit the ChannelAuth
 			driver.findElement(By.cssSelector(".btn-primary")).click();
@@ -262,17 +332,7 @@ public class ChannelAuthRecordsViewlet
 				//driver.findElement(By.cssSelector(".btn-danger")).click();
 				driver.findElement(By.xpath("Channel auth record creation failed")).click();
 			}
-			}
 			
-			catch (Exception e)
-			{
-				//Click on Close button
-				System.out.println("Unable to create the Channel auth record from options");
-				context.setAttribute("Status",5);
-				context.setAttribute("Comment", "Channel auth record is added");
-				driver.findElement(By.xpath("Channel auth record creation failed")).click();
-				
-			}
 		}
 	 
 	 
@@ -293,7 +353,7 @@ public class ChannelAuthRecordsViewlet
 	    	Thread.sleep(LowSleep);
 	    	
 			//Select Delete From commands
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 	    	Actions Mousehoverdelete=new Actions(driver);
 	    	Mousehoverdelete.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
 	    	driver.findElement(By.linkText("Delete")).click();
@@ -330,7 +390,7 @@ public class ChannelAuthRecordsViewlet
 		    	Thread.sleep(LowSleep);
 		    	
 				//Select Delete From commands
-				driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+				driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		    	Actions Mousehoverdelete=new Actions(driver);
 		    	Mousehoverdelete.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
 		    	driver.findElement(By.linkText("Delete")).click();
@@ -394,7 +454,7 @@ public class ChannelAuthRecordsViewlet
 			System.out.println("Object name is: " +ChannelAuthname);
 			
 			//Select MQSCSnapshot option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 	    	Actions Mousehovercopy=new Actions(driver);
 	    	Mousehovercopy.moveToElement(driver.findElement(By.linkText("MQSC"))).perform();
 	    	driver.findElement(By.linkText("Snapshot...")).click();
@@ -466,7 +526,7 @@ public class ChannelAuthRecordsViewlet
 	    	}
 	    	
 			//Select Properties option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			driver.findElement(By.linkText("Properties...")).click();
 			Thread.sleep(MediumSleep);
 			
@@ -539,8 +599,10 @@ public class ChannelAuthRecordsViewlet
 			Thread.sleep(LowSleep);
 			
 			//Select WGS dropdown
-			driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div/div[2]/div/ng-select/div/span")).click();
+			driver.findElement(By.xpath("//span[2]/i")).click();
 			Thread.sleep(LowSleep);
+			//driver.findElement(By.xpath("//app-modal-add-viewlet-favorite/div/div/div[2]/div/ng-select/div/span")).click();
+			//Thread.sleep(LowSleep);
 			
 			WebElement drop1=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
 			List<WebElement> div1=drop1.findElements(By.tagName("div"));
@@ -566,7 +628,7 @@ public class ChannelAuthRecordsViewlet
 			//driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 			//driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Thread.sleep(MediumSleep);
 			WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
 			JavascriptExecutor addfav = (JavascriptExecutor)driver;
@@ -574,7 +636,7 @@ public class ChannelAuthRecordsViewlet
 			Thread.sleep(LowSleep);
 			
 			//Select the favorite viewlet name
-			driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();
+			driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div/span")).click();
 			Thread.sleep(LowSleep); 
 			
 			WebElement drop=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -641,7 +703,7 @@ public class ChannelAuthRecordsViewlet
 			 * WGS.selectByVisibleText(WGSName); Thread.sleep(3000);
 			 */
 			
-			driver.findElement(By.xpath("//app-mod-select-object-path-for-create/div/div/ng-select/div/span")).click();
+			/*driver.findElement(By.xpath("//app-mod-select-object-path-for-create/div/div/ng-select/div/span")).click();
 			Thread.sleep(LowSleep);
 			try 
 			{
@@ -661,7 +723,7 @@ public class ChannelAuthRecordsViewlet
 			{
 				ex.printStackTrace();
 			}
-			Thread.sleep(2000);
+			Thread.sleep(2000);*/
 			
 			/*
 			 * //Select Node
@@ -677,7 +739,7 @@ public class ChannelAuthRecordsViewlet
 			
 			//Select Manager
 			driver.findElement(By.xpath("//app-mod-select-object-path-for-create/div/div[2]/ng-select/div/span")).click();
-			Thread.sleep(LowSleep);
+			Thread.sleep(LowSleep);     
 	        try 
 			{
 	        	WebElement ChannelAuthManager=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -836,9 +898,9 @@ public class ChannelAuthRecordsViewlet
 	    	Thread.sleep(LowSleep);
 	    	
 	    	//Select the multiple processes and choose Add to favorite viewlet option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
-			Thread.sleep(LowSleep);
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
+			Thread.sleep(LowSleep);  
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Actions Mousehoverdelete=new Actions(driver);
 	    	Mousehoverdelete.moveToElement(driver.findElement(By.linkText("Commands"))).perform();
 	    	driver.findElement(By.linkText("Delete")).click();
@@ -888,9 +950,9 @@ public class ChannelAuthRecordsViewlet
 			che.Deselectcheckbox(Dashboardname,driver);
 			
 			//Select the multiple processes and choose Add to favorite viewlet option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Thread.sleep(LowSleep);
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			driver.findElement(By.linkText("Properties...")).click();
 			Thread.sleep(LowSleep);
 			
@@ -908,7 +970,7 @@ public class ChannelAuthRecordsViewlet
 			che1.Deselectcheckbox(Dashboardname,driver);
 			
 			//Open the properties for First process
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Thread.sleep(LowSleep);
 			driver.findElement(By.linkText("Properties...")).click();
 			Thread.sleep(LowSleep);
@@ -925,7 +987,7 @@ public class ChannelAuthRecordsViewlet
 			che2.Deselectcheckbox(Dashboardname,driver);
 			
 			//Open the properties for First process
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Thread.sleep(LowSleep);
 			driver.findElement(By.linkText("Properties...")).click();
 			Thread.sleep(LowSleep);
@@ -970,16 +1032,16 @@ public class ChannelAuthRecordsViewlet
 			System.out.println(ChannelAuthRecordName3);                
 			
 			//Select the multiple processes and choose Add to favorite viewlet option
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[2]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			Thread.sleep(LowSleep);
-			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+			driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[3]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 			WebElement fav=driver.findElement(By.linkText("Add to favorites..."));
 			JavascriptExecutor addfav = (JavascriptExecutor)driver;
 			addfav.executeScript("arguments[0].click();", fav);
 			Thread.sleep(LowSleep);
 			
 			//Select the favorite viewlet name
-			driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div")).click();
+			driver.findElement(By.xpath("//app-mod-add-to-favorite-viewlet/div/div/ng-select/div/span")).click();
 			Thread.sleep(LowSleep); 
 			
 			WebElement drop=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
@@ -1053,6 +1115,37 @@ public class ChannelAuthRecordsViewlet
 			LogoutForAll lo=new LogoutForAll();
 			lo.LogoutMethod(driver, Dashboardname);
 		}
+	 
+	 public void ObjectSelection(String ChannelAuthNameFromOptions, String ChannelAuthNameOptions) throws InterruptedException
+	 {                                         
+		 try
+			{
+			driver.findElement(By.id("name")).clear();
+		    driver.findElement(By.id("name")).sendKeys(ChannelAuthNameFromOptions);
+			Thread.sleep(LowSleep);
+			}
+			catch(Exception E1)
+			{
+				driver.findElement(By.xpath("//app-ng-select-input/div/div/ng-select/div/span")).click();
+				Thread.sleep(LowSleep);
+				
+				WebElement a=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
+				List<WebElement>b=a.findElements(By.tagName("div"));
+				System.out.println("number of divs are"+b.size());
+				
+				for(WebElement c:b)
+				{
+					//System.out.println("Channel names: " +c.getText());
+					if(c.getText().equals(ChannelAuthNameOptions))
+					{
+						c.click();
+						Thread.sleep(6000);
+						break;
+					}
+				}
+			
+			}
+	 }
 	 
 	 private static boolean checkprogress() throws InterruptedException {
 			try {

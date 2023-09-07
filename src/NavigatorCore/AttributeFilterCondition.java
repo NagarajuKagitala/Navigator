@@ -227,7 +227,7 @@ public class AttributeFilterCondition
 		 */
 		
 		//driver.findElement(By.xpath("//td[contains(.,'Maximum Depth')]")).click();
-		driver.findElement(By.xpath("//app-mod-manage-attribute-filter-add-available-attr/div/div/div[3]/button")).click();
+		driver.findElement(By.xpath("//div[3]/button[2]")).click();
 		Thread.sleep(MediumSleep);
 		
 		//Comparison operater name

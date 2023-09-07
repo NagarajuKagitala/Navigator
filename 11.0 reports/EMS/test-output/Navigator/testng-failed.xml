@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Navigator]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test Durable Viewlet(failed)">
+    <parameter name="ViewletName" value="New Durable Viewlet"/>
+    <parameter name="Dashboardname" value="DurableViewlet Verification"/>
+    <parameter name="wgs" value="1"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+    <parameter name="FavoriteViewletName" value="Durable Favorite viewlet"/>
+    <parameter name="Favwgs" value="1"/>
+    <parameter name="schemaName" value="DurableSchema"/>
+    <parameter name="URL" value="/navigator/#/login"/>
+    <parameter name="ViewletValue" value="9"/>
+    <parameter name="SelectTopicName" value="EMS.Topic1"/>
+    <parameter name="password" value="admin"/>
+    <parameter name="WGSName" value="WGS10 - 1"/>
+    <parameter name="DeleteDurableName" value="Test.EMS.Durable"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="DurableName" value="xyz567"/>
+    <classes>
+      <class name="EMS.DurableViewlet">
+        <methods>
+          <include name="DeleteCommand" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="AddDurableFromPlusIcon"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- EMS.DurableViewlet -->
+    </classes>
+  </test> <!-- Test Durable Viewlet(failed) -->
+</suite> <!-- Failed suite [Navigator] -->

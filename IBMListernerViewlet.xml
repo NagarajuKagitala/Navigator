@@ -34,7 +34,7 @@
        
         <include name="Login"/>
         <include name="AddListenerViewlet"/> 
-        <include name="ShowObjectAttributesForListener"/>   
+      <!--   <include name="ShowObjectAttributesForListener"/>   -->
         <include name="CreateListener"/>
         <include name="CopyAsFromCommands"/>
         <include name="RenameFromCommands"/>

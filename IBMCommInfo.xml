@@ -32,7 +32,7 @@
        
         <include name="Login"/>
         <include name="AddCommInfoViewlet"/> 
-        <include name="ShowObjectAttributes"/>
+      <!--  <include name="ShowObjectAttributes"/> -->
         <include name="Properties"/> 
         <include name="CopyAsOfCommumicationInfo"/>   
         <include name="DeleteCommunicationInfo"/> 

@@ -171,7 +171,7 @@ public class SearchCriteria
 		che.Deselectcheckbox(Dashboardname,driver);
 				
 		//Select the put new message option
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		Thread.sleep(LowSleep);
 		Actions PutMessagesMousehour=new Actions(driver);
 		PutMessagesMousehour.moveToElement(driver.findElement(By.linkText("Messages"))).perform();
@@ -348,23 +348,26 @@ public class SearchCriteria
 		Thread.sleep(LowSleep);
 		
 		//Browse the Queue
-		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div/app-viewlet/div[3]/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/input")).click();
+		driver.findElement(By.xpath("/html/body/app-root/div/app-main-page/div/div/app-tab/div/div/div[1]/app-viewlet/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[1]/datatable-body-row/div[2]/datatable-body-cell[1]/div/div/input")).click();
 		driver.findElement(By.linkText("Browse messages")).click();
 		Thread.sleep(HighSleep);
 		
 		try
 		{
 			//Choose the Active filter
-			driver.findElement(By.xpath("//ng-select/div/span[2]")).click();
+			//driver.findElement(By.xpath("//ng-select/div/span[2]")).click();
 			Thread.sleep(LowSleep);
 		
 		}
 		catch (Exception e)
 		{
 			System.out.println("condition not selected");
-			driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
-			Thread.sleep(LowSleep);
+			
 		}
+		
+		//Select drop down criteria
+		driver.findElement(By.xpath("//div[2]/div/div[2]/div/ng-select/div/span")).click();
+		Thread.sleep(LowSleep);  
 		
 		WebElement dropw=driver.findElement(By.className("ng-dropdown-panel")).findElement(By.className("ng-dropdown-panel-items"));
 		List<WebElement> divw=dropw.findElements(By.tagName("div")); 
@@ -376,6 +379,7 @@ public class SearchCriteria
 			if(diw.getText().equalsIgnoreCase(SearchCriteriaName))
 			{
 				diw.click();
+				diw.sendKeys(Keys.ENTER);
 				break;
 			}	
 		}

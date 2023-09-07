@@ -13,6 +13,13 @@
     <parameter name="ChannelAuthNameOptions" value="SYSTEM.DEF.SERVER"/>
     <parameter name="UserList" value="MQADMIN"/>
     
+    <parameter name="BlockUser" value="MQADMIN"/>
+    <parameter name="BlockAddress" value="9.10.*"/>
+    <parameter name="SSLPeer" value="CN=mqt.mq09*, OU=bacmqtf, O=Bank of America Corporation"/>
+    <parameter name="Addressmap" value="MQADMIN"/>
+    <parameter name="UserMap" value="123"/>
+    <parameter name="QueueManager" value="RQ"/>
+    
     <parameter name="MultipleDescription" value="Test Multiple Properties"/>
     
     <parameter name="SchemaName" value="ChannelAuthSchema"/>
@@ -30,7 +37,7 @@
         <include name="AddChannelAuthrecordsViewlet"/> 
         <include name="ShowObjectAttributes"/> 
         <include name="CreateChannelAuthRecordFromOptions"/> 
-        <include name="DeleteChannelAuthRecordFromCommands"/>
+        <include name="DeleteChannelAuthRecordFromCommands"/> 
         <include name="MQSCSnapshot"/>
         <include name="SaveChannelAuthSnapshot"/> 
         <include name="ChannelAuthProperties"/> 

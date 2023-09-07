@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Navigator">
+ <test name="Test kafka Broker Viewlet">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sDriverpath" value="Drivers/chromedriver.exe"/>
+  
+    <parameter name="Dashboardname" value="Kafka Broker"/>
+    <parameter name="ViewletName" value="Kafka Broker Viewlet"/>
+    <parameter name="ViewletValue" value="3"/>
+    <parameter name="SchemaName" value="Schema"/>
+    <parameter name="FavoriteViewletName" value="Broker Fav"/>  
+     
+     <classes>
+      <class name="KafkaGUI.KafkaBrokerViewlet">
+       
+       <methods>
+       
+        <include name="Login"/>
+        <include name="ShowObjectAttributes"/>    
+        <include name="Properties"/>  
+        <include name="Events"/> 
+        <include name="AddToFavoriteViewlet"/>  
+        <include name="Logout"/> 
+        
+       </methods>
+       
+       </class>
+     </classes>
+ </test>
+</suite>
